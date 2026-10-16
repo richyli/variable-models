@@ -199,3 +199,51 @@ seed_models:
     - [Behavior, Individual Impact, "+"]
     - [User Satisfaction, Individual Impact, "+"]
     - [Individual Impact, Organizational Impact, "+"]
+
+# 7. 變數群組（2026-10-16）：依序比對 keywords（正規表示式，不分大小寫，對變數名與別名），第一個命中的群組就是它的群；
+#    members 可以手動指定（優先於 keywords）。頁面「相關變數」會列同群變數，側欄可切成依群組瀏覽。
+clusters:
+  - name: 危機與聲譽
+    keywords: ["crisis", "reputation", "responsib", "attribution", "\\blocus\\b", "stability", "controllability"]
+  - name: 捐款與利他
+    keywords: ["donat", "altruis", "warm glow", "victim", "statistical information", "charit", "helping"]
+  - name: 永續與綠色
+    keywords: ["green", "ecological", "product lifetime", "sustainab", "csr", "stakeholder"]
+  - name: 品牌、廣告與口碑
+    keywords: ["brand", "word of mouth", "ewom", "review", "\\bad\\b", "sponsorship", "source (expertise|attractiveness|trustworthiness)"]
+  - name: 轉換與留存
+    keywords: ["switch", "retention", "lock-in", "multihoming", "alternative attractiveness", "\\bexit\\b", "turnover", "continuance", "habit", "customer complaints", "loyal", "user resistance"]
+  - name: 風險、威脅與隱私
+    keywords: ["risk", "threat", "privacy", "severity", "susceptib", "insecurity", "danger", "safeguard", "security", "hazard", "fear", "anxiety", "techno-", "technostress", "loss aversion"]
+  - name: 公平與正義
+    keywords: ["justice", "fair", "inequity", "injustice", "equity", "input-outcome"]
+  - name: 信任與可信度
+    keywords: ["trust", "credib", "reliab", "objectivity", "transparen", "accountab", "skeptic", "assurance"]
+  - name: 滿意與期望
+    keywords: ["satisf", "dissatisf", "expectation", "expectancy", "confirmation", "disconfirm", "unmet promises", "violation", "gratification"]
+  - name: 價值、效益與品質
+    keywords: ["value", "benefit", "usefulness", "quality", "durab", "relative advantage", "reward", "performance expectancy", "tangibles", "empathy", "responsiveness", "consequence", "impact", "learning performance"]
+  - name: 成本與價格
+    keywords: ["cost", "price", "pricing", "sacrifice", "barrier", "subsidy", "workload", "effort expectancy", "ease of use", "complexity"]
+  - name: 規範與社會影響
+    keywords: ["norm", "social influence", "social persuasion", "pressure", "majority", "bandwagon", "socialization", "censorship", "social cues", "social response", "social environment"]
+  - name: 認同與群體
+    keywords: ["identity", "identif", "in-group", "out-group", "categorization", "social groups", "polarization", "anonymity", "social capital", "social network", "social presence", "parasocial", "relatedness", "social distance", "community", "partisan", "cross-cutting", "reciprocity"]
+  - name: AI 與演算法
+    keywords: ["\\bai\\b", "algorithm", "automation", "machine", "anthropomorph", "uniqueness neglect", "explanation", "agency cues", "personalization", "human error", "decision (accuracy|error)", "complacency", "reliance", "eeriness", "modality", "navigability", "interactivity", "purpose alignment"]
+  - name: 效能感與控制
+    keywords: ["efficacy", "control", "competence", "ability", "skill", "capabilit", "readiness", "facilitating", "autonomy", "mastery", "past performance", "vicarious", "capacity", "freedom"]
+  - name: 動機與情緒
+    keywords: ["motivation", "emotion", "affect", "arousal", "joy", "curiosity", "flow", "immersion", "absorption", "playful", "hedonic", "enjoy", "well-being", "discomfort", "optimism", "burnout", "work engagement", "valence", "instrumentality", "goal", "involvement", "innovativeness", "utilitarian", "challenge"]
+  - name: 認知處理與說服
+    keywords: ["elaboration", "processing", "argument", "cue", "heuristic", "counterargu", "transportation", "narrative", "deliberative", "forewarning", "refutational", "persuasion", "dissonance", "cognition", "load", "reactance", "selective exposure", "knowledge", "literacy", "expertise", "awareness", "framing", "media influence", "message", "communication", "feedback", "screening", "signal"]
+  - name: 資訊、系統與科技特性
+    keywords: ["information", "system", "technology", "media richness", "task", "ttf", "compatibility", "trialability", "observability", "technical support", "media use", "platform", "installed base", "complementary", "network effect", "disruptive", "innovation", "foothold", "winner", "provider-side", "user-side", "product attributes", "environment"]
+  - name: 市場、策略與經濟
+    keywords: ["market", "entry", "rival", "substitut", "bargaining", "supplier", "buyer", "incumbent", "transaction", "asset specificity", "opportunistic", "average cost", "output", "scope", "economies", "profitab", "efficiency", "asymmetry", "moral hazard", "adverse selection", "regulation", "resource", "capability", "exploration", "exploitation", "ambidext", "structure", "uncertainty", "dependence", "ties", "firm performance", "competitive", "governance", "agency", "monitoring", "contract", "dynamic", "oversupply"]
+  - name: 組織與工作
+    keywords: ["job", "employee", "organization", "supervisor", "leader", "commitment", "citizenship", "psychological contract", "hygiene", "motivator", "socialization", "support", "sanction", "accountability", "role", "service"]
+  - name: 態度
+    keywords: ["attitude", "preference", "belief", "worldview", "evaluation"]
+  - name: 意圖與行為
+    keywords: ["intention", "behavio", "adoption", "\\buse\\b", "usage", "purchase", "action", "willingness", "participation", "voice", "utilization", "exposure", "engagement", "speak"]

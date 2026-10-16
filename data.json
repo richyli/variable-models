@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16 18:33",
+ "generated": "2026-10-16 18:43",
  "vault": "Zettel",
  "variables": [
   {
@@ -25,7 +25,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Behavioral Intention",
@@ -80,7 +81,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Benefit",
@@ -104,7 +106,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Confirmation of Expectations",
@@ -126,7 +129,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Continuance Intention",
@@ -153,7 +157,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Related to Behavioral Intention",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Expectation",
@@ -174,7 +179,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Individual Impact",
@@ -196,7 +202,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Information Quality",
@@ -214,7 +221,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "1. 準確性 (Accuracy) 確保資訊無錯誤並能真實反映現實世界的情況。可以透過比對資訊系統產生的數據與實際數據或外部參考來源來評估其準確性，例如交叉檢查報表或數據稽核。 1. 正確性 (Accuracy) 定義: 資訊必須正確無誤，真實反映現實世界或符合預期結果。 將資訊系統產生的資料與已知的正確資料進行比對，計算錯誤率或偏差值。 利用統計抽樣技術，驗證資料的準確度。 透過使用者回饋或專家審查，識別潛在錯誤。 追蹤數據來源和處理過程，確保資料的完整性和可靠性。 意義：指資訊與實際情況（或真實世界）之間的符…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Motivation",
@@ -240,7 +248,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Organizational Impact",
@@ -260,7 +269,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Behavioral Control",
@@ -287,7 +297,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Perceived Behavirol Control --> Behavior",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Perceived Ease of Use",
@@ -313,7 +324,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "知覺易用性 (PEOU) 定義： 指使用者相信使用特定系統是「免於費力」（free of effort）的程度 。 源自 \"Ease\" 的定義，即免於困難或巨大的努力 。 基於資源分配理論，個人的精力是有限的資源，易用性意味著資源消耗較少 。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Perceived Risk",
@@ -340,7 +352,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Privacy Concern",
@@ -364,7 +377,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "PU Perceived Usefulness",
@@ -399,7 +413,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "知覺有用性 (PU) 定義： 指使用者相信使用特定系統能夠提升其工作績效的程度 。 源自 \"Useful\" 的定義，即能夠被有利地使用（capable of be used advantageously）。 在組織情境中，這通常與獲得獎勵（如加薪、升遷）的績效表現掛鉤 。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Subjective Norm",
@@ -421,7 +436,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Switching cost",
@@ -443,7 +459,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "2. Switching Cost（轉換成本） 當使用者想更換產品或服務供應商（例如換手機平台、換銀行、換線上訂閱）時，所必須付出的各種代價與不便。 包含金錢、時間、學習新操作方式，甚至失去既有的優惠或聯絡人脈的成本。 (https://www.sciencedirect.com/science/article/pii/S0019850115001790)",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "System Quality",
@@ -461,7 +478,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Task Characteristics",
@@ -479,7 +497,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Technology Characteristics",
@@ -499,7 +518,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "TTF",
@@ -520,7 +540,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "User Satisfaction",
@@ -556,7 +577,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Customer Retention",
@@ -581,7 +603,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "save for later",
@@ -597,7 +620,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Generated by Researcher AI, Fri Oct 10 2025 why users need a \"save-for-later\" or bookmark function in a news site? A \"save-for-later\" or bookmark function is essential for news site users due to several practical and experiential benefits. Below is a structur…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "其他"
   },
   {
    "id": "Absorptive Capacity",
@@ -617,7 +641,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Ascription of responsibility",
@@ -639,7 +664,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Attitude",
@@ -669,7 +695,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "態度"
   },
   {
    "id": "Autonomy",
@@ -688,7 +715,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Awareness of Consequence",
@@ -707,7 +735,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Behavior",
@@ -720,8 +749,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "USE",
     "Use",
+    "USE",
     "Use Behavior"
    ],
    "notes": [
@@ -760,7 +789,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Collective Efficacy",
@@ -783,7 +813,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Competence",
@@ -806,7 +837,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Crisis History",
@@ -824,7 +856,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Crisis Responsibility",
@@ -845,7 +878,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Crisis",
@@ -861,7 +895,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Crisis has Levels Crisis Levels",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Emotions",
@@ -891,7 +926,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Environment",
@@ -912,7 +948,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Expectancy",
@@ -937,7 +974,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Facilitating Conditions",
@@ -961,7 +999,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "In-group",
@@ -984,7 +1023,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Knowledge",
@@ -1011,7 +1051,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Message Objectivity",
@@ -1033,7 +1074,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Org Reputation",
@@ -1056,7 +1098,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Out-group",
@@ -1079,7 +1122,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Past Performance",
@@ -1101,7 +1145,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Perceived Anthropomorphism",
@@ -1123,7 +1168,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Perceived Severity",
@@ -1148,7 +1194,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Perceived Susceptibility",
@@ -1173,7 +1220,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Performance Expectancy",
@@ -1197,7 +1245,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Personal Identify",
@@ -1221,7 +1270,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Personal Norm",
@@ -1243,7 +1293,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Prior Relationship Reputation",
@@ -1263,7 +1314,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Product Lifetime Labelling",
@@ -1281,7 +1333,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Relatedness",
@@ -1299,7 +1352,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Self-Efficacy",
@@ -1329,7 +1383,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "題目全文： 在資訊系統採納研究中，「自我效能」（Self-efficacy）被認為是預測用戶行為的重要心理指標。請定義何謂資訊技術自我效能，並討論其如何影響用戶對新興技術（如 AI 聊天機器人）的信任與實際使用行為。 題目類型： 名詞定義與機制分析 名詞定義：指個人對於自己能夠成功運用特定技術、完成特定任務能力的信心程度 。 對信任的影響：高自我效能的用戶通常對技術有更強的掌握感，更容易在互動中建立對系統可靠性與有效性的信任（Trust） 。 對使用行為的影響：自我效能會影響用戶面對技術障礙時的毅力。高自我效能者…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Skepticism",
@@ -1349,7 +1404,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Social Categorization",
@@ -1367,7 +1423,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Social Categorization",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Social Groups Distinction",
@@ -1385,7 +1442,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Social Categorization Social Groups Distinction",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Social Identity",
@@ -1412,7 +1470,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "Social identity model of collective action (Rees & Bamberg, 2014, p. 469)",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Social information only + Single Victim",
@@ -1428,7 +1487,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "1. Identified Single Victim Effect – 在 Study 1 中，結果顯示：當單一受害者提供完整識別資訊（年齡、姓名與照片）時，其假設捐款意願顯著高於僅提供部分或無識別資訊的情境。 – 數據來源：247名受試者在2 × 4設計下，對單一受害者條件中，含照片組的捐款金額（對數轉換後）顯著高於其他組別；而在群體情境中，識別資訊並未顯著影響捐助意願。 結論：識別受害者效應主要適用於單一個體，當受害者被充分個體化（尤其有照片）時，能夠顯著提升救助意願。 (關鍵概念：Identified V…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Social Norm",
@@ -1461,7 +1521,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Social Persuasion",
@@ -1479,7 +1540,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Technology",
@@ -1503,7 +1565,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Value",
@@ -1527,7 +1590,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Vicarious Exp",
@@ -1547,7 +1611,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Donation",
@@ -1569,7 +1634,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Organization",
@@ -1586,7 +1652,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Trust",
@@ -1615,7 +1682,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Perceived Credibility",
@@ -1639,7 +1707,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Trust in AI",
@@ -1668,7 +1737,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Purchase Intention",
@@ -1701,7 +1771,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Reliance on Automation",
@@ -1722,7 +1793,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Competitive Advantage",
@@ -1744,7 +1816,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Environmental Uncertainty",
@@ -1764,7 +1837,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Job Satisfaction",
@@ -1785,7 +1859,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Purchase",
@@ -1805,7 +1880,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Donation Attitude",
@@ -1823,7 +1899,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "捐款與利他"
   },
   {
    "id": "aligned norms",
@@ -1835,7 +1912,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Perceived Injustice",
@@ -1849,7 +1927,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Service Quality",
@@ -1865,7 +1944,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Algorithm Error Observed",
@@ -1880,7 +1960,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Human Error Observed",
@@ -1894,7 +1975,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Ability to Modify Algorithm",
@@ -1908,7 +1990,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Decision Accuracy",
@@ -1922,7 +2005,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Algorithmic Advice",
@@ -1936,7 +2020,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Domain Expertise",
@@ -1955,7 +2040,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Task Objectivity",
@@ -1969,7 +2055,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Perceived Uniqueness Neglect",
@@ -1984,7 +2071,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Algorithm Aversion",
@@ -2003,7 +2091,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Algorithm Transparency",
@@ -2020,7 +2109,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Task Subjectivity",
@@ -2034,7 +2124,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "AI Avoidance",
@@ -2054,7 +2145,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "AI Anxiety",
@@ -2069,7 +2161,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "AI Provider",
@@ -2083,7 +2176,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Personalization",
@@ -2101,7 +2195,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Utilization Intention",
@@ -2120,7 +2215,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Automation Reliability",
@@ -2135,7 +2231,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "System Transparency",
@@ -2149,7 +2246,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Purpose Alignment",
@@ -2163,7 +2261,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Automation Bias",
@@ -2182,7 +2281,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Complacency",
@@ -2196,7 +2296,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Workload",
@@ -2210,7 +2311,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Accountability",
@@ -2224,7 +2326,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Decision Error",
@@ -2238,7 +2341,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Social Cues",
@@ -2252,7 +2356,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Social Response",
@@ -2266,7 +2371,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Modality Cues",
@@ -2280,7 +2386,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Credibility Heuristics",
@@ -2294,7 +2401,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Agency Cues",
@@ -2309,7 +2417,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Interactivity Cues",
@@ -2324,7 +2433,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Navigability Cues",
@@ -2338,7 +2448,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Machine Heuristic",
@@ -2352,7 +2463,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Hedonic Motivation",
@@ -2370,7 +2482,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Eeriness",
@@ -2388,7 +2501,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Explanation Quality",
@@ -2405,7 +2519,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Transparency",
@@ -2423,7 +2538,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Cognitive Load",
@@ -2438,7 +2554,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Perceived Fairness",
@@ -2457,7 +2574,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Perceived Accountability",
@@ -2471,7 +2589,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Job Replacement Threat",
@@ -2485,7 +2604,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Learning Pressure",
@@ -2499,7 +2619,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "AI Literacy",
@@ -2517,7 +2638,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Perceived Threat",
@@ -2535,7 +2657,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Avoidance Motivation",
@@ -2554,7 +2677,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Safeguard Effectiveness",
@@ -2568,7 +2692,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Safeguard Cost",
@@ -2582,7 +2707,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Avoidance Behavior",
@@ -2600,7 +2726,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Utilitarian Goal",
@@ -2614,7 +2741,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Preference for AI Recommender",
@@ -2628,7 +2756,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Hedonic Goal",
@@ -2642,7 +2771,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Parasocial Interaction",
@@ -2656,7 +2786,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "AI Authorship Disclosure",
@@ -2670,7 +2801,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Prior AI Attitude",
@@ -2684,7 +2816,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Expectancy Violation",
@@ -2699,7 +2832,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Protection Motivation",
@@ -2718,7 +2852,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Response Efficacy",
@@ -2733,7 +2868,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Response Cost",
@@ -2747,7 +2883,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Perceived Health Benefits",
@@ -2761,7 +2898,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Barriers",
@@ -2775,7 +2913,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Cues to Action",
@@ -2789,7 +2928,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Perceived Efficacy",
@@ -2803,7 +2943,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Fear",
@@ -2821,7 +2962,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Danger Control",
@@ -2835,7 +2977,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Fear Control",
@@ -2849,7 +2992,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Argument Quality",
@@ -2863,7 +3007,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Peripheral Cues",
@@ -2877,7 +3022,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Involvement",
@@ -2891,7 +3037,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Elaboration",
@@ -2905,7 +3052,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Ability",
@@ -2920,7 +3068,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Systematic Processing",
@@ -2934,7 +3083,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Heuristic Cues",
@@ -2948,7 +3098,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Attitude Strength",
@@ -2962,7 +3113,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "態度"
   },
   {
    "id": "Source Expertise",
@@ -2976,7 +3128,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Source Trustworthiness",
@@ -2990,7 +3143,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Source Attractiveness",
@@ -3004,7 +3158,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Sponsorship Disclosure",
@@ -3018,7 +3173,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Persuasion Knowledge",
@@ -3036,7 +3192,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Brand Attitude",
@@ -3061,7 +3218,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "根據您的來源資料（特別是 Lee, Ho et al. 2023），品牌態度 (Brand Attitude) 是消費者對品牌的一種整體評價，通常被視為驅動後續行為意圖的關鍵心理變數。 以下是文獻中關於品牌態度的核心重點： 定義： 它是消費者對品牌表現出的後天傾向，反應出對該品牌的喜愛或厭惡程度。 雙重成分： 品牌態度包含 認知成分 (Cognitive)（對品牌品質、信念、價值的判斷）與 情感成分 (Affective)（喜歡或不喜歡的情緒體驗）。 穩定性： 與「滿意度」不同，態度一旦形成就相對穩定，不易改變，…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Threat to Freedom",
@@ -3075,7 +3233,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Reactance",
@@ -3094,7 +3253,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Arousal",
@@ -3108,7 +3268,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Communicator Reward Valence",
@@ -3122,7 +3283,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Violation Valence",
@@ -3136,7 +3298,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Perceived Majority Support",
@@ -3153,7 +3316,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Willingness to Speak Out",
@@ -3172,7 +3336,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Fear of Isolation",
@@ -3186,7 +3351,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Social Distance",
@@ -3200,7 +3366,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Perceived Media Influence on Others",
@@ -3214,7 +3381,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Support for Censorship",
@@ -3228,7 +3396,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Perceived Media Influence on Self",
@@ -3242,7 +3411,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Bandwagon Cues",
@@ -3256,7 +3426,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Bandwagon Effect",
@@ -3275,7 +3446,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Affective Polarization",
@@ -3293,7 +3465,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "情感極化（Affective Polarization）指黨派成員對外黨（out-party）及其成員持有的負面情感與不信任，以及對內黨（in-party）的正面情感。這個概念不同於意識形態極化（ideological polarization），後者指的是政策立場上的分歧。 Iyengar, Sood & Lelkes (2012) 提出情感極化概念，強調「情感而非意識形態」 Iyengar et al. (2019) 回顧其起源與後果 Mason (2018) 從 Social Identity Theory…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Partisan Media Exposure",
@@ -3307,7 +3480,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Cross-cutting Exposure",
@@ -3321,7 +3495,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Gratifications Sought",
@@ -3335,7 +3510,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Media Use",
@@ -3353,7 +3529,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Gratifications Obtained",
@@ -3367,7 +3544,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Media Richness",
@@ -3386,7 +3564,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "媒體的豐富性（Media Richness） 社會臨場理論認為，不同的溝通媒介在傳遞社會臨場感的能力上存在差異： 高臨場感媒介：如視訊會議，能傳遞非語言訊息（如表情、語調）。 低臨場感媒介：如電子郵件，缺乏情感和非語言線索。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Communication Effectiveness",
@@ -3400,7 +3579,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Task Equivocality",
@@ -3414,7 +3594,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Social Presence",
@@ -3436,7 +3617,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "社會臨場感（Social Presence） 指溝通過程中，人們感知對方為「真實個體」的程度。 高社會臨場感的媒介能使參與者感覺到彼此的存在，如面對面的交流；而低社會臨場感的媒介可能缺乏此效果，例如文字訊息。 Social Present 理論沒有固定的架構，最早提出的有兩個概念 Immediacy is “a measure of the psychological distance which a communicator puts between himself and the object of his …",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Anonymity",
@@ -3450,7 +3632,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Locus",
@@ -3464,7 +3647,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Responsibility Attribution",
@@ -3481,7 +3665,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Stability",
@@ -3495,7 +3680,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Controllability",
@@ -3509,7 +3695,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Coercive Pressure",
@@ -3523,7 +3710,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Mimetic Pressure",
@@ -3537,7 +3725,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Normative Pressure",
@@ -3554,7 +3743,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Relative Advantage",
@@ -3572,7 +3762,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Compatibility",
@@ -3586,7 +3777,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Complexity",
@@ -3600,7 +3792,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Trialability",
@@ -3614,7 +3807,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Observability",
@@ -3628,7 +3822,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Techno-overload",
@@ -3642,7 +3837,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Technostress",
@@ -3656,7 +3852,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Techno-invasion",
@@ -3670,7 +3867,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Techno-complexity",
@@ -3684,7 +3882,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Technical Support",
@@ -3698,7 +3897,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "User Resistance",
@@ -3721,7 +3921,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "概念定義：使用者反對與新 IS 實施相關之改變的行為或傾向 7。 操作化定義：基於 Bovey & Hede (2001) 的分類，包含四個維度：不順從 (non-compliance)、不合作 (non-cooperation)、不同意 (disagreement)、反對 (opposition) 。 Conceptual Definition: 使用者為了表達對新 IT 導入的不滿而採取的一系列行為 6。 Operational Definition:  Information Technology Impl…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Switching Benefits",
@@ -3735,7 +3936,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Organizational Support",
@@ -3749,7 +3951,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Dissatisfaction",
@@ -3764,7 +3967,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Switching Intention",
@@ -3781,7 +3985,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Alternative Attractiveness",
@@ -3796,7 +4001,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Habit",
@@ -3812,7 +4018,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Switching Behavior",
@@ -3830,7 +4037,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Shared Values",
@@ -3844,7 +4052,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Communication",
@@ -3862,7 +4071,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Opportunistic Behavior",
@@ -3877,7 +4087,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Relationship Commitment",
@@ -3892,7 +4103,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Perceived Quality",
@@ -3912,7 +4124,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Value",
@@ -3933,7 +4146,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Customer Complaints",
@@ -3947,7 +4161,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Reliability",
@@ -3965,7 +4180,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "信度不夠或題目太多要調整題目數量",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Assurance",
@@ -3979,7 +4195,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Tangibles",
@@ -3993,7 +4210,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Empathy",
@@ -4007,7 +4225,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Responsiveness",
@@ -4021,7 +4240,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Greenwashing",
@@ -4035,7 +4255,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Green Consumer Confusion",
@@ -4049,7 +4270,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Green Perceived Risk",
@@ -4066,7 +4288,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Green Trust",
@@ -4084,7 +4307,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Perceived Durability",
@@ -4098,7 +4322,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Information Asymmetry",
@@ -4117,7 +4342,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Signal Reliance",
@@ -4131,7 +4357,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "AI 與演算法"
   },
   {
    "id": "Signal Cost",
@@ -4149,7 +4376,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "信號應該對資訊擁有者產生一定的成本 Cost，使其對偽造信號的行為望而卻步。例如，只有具備高能力的個體才會選擇高成本的信號（如高等學歷）。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "成本與價格"
   },
   {
    "id": "Signal Credibility",
@@ -4164,7 +4392,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Affect",
@@ -4182,7 +4411,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Perceived Consequences",
@@ -4196,7 +4426,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Outcome Expectations",
@@ -4210,7 +4441,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Social Environment",
@@ -4224,7 +4456,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Ecological Worldview",
@@ -4238,7 +4471,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Identified Victim",
@@ -4256,7 +4490,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Statistical Information",
@@ -4270,7 +4505,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Deliberative Thinking",
@@ -4284,7 +4520,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Altruistic Motivation",
@@ -4298,7 +4535,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Warm Glow",
@@ -4312,7 +4550,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "捐款與利他"
   },
   {
    "id": "Perceived Reward",
@@ -4326,7 +4565,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Cost",
@@ -4340,7 +4580,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Reciprocity",
@@ -4354,7 +4595,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Social Network Use",
@@ -4368,7 +4610,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認同與群體"
   },
   {
    "id": "Bridging Social Capital",
@@ -4386,7 +4629,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "根據 Arghashi (2025) 的研究，橋接型社會資本 (Bridging Social Capital) 是指個體透過社群網絡與背景不同的多樣化群體建立的弱連結 (Weak Ties)。 簡單來說，它與我們和點頭之交或陌生人的互動有關。以下是它的幾個關鍵特徵及其對使用者行為的影響： 1. 核心功能：資訊與資源交換 不同於尋求情感支持的親密關係，橋接型社會資本主要用於認知目的。人們透過這種連結來進行資訊分享、獲取新資源、搜尋新知或接觸不同的觀點,。社群媒體降低了溝通成本，使我們更容易擴展這類人際網絡。 2.…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Bonding Social Capital",
@@ -4404,7 +4648,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "根據 Arghashi (2025) 的研究，黏合型社會資本 (Bonding Social Capital) 是理解強迫性社群媒體使用 (CSMU) 的最關鍵因素。 以下是它的核心定義與影響： 1. 定義：強連結與情感支持 這指的是個人與背景相似、關係緊密的群體（如家人、密友）之間建立的強連結 (Strong Ties)。這類資本主要提供情感支持、歸屬感以及被接納的感覺。 2. 對強迫性行為的主導影響 研究發現，相比於為了獲取資訊而建立的弱連結（橋接型社會資本），黏合型社會資本對 CSMU 的影響顯著更強。 _…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "認同與群體"
   },
   {
    "id": "Social Support",
@@ -4422,7 +4667,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "組織與工作"
   },
   {
    "id": "Information Access",
@@ -4436,7 +4682,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Well-being",
@@ -4450,7 +4697,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Skill",
@@ -4468,7 +4716,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Flow",
@@ -4482,7 +4731,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Challenge",
@@ -4496,7 +4746,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Intrinsic Load",
@@ -4510,7 +4761,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Extraneous Load",
@@ -4524,7 +4776,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Learning Performance",
@@ -4538,7 +4791,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Germane Load",
@@ -4552,7 +4806,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Loss Framing",
@@ -4566,7 +4821,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Risk Seeking",
@@ -4584,7 +4840,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Gain Framing",
@@ -4598,7 +4855,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Loss Aversion",
@@ -4612,7 +4870,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Inconsistent Cognition",
@@ -4626,7 +4885,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Dissonance",
@@ -4640,7 +4900,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Attitude Change",
@@ -4655,7 +4916,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "態度"
   },
   {
    "id": "Selective Exposure",
@@ -4669,7 +4931,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Choice Freedom",
@@ -4683,7 +4946,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Optimism",
@@ -4697,7 +4961,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Technology Readiness",
@@ -4711,7 +4976,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Innovativeness",
@@ -4725,7 +4991,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Discomfort",
@@ -4739,7 +5006,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Insecurity",
@@ -4753,7 +5021,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Disposition to Trust",
@@ -4767,7 +5036,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Institution-based Trust",
@@ -4781,7 +5051,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "信任與可信度"
   },
   {
    "id": "Perceived Reputation",
@@ -4798,7 +5069,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Perceived Site Quality",
@@ -4812,7 +5084,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Privacy Experiences",
@@ -4826,7 +5099,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Privacy Awareness",
@@ -4840,7 +5114,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Regulation",
@@ -4854,7 +5129,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Playfulness",
@@ -4868,7 +5144,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Cognitive Absorption",
@@ -4882,7 +5159,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Personal Innovativeness",
@@ -4896,7 +5174,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Curiosity",
@@ -4910,7 +5189,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Joy",
@@ -4924,7 +5204,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Control",
@@ -4938,7 +5219,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Immersion",
@@ -4952,7 +5234,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Prior Behavior Frequency",
@@ -4966,7 +5249,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Sanction Certainty",
@@ -4980,7 +5264,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Security Policy Violation",
@@ -4994,7 +5279,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Sanction Severity",
@@ -5008,7 +5294,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Sanction Celerity",
@@ -5022,7 +5309,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Security Awareness",
@@ -5036,7 +5324,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Narrative Quality",
@@ -5050,7 +5339,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Transportation",
@@ -5064,7 +5354,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Counterarguing",
@@ -5079,7 +5370,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Forewarning",
@@ -5093,7 +5385,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Threat Perception",
@@ -5107,7 +5400,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Refutational Preemption",
@@ -5121,7 +5415,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Attitude Resistance",
@@ -5135,7 +5430,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "態度"
   },
   {
    "id": "Functional Value",
@@ -5149,7 +5445,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Social Value",
@@ -5163,7 +5460,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Emotional Value",
@@ -5177,7 +5475,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Epistemic Value",
@@ -5191,7 +5490,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Conditional Value",
@@ -5205,7 +5505,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Instrumentality",
@@ -5219,7 +5520,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Valence",
@@ -5233,7 +5535,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Resource Value",
@@ -5247,7 +5550,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Resource Rarity",
@@ -5261,7 +5565,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Resource Inimitability",
@@ -5275,7 +5580,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Resource Non-substitutability",
@@ -5289,7 +5595,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Firm Performance",
@@ -5315,7 +5622,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Sensing Capability",
@@ -5329,7 +5637,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Dynamic Capabilities",
@@ -5347,7 +5656,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Seizing Capability",
@@ -5361,7 +5671,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Transforming Capability",
@@ -5375,7 +5686,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Resource Reconfiguration",
@@ -5389,7 +5701,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Rivalry Intensity",
@@ -5403,7 +5716,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Industry Profitability",
@@ -5421,7 +5735,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "效能感與控制"
   },
   {
    "id": "Threat of New Entrants",
@@ -5435,7 +5750,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Threat of Substitutes",
@@ -5449,7 +5765,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Supplier Bargaining Power",
@@ -5463,7 +5780,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Buyer Bargaining Power",
@@ -5477,7 +5795,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Entry Barriers",
@@ -5491,7 +5810,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Asset Specificity",
@@ -5509,7 +5829,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "資產專屬性（Asset Specificity）：若交易所需之資產具高度專屬性（無法輕易轉用他處），一旦離開原交易對象就失去大部分價值，那麼在市場上進行交易時，便需要更嚴謹的契約與監督，導致交易成本升高。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Transaction Cost",
@@ -5527,7 +5848,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "交易成本並不僅限於「價格」本身，而是為了完成一項交易而必須額外付出的 Cost，包括： 搜尋成本 Search cost and Information Cost：為取得資訊、找到合適交易對象所付出的成本。 談判與契約成本 Bargaining & Decision Cost ：為協商交易條款、擬定契約以及簽約等所付出的時間與金錢。 履約與監督成本 Policing & Enforcement Cost：為確保契約條款被遵守，或發現並處理違約行為所需的成本。 簡言之，交易成本是指「在市場上買賣商品或服務時，除去商…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "成本與價格"
   },
   {
    "id": "Behavioral Uncertainty",
@@ -5541,7 +5863,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Transaction Frequency",
@@ -5555,7 +5878,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Hierarchical Governance",
@@ -5569,7 +5893,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Goal Conflict",
@@ -5583,7 +5908,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Agency Problem",
@@ -5601,7 +5927,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Agency Cost",
@@ -5615,7 +5942,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Monitoring",
@@ -5629,7 +5957,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Outcome-based Contract",
@@ -5647,7 +5976,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "這是一個非常好的問題。Outcome-based Contract (結果導向契約，簡稱 OBC) 不僅是 Agency Theory (代理理論) 的核心概念，也是現代供應鏈管理、政府採購與服務科學中的重要議題。 以下我結合 Eisenhardt (1989) 的論文內容與更廣泛的組織管理理論，為您深入解析 Outcome-based Contract。 Outcome-based Contract 是一種契約安排，其核心邏輯是：委託人購買的是「結果」(Ends)，而非「過程」或「投入」(Means)。 傳統契…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Risk Aversion of Agent",
@@ -5661,7 +5991,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Adverse Selection",
@@ -5682,7 +6013,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Moral Hazard",
@@ -5699,7 +6031,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "風險、威脅與隱私"
   },
   {
    "id": "Market Efficiency",
@@ -5713,7 +6046,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Screening",
@@ -5727,7 +6061,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Stakeholder Pressure",
@@ -5741,7 +6076,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "CSR Engagement",
@@ -5755,7 +6091,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Stakeholder Salience",
@@ -5769,7 +6106,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "永續與綠色"
   },
   {
    "id": "Resource Criticality",
@@ -5783,7 +6121,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "External Dependence",
@@ -5797,7 +6136,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Resource Concentration",
@@ -5811,7 +6151,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Interorganizational Ties",
@@ -5825,7 +6166,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Installed Base",
@@ -5839,7 +6181,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Complementary Goods",
@@ -5853,7 +6196,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "User-side Installed Base",
@@ -5867,7 +6211,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Provider-side Participation",
@@ -5881,7 +6226,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Cost of Multihoming",
@@ -5899,7 +6245,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "多棲成本 (Cost of Multihoming) 指的是用戶、企業或組織同時使用多個平台、系統或網絡所需支付的成本與面臨的挑戰，而非僅專注於單一平台（稱為單棲，Single-homing）。該概念在具有網絡效應的市場中尤為重要，例如數字平台（如社交媒體、電子商務市場、雲端服務）或電信服務。 訂閱費用：同時使用多個服務的費用，例如同時訂閱多個雲存儲服務。 硬件/軟件成本：為支持多個平台所需的額外基礎設施或兼容工具（如不同的支付系統或應用程式）。 時間與精力：管理多個帳戶、重複內容或同步各平台上的更新。 培訓與支…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Platform Lock-in",
@@ -5913,7 +6260,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Winner-take-all Tendency",
@@ -5927,7 +6275,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Subsidy to Price-sensitive Side",
@@ -5941,7 +6290,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Low-end Foothold",
@@ -5955,7 +6305,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Disruptive Innovation",
@@ -5969,7 +6320,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Performance Oversupply",
@@ -5983,7 +6335,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Incumbent Market Share",
@@ -5997,7 +6350,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Incumbent Focus on Profitable Customers",
@@ -6011,7 +6365,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Incumbent Response",
@@ -6025,7 +6380,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Exploration",
@@ -6039,7 +6395,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Innovation Performance",
@@ -6053,7 +6410,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Exploitation",
@@ -6067,7 +6425,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Operational Efficiency",
@@ -6081,7 +6440,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Organizational Ambidexterity",
@@ -6095,7 +6455,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Organic Structure Need",
@@ -6109,7 +6470,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Structure-Environment Fit",
@@ -6123,7 +6485,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Task Uncertainty",
@@ -6137,7 +6500,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Output Volume",
@@ -6151,7 +6515,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Average Cost",
@@ -6165,7 +6530,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Product Scope",
@@ -6179,7 +6545,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Fixed Cost Share",
@@ -6193,7 +6560,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Brand Awareness",
@@ -6208,7 +6576,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Brand Equity",
@@ -6222,7 +6591,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Brand Associations",
@@ -6240,7 +6610,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "依據 Cho et al.（2019）的分類，品牌聯想分為： 對品牌的理性理解、功能認知、象徵意義。 與品牌相關的情緒、愉悅、喜愛、開心。 品牌帶來的視覺、觸覺、風格、包裝與設計感受。",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Brand Image",
@@ -6261,7 +6632,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Consumer Loyalty",
@@ -6285,7 +6657,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "以下是針對學者 Gong 等人和 Liu 等人提出的不同形式的消費者忠誠度分類的詳細說明： Gong 等人在研究中將消費者忠誠度分為 認知忠誠度（Cognitive Loyalty）、情感忠誠度（Affective Loyalty） 和 意向忠誠度（Conative Loyalty），這三者反映了忠誠度的逐步深化。 基於消費者對品牌的理性認知，主要由產品或服務的特徵、功能、價格等客觀資訊影響。 消費者選擇某品牌是因為認為該品牌的產品具有優勢或更高價值。 忠誠的形成主要依賴邏輯和理性判斷。 忠誠度可能較為脆弱，容易…",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Ad Credibility",
@@ -6299,7 +6672,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Attitude toward the Ad",
@@ -6316,7 +6690,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Ad Likeability",
@@ -6330,7 +6705,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Brand Cognitions",
@@ -6344,7 +6720,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Brand Preference",
@@ -6358,7 +6735,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Internal Service Quality",
@@ -6372,7 +6750,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Employee Retention",
@@ -6386,7 +6765,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Product Attributes",
@@ -6400,7 +6780,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "資訊、系統與科技特性"
   },
   {
    "id": "Functional Consequences",
@@ -6414,7 +6795,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Psychosocial Consequences",
@@ -6428,7 +6810,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Personal Values",
@@ -6442,7 +6825,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Perceived Sacrifice",
@@ -6456,7 +6840,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Price",
@@ -6470,7 +6855,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Price Difference from Reference",
@@ -6484,7 +6870,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Perceived Price Fairness",
@@ -6503,7 +6890,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Seller Cost Justification",
@@ -6517,7 +6905,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Seller Profit Motive Attribution",
@@ -6531,7 +6920,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "危機與聲譽"
   },
   {
    "id": "Dynamic Pricing",
@@ -6549,7 +6939,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": false
+   "unlinked": false,
+   "cluster": "成本與價格"
   },
   {
    "id": "Procedural Switching Cost",
@@ -6563,7 +6954,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Financial Switching Cost",
@@ -6577,7 +6969,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Relational Switching Cost",
@@ -6591,7 +6984,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Review Quality",
@@ -6605,7 +6999,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "eWOM Credibility",
@@ -6622,7 +7017,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Review Consistency",
@@ -6636,7 +7032,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Review Volume",
@@ -6650,7 +7047,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Customer Engagement",
@@ -6664,7 +7062,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Brand Identification",
@@ -6678,7 +7077,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Word of Mouth",
@@ -6695,7 +7095,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "品牌、廣告與口碑"
   },
   {
    "id": "Exit",
@@ -6712,7 +7113,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Voice",
@@ -6729,7 +7131,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "意圖與行為"
   },
   {
    "id": "Service Recovery",
@@ -6743,7 +7146,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Perceived Organizational Support",
@@ -6758,7 +7162,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Affective Commitment",
@@ -6778,7 +7183,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Continuance Commitment",
@@ -6792,7 +7198,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Socialization",
@@ -6806,7 +7213,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Normative Commitment",
@@ -6820,7 +7228,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "規範與社會影響"
   },
   {
    "id": "Turnover Intention",
@@ -6843,7 +7252,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "轉換與留存"
   },
   {
    "id": "Organizational Citizenship Behavior",
@@ -6860,7 +7270,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Fairness",
@@ -6879,7 +7290,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Supervisor Support",
@@ -6893,7 +7305,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Rewards and Job Conditions",
@@ -6907,7 +7320,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Job Performance",
@@ -6928,7 +7342,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Leader-Member Exchange Quality",
@@ -6942,7 +7357,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "價值、效益與品質"
   },
   {
    "id": "Distributive Justice",
@@ -6962,7 +7378,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Procedural Justice",
@@ -6981,7 +7398,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Interactional Justice",
@@ -6995,7 +7413,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Unmet Promises",
@@ -7009,7 +7428,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Psychological Contract Breach",
@@ -7023,7 +7443,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Violation Feelings",
@@ -7037,7 +7458,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Goal Specificity",
@@ -7051,7 +7473,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Goal Difficulty",
@@ -7065,7 +7488,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Goal Commitment",
@@ -7079,7 +7503,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Feedback",
@@ -7093,7 +7518,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "認知處理與說服"
   },
   {
    "id": "Task Complexity",
@@ -7107,7 +7533,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "成本與價格"
   },
   {
    "id": "Hygiene Factors",
@@ -7121,7 +7548,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Job Dissatisfaction",
@@ -7135,7 +7563,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "滿意與期望"
   },
   {
    "id": "Motivator Factors",
@@ -7149,7 +7578,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Input-Outcome Ratio Discrepancy",
@@ -7163,7 +7593,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Perceived Inequity",
@@ -7177,7 +7608,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "公平與正義"
   },
   {
    "id": "Job Demands",
@@ -7191,7 +7623,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "組織與工作"
   },
   {
    "id": "Burnout",
@@ -7205,7 +7638,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   },
   {
    "id": "Job Resources",
@@ -7219,7 +7653,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "市場、策略與經濟"
   },
   {
    "id": "Work Engagement",
@@ -7233,7 +7668,8 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": true,
+   "cluster": "動機與情緒"
   }
  ],
  "theories": [
@@ -16422,5 +16858,558 @@
    "name": "Donation Attitude ++ Actual Donation"
   }
  ],
- "localLinks": false
+ "localLinks": false,
+ "clusters": [
+  {
+   "name": "危機與聲譽",
+   "members": [
+    "Ascription of responsibility",
+    "Controllability",
+    "Crisis",
+    "Crisis History",
+    "Crisis Responsibility",
+    "Locus",
+    "Org Reputation",
+    "Perceived Reputation",
+    "Prior Relationship Reputation",
+    "Responsibility Attribution",
+    "Seller Profit Motive Attribution",
+    "Stability"
+   ]
+  },
+  {
+   "name": "捐款與利他",
+   "members": [
+    "Altruistic Motivation",
+    "Donation",
+    "Donation Attitude",
+    "Identified Victim",
+    "Social information only + Single Victim",
+    "Statistical Information",
+    "Warm Glow"
+   ]
+  },
+  {
+   "name": "永續與綠色",
+   "members": [
+    "CSR Engagement",
+    "Ecological Worldview",
+    "Green Consumer Confusion",
+    "Green Perceived Risk",
+    "Green Trust",
+    "Greenwashing",
+    "Product Lifetime Labelling",
+    "Stakeholder Pressure",
+    "Stakeholder Salience"
+   ]
+  },
+  {
+   "name": "品牌、廣告與口碑",
+   "members": [
+    "Ad Credibility",
+    "Ad Likeability",
+    "Attitude toward the Ad",
+    "Brand Associations",
+    "Brand Attitude",
+    "Brand Awareness",
+    "Brand Cognitions",
+    "Brand Equity",
+    "Brand Identification",
+    "Brand Image",
+    "Brand Preference",
+    "eWOM Credibility",
+    "Review Consistency",
+    "Review Quality",
+    "Review Volume",
+    "Source Attractiveness",
+    "Source Expertise",
+    "Source Trustworthiness",
+    "Sponsorship Disclosure",
+    "Word of Mouth"
+   ]
+  },
+  {
+   "name": "轉換與留存",
+   "members": [
+    "Alternative Attractiveness",
+    "Consumer Loyalty",
+    "Continuance Commitment",
+    "Continuance Intention",
+    "Cost of Multihoming",
+    "Customer Complaints",
+    "Customer Retention",
+    "Employee Retention",
+    "Exit",
+    "Financial Switching Cost",
+    "Habit",
+    "Platform Lock-in",
+    "Procedural Switching Cost",
+    "Relational Switching Cost",
+    "Switching Behavior",
+    "Switching Benefits",
+    "Switching cost",
+    "Switching Intention",
+    "Turnover Intention",
+    "User Resistance"
+   ]
+  },
+  {
+   "name": "風險、威脅與隱私",
+   "members": [
+    "AI Anxiety",
+    "Danger Control",
+    "Fear",
+    "Fear Control",
+    "Fear of Isolation",
+    "Insecurity",
+    "Job Replacement Threat",
+    "Loss Aversion",
+    "Moral Hazard",
+    "Perceived Risk",
+    "Perceived Severity",
+    "Perceived Susceptibility",
+    "Perceived Threat",
+    "Privacy Awareness",
+    "Privacy Concern",
+    "Privacy Experiences",
+    "Risk Aversion of Agent",
+    "Risk Seeking",
+    "Safeguard Cost",
+    "Safeguard Effectiveness",
+    "Sanction Severity",
+    "Security Awareness",
+    "Security Policy Violation",
+    "Techno-complexity",
+    "Techno-invasion",
+    "Techno-overload",
+    "Technostress",
+    "Threat of New Entrants",
+    "Threat of Substitutes",
+    "Threat Perception",
+    "Threat to Freedom"
+   ]
+  },
+  {
+   "name": "公平與正義",
+   "members": [
+    "Distributive Justice",
+    "Fairness",
+    "Input-Outcome Ratio Discrepancy",
+    "Interactional Justice",
+    "Perceived Fairness",
+    "Perceived Inequity",
+    "Perceived Injustice",
+    "Perceived Price Fairness",
+    "Procedural Justice"
+   ]
+  },
+  {
+   "name": "信任與可信度",
+   "members": [
+    "Accountability",
+    "Algorithm Transparency",
+    "Assurance",
+    "Automation Reliability",
+    "Credibility Heuristics",
+    "Disposition to Trust",
+    "Institution-based Trust",
+    "Message Objectivity",
+    "Perceived Accountability",
+    "Perceived Credibility",
+    "Perceived Transparency",
+    "Reliability",
+    "Signal Credibility",
+    "Skepticism",
+    "System Transparency",
+    "Task Objectivity",
+    "Trust",
+    "Trust in AI"
+   ]
+  },
+  {
+   "name": "滿意與期望",
+   "members": [
+    "Confirmation of Expectations",
+    "Dissatisfaction",
+    "Expectancy",
+    "Expectancy Violation",
+    "Expectation",
+    "Gratifications Obtained",
+    "Gratifications Sought",
+    "Job Dissatisfaction",
+    "Job Satisfaction",
+    "Outcome Expectations",
+    "Perceived Ease of Use",
+    "Performance Expectancy",
+    "Unmet Promises",
+    "User Satisfaction",
+    "Violation Feelings",
+    "Violation Valence"
+   ]
+  },
+  {
+   "name": "價值、效益與品質",
+   "members": [
+    "Argument Quality",
+    "Awareness of Consequence",
+    "Benefit",
+    "Communicator Reward Valence",
+    "Conditional Value",
+    "Emotional Value",
+    "Empathy",
+    "Epistemic Value",
+    "Explanation Quality",
+    "Functional Consequences",
+    "Functional Value",
+    "Individual Impact",
+    "Information Quality",
+    "Internal Service Quality",
+    "Leader-Member Exchange Quality",
+    "Learning Performance",
+    "Narrative Quality",
+    "Organizational Impact",
+    "Perceived Consequences",
+    "Perceived Durability",
+    "Perceived Health Benefits",
+    "Perceived Quality",
+    "Perceived Reward",
+    "Perceived Site Quality",
+    "Perceived Value",
+    "Personal Values",
+    "Psychosocial Consequences",
+    "PU Perceived Usefulness",
+    "Relative Advantage",
+    "Resource Value",
+    "Responsiveness",
+    "Rewards and Job Conditions",
+    "Service Quality",
+    "Shared Values",
+    "Social Value",
+    "System Quality",
+    "Tangibles",
+    "Value"
+   ]
+  },
+  {
+   "name": "成本與價格",
+   "members": [
+    "Agency Cost",
+    "Average Cost",
+    "Complexity",
+    "Dynamic Pricing",
+    "Entry Barriers",
+    "Fixed Cost Share",
+    "Perceived Barriers",
+    "Perceived Cost",
+    "Perceived Sacrifice",
+    "Price",
+    "Price Difference from Reference",
+    "Response Cost",
+    "Seller Cost Justification",
+    "Signal Cost",
+    "Subsidy to Price-sensitive Side",
+    "Task Complexity",
+    "Transaction Cost",
+    "Workload"
+   ]
+  },
+  {
+   "name": "規範與社會影響",
+   "members": [
+    "aligned norms",
+    "Bandwagon Cues",
+    "Bandwagon Effect",
+    "Coercive Pressure",
+    "Learning Pressure",
+    "Mimetic Pressure",
+    "Normative Commitment",
+    "Normative Pressure",
+    "Perceived Majority Support",
+    "Personal Norm",
+    "Social Cues",
+    "Social Environment",
+    "Social Norm",
+    "Social Persuasion",
+    "Social Response",
+    "Socialization",
+    "Subjective Norm",
+    "Support for Censorship"
+   ]
+  },
+  {
+   "name": "認同與群體",
+   "members": [
+    "Affective Polarization",
+    "Anonymity",
+    "Bonding Social Capital",
+    "Bridging Social Capital",
+    "Cross-cutting Exposure",
+    "In-group",
+    "Out-group",
+    "Parasocial Interaction",
+    "Partisan Media Exposure",
+    "Personal Identify",
+    "Reciprocity",
+    "Relatedness",
+    "Social Categorization",
+    "Social Distance",
+    "Social Groups Distinction",
+    "Social Identity",
+    "Social Network Use",
+    "Social Presence"
+   ]
+  },
+  {
+   "name": "AI 與演算法",
+   "members": [
+    "Ability to Modify Algorithm",
+    "Agency Cues",
+    "AI Authorship Disclosure",
+    "AI Avoidance",
+    "AI Literacy",
+    "AI Provider",
+    "Algorithm Aversion",
+    "Algorithm Error Observed",
+    "Algorithmic Advice",
+    "Automation Bias",
+    "Complacency",
+    "Decision Accuracy",
+    "Decision Error",
+    "Eeriness",
+    "Human Error Observed",
+    "Interactivity Cues",
+    "Machine Heuristic",
+    "Modality Cues",
+    "Navigability Cues",
+    "Perceived Anthropomorphism",
+    "Perceived Uniqueness Neglect",
+    "Personalization",
+    "Preference for AI Recommender",
+    "Prior AI Attitude",
+    "Purpose Alignment",
+    "Reliance on Automation",
+    "Signal Reliance"
+   ]
+  },
+  {
+   "name": "效能感與控制",
+   "members": [
+    "Ability",
+    "Absorptive Capacity",
+    "Autonomy",
+    "Choice Freedom",
+    "Collective Efficacy",
+    "Competence",
+    "Control",
+    "Dynamic Capabilities",
+    "Facilitating Conditions",
+    "Industry Profitability",
+    "Observability",
+    "Past Performance",
+    "Perceived Behavioral Control",
+    "Perceived Efficacy",
+    "Resource Inimitability",
+    "Resource Non-substitutability",
+    "Response Efficacy",
+    "Seizing Capability",
+    "Self-Efficacy",
+    "Sensing Capability",
+    "Skill",
+    "Technology Readiness",
+    "Transforming Capability",
+    "Trialability",
+    "Vicarious Exp"
+   ]
+  },
+  {
+   "name": "動機與情緒",
+   "members": [
+    "Affect",
+    "Affective Commitment",
+    "Arousal",
+    "Avoidance Motivation",
+    "Burnout",
+    "Challenge",
+    "Cognitive Absorption",
+    "Curiosity",
+    "Discomfort",
+    "Emotions",
+    "Flow",
+    "Goal Commitment",
+    "Goal Conflict",
+    "Goal Difficulty",
+    "Goal Specificity",
+    "Hedonic Goal",
+    "Hedonic Motivation",
+    "Immersion",
+    "Innovativeness",
+    "Instrumentality",
+    "Involvement",
+    "Joy",
+    "Motivation",
+    "Optimism",
+    "Personal Innovativeness",
+    "Playfulness",
+    "Protection Motivation",
+    "Utilitarian Goal",
+    "Valence",
+    "Well-being",
+    "Work Engagement"
+   ]
+  },
+  {
+   "name": "認知處理與說服",
+   "members": [
+    "Cognitive Load",
+    "Communication",
+    "Communication Effectiveness",
+    "Counterarguing",
+    "Cues to Action",
+    "Deliberative Thinking",
+    "Dissonance",
+    "Domain Expertise",
+    "Elaboration",
+    "Extraneous Load",
+    "Feedback",
+    "Forewarning",
+    "Gain Framing",
+    "Germane Load",
+    "Heuristic Cues",
+    "Inconsistent Cognition",
+    "Intrinsic Load",
+    "Knowledge",
+    "Loss Framing",
+    "Perceived Media Influence on Others",
+    "Perceived Media Influence on Self",
+    "Peripheral Cues",
+    "Persuasion Knowledge",
+    "Reactance",
+    "Refutational Preemption",
+    "Screening",
+    "Selective Exposure",
+    "Systematic Processing",
+    "Transportation"
+   ]
+  },
+  {
+   "name": "資訊、系統與科技特性",
+   "members": [
+    "Behavior",
+    "Compatibility",
+    "Complementary Goods",
+    "Disruptive Innovation",
+    "Environment",
+    "Environmental Uncertainty",
+    "Information Access",
+    "Information Asymmetry",
+    "Innovation Performance",
+    "Installed Base",
+    "Low-end Foothold",
+    "Media Richness",
+    "Media Use",
+    "Product Attributes",
+    "Provider-side Participation",
+    "Structure-Environment Fit",
+    "Task Characteristics",
+    "Task Equivocality",
+    "Task Subjectivity",
+    "Task Uncertainty",
+    "Technical Support",
+    "Technology",
+    "Technology Characteristics",
+    "TTF",
+    "User-side Installed Base",
+    "Winner-take-all Tendency"
+   ]
+  },
+  {
+   "name": "市場、策略與經濟",
+   "members": [
+    "Adverse Selection",
+    "Agency Problem",
+    "Asset Specificity",
+    "Behavioral Uncertainty",
+    "Buyer Bargaining Power",
+    "Competitive Advantage",
+    "Exploitation",
+    "Exploration",
+    "External Dependence",
+    "Firm Performance",
+    "Hierarchical Governance",
+    "Incumbent Focus on Profitable Customers",
+    "Incumbent Market Share",
+    "Incumbent Response",
+    "Interorganizational Ties",
+    "Job Resources",
+    "Market Efficiency",
+    "Monitoring",
+    "Operational Efficiency",
+    "Opportunistic Behavior",
+    "Organic Structure Need",
+    "Organizational Ambidexterity",
+    "Outcome-based Contract",
+    "Output Volume",
+    "Performance Oversupply",
+    "Product Scope",
+    "Psychological Contract Breach",
+    "Regulation",
+    "Resource Concentration",
+    "Resource Criticality",
+    "Resource Rarity",
+    "Resource Reconfiguration",
+    "Rivalry Intensity",
+    "Supplier Bargaining Power",
+    "Transaction Frequency"
+   ]
+  },
+  {
+   "name": "組織與工作",
+   "members": [
+    "Hygiene Factors",
+    "Job Demands",
+    "Job Performance",
+    "Motivator Factors",
+    "Organization",
+    "Organizational Citizenship Behavior",
+    "Organizational Support",
+    "Perceived Organizational Support",
+    "Relationship Commitment",
+    "Sanction Celerity",
+    "Sanction Certainty",
+    "Service Recovery",
+    "Social Support",
+    "Supervisor Support"
+   ]
+  },
+  {
+   "name": "態度",
+   "members": [
+    "Attitude",
+    "Attitude Change",
+    "Attitude Resistance",
+    "Attitude Strength"
+   ]
+  },
+  {
+   "name": "意圖與行為",
+   "members": [
+    "Adoption",
+    "Avoidance Behavior",
+    "Behavioral Intention",
+    "Customer Engagement",
+    "Prior Behavior Frequency",
+    "Purchase",
+    "Purchase Intention",
+    "Utilization Intention",
+    "Voice",
+    "Willingness to Speak Out"
+   ]
+  },
+  {
+   "name": "其他",
+   "members": [
+    "save for later"
+   ]
+  }
+ ]
 }
