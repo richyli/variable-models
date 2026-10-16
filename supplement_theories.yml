@@ -10,6 +10,11 @@ same:
   - [Trust in AI, Trust in Algorithm, Trust in Automation, Trust in Machine]
   - [Purchase Intention, Buying Intention]
   - [Reliance on Automation, Algorithm Use, Advice Utilization, Algorithm Reliance]
+  - [User Satisfaction, Consumer Satisfaction, Customer Satisfaction]
+  - [Competitive Advantage, Sustained Competitive Advantage]
+  - [Environmental Uncertainty, Environmental Dynamism]
+  - [Job Satisfaction, Employee Satisfaction]
+  - [Purchase, Purchase Behavior, Actual Purchase]
 
 similar:
   - [Trust, Trust in AI, Green Trust, Social Presence]
@@ -23,6 +28,15 @@ similar:
   - [Emotions, Fear, Affect, Eeriness]
   - [Social Norm, Social Influence, Normative Pressure, Perceived Majority Support]
   - [Knowledge, AI Literacy, Persuasion Knowledge, Domain Expertise]
+  - [Attitude, Brand Attitude, Attitude toward the Ad]
+  - [Behavior, Purchase, Adoption]
+  - [Consumer Loyalty, Customer Retention, Brand Commitment, Affective Commitment]
+  - [Turnover Intention, Exit, Switching Intention]
+  - [Perceived Fairness, Perceived Price Fairness, Distributive Justice, Procedural Justice, Fairness]
+  - [Firm Performance, Job Performance, Industry Profitability, Competitive Advantage]
+  - [Org Reputation, Brand Reputation, Brand Image, Perceived Reputation]
+  - [Word of Mouth, eWOM Credibility, Voice]
+  - [Information Asymmetry, Adverse Selection, Moral Hazard]
 
 theories:
 
@@ -477,10 +491,11 @@ theories:
       - [Switching cost, Switching Intention, "-"]
       - [Habit, Switching Intention, "-"]
       - [Switching Intention, Switching Behavior, "+"]
-  "Commitment-Trust Theory":
+  "Commitment trust theory":
+    note: "Commitment trust theory"
     abbr: KMV
     zh: 承諾－信任理論
-    field: 關係行銷
+    field: 行銷／關係行銷
     desc: Morgan & Hunt（1994）：共享價值與溝通建立信任，投機行為破壞信任；信任與承諾是關係的關鍵中介。
     edges:
       - [Shared Values, Trust, "+"]
@@ -793,3 +808,397 @@ theories:
       - [Instrumentality, Motivation, "+"]
       - [Valence, Motivation, "+"]
       - [Motivation, Behavior, "+"]
+
+  # ───────── 核心商業理論：策略與組織經濟（2026-10-16 補） ─────────
+  "T RBV Resource-Based View":
+    note: "T RBV Resource-Based View"
+    abbr: RBV
+    zh: 資源基礎觀點
+    field: 策略
+    edges:
+      - [Resource Value, Sustained Competitive Advantage, "+"]
+      - [Resource Rarity, Sustained Competitive Advantage, "+"]
+      - [Resource Inimitability, Sustained Competitive Advantage, "+"]
+      - [Resource Non-substitutability, Sustained Competitive Advantage, "+"]
+      - [Sustained Competitive Advantage, Firm Performance, "+"]
+  "T Dynamic Capabilities Theory":
+    note: "T Dynamic Capabilities Theory"
+    abbr: DCT
+    zh: 動態能力理論
+    field: 策略
+    edges:
+      - [Sensing Capability, Dynamic Capabilities, "+"]
+      - [Seizing Capability, Dynamic Capabilities, "+"]
+      - [Transforming Capability, Dynamic Capabilities, "+"]
+      - [Dynamic Capabilities, Resource Reconfiguration, "+"]
+      - [Resource Reconfiguration, Sustained Competitive Advantage, "+"]
+      - [Environmental Dynamism, "Dynamic Capabilities -> Resource Reconfiguration", m]
+  "Five Forces 五力分析":
+    note: "Five Forces 五力分析"
+    abbr: 5F
+    zh: 五力分析
+    field: 策略
+    edges:
+      - [Rivalry Intensity, Industry Profitability, "-"]
+      - [Threat of New Entrants, Industry Profitability, "-"]
+      - [Threat of Substitutes, Industry Profitability, "-"]
+      - [Supplier Bargaining Power, Industry Profitability, "-"]
+      - [Buyer Bargaining Power, Industry Profitability, "-"]
+      - [Entry Barriers, Threat of New Entrants, "-"]
+  "Transaction Cost":
+    note: "Transaction Cost"
+    abbr: TCE
+    zh: 交易成本經濟學
+    field: 組織經濟
+    edges:
+      - [Asset Specificity, Transaction Cost, "+"]
+      - [Behavioral Uncertainty, Transaction Cost, "+"]
+      - [Environmental Uncertainty, Transaction Cost, "+"]
+      - [Transaction Frequency, Transaction Cost, "+"]
+      - [Transaction Cost, Hierarchical Governance, "+"]
+      - [Opportunistic Behavior, Transaction Cost, "+"]
+  "T Agency Theory":
+    note: "T Agency Theory"
+    abbr: AgT
+    zh: 代理理論
+    field: 組織經濟
+    edges:
+      - [Goal Conflict, Agency Problem, "+"]
+      - [Information Asymmetry, Agency Problem, "+"]
+      - [Agency Problem, Agency Cost, "+"]
+      - [Monitoring, Agency Problem, "-"]
+      - [Outcome-based Contract, Agency Problem, "-"]
+      - [Risk Aversion of Agent, "Outcome-based Contract -> Agency Problem", m]
+  "T IAT Information Asymmetry Theory":
+    note: "T IAT Information Asymmetry Theory"
+    abbr: IAT
+    zh: 資訊不對稱（逆選擇與道德危機）
+    field: 組織經濟
+    edges:
+      - [Information Asymmetry, Adverse Selection, "+"]
+      - [Information Asymmetry, Moral Hazard, "+"]
+      - [Adverse Selection, Market Efficiency, "-"]
+      - [Signal Credibility, Information Asymmetry, "-"]
+      - [Screening, Information Asymmetry, "-"]
+  "T SHT Stakeholder Theory":
+    note: "T SHT Stakeholder Theory"
+    abbr: SHT
+    zh: 利害關係人理論
+    field: 策略／CSR
+    edges:
+      - [Stakeholder Pressure, CSR Engagement, "+"]
+      - [Stakeholder Salience, Stakeholder Pressure, "+"]
+      - [CSR Engagement, Org Reputation, "+"]
+      - [CSR Engagement, Trust, "+"]
+      - [Org Reputation, Firm Performance, "+"]
+  "T RDT Resource Dependence":
+    note: "T RDT Resource Dependence"
+    abbr: RDT
+    zh: 資源依賴理論
+    field: 組織
+    edges:
+      - [Resource Criticality, External Dependence, "+"]
+      - [Resource Concentration, External Dependence, "+"]
+      - [External Dependence, Environmental Uncertainty, "+"]
+      - [External Dependence, Interorganizational Ties, "+"]
+      - [Interorganizational Ties, Environmental Uncertainty, "-"]
+  "T Network Effects":
+    note: "T Network Effects"
+    abbr: NetFx
+    zh: 網路效應
+    field: 策略／平台
+    edges:
+      - [Installed Base, Perceived Value, "+"]
+      - [Perceived Value, Adoption, "+"]
+      - [Adoption, Installed Base, "+"]
+      - [Complementary Goods, Perceived Value, "+"]
+      - [Installed Base, Switching cost, "+"]
+  "Two-Sided Market":
+    note: "Two-Sided Market"
+    abbr: 2SM
+    zh: 雙邊市場／平台經濟
+    field: 策略／平台
+    edges:
+      - [User-side Installed Base, Provider-side Participation, "+"]
+      - [Provider-side Participation, User-side Installed Base, "+"]
+      - [Cost of Multihoming, Platform Lock-in, "-"]
+      - [Platform Lock-in, Winner-take-all Tendency, "+"]
+      - [Subsidy to Price-sensitive Side, User-side Installed Base, "+"]
+  "T Disruptive Innovation Theory":
+    note: "T Disruptive Innovation Theory"
+    abbr: DisInn
+    zh: 破壞式創新
+    field: 策略／創新
+    edges:
+      - [Low-end Foothold, Disruptive Innovation, "+"]
+      - [Performance Oversupply, Low-end Foothold, "+"]
+      - [Disruptive Innovation, Incumbent Market Share, "-"]
+      - [Incumbent Focus on Profitable Customers, Incumbent Response, "-"]
+      - [Incumbent Response, Incumbent Market Share, "+"]
+  "Ambidextrous Organization":
+    note: "Ambidextrous Organization"
+    abbr: Ambidex
+    zh: 雙元組織（探索與利用）
+    field: 策略／組織
+    edges:
+      - [Exploration, Innovation Performance, "+"]
+      - [Exploitation, Operational Efficiency, "+"]
+      - [Organizational Ambidexterity, Firm Performance, "+"]
+      - [Exploration, Organizational Ambidexterity, "+"]
+      - [Exploitation, Organizational Ambidexterity, "+"]
+      - [Environmental Dynamism, "Organizational Ambidexterity -> Firm Performance", m]
+  "T Contingency Theory":
+    note: "T Contingency Theory"
+    abbr: ConT
+    zh: 權變理論
+    field: 組織
+    edges:
+      - [Environmental Uncertainty, Organic Structure Need, "+"]
+      - [Structure-Environment Fit, Firm Performance, "+"]
+      - [Task Uncertainty, Structure-Environment Fit, "-"]
+  "T Economies of Scale and Scope":
+    note: "T Economies of Scale and Scope"
+    abbr: EoS
+    zh: 規模與範疇經濟
+    field: 組織經濟
+    edges:
+      - [Output Volume, Average Cost, "-"]
+      - [Product Scope, Average Cost, "-"]
+      - [Average Cost, Competitive Advantage, "-"]
+      - [Fixed Cost Share, "Output Volume -> Average Cost", m]
+
+  # ───────── 核心商業理論：行銷與顧客 ─────────
+  "CBBE":
+    note: CBBE
+    abbr: CBBE
+    zh: 顧客基礎品牌權益（Keller）
+    field: 行銷／品牌
+    edges:
+      - [Brand Awareness, Brand Equity, "+"]
+      - [Brand Associations, Brand Image, "+"]
+      - [Brand Image, Brand Equity, "+"]
+      - [Brand Equity, Brand Attitude, "+"]
+      - [Brand Attitude, Purchase Intention, "+"]
+      - [Brand Equity, Consumer Loyalty, "+"]
+  "Brand Attitude Model":
+    abbr: Aad
+    zh: 廣告態度→品牌態度→購買意圖
+    field: 行銷／廣告
+    desc: MacKenzie, Lutz & Belch（1986）：對廣告的態度經品牌認知與品牌態度轉成購買意圖（雙中介假說）。
+    edges:
+      - [Ad Credibility, Attitude toward the Ad, "+"]
+      - [Ad Likeability, Attitude toward the Ad, "+"]
+      - [Attitude toward the Ad, Brand Attitude, "+"]
+      - [Attitude toward the Ad, Brand Cognitions, "+"]
+      - [Brand Cognitions, Brand Attitude, "+"]
+      - [Brand Attitude, Purchase Intention, "+"]
+  "Hierarchy of Effects":
+    abbr: HoE
+    zh: 效果層級模式（AIDA／Lavidge-Steiner）
+    field: 行銷／廣告
+    desc: Lavidge & Steiner（1961）：認知→情感→行為的階梯：知曉、知識、喜好、偏好、確信、購買。
+    edges:
+      - [Brand Awareness, Knowledge, "+"]
+      - [Knowledge, Brand Attitude, "+"]
+      - [Brand Attitude, Brand Preference, "+"]
+      - [Brand Preference, Purchase Intention, "+"]
+      - [Purchase Intention, Purchase, "+"]
+  "Service-Profit Chain":
+    abbr: SPC
+    zh: 服務利潤鏈
+    field: 行銷／服務
+    desc: Heskett et al.（1994）：內部服務品質→員工滿意→員工留任與生產力→外部服務價值→顧客滿意→忠誠→獲利與成長。
+    edges:
+      - [Internal Service Quality, Employee Satisfaction, "+"]
+      - [Employee Satisfaction, Employee Retention, "+"]
+      - [Employee Retention, Service Quality, "+"]
+      - [Service Quality, Perceived Value, "+"]
+      - [Perceived Value, User Satisfaction, "+"]
+      - [User Satisfaction, Consumer Loyalty, "+"]
+      - [Consumer Loyalty, Firm Performance, "+"]
+  "T Means-End Chain Theory":
+    note: "T Means-End Chain Theory"
+    abbr: MEC
+    zh: 手段目的鏈
+    field: 行銷／消費者
+    edges:
+      - [Product Attributes, Functional Consequences, "+"]
+      - [Functional Consequences, Psychosocial Consequences, "+"]
+      - [Psychosocial Consequences, Personal Values, "+"]
+      - [Personal Values, Purchase Intention, "+"]
+  "Perceived Value Model":
+    abbr: PVal
+    zh: 知覺價值模型（Zeithaml）
+    field: 行銷／消費者
+    desc: Zeithaml（1988）：知覺價值是「得到的」與「付出的」之間的權衡，由知覺品質與知覺犧牲（價格、時間、心力）決定。
+    edges:
+      - [Perceived Quality, Perceived Value, "+"]
+      - [Perceived Sacrifice, Perceived Value, "-"]
+      - [Price, Perceived Quality, "+"]
+      - [Price, Perceived Sacrifice, "+"]
+      - [Perceived Value, Purchase Intention, "+"]
+  "Price Fairness Model":
+    abbr: PFair
+    zh: 價格公平（雙重權利原則）
+    field: 行銷／定價
+    desc: Kahneman, Knetsch & Thaler（1986）；Xia, Monroe & Cox（2004）：與參考價格的落差、賣方動機歸因與交易相似性決定公平感，公平感影響滿意與購買。
+    edges:
+      - [Price Difference from Reference, Perceived Price Fairness, "-"]
+      - [Seller Cost Justification, Perceived Price Fairness, "+"]
+      - [Seller Profit Motive Attribution, Perceived Price Fairness, "-"]
+      - [Perceived Price Fairness, User Satisfaction, "+"]
+      - [Perceived Price Fairness, Purchase Intention, "+"]
+      - [Dynamic Pricing, Price Difference from Reference, "+"]
+  "T SCE Switching Cost Effect":
+    note: "T SCE Switching Cost Effect"
+    abbr: SCE
+    zh: 轉換成本效應
+    field: 行銷／顧客
+    edges:
+      - [Procedural Switching Cost, Switching cost, "+"]
+      - [Financial Switching Cost, Switching cost, "+"]
+      - [Relational Switching Cost, Switching cost, "+"]
+      - [Switching cost, Customer Retention, "+"]
+      - [Switching cost, "User Satisfaction -> Customer Retention", m]
+      - [User Satisfaction, Customer Retention, "+"]
+  "Electronic Word-of-Mouth Model":
+    abbr: eWOM
+    zh: 網路口碑模型
+    field: 行銷／數位
+    desc: 整理自 eWOM 採用研究（Cheung & Thadani 2012）：訊息品質、來源可信度與評論一致性影響口碑可信度，再影響態度與購買。
+    edges:
+      - [Review Quality, eWOM Credibility, "+"]
+      - [Perceived Credibility, eWOM Credibility, "+"]
+      - [Review Consistency, eWOM Credibility, "+"]
+      - [Review Volume, Bandwagon Effect, "+"]
+      - [eWOM Credibility, Brand Attitude, "+"]
+      - [Brand Attitude, Purchase Intention, "+"]
+  "Customer Engagement Model":
+    abbr: CEng
+    zh: 顧客參與（投入）模型
+    field: 行銷／顧客
+    desc: Brodie et al.（2011）；van Doorn et al.（2010）：滿意、信任與認同驅動顧客的認知、情感與行為投入，投入提升忠誠與口碑。
+    edges:
+      - [User Satisfaction, Customer Engagement, "+"]
+      - [Trust, Customer Engagement, "+"]
+      - [Brand Identification, Customer Engagement, "+"]
+      - [Customer Engagement, Consumer Loyalty, "+"]
+      - [Customer Engagement, Word of Mouth, "+"]
+  "Exit, Voice, Loyalty":
+    note: "Exit, Voice, Loyalty"
+    abbr: EVL
+    zh: 退出、發聲與忠誠（Hirschman）
+    field: 組織經濟／顧客
+    edges:
+      - [Dissatisfaction, Exit, "+"]
+      - [Dissatisfaction, Voice, "+"]
+      - [Consumer Loyalty, Exit, "-"]
+      - [Consumer Loyalty, Voice, "+"]
+      - [Alternative Attractiveness, Exit, "+"]
+      - [Voice, Service Recovery, "+"]
+
+  # ───────── 核心商業理論：組織行為 ─────────
+  "Three-Component Commitment Model":
+    abbr: TCM
+    zh: 組織承諾三成分模型
+    field: 組織行為
+    desc: Meyer & Allen（1991）：情感、持續與規範承諾各有前因，共同降低離職意圖。
+    edges:
+      - [Perceived Organizational Support, Affective Commitment, "+"]
+      - [Switching cost, Continuance Commitment, "+"]
+      - [Socialization, Normative Commitment, "+"]
+      - [Affective Commitment, Turnover Intention, "-"]
+      - [Continuance Commitment, Turnover Intention, "-"]
+      - [Normative Commitment, Turnover Intention, "-"]
+      - [Affective Commitment, Organizational Citizenship Behavior, "+"]
+  "T POS Perceived Organizational Support":
+    note: "T POS Perceived Organizational Support"
+    abbr: POS
+    zh: 知覺組織支持
+    field: 組織行為
+    edges:
+      - [Fairness, Perceived Organizational Support, "+"]
+      - [Supervisor Support, Perceived Organizational Support, "+"]
+      - [Rewards and Job Conditions, Perceived Organizational Support, "+"]
+      - [Perceived Organizational Support, Affective Commitment, "+"]
+      - [Perceived Organizational Support, Job Performance, "+"]
+      - [Perceived Organizational Support, Turnover Intention, "-"]
+  "T LMX Leader-member exchange":
+    note: "T LMX Leader-member exchange"
+    abbr: LMX
+    zh: 領導者－成員交換
+    field: 組織行為
+    edges:
+      - [Leader-Member Exchange Quality, Job Satisfaction, "+"]
+      - [Leader-Member Exchange Quality, Organizational Citizenship Behavior, "+"]
+      - [Leader-Member Exchange Quality, Job Performance, "+"]
+      - [Leader-Member Exchange Quality, Turnover Intention, "-"]
+      - [Trust, Leader-Member Exchange Quality, "+"]
+  "T Justice Theory":
+    note: "T Justice Theory"
+    abbr: OJ
+    zh: 組織正義（分配、程序、互動）
+    field: 組織行為
+    edges:
+      - [Distributive Justice, Job Satisfaction, "+"]
+      - [Procedural Justice, Affective Commitment, "+"]
+      - [Interactional Justice, Trust, "+"]
+      - [Procedural Justice, Trust, "+"]
+      - [Trust, Organizational Citizenship Behavior, "+"]
+  "Psychological Contract Breach":
+    abbr: PCB
+    zh: 心理契約違反
+    field: 組織行為
+    desc: Robinson & Rousseau（1994）；Zhao et al.（2007）：知覺到組織未履行承諾引發違反感，降低滿意、承諾與公民行為，提高離職意圖。
+    edges:
+      - [Unmet Promises, Psychological Contract Breach, "+"]
+      - [Psychological Contract Breach, Violation Feelings, "+"]
+      - [Violation Feelings, Job Satisfaction, "-"]
+      - [Violation Feelings, Affective Commitment, "-"]
+      - [Violation Feelings, Turnover Intention, "+"]
+      - [Violation Feelings, Organizational Citizenship Behavior, "-"]
+  "Goal-Setting Theory":
+    abbr: GST
+    zh: 目標設定理論
+    field: 組織行為
+    desc: Locke & Latham（1990, 2002）：具體且困難的目標在承諾與回饋下提高績效；任務複雜度削弱效果。
+    edges:
+      - [Goal Specificity, Job Performance, "+"]
+      - [Goal Difficulty, Job Performance, "+"]
+      - [Goal Commitment, "Goal Difficulty -> Job Performance", m]
+      - [Feedback, "Goal Specificity -> Job Performance", m]
+      - [Task Complexity, "Goal Difficulty -> Job Performance", m]
+      - [Self-Efficacy, Goal Commitment, "+"]
+  "Two-Factor Theory":
+    abbr: Herzberg
+    zh: 雙因子理論
+    field: 組織行為
+    desc: Herzberg（1959）：保健因子不足造成不滿，激勵因子充足才帶來滿意；兩者不是同一連續體。
+    edges:
+      - [Hygiene Factors, Job Dissatisfaction, "-"]
+      - [Motivator Factors, Job Satisfaction, "+"]
+      - [Job Satisfaction, Motivation, "+"]
+      - [Job Dissatisfaction, Turnover Intention, "+"]
+  "Equity Theory":
+    abbr: EqT
+    zh: 公平理論（Adams）
+    field: 組織行為
+    desc: Adams（1965）：投入／產出比與參照對象不相等時產生不公平感，個人會調整投入或離開。
+    edges:
+      - [Input-Outcome Ratio Discrepancy, Perceived Inequity, "+"]
+      - [Perceived Inequity, Motivation, "-"]
+      - [Perceived Inequity, Job Satisfaction, "-"]
+      - [Perceived Inequity, Turnover Intention, "+"]
+      - [Perceived Inequity, Distributive Justice, "-"]
+  "Job Demands-Resources Model":
+    abbr: JD-R
+    zh: 工作要求－資源模式
+    field: 組織行為
+    desc: Bakker & Demerouti（2007）：工作要求導致耗竭，工作資源帶來投入並緩衝要求的傷害。
+    edges:
+      - [Job Demands, Burnout, "+"]
+      - [Job Resources, Work Engagement, "+"]
+      - [Job Resources, "Job Demands -> Burnout", m]
+      - [Burnout, Job Performance, "-"]
+      - [Work Engagement, Job Performance, "+"]
+      - [Burnout, Turnover Intention, "+"]

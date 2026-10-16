@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16 12:45",
+ "generated": "2026-10-16 18:33",
  "vault": "Zettel",
  "variables": [
   {
@@ -14,11 +14,13 @@
    "theories": [
     "T IDT Innovation Diffusion Theory",
     "T Institutional Theory",
+    "T Network Effects",
     "T TOE Technology–Organization–Environment"
    ],
    "similar": [
     "Behavior",
-    "Donation"
+    "Donation",
+    "Purchase"
    ],
    "papers": [],
    "paperUrls": {},
@@ -211,7 +213,7 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "1. **準確性 (Accuracy) 確保資訊無錯誤並能真實反映現實世界的情況。可以透過比對資訊系統產生的數據與實際數據或外部參考來源來評估其準確性，例如交叉檢查報表或數據稽核。 1. 正確性 (Accuracy) 定義:** 資訊必須正確無誤，真實反映現實世界或符合預期結果。 將資訊系統產生的資料與已知的正確資料進行比對，計算錯誤率或偏差值。 利用統計抽樣技術，驗證資料的準確度。 透過使用者回饋或專家審查，識別潛在錯誤。 追蹤數據來源和處理過程，確保資料的完整性和可靠性。 意義**：指資訊與實際情況（或真實世…",
+   "desc": "1. 準確性 (Accuracy) 確保資訊無錯誤並能真實反映現實世界的情況。可以透過比對資訊系統產生的數據與實際數據或外部參考來源來評估其準確性，例如交叉檢查報表或數據稽核。 1. 正確性 (Accuracy) 定義: 資訊必須正確無誤，真實反映現實世界或符合預期結果。 將資訊系統產生的資料與已知的正確資料進行比對，計算錯誤率或偏差值。 利用統計抽樣技術，驗證資料的準確度。 透過使用者回饋或專家審查，識別潛在錯誤。 追蹤數據來源和處理過程，確保資料的完整性和可靠性。 意義：指資訊與實際情況（或真實世界）之間的符…",
    "unlinked": false
   },
   {
@@ -224,10 +226,12 @@
     }
    ],
    "theories": [
+    "Equity Theory",
     "Expectancy Theory (Vroom)",
     "Heuristic-Systematic Model",
     "SDT Self-Determination theory",
-    "T EVT Expectancy-Value"
+    "T EVT Expectancy-Value",
+    "Two-Factor Theory"
    ],
    "similar": [
     "Behavioral Intention",
@@ -308,7 +312,7 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "知覺易用性 (PEOU) 定義**： 指使用者相信使用特定系統是「免於費力」（free of effort）的程度 。 源自 \"Ease\" 的定義，即免於困難或巨大的努力 。 基於資源分配理論，個人的精力是有限的資源，易用性意味著資源消耗較少 。",
+   "desc": "知覺易用性 (PEOU) 定義： 指使用者相信使用特定系統是「免於費力」（free of effort）的程度 。 源自 \"Ease\" 的定義，即免於困難或巨大的努力 。 基於資源分配理論，個人的精力是有限的資源，易用性意味著資源消耗較少 。",
    "unlinked": false
   },
   {
@@ -394,7 +398,7 @@
    ],
    "papers": [],
    "paperUrls": {},
-   "desc": "知覺有用性 (PU) 定義**： 指使用者相信使用特定系統能夠提升其工作績效的程度 。 源自 \"Useful\" 的定義，即能夠被有利地使用（capable of be used advantageously）。 在組織情境中，這通常與獲得獎勵（如加薪、升遷）的績效表現掛鉤 。",
+   "desc": "知覺有用性 (PU) 定義： 指使用者相信使用特定系統能夠提升其工作績效的程度 。 源自 \"Useful\" 的定義，即能夠被有利地使用（capable of be used advantageously）。 在組織情境中，這通常與獲得獎勵（如加薪、升遷）的績效表現掛鉤 。",
    "unlinked": false
   },
   {
@@ -430,12 +434,15 @@
    ],
    "theories": [
     "Push-Pull-Mooring",
-    "Status Quo Bias Theory"
+    "Status Quo Bias Theory",
+    "T Network Effects",
+    "T SCE Switching Cost Effect",
+    "Three-Component Commitment Model"
    ],
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "2. **Switching Cost（轉換成本） 當使用者想更換產品或服務供應商（例如換手機平台、換銀行、換線上訂閱）時，所必須付出的各種代價與不便。 包含金錢、時間、學習新操作方式，甚至失去既有的優惠或聯絡人脈的成本。 (https://www.sciencedirect.com/science/article/pii/S0019850115001790)",
+   "desc": "2. Switching Cost（轉換成本） 當使用者想更換產品或服務供應商（例如換手機平台、換銀行、換線上訂閱）時，所必須付出的各種代價與不便。 包含金錢、時間、學習新操作方式，甚至失去既有的優惠或聯絡人脈的成本。 (https://www.sciencedirect.com/science/article/pii/S0019850115001790)",
    "unlinked": false
   },
   {
@@ -519,6 +526,8 @@
    "id": "User Satisfaction",
    "label": "User Satisfaction",
    "aliases": [
+    "Consumer Satisfaction",
+    "Customer Satisfaction",
     "Satisfaction",
     "Satisfication"
    ],
@@ -530,11 +539,15 @@
    "theories": [
     "American Customer Satisfaction Index Model",
     "CASA - Computers are social Actors",
+    "Customer Engagement Model",
     "Habit in IS Continuance",
     "IS Continuance Model",
+    "Price Fairness Model",
+    "Service-Profit Chain",
     "T DMIS Delone and McLean IS Success Model",
     "T ECT Expectation Confirmation Theory",
     "T Flow Theory",
+    "T SCE Switching Cost Effect",
     "T SERVQUAL",
     "T SPT Social Presence Theory",
     "Technostress Model"
@@ -558,9 +571,13 @@
    ],
    "theories": [
     "American Customer Satisfaction Index Model",
-    "Commitment-Trust Theory"
+    "Commitment trust theory",
+    "T SCE Switching Cost Effect"
    ],
-   "similar": [],
+   "similar": [
+    "Affective Commitment",
+    "Consumer Loyalty"
+   ],
    "papers": [],
    "paperUrls": {},
    "desc": "",
@@ -645,6 +662,8 @@
     "TAM"
    ],
    "similar": [
+    "Attitude toward the Ad",
+    "Brand Attitude",
     "Donation Attitude"
    ],
    "papers": [],
@@ -735,6 +754,7 @@
     "Avoidance Behavior",
     "Donation",
     "Media Use",
+    "Purchase",
     "Switching Behavior"
    ],
    "papers": [],
@@ -978,6 +998,7 @@
     }
    ],
    "theories": [
+    "Hierarchy of Effects",
     "T Absorptive Capacity Theory",
     "T KBV Knowledge-Based View"
    ],
@@ -1024,9 +1045,12 @@
     }
    ],
    "theories": [
-    "T SCCT Situational Crisis Communication"
+    "T SCCT Situational Crisis Communication",
+    "T SHT Stakeholder Theory"
    ],
    "similar": [
+    "Brand Image",
+    "Perceived Reputation",
     "Prior Relationship Reputation"
    ],
    "papers": [],
@@ -1288,6 +1312,7 @@
    ],
    "theories": [
     "Extended Parallel Process Model",
+    "Goal-Setting Theory",
     "Health Belief Model",
     "Protection Motivation Theory",
     "Status Quo Bias Theory",
@@ -1303,7 +1328,7 @@
    ],
    "papers": [],
    "paperUrls": {},
-   "desc": "題目全文**： 在資訊系統採納研究中，「自我效能」（Self-efficacy）被認為是預測用戶行為的重要心理指標。請定義何謂資訊技術自我效能，並討論其如何影響用戶對新興技術（如 AI 聊天機器人）的信任與實際使用行為。 題目類型**： 名詞定義與機制分析 名詞定義**：指個人對於自己能夠成功運用特定技術、完成特定任務能力的信心程度 。 對信任的影響**：高自我效能的用戶通常對技術有更強的掌握感，更容易在互動中建立對系統可靠性與有效性的信任（Trust） 。 對使用行為的影響**：自我效能會影響用戶面對技術障礙時…",
+   "desc": "題目全文： 在資訊系統採納研究中，「自我效能」（Self-efficacy）被認為是預測用戶行為的重要心理指標。請定義何謂資訊技術自我效能，並討論其如何影響用戶對新興技術（如 AI 聊天機器人）的信任與實際使用行為。 題目類型： 名詞定義與機制分析 名詞定義：指個人對於自己能夠成功運用特定技術、完成特定任務能力的信心程度 。 對信任的影響：高自我效能的用戶通常對技術有更強的掌握感，更容易在互動中建立對系統可靠性與有效性的信任（Trust） 。 對使用行為的影響：自我效能會影響用戶面對技術障礙時的毅力。高自我效能者…",
    "unlinked": false
   },
   {
@@ -1402,7 +1427,7 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "1. **Identified Single Victim Effect – 在 Study 1 中，結果顯示：當單一受害者提供完整識別資訊（年齡、姓名與照片）時，其假設捐款意願顯著高於僅提供部分或無識別資訊的情境。 – 數據來源：247名受試者在2 × 4設計下，對單一受害者條件中，含照片組的捐款金額（對數轉換後）顯著高於其他組別；而在群體情境中，識別資訊並未顯著影響捐助意願。 結論：識別受害者效應主要適用於單一個體，當受害者被充分個體化（尤其有照片）時，能夠顯著提升救助意願。 (關鍵概念：Identified…",
+   "desc": "1. Identified Single Victim Effect – 在 Study 1 中，結果顯示：當單一受害者提供完整識別資訊（年齡、姓名與照片）時，其假設捐款意願顯著高於僅提供部分或無識別資訊的情境。 – 數據來源：247名受試者在2 × 4設計下，對單一受害者條件中，含照片組的捐款金額（對數轉換後）顯著高於其他組別；而在群體情境中，識別資訊並未顯著影響捐助意願。 結論：識別受害者效應主要適用於單一個體，當受害者被充分個體化（尤其有照片）時，能夠顯著提升救助意願。 (關鍵概念：Identified V…",
    "unlinked": false
   },
   {
@@ -1573,9 +1598,13 @@
    "notes": [],
    "theories": [
     "APCO Macro Model",
-    "Commitment-Trust Theory",
+    "Commitment trust theory",
+    "Customer Engagement Model",
     "Initial Trust Model",
+    "T Justice Theory",
+    "T LMX Leader-member exchange",
     "T SET Social Exchange Theory",
+    "T SHT Stakeholder Theory",
     "T SPT Social Presence Theory"
    ],
    "similar": [
@@ -1599,6 +1628,7 @@
    "theories": [
     "AI Authorship Disclosure Effects",
     "Bandwagon Heuristic",
+    "Electronic Word-of-Mouth Model",
     "MAIN Model",
     "Source Credibility Theory"
    ],
@@ -1648,10 +1678,17 @@
    ],
    "notes": [],
    "theories": [
+    "Brand Attitude Model",
+    "CBBE",
+    "Electronic Word-of-Mouth Model",
     "Greenwashing Perception Model",
+    "Hierarchy of Effects",
+    "Perceived Value Model",
     "Persuasion Knowledge Model",
+    "Price Fairness Model",
     "Product Lifetime Labelling Effects",
     "Signaling theory",
+    "T Means-End Chain Theory",
     "Theory of Consumption Values",
     "Word-of-Machine Effect"
    ],
@@ -1688,6 +1725,89 @@
    "unlinked": true
   },
   {
+   "id": "Competitive Advantage",
+   "label": "Competitive Advantage",
+   "aliases": [
+    "Sustained Competitive Advantage"
+   ],
+   "notes": [],
+   "theories": [
+    "T Dynamic Capabilities Theory",
+    "T Economies of Scale and Scope",
+    "T RBV Resource-Based View"
+   ],
+   "similar": [
+    "Firm Performance",
+    "Industry Profitability",
+    "Job Performance"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Environmental Uncertainty",
+   "label": "Environmental Uncertainty",
+   "aliases": [
+    "Environmental Dynamism"
+   ],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization",
+    "T Contingency Theory",
+    "T Dynamic Capabilities Theory",
+    "T RDT Resource Dependence",
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Job Satisfaction",
+   "label": "Job Satisfaction",
+   "aliases": [
+    "Employee Satisfaction"
+   ],
+   "notes": [],
+   "theories": [
+    "Equity Theory",
+    "Psychological Contract Breach",
+    "Service-Profit Chain",
+    "T Justice Theory",
+    "T LMX Leader-member exchange",
+    "Two-Factor Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Purchase",
+   "label": "Purchase",
+   "aliases": [
+    "Actual Purchase",
+    "Purchase Behavior"
+   ],
+   "notes": [],
+   "theories": [
+    "Hierarchy of Effects"
+   ],
+   "similar": [
+    "Adoption",
+    "Behavior"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
    "id": "Donation Attitude",
    "label": "Donation Attitude",
    "aliases": [],
@@ -1703,7 +1823,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "aligned norms",
@@ -1737,6 +1857,7 @@
    "aliases": [],
    "notes": [],
    "theories": [
+    "Service-Profit Chain",
     "T DMIS Delone and McLean IS Success Model",
     "T SERVQUAL"
    ],
@@ -1980,7 +2101,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Utilization Intention",
@@ -2061,7 +2182,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Complacency",
@@ -2249,7 +2370,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Eeriness",
@@ -2327,7 +2448,12 @@
    "theories": [
     "FAccT Perceptions Model"
    ],
-   "similar": [],
+   "similar": [
+    "Distributive Justice",
+    "Fairness",
+    "Perceived Price Fairness",
+    "Procedural Justice"
+   ],
    "papers": [],
    "paperUrls": {},
    "desc": "",
@@ -2922,13 +3048,20 @@
     }
    ],
    "theories": [
+    "Brand Attitude Model",
+    "CBBE",
+    "Electronic Word-of-Mouth Model",
+    "Hierarchy of Effects",
     "Persuasion Knowledge Model"
    ],
-   "similar": [],
+   "similar": [
+    "Attitude",
+    "Attitude toward the Ad"
+   ],
    "papers": [],
    "paperUrls": {},
-   "desc": "根據您的來源資料（特別是 **Lee, Ho et al. 2023**），**品牌態度 (Brand Attitude)** 是消費者對品牌的一種整體評價，通常被視為驅動後續行為意圖的關鍵心理變數。 以下是文獻中關於品牌態度的核心重點： 定義：** 它是消費者對品牌表現出的後天傾向，反應出對該品牌的喜愛或厭惡程度。 雙重成分：** 品牌態度包含 **認知成分 (Cognitive)**（對品牌品質、信念、價值的判斷）與 **情感成分 (Affective)**（喜歡或不喜歡的情緒體驗）。 穩定性：** 與「滿意…",
-   "unlinked": true
+   "desc": "根據您的來源資料（特別是 Lee, Ho et al. 2023），品牌態度 (Brand Attitude) 是消費者對品牌的一種整體評價，通常被視為驅動後續行為意圖的關鍵心理變數。 以下是文獻中關於品牌態度的核心重點： 定義： 它是消費者對品牌表現出的後天傾向，反應出對該品牌的喜愛或厭惡程度。 雙重成分： 品牌態度包含 認知成分 (Cognitive)（對品牌品質、信念、價值的判斷）與 情感成分 (Affective)（喜歡或不喜歡的情緒體驗）。 穩定性： 與「滿意度」不同，態度一旦形成就相對穩定，不易改變，…",
+   "unlinked": false
   },
   {
    "id": "Threat to Freedom",
@@ -3135,13 +3268,14 @@
     }
    ],
    "theories": [
-    "Bandwagon Heuristic"
+    "Bandwagon Heuristic",
+    "Electronic Word-of-Mouth Model"
    ],
    "similar": [],
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Affective Polarization",
@@ -3159,7 +3293,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "情感極化（Affective Polarization）指黨派成員對外黨（out-party）及其成員持有的負面情感與不信任，以及對內黨（in-party）的正面情感。這個概念不同於意識形態極化（ideological polarization），後者指的是政策立場上的分歧。 Iyengar, Sood & Lelkes (2012) 提出情感極化概念，強調「情感而非意識形態」 Iyengar et al. (2019) 回顧其起源與後果 Mason (2018) 從 Social Identity Theory…",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Partisan Media Exposure",
@@ -3251,8 +3385,8 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "媒體的豐富性（Media Richness） 社會臨場理論認為，不同的溝通媒介在傳遞社會臨場感的能力上存在差異： 高臨場感媒介**：如視訊會議，能傳遞非語言訊息（如表情、語調）。 低臨場感媒介**：如電子郵件，缺乏情感和非語言線索。",
-   "unlinked": true
+   "desc": "媒體的豐富性（Media Richness） 社會臨場理論認為，不同的溝通媒介在傳遞社會臨場感的能力上存在差異： 高臨場感媒介：如視訊會議，能傳遞非語言訊息（如表情、語調）。 低臨場感媒介：如電子郵件，缺乏情感和非語言線索。",
+   "unlinked": false
   },
   {
    "id": "Communication Effectiveness",
@@ -3302,7 +3436,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "社會臨場感（Social Presence） 指溝通過程中，人們感知對方為「真實個體」的程度。 高社會臨場感的媒介能使參與者感覺到彼此的存在，如面對面的交流；而低社會臨場感的媒介可能缺乏此效果，例如文字訊息。 Social Present 理論沒有固定的架構，最早提出的有兩個概念 Immediacy is “a measure of the psychological distance which a communicator puts between himself and the object of his …",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Anonymity",
@@ -3438,7 +3572,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Compatibility",
@@ -3586,8 +3720,8 @@
    ],
    "papers": [],
    "paperUrls": {},
-   "desc": "概念定義**：使用者反對與新 IS 實施相關之改變的行為或傾向 7。 操作化定義**：基於 Bovey & Hede (2001) 的分類，包含四個維度：不順從 (non-compliance)、不合作 (non-cooperation)、不同意 (disagreement)、反對 (opposition) 。 Conceptual Definition**: 使用者為了表達對新 IT 導入的不滿而採取的一系列行為 6。 Operational Definition**:  Information Technol…",
-   "unlinked": true
+   "desc": "概念定義：使用者反對與新 IS 實施相關之改變的行為或傾向 7。 操作化定義：基於 Bovey & Hede (2001) 的分類，包含四個維度：不順從 (non-compliance)、不合作 (non-cooperation)、不同意 (disagreement)、反對 (opposition) 。 Conceptual Definition: 使用者為了表達對新 IT 導入的不滿而採取的一系列行為 6。 Operational Definition:  Information Technology Impl…",
+   "unlinked": false
   },
   {
    "id": "Switching Benefits",
@@ -3623,6 +3757,7 @@
    "aliases": [],
    "notes": [],
    "theories": [
+    "Exit, Voice, Loyalty",
     "Push-Pull-Mooring"
    ],
    "similar": [],
@@ -3639,7 +3774,10 @@
    "theories": [
     "Push-Pull-Mooring"
    ],
-   "similar": [],
+   "similar": [
+    "Exit",
+    "Turnover Intention"
+   ],
    "papers": [],
    "paperUrls": {},
    "desc": "",
@@ -3651,6 +3789,7 @@
    "aliases": [],
    "notes": [],
    "theories": [
+    "Exit, Voice, Loyalty",
     "Push-Pull-Mooring"
    ],
    "similar": [],
@@ -3699,7 +3838,7 @@
    "aliases": [],
    "notes": [],
    "theories": [
-    "Commitment-Trust Theory"
+    "Commitment trust theory"
    ],
    "similar": [],
    "papers": [],
@@ -3717,13 +3856,13 @@
     }
    ],
    "theories": [
-    "Commitment-Trust Theory"
+    "Commitment trust theory"
    ],
    "similar": [],
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Opportunistic Behavior",
@@ -3731,7 +3870,8 @@
    "aliases": [],
    "notes": [],
    "theories": [
-    "Commitment-Trust Theory"
+    "Commitment trust theory",
+    "Transaction Cost"
    ],
    "similar": [],
    "papers": [],
@@ -3745,7 +3885,7 @@
    "aliases": [],
    "notes": [],
    "theories": [
-    "Commitment-Trust Theory",
+    "Commitment trust theory",
     "T SET Social Exchange Theory"
    ],
    "similar": [],
@@ -3761,6 +3901,7 @@
    "notes": [],
    "theories": [
     "American Customer Satisfaction Index Model",
+    "Perceived Value Model",
     "Product Lifetime Labelling Effects",
     "Signaling theory"
    ],
@@ -3783,13 +3924,16 @@
     }
    ],
    "theories": [
-    "American Customer Satisfaction Index Model"
+    "American Customer Satisfaction Index Model",
+    "Perceived Value Model",
+    "Service-Profit Chain",
+    "T Network Effects"
    ],
    "similar": [],
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Customer Complaints",
@@ -3821,7 +3965,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "信度不夠或題目太多要調整題目數量",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Assurance",
@@ -3962,9 +4106,14 @@
    "aliases": [],
    "notes": [],
    "theories": [
-    "Signaling theory"
+    "Signaling theory",
+    "T Agency Theory",
+    "T IAT Information Asymmetry Theory"
    ],
-   "similar": [],
+   "similar": [
+    "Adverse Selection",
+    "Moral Hazard"
+   ],
    "papers": [],
    "paperUrls": {},
    "desc": "",
@@ -4000,7 +4149,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "信號應該對資訊擁有者產生一定的成本 Cost，使其對偽造信號的行為望而卻步。例如，只有具備高能力的個體才會選擇高成本的信號（如高等學歷）。",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Signal Credibility",
@@ -4008,7 +4157,8 @@
    "aliases": [],
    "notes": [],
    "theories": [
-    "Signaling theory"
+    "Signaling theory",
+    "T IAT Information Asymmetry Theory"
    ],
    "similar": [],
    "papers": [],
@@ -4106,7 +4256,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Statistical Information",
@@ -4235,8 +4385,8 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "根據 Arghashi (2025) 的研究，**橋接型社會資本 (Bridging Social Capital)** 是指個體透過社群網絡與背景不同的多樣化群體建立的**弱連結 (Weak Ties)**。 簡單來說，它與我們和點頭之交或陌生人的互動有關。以下是它的幾個關鍵特徵及其對使用者行為的影響： 1. **核心功能：資訊與資源交換** 不同於尋求情感支持的親密關係，橋接型社會資本主要用於**認知目的**。人們透過這種連結來進行資訊分享、獲取新資源、搜尋新知或接觸不同的觀點,。社群媒體降低了溝通成本，使我…",
-   "unlinked": true
+   "desc": "根據 Arghashi (2025) 的研究，橋接型社會資本 (Bridging Social Capital) 是指個體透過社群網絡與背景不同的多樣化群體建立的弱連結 (Weak Ties)。 簡單來說，它與我們和點頭之交或陌生人的互動有關。以下是它的幾個關鍵特徵及其對使用者行為的影響： 1. 核心功能：資訊與資源交換 不同於尋求情感支持的親密關係，橋接型社會資本主要用於認知目的。人們透過這種連結來進行資訊分享、獲取新資源、搜尋新知或接觸不同的觀點,。社群媒體降低了溝通成本，使我們更容易擴展這類人際網絡。 2.…",
+   "unlinked": false
   },
   {
    "id": "Bonding Social Capital",
@@ -4253,8 +4403,8 @@
    "similar": [],
    "papers": [],
    "paperUrls": {},
-   "desc": "根據 Arghashi (2025) 的研究，**黏合型社會資本 (Bonding Social Capital)** 是理解強迫性社群媒體使用 (CSMU) 的最關鍵因素。 以下是它的核心定義與影響： 1. **定義：強連結與情感支持** 這指的是個人與背景相似、關係緊密的群體（如**家人、密友**）之間建立的**強連結 (Strong Ties)**。這類資本主要提供情感支持、歸屬感以及被接納的感覺。 2. **對強迫性行為的主導影響** 研究發現，相比於為了獲取資訊而建立的弱連結（橋接型社會資本），**黏合…",
-   "unlinked": true
+   "desc": "根據 Arghashi (2025) 的研究，黏合型社會資本 (Bonding Social Capital) 是理解強迫性社群媒體使用 (CSMU) 的最關鍵因素。 以下是它的核心定義與影響： 1. 定義：強連結與情感支持 這指的是個人與背景相似、關係緊密的群體（如家人、密友）之間建立的強連結 (Strong Ties)。這類資本主要提供情感支持、歸屬感以及被接納的感覺。 2. 對強迫性行為的主導影響 研究發現，相比於為了獲取資訊而建立的弱連結（橋接型社會資本），黏合型社會資本對 CSMU 的影響顯著更強。 _…",
+   "unlinked": false
   },
   {
    "id": "Social Support",
@@ -4272,7 +4422,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Information Access",
@@ -4318,7 +4468,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Flow",
@@ -4434,7 +4584,7 @@
    "papers": [],
    "paperUrls": {},
    "desc": "",
-   "unlinked": true
+   "unlinked": false
   },
   {
    "id": "Gain Framing",
@@ -4641,7 +4791,10 @@
    "theories": [
     "Initial Trust Model"
    ],
-   "similar": [],
+   "similar": [
+    "Brand Image",
+    "Org Reputation"
+   ],
    "papers": [],
    "paperUrls": {},
    "desc": "",
@@ -5081,6 +5234,2006 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true
+  },
+  {
+   "id": "Resource Value",
+   "label": "Resource Value",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RBV Resource-Based View"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Rarity",
+   "label": "Resource Rarity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RBV Resource-Based View"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Inimitability",
+   "label": "Resource Inimitability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RBV Resource-Based View"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Non-substitutability",
+   "label": "Resource Non-substitutability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RBV Resource-Based View"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Firm Performance",
+   "label": "Firm Performance",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Firm Performance"
+    }
+   ],
+   "theories": [
+    "Ambidextrous Organization",
+    "Service-Profit Chain",
+    "T Contingency Theory",
+    "T RBV Resource-Based View",
+    "T SHT Stakeholder Theory"
+   ],
+   "similar": [
+    "Competitive Advantage",
+    "Industry Profitability",
+    "Job Performance"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Sensing Capability",
+   "label": "Sensing Capability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Dynamic Capabilities Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Dynamic Capabilities",
+   "label": "Dynamic Capabilities",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Dynamic Capabilities"
+    }
+   ],
+   "theories": [
+    "T Dynamic Capabilities Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Seizing Capability",
+   "label": "Seizing Capability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Dynamic Capabilities Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Transforming Capability",
+   "label": "Transforming Capability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Dynamic Capabilities Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Reconfiguration",
+   "label": "Resource Reconfiguration",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Dynamic Capabilities Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Rivalry Intensity",
+   "label": "Rivalry Intensity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Industry Profitability",
+   "label": "Industry Profitability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [
+    "Competitive Advantage",
+    "Firm Performance",
+    "Job Performance"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Threat of New Entrants",
+   "label": "Threat of New Entrants",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Threat of Substitutes",
+   "label": "Threat of Substitutes",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Supplier Bargaining Power",
+   "label": "Supplier Bargaining Power",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Buyer Bargaining Power",
+   "label": "Buyer Bargaining Power",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Entry Barriers",
+   "label": "Entry Barriers",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Five Forces 五力分析"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Asset Specificity",
+   "label": "Asset Specificity",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Asset Specificity"
+    }
+   ],
+   "theories": [
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "資產專屬性（Asset Specificity）：若交易所需之資產具高度專屬性（無法輕易轉用他處），一旦離開原交易對象就失去大部分價值，那麼在市場上進行交易時，便需要更嚴謹的契約與監督，導致交易成本升高。",
+   "unlinked": false
+  },
+  {
+   "id": "Transaction Cost",
+   "label": "Transaction Cost",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Transaction Cost"
+    }
+   ],
+   "theories": [
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "交易成本並不僅限於「價格」本身，而是為了完成一項交易而必須額外付出的 Cost，包括： 搜尋成本 Search cost and Information Cost：為取得資訊、找到合適交易對象所付出的成本。 談判與契約成本 Bargaining & Decision Cost ：為協商交易條款、擬定契約以及簽約等所付出的時間與金錢。 履約與監督成本 Policing & Enforcement Cost：為確保契約條款被遵守，或發現並處理違約行為所需的成本。 簡言之，交易成本是指「在市場上買賣商品或服務時，除去商…",
+   "unlinked": false
+  },
+  {
+   "id": "Behavioral Uncertainty",
+   "label": "Behavioral Uncertainty",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Transaction Frequency",
+   "label": "Transaction Frequency",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Hierarchical Governance",
+   "label": "Hierarchical Governance",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Transaction Cost"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Goal Conflict",
+   "label": "Goal Conflict",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Agency Problem",
+   "label": "Agency Problem",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Agency Problem"
+    }
+   ],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Agency Cost",
+   "label": "Agency Cost",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Monitoring",
+   "label": "Monitoring",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Outcome-based Contract",
+   "label": "Outcome-based Contract",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Outcome-based Contract"
+    }
+   ],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "這是一個非常好的問題。Outcome-based Contract (結果導向契約，簡稱 OBC) 不僅是 Agency Theory (代理理論) 的核心概念，也是現代供應鏈管理、政府採購與服務科學中的重要議題。 以下我結合 Eisenhardt (1989) 的論文內容與更廣泛的組織管理理論，為您深入解析 Outcome-based Contract。 Outcome-based Contract 是一種契約安排，其核心邏輯是：委託人購買的是「結果」(Ends)，而非「過程」或「投入」(Means)。 傳統契…",
+   "unlinked": false
+  },
+  {
+   "id": "Risk Aversion of Agent",
+   "label": "Risk Aversion of Agent",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Agency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Adverse Selection",
+   "label": "Adverse Selection",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Adverse Selection"
+    }
+   ],
+   "theories": [
+    "T IAT Information Asymmetry Theory"
+   ],
+   "similar": [
+    "Information Asymmetry",
+    "Moral Hazard"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Moral Hazard",
+   "label": "Moral Hazard",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T IAT Information Asymmetry Theory"
+   ],
+   "similar": [
+    "Adverse Selection",
+    "Information Asymmetry"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Market Efficiency",
+   "label": "Market Efficiency",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T IAT Information Asymmetry Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Screening",
+   "label": "Screening",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T IAT Information Asymmetry Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Stakeholder Pressure",
+   "label": "Stakeholder Pressure",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SHT Stakeholder Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "CSR Engagement",
+   "label": "CSR Engagement",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SHT Stakeholder Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Stakeholder Salience",
+   "label": "Stakeholder Salience",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SHT Stakeholder Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Criticality",
+   "label": "Resource Criticality",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RDT Resource Dependence"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "External Dependence",
+   "label": "External Dependence",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RDT Resource Dependence"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Resource Concentration",
+   "label": "Resource Concentration",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RDT Resource Dependence"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Interorganizational Ties",
+   "label": "Interorganizational Ties",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T RDT Resource Dependence"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Installed Base",
+   "label": "Installed Base",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Network Effects"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Complementary Goods",
+   "label": "Complementary Goods",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Network Effects"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "User-side Installed Base",
+   "label": "User-side Installed Base",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Provider-side Participation",
+   "label": "Provider-side Participation",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Cost of Multihoming",
+   "label": "Cost of Multihoming",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Cost of Multihoming"
+    }
+   ],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "多棲成本 (Cost of Multihoming) 指的是用戶、企業或組織同時使用多個平台、系統或網絡所需支付的成本與面臨的挑戰，而非僅專注於單一平台（稱為單棲，Single-homing）。該概念在具有網絡效應的市場中尤為重要，例如數字平台（如社交媒體、電子商務市場、雲端服務）或電信服務。 訂閱費用：同時使用多個服務的費用，例如同時訂閱多個雲存儲服務。 硬件/軟件成本：為支持多個平台所需的額外基礎設施或兼容工具（如不同的支付系統或應用程式）。 時間與精力：管理多個帳戶、重複內容或同步各平台上的更新。 培訓與支…",
+   "unlinked": false
+  },
+  {
+   "id": "Platform Lock-in",
+   "label": "Platform Lock-in",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Winner-take-all Tendency",
+   "label": "Winner-take-all Tendency",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Subsidy to Price-sensitive Side",
+   "label": "Subsidy to Price-sensitive Side",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Sided Market"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Low-end Foothold",
+   "label": "Low-end Foothold",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Disruptive Innovation",
+   "label": "Disruptive Innovation",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Performance Oversupply",
+   "label": "Performance Oversupply",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Incumbent Market Share",
+   "label": "Incumbent Market Share",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Incumbent Focus on Profitable Customers",
+   "label": "Incumbent Focus on Profitable Customers",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Incumbent Response",
+   "label": "Incumbent Response",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Disruptive Innovation Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Exploration",
+   "label": "Exploration",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Innovation Performance",
+   "label": "Innovation Performance",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Exploitation",
+   "label": "Exploitation",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Operational Efficiency",
+   "label": "Operational Efficiency",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Organizational Ambidexterity",
+   "label": "Organizational Ambidexterity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Ambidextrous Organization"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Organic Structure Need",
+   "label": "Organic Structure Need",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Contingency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Structure-Environment Fit",
+   "label": "Structure-Environment Fit",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Contingency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Task Uncertainty",
+   "label": "Task Uncertainty",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Contingency Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Output Volume",
+   "label": "Output Volume",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Economies of Scale and Scope"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Average Cost",
+   "label": "Average Cost",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Economies of Scale and Scope"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Product Scope",
+   "label": "Product Scope",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Economies of Scale and Scope"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Fixed Cost Share",
+   "label": "Fixed Cost Share",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Economies of Scale and Scope"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Awareness",
+   "label": "Brand Awareness",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "CBBE",
+    "Hierarchy of Effects"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Equity",
+   "label": "Brand Equity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "CBBE"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Associations",
+   "label": "Brand Associations",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Brand Associations"
+    }
+   ],
+   "theories": [
+    "CBBE"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "依據 Cho et al.（2019）的分類，品牌聯想分為： 對品牌的理性理解、功能認知、象徵意義。 與品牌相關的情緒、愉悅、喜愛、開心。 品牌帶來的視覺、觸覺、風格、包裝與設計感受。",
+   "unlinked": false
+  },
+  {
+   "id": "Brand Image",
+   "label": "Brand Image",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Brand Image"
+    }
+   ],
+   "theories": [
+    "CBBE"
+   ],
+   "similar": [
+    "Org Reputation",
+    "Perceived Reputation"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Consumer Loyalty",
+   "label": "Consumer Loyalty",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Consumer Loyalty"
+    }
+   ],
+   "theories": [
+    "CBBE",
+    "Customer Engagement Model",
+    "Exit, Voice, Loyalty",
+    "Service-Profit Chain"
+   ],
+   "similar": [
+    "Affective Commitment",
+    "Customer Retention"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "以下是針對學者 Gong 等人和 Liu 等人提出的不同形式的消費者忠誠度分類的詳細說明： Gong 等人在研究中將消費者忠誠度分為 認知忠誠度（Cognitive Loyalty）、情感忠誠度（Affective Loyalty） 和 意向忠誠度（Conative Loyalty），這三者反映了忠誠度的逐步深化。 基於消費者對品牌的理性認知，主要由產品或服務的特徵、功能、價格等客觀資訊影響。 消費者選擇某品牌是因為認為該品牌的產品具有優勢或更高價值。 忠誠的形成主要依賴邏輯和理性判斷。 忠誠度可能較為脆弱，容易…",
+   "unlinked": false
+  },
+  {
+   "id": "Ad Credibility",
+   "label": "Ad Credibility",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Brand Attitude Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Attitude toward the Ad",
+   "label": "Attitude toward the Ad",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Brand Attitude Model"
+   ],
+   "similar": [
+    "Attitude",
+    "Brand Attitude"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Ad Likeability",
+   "label": "Ad Likeability",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Brand Attitude Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Cognitions",
+   "label": "Brand Cognitions",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Brand Attitude Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Preference",
+   "label": "Brand Preference",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Hierarchy of Effects"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Internal Service Quality",
+   "label": "Internal Service Quality",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Service-Profit Chain"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Employee Retention",
+   "label": "Employee Retention",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Service-Profit Chain"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Product Attributes",
+   "label": "Product Attributes",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Means-End Chain Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Functional Consequences",
+   "label": "Functional Consequences",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Means-End Chain Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Psychosocial Consequences",
+   "label": "Psychosocial Consequences",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Means-End Chain Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Personal Values",
+   "label": "Personal Values",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Means-End Chain Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Perceived Sacrifice",
+   "label": "Perceived Sacrifice",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Perceived Value Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Price",
+   "label": "Price",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Perceived Value Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Price Difference from Reference",
+   "label": "Price Difference from Reference",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Price Fairness Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Perceived Price Fairness",
+   "label": "Perceived Price Fairness",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Price Fairness Model"
+   ],
+   "similar": [
+    "Distributive Justice",
+    "Fairness",
+    "Perceived Fairness",
+    "Procedural Justice"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Seller Cost Justification",
+   "label": "Seller Cost Justification",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Price Fairness Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Seller Profit Motive Attribution",
+   "label": "Seller Profit Motive Attribution",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Price Fairness Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Dynamic Pricing",
+   "label": "Dynamic Pricing",
+   "aliases": [],
+   "notes": [
+    {
+     "name": "Dynamic Pricing"
+    }
+   ],
+   "theories": [
+    "Price Fairness Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": false
+  },
+  {
+   "id": "Procedural Switching Cost",
+   "label": "Procedural Switching Cost",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SCE Switching Cost Effect"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Financial Switching Cost",
+   "label": "Financial Switching Cost",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SCE Switching Cost Effect"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Relational Switching Cost",
+   "label": "Relational Switching Cost",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T SCE Switching Cost Effect"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Review Quality",
+   "label": "Review Quality",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Electronic Word-of-Mouth Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "eWOM Credibility",
+   "label": "eWOM Credibility",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Electronic Word-of-Mouth Model"
+   ],
+   "similar": [
+    "Voice",
+    "Word of Mouth"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Review Consistency",
+   "label": "Review Consistency",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Electronic Word-of-Mouth Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Review Volume",
+   "label": "Review Volume",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Electronic Word-of-Mouth Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Customer Engagement",
+   "label": "Customer Engagement",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Customer Engagement Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Brand Identification",
+   "label": "Brand Identification",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Customer Engagement Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Word of Mouth",
+   "label": "Word of Mouth",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Customer Engagement Model"
+   ],
+   "similar": [
+    "Voice",
+    "eWOM Credibility"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Exit",
+   "label": "Exit",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Exit, Voice, Loyalty"
+   ],
+   "similar": [
+    "Switching Intention",
+    "Turnover Intention"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Voice",
+   "label": "Voice",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Exit, Voice, Loyalty"
+   ],
+   "similar": [
+    "Word of Mouth",
+    "eWOM Credibility"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Service Recovery",
+   "label": "Service Recovery",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Exit, Voice, Loyalty"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Perceived Organizational Support",
+   "label": "Perceived Organizational Support",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T POS Perceived Organizational Support",
+    "Three-Component Commitment Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Affective Commitment",
+   "label": "Affective Commitment",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Psychological Contract Breach",
+    "T Justice Theory",
+    "T POS Perceived Organizational Support",
+    "Three-Component Commitment Model"
+   ],
+   "similar": [
+    "Consumer Loyalty",
+    "Customer Retention"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Continuance Commitment",
+   "label": "Continuance Commitment",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Three-Component Commitment Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Socialization",
+   "label": "Socialization",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Three-Component Commitment Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Normative Commitment",
+   "label": "Normative Commitment",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Three-Component Commitment Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Turnover Intention",
+   "label": "Turnover Intention",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Equity Theory",
+    "Job Demands-Resources Model",
+    "Psychological Contract Breach",
+    "T LMX Leader-member exchange",
+    "T POS Perceived Organizational Support",
+    "Three-Component Commitment Model",
+    "Two-Factor Theory"
+   ],
+   "similar": [
+    "Exit",
+    "Switching Intention"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Organizational Citizenship Behavior",
+   "label": "Organizational Citizenship Behavior",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Psychological Contract Breach",
+    "T Justice Theory",
+    "T LMX Leader-member exchange",
+    "Three-Component Commitment Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Fairness",
+   "label": "Fairness",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T POS Perceived Organizational Support"
+   ],
+   "similar": [
+    "Distributive Justice",
+    "Perceived Fairness",
+    "Perceived Price Fairness",
+    "Procedural Justice"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Supervisor Support",
+   "label": "Supervisor Support",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T POS Perceived Organizational Support"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Rewards and Job Conditions",
+   "label": "Rewards and Job Conditions",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T POS Perceived Organizational Support"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Job Performance",
+   "label": "Job Performance",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory",
+    "Job Demands-Resources Model",
+    "T LMX Leader-member exchange",
+    "T POS Perceived Organizational Support"
+   ],
+   "similar": [
+    "Competitive Advantage",
+    "Firm Performance",
+    "Industry Profitability"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Leader-Member Exchange Quality",
+   "label": "Leader-Member Exchange Quality",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T LMX Leader-member exchange"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Distributive Justice",
+   "label": "Distributive Justice",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Equity Theory",
+    "T Justice Theory"
+   ],
+   "similar": [
+    "Fairness",
+    "Perceived Fairness",
+    "Perceived Price Fairness",
+    "Procedural Justice"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Procedural Justice",
+   "label": "Procedural Justice",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Justice Theory"
+   ],
+   "similar": [
+    "Distributive Justice",
+    "Fairness",
+    "Perceived Fairness",
+    "Perceived Price Fairness"
+   ],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Interactional Justice",
+   "label": "Interactional Justice",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "T Justice Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Unmet Promises",
+   "label": "Unmet Promises",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Psychological Contract Breach"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Psychological Contract Breach",
+   "label": "Psychological Contract Breach",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Psychological Contract Breach"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Violation Feelings",
+   "label": "Violation Feelings",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Psychological Contract Breach"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Goal Specificity",
+   "label": "Goal Specificity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Goal Difficulty",
+   "label": "Goal Difficulty",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Goal Commitment",
+   "label": "Goal Commitment",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Feedback",
+   "label": "Feedback",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Task Complexity",
+   "label": "Task Complexity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Goal-Setting Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Hygiene Factors",
+   "label": "Hygiene Factors",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Factor Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Job Dissatisfaction",
+   "label": "Job Dissatisfaction",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Factor Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Motivator Factors",
+   "label": "Motivator Factors",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Two-Factor Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Input-Outcome Ratio Discrepancy",
+   "label": "Input-Outcome Ratio Discrepancy",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Equity Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Perceived Inequity",
+   "label": "Perceived Inequity",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Equity Theory"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Job Demands",
+   "label": "Job Demands",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Job Demands-Resources Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Burnout",
+   "label": "Burnout",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Job Demands-Resources Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Job Resources",
+   "label": "Job Resources",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Job Demands-Resources Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
+  },
+  {
+   "id": "Work Engagement",
+   "label": "Work Engagement",
+   "aliases": [],
+   "notes": [],
+   "theories": [
+    "Job Demands-Resources Model"
+   ],
+   "similar": [],
+   "papers": [],
+   "paperUrls": {},
+   "desc": "",
+   "unlinked": true
   }
  ],
  "theories": [
@@ -5090,7 +7243,7 @@
    "name": "ELM",
    "zh": "推敲可能性模式",
    "level": "個人層級",
-   "desc": "推敲可能性模式（ELM）是由 **Petty** 和 **Cacioppo** 在1980年代提出的一種心理學模型，用於解釋人們在面對說服性訊息時如何處理與接受資訊。這一模型認為，說服過程依賴於**訊息處理深度（elaboration）**，並且處理深度取決於個人對訊息的**動機**和**能力**。 ELM 提出兩種不同的說服路徑，分別是**中心路徑（Central Route）**和**周邊路徑（Peripheral Route）**，這兩條路徑的運作方式取決於受眾是否投入足夠的認知資源來處理訊息。 受眾對訊息…",
+   "desc": "推敲可能性模式（ELM）是由 Petty 和 Cacioppo 在1980年代提出的一種心理學模型，用於解釋人們在面對說服性訊息時如何處理與接受資訊。這一模型認為，說服過程依賴於訊息處理深度（elaboration），並且處理深度取決於個人對訊息的動機和能力。 ELM 提出兩種不同的說服路徑，分別是中心路徑（Central Route）和周邊路徑（Peripheral Route），這兩條路徑的運作方式取決於受眾是否投入足夠的認知資源來處理訊息。 受眾對訊息進行深度的思考和推敲。 受眾會仔細評估訊息的邏輯、證據和…",
    "images": 0,
    "notes": [
     {
@@ -5114,7 +7267,7 @@
    "name": "IS Continuance Model",
    "zh": "資訊系統持續使用模型",
    "level": "個人層級",
-   "desc": "資訊科技的採用（Adoption）**：指使用者對新資訊科技或系統的初次接受與使用意圖，通常集中於決策階段和初始行為。 例：一家公司決定導入雲端存儲解決方案或個人用戶註冊新應用程式。 資訊科技的持續使用（Continuance）**：指使用者在採用資訊科技後，是否在長期內持續使用該技術或系統，並將其整合到日常行為中。 例：用戶持續使用電子支付系統，如 Apple Pay，而非回到現金支付。 2. **行為階段**： 採用：側重於**初次接觸與試用**，關注「接受該技術的可能性」。 持續使用：強調**長期行為維持*…",
+   "desc": "資訊科技的採用（Adoption）：指使用者對新資訊科技或系統的初次接受與使用意圖，通常集中於決策階段和初始行為。 例：一家公司決定導入雲端存儲解決方案或個人用戶註冊新應用程式。 資訊科技的持續使用（Continuance）：指使用者在採用資訊科技後，是否在長期內持續使用該技術或系統，並將其整合到日常行為中。 例：用戶持續使用電子支付系統，如 Apple Pay，而非回到現金支付。 採用：側重於初次接觸與試用，關注「接受該技術的可能性」。 持續使用：強調長期行為維持，關注「使用後的滿意度和價值」。 採用：影響採用…",
    "images": 2,
    "notes": [
     {
@@ -5159,7 +7312,7 @@
    "name": "Self-Determination Theory",
    "zh": "自我決定理論",
    "level": "",
-   "desc": "自我決定理論（Self-determination Theory, SDT）**由心理學家 Edward L. Deci 與 Richard M. Ryan 等人所提出，是一個關於人類動機與人格發展的理論架構。SDT 強調「人是主動且追求成長的有機體」，在人生中持續尋求表現自我意願（agency）與潛能實現。此理論認為，個體的動機、行為、情緒與身心健康，會因是否滿足基本心理需求而有所差異。 以下是自我決定理論的核心觀念： SDT 指出，人類普遍存在三項基本心理需求，若能被持續滿足，個體將更傾向於展現**內在動機（…",
+   "desc": "自我決定理論（Self-determination Theory, SDT）由心理學家 Edward L. Deci 與 Richard M. Ryan 等人所提出，是一個關於人類動機與人格發展的理論架構。SDT 強調「人是主動且追求成長的有機體」，在人生中持續尋求表現自我意願（agency）與潛能實現。此理論認為，個體的動機、行為、情緒與身心健康，會因是否滿足基本心理需求而有所差異。 以下是自我決定理論的核心觀念： SDT 指出，人類普遍存在三項基本心理需求，若能被持續滿足，個體將更傾向於展現內在動機（intr…",
    "images": 0,
    "notes": [
     {
@@ -5181,7 +7334,7 @@
    "name": "Signaling theory",
    "zh": "信號理論",
    "level": "組織層級",
-   "desc": "信號理論（Signaling Theory）** 是由 **Michael Spence** 在1973年提出的一種經濟學與管理學理論，旨在解釋信息不對稱情境下，資訊擁有者如何通過釋放信號來向他人傳遞關鍵信息，並減少不確定性。該理論廣泛應用於人力資源管理、金融市場、行銷、社會心理學等領域。 1. **資訊不對稱（T IAT Information Asymmetry Theory）： 在多數市場或社會情境中，參與者之間的信息通常不對稱。例如，賣方通常比買方更了解商品品質；求職者比雇主更了解自己的能力。 這種不對稱…",
+   "desc": "信號理論（Signaling Theory） 是由 Michael Spence 在1973年提出的一種經濟學與管理學理論，旨在解釋信息不對稱情境下，資訊擁有者如何通過釋放信號來向他人傳遞關鍵信息，並減少不確定性。該理論廣泛應用於人力資源管理、金融市場、行銷、社會心理學等領域。 1. 資訊不對稱（T IAT Information Asymmetry Theory）： 在多數市場或社會情境中，參與者之間的信息通常不對稱。例如，賣方通常比買方更了解商品品質；求職者比雇主更了解自己的能力。 這種不對稱會導致信任問題或…",
    "images": 4,
    "notes": [
     {
@@ -5200,12 +7353,60 @@
    "field": "經濟／行銷"
   },
   {
+   "id": "T Agency Theory",
+   "abbr": "AgT",
+   "name": "Theory",
+   "zh": "代理理論",
+   "level": "",
+   "desc": "核心理念：該理論探討委託人（如企業主）與代理人（如經理）之間的關係，尤其是資訊不對稱和激勵機制的問題。 與資訊系統的關聯：資訊系統可以減少代理成本，例如通過提高透明度、改進監控和增強溝通，使委託人和代理人目標更一致。像 ERP 和分析工具等系統能改善監控和報告。 代理成本理論（Agency Cost Theory）又稱代理理論，最初由 Jensen & Meckling（1976） 提出，主要探討「委託人（principal）」與「代理人（agent）」在利益不一致的情況下，所衍生的成本與問題。以下為理論的核心概…",
+   "images": 1,
+   "notes": [
+    {
+     "name": "T Agency Theory"
+    }
+   ],
+   "variables": [
+    "Agency Cost",
+    "Agency Problem",
+    "Goal Conflict",
+    "Information Asymmetry",
+    "Monitoring",
+    "Outcome-based Contract",
+    "Risk Aversion of Agent"
+   ],
+   "supplement": false,
+   "field": "組織經濟"
+  },
+  {
+   "id": "T Contingency Theory",
+   "abbr": "ConT",
+   "name": "Contingency Theory",
+   "zh": "權變理論",
+   "level": "組織層級",
+   "desc": "Contingency Theory Selection Approach Interaction Approach Systems Approach 權變理論是一種管理理論，主張沒有一種單一的最佳管理方法或組織設計適用於所有情境。相反，組織的成功取決於其結構、策略和行為是否適應外部環境和內部條件的變化。該理論認為，組織應根據具體情境選擇最適合的管理方式。 1. 情境變數（Contingency Variables） 影響組織管理與設計的關鍵環境或條件因素。 例子包括：外部環境（市場穩定性或競爭強度）、組織規模、…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Contingency Theory"
+    }
+   ],
+   "variables": [
+    "Environmental Uncertainty",
+    "Firm Performance",
+    "Organic Structure Need",
+    "Structure-Environment Fit",
+    "Task Uncertainty"
+   ],
+   "supplement": false,
+   "field": "組織"
+  },
+  {
    "id": "T DMIS Delone and McLean IS Success Model",
    "abbr": "D&M",
    "name": "DeLone & McLean IS Success Model",
    "zh": "資訊系統成功模型",
    "level": "組織層級",
-   "desc": "「淨效益模型」（Net Benefits Model）並非一個獨立於 DeLone 和 McLean 資訊系統成功模型（D&M 模型）的全新理論，而是該模型的一個重要組成部分。在 2003 年的修訂版 D&M 模型中，DeLone 和 McLean 將原先的「個人影響」和「組織影響」兩個構面整合為「淨效益」（Net Benefits），以更全面地反映資訊系統對個人、組織乃至社會的整體影響。 1. **系統品質（System Quality）**：衡量資訊系統本身的性能，如可靠性、易用性和回應速度。 2. **資訊…",
+   "desc": "「淨效益模型」（Net Benefits Model）並非一個獨立於 DeLone 和 McLean 資訊系統成功模型（D&M 模型）的全新理論，而是該模型的一個重要組成部分。在 2003 年的修訂版 D&M 模型中，DeLone 和 McLean 將原先的「個人影響」和「組織影響」兩個構面整合為「淨效益」（Net Benefits），以更全面地反映資訊系統對個人、組織乃至社會的整體影響。 1. 系統品質（System Quality）：衡量資訊系統本身的性能，如可靠性、易用性和回應速度。 2. 資訊品質（Inf…",
    "images": 2,
    "notes": [
     {
@@ -5228,12 +7429,84 @@
    "field": ""
   },
   {
+   "id": "T Disruptive Innovation Theory",
+   "abbr": "DisInn",
+   "name": "Disruptive Innovation Theory",
+   "zh": "破壞式創新",
+   "level": "",
+   "desc": "核心理念：由克萊頓·克里斯坦森（Clayton Christensen）提出，該理論解釋了簡單、低成本的創新如何顛覆既有市場與組織。 與資訊系統的關聯：資訊系",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Disruptive Innovation Theory"
+    }
+   ],
+   "variables": [
+    "Disruptive Innovation",
+    "Incumbent Focus on Profitable Customers",
+    "Incumbent Market Share",
+    "Incumbent Response",
+    "Low-end Foothold",
+    "Performance Oversupply"
+   ],
+   "supplement": false,
+   "field": "策略／創新"
+  },
+  {
+   "id": "T Dynamic Capabilities Theory",
+   "abbr": "DCT",
+   "name": "Capabilities Theory",
+   "zh": "動態能力理論",
+   "level": "",
+   "desc": "1. Acronym, English Name, Chinese Name Acronym: DCT English Name: Dynamic Capabilities Theory Chinese Name: 動態能力理論 2. Concepts in Theory 動態能力 (Dynamic Capabilities)：組織在快速變化的環境中，整合、建構、重新配置內部與外部資源以應對變化的能力。 資源基礎 (Resource Base)：組織的競爭優勢來自於稀有且難以模仿的資源，而動態能力進一步使這些資源…",
+   "images": 3,
+   "notes": [
+    {
+     "name": "T Dynamic Capabilities Theory"
+    }
+   ],
+   "variables": [
+    "Competitive Advantage",
+    "Dynamic Capabilities",
+    "Environmental Uncertainty",
+    "Resource Reconfiguration",
+    "Seizing Capability",
+    "Sensing Capability",
+    "Transforming Capability"
+   ],
+   "supplement": false,
+   "field": "策略"
+  },
+  {
+   "id": "T Economies of Scale and Scope",
+   "abbr": "EoS",
+   "name": "of Scale and Scope",
+   "zh": "規模與範疇經濟",
+   "level": "",
+   "desc": "核心理念：規模經濟指隨生產規模增大而帶來的成本優勢，範疇經濟則指通過多樣化生產實現的成本優勢。 與資訊系統的關聯：資訊系統幫助企業通過標準化操作實現規模經濟，並通過整合多種功能和數據實現範疇經濟。",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Economies of Scale and Scope"
+    }
+   ],
+   "variables": [
+    "Average Cost",
+    "Competitive Advantage",
+    "Fixed Cost Share",
+    "Output Volume",
+    "Product Scope"
+   ],
+   "supplement": false,
+   "field": "組織經濟"
+  },
+  {
    "id": "T ECT Expectation Confirmation Theory",
    "abbr": "ECT",
    "name": "Expectation Confirmation Theory",
    "zh": "期望確認理論",
    "level": "個人層級",
-   "desc": "Expectation Confirmation Theory (ECT) 期望確認理論由 Oliver (1980) 提出，主要用於解釋個體在消費或使用某一產品或服務後，如何形成滿意度及其對持續使用意圖的影響。理論認為，消費者的滿意度取決於對產品或服務的**期望**和實際體驗之間的差距，以及實際結果是否符合或超越期望。 1. **初始期望（Expectation） 指消費者在使用產品或服務之前的預期和信念。 期望受到品牌聲譽、廣告、口碑等多種因素影響。 2. **知覺績效（Perceived Performan…",
+   "desc": "Expectation Confirmation Theory (ECT) 期望確認理論由 Oliver (1980) 提出，主要用於解釋個體在消費或使用某一產品或服務後，如何形成滿意度及其對持續使用意圖的影響。理論認為，消費者的滿意度取決於對產品或服務的期望和實際體驗之間的差距，以及實際結果是否符合或超越期望。 1. 初始期望（Expectation） 指消費者在使用產品或服務之前的預期和信念。 期望受到品牌聲譽、廣告、口碑等多種因素影響。 2. 知覺績效（Perceived Performance） 指消費者…",
    "images": 1,
    "notes": [
     {
@@ -5277,7 +7550,7 @@
    "name": "Theory",
    "zh": "心流理論",
    "level": "個人層級",
-   "desc": "Flow Theory (流暢理論) 是由心理學家 **Mihaly Csikszentmihalyi** 在 1975 年提出的一種心理學理論，用於解釋人在某些活動中完全專注且沉浸的心理狀態。這種狀態被稱為 **Flow  (心流)**，是一種最佳經驗狀態，人們在這種狀態下會感受到高效率、高滿足感和高度的專注。 1. **心流（Flow）狀態 心流是一種高度專注、完全沉浸於活動中的心理狀態，個體在此狀態下會失去對時間、環境的感知，完全投入當下活動。 2. **心流的條件** 心流的產生需要以下三個條件： 清晰的…",
+   "desc": "Flow Theory (流暢理論) 是由心理學家 Mihaly Csikszentmihalyi 在 1975 年提出的一種心理學理論，用於解釋人在某些活動中完全專注且沉浸的心理狀態。這種狀態被稱為 Flow  (心流)，是一種最佳經驗狀態，人們在這種狀態下會感受到高效率、高滿足感和高度的專注。 1. 心流（Flow）狀態 心流是一種高度專注、完全沉浸於活動中的心理狀態，個體在此狀態下會失去對時間、環境的感知，完全投入當下活動。 2. 心流的條件 心流的產生需要以下三個條件： 清晰的目標（Clear Goals…",
    "images": 0,
    "notes": [
     {
@@ -5295,12 +7568,36 @@
    "field": "心理／HCI"
   },
   {
+   "id": "T IAT Information Asymmetry Theory",
+   "abbr": "IAT",
+   "name": "Information Asymmetry Theory",
+   "zh": "資訊不對稱（逆選擇與道德危機）",
+   "level": "社會層級",
+   "desc": "Information Asymmetry（資訊不對稱） 是經濟學中的一個重要概念，指在交易或互動過程中，雙方掌握的資訊量不對等，其中一方擁有更多或更準確的資訊，而另一方則處於信息劣勢。這種資訊分布不均衡會影響市場效率、交易決策，甚至導致市場失靈。 這一概念由經濟學家 George Akerlof 在他的著名論文《The Market for \"Lemons\"》（1970）中提出，並由此衍生出許多相關的經濟模型和分析工具。 1. 逆向選擇 (Adverse Selection) 定義：在交易發生之前，由於信息不對…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T IAT Information Asymmetry Theory"
+    }
+   ],
+   "variables": [
+    "Adverse Selection",
+    "Information Asymmetry",
+    "Market Efficiency",
+    "Moral Hazard",
+    "Screening",
+    "Signal Credibility"
+   ],
+   "supplement": false,
+   "field": "組織經濟"
+  },
+  {
    "id": "T IDT Innovation Diffusion Theory",
    "abbr": "IDT",
    "name": "Innovation Diffusion Theory",
    "zh": "創新擴散理論",
    "level": "",
-   "desc": "核心理念**：由埃弗雷特·羅傑斯（Everett Rogers）提出，該理論解釋創新如何在組織和社會中被採用。 與資訊系統的關聯**：資訊系統的採用取決於相對優勢、相容性、複雜性、可試驗性和可觀察性等因素。資訊系統文化強的組織往往能更高效地採用新技術。",
+   "desc": "核心理念：由埃弗雷特·羅傑斯（Everett Rogers）提出，該理論解釋創新如何在組織和社會中被採用。 與資訊系統的關聯：資訊系統的採用取決於相對優勢、相容性、複雜性、可試驗性和可觀察性等因素。資訊系統文化強的組織往往能更高效地採用新技術。",
    "images": 0,
    "notes": [
     {
@@ -5324,7 +7621,7 @@
    "name": "Institutional Theory",
    "zh": "制度理論（同構壓力）",
    "level": "",
-   "desc": "制度理論（Institutional Theory）是一種用於解釋組織行為的理論框架，著重於組織如何因應外部環境的制度壓力，並調整自身結構、政策和行為以獲取合法性（legitimacy）。該理論強調，組織行為不僅由效率或經濟邏輯驅動，還受到社會規範、文化價值及規則的影響。 制度理論的核心觀點包括： 1. **制度壓力（Institutional Pressure）**：組織面臨的規範性、認知性及強制性壓力，影響其行為和結構。 2. **合法性（Legitimacy）**：組織適應環境規範以獲得社會認可和支持。 3…",
+   "desc": "制度理論（Institutional Theory）是一種用於解釋組織行為的理論框架，著重於組織如何因應外部環境的制度壓力，並調整自身結構、政策和行為以獲取合法性（legitimacy）。該理論強調，組織行為不僅由效率或經濟邏輯驅動，還受到社會規範、文化價值及規則的影響。 制度理論的核心觀點包括： 1. 制度壓力（Institutional Pressure）：組織面臨的規範性、認知性及強制性壓力，影響其行為和結構。 2. 合法性（Legitimacy）：組織適應環境規範以獲得社會認可和支持。 3. 同構性（Is…",
    "images": 0,
    "notes": [
     {
@@ -5341,12 +7638,60 @@
    "field": "組織"
   },
   {
+   "id": "T Justice Theory",
+   "abbr": "OJ",
+   "name": "Theory",
+   "zh": "組織正義（分配、程序、互動）",
+   "level": "",
+   "desc": "您提到的「分配公平 (Distributive Justice)」、「程序公平 (Procedural Justice)」和「互動公平 (Interactional Justice)」是源於公平理論 (Justice Theory) 的一部分，特別是在服務補救（Service Recovery）或顧客滿意度的研究中被廣泛應用。該理論被用來解釋顧客如何評估企業在服務失敗後所提供的補償和解決方案的公平性。 公平理論主要研究個人在社會互動中對公平的感知。它認為，個人對某一事件是否公平的判斷，會影響其情感、態度和行為反應…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Justice Theory"
+    }
+   ],
+   "variables": [
+    "Affective Commitment",
+    "Distributive Justice",
+    "Interactional Justice",
+    "Job Satisfaction",
+    "Organizational Citizenship Behavior",
+    "Procedural Justice",
+    "Trust"
+   ],
+   "supplement": false,
+   "field": "組織行為"
+  },
+  {
+   "id": "T Means-End Chain Theory",
+   "abbr": "MEC",
+   "name": "Means-End Chain Theory",
+   "zh": "手段目的鏈",
+   "level": "",
+   "desc": "方法-目的鏈理論（Means-End Chain Theory, MEC） 是一種來自行為科學和市場行銷的理論框架，用於解釋消費者選擇產品或品牌的深層心理原因。該理論認為，消費者的行為決策由產品屬性、功能效益以及個人價值之間的連結驅動。簡而言之，消費者不僅基於產品的表面特徵進行選擇，更是通過這些特徵實現深層的個人價值或目標。 MEC 理論將消費者的購買決策劃分為三個層次： 1. 產品屬性（Attributes, Means）： 指產品或服務的具體特徵或屬性。 例如：手機的電池容量、攝像頭像素、品牌名稱。 2. 功…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Means-End Chain Theory"
+    }
+   ],
+   "variables": [
+    "Functional Consequences",
+    "Personal Values",
+    "Product Attributes",
+    "Psychosocial Consequences",
+    "Purchase Intention"
+   ],
+   "supplement": false,
+   "field": "行銷／消費者"
+  },
+  {
    "id": "T MRT Media Richness Theory",
    "abbr": "MRT",
    "name": "Media Richness Theory",
    "zh": "媒介豐富度理論",
    "level": "組織層級",
-   "desc": "Media Richness Theory (MRT)** 由 **Daft 和 Lengel** 在 1986 年提出，旨在解釋不同媒體在資訊傳遞過程中的效能差異。該理論認為，媒體的「豐富性」會影響其在解決溝通模糊性和不確定性方面的效率。 1. **媒體豐富性（Media Richness） 定義：媒體在資訊傳遞中提供線索的能力，包括非語言線索、回饋速度、個性化等。 高豐富性媒體**：如面對面溝通，能同時傳遞語言、表情、語調等多種訊息。 低豐富性媒體**：如電子郵件，僅能傳遞文字訊息，缺乏情感和非語言線索。 媒…",
+   "desc": "Media Richness Theory (MRT) 由 Daft 和 Lengel 在 1986 年提出，旨在解釋不同媒體在資訊傳遞過程中的效能差異。該理論認為，媒體的「豐富性」會影響其在解決溝通模糊性和不確定性方面的效率。 1. 媒體豐富性（Media Richness） 定義：媒體在資訊傳遞中提供線索的能力，包括非語言線索、回饋速度、個性化等。 高豐富性媒體：如面對面溝通，能同時傳遞語言、表情、語調等多種訊息。 低豐富性媒體：如電子郵件，僅能傳遞文字訊息，缺乏情感和非語言線索。 媒體豐富性越高，越適合用於…",
    "images": 1,
    "notes": [
     {
@@ -5360,6 +7705,29 @@
    ],
    "supplement": false,
    "field": "組織傳播"
+  },
+  {
+   "id": "T Network Effects",
+   "abbr": "NetFx",
+   "name": "Effects",
+   "zh": "網路效應",
+   "level": "",
+   "desc": "核心理念：由羅伯特·梅特卡夫（Robert Metcalfe）提出，網絡的價值隨使用者數量的增加呈指數增長。 與資訊系統的關聯：資訊系統創造並增強了網絡效應，通過連接使用者、促進數據交換和支持合作來提升組織效率與市場影響力。 即時通訊平台本質上具有強烈的網路外部性：當越多朋友、家人、同事都在使用 Line 時，每個使用者的通訊效率與價值就越高，進一步吸引更多人加入，產生正向迴圈。 關鍵規模 (Critical Mass) Line 在台灣迅速達到「關鍵規模」(critical mass)，一旦達成，就會出現「富者…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T Network Effects"
+    }
+   ],
+   "variables": [
+    "Adoption",
+    "Complementary Goods",
+    "Installed Base",
+    "Perceived Value",
+    "Switching cost"
+   ],
+   "supplement": false,
+   "field": "策略／平台"
   },
   {
    "id": "T Norm Activation Model",
@@ -5385,12 +7753,83 @@
    "field": ""
   },
   {
+   "id": "T RBV Resource-Based View",
+   "abbr": "RBV",
+   "name": "Resource-Based View",
+   "zh": "資源基礎觀點",
+   "level": "組織層級",
+   "desc": "核心理念：該理論認為企業的競爭優勢來自其獨特的資源與能力。 Resource 與資訊系統的關聯：資訊系統如果符合價值性、稀有性、難以模仿性和不可替代性（VRIN 框架 / vrio），可以成為戰略資源，幫助企業利用數據、改善客戶關係及創新。 Non substitutability 主要貢獻者：Wernerfelt (1984), Barney (1991) Barney 1991 核心概念：組織應善用稀有 Rare、有價值 Valuable 、難以模仿 、且不可替代的資源來形成競爭優勢。 與 IS 的關係：將資…",
+   "images": 2,
+   "notes": [
+    {
+     "name": "T RBV Resource-Based View"
+    }
+   ],
+   "variables": [
+    "Competitive Advantage",
+    "Firm Performance",
+    "Resource Inimitability",
+    "Resource Non-substitutability",
+    "Resource Rarity",
+    "Resource Value"
+   ],
+   "supplement": false,
+   "field": "策略"
+  },
+  {
+   "id": "T RDT Resource Dependence",
+   "abbr": "RDT",
+   "name": "Resource Dependence",
+   "zh": "資源依賴理論",
+   "level": "組織層級",
+   "desc": "Resource Dependence Theory (RDT)，中文翻譯為「資源依賴理論」，由 Jeffrey Pfeffer 和 Gerald R. Salancik 在 1978 年提出，是一種用於解釋組織如何與外部環境互動以獲取所需資源的理論。RDT 的核心關注點在於，組織與其外部環境之間存在資源依賴關係，而這種依賴關係會影響組織的行為、結構和決策。 組織的存續和運營依賴於從外部環境獲取關鍵資源（如資金、勞動力、技術、資訊）。因此，外部資源的可用性和控制權成為影響組織行為的關鍵因素。 資源供應方的議價能力…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T RDT Resource Dependence"
+    }
+   ],
+   "variables": [
+    "Environmental Uncertainty",
+    "External Dependence",
+    "Interorganizational Ties",
+    "Resource Concentration",
+    "Resource Criticality"
+   ],
+   "supplement": false,
+   "field": "組織"
+  },
+  {
+   "id": "T SCE Switching Cost Effect",
+   "abbr": "SCE",
+   "name": "Switching Cost Effect",
+   "zh": "轉換成本效應",
+   "level": "個人層級",
+   "desc": "1. Acronym, English Name, Chinese Name T SCE: Switching costCost Effect 2. Concepts in Theory 切換成本效應指消費者或組織在從一個產品、服務或供應商切換到另一個時所需付出的成本，這些成本可能是經濟的、時間的或心理的。 3. Independent Constructs/Factors/Variables 切換成本類型（財務成本、時間成本、學習成本、關係成本） 4. Dependent Constructs/Factors/…",
+   "images": 1,
+   "notes": [
+    {
+     "name": "T SCE Switching Cost Effect"
+    }
+   ],
+   "variables": [
+    "Customer Retention",
+    "Financial Switching Cost",
+    "Procedural Switching Cost",
+    "Relational Switching Cost",
+    "Switching cost",
+    "User Satisfaction"
+   ],
+   "supplement": false,
+   "field": "行銷／顧客"
+  },
+  {
    "id": "T SCT Social Cognition Theory",
    "abbr": "SCT",
    "name": "Social Cognition Theory",
    "zh": "社會認知理論",
    "level": "社會層級",
-   "desc": "社會認知理論 (Social Cognitive Theory, SCT) 主要貢獻者**：Bandura (1986) 核心概念**：強調「個人因素（認知/情感）」、「行為」與「環境因素」三者之間的交互影響（reciprocal determinism）。其中「自我效能（self-efficacy）」是最常被引用的變項，解釋一個人對自己能否成功完成某項行為的信念。 個體行為由環境、個人因素與行為三者交互影響（triadic reciprocal causation）。自我效能(self-efficacy) 是核…",
+   "desc": "社會認知理論 (Social Cognitive Theory, SCT) 主要貢獻者：Bandura (1986) 核心概念：強調「個人因素（認知/情感）」、「行為」與「環境因素」三者之間的交互影響（reciprocal determinism）。其中「自我效能（self-efficacy）」是最常被引用的變項，解釋一個人對自己能否成功完成某項行為的信念。 個體行為由環境、個人因素與行為三者交互影響（triadic reciprocal causation）。自我效能(self-efficacy) 是核心概念。…",
    "images": 1,
    "notes": [
     {
@@ -5412,7 +7851,7 @@
    "name": "Service Quality Model",
    "zh": "服務品質模型",
    "level": "個人層級",
-   "desc": "服務品質理論 / SERVQUAL 主要貢獻者**：Parasuraman, Zeithaml & Berry (1988) 核心概念**：Service Quality 服務品質可從可靠性、確信性、有形性、移情性、反應性等面向測量，顧客（或使用者）對服務的滿意度取決於「期望」與「感知」之間的差距。 與 IS 的關係**：在衡量資訊系統服務（例如 IT 支援、雲端服務）品質時，SERVQUAL 架構能協助評估使用者對系統或 IT 部門的體驗與滿意度。 SERVQUAL**（Service Quality Mode…",
+   "desc": "服務品質理論 / SERVQUAL 主要貢獻者：Parasuraman, Zeithaml & Berry (1988) 核心概念：Service Quality 服務品質可從可靠性、確信性、有形性、移情性、反應性等面向測量，顧客（或使用者）對服務的滿意度取決於「期望」與「感知」之間的差距。 與 IS 的關係：在衡量資訊系統服務（例如 IT 支援、雲端服務）品質時，SERVQUAL 架構能協助評估使用者對系統或 IT 部門的體驗與滿意度。 SERVQUAL（Service Quality Model）是由 Par…",
    "images": 1,
    "notes": [
     {
@@ -5460,7 +7899,7 @@
    "name": "Capital Theory",
    "zh": "社會資本理論",
    "level": "社會層級",
-   "desc": "社會資本理論主張，個人或組織的資源不僅來自於自身，也依賴於社會網絡中的關係和互動。 社會資本包括以下三個主要構面： 結構資本（Structural Capital）**：社會網絡的結構（如聯繫的數量與模式）。 --> T Structural Holes Theory 關係資本（Relational Capital）**：網絡中的信任、義務和認同。 認知資本（Cognitive Capital）**：共同的語言與文化理解。 在資訊管理中，社會資本理論用於解釋組織內部與外部如何利用社會網絡來促進知識分享與合作。 範…",
+   "desc": "社會資本理論主張，個人或組織的資源不僅來自於自身，也依賴於社會網絡中的關係和互動。 社會資本包括以下三個主要構面： 結構資本（Structural Capital）：社會網絡的結構（如聯繫的數量與模式）。 --> T Structural Holes Theory 關係資本（Relational Capital）：網絡中的信任、義務和認同。 認知資本（Cognitive Capital）：共同的語言與文化理解。 在資訊管理中，社會資本理論用於解釋組織內部與外部如何利用社會網絡來促進知識分享與合作。 範例：員工之間…",
    "images": 0,
    "notes": [
     {
@@ -5508,7 +7947,7 @@
    "name": "Social Presence Theory",
    "zh": "社會臨場感理論",
    "level": "個人層級",
-   "desc": "Social Presence Theory (SPT)，中文常翻譯為「社會臨場理論」，最初由 **John Short**、**Ederyn Williams** 和 **Bruce Christie** 在 1976 年提出。該理論探討在媒介溝通過程中，不同媒介如何影響參與者之間的互動與「社會臨場感」的程度，即感知彼此「同在」的程度。 3. **溝通效果（Communication Effectiveness） 社會臨場感的高低會影響溝通的效率、互動滿意度以及任務完成效果： 高社會臨場感**可促進團隊合作、提…",
+   "desc": "Social Presence Theory (SPT)，中文常翻譯為「社會臨場理論」，最初由 John Short、Ederyn Williams 和 Bruce Christie 在 1976 年提出。該理論探討在媒介溝通過程中，不同媒介如何影響參與者之間的互動與「社會臨場感」的程度，即感知彼此「同在」的程度。 3. 溝通效果（Communication Effectiveness） 社會臨場感的高低會影響溝通的效率、互動滿意度以及任務完成效果： 高社會臨場感可促進團隊合作、提升參與感。 低社會臨場感可能導致…",
    "images": 2,
    "notes": [
     {
@@ -5531,7 +7970,7 @@
    "name": "Technology–Organization–Environment Framework",
    "zh": "科技－組織－環境架構",
    "level": "組織層級",
-   "desc": "科技–組織–環境框架 (Technology–Organization–Environment Framework, TOE) 主要貢獻者**：Tornatzky & Fleischer (1990) 核心概念**：組織在評估科技採用時，必須考量科技 Technology、組織 Organization 與外部環境  Environment 三種構面以及彼此的交互作用。 與 IS 的關係**：用於解釋組織在選擇導入雲端運算、電子商務 E-commerce、ERP 等新資訊系統時，如何同時面對內部組織需求及外部環境…",
+   "desc": "科技–組織–環境框架 (Technology–Organization–Environment Framework, TOE) 主要貢獻者：Tornatzky & Fleischer (1990) 核心概念：組織在評估科技採用時，必須考量科技 Technology、組織 Organization 與外部環境  Environment 三種構面以及彼此的交互作用。 與 IS 的關係：用於解釋組織在選擇導入雲端運算、電子商務 E-commerce、ERP 等新資訊系統時，如何同時面對內部組織需求及外部環境壓力。",
    "images": 1,
    "notes": [
     {
@@ -5553,7 +7992,7 @@
    "name": "Theory of Planned Behavior",
    "zh": "計畫行為理論",
    "level": "個人層級",
-   "desc": "example in Information Security Policy Compliance -- An Empirical Study of Rationality-Based Beliefs and Information Security Awareness, Bulgurcu 2010 態度（Attitude）**：個人對執行該行為的正面或負面評價。 主觀規範（Subjective Norms）**：感受到的社會壓力，即重要他人（如主管、同事）是否支持該行為。 知覺行為控制（Perceived Be…",
+   "desc": "example in Information Security Policy Compliance -- An Empirical Study of Rationality-Based Beliefs and Information Security Awareness, Bulgurcu 2010 態度（Attitude）：個人對執行該行為的正面或負面評價。 主觀規範（Subjective Norms）：感受到的社會壓力，即重要他人（如主管、同事）是否支持該行為。 知覺行為控制（Perceived Behavi…",
    "images": 2,
    "notes": [
     {
@@ -5598,7 +8037,7 @@
    "name": "Task-Technology Fit",
    "zh": "任務科技適配",
    "level": "個人層級",
-   "desc": "1. **Acronym, English Name, Chinese Name TTF, Task-Technology Fit Model, 任務-技術適配模型 Goodhue and Thompson (1995) 2. **Concepts in Theory 任務-技術適配模型強調技術能否有效支持使用者完成特定任務。當技術特性與任務需求高度匹配時，使用者更有可能採用技術並提高其工作績效。 3. **Independent Constructs/Factors/Variables 技術特性 (Techno…",
+   "desc": "1. Acronym, English Name, Chinese Name TTF, Task-Technology Fit Model, 任務-技術適配模型 Goodhue and Thompson (1995) 2. Concepts in Theory 任務-技術適配模型強調技術能否有效支持使用者完成特定任務。當技術特性與任務需求高度匹配時，使用者更有可能採用技術並提高其工作績效。 3. Independent Constructs/Factors/Variables 技術特性 (Technology C…",
    "images": 1,
    "notes": [
     {
@@ -5646,7 +8085,7 @@
    "name": "Technology Acceptance Model",
    "zh": "科技接受模型",
    "level": "個人層級",
-   "desc": "technology adoption model 核心概念**：用戶對系統的接受取決於「感知有用性 (PU Perceived Usefulness)」和「感知易用性 (Perceived Ease of Use)」。 應用**：分析用戶對新系統的接受度，特別是在**初次導入階段。 適用情境**：企業導入 ERP、CRM 或其他新技術時，用戶的採用行為。",
+   "desc": "technology adoption model 核心概念：用戶對系統的接受取決於「感知有用性 (PU Perceived Usefulness)」和「感知易用性 (Perceived Ease of Use)」。 應用：分析用戶對新系統的接受度，特別是在初次導入階段。 適用情境：企業導入 ERP、CRM 或其他新技術時，用戶的採用行為。",
    "images": 3,
    "notes": [
     {
@@ -5731,6 +8170,55 @@
    "field": "社會心理"
   },
   {
+   "id": "T LMX Leader-member exchange",
+   "abbr": "LMX",
+   "name": "Leader-member exchange",
+   "zh": "領導者－成員交換",
+   "level": "",
+   "desc": "",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T LMX Leader-member exchange"
+    }
+   ],
+   "variables": [
+    "Job Performance",
+    "Job Satisfaction",
+    "Leader-Member Exchange Quality",
+    "Organizational Citizenship Behavior",
+    "Trust",
+    "Turnover Intention"
+   ],
+   "supplement": false,
+   "field": "組織行為"
+  },
+  {
+   "id": "T POS Perceived Organizational Support",
+   "abbr": "POS",
+   "name": "Perceived Organizational Support",
+   "zh": "知覺組織支持",
+   "level": "",
+   "desc": "",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T POS Perceived Organizational Support"
+    }
+   ],
+   "variables": [
+    "Affective Commitment",
+    "Fairness",
+    "Job Performance",
+    "Perceived Organizational Support",
+    "Rewards and Job Conditions",
+    "Supervisor Support",
+    "Turnover Intention"
+   ],
+   "supplement": false,
+   "field": "組織行為"
+  },
+  {
    "id": "T PT Prospect Theory",
    "abbr": "PT",
    "name": "Prospect Theory",
@@ -5786,7 +8274,7 @@
    "name": "Social Exchange Theory",
    "zh": "社會交換理論",
    "level": "社會層級",
-   "desc": "社會交換理論認為，社會關係本質上是一種交換過程，個體或組織的行為基於成本與收益的評估。 互惠性**：彼此交換資源（如信息、支持）。 信任**：長期互動需要基於信任的關係。 滿意度**：交換關係應該帶來滿足感和價值。 主要貢獻者**：Homans (1958), Blau (1964) 核心概念**：人際或組織互動透過交換(資源、資訊、信任) 而建立關係，若交換得到的回報高，將促進持續互動。 與 IS 的關係**：在解釋線上社群或虛擬社群中，個體為何願意貢獻知識、分享資訊、持續互動等行為時，常引用此理論。 在資訊管…",
+   "desc": "社會交換理論認為，社會關係本質上是一種交換過程，個體或組織的行為基於成本與收益的評估。 互惠性：彼此交換資源（如信息、支持）。 信任：長期互動需要基於信任的關係。 滿意度：交換關係應該帶來滿足感和價值。 主要貢獻者：Homans (1958), Blau (1964) 核心概念：人際或組織互動透過交換(資源、資訊、信任) 而建立關係，若交換得到的回報高，將促進持續互動。 與 IS 的關係：在解釋線上社群或虛擬社群中，個體為何願意貢獻知識、分享資訊、持續互動等行為時，常引用此理論。 在資訊管理中，社會交換理論用於解…",
    "images": 0,
    "notes": [
     {
@@ -5803,6 +8291,30 @@
    ],
    "supplement": false,
    "field": "社會學／組織"
+  },
+  {
+   "id": "T SHT Stakeholder Theory",
+   "abbr": "SHT",
+   "name": "Stakeholder Theory",
+   "zh": "利害關係人理論",
+   "level": "社會層級",
+   "desc": "",
+   "images": 0,
+   "notes": [
+    {
+     "name": "T SHT Stakeholder Theory"
+    }
+   ],
+   "variables": [
+    "CSR Engagement",
+    "Firm Performance",
+    "Org Reputation",
+    "Stakeholder Pressure",
+    "Stakeholder Salience",
+    "Trust"
+   ],
+   "supplement": false,
+   "field": "策略／CSR"
   },
   {
    "id": "T Uses and Gratifications",
@@ -5832,7 +8344,7 @@
    "name": "TTAT Technology Threat Avoidance Theory",
    "zh": "科技威脅迴避理論",
    "level": "",
-   "desc": "題目類型**：理論應用與整合 **題目全文**： 有學者認為演算法厭惡可以視為一種「技術威脅避免」行為。請根據相關理論，探討「感知威脅嚴重性（Perceived Severity）」與「感知易感性（Perceived Susceptibility）」如何共同塑造使用者對演算法的防禦性反應。Algorithm Aversion 1 感知威脅嚴重性**：指用戶認為演算法錯誤會帶來的後果（如醫療事故、專業聲譽受損、法律訴訟）有多嚴重。後果越嚴重，厭惡感越強。 感知易感性**：指用戶認為自己或其決策「容易受到」演算法偏差…",
+   "desc": "題目類型：理論應用與整合 題目全文： 有學者認為演算法厭惡可以視為一種「技術威脅避免」行為。請根據相關理論，探討「感知威脅嚴重性（Perceived Severity）」與「感知易感性（Perceived Susceptibility）」如何共同塑造使用者對演算法的防禦性反應。Algorithm Aversion 1 感知威脅嚴重性：指用戶認為演算法錯誤會帶來的後果（如醫療事故、專業聲譽受損、法律訴訟）有多嚴重。後果越嚴重，厭惡感越強。 感知易感性：指用戶認為自己或其決策「容易受到」演算法偏差影響的程度。例如，如…",
    "images": 2,
    "notes": [
     {
@@ -5977,7 +8489,7 @@
    "name": "CASA - Computers are social Actors",
    "zh": "電腦是社會行動者",
    "level": "",
-   "desc": "「電腦作為社會角色」（Computers Are Social Actors, CASA）範式是 HCI, Human-Computer Interaction 領域的重要基石。請說明 CASA 範式的核心主張，並以此理論解釋「擬人化」（Anthropomorphism Theory）如何調節使用者對 AI 生成內容的接受度？ 題目類型**：理論應用與模型建構 CASA 核心主張**：個體在與具備人類特徵的電腦或系統互動時，即便清楚對方不是人類，仍會下意識地應用人類社會的社交規則、禮儀與期望於這些非人實體上 。 …",
+   "desc": "「電腦作為社會角色」（Computers Are Social Actors, CASA）範式是 HCI, Human-Computer Interaction 領域的重要基石。請說明 CASA 範式的核心主張，並以此理論解釋「擬人化」（Anthropomorphism Theory）如何調節使用者對 AI 生成內容的接受度？ 題目類型：理論應用與模型建構 CASA 核心主張：個體在與具備人類特徵的電腦或系統互動時，即便清楚對方不是人類，仍會下意識地應用人類社會的社交規則、禮儀與期望於這些非人實體上 。 增加社會…",
    "images": 0,
    "notes": [
     {
@@ -6554,14 +9066,18 @@
    "field": "行銷／IS"
   },
   {
-   "id": "Commitment-Trust Theory",
+   "id": "Commitment trust theory",
    "abbr": "KMV",
-   "name": "Commitment-Trust Theory",
+   "name": "Commitment trust theory",
    "zh": "承諾－信任理論",
    "level": "",
    "desc": "Morgan & Hunt（1994）：共享價值與溝通建立信任，投機行為破壞信任；信任與承諾是關係的關鍵中介。",
    "images": 0,
-   "notes": [],
+   "notes": [
+    {
+     "name": "Commitment trust theory"
+    }
+   ],
    "variables": [
     "Communication",
     "Customer Retention",
@@ -6570,8 +9086,8 @@
     "Shared Values",
     "Trust"
    ],
-   "supplement": true,
-   "field": "關係行銷"
+   "supplement": false,
+   "field": "行銷／關係行銷"
   },
   {
    "id": "American Customer Satisfaction Index Model",
@@ -6928,6 +9444,422 @@
     "Instrumentality",
     "Motivation",
     "Valence"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Five Forces 五力分析",
+   "abbr": "5F",
+   "name": "Five Forces 五力分析",
+   "zh": "五力分析",
+   "level": "",
+   "desc": "五力分析模型是由 Michael E. Porter 在1980年的著作《競爭策略》（Competitive Strategy）中提出的一個管理工具，用於分析產業結構及競爭態勢。該模型有助於企業了解所處行業的競爭強度和盈利潛力，並制定有效的競爭策略。 五力分析模型的核心在於識別影響行業競爭的五種力量，它們共同決定了行業的吸引力和長期盈利能力。 概念： 新進入者可能帶來新的資源與競爭，削弱現有企業的市場份額和利潤。 經濟規模效益： 新進入者難以在初期實現規模經濟。 資本需求： 需要大量資金的行業會阻礙新進者。 品牌…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "Five Forces 五力分析"
+    }
+   ],
+   "variables": [
+    "Buyer Bargaining Power",
+    "Entry Barriers",
+    "Industry Profitability",
+    "Rivalry Intensity",
+    "Supplier Bargaining Power",
+    "Threat of New Entrants",
+    "Threat of Substitutes"
+   ],
+   "supplement": false,
+   "field": "策略"
+  },
+  {
+   "id": "Transaction Cost",
+   "abbr": "TCE",
+   "name": "Transaction Cost",
+   "zh": "交易成本經濟學",
+   "level": "",
+   "desc": "交易成本並不僅限於「價格」本身，而是為了完成一項交易而必須額外付出的 Cost，包括： 搜尋成本 Search cost and Information Cost：為取得資訊、找到合適交易對象所付出的成本。 談判與契約成本 Bargaining & Decision Cost ：為協商交易條款、擬定契約以及簽約等所付出的時間與金錢。 履約與監督成本 Policing & Enforcement Cost：為確保契約條款被遵守，或發現並處理違約行為所需的成本。 簡言之，交易成本是指「在市場上買賣商品或服務時，除去商…",
+   "images": 2,
+   "notes": [
+    {
+     "name": "Transaction Cost"
+    }
+   ],
+   "variables": [
+    "Asset Specificity",
+    "Behavioral Uncertainty",
+    "Environmental Uncertainty",
+    "Hierarchical Governance",
+    "Opportunistic Behavior",
+    "Transaction Cost",
+    "Transaction Frequency"
+   ],
+   "supplement": false,
+   "field": "組織經濟"
+  },
+  {
+   "id": "Two-Sided Market",
+   "abbr": "2SM",
+   "name": "Two-Sided Market",
+   "zh": "雙邊市場／平台經濟",
+   "level": "",
+   "desc": "",
+   "images": 0,
+   "notes": [
+    {
+     "name": "Two-Sided Market"
+    }
+   ],
+   "variables": [
+    "Cost of Multihoming",
+    "Platform Lock-in",
+    "Provider-side Participation",
+    "Subsidy to Price-sensitive Side",
+    "User-side Installed Base",
+    "Winner-take-all Tendency"
+   ],
+   "supplement": false,
+   "field": "策略／平台"
+  },
+  {
+   "id": "Ambidextrous Organization",
+   "abbr": "Ambidex",
+   "name": "Ambidextrous Organization",
+   "zh": "雙元組織（探索與利用）",
+   "level": "",
+   "desc": "",
+   "images": 0,
+   "notes": [
+    {
+     "name": "Ambidextrous Organization"
+    }
+   ],
+   "variables": [
+    "Environmental Uncertainty",
+    "Exploitation",
+    "Exploration",
+    "Firm Performance",
+    "Innovation Performance",
+    "Operational Efficiency",
+    "Organizational Ambidexterity"
+   ],
+   "supplement": false,
+   "field": "策略／組織"
+  },
+  {
+   "id": "CBBE",
+   "abbr": "CBBE",
+   "name": "CBBE",
+   "zh": "顧客基礎品牌權益（Keller）",
+   "level": "",
+   "desc": "Customer-Based Brand Equity",
+   "images": 1,
+   "notes": [
+    {
+     "name": "CBBE"
+    }
+   ],
+   "variables": [
+    "Brand Associations",
+    "Brand Attitude",
+    "Brand Awareness",
+    "Brand Equity",
+    "Brand Image",
+    "Consumer Loyalty",
+    "Purchase Intention"
+   ],
+   "supplement": false,
+   "field": "行銷／品牌"
+  },
+  {
+   "id": "Brand Attitude Model",
+   "abbr": "Aad",
+   "name": "Brand Attitude Model",
+   "zh": "廣告態度→品牌態度→購買意圖",
+   "level": "",
+   "desc": "MacKenzie, Lutz & Belch（1986）：對廣告的態度經品牌認知與品牌態度轉成購買意圖（雙中介假說）。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Ad Credibility",
+    "Ad Likeability",
+    "Attitude toward the Ad",
+    "Brand Attitude",
+    "Brand Cognitions",
+    "Purchase Intention"
+   ],
+   "supplement": true,
+   "field": "行銷／廣告"
+  },
+  {
+   "id": "Hierarchy of Effects",
+   "abbr": "HoE",
+   "name": "Hierarchy of Effects",
+   "zh": "效果層級模式（AIDA／Lavidge-Steiner）",
+   "level": "",
+   "desc": "Lavidge & Steiner（1961）：認知→情感→行為的階梯：知曉、知識、喜好、偏好、確信、購買。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Brand Attitude",
+    "Brand Awareness",
+    "Brand Preference",
+    "Knowledge",
+    "Purchase",
+    "Purchase Intention"
+   ],
+   "supplement": true,
+   "field": "行銷／廣告"
+  },
+  {
+   "id": "Service-Profit Chain",
+   "abbr": "SPC",
+   "name": "Service-Profit Chain",
+   "zh": "服務利潤鏈",
+   "level": "",
+   "desc": "Heskett et al.（1994）：內部服務品質→員工滿意→員工留任與生產力→外部服務價值→顧客滿意→忠誠→獲利與成長。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Consumer Loyalty",
+    "Employee Retention",
+    "Firm Performance",
+    "Internal Service Quality",
+    "Job Satisfaction",
+    "Perceived Value",
+    "Service Quality",
+    "User Satisfaction"
+   ],
+   "supplement": true,
+   "field": "行銷／服務"
+  },
+  {
+   "id": "Perceived Value Model",
+   "abbr": "PVal",
+   "name": "Perceived Value Model",
+   "zh": "知覺價值模型（Zeithaml）",
+   "level": "",
+   "desc": "Zeithaml（1988）：知覺價值是「得到的」與「付出的」之間的權衡，由知覺品質與知覺犧牲（價格、時間、心力）決定。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Perceived Quality",
+    "Perceived Sacrifice",
+    "Perceived Value",
+    "Price",
+    "Purchase Intention"
+   ],
+   "supplement": true,
+   "field": "行銷／消費者"
+  },
+  {
+   "id": "Price Fairness Model",
+   "abbr": "PFair",
+   "name": "Price Fairness Model",
+   "zh": "價格公平（雙重權利原則）",
+   "level": "",
+   "desc": "Kahneman, Knetsch & Thaler（1986）；Xia, Monroe & Cox（2004）：與參考價格的落差、賣方動機歸因與交易相似性決定公平感，公平感影響滿意與購買。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Dynamic Pricing",
+    "Perceived Price Fairness",
+    "Price Difference from Reference",
+    "Purchase Intention",
+    "Seller Cost Justification",
+    "Seller Profit Motive Attribution",
+    "User Satisfaction"
+   ],
+   "supplement": true,
+   "field": "行銷／定價"
+  },
+  {
+   "id": "Electronic Word-of-Mouth Model",
+   "abbr": "eWOM",
+   "name": "Electronic Word-of-Mouth Model",
+   "zh": "網路口碑模型",
+   "level": "",
+   "desc": "整理自 eWOM 採用研究（Cheung & Thadani 2012）：訊息品質、來源可信度與評論一致性影響口碑可信度，再影響態度與購買。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Bandwagon Effect",
+    "Brand Attitude",
+    "Perceived Credibility",
+    "Purchase Intention",
+    "Review Consistency",
+    "Review Quality",
+    "Review Volume",
+    "eWOM Credibility"
+   ],
+   "supplement": true,
+   "field": "行銷／數位"
+  },
+  {
+   "id": "Customer Engagement Model",
+   "abbr": "CEng",
+   "name": "Customer Engagement Model",
+   "zh": "顧客參與（投入）模型",
+   "level": "",
+   "desc": "Brodie et al.（2011）；van Doorn et al.（2010）：滿意、信任與認同驅動顧客的認知、情感與行為投入，投入提升忠誠與口碑。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Brand Identification",
+    "Consumer Loyalty",
+    "Customer Engagement",
+    "Trust",
+    "User Satisfaction",
+    "Word of Mouth"
+   ],
+   "supplement": true,
+   "field": "行銷／顧客"
+  },
+  {
+   "id": "Exit, Voice, Loyalty",
+   "abbr": "EVL",
+   "name": "Exit, Voice, Loyalty",
+   "zh": "退出、發聲與忠誠（Hirschman）",
+   "level": "",
+   "desc": "Albert O. Hirschman 在《Exit, Voice, and Loyalty》（1970）中提出了退出（Exit）、發聲（Voice）與忠誠（Loyalty）的概念來解釋個體或群體面對組織或市場衰退時的反應。這一框架被廣泛應用於政治學、經濟學、管理學與社會學等領域，並衍生出許多延伸概念： Neglect（忽視）：有學者（如 Rusbult et al.，1982）提出，在組織行為或人際關係中，個體還可能選擇「忽視」（Neglect），即對於組織或關係的衰退無動於衷，既不離開（Exit），也不試圖改…",
+   "images": 0,
+   "notes": [
+    {
+     "name": "Exit, Voice, Loyalty"
+    }
+   ],
+   "variables": [
+    "Alternative Attractiveness",
+    "Consumer Loyalty",
+    "Dissatisfaction",
+    "Exit",
+    "Service Recovery",
+    "Voice"
+   ],
+   "supplement": false,
+   "field": "組織經濟／顧客"
+  },
+  {
+   "id": "Three-Component Commitment Model",
+   "abbr": "TCM",
+   "name": "Three-Component Commitment Model",
+   "zh": "組織承諾三成分模型",
+   "level": "",
+   "desc": "Meyer & Allen（1991）：情感、持續與規範承諾各有前因，共同降低離職意圖。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Affective Commitment",
+    "Continuance Commitment",
+    "Normative Commitment",
+    "Organizational Citizenship Behavior",
+    "Perceived Organizational Support",
+    "Socialization",
+    "Switching cost",
+    "Turnover Intention"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Psychological Contract Breach",
+   "abbr": "PCB",
+   "name": "Psychological Contract Breach",
+   "zh": "心理契約違反",
+   "level": "",
+   "desc": "Robinson & Rousseau（1994）；Zhao et al.（2007）：知覺到組織未履行承諾引發違反感，降低滿意、承諾與公民行為，提高離職意圖。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Affective Commitment",
+    "Job Satisfaction",
+    "Organizational Citizenship Behavior",
+    "Psychological Contract Breach",
+    "Turnover Intention",
+    "Unmet Promises",
+    "Violation Feelings"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Goal-Setting Theory",
+   "abbr": "GST",
+   "name": "Goal-Setting Theory",
+   "zh": "目標設定理論",
+   "level": "",
+   "desc": "Locke & Latham（1990, 2002）：具體且困難的目標在承諾與回饋下提高績效；任務複雜度削弱效果。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Feedback",
+    "Goal Commitment",
+    "Goal Difficulty",
+    "Goal Specificity",
+    "Job Performance",
+    "Self-Efficacy",
+    "Task Complexity"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Two-Factor Theory",
+   "abbr": "Herzberg",
+   "name": "Two-Factor Theory",
+   "zh": "雙因子理論",
+   "level": "",
+   "desc": "Herzberg（1959）：保健因子不足造成不滿，激勵因子充足才帶來滿意；兩者不是同一連續體。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Hygiene Factors",
+    "Job Dissatisfaction",
+    "Job Satisfaction",
+    "Motivation",
+    "Motivator Factors",
+    "Turnover Intention"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Equity Theory",
+   "abbr": "EqT",
+   "name": "Equity Theory",
+   "zh": "公平理論（Adams）",
+   "level": "",
+   "desc": "Adams（1965）：投入／產出比與參照對象不相等時產生不公平感，個人會調整投入或離開。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Distributive Justice",
+    "Input-Outcome Ratio Discrepancy",
+    "Job Satisfaction",
+    "Motivation",
+    "Perceived Inequity",
+    "Turnover Intention"
+   ],
+   "supplement": true,
+   "field": "組織行為"
+  },
+  {
+   "id": "Job Demands-Resources Model",
+   "abbr": "JD-R",
+   "name": "Job Demands-Resources Model",
+   "zh": "工作要求－資源模式",
+   "level": "",
+   "desc": "Bakker & Demerouti（2007）：工作要求導致耗竭，工作資源帶來投入並緩衝要求的傷害。",
+   "images": 0,
+   "notes": [],
+   "variables": [
+    "Burnout",
+    "Job Demands",
+    "Job Performance",
+    "Job Resources",
+    "Turnover Intention",
+    "Work Engagement"
    ],
    "supplement": true,
    "field": "組織行為"
@@ -10228,7 +13160,7 @@
    "src": "Shared Values",
    "dst": "Trust",
    "sign": "+",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -10238,7 +13170,7 @@
    "src": "Communication",
    "dst": "Trust",
    "sign": "+",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -10248,7 +13180,7 @@
    "src": "Opportunistic Behavior",
    "dst": "Trust",
    "sign": "-",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -10258,7 +13190,7 @@
    "src": "Trust",
    "dst": "Relationship Commitment",
    "sign": "+",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -10268,7 +13200,7 @@
    "src": "Relationship Commitment",
    "dst": "Customer Retention",
    "sign": "+",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -10278,7 +13210,7 @@
    "src": "Trust",
    "dst": "Customer Retention",
    "sign": "+",
-   "theory": "Commitment-Trust Theory",
+   "theory": "Commitment trust theory",
    "source": "seed",
    "note": null,
    "mod": null,
@@ -11639,6 +14571,1846 @@
    "dst": "Behavior",
    "sign": "+",
    "theory": "Expectancy Theory (Vroom)",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Value",
+   "dst": "Competitive Advantage",
+   "sign": "+",
+   "theory": "T RBV Resource-Based View",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Rarity",
+   "dst": "Competitive Advantage",
+   "sign": "+",
+   "theory": "T RBV Resource-Based View",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Inimitability",
+   "dst": "Competitive Advantage",
+   "sign": "+",
+   "theory": "T RBV Resource-Based View",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Non-substitutability",
+   "dst": "Competitive Advantage",
+   "sign": "+",
+   "theory": "T RBV Resource-Based View",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Competitive Advantage",
+   "dst": "Firm Performance",
+   "sign": "+",
+   "theory": "T RBV Resource-Based View",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Sensing Capability",
+   "dst": "Dynamic Capabilities",
+   "sign": "+",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Seizing Capability",
+   "dst": "Dynamic Capabilities",
+   "sign": "+",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Transforming Capability",
+   "dst": "Dynamic Capabilities",
+   "sign": "+",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Dynamic Capabilities",
+   "dst": "Resource Reconfiguration",
+   "sign": "+",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Reconfiguration",
+   "dst": "Competitive Advantage",
+   "sign": "+",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Environmental Uncertainty",
+   "dst": "Resource Reconfiguration",
+   "sign": "m",
+   "theory": "T Dynamic Capabilities Theory",
+   "source": "seed",
+   "note": null,
+   "mod": "Dynamic Capabilities",
+   "noteUrl": ""
+  },
+  {
+   "src": "Rivalry Intensity",
+   "dst": "Industry Profitability",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Threat of New Entrants",
+   "dst": "Industry Profitability",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Threat of Substitutes",
+   "dst": "Industry Profitability",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Supplier Bargaining Power",
+   "dst": "Industry Profitability",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Buyer Bargaining Power",
+   "dst": "Industry Profitability",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Entry Barriers",
+   "dst": "Threat of New Entrants",
+   "sign": "-",
+   "theory": "Five Forces 五力分析",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Asset Specificity",
+   "dst": "Transaction Cost",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Behavioral Uncertainty",
+   "dst": "Transaction Cost",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Environmental Uncertainty",
+   "dst": "Transaction Cost",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Transaction Frequency",
+   "dst": "Transaction Cost",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Transaction Cost",
+   "dst": "Hierarchical Governance",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Opportunistic Behavior",
+   "dst": "Transaction Cost",
+   "sign": "+",
+   "theory": "Transaction Cost",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Goal Conflict",
+   "dst": "Agency Problem",
+   "sign": "+",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Information Asymmetry",
+   "dst": "Agency Problem",
+   "sign": "+",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Agency Problem",
+   "dst": "Agency Cost",
+   "sign": "+",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Monitoring",
+   "dst": "Agency Problem",
+   "sign": "-",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Outcome-based Contract",
+   "dst": "Agency Problem",
+   "sign": "-",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Risk Aversion of Agent",
+   "dst": "Agency Problem",
+   "sign": "m",
+   "theory": "T Agency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": "Outcome-based Contract",
+   "noteUrl": ""
+  },
+  {
+   "src": "Information Asymmetry",
+   "dst": "Adverse Selection",
+   "sign": "+",
+   "theory": "T IAT Information Asymmetry Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Information Asymmetry",
+   "dst": "Moral Hazard",
+   "sign": "+",
+   "theory": "T IAT Information Asymmetry Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Adverse Selection",
+   "dst": "Market Efficiency",
+   "sign": "-",
+   "theory": "T IAT Information Asymmetry Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Signal Credibility",
+   "dst": "Information Asymmetry",
+   "sign": "-",
+   "theory": "T IAT Information Asymmetry Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Screening",
+   "dst": "Information Asymmetry",
+   "sign": "-",
+   "theory": "T IAT Information Asymmetry Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Stakeholder Pressure",
+   "dst": "CSR Engagement",
+   "sign": "+",
+   "theory": "T SHT Stakeholder Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Stakeholder Salience",
+   "dst": "Stakeholder Pressure",
+   "sign": "+",
+   "theory": "T SHT Stakeholder Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "CSR Engagement",
+   "dst": "Org Reputation",
+   "sign": "+",
+   "theory": "T SHT Stakeholder Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "CSR Engagement",
+   "dst": "Trust",
+   "sign": "+",
+   "theory": "T SHT Stakeholder Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Org Reputation",
+   "dst": "Firm Performance",
+   "sign": "+",
+   "theory": "T SHT Stakeholder Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Criticality",
+   "dst": "External Dependence",
+   "sign": "+",
+   "theory": "T RDT Resource Dependence",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Resource Concentration",
+   "dst": "External Dependence",
+   "sign": "+",
+   "theory": "T RDT Resource Dependence",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "External Dependence",
+   "dst": "Environmental Uncertainty",
+   "sign": "+",
+   "theory": "T RDT Resource Dependence",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "External Dependence",
+   "dst": "Interorganizational Ties",
+   "sign": "+",
+   "theory": "T RDT Resource Dependence",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Interorganizational Ties",
+   "dst": "Environmental Uncertainty",
+   "sign": "-",
+   "theory": "T RDT Resource Dependence",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Installed Base",
+   "dst": "Perceived Value",
+   "sign": "+",
+   "theory": "T Network Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Value",
+   "dst": "Adoption",
+   "sign": "+",
+   "theory": "T Network Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Adoption",
+   "dst": "Installed Base",
+   "sign": "+",
+   "theory": "T Network Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Complementary Goods",
+   "dst": "Perceived Value",
+   "sign": "+",
+   "theory": "T Network Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Installed Base",
+   "dst": "Switching cost",
+   "sign": "+",
+   "theory": "T Network Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "User-side Installed Base",
+   "dst": "Provider-side Participation",
+   "sign": "+",
+   "theory": "Two-Sided Market",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Provider-side Participation",
+   "dst": "User-side Installed Base",
+   "sign": "+",
+   "theory": "Two-Sided Market",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Cost of Multihoming",
+   "dst": "Platform Lock-in",
+   "sign": "-",
+   "theory": "Two-Sided Market",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Platform Lock-in",
+   "dst": "Winner-take-all Tendency",
+   "sign": "+",
+   "theory": "Two-Sided Market",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Subsidy to Price-sensitive Side",
+   "dst": "User-side Installed Base",
+   "sign": "+",
+   "theory": "Two-Sided Market",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Low-end Foothold",
+   "dst": "Disruptive Innovation",
+   "sign": "+",
+   "theory": "T Disruptive Innovation Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Performance Oversupply",
+   "dst": "Low-end Foothold",
+   "sign": "+",
+   "theory": "T Disruptive Innovation Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Disruptive Innovation",
+   "dst": "Incumbent Market Share",
+   "sign": "-",
+   "theory": "T Disruptive Innovation Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Incumbent Focus on Profitable Customers",
+   "dst": "Incumbent Response",
+   "sign": "-",
+   "theory": "T Disruptive Innovation Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Incumbent Response",
+   "dst": "Incumbent Market Share",
+   "sign": "+",
+   "theory": "T Disruptive Innovation Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Exploration",
+   "dst": "Innovation Performance",
+   "sign": "+",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Exploitation",
+   "dst": "Operational Efficiency",
+   "sign": "+",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Organizational Ambidexterity",
+   "dst": "Firm Performance",
+   "sign": "+",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Exploration",
+   "dst": "Organizational Ambidexterity",
+   "sign": "+",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Exploitation",
+   "dst": "Organizational Ambidexterity",
+   "sign": "+",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Environmental Uncertainty",
+   "dst": "Firm Performance",
+   "sign": "m",
+   "theory": "Ambidextrous Organization",
+   "source": "seed",
+   "note": null,
+   "mod": "Organizational Ambidexterity",
+   "noteUrl": ""
+  },
+  {
+   "src": "Environmental Uncertainty",
+   "dst": "Organic Structure Need",
+   "sign": "+",
+   "theory": "T Contingency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Structure-Environment Fit",
+   "dst": "Firm Performance",
+   "sign": "+",
+   "theory": "T Contingency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Task Uncertainty",
+   "dst": "Structure-Environment Fit",
+   "sign": "-",
+   "theory": "T Contingency Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Output Volume",
+   "dst": "Average Cost",
+   "sign": "-",
+   "theory": "T Economies of Scale and Scope",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Product Scope",
+   "dst": "Average Cost",
+   "sign": "-",
+   "theory": "T Economies of Scale and Scope",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Average Cost",
+   "dst": "Competitive Advantage",
+   "sign": "-",
+   "theory": "T Economies of Scale and Scope",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Fixed Cost Share",
+   "dst": "Average Cost",
+   "sign": "m",
+   "theory": "T Economies of Scale and Scope",
+   "source": "seed",
+   "note": null,
+   "mod": "Output Volume",
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Awareness",
+   "dst": "Brand Equity",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Associations",
+   "dst": "Brand Image",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Image",
+   "dst": "Brand Equity",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Equity",
+   "dst": "Brand Attitude",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Attitude",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Equity",
+   "dst": "Consumer Loyalty",
+   "sign": "+",
+   "theory": "CBBE",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Ad Credibility",
+   "dst": "Attitude toward the Ad",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Ad Likeability",
+   "dst": "Attitude toward the Ad",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Attitude toward the Ad",
+   "dst": "Brand Attitude",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Attitude toward the Ad",
+   "dst": "Brand Cognitions",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Cognitions",
+   "dst": "Brand Attitude",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Attitude",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "Brand Attitude Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Awareness",
+   "dst": "Knowledge",
+   "sign": "+",
+   "theory": "Hierarchy of Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Knowledge",
+   "dst": "Brand Attitude",
+   "sign": "+",
+   "theory": "Hierarchy of Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Attitude",
+   "dst": "Brand Preference",
+   "sign": "+",
+   "theory": "Hierarchy of Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Preference",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "Hierarchy of Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Purchase Intention",
+   "dst": "Purchase",
+   "sign": "+",
+   "theory": "Hierarchy of Effects",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Internal Service Quality",
+   "dst": "Job Satisfaction",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Satisfaction",
+   "dst": "Employee Retention",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Employee Retention",
+   "dst": "Service Quality",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Service Quality",
+   "dst": "Perceived Value",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Value",
+   "dst": "User Satisfaction",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "User Satisfaction",
+   "dst": "Consumer Loyalty",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Consumer Loyalty",
+   "dst": "Firm Performance",
+   "sign": "+",
+   "theory": "Service-Profit Chain",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Product Attributes",
+   "dst": "Functional Consequences",
+   "sign": "+",
+   "theory": "T Means-End Chain Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Functional Consequences",
+   "dst": "Psychosocial Consequences",
+   "sign": "+",
+   "theory": "T Means-End Chain Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Psychosocial Consequences",
+   "dst": "Personal Values",
+   "sign": "+",
+   "theory": "T Means-End Chain Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Personal Values",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "T Means-End Chain Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Quality",
+   "dst": "Perceived Value",
+   "sign": "+",
+   "theory": "Perceived Value Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Sacrifice",
+   "dst": "Perceived Value",
+   "sign": "-",
+   "theory": "Perceived Value Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Price",
+   "dst": "Perceived Quality",
+   "sign": "+",
+   "theory": "Perceived Value Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Price",
+   "dst": "Perceived Sacrifice",
+   "sign": "+",
+   "theory": "Perceived Value Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Value",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "Perceived Value Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Price Difference from Reference",
+   "dst": "Perceived Price Fairness",
+   "sign": "-",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Seller Cost Justification",
+   "dst": "Perceived Price Fairness",
+   "sign": "+",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Seller Profit Motive Attribution",
+   "dst": "Perceived Price Fairness",
+   "sign": "-",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Price Fairness",
+   "dst": "User Satisfaction",
+   "sign": "+",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Price Fairness",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Dynamic Pricing",
+   "dst": "Price Difference from Reference",
+   "sign": "+",
+   "theory": "Price Fairness Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Procedural Switching Cost",
+   "dst": "Switching cost",
+   "sign": "+",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Financial Switching Cost",
+   "dst": "Switching cost",
+   "sign": "+",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Relational Switching Cost",
+   "dst": "Switching cost",
+   "sign": "+",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Switching cost",
+   "dst": "Customer Retention",
+   "sign": "+",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Switching cost",
+   "dst": "Customer Retention",
+   "sign": "m",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": "User Satisfaction",
+   "noteUrl": ""
+  },
+  {
+   "src": "User Satisfaction",
+   "dst": "Customer Retention",
+   "sign": "+",
+   "theory": "T SCE Switching Cost Effect",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Review Quality",
+   "dst": "eWOM Credibility",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Credibility",
+   "dst": "eWOM Credibility",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Review Consistency",
+   "dst": "eWOM Credibility",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Review Volume",
+   "dst": "Bandwagon Effect",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "eWOM Credibility",
+   "dst": "Brand Attitude",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Attitude",
+   "dst": "Purchase Intention",
+   "sign": "+",
+   "theory": "Electronic Word-of-Mouth Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "User Satisfaction",
+   "dst": "Customer Engagement",
+   "sign": "+",
+   "theory": "Customer Engagement Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Trust",
+   "dst": "Customer Engagement",
+   "sign": "+",
+   "theory": "Customer Engagement Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Brand Identification",
+   "dst": "Customer Engagement",
+   "sign": "+",
+   "theory": "Customer Engagement Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Customer Engagement",
+   "dst": "Consumer Loyalty",
+   "sign": "+",
+   "theory": "Customer Engagement Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Customer Engagement",
+   "dst": "Word of Mouth",
+   "sign": "+",
+   "theory": "Customer Engagement Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Dissatisfaction",
+   "dst": "Exit",
+   "sign": "+",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Dissatisfaction",
+   "dst": "Voice",
+   "sign": "+",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Consumer Loyalty",
+   "dst": "Exit",
+   "sign": "-",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Consumer Loyalty",
+   "dst": "Voice",
+   "sign": "+",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Alternative Attractiveness",
+   "dst": "Exit",
+   "sign": "+",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Voice",
+   "dst": "Service Recovery",
+   "sign": "+",
+   "theory": "Exit, Voice, Loyalty",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Organizational Support",
+   "dst": "Affective Commitment",
+   "sign": "+",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Switching cost",
+   "dst": "Continuance Commitment",
+   "sign": "+",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Socialization",
+   "dst": "Normative Commitment",
+   "sign": "+",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Affective Commitment",
+   "dst": "Turnover Intention",
+   "sign": "-",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Continuance Commitment",
+   "dst": "Turnover Intention",
+   "sign": "-",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Normative Commitment",
+   "dst": "Turnover Intention",
+   "sign": "-",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Affective Commitment",
+   "dst": "Organizational Citizenship Behavior",
+   "sign": "+",
+   "theory": "Three-Component Commitment Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Fairness",
+   "dst": "Perceived Organizational Support",
+   "sign": "+",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Supervisor Support",
+   "dst": "Perceived Organizational Support",
+   "sign": "+",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Rewards and Job Conditions",
+   "dst": "Perceived Organizational Support",
+   "sign": "+",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Organizational Support",
+   "dst": "Affective Commitment",
+   "sign": "+",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Organizational Support",
+   "dst": "Job Performance",
+   "sign": "+",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Organizational Support",
+   "dst": "Turnover Intention",
+   "sign": "-",
+   "theory": "T POS Perceived Organizational Support",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Leader-Member Exchange Quality",
+   "dst": "Job Satisfaction",
+   "sign": "+",
+   "theory": "T LMX Leader-member exchange",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Leader-Member Exchange Quality",
+   "dst": "Organizational Citizenship Behavior",
+   "sign": "+",
+   "theory": "T LMX Leader-member exchange",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Leader-Member Exchange Quality",
+   "dst": "Job Performance",
+   "sign": "+",
+   "theory": "T LMX Leader-member exchange",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Leader-Member Exchange Quality",
+   "dst": "Turnover Intention",
+   "sign": "-",
+   "theory": "T LMX Leader-member exchange",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Trust",
+   "dst": "Leader-Member Exchange Quality",
+   "sign": "+",
+   "theory": "T LMX Leader-member exchange",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Distributive Justice",
+   "dst": "Job Satisfaction",
+   "sign": "+",
+   "theory": "T Justice Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Procedural Justice",
+   "dst": "Affective Commitment",
+   "sign": "+",
+   "theory": "T Justice Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Interactional Justice",
+   "dst": "Trust",
+   "sign": "+",
+   "theory": "T Justice Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Procedural Justice",
+   "dst": "Trust",
+   "sign": "+",
+   "theory": "T Justice Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Trust",
+   "dst": "Organizational Citizenship Behavior",
+   "sign": "+",
+   "theory": "T Justice Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Unmet Promises",
+   "dst": "Psychological Contract Breach",
+   "sign": "+",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Psychological Contract Breach",
+   "dst": "Violation Feelings",
+   "sign": "+",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Violation Feelings",
+   "dst": "Job Satisfaction",
+   "sign": "-",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Violation Feelings",
+   "dst": "Affective Commitment",
+   "sign": "-",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Violation Feelings",
+   "dst": "Turnover Intention",
+   "sign": "+",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Violation Feelings",
+   "dst": "Organizational Citizenship Behavior",
+   "sign": "-",
+   "theory": "Psychological Contract Breach",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Goal Specificity",
+   "dst": "Job Performance",
+   "sign": "+",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Goal Difficulty",
+   "dst": "Job Performance",
+   "sign": "+",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Goal Commitment",
+   "dst": "Job Performance",
+   "sign": "m",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": "Goal Difficulty",
+   "noteUrl": ""
+  },
+  {
+   "src": "Feedback",
+   "dst": "Job Performance",
+   "sign": "m",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": "Goal Specificity",
+   "noteUrl": ""
+  },
+  {
+   "src": "Task Complexity",
+   "dst": "Job Performance",
+   "sign": "m",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": "Goal Difficulty",
+   "noteUrl": ""
+  },
+  {
+   "src": "Self-Efficacy",
+   "dst": "Goal Commitment",
+   "sign": "+",
+   "theory": "Goal-Setting Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Hygiene Factors",
+   "dst": "Job Dissatisfaction",
+   "sign": "-",
+   "theory": "Two-Factor Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Motivator Factors",
+   "dst": "Job Satisfaction",
+   "sign": "+",
+   "theory": "Two-Factor Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Satisfaction",
+   "dst": "Motivation",
+   "sign": "+",
+   "theory": "Two-Factor Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Dissatisfaction",
+   "dst": "Turnover Intention",
+   "sign": "+",
+   "theory": "Two-Factor Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Input-Outcome Ratio Discrepancy",
+   "dst": "Perceived Inequity",
+   "sign": "+",
+   "theory": "Equity Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Inequity",
+   "dst": "Motivation",
+   "sign": "-",
+   "theory": "Equity Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Inequity",
+   "dst": "Job Satisfaction",
+   "sign": "-",
+   "theory": "Equity Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Inequity",
+   "dst": "Turnover Intention",
+   "sign": "+",
+   "theory": "Equity Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Perceived Inequity",
+   "dst": "Distributive Justice",
+   "sign": "-",
+   "theory": "Equity Theory",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Demands",
+   "dst": "Burnout",
+   "sign": "+",
+   "theory": "Job Demands-Resources Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Resources",
+   "dst": "Work Engagement",
+   "sign": "+",
+   "theory": "Job Demands-Resources Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Job Resources",
+   "dst": "Burnout",
+   "sign": "m",
+   "theory": "Job Demands-Resources Model",
+   "source": "seed",
+   "note": null,
+   "mod": "Job Demands",
+   "noteUrl": ""
+  },
+  {
+   "src": "Burnout",
+   "dst": "Job Performance",
+   "sign": "-",
+   "theory": "Job Demands-Resources Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Work Engagement",
+   "dst": "Job Performance",
+   "sign": "+",
+   "theory": "Job Demands-Resources Model",
+   "source": "seed",
+   "note": null,
+   "mod": null,
+   "noteUrl": ""
+  },
+  {
+   "src": "Burnout",
+   "dst": "Turnover Intention",
+   "sign": "+",
+   "theory": "Job Demands-Resources Model",
    "source": "seed",
    "note": null,
    "mod": null,
