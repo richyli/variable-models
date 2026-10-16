@@ -791,14 +791,32 @@ theories:
     - [Media Richness, Communication Effectiveness, +]
     - [Task Equivocality, Media Richness -> Communication Effectiveness, m]
     - [Communication Effectiveness, Job Performance, +]
+    - [Task Uncertainty, Media Richness -> Communication Effectiveness, m]
+    - [Media-Task Fit, Job Performance, +]
+    - [Experience, Perceived Media Richness, +]
+    - [Critical Mass, Adoption, +]
+    - [Social Norm, Media Use, +]
+    - [Media Richness, Motivation, +]
+    - [Media Richness, Information Processing Ability, '-']
+    - [Media Naturalness, Cognitive Load, '-']
     desc: Daft 與 Lengel（1984, 1986）提出：媒介依回饋即時性、多重線索、語言多樣性與個人化程度分出豐富度高低；任務模糊性高時要用豐富媒介協商共同意義，不確定性高時只需增加資訊量，媒介與任務相配才能提升溝通效能與管理績效。
     refs:
     - {title: 'IS Theories wiki: Media richness theory', url: 'https://is.theorizeit.org/wiki/Media_richness_theory'}
     - {title: 'Daft & Lengel (1986) Organizational Information Requirements, Media Richness and Structural Design', url: 'https://collablab.northwestern.edu//CollabolabDistro/nucmc/DaftAndLengel-OrgInfoReq-MediaRichnessAndStructuralDesign-MngmtSci-1986.pdf'}
     - {title: 'Wikipedia: Media richness theory', url: 'https://en.wikipedia.org/wiki/Media_richness_theory'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 19 章', url: ''}
     enrich_notes: 保留原有兩條。補上 Daft & Lengel 的四個豐富度判準（新造 Feedback Immediacy、Multiple Cues、Language Variety、Personal Focus）作為媒介豐富度的前因；補上模糊性驅動媒介選擇（Task
       Equivocality -> Media Richness）與不確定性驅動資訊量（新造 Information Amount Required）兩條原始命題；Daft, Lengel & Trevino（1987）發現媒介與模糊性相配的管理者績效較高，故加
       Communication Effectiveness -> Job Performance。原理論是配適（fit）命題，這裡用「調節」表示配適。
+    book_check: Miles 2012 第 19 章對照：補 8 條邊；書中變數我們原本沒有的：Media-Task Fit、Perceived Media Richness、Critical Mass、Information Processing
+      Ability、Media Naturalness、Synchronicity、Reprocessability、Channel Capacity、Content Timeliness、Content Accuracy、Content
+      Adaptability。核心主張是適配（fit）：豐富度對溝通效果的影響依任務模糊度而定（模糊訊息需豐富媒介、明確訊息用精簡媒介即可，p.176），所以畫成 Task Equivocality 調節，而不是豐富度直接為正；Media-Task
+      Fit→Job Performance 對應 p.176–177「善用媒介的經理人較有效」。四個媒介特性→豐富度是 Daft & Lengel（1984）的定義拆解。Experience→Perceived Media Richness
+      來自 Carlson & Zmud（1999）channel expansion（p.177），Experience 沿用既有名稱但書中分成通道、主題、組織脈絡、共同參與者四種經驗。Critical Mass→Adoption（Markus
+      1987）、Social Norm→Media Use（Fulk 等社會影響模型、Markus 1994）出自批評節。Media Richness→Motivation 為正、→Information Processing Ability
+      為負是 Robert & Dennis（2005）的悖論（p.178）。Media Naturalness→Cognitive Load 為負出自 Kock（2005、2009）：愈不像面對面，認知努力、模糊與生理激發愈高（p.178）。Lan
+      & Sie（2010）的四個內容面向與 Mohan 等（2009）的同步性、可再處理性、通道容量只列為缺的變數，書沒給因果。我們清單已有 Media Richness、Task Equivocality、Feedback Immediacy、Multiple
+      Cues、Language Variety、Personal Focus、Social Presence，覆蓋度高。
   T SPT Social Presence Theory:
     note: T SPT Social Presence Theory
     abbr: SPT
@@ -887,14 +905,30 @@ theories:
     - [Valence, Emotions, +]
     - [Emotions, Behavior, +]
     - [Expectancy, Behavior, +]
+    - [Locus, Self-Esteem, +]
+    - [Locus, Self-Efficacy, +]
+    - [Stability, Outcome Expectations, +]
+    - [Responsibility Attribution, Punitive Response, +]
+    - [Responsibility Attribution, Helping Behavior, '-']
+    - [Consensus, Locus, '-']
+    - [Distinctiveness, Locus, '-']
+    - [Consistency, Locus, +]
+    - [Outcome Expectations, Persistence, +]
     desc: Weiner（1985、1995）：人對成敗與他人行為的原因判斷落在內外歸因、穩定性、可控性三個維度；穩定性決定對未來結果的預期，內外歸因與可控性決定責任判斷與情緒（自尊、憤怒、同情、罪惡），預期與情緒再驅動行為。
     refs:
     - {title: 'An attributional theory of achievement motivation and emotion (Weiner, 1985; course copy)', url: 'https://eclass.uoa.gr/modules/document/file.php/PPP387/weinerAnattributionaltheory.pdf'}
     - {title: Attribution (psychology) (Wikipedia), url: 'https://en.wikipedia.org/wiki/Attribution_(psychology)'}
     - {title: 'The role of causal attributions in achievement: meta-analysis (Brun, Pansu & Dompnier, 2021)', url: 'https://serval.unil.ch/notice/serval:BIB_320FF9A6B3AF'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 6 章', url: ''}
     enrich_notes: 原五條保留四條，刪掉 Stability → Responsibility Attribution：Weiner 的責任判斷由內外歸因與可控性決定，穩定性影響的是預期（expectancy of success），所以改接到既有變數
       Expectancy。Stability → Expectancy 的意思是「穩定原因使人預期同樣結果再發生」，正負要看結果好壞，故用 Valence（結果效價）調節；Valence → Emotions 是 Weiner 的結果依賴情緒（先於歸因）。Brun
       等（2021）的後設分析支持認知→預期→行動的序列。
+    book_check: Miles 2012 第 6 章對照：補 9 條邊；書中變數我們原本沒有的：Globality、Intentionality、Task Difficulty、Luck、Consensus、Distinctiveness、Consistency、Helping
+      Behavior、Punitive Response、Self-Serving Bias、Fundamental Attribution Error、Actor-Observer Effect、Group-Serving Bias。Locus
+      在邊裡編碼為『內在程度』（越高越內在）。書上明寫：成功歸因於努力（內在）→驕傲、高自尊、高自我效能與成功期望；歸因於穩定原因→預期同樣結果再發生（失敗時變成無望感），所以 Stability→Outcome Expectations
+      的正號指『期望與過去結果同向』，效價要另外處理；可控原因→判定他人該負責→責備、譴責、報復；不可控→幫助。Kelley 共變：三者皆高→外在歸因；共識低、特殊性低、一致性高→內在歸因，邊的正負是照此換算。心理後果→行為後果（努力與否）是書中七階段的最後一步，Persistence
+      沿用既有名稱。四種偏誤是現象描述、無方向，只列變數不畫邊；群體自利偏誤（Goncalo 與 Duguid 2008）可延伸到組織層次。因果前因（過去績效、社會規範、期望）影響歸因類別但書未給方向，只列變數。我們的『Responsibility
+      Attribution』『Locus』『Stability』『Controllability』應是從 SCCT 來的，正好可共用。量表：Dixon 等（2001）努力／能力／任務／策略／運氣歸因量表；Martinko 等（2007）歸因風格問卷。
   T Institutional Theory:
     note: T Institutional Theory
     abbr: InstT
@@ -911,14 +945,27 @@ theories:
     - [Isomorphism, Legitimacy, +]
     - [Legitimacy, Organizational Survival, +]
     - [Legitimacy, Resource Concentration, +]
+    - [Coercive Pressure, Isomorphism, +]
+    - [Mimetic Pressure, Isomorphism, +]
+    - [Normative Pressure, Isomorphism, +]
+    - [Legitimacy, Resource Acquisition, +]
+    - [Organizational Status, Isomorphism -> Legitimacy, m]
     desc: DiMaggio 與 Powell（1983）、Meyer 與 Rowan（1977）：組織為了取得合法性而非效率，會在強制、模仿、規範三種制度壓力下採用相同的結構與做法，形成同構；同構帶來合法性與存續，不確定性越高越傾向模仿。
     refs:
     - {title: DiMaggio & Powell (1983) The Iron Cage Revisited (PDF), url: 'https://Www.Gwern.net/doc/sociology/1983-dimaggio.pdf'}
     - {title: Institutional theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Institutional_theory'}
     - {title: Institutional theory - IS Theories wiki, url: 'https://is.theorizeit.org/wiki/Institutional_theory'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 17 章', url: ''}
     enrich_notes: 保留原三條壓力→採用。依 DiMaggio & Powell 的三組假設補前因：資源依賴（External Dependence，沿用名單）→強制壓力、不確定性→模仿壓力、專業化→規範壓力；依 Meyer &
       Rowan 補採用→同構→合法性→存續與資源取得（用名單既有 Resource Concentration 代表資源流入）。原理論不談績效，DiMaggio & Powell 明說同構與效率無關，故不加績效邊。新造變數：Professionalization、Isomorphism、Legitimacy、Organizational
       Survival。
+    book_check: Miles 2012 第 17 章對照：補 5 條邊；書中變數我們原本沒有的：Resource Acquisition、Strategic Response to Institutional Pressure、Institutional
+      Entrepreneurship、Organizational Status、Field-level Variability。三種壓力→同形是書明寫（p.159–160）。External Dependence→Coercive Pressure
+      對應書中「強制同形來自組織所依賴資源的持有者」；Environmental Uncertainty→Mimetic Pressure 對應「不確定該怎麼做時模仿成功組織」；Professionalization→Normative
+      Pressure 對應「教育訓練、專業網絡」，三條都是依書的定義句拆出的前因，不是書以因果句寫的。順從→正當性、資源、存活來自 p.160（Oliver 1997；Yang & Konrad 2010）。Organizational
+      Status 調節來自批評節 Phillips & Zuckerman（2001）：中階地位者最需要表現正當，高地位可偏離、低地位只求生存；書是對正當性約束的質疑，我畫成調節。Isomorphism→Firm Performance
+      書說仍在爭論（p.162），不畫邊。Acquiescence 清單已有，是 Oliver（1991）五種回應之一，其餘四種（compromise、avoidance、defiance、manipulation）合併列為 Strategic
+      Response to Institutional Pressure。測量節的專業承諾、子公司績效、可程式化與控制幅度量表都是應用研究的操作化，不是核心構念。
   T IDT Innovation Diffusion Theory:
     note: T IDT Innovation Diffusion Theory
     abbr: IDT
@@ -937,12 +984,23 @@ theories:
     - [Social Norm, Adoption, +]
     - [Innovativeness, Adoption, +]
     - [Communication, Observability, +]
+    - [Cosmopolitan Orientation, Innovativeness, +]
+    - [Change Agent Contact, Innovativeness, +]
+    - [Media Use, Innovation Awareness, +]
+    - [Cumulative Adoption, Adoption, +]
     desc: Rogers（1962／2003）：創新被採用的速度取決於採用者對相對優勢、相容性、複雜性、可試用性、可觀察性的感知，並透過傳播管道、意見領袖與社會系統規範在時間中擴散；個人創新性決定採用者類別。
     refs:
     - {title: Diffusion of innovations (Wikipedia), url: 'https://en.wikipedia.org/wiki/Diffusion_of_innovations'}
     - {title: 'Diffusion of Innovations (TheoryHub, Newcastle University)', url: 'https://open.ncl.ac.uk/theories/8/diffusion-of-innovations/'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 9 章', url: ''}
     enrich_notes: 原五條保留（TheoryHub 確認四正一負）。補 Rogers 擴散四要素中的傳播管道、社會系統（規範、意見領袖）與採用者創新性；可試用性降低不確定性（Perceived Risk）是 Rogers 對 trialability
       的解釋機制。Adoption 在此代表採用率／採用決策，原理論的五階段歷程（知曉→說服→決定→實施→確認）無法畫成變數邊，略去。
+    book_check: Miles 2012 第 9 章對照：補 4 條邊；書中變數我們原本沒有的：Adoption Rate、Innovation Awareness、Change Agent Contact、Cosmopolitan
+      Orientation、Cumulative Adoption、Critical Mass、Overadoption、Re-invention。五個創新屬性→採用速度是書上明寫（複雜度為負，書寫成『簡單易懂』為正）。早知曉者的特徵：教育、社會地位、大眾媒體接觸、人際溝通管道、變革推動者接觸、社會參與、世界主義取向（Rogers
+      1983），我把它們連到 Innovativeness／Innovation Awareness 是依『早知曉／早採用』的描述推的，書給的是相關側寫不是因果。擴散效應：採用者越多對他人的壓力越大（Cumulative Adoption→Adoption
+      +），壓力過高會過度採用；臨界多數後擴散自我維持。我們的 Installed Base、Bandwagon Effect、Perceived Majority Support 是鄰近概念但分別屬網路效應與捷思，故另立 Cumulative
+      Adoption。Opinion Leader Influence 在我們清單裡，但本章正文沒提意見領袖，只提人際溝通管道，所以沒畫邊。批評：假定所有創新都該採用、忽略拒絕與負面後果、『落後者』帶貶義、只看技術創新。量表：Pankratz
+      等（2002）知覺屬性量表；London 等（1977）世界主義－在地主義量表；Borrego 等（2010）創新知曉量表。
   Technostress Model:
     abbr: TStress
     zh: 科技壓力模型
@@ -1211,13 +1269,26 @@ theories:
     - [Social Environment, Behavior, +]
     - [Behavior, Social Environment, +]
     - [Behavior, Past Performance, +]
+    - [Observational Learning, Behavior, +]
+    - [Reinforcement, Behavior, +]
+    - [Self-Efficacy, Effort, +]
+    - [Self-Efficacy, Persistence, +]
+    - [Self-Efficacy, Job Performance, +]
+    - [Job Performance, Self-Efficacy, +]
+    - [Self-Regulation, Job Performance, +]
+    - [General Self-Efficacy, Feedback -> Self-Efficacy, m]
     desc: Bandura（1986, 2004）提出：個人認知、行為與環境三者交互決定；自我效能是核心，透過精熟經驗與觀察學習建立，直接提高行為並影響結果預期與目標設定，社會環境的助力與阻力也會影響效能、預期與行為，行為反過來改變環境與效能。
     refs:
     - {title: 'IS Theories wiki: Social cognitive theory', url: 'https://is.theorizeit.org/wiki/Social_cognitive_theory'}
     - {title: 'Bandura (2004) Health promotion by social cognitive means, Health Education & Behavior 31(2)', url: 'https://pubmed.ncbi.nlm.nih.gov/15090118/'}
     - {title: 'Simply Psychology: Albert Bandura''s Social Cognitive Theory', url: 'https://www.simplypsychology.org/social-cognitive-theory.html'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 31 章', url: ''}
     enrich_notes: 保留原五條。原理論是三元交互決定論，沒有單向正負號；這裡採 Bandura（2004）健康促進版的核心決定因子結構（知識、自我效能、結果預期、目標、社會結構助力與阻力），Bandura 的「goals」用名單既有的
       Goal Commitment。社會環境同時含助力（+）與阻力（−），統一畫成正向、把阻力視為反向計分。Behavior -> Past Performance -> Self-Efficacy 表達精熟經驗的回饋環。
+    book_check: Miles 2012 第 31 章對照：補 8 條邊；書中變數我們原本沒有的：Observational Learning、General Self-Efficacy、Reinforcement、Self-Regulation、Personal
+      Agency、Moral Disengagement。我們清單另有 T SEF Self-Efficacy Theory，與本章重疊，自我效能相關變數已在。書上明寫：自我效能→努力與持續性、新行為需獎賞才持續、自我獎賞者表現較佳。相互決定論（行為↔環境↔認知三者雙向）是前提而非可檢定的單向邊，故未畫，若要畫可加
+      Behavior↔Environment 雙向。Job Performance→Self-Efficacy 來自批評節 Vancouver et al.（2001, 2002）的反向發現，書上明寫。GSE 調節環境回饋對任務自我效能的影響，是批評節引述其他研究者的說法，非
+      Bandura 本人。Measuring 一節只給自我效能量表（GSE、集體效能、知覺一般自我效能）與 moral disengagement，故 Moral Disengagement 列為書中構念但無邊。
   Value-Belief-Norm Theory:
     abbr: VBN
     zh: 價值－信念－規範理論
@@ -1294,13 +1365,24 @@ theories:
     - [Relationship Commitment, Continuance Intention, +]
     - [Trust, Continuance Intention, +]
     - [Relationship Commitment, Organizational Citizenship Behavior, +]
+    - [Perceived Reward, Trust, +]
+    - [Trust, Social Exchange Relationship, +]
+    - [Relationship Satisfaction, Social Exchange Relationship, +]
+    - [Perceived Organizational Support, Organizational Citizenship Behavior, +]
+    - [Perceived Job Security, Social Exchange Relationship -> Knowledge Sharing, m]
     desc: Homans（1958）與 Blau（1964）提出：社會關係是報酬與成本的交換歷程，人尋求報酬最大化；在互惠規範下重複交換會累積信任與承諾，使經濟性交換轉為長期的社會性交換關係，替代選擇越有吸引力則依賴與承諾越低。
     refs:
     - {title: Social exchange theory (IS Theories wiki), url: 'https://is.theorizeit.org/wiki/Social_exchange_theory'}
     - {title: Social exchange theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Social_exchange_theory'}
     - {title: 'Social exchange theory: Systematic review and future directions (Frontiers in Psychology 2022)', url: 'https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.1015921/full'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 33 章', url: ''}
     enrich_notes: 原五條保留。SET 是框架不是固定模型，此處採關係行銷／組織研究的常見實證版本：互惠與公平規範建立信任，信任與報酬成本評估決定承諾，承諾導向持續與公民行為；替代選擇吸引力對應 Thibaut 與 Kelley
       的替代比較水準及 Emerson 的依賴概念。Emerson 的權力—依賴分支（依賴→權力）未畫入。
+    book_check: Miles 2012 第 33 章對照：補 5 條邊；書中變數我們原本沒有的：Social Exchange Relationship、Economic Exchange Relationship、Relationship
+      Satisfaction、Perceived Job Security。書上明寫：持續獲得回報提高互信與承諾（通則 3）、穩定互惠與交換規模漸擴產生信任、信任升高後才有大額交換、各方滿意度是未來交換的首要決定因素、未履行互惠義務會招致社會制裁（可補
+      Reciprocity→Informal Sanctions 負向邊，未列）。Alternative Attractiveness→Relationship Commitment 的負號由通則 2「與替代關係比較成本效益」推出。POS→OCB
+      與 Knowledge Sharing 來自 Measuring 節列的 Wayne et al.（1997）、Bartol et al.（2009），後者標題明寫 perceived job security 為社會交換→知識分享的調節；管理者啟示節則寫成主效果（高工作保障者才分享知識）。Social
+      Exchange Relationship／Economic Exchange Relationship 對應 Shore et al.（2006）量表。
   T Social Capital Theory:
     note: T Social Capital Theory
     abbr: SocCap
@@ -1321,14 +1403,30 @@ theories:
     - [Knowledge Sharing, Innovation Performance, +]
     - [Trust, Relational Social Capital, +]
     - [Shared Values, Cognitive Social Capital, +]
+    - [Network Centrality, Social Capital, +]
+    - [Social Capital, Career Success, +]
+    - [Social Capital, Innovation Performance, +]
+    - [Social Capital, Employee Retention, +]
+    - [Social Capital, Organizational Survival, +]
+    - [Social Capital, Knowledge Transfer, +]
+    - [Social Capital, Exclusion of Outsiders, +]
+    - [Overembeddedness, Knowledge Sharing, '-']
     desc: Nahapiet 與 Ghoshal（1998）承 Coleman、Putnam：鑲嵌在關係網絡中的資源分結構（連結型態）、關係（信任、規範、義務）、認知（共享語言與願景）三構面，彼此相生，共同促進知識交換與組合而提高創新與績效；Putnam
       另分橋接與連結兩型。
     refs:
     - {title: Social capital theory (IS Theories wiki), url: 'https://is.theorizeit.org/wiki/Social_capital_theory'}
     - {title: 'What is Structural Social Capital? (Social Capital Research)', url: 'https://www.socialcapitalresearch.com/structural-social-capital/'}
     - {title: Social capital and tacit knowledge sharing in organisational projects (Aston thesis), url: 'https://research.aston.ac.uk/en/studentTheses/social-capital-and-tacit-knowledge-sharing-in-organisational-proj'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 30 章', url: ''}
     enrich_notes: 原五條（Ellison 等人的 CMC 版本：使用→橋接／連結→支持／資訊→幸福感）保留。另加 Nahapiet–Ghoshal 三構面與 Tsai–Ghoshal（1998）的構面間關係：結構資本是關係與認知資本的前提，三者各自促進知識分享（Aston
       與 Petra 的實證都確認），知識分享再帶來創新。Trust、Shared Values 是關係／認知資本的組成指標，畫成輸入邊。
+    book_check: Miles 2012 第 30 章對照：補 8 條邊；書中變數我們原本沒有的：Social Capital、Network Centrality、Civic Engagement、Career Success、Executive
+      Compensation、Overembeddedness、Exclusion of Outsiders、Tie Maintenance Cost。我們清單有結構／關係／認知與結合／橋接五個分面，但沒有彙總構念 Social Capital
+      本身，書中的利益清單都是接在彙總構念上，故列為缺。社會資本「取決於成員在關係網絡中的位置」（p264）寫成 Network Centrality→Social Capital。利益清單（職涯成功、高階薪酬、求職、招募、產品創新、資源交換、較低離職率、較低組織失敗率、成長、創業、供應商關係、跨公司學習；Adler
+      & Kwon 2002；Florin et al. 2003，p264–265）為書上明寫，我挑五項對應既有或新變數入邊，Knowledge Transfer 對應「interfirm learning」。負面後果（排外、過度要求、限制自由、向下拉平）書上明寫（p265），入邊一條；Uzzi（1997）過度鑲嵌抑制知識流動、Hansen（2002）跨單位連結有維持成本亦書上明寫。Hansen（2002）跨單位連結有維持成本（Interorganizational
+      Ties→Tie Maintenance Cost「+」）為守 8 條上限未入邊。Trust／Reciprocity／Cooperation／Norms 在 Fulkerson & Thompson（2008）分類裡屬「normative
+      social capital」的成分，是構成關係不是因果，故不畫邊。書上另有重要批評：套套邏輯、因果方向不明、與 trust／membership／community 區分不清、幾乎無法測量（p266–267）。Measuring
+      Variables：Onyx & Bullen 2000 一般社會資本量表、Kritsotakis et al. 2008 SCQ-G。
   T Flow Theory:
     note: T Flow Theory
     abbr: Flow
@@ -1394,13 +1492,22 @@ theories:
     - [Loss Aversion, Switching Intention, '-']
     - [Perceived Risk, Behavioral Intention, '-']
     - [Loss Framing, Behavioral Intention, +]
+    - [Reference Point, Gain Framing -> Risk Seeking, m]
+    - [Loss Framing, Perceived Risk, +]
+    - [Loss Aversion, Risk Seeking, +]
     desc: Kahneman 與 Tversky（1979）提出展望理論：人以參考點判斷得失而非最終財富，價值函數在獲利區凹、損失區凸且損失比等量獲利更痛（損失趨避），機率權重非線性；因此獲利框架下趨避風險、損失框架下尋求風險，描述方式會改變決策。
     refs:
     - {title: Prospect theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Prospect_theory'}
     - {title: Prospect theory - Britannica, url: 'https://www.britannica.com/topic/prospect-theory'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 24 章', url: ''}
     enrich_notes: 保留原四條邊。補參考點（Reference Point，新造）：參考點位置決定同一結果被編碼為得或失，故寫成提高損失框架出現的機會。補機率權重兩個效應：確定效應（Certainty Effect）使人偏好確定獲利、降低風險尋求；小機率高估（Small
       Probability Overweighting）使人買彩券、提高風險尋求——兩者在原理論同時作用、產生四重風險態度型態，這裡拆成兩條單向邊以便畫圖。損失趨避→不願轉換（Switching Intention −）是現狀偏誤／稟賦效應的常見應用，Wikipedia
       僅提及應用未展開。Loss Framing -> Behavioral Intention (+) 是健康與說服研究常用的損失框架訊息效果，屬常見實證版本而非原理論命題。
+    book_check: Miles 2012 第 24 章對照：補 3 條邊；書中變數我們原本沒有的：Subjective Value、Resistance to Change、Sensation Seeking。框成損失→承擔更多風險、框成獲利→趨避風險為書上明寫（p216）；參考點決定同一選項被框成得或失，故寫成調節。Loss
+      Aversion→Risk Seeking 指在損失域寧選「可能的損失」不選「確定的損失」（p216），是我把該敘述轉成邊。Small Probability Overweighting→Risk Seeking 依書上「高估低機率解釋保險、賭博、樂透的吸引力」推的，嚴格說保險是避險、賭博是冒險，方向僅適用賭博面。Loss
+      Framing→Perceived Risk 出自管理意涵節（框架影響知覺風險，p220）。書中 risk attitude 對應我們既有 Risk Tolerance。Measuring Variables 列的是 Markowitz
+      1952 財富效用問卷、Oreg et al. 2008 抗拒改變量表、Haynes et al. 2000 感官尋求量表、Weber et al. 2002 風險態度量表（DOSPERT）。批評：Levy & Levy（2002）混合展望下得反
+      S 形；未納入時間（Kanfer 1990）。
   T CDT Cognitive Dissonance Theory:
     note: T CDT Cognitive Dissonance Theory
     abbr: CDT
@@ -1687,14 +1794,29 @@ theories:
     - [Resource Non-substitutability, Competitive Advantage -> Sustained Competitive Advantage, m]
     - [Competitive Advantage, Firm Performance, +]
     - [Sustained Competitive Advantage, Firm Performance, +]
+    - [Resource Value, Sustainable Competitive Advantage, +]
+    - [Resource Rarity, Sustainable Competitive Advantage, +]
+    - [Resource Inimitability, Sustainable Competitive Advantage, +]
+    - [Resource Non-substitutability, Sustainable Competitive Advantage, +]
+    - [Path Dependence, Resource Inimitability, +]
+    - [Absorptive Capacity, Resource Value -> Sustainable Competitive Advantage, m]
+    - [Sustainable Competitive Advantage, Firm Performance, +]
     desc: Wernerfelt（1984）與 Barney（1991）提出：企業間資源異質且不可移動，有價值且稀有的資源帶來競爭優勢；若資源同時難以模仿（因果模糊、社會複雜）且無法替代，優勢才能持續，並轉化為較佳的廠商績效。
     refs:
     - {title: Resource-based view (Wikipedia), url: 'https://en.wikipedia.org/wiki/Resource-based_view'}
     - {title: VRIN Framework (Managing Research Library), url: 'https://managingresearchlibrary.org/node/1414'}
     - {title: 'Lockett, Thompson and Morgenstern 2009, The development of the resource-based view of the firm', url: 'https://oeclass.aua.gr/eclass/modules/document/file.php/5565/Required%20Reading_Lockett%20et%20al%202009%20development%20of%20the%20resource%20based%20view%20of%20the%20firm.pdf'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 26 章', url: ''}
     enrich_notes: 改了結構：Barney（1991）區分競爭優勢（有價值＋稀有即可）與持續競爭優勢（再加難以模仿、不可替代），原本把四個條件一律接到 Competitive Advantage 把兩層壓平了，改成 I 與 N
       調節「競爭優勢→持續競爭優勢」。新增兩個基本假設（異質性、不可移動性）與 Barney 提到的模仿障礙（因果模糊、社會複雜）；後兩者在開到的來源中只有學習卡片層級的佐證，但屬 1991 原文內容。VRIO 的 Organization
       條件未納入。
+    book_check: Miles 2012 第 26 章對照：補 7 條邊；書中變數我們原本沒有的：Path Dependence、Organizational Capabilities、Sustainable Competitive
+      Advantage。VRIN 四項→持續性競爭優勢（SCA）為書上明寫（p232）；書上區分 competitive advantage（對手未用的價值策略）與 sustainable competitive advantage（對手學不會也抄不了），我們只有前者，建議補
+      SCA。資源不可移動且昂貴難抄→inimitable 為書上定義（p232）；因果模糊、社會複雜、路徑依賴作為資源差異來源出自批評節（p234），我依 Barney 傳統把它們接到 Inimitability。為守 8 條上限未入邊：Resource
+      Immobility→Resource Inimitability「+」、Social Complexity→Resource Inimitability「+」、Dynamic Capabilities→Resource Reconfiguration「+」。「必須有能力吸收與運用資源才能取得
+      SCA」（Barney & Clark 2007）寫成 Absorptive Capacity 調節。SCA→績效：書上把績效差異視為資源效率差異帶來的盈餘差距（p233）。Dynamic Capabilities→Resource
+      Reconfiguration 出自 Teece et al.（1997）那段（p233）。批評：套套邏輯、難以否證、VRIN 既非必要亦非充分（p233–234）。Measuring Variables 列的是 Chandler
+      & Hanks 1994、Eisenhardt & Schoonhoven 1996、Ray et al. 2004（技術資源）、Andersen & Kheam 1998（生產／行銷／管理能力）等測量，皆為能力與資源的操作化，無單一標準量表。
   T Dynamic Capabilities Theory:
     note: T Dynamic Capabilities Theory
     abbr: DCT
@@ -1712,13 +1834,26 @@ theories:
     - [Resource Reconfiguration, Competitive Advantage, +]
     - [Competitive Advantage, Firm Performance, +]
     - [Environmental Uncertainty, Dynamic Capabilities -> Competitive Advantage, m]
+    - [Path Dependence, Asset Position, +]
+    - [Transforming Capability, Resource Reconfiguration, +]
+    - [Dynamic Capabilities, Operational Capabilities, +]
+    - [Operational Capabilities, Firm Performance, +]
+    - [Dynamic Capabilities, Evolutionary Fitness, +]
+    - [Dynamic Capabilities, Competitive Advantage, +]
     desc: Teece、Pisano 與 Shuen（1997）提出，Teece（2007）細分：動態能力是企業整合、建構與重組資源以因應變動環境的能力，由感知、把握與轉型三群能力依序構成，推動資源重組與創新，在高度不確定的環境中取得競爭優勢與績效。
     refs:
     - {title: 'Wikipedia: Dynamic capabilities', url: 'https://en.wikipedia.org/wiki/Dynamic_capabilities'}
     - {title: 'strategy+business: Dynamic capabilities (Teece interview/overview)', url: 'https://www.strategy-business.com/article/00225?pg=all'}
     - {title: 'Emerald EJIM 2024: sensing, seizing and transforming capabilities in XR firms', url: 'https://emerald.com/insight/content/doi/10.1108/EJIM-07-2023-0574/full/html'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 10 章', url: ''}
     enrich_notes: 保留原六條，但把環境不確定性的調節對象從 Dynamic Capabilities -> Resource Reconfiguration 改成 Dynamic Capabilities -> Competitive
       Advantage，這是實證文獻最常檢驗的位置（環境動態性越高，動態能力越值錢）。補三群能力的先後順序（2024 年實證：感知 -> 把握 -> 轉型）、吸收能力為感知的前因、以及創新績效與企業績效兩個結果。原理論是概念框架，方向依常見實證版本決定。
+    book_check: Miles 2012 第 10 章對照：補 6 條邊；書中變數我們原本沒有的：Operational Capabilities、Learning Capability、Integrating Capability、Coordinating
+      Capability、Path Dependence、Asset Position、Technical Fitness、Evolutionary Fitness。書上明寫：歷史與先前路徑決定目前的位置與資產基礎→組織流程；感知機會→投入（把握）→重組能力→新路徑／位置／資產→持續競爭優勢（Teece
+      2007）；動態能力修改資源基礎與營運能力（Helfat 等 2007），營運能力負責賺錢，所以 DC→Operational Capabilities→Firm Performance 的鏈是依此整理；技術適應（功能／成本）與演化適應（對外求生）是兩把尺。Pavlou
+      與 El Sawy（2011）的感知→學習→整合→協調鏈只列變數，與 Teece 三步並存不重畫。環境動盪的調節是我推的：書中理論前提是能力要匹配動盪環境，但 Winter（2003）主張環境變化時臨機（ad hoc）解題可能更便宜，所以方向未定、只標
+      m。『Environmental Uncertainty』沿用既有名稱代表 turbulence；Exploration／Exploitation 沿用 Ambidex 既有名稱（書引 March 1991）。批評：定義不清且套套邏輯（成功者有
+      DC、有 DC 者成功）、與吸收能力等概念重疊、量測多用遠端代理且橫斷面（Arend 與 Bromiley 2009）。量表：Pavlou 與 El Sawy（2011）；Kale 與 Singh（2007）聯盟能力；Wu 等（2010）營運能力。
   Five Forces 五力分析:
     note: Five Forces 五力分析
     abbr: 5F
@@ -1763,13 +1898,26 @@ theories:
     - [Asset Specificity, Hierarchical Governance, +]
     - [Transaction Frequency, Asset Specificity -> Hierarchical Governance, m]
     - [Environmental Uncertainty, Asset Specificity -> Hierarchical Governance, m]
+    - [Asset Specificity, Safeguard Cost, +]
+    - [Environmental Uncertainty, Hierarchical Governance, +]
+    - [Bilateral Dependency, Hierarchical Governance, +]
+    - [Transaction Cost, Firm Performance, '-']
+    - [Trust, Transaction Cost, '-']
     desc: Coase（1937）開端、Williamson（1975、1985）系統化的交易成本經濟學主張：在有限理性與投機傾向下，資產專屬性、不確定性與交易頻率愈高，市場交易的搜尋、議約與監督成本愈高，廠商因此改採層級治理（垂直整合）。
     refs:
     - {title: Transaction cost - Wikipedia, url: 'https://en.wikipedia.org/wiki/Transaction_cost'}
     - {title: 'The economics of organization: The transaction cost approach (AcaWiki summary of Williamson 1981)', url: 'https://acawiki.org/The_economics_of_organization:_The_transaction_cost_approach'}
     - {title: The Treatment of Frequency in Transaction Cost Economics (Organizations and Markets), url: 'https://organizationsandmarkets.com/2006/09/06/the-treatment-of-frequency-in-transaction-cost-economics/'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 40 章', url: ''}
     enrich_notes: 原六條邊保留。補兩個行為假設：有限理性（Bounded Rationality，新造）與投機；資產專屬性造成套牢（hold-up）風險，故同時提高投機機會與交易成本；資訊不對稱→投機沿用名單。Williamson
       把資產專屬性當最重要維度，不確定性與頻率主要在專屬性高時才推向層級治理，故另加兩條調節邊；頻率的定義在文獻中分歧（同一夥伴重複交易 vs 該類交易在市場上的常見程度），此處採 Williamson 原意（頻率高才值得負擔專屬治理結構的成本）。
+    book_check: Miles 2012 第 40 章對照：補 5 條邊；書中變數我們原本沒有的：Contract Complexity、Relational Governance、Bilateral Dependency、Transaction
+      Misalignment。與我們的 Transaction Cost（TCE）同一理論，核心變數幾乎都在。書上明寫：一方持有專屬資產即引發機會主義行為並需要昂貴契約保障（Poppo & Zenger, 1998）；交易成本低的企業績效較高（Williamson,
+      1985）；雙邊依賴使各方脆弱而建立保值治理結構；多單位多目標造成交易錯位而損害績效（Bidwell, 2010；Transaction Misalignment→Firm Performance 負向未列）；信任降低交易成本並改善績效（Dyer
+      & Chu, 2003，Measuring 節）；大企業官僚成本與管理錯誤使整合較不划算（Hart, 1988；Organization Size→Hierarchical Governance 負向未列）。資產專屬性、不確定性、頻率→層級治理的方向書上只說「這些差異幫助企業決定治理結構」，正號依
+      Williamson 標準命題推（Transaction Frequency→Hierarchical Governance 正向未列）。Outcome Measurability 沿用我們名稱對應 Poppo & Zenger（2002）的
+      measurement difficulty（反向），Perceived Reputation 對應 Carson et al.（2003）的 assessing reputations，Environmental Uncertainty
+      涵蓋 John & Weitz（1988）的 volume uncertainty。Relational Governance（Dyer, 1997）書中有討論但無明確因果邊。批評節：Ghoshal & Moran 指出機會主義假設有自我實現預言問題。
   T Agency Theory:
     note: T Agency Theory
     abbr: AgT
@@ -1790,13 +1938,25 @@ theories:
     - [Outcome Uncertainty, Outcome-based Contract, '-']
     - [Outcome Measurability, Outcome-based Contract, +]
     - [Goal Conflict, Outcome-based Contract, +]
+    - [Autonomy, Moral Hazard, +]
+    - [Required Specialized Knowledge, Moral Hazard, +]
+    - [Managerial Equity Ownership, Agency Problem, '-']
+    - [Board Independence, Agency Problem, '-']
+    - [Monitoring, Opportunistic Behavior, '-']
+    - [Outcome Uncertainty, Outcome-based Contract -> Agency Cost, m]
     desc: Jensen 與 Meckling（1976）提出：委託人將工作交給代理人時，因目標衝突與資訊不對稱產生代理問題（道德風險、逆選擇），衍生監督、保證與剩餘損失等代理成本；Eisenhardt（1989）整理出契約選擇的命題：結果不確定性高、代理人越規避風險，就越不適合用結果導向契約，資訊系統與監督則使行為導向契約可行。
     refs:
     - {title: Agency theory (IS Theories wiki), url: 'https://is.theorizeit.org/wiki/Agency_theory'}
     - {title: 'Agency Theory: An Assessment and Review (Eisenhardt 1989, USP copy)', url: 'https://edisciplinas.usp.br/pluginfile.php/7948441/mod_resource/content/3/Eisenhard%20-%20Agency%20Theory.pdf'}
     - {title: Agency theory (Newcastle open theory library), url: 'https://open.ncl.ac.uk/theories/21/agency-theory/'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 3 章', url: ''}
     enrich_notes: 保留原六條，調節邊改成本批規定的格式。補 Jensen 與 Meckling 的兩種代理問題型態（道德風險、逆選擇）與「監督本身是代理成本的一部分」（故 Monitoring 同時降低代理問題、提高代理成本，兩條並存不矛盾）。另依
       Eisenhardt（1989）命題 2、3、5、7 補契約選擇的前因：結果不確定性、代理人風險規避、目標衝突、結果可衡量性。原理論是演繹經濟學，方向依命題陳述轉換。
+    book_check: Miles 2012 第 3 章對照：補 6 條邊；書中變數我們原本沒有的：Behavior-based Contract、Required Specialized Knowledge、Board Independence、Managerial
+      Equity Ownership、Market for Corporate Control。書上明寫：資訊不對稱→逆選擇（代理人誇大能力）與道德危機（少做多拿）；代理人自主性與所需專業知識越高，道德危機越嚴重（Holmstrom 1979）；利益分歧→代理問題；三個抑制手段為董事會獨立、公司控制權市場、經理人持股，且各有成本。但書也引
+      Dalton 等（2003, 2007）、Ghoshal（2005）的回顧：獨立董事與董事長／CEO 分任對公司績效無影響，所以 Board Independence→Agency Problem 的負向邊是理論主張、實證不支持。書只列出『結果不確定性、結果可衡量性、風險趨避、目標衝突』是契約效率的條件，未寫方向，調節邊是我依
+      Eisenhardt 命題的常識推的。『Autonomy』沿用我們既有名稱（原屬 SDT），此處指代理人的自主程度。量表：Jaworski 與 Young（1992）資訊不對稱量表、Dunk（1993）預算鬆弛與資訊不對稱、Tuttle
+      等（1997）道德危機。
   T IAT Information Asymmetry Theory:
     note: T IAT Information Asymmetry Theory
     abbr: IAT
@@ -1837,14 +1997,27 @@ theories:
     - [Org Reputation, Firm Performance, +]
     - [Trust, Firm Performance, +]
     - [CSR Engagement, Firm Performance, +]
+    - [Stakeholder Salience, Stakeholder Integration, +]
+    - [Stakeholder Integration, Competitive Advantage, +]
+    - [Stakeholder Integration, Firm Performance, +]
+    - [Stakeholder Integration, Corporate Social Performance, +]
+    - [Stakeholder Integration, Shareholder Wealth, '-']
     desc: Freeman（1984）提出：企業經營必須考量所有會影響、或受組織目標達成影響的群體；Mitchell、Agle 與 Wood（1997）以權力、正當性與急迫性三屬性界定利害關係人的顯著性，決定管理者優先回應誰；工具性觀點（Donaldson
       與 Preston 1995；Jones 1995）主張妥善回應利害關係人可累積聲譽與信任，進而改善績效。
     refs:
     - {title: Stakeholder theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Stakeholder_theory'}
     - {title: 'Toward a theory of stakeholder identification and salience (Mitchell, Agle & Wood 1997, TTU copy)', url: 'https://www.depts.ttu.edu/rawlsbusiness/people/faculty/management/ronald-mitchell/documents/TowardaTheoryofStakeholderSalience.pdf'}
     - {title: The Stakeholder Salience Model and How to Use It, url: 'https://rebelsguidetopm.com/stakeholder-salience/'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 37 章', url: ''}
     enrich_notes: 保留原五條。補上 Mitchell 等人（1997）的三個顯著性屬性作為前端，與工具性利害關係人理論的直接路徑（CSR Engagement -> Firm Performance）。Freeman 原著與
       Donaldson 與 Preston 的規範性論點不含方向，整個結構是依「顯著性模型＋工具性觀點」的常見實證版本組出來的；Wikipedia 也指出工具性主張的實證結果並非一致。
+    book_check: Miles 2012 第 37 章對照：補 5 條邊；書中變數我們原本沒有的：Stakeholder Integration、Stakeholder Knowledge、Stakeholder Interaction、Managerial
+      Discretion、Corporate Social Performance、Stakeholder Satisfaction、Shareholder Wealth、Observed Unethical Behavior。書上明寫：讓利害關係人參與決策是倫理要求也是策略資源，帶來競爭優勢（Cennamo
+      et al., 2009；Plaza-Ubeda et al., 2010）；工具觀點主張考慮利害關係人的公司在獲利、穩定、成長上較成功；企業須優先注意有權力、正當性、急迫需求者（Rowley, 1997，即 Mitchell et
+      al. 顯著性模型）；利害關係人整合含知識、互動、調適行為三構面（Plaza-Ubeda et al., 2010 量表）。Stakeholder Salience→Stakeholder Integration 是我由「優先注意顯著者」推的。Stakeholder
+      Integration→Shareholder Wealth 負號是批評節的主張（利潤被犧牲），屬爭議邊。Managerial Discretion（Hambrick & Finkelstein, 1987；Phillips et
+      al., 2010）是管理者依利害關係人意願行事的權力、自由與能力，可當 Stakeholder Pressure→Stakeholder Integration 的調節，未列入邊。Observed Unethical Behavior
+      與 Corporate Citizenship 只出現在 Measuring 節，無邊。
   T RDT Resource Dependence:
     note: T RDT Resource Dependence
     abbr: RDT
@@ -1981,15 +2154,28 @@ theories:
     - [Structure-Environment Fit, Firm Performance, +]
     - [Environmental Uncertainty, Structure-Environment Fit -> Firm Performance, m]
     - [Organization Size, Specialization -> Firm Performance, m]
+    - [Task Uncertainty, Formalization, '-']
+    - [Task Uncertainty, Centralization, '-']
+    - [Task Interdependence, Organic Structure Need, +]
+    - [Structural Differentiation, Organizational Integration, +]
+    - [Centralization, Innovation Performance, '-']
+    - [Technology, Centralization -> Firm Performance, m]
     desc: Burns 與 Stalker（1961）、Lawrence 與 Lorsch（1967）等人提出的結構權變理論主張沒有放諸四海皆準的組織設計：環境不確定、任務不確定、規模與技術決定何種結構最合適，結構與情境的契合程度才是績效來源。
     refs:
     - {title: Contingency theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Contingency_theory'}
     - {title: Structural contingency theory - SAGE International Encyclopedia of Organization Studies, url: 'https://sk.sagepub.com/ency/edvol/embed/organization/chpt/structural-contingency-theory'}
     - {title: 'Contingency Fit, Institutional Fit, and Firm Performance (Organization Science)', url: 'https://pubsonline.informs.org/doi/fpi/10.1287/orsc.1110.0687'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 38 章', url: ''}
     enrich_notes: 原本「Task Uncertainty -> Structure-Environment Fit (-)」刪除：任務不確定本身不會降低契合，契合是結構與情境是否相配，不是任一情境變數的函數；改成任務不確定提高對有機式結構的需求（Burns
       & Stalker 的機械式／有機式對照）。新增 Woodward 的技術→結構、Donaldson／SAGE 條目的規模→專業化與正式化（小組織低專業化、大組織高專業化績效最佳，故以規模調節專業化→績效）。契合→績效是理論核心，Drazin
       & Van de Ven 的互動觀把環境不確定當調節變數，這裡同時列出「Fit -> Performance」主效果與環境不確定的調節，供畫圖時擇一。Organization Size、Formalization、Centralization、Specialization
       為名單外新造變數。
+    book_check: Miles 2012 第 38 章對照：補 6 條邊；書中變數我們原本沒有的：Task Interdependence、Technology Routineness、Organizational Integration、Strategic
+      Type、Strategic Choice。與我們的 T Contingency Theory 視為同一理論。書上明寫：契合→績效較高（Nadler & Tushman, 1980）；小組織配低官僚、大組織配高官僚（Child, 1975，故
+      Organization Size→Formalization 正，嚴格說是契合關係而非因果）；任務不確定性升高時正式化降、分權升（Donaldson, 2001）；分化越大越需要整合機制（Lawrence & Lorsch）；Hage（1965）集權＋正式規則＋低複雜→效率最大（Centralization→Operational
+      Efficiency 正向未列）、相反結構→創新；Burns & Stalker 機械式對有機式對應穩定對動盪環境（Environmental Uncertainty→Organic Structure Need 正向未列）；Perrow／Thompson／Woodward
+      以技術與任務相依性論有機結構需求。管理者啟示節明寫「結構對績效的影響取決於技術水準」，故以 Technology 作調節。Strategic Type（Miles & Snow 四型）與 Strategic Choice（Child,
+      1972）為書中概念但無明確因果邊。Perceived Fairness 只出現在 Measuring 節 Schminke et al.（2002），無邊。批評節：契合概念被指套套邏輯、理論被指決定論。
   T Economies of Scale and Scope:
     note: T Economies of Scale and Scope
     abbr: EoS
@@ -2365,13 +2551,27 @@ theories:
     - [Interactional Justice, Affective Commitment, +]
     - [Trust, Organizational Citizenship Behavior, +]
     - [Job Satisfaction, Turnover Intention, '-']
+    - [Voice, Procedural Justice, +]
+    - [Distributive Justice, Perceived Fairness, +]
+    - [Procedural Justice, Perceived Fairness, +]
+    - [Interactional Justice, Perceived Fairness, +]
+    - [Procedural Justice, Distributive Justice -> Perceived Fairness, m]
+    - [Perceived Fairness, Job Performance, +]
+    - [Perceived Fairness, Organizational Citizenship Behavior, +]
+    - [Perceived Fairness, Counterproductive Work Behavior, '-']
     desc: 組織正義理論整合 Adams（1965）、Thibaut 與 Walker（1975）、Bies 與 Moag（1986）：員工對分配結果、決策程序與人際對待的公平感知，分別預測工作滿意、組織承諾、信任、公民行為、績效與離職意圖。
     refs:
     - {title: Organisational justice - OSHwiki (EU-OSHA), url: 'https://oshwiki.osha.europa.eu/en/themes/organisational-justice'}
     - {title: Colquitt (2001) On the dimensionality of organizational justice (PDF), url: 'https://leeds-faculty.colorado.edu/dahe7472/colquitt%202001.pdf'}
     - {title: 'Colquitt, Conlon, Wesson, Porter & Ng (2001) Justice at the millennium (PDF)', url: 'https://goal-lab.psych.umn.edu/orgpsych/readings/6.%20Organizational%20Justice/Colquitt,%20Conlon,%20Wesson,%20Porter,%20&%20Ng%20(2001).pdf'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 22 章', url: ''}
     enrich_notes: 原五條邊保留。依 Cohen-Charash & Spector（2001）與 Colquitt et al.（2001）後設分析補各構面最強的獨特結果：分配正義→薪資／工作滿意、信任、離職意圖、反生產行為（Counterproductive
       Work Behavior，新造）；程序正義→績效、公民行為、承諾；互動正義→主管相關結果（LMX 品質、承諾）。Colquitt（2001）把互動正義再分為人際與資訊正義，此處維持三構面以配合現有檔案。
+    book_check: Miles 2012 第 22 章對照：補 8 條邊；書中變數我們原本沒有的：Interpersonal Justice、Informational Justice。書上的「overall justice perception」（Ambrose
+      & Schminke 2009）對應我們既有 Perceived Fairness。Voice→Procedural Justice（有發言權就覺得程序公平）與 fair process effect（程序公平時不利結果仍被視為公平）為書上明寫（p200），後者寫成程序正義調節分配正義→公平知覺。公平→態度與績效為書上明寫（p204「attitudes
+      and performance may be negatively affected」），Perceived Fairness→Attitude「+」因太泛未入邊；→OCB 與 →CWB（retaliation）出自 Measuring
+      Variables 的 Niehoff & Moorman（1993）與 Skarlicki & Folger（1997）量表標題，方向是我依標題推的。書上另有批評：程序與分配正義相關極高、可能只是單一因子（p202）。Measuring
+      Variables：Colquitt 2001 四構面量表、Niehoff & Moorman 1993 三構面量表、Gilliland 2008 公平容忍區、Skarlicki & Folger 1997 報復量表。
   Psychological Contract Breach:
     abbr: PCB
     zh: 心理契約違反
@@ -2390,11 +2590,25 @@ theories:
     - [Violation Feelings, Organizational Citizenship Behavior, '-']
     - [Violation Feelings, Job Performance, '-']
     - [Perceived Organizational Support, Violation Feelings -> Turnover Intention, m]
+    - [Socialization, Psychological Contract Fulfillment, +]
+    - [Mutuality, Psychological Contract Fulfillment, +]
+    - [Psychological Contract Breach, Trust, '-']
+    - [Psychological Contract Breach, Job Satisfaction, '-']
+    - [Psychological Contract Breach, Job Performance, '-']
+    - [Psychological Contract Breach, Turnover Intention, +]
     refs:
     - {title: 'Psychological Contract Breach and Outcomes: A Systematic Review of Reviews (PMC9737235)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9737235/'}
     - {title: Umbrella Summary - Psychological Contract Breach (QIC-WD), url: 'https://www.qic-wd.org/sites/default/files/Umbrella%20Summary%20-%20Psychological%20Contract%20Breach%20091020.pdf'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 25 章', url: ''}
     enrich_notes: 保留原六條。依 Morrison & Robinson 的解讀歷程補兩個調節（互動公平、把責任歸給組織會放大違反情緒），並補員工警覺（以 Monitoring 表示）提高察覺違約。Zhao 等的後設分析確認情緒中介且對行為效果較弱，故加
       Trust 與 Job Performance。Perceived Organizational Support 的調節在系統性回顧中只被列出而無一致結果，保留但證據弱。
+    book_check: Miles 2012 第 25 章對照：補 6 條邊；書中變數我們原本沒有的：Psychological Contract Fulfillment、Mutuality、Transactional Contract、Relational
+      Contract、Balanced Contract、Transitional Contract。我們清單只有 PCB（違反）這一支，書講的是整個心理契約理論，故 in_our_list 記為有、但建議補「履行」端的構念。正文多為定義性描述；明確的因果只有
+      p224「依知覺到的承諾履行而行動」、p229「未得到預期結果→低落的態度與行為」，Breach→Job Satisfaction／Job Performance 負向是我把後者具體化。Breach→Trust 負向與 Breach→Violation
+      Feelings 來自 References to Know 的 Robinson（1996）與 Measuring Variables 的 Robinson & Morrison（2000）標題，方向依題名推。Turnover Intention
+      書上未直接提，依「low employee attitudes and behaviors」推，屬弱推論。Socialization／Mutuality→Fulfillment（Reciprocity→Fulfillment「+」同理，為守
+      8 條上限未入邊）依 p224 契約由入職前因素、在職經驗（orientation、socialization、training）形塑，且理想上互惠與相互同意，屬概念性邊。四種契約型態（p225）為類別變數，無法畫成有向邊。Measuring
+      Variables：Robinson & Morrison 2000 五題違反量表、Dabos & Rousseau 2004、Rousseau 2000 PCI。
   Goal-Setting Theory:
     abbr: GST
     zh: 目標設定理論
@@ -2415,14 +2629,28 @@ theories:
     - [Self-Efficacy, Goal Difficulty, +]
     - [Job Performance, Job Satisfaction, +]
     - [Job Satisfaction, Goal Commitment, +]
+    - [Feedback, Goal Difficulty -> Job Performance, m]
+    - [Ability, Goal Difficulty -> Job Performance, m]
+    - [Goal Difficulty, Persistence, +]
+    - [Goal Importance, Goal Commitment, +]
+    - [Expectancy, Goal Commitment, +]
+    - [Goal Difficulty, Unethical Behavior, +]
+    - [Goal Attainment, Self-Efficacy, +]
     refs:
     - {title: 'Locke and Latham 2002, Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist,
         PDF)', url: 'https://home.ubalt.edu/tmitch/642/articles syllabus/locke pract goal setting 2002 am psy.pdf'}
     - {title: 'Goal-Setting Theory: Locke and Latham Explained (Rework)', url: 'https://resources.rework.com/libraries/leadership/goal-setting-theory'}
     - {title: 'Locke and Latham 2006, New Directions in Goal-Setting Theory (Current Directions in Psychological Science,
         PDF)', url: 'https://home.ubalt.edu/tmitch/642/Articles syllabus/locke latham new dir GS curr dir psy sci 2006.pdf'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 15 章', url: ''}
     enrich_notes: 原六條保留。補 2002 模型圖的中介機制（努力、任務策略；注意導向與持續投入併入前兩者以控制邊數）、自我效能作為調節與作為自設目標難度的前因，以及高績效循環（績效→滿意→承諾）。任務複雜度的調節方向為削弱，以
       m 表示。原典 PDF 為掃描影像無法解析，模型內容依 Rework 整理頁與搜尋摘要。
+    book_check: Miles 2012 第 15 章對照：補 7 條邊；書中變數我們原本沒有的：Goal Importance、Goal Rationale Explanation、Number of Goals、Attention
+      Direction、Unethical Behavior、Risk Taking、Goal Attainment。書中「task performance」對應我們既有的 Job Performance（清單沒有 Task Performance）。四個調節：書寫「績效在承諾高、有回饋、有能力時更高」「任務複雜度使效果變弱」（p.144–145），Task
+      Complexity 的調節方向是負（效果變弱）。Goal Difficulty→Effort／Persistence 與「引導注意」是書明寫的三個機制（p.143），Attention Direction 清單沒有。Expectancy
+      是用既有名稱對應書中「相信目標可達成」（attainable）；Goal Importance 對應「相信目標重要」（p.144）。Goal Difficulty→Unethical Behavior 與 Goal Attainment→Self-Efficacy
+      來自批評節（Ordoñez et al. 2009；未達目標會降低自我效能，p.146）。Goal Rationale Explanation 來自 p.144：自設目標若經主管解釋理由，效果與指派目標相當，粗暴指派則績效較低。Number
+      of Goals 來自批評：多目標時人只專注一個。我們清單已有 Goal Conflict，書中沒明寫此構念。測量節的 goal orientation、achievement goal 量表屬成就目標理論，不是 Locke 的目標設定，未列。
   Two-Factor Theory:
     abbr: Herzberg
     zh: 雙因子理論
@@ -2554,13 +2782,28 @@ theories:
     - [Innovation Performance, Firm Performance, +]
     - [Knowledge Transfer, Firm Performance, +]
     - [Environmental Uncertainty, Realized Absorptive Capacity -> Innovation Performance, m]
+    - [Prior Knowledge Base, Absorptive Capacity, +]
+    - [External Knowledge Availability, Absorptive Capacity, +]
+    - [Knowledge Acquisition Cost, Absorptive Capacity, '-']
+    - [Rival Interdependence, Absorptive Capacity, '-']
+    - [Absorptive Capacity, Innovation Performance, +]
+    - [Absorptive Capacity, Competitive Advantage, +]
+    - [Absorptive Capacity, Prior Knowledge Base, +]
+    - [Pace of Technological Change, Absorptive Capacity -> Firm Performance, m]
     desc: Cohen 與 Levinthal（1990）：組織辨識、吸收並應用外部新知識的能力，取決於既有相關知識與持續的研發投入；Zahra 與 George（2002）再分為潛在（獲取、消化）與實現（轉化、利用）兩段，實現段才真正帶來創新與競爭優勢。
     refs:
     - {title: Absorptive capacity theory (IS Theories wiki), url: 'https://is.theorizeit.org/wiki/Absorptive_capacity_theory'}
     - {title: Absorptive capacity (Wikipedia), url: 'https://en.wikipedia.org/wiki/Absorptive_capacity'}
     - {title: 'Absorptive capacity: antecedents, models and outcomes (Van den Bosch et al., ERIM 2003)', url: 'https://repub.eur.nl/pub/334/ERS-2003-035-STR.pdf'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 1 章', url: ''}
     enrich_notes: 原本兩條邊重複（一條無符號），合併成一條 Knowledge（即先備相關知識）→ Absorptive Capacity。新增 Cohen–Levinthal 的研發投入前因、Zahra–George 的潛在／實現兩段與社會整合機制調節、Zou
       等（2018）統合分析的結果：吸收能力對財務績效的效果完全由創新與知識移轉中介，環境動態性為負向調節。總構念 Absorptive Capacity → Potential Absorptive Capacity 這條是為了讓舊節點接上新結構而設的從屬關係。
+    book_check: Miles 2012 第 1 章對照：補 8 條邊；書中變數我們原本沒有的：Acquisition Capability、Assimilation Capability、Transformation Capability、Exploitation
+      Capability、Prior Knowledge Base、External Knowledge Availability、Knowledge Acquisition Cost、Rival Interdependence、Pace
+      of Technological Change。書上明寫：知識基礎是吸收前提（無基礎者 locked-out）；吸收能力→創新、彈性、績效、競爭優勢；可取得知識量（+）與吸收成本（-）影響取得誘因；對手受益越多則本廠商誘因越低（書中用詞是
+      mediator，但描述的是直接負向影響，此處寫成負向邊）；吸收成功會自我強化（回饋邊 AC→知識基礎）。PACAP→RACAP 是 Zahra 與 George 的主張，Todorova 與 Durisin（2007）反對線性關係並主張加回『辨識價值』步驟與回饋迴圈。技術變遷速度的調節來自書末『進一步研究建議』第
+      1 條，不是已驗證結果。四個子能力是 PACAP／RACAP 的下位構念，我們清單只有上位兩項。書中『Measuring Variables』只列量表來源（Flatten et al. 2011；Jimenez-Barrionuevo
+      et al. 2011 等），未列題項。
   T SIMCA Social identity model of collective action:
     note: T SIMCA Social identity model of collective action
     abbr: SIMCA
@@ -2675,12 +2918,21 @@ theories:
     - [Perceived Behavioral Control, Behavior, +]
     - [Behavioral Intention, Behavior, +]
     - [Perceived Behavioral Control, Behavioral Intention -> Behavior, m]
+    - [Self-Identity, Behavioral Intention, +]
+    - [Prior Behavior Frequency, Behavioral Intention, +]
+    - [Intention Stability, Behavioral Intention -> Behavior, m]
     desc: Ajzen（1985、1991）在理性行動論上加入知覺行為控制，提出計畫行為理論：行為信念、規範信念與控制信念分別形成態度、主觀規範與知覺行為控制，三者決定行為意圖，意圖與知覺行為控制共同預測行為；控制感愈準確，意圖愈能轉化為行為。
     refs:
     - {title: Theory of planned behavior - Wikipedia, url: 'https://en.wikipedia.org/wiki/Theory_of_planned_behavior'}
     - {title: 'What is The Theory Of Planned Behavior In Behavior Change? (The Behavioral Scientist)', url: 'https://www.thebehavioralscientist.com/glossary/theory-of-planned-behavior'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 23 章', url: ''}
     enrich_notes: 原檔九條邊中四條符號空白與五條正號重複，去重為五條。補 Ajzen 模型的信念層（Behavioral Beliefs、Normative Beliefs、Control Beliefs 新造）與知覺行為控制調節意圖→行為（Wikipedia：意圖只在控制感高時轉化為行為，且
       PBC 須反映實際控制才有預測力）。
+    book_check: Miles 2012 第 23 章對照：補 3 條邊；書中變數我們原本沒有的：Self-Identity、Descriptive Norm、Intention Stability、Anticipated Regret、Implementation
+      Intentions。前五條邊為書上明寫（p207–208）；PBC→Behavior 直接效果書上說證據混雜，Ajzen & Madden（1986）在低控制感時才有直接效果。PBC×Intention 交互作用為 Ajzen（1991）預期但多數研究不支持（p208），故不入邊。Self-Identity
+      增加 6–9% 意圖解釋量（Sutton 1998；Rise et al. 2010）、過去行為為控制變數，邊是我依該段推的。意圖→行為的調節變數書上列了一串（時間穩定性、需求滿足、實行意圖、意圖穩定性、預期後悔、描述性規範、人格、年齡），只挑意圖穩定性入邊，其餘列入缺的變數。書中
+      moral norms 對應我們既有 Personal Norm（NAM）。PBC 應拆成 Self-Efficacy 與 Controllability 兩構念（Kraft et al. 2005），兩者我們都有。Measuring
+      Variables：Elliott et al. 2003、Cordano & Frieze 2000、Carr & Sequeira 2007、Moan & Rise 2006。
   T Social Identity Theory:
     note: T Social Identity Theory
     abbr: SIT
@@ -2698,14 +2950,26 @@ theories:
     - [Self-Esteem, In-group Favoritism, '-']
     - [Group Boundary Permeability, Social Identity -> In-group Favoritism, m]
     - [Social Identity, Behavioral Intention, +]
+    - [Perceived Reputation, Identification, +]
+    - [Identification, Cooperation, +]
+    - [Identification, Affective Commitment, +]
+    - [Identification, Turnover Intention, '-']
+    - [Identity Salience, Social Identity -> Behavior, m]
     desc: Tajfel 與 Turner（1979）：人把自己與他人歸入群體，群體成員身分成為自我概念的一部分；為了取得正向獨特性，人會偏袒內團體、貶抑外團體以維持自尊；群體界線能否滲透與地位是否穩定、正當，決定採取流動、創意或競爭策略。
     refs:
     - {title: Social identity theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Social_identity_theory'}
     - {title: 'Social Identity Theory (Tajfel & Turner, 1979) - Simply Psychology', url: 'https://www.simplypsychology.org/social-identity-theory.html'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 35 章', url: ''}
     enrich_notes: 原 desc 空白，重寫。原六條有三條無方向且 Social Identity→Social Categorization 與 Social Categorization→Social Identity 互相矛盾，刪前者，保留分類→認同。Social
       Groups Distinction 解讀為分類造成的群間差異誇大（accentuation）。Personal Identify（名單既有拼法）→Social Identity 取負號，表示個人認同顯著時社會認同較不顯著（salience
       trade-off）。原邊 Social Identity→In-group 改成新造的 In-group Favoritism，並補 Out-group Derogation、Self-Esteem（自尊假說：偏袒提高自尊、自尊受威脅促進偏袒；Wikipedia
       註明證據混雜）。Group Boundary Permeability 為 Tajfel & Turner 的社會結構調節變數。Social Identity→Behavioral Intention 為 IS／行銷實證版本常見結果（群體行為）。
+    book_check: Miles 2012 第 35 章對照：補 5 條邊；書中變數我們原本沒有的：Identity Salience、Multiple Identities、Intergroup Competition、Group
+      Cohesion、Identity Distress。我們清單另有 SIMCA 與 SIDE，兩者延伸自本理論。書上明寫：正向社會認同來自內外團體有利比較、最小團體實驗中分配偏袒內團體、Mael & Ashforth（1992）校友認同→捐款／招募／出席／滿意（Identification→Donation
+      正向未列）、認同→凝聚／合作／利他／忠誠／承諾、某認同顯著時行為依該團體規範（故 Identity Salience 作調節）。Perceived Reputation 沿用我們名稱，書上是 perceived organizational
+      prestige；Intergroup Competition 對應 perceived organizational competition 量表，兩者皆是 Mael & Ashforth 模型的認同前因（書只列量表，前因方向是我依該模型補的；Intergroup
+      Competition→Identification 正向未列）。In-group Favoritism→Self-Esteem 的方向依理論假設 1、2 推。Turnover Intention 對應 Scott et al.（1999）intent
+      to leave。批評節：Rabbie 等人發現改變結果控制感後反而偏袒外團體。
   T Norm Activation Model:
     note: T Norm Activation Model
     abbr: NAM
@@ -2794,14 +3058,32 @@ theories:
     - [Relatedness, Well-being, +]
     - [Motivation, Well-being, +]
     - [Motivation, Behavior, +]
+    - [Autonomy, Need Satisfaction, +]
+    - [Competence, Need Satisfaction, +]
+    - [Relatedness, Need Satisfaction, +]
+    - [Need Satisfaction, Well-being, +]
+    - [Need Satisfaction, Job Performance, +]
+    - [Intrinsic Aspirations, Well-being, +]
+    - [Extrinsic Aspirations, Anxiety, +]
+    - [Controlling Rewards, Intrinsic Motivation, '-']
     desc: Deci 與 Ryan（1985、2000）提出：自主、勝任與歸屬三項基本心理需求獲得滿足時，動機趨向內在與自主形式，進而帶來持續行為、表現與幸福感；自主支持環境與資訊性回饋滋養需求，控制性獎賞則削弱內在動機。
     refs:
     - {title: Self-determination theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Self-determination_theory'}
     - {title: 'Self-Determination Theory: Deci and Ryan''s 3 Core Needs (Psychology Notes HQ)', url: 'https://www.psychologynoteshq.com/self-determination-theory/'}
     - {title: 'Ryan and Deci 2017, Self-Determination Theory: Basic Psychological Needs in Motivation, Development, and Wellness
         (Guilford)', url: 'https://www.guilford.com/books/Self-Determination-Theory/Deci-Ryan/9781462528769'}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 28 章', url: ''}
     enrich_notes: 原六條其實是三條重複（一組空符號、一組 +），已去重。Motivation 在此指自主／內在動機（沿用既有變數名，不另造 Intrinsic Motivation）。新增需求的環境前因（自主支持、資訊性回饋）、認知評價理論的削弱效應（控制性獎賞→自主
       −），以及需求滿足直接與經由動機兩條通往幸福感的路，與動機→持續行為。
+    book_check: Miles 2012 第 28 章對照：補 8 條邊；書中變數我們原本沒有的：Need Satisfaction、Intrinsic Motivation、Extrinsic Motivation、Autonomous
+      Motivation、Controlled Motivation、Amotivation、Causality Orientation、Intrinsic Aspirations、Extrinsic Aspirations、Mindfulness、Vitality、Anxiety、Depression。三需求滿足→績效、健康、幸福感為書上明寫（p247,
+      p253）；為守 8 條上限未入邊但書上明寫：Need Satisfaction→Vitality「+」（能量來自需求滿足）、Need Satisfaction→Amotivation「-」（三需求皆未滿足→amotivation，p249）、Extrinsic
+      Aspirations→Depression「+」（與 Anxiety 同段，p248）；Mindfulness→Autonomous Motivation「+」依 p249「從受控取向有目的地移向自主取向」推。內在／外在志向對幸福與焦慮憂鬱的效果出自
+      Kasser & Ryan、Vansteenkiste et al.（p248）。Controlling Rewards→Intrinsic Motivation 負向：書上只在管理意涵節說為獎懲而做的行為在獎懲移除後就停止（p253），加上
+      Measuring Variables 的 Stone et al.（2010）財務誘因效果不穩定，這條是依 SDT 標準主張補的，書上沒直接寫「獎賞削弱內在動機」。Autonomy、Competence、Relatedness 在我們清單裡已有，但沒有彙總的
+      Need Satisfaction，也沒有動機連續體上的任何一個構念（內在／外在／自主／受控／無動機），這是最大的缺口。四種外在動機調節（整合、認同、內攝、外部）屬連續體的刻度，不另列變數。Measuring Variables：Gagné
+      et al. 2010 工作動機量表、La Guardia et al. 2000 需求滿足量表、Elliot & McGregor 2001 成就目標問卷、Lin, Tsai & Chiu 2009（SDT＋ECT 顧客忠誠）、Stone
+      et al. 2010、Van den Broeck et al. 2010。
   T TTF Task-Technology Fit:
     note: T TTF Task-Technology Fit
     abbr: TTF
@@ -2901,3 +3183,466 @@ theories:
     - {title: 'Trust and TAM in Online Shopping: An Integrated Model (Gefen, Karahanna & Straub 2003, UGA copy)', url: 'https://www.terry.uga.edu/wp-content/uploads/gefen-karahanna-straub-misq-2003.pdf'}
     enrich_notes: 原 11 條有 5 條是沒有符號的重複，已合併去重並一律給正號。補 Davis 1989 原圖的 External Variables，以及 IS Theories wiki 的 PEOU -> BI 直接路徑（Venkatesh
       與 Davis 2000 之後的精簡版把 Attitude 拿掉、改走此路徑）；Subjective Norm 兩條來自 TAM2（Venkatesh 與 Davis 2000）。variables 裡的 Technology 不是構念，未畫邊。
+  Actor-Network Theory:
+    abbr: AN
+    zh: 行動者網絡理論
+    field: 社會學／科技與社會研究（STS）
+    desc: Callon（1986）、Latour（2005）提出：人與非人實體都只在與其他實體的關係組合中取得形態與特性；網絡經轉譯四時刻（問題化、利益鎖定、徵召、動員）建立，研究者只應描述，不預設「社會」為解釋。
+    edges:
+    - [Translation Effectiveness, Actor Enrollment, +]
+    - [Actor Enrollment, Network Alignment, +]
+    - [Network Alignment, Firm Performance, +]
+    refs:
+    - {title: 'Callon (1986). Some elements of a sociology of translation: Domestication of the scallops and the fishermen
+        of St. Brieuc Bay. In Law (Ed.), Power, action, and belief (pp. 196–223). Routledge.', url: ''}
+    - {title: 'Latour (2005). Reassembling the social: An introduction to actor-network-theory. Oxford University Press.',
+      url: ''}
+    - {title: 'Latour (1999). On recalling ANT. In Law & Hassard (Eds.), Actor network theory and after (pp. 15–25). Blackwell.',
+      url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 2 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 2 章。這一章是描述取向理論，書中明言它拒絕變數化與因果解釋，『Measuring Variables』只列民族誌訪談與設計研究方法（Smith 2010；Kraal 2007），沒有量表。三條邊全部是我依書末『進一步研究建議』第
+      2、3、10 條（有效轉譯→行動者結果；徵召與對齊→期望或非期望結果；增減行動者→組織對齊／失準→績效）推出的，正負號是我推的，書未給方向。書中四時刻用詞為 problematization、profit-sharing、enrollment、mobilization（Callon
+      原文第二項為 interessement，書寫成 profit-sharing，沿用書）。本理論與我們清單任何理論無對應，與 TOE／IDT 僅題材相鄰。
+  Agenda Setting Theory:
+    abbr: AS
+    zh: 議題設定理論
+    field: 傳播／公共政策
+    desc: McCombs 與 Shaw（1972）：媒體報導議題的頻率與篇幅決定公眾認為哪些議題重要（第一層）；媒體呈現的議題屬性再影響公眾如何理解該議題（第二層）。框架與促發是機制，需求導向與負面情緒內容是條件。
+    edges:
+    - [Media Agenda Salience, Public Agenda Salience, +]
+    - [Media Attribute Salience, Public Attribute Perception, +]
+    - [Framing, Public Agenda Salience, +]
+    - [Media Agenda Salience, Issue Accessibility, +]
+    - [Involvement, Need for Orientation, +]
+    - [Issue Uncertainty, Need for Orientation, +]
+    - [Need for Orientation, Media Agenda Salience -> Public Agenda Salience, m]
+    - [Negative Emotional Arousal, Public Agenda Salience, +]
+    - [Corporate Political Activity, Policy Agenda, +]
+    refs:
+    - {title: 'McCombs & Shaw (1972). The agenda-setting function of mass media. Public Opinion Quarterly, 36, 176–187.',
+      url: ''}
+    - {title: 'McCombs (2004). Setting the agenda: The mass media and public opinion. Polity Press.', url: ''}
+    - {title: 'Dearing & Rogers (1996). Communication concepts 6: Agenda-setting. Sage.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 4 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 4 章。書上明寫：報導頻率／時間長短與公眾認為議題重要的程度相關（第一層，關鍵變數是公眾注意）；媒體呈現的議題屬性影響公眾知覺的屬性（第二層，關鍵變數是認知與情感理解）；框架＝選擇＋凸顯，提高顯著性就提高被處理與記住的機率；促發效應＝大量報導的議題更容易被回想；需求導向＝興趣越高、不確定越高，越需要媒體提供資訊（Weaver
+      1977, 1980），其作為調節是我依此推的；Miller（2007）發現引發悲傷與恐懼的內容使人認為議題具全國重要性；企業經由資助、遊說、作證、廣告公關影響政策議程。『Involvement』沿用既有名稱代表議題興趣；『Org
+      Reputation』對應書中的企業聲譽議題。本章『Measuring Variables』只列政治知識量表（Shaker 2009）與網路使用動機量表（Roy 2009），沒有議題顯著性的直接量表。我們清單有沉默螺旋、第三人效果、U&G
+      等傳播理論但沒有議題設定，是明顯缺口；『Perceived Media Influence on Others』不是同一概念。
+  Attachment Theory:
+    abbr: A
+    zh: 依附理論
+    field: 發展心理／組織行為
+    desc: Bowlby（1969）、Ainsworth（1967）：早期依附經驗形成對自我與他人的內在運作模式，長期影響成人人際關係與壓力調節；依焦慮與迴避兩軸分安全、焦慮、疏離、恐懼四型，並與職場信任、自尊、領導與倫理行為有關。
+    edges:
+    - [Attachment Anxiety, Self-Esteem, '-']
+    - [Attachment Avoidance, Trust, '-']
+    - [Secure Attachment, Stress Coping Ability, +]
+    - [Secure Attachment, Helping Behavior, +]
+    - [Attachment Anxiety, Job Satisfaction, '-']
+    - [Attachment Anxiety, Leadership Effectiveness, '-']
+    - [Attachment Avoidance, Prosocial Motivation to Lead, '-']
+    - [Attachment Avoidance, Unethical Behavior, +]
+    refs:
+    - {title: 'Bowlby (1969). Attachment and loss: Vol. 1. Attachment. Basic Books.', url: ''}
+    - {title: 'Mikulincer & Shaver (2007). Attachment in adulthood: Structure, dynamics, and change. Guilford Press.', url: ''}
+    - {title: 'Bowlby (1988). A secure base: Clinical applications of attachment theory. Routledge.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 5 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 5 章。書上明寫：安全型信任他人、能應付壓力、較有同情心並助人（Mikulincer 等 2005）；焦慮（preoccupied）型信任他人但不信任自己、低自尊、依薪資選工作而工作與生涯滿意低；疏離（dismissing）型不信任他人、最常剝削欺騙他人且對不倫理情境最冷漠（Albert
+      與 Horowitz 2009）；恐懼型低自尊、不自我揭露、不接受上司指令。領導：依附焦慮的領導者較自利、任務情境表現差；依附迴避的領導者利社會領導動機低、追隨者社會情緒功能與長期心理健康較差。依附與離職意圖、情緒調節有關（Richards
+      與 Schat 2011）但書未給方向，所以未畫邊。正負號依四型描述換算到焦慮／迴避兩個連續軸，是我整理的。我們的『Emotional Attachment』是品牌／情感依附，不是依附型態，故不沿用。量表：Fraley 等（2000）ECR-R
+      成人依附自陳量表、Smith 等（1999）團體依附量表、Bodie 等（2011）。
+  Balance Theory:
+    abbr: B
+    zh: 平衡理論
+    field: 社會心理／態度一致性
+    desc: Heider（1946, 1958）、Newcomb（1953）：人把對他人與對象的情感組織成一致狀態；p-o-x 三元組符號乘積為負即不平衡，引起緊張與負面情緒，人會改變情感或脫離關係以恢復平衡；單純曝光也會改變態度。
+    edges:
+    - [Triad Imbalance, Dissonance, +]
+    - [Triad Imbalance, Arousal, +]
+    - [Triad Imbalance, Attitude Change, +]
+    - [Triad Imbalance, Unit Relationship Change, +]
+    - [Interpersonal Attraction, Attitude Agreement, +]
+    - [Mere Exposure, Attitude, +]
+    - [Anticipated Interaction, Interpersonal Attraction, +]
+    refs:
+    - {title: Heider (1958). The psychology of interpersonal relations. Wiley., url: ''}
+    - {title: 'Heider (1946). Attitudes and cognitive organization. Journal of Psychology, 21, 107–112.', url: ''}
+    - {title: 'Newcomb (1953). An approach to the study of communicative acts. Psychological Review, 60, 393–404.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 7 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 7 章。書上明寫：不平衡→不確定、緊張、想改變、負面情緒、生理激發（Burdick 與 Burnes 1958 等），並與 Festinger 的失調相連，故沿用我們的 Dissonance
+      與 Arousal；兩種恢復手段是改變情感（→Attitude Change）或改變／離開單位關係；人會把態度向喜歡的人對齊（Chaiken 與 Eagly 1983）；單純曝光提升態度（Zajonc 1968a）；有未來互動機會時對陌生人的知覺會改變（Insko
+      與 Adewole 1979），我寫成正向是推的。批評：Zajonc（1968b）認為吸引與同意效應本身就能解釋資料，Cacioppo 與 Petty（1981）發現三種判斷時間不同、可能是獨立歷程。我們清單有 CDT（認知失調），是同一一致性理論家族但不是同一理論；『Affinity』『Source
+      Attractiveness』與人際吸引不同義故未沿用。量表：McCroskey 與 McCain（1974）人際吸引量表；Insko 與 Adewole（1979）一致／愉快／和諧量表；Homburg 與 Stock（2005）銷售情境平衡題項。
+  Control Theory:
+    abbr: C
+    zh: 控制理論（控制論）
+    field: 動機／自我調節
+    desc: Wiener（1948）奠基、Carver 與 Scheier（1981）、Klein（1989）推到人的行為：回饋迴路（標準、感測、比較、效應）是自我調節單位；人把實際表現與標準比較，知覺落差就產生動機並改變行為縮小落差。
+    edges:
+    - [Performance Standard, Perceived Performance Discrepancy, +]
+    - [Feedback, Perceived Performance Discrepancy, +]
+    - [Perceived Performance Discrepancy, Motivation, +]
+    - [Perceived Performance Discrepancy, Effort, +]
+    - [Effort, Job Performance, +]
+    - [Job Performance, Perceived Performance Discrepancy, '-']
+    - [Discrepancy Magnitude, Perceived Performance Discrepancy -> Effort, m]
+    refs:
+    - {title: 'Carver & Scheier (1982). Control theory: A useful conceptual framework for personality—social, clinical, and
+        health psychology. Psychological Bulletin, 92, 111–135.', url: ''}
+    - {title: 'Klein (1989). An integrated control theory model of work motivation. Academy of Management Review, 14, 150–172.',
+      url: ''}
+    - {title: 'Carver & Scheier (1981). Attention and self-regulation: A control theory approach to human behavior. Springer.',
+      url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 8 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 8 章。書上明寫的機制：標準與實際表現比較→有落差才行動（負回饋迴路），落差知覺是動機來源（管理意涵節：people are motivated when they see discrepancies）；行動縮小落差後迴路閉合，所以
+      Job Performance→落差為負向回饋邊。『Feedback』沿用既有名稱，對應感測器／訊號。Performance Standard→落差的正號是推的（標準越高、同樣表現下落差越大）；落差太大會放棄（Discrepancy
+      Magnitude 調節）來自『進一步研究建議』第 8 條，不是已驗證結果；迴路依重要性排階層（Powers 1973）只列變數未畫邊。批評：太機械、忽略正回饋、不解釋標準從哪來、忽略訊號的意義（Fellenz 1997；Locke
+      1991）。我們清單有 GST 目標設定理論（Goal Difficulty、Goal Specificity、Goal Commitment）與 SDT，是鄰近理論但沒有控制理論本身；既有『Control』『Feedback』『Monitoring』可部分共用。量表：Snell（1992）輸入／行為／產出控制問卷；Kuhl（1994）ACS-90
+      行動－狀態導向；Brown 等（1999）SRQ 自我調節問卷；Deci 與 Ryan（1985）GCOS。
+  Efficient Market Theory:
+    abbr: EM
+    zh: 效率市場理論
+    field: 財務
+    desc: Fama（1970）定義效率市場為證券價格隨時完全反映可得資訊的市場，分弱式、半強式、強式三類資訊；價格變動源於不可預期的新資訊（隨機漫步），因此無法長期打敗市場。De Bondt 與 Thaler（1985）的過度反應研究開啟行為財務，指出心理因素、流行與雜訊交易會使價格偏離。
+    edges:
+    - [Information Access, Market Efficiency, +]
+    - [Unexpected Information, Security Price Change, +]
+    - [Market Efficiency, Abnormal Return, '-']
+    - [Investor Overreaction, Security Price Change, +]
+    - [Self-Confidence, Investor Overreaction, +]
+    - [Noise Trading, Market Efficiency, '-']
+    - [Bounded Rationality, Market Efficiency, '-']
+    - [Past Performance, Risk Tolerance, +]
+    refs:
+    - {title: 'Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25,
+        383–417.', url: ''}
+    - {title: 'De Bondt, W. F. M., & Thaler, R. (1985). Does the stock market overreact? Journal of Finance, 40, 793–805.',
+      url: ''}
+    - {title: 'Fama, E. F. (1991). Efficient capital markets: II. Journal of Finance, 46, 1575–1617.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 11 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 11 章。書上明寫：價格反映可得資訊（資訊→效率）、新資訊才使價格變動、效率市場下交易規則無超額報酬、雜訊交易與心理因素使價格偏離、較自信的投資人更會過度反應（p.114「may」語氣，書列為推測）。Past
+      Performance→Risk Tolerance 出自「Suggestions for Further Research」第 7 條（風險容忍度在高報酬後上升），是研究建議不是定論。Bounded Rationality 是我用既有名稱對應書中「投資人資訊處理能力有限、有偏誤」；Information
+      Access 對應書中「available information」。測量節列的 Opinion Leadership、Information-seeking、Uncertainty Orientation、Impact of Event
+      量表與理論主體關係鬆散，Opinion Leader Influence 沿用既有名稱，Information Seeking 與 Uncertainty Orientation 列為缺。Calendar Anomaly（一月效應、週一效應）書中有描述但沒給因果，只列變數不畫邊。我們清單的
+      Market Efficiency 已存在，但理論本身不在 our_theories.txt。
+  Ethical Theory:
+    abbr: E
+    zh: 倫理理論
+    field: 倫理／組織行為
+    desc: 倫理理論說明行為在什麼條件下算「對」（Brady & Hart, 2007）。書分品格倫理（Aristotle、孔子）與行為倫理，後者再分目的論／效益主義（Bentham、Mill）、義務論（Kant 定言令式）與直覺主義（Ross
+      1930 的 prima facie duties）；組織研究主要比較形式主義與效益主義兩種倫理架構如何影響倫理兩難的決策。
+    edges:
+    - [Ethical Framework, Ethical Decision, +]
+    - [Gender, Perceived Ethical Framework of Others, +]
+    - [Ethical Climate, Ethical Behavior, +]
+    refs:
+    - {title: 'Kant, I. (1993). Groundwork of the metaphysics of morals (3rd ed., J. W. Ellington, Trans.). Hackett. (Original
+        work published 1785)', url: ''}
+    - {title: 'Mill, J. S. (1998). Utilitarianism (R. Crisp, Ed.). Oxford University Press. (Original work published 1863)',
+      url: ''}
+    - {title: 'Rawls, J. (1971). A theory of justice. Belknap Press.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 12 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 12 章。這一章是規範性理論，書本身沒有「X 影響 Y」的實證主張，所以邊很少。三條邊的來源：(1) 書 p.121 說多種分類法（Brady 1985、Kohlberg 1984）描述「underlie
+      ethical decisions」的倫理架構，我把它畫成架構→決策，符號 + 只表示「有影響」；(2) p.122 Schminke 等研究：男性被知覺為較效益主義、女性較形式主義，這是「知覺到的」性別差異，不是行為差異；(3)
+      Ethical Climate 來自測量節的 Victor & Cullen（1988）與 Arnaud（2010）量表，書正文沒說明它與行為的關係，氣候→行為的正向是我依量表用途推的。書還說經理人常用「社會共識」取代倫理推理（p.124），只列
+      Social Consensus Reliance 為變數不畫邊。我們清單有 Distributive/Procedural/Interactional Justice 與 Fairness，可和 Rawls 的正義論接上，但書沒把
+      Rawls 寫成變數。
+  Field Theory:
+    abbr: F
+    zh: 場域理論（力場理論）
+    field: 社會心理／組織變革
+    desc: Lewin（1943、1951）借物理學的場概念，主張行為是當下「生活空間」中所有並存且相互依賴之力的函數：驅動力與抑制力決定行為是否改變、改變多少，互相拉扯的力產生心理張力並驅動減少張力的目標導向行為；組織場域研究（Martin
+      2003）則以行動者在場域中的相對位置解釋其行動。
+    edges:
+    - [Driving Forces, Behavior Change, +]
+    - [Restraining Forces, Behavior Change, '-']
+    - [Restraining Forces, Psychological Tension, +]
+    - [Psychological Tension, Motivation, +]
+    - [Valence, Approach Behavior, +]
+    - [Valence, Avoidance Behavior, '-']
+    - [Field Position, Behavior, +]
+    refs:
+    - {title: 'Lewin, K. (1951). Field theory in social science (D. Cartwright, Ed.). Harper & Brothers.', url: ''}
+    - {title: 'Lewin, K. (1943). Defining the “field at a given time.” Psychological Review, 50, 292–310.', url: ''}
+    - {title: 'Martin, J. L. (2003). What is field theory? American Journal of Sociology, 109, 1–49.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 13 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 13 章。書上明寫：驅動力與抑制力決定行為改變是否發生與程度（p.128）；相互抗衡的力產生心理張力，張力產生減少張力的動機（p.128，Houston et al. 1998）；正向整體力的物件被趨近、負向被迴避（p.128，Diamond
+      1992）。Valence 沿用既有名稱對應書中「overall positive/negative force」。Restraining Forces→Psychological Tension 是我依「countervailing
+      forces create tension」推的，書寫的是「所有抗衡之力」而非只有抑制力。Field Position→Behavior 來自組織場域那段（p.130「行動可由其在場域中的相對位置解釋」），符號 + 只表示有影響。批評節指出理論是套套邏輯、不可否證，邊的實證效力弱。測量節只有
+      Sauder（2008）的院長排名量表與 Riordan（1993）的家族目標量表，與核心構念對不上，沒採用。
+  Game Theory:
+    abbr: G
+    zh: 賽局理論
+    field: 經濟學／策略
+    desc: Von Neumann 與 Morgenstern（1944）以紙牌、棋類為原型，分析多個理性自利的參與者在互相依賴的策略賽局中如何選擇；核心概念為參與者、策略、結果、報酬與均衡，Nash（1951）均衡指每人在對手行動下都已取得最佳結果。假設完全資訊與理性，Harsanyi
+      延伸到不完全資訊賽局。
+    edges:
+    - [Payoff, Strategy Choice, +]
+    - [Information Asymmetry, Prediction Accuracy, '-']
+    - [Expected Future Interaction, Cooperation, +]
+    - [Reciprocity, Cooperation, +]
+    - [Commitment Credibility, Cooperation, +]
+    - [Trust, Cooperation, +]
+    - [Group Size, Cooperation, '-']
+    - [Group-based Pay, Free Riding, +]
+    refs:
+    - {title: 'Von Neumann, J., & Morgenstern, O. (1944). Theory of games and economic behavior. Princeton University Press.',
+      url: ''}
+    - {title: 'Nash, J. (1951). Non-cooperative games. Annals of Mathematics, 54, 286–295.', url: ''}
+    - {title: 'Schelling, T. C. (1960). The strategy of conflict. Harvard University Press.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 14 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 14 章。理論主體是形式模型，書沒寫成變數間的因果，大部分邊來自「Implications for Managers」一節（p.140–141）：知道未來要互動最能促進合作、設定互惠、可信承諾（限制自己未來選項）、主動給予信任換取信任、小團體比大團體容易合作、以團體努力計薪會誘發搭便車。Payoff→Strategy
+      Choice 是理性參與者極大化報酬的基本假設。Information Asymmetry→Prediction Accuracy 來自批評節（p.137）：有完全資訊時預測最準，一方資訊有限時較不準；用 Information Asymmetry
+      這個既有名稱反向對應書中「complete information」。Bounded Rationality 對應批評節「參與者不總是理性」。Perceived Fairness 書說是強烈動機（p.141），沒給明確目標變數，未畫邊。測量節（微笑價值、社會價值取向、預測準確度）與理論本體關係鬆散。
+  Image Theory:
+    abbr: I
+    zh: 意象理論
+    field: 決策／組織行為
+    desc: Beach 與 Mitchell（1987、1990）提出的描述性決策理論，主張人多以直覺、快速、非分析的方式決策：以價值意象、軌跡意象、策略意象三種基模構成決策框架，先用相容性測試篩除違反標準的選項（違反數超過拒絕門檻即淘汰），再用獲利性測試在存活選項中選擇；進展決策則檢查現行計畫是否朝目標推進。
+    edges:
+    - [Number of Violations, Option Adoption, '-']
+    - [Rejection Threshold, Number of Violations -> Option Adoption, m]
+    - [Image Compatibility, Option Adoption, +]
+    - [Option Profitability, Option Adoption, +]
+    - [Progress toward Goal, Status Quo Continuation, +]
+    - [Optimism, Status Quo Continuation, +]
+    - [Leader-Image Compatibility, Job Satisfaction, +]
+    - [Leader-Image Compatibility, Affective Commitment, +]
+    refs:
+    - {title: 'Beach, L. R. (1990). Image theory: Decision making in personal and organizational contexts. Wiley.', url: ''}
+    - {title: 'Mitchell, T. R., & Beach, L. R. (1990). “. . . Do I love thee? Let me count . . .” Toward an understanding
+        of intuitive and automatic decision making. Organizational Behavior and Human Decision Processes, 47, 1–20.', url: ''}
+    - {title: 'Beach, L. R. (1998). Image theory: Theoretical and empirical foundations. Erlbaum.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 16 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 16 章。篩選階段只看違反（p.152–153）：違反數達拒絕門檻即淘汰，所以畫成違反數→採用為負、門檻為調節。相容性與獲利性兩個測試是書明寫的；Option Profitability
+      是獲利性測試的對象（選項達成後的吸引力，測量節 Beach et al. 1996 稱 object attractiveness）。進展決策：只要現行計畫對軌跡意象有進展就維持現狀，不相容太大才換方向（p.153）。Optimism→Status
+      Quo Continuation 來自 p.153「決策者有自然偏誤以樂觀看待現況、高估現況與軌跡仍相容的證據」，Optimism 沿用既有名稱但書中是「bias」不是特質。Leader-Image Compatibility 兩條邊來自
+      Dunegan（2003）對追隨者滿意與承諾的研究（p.153），書只說「examined the influence」，正向是依測量節量表用途推的；Affective Commitment 用既有名稱對應書中 commitment。三種意象本身是結構不是因果變數，列為缺的構念但不畫邊。
+  Knowledge-Based Theory:
+    abbr: KB
+    zh: 知識基礎理論（知識基礎觀點）
+    field: 策略管理
+    desc: Kogut 與 Zander（1992）、Grant（1996）主張組織之所以存在，是因為它比市場更能有效整合與運用個人持有的知識；知識是最具策略價值的資源，默會知識難以編碼、模仿，因此是競爭優勢來源。Grant 提出規則、順序、例規、團體問題解決四種整合機制，皆依賴共同知識。
+    edges:
+    - [Knowledge Codifiability, Knowledge Transfer, +]
+    - [Tacit Knowledge, Resource Inimitability, +]
+    - [Resource Inimitability, Competitive Advantage, +]
+    - [Common Knowledge, Knowledge Integration, +]
+    - [Hierarchical Complexity, Knowledge Sharing, '-']
+    - [Knowledge Integration, Competitive Advantage, +]
+    - [Absorptive Capacity, Firm Performance, +]
+    - [Knowledge Protection, Firm Performance, +]
+    - [Intellectual Capital, Competitive Advantage, +]
+    refs:
+    - {title: 'Grant, R. M. (1996). Toward a knowledge-based theory of the firm. Strategic Management Journal, 17(Winter Special
+        Issue), 109–122.', url: ''}
+    - {title: 'Kogut, B., & Zander, U. (1992). Knowledge of the firm, combinative capabilities, and the replication of technology.
+        Organization Science, 3, 384–397.', url: ''}
+    - {title: 'Nonaka, I. (1994). A dynamic theory of organizational knowledge creation. Organization Science, 5, 14–37.',
+      url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 18 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 18 章。書上明寫：默會知識不易取得、複製成本高（p.168）→ 用既有的 Resource Inimitability 接到 Competitive Advantage（p.169「知識存量帶來差異效率與競爭優勢」）；更會尋找、吸收、利用新知識的公司績效較好（p.168，Martin-de-Castro
+      2011）→ 用既有的 Absorptive Capacity；能保護外顯知識的公司績效較好（Liebeskind 1996）；四種整合機制都依賴共同知識（p.169）；複雜層級阻礙共同知識分享（p.170）。Knowledge Codifiability→Knowledge
+      Transfer 來自測量節 Kogut & Zander（1993）的可編碼性、可教性、複雜性量表，書正文只說默會知識只能靠觀察練習學得，方向是依該文獻推的。Intellectual Capital（人力、結構、關係資本）書說與創造運用知識的能力有關，沒明確因果，→Competitive
+      Advantage 是依「Suggestions for Further Research」第 5 條推的。Complexity 沿用既有名稱對應 Kogut & Zander 的 complexity 量表，但我們的 Complexity
+      原本是 IDT 構念，語意不同需留意。Centralization（IT 決策集中）出自 Kearns & Sabherwal（2007）量表，未畫邊。我們清單有 Knowledge、Knowledge Sharing、Knowledge
+      Transfer、Absorptive Capacity、Causal Ambiguity，但理論本身不在 our_theories.txt；與 RBV、ACT、DCT 相鄰，建議合併判斷是否另立。
+  Mental Models Theory:
+    abbr: MM
+    zh: 心智模式理論
+    field: 認知／決策／團隊
+    desc: Johnson-Laird（1983）與 Gentner 與 Stevens（1983）主張人用簡化的內在知識結構理解並與世界互動：人通常只建構一個自認為真的模式並在其中推理，因而忽略模式外的可能；組織研究假設心智模式愈準確、愈完整的經理人與組織績效愈高，團隊研究則顯示共享心智模式提升團隊績效（Mohammed
+      et al. 2010）。
+    edges:
+    - [Mental Model Accuracy, Firm Performance, +]
+    - [Mental Model Completeness, Firm Performance, +]
+    - [Shared Mental Model, Team Performance, +]
+    - [Working Memory Capacity, Mental Model Formation, +]
+    - [Single-Model Reliance, Alternative Consideration, '-']
+    - [Single-Model Reliance, Confirmatory Information Search, +]
+    - [Single-Model Reliance, Decision Error, +]
+    - [Mental Model Accuracy, Decision Error, '-']
+    refs:
+    - {title: 'Johnson-Laird, P. N. (1983). Mental models. Harvard University Press.', url: ''}
+    - {title: 'Gentner, D., & Stevens, A. L. (Eds.). (1983). Mental models. Erlbaum.', url: ''}
+    - {title: 'Johnson-Laird, P. N. (1980). Mental models in cognitive science. Cognitive Science, 4, 71–115.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 20 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 20 章。書上明寫：能建構並使用準確心智模式的組織較成功、對自身能力與環境原則理解更完整準確的經理人績效更高（p.183，Cockburn et al. 2000；Gary &
+      Wood 2011）；共享心智模式對團隊績效有大量正向支持（p.185，Mathieu et al. 2008）；記憶好的人較易形成心智模式（p.185，Westbrook 2006）→ 用既有的 Working Memory Capacity
+      對應「good memories」，嚴格說書講的是一般記憶不是工作記憶。依賴單一模式→不考慮替代方案、只搜尋支持該行動的資訊、忽略機會成本（p.184–185）；Three Mile Island 例子是推到 Decision Error
+      的依據，書沒用「decision error」一詞。Confirmatory Information Search 與既有的 Selective Exposure 概念相近但那是媒體使用脈絡，故另列。Team Performance
+      清單沒有（只有 Job Performance、Firm Performance）。測量節的機會成本量表（Friedman & Neumann 1980）、團隊心智模式相似度與準確度量表（Lim & Klein 2006；Smith-Jentsch
+      et al. 2005）支持 Shared Mental Model 與 Mental Model Accuracy 兩個構念。理論本身與 CLT、Bounded Rationality 相鄰，但不在 our_theories.txt。
+  Organizational Ecology Theory:
+    abbr: OE
+    zh: 組織生態理論
+    field: 組織
+    desc: Hannan 與 Freeman（1977, 1989）提出。以族群為分析層次，解釋為何有這麼多（或這麼少）種組織：族群密度同時驅動正當化與競爭，決定組織的創立率與死亡率；年齡、規模、通才／專才策略與制度連結影響存活。
+    edges:
+    - [Population Density, Legitimacy, +]
+    - [Population Density, Rivalry Intensity, +]
+    - [Legitimacy, Founding Rate, +]
+    - [Rivalry Intensity, Organizational Survival, '-']
+    - [Organization Age, Organizational Survival, +]
+    - [Organization Size, Organizational Survival, +]
+    - [Generalist Strategy, Organizational Survival, +]
+    - [Environmental Uncertainty, Generalist Strategy -> Organizational Survival, m]
+    refs:
+    - {title: 'Hannan, M. T., & Freeman, J. (1977). The population ecology of organizations. American Journal of Sociology,
+        82, 929–964.', url: ''}
+    - {title: 'Hannan, M. T., & Freeman, J. (1989). Organizational ecology. Harvard University Press.', url: ''}
+    - {title: 'Hannan, M. T., & Freeman, J. (1984). Structural inertia and organizational change. American Sociological Review,
+        49, 149–164.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 21 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 21 章。密度依賴（density dependence）：書上明寫密度→正當化↑→創立增、失敗減；密度→競爭↑→死亡增（p192）。年齡、規模與存活正向、通才較專才長壽、與制度連結較長壽皆書上明寫（p193–194）；年齡效果書上另提「青春期負債」呈倒
+      U，邊只取主效果。為守住 8 條上限，未入邊但書上有的關係：Legitimacy→Organizational Survival「+」（正當化升高則失敗減少）、Interorganizational Ties→Organizational
+      Survival「+」（與制度連結者較長壽，p194）、Structural Inertia→Organizational Survival「-」（後者是我依「liability of obsolescence」推的）。環境波動的典型期間調節通才／專才優勢（p193）為書上明寫，對應我們的
+      Environmental Uncertainty。書中「competition」對應我們既有 Rivalry Intensity；「ties to societal institutions」沿用 Interorganizational
+      Ties，但嚴格說是制度連結。Measuring Variables 一節只列一個「satisfaction with present community scale」（Carpenter 1977），與理論核心構念無關，故變數以正文為準。
+  Role Theory:
+    abbr: R
+    zh: 角色理論
+    field: 組織／社會學
+    desc: Biddle（1979）系統化，源自 Linton、Mead、Merton、Goffman。人被社會化去扮演與社會位置相連、帶有期望且持續存在的角色；功能論看角色為社會加諸的期望，互動論看角色為互動中不斷協商製造；管理上的核心構念是角色衝突與角色模糊。
+    edges:
+    - [Socialization, Role Expectations, +]
+    - [Role Conflict, Role Stress, +]
+    - [Role Ambiguity, Role Stress, +]
+    - [Role Conflict, Job Performance, '-']
+    - [Role Ambiguity, Job Performance, '-']
+    - [Role Stress, Intrinsic Motivation, '-']
+    - [Role Stress, Creativity, '-']
+    - [Task Complexity, Role Conflict, +]
+    refs:
+    - {title: 'Biddle, B. J. (1979). Role theory: Expectations, identities, and behaviors. Academic Press.', url: ''}
+    - {title: 'Biddle, B. J. (1986). Recent developments in role theory. Annual Review of Sociology, 12, 67–92.', url: ''}
+    - {title: 'Rizzo, J. R., House, R. J., & Lirtzman, S. I. (1970). Role conflict and ambiguity in complex organizations.
+        Administrative Science Quarterly, 15, 150–163.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 27 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 27 章。正文大多是定義與學派對照，可畫的因果集中在管理意涵節：角色衝突造成壓力並降低績效（p245）為書上明寫；角色模糊→績效負向是我依「確保沒有角色模糊」那段推的。Role
+      Stress→Intrinsic Motivation／Creativity 出自 Measuring Variables 的 Coelho, Augusto & Lages（2011）標題（角色壓力與內在動機中介脈絡因素→第一線員工創造力），方向依該文一般結論推，書上沒明寫。Task
+      Complexity→Role Conflict 來自 Suggestions for Further Research 第 10 條（工作複雜度如何影響角色衝突與模糊），是待驗證的提問不是定論。Role Flexibility／Role
+      Permeability（Hall & Richter 1988）為多重角色觀點的構念，書上無因果敘述。Rizzo et al. 1970 雖只在 Measuring Variables 出現，但它是角色衝突／模糊量表的來源，故列入
+      key_refs。我們既有 Role Stress 與 Roles 兩項，但缺其下位構念 Role Conflict 與 Role Ambiguity。
+  Sensemaking Theory:
+    abbr: S
+    zh: 意義建構理論
+    field: 組織
+    desc: Weick（1979, 1995）提出。人如何注意到事件、賦予事件意義、並讓共識建構的意義影響現在與未來行動；意義來自把當下線索放進過去社會化而來的框架，過程具認同建構、回溯、促成、社會性、持續、擷取線索、合理性優於準確性七項特徵。
+    edges:
+    - [Extracted Cues, Shared Meaning, +]
+    - [Frames, Shared Meaning, +]
+    - [Environmental Scanning, Interpretation, +]
+    - [Interpretation, Strategic Action, +]
+    - [Strategic Action, Firm Performance, +]
+    - [Environmental Uncertainty, Sensegiving, +]
+    - [Sensegiving, Shared Meaning, +]
+    - [Conflicting Frames, Firm Performance, '-']
+    refs:
+    - {title: 'Weick, K. E. (1995). Sensemaking in organizations. Sage.', url: ''}
+    - {title: 'Weick, K. E., Sutcliffe, K. M., & Obstfeld, D. (2005). Organizing and the process of sensemaking. Organization
+        Science, 16, 409–421.', url: ''}
+    - {title: 'Weick, K. E. (1979). The social psychology of organizing (2nd ed.). Addison-Wesley.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 29 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 29 章。這是歷程／詮釋型理論，書上的主體是定義（線索、框架、七特徵、六種框架、Maitlis 四型）而不是變數間的假設，所以邊少且多為流程序列而非統計因果。線索＋框架→意義（p256「what
+      makes sense is a cue inside a frame」）為書上明寫。掃描→詮釋→行動→結果為 Thomas, Clark & Gioia（1993）的連鎖（p257），書上稱為「general process」，我把它畫成序列邊；最後一段到績效以
+      Firm Performance 承接。模糊、不可預測的議題或多方利害關係人出現時領導者才進行 sensegiving（p257）→寫成 Environmental Uncertainty→Sensegiving。衝突框架（paradox）抑制績效出自
+      Luscher & Lewis（2008）那段（p258）。Maitlis（2005）的 animation×control 是分類軸不是因果，列為變數但不畫邊。Enactment、Plausibility 是特徵性構念，無法給方向。Social
+      Identity 沿用我們既有名稱對應書上「identity construction」，但書上指的也包括組織認同。Measuring Variables 多半是個案研究的量表（Gioia & Thomas 1996 形象／認同／資訊處理；Grant,
+      Dutton & Rosso 2008 員工支持方案；Ibarra & Andrews 1993 網絡中心性與鄰近性；Thomas, Clark & Gioia 1993 正向獲益與可控性），Network Centrality 來自
+      Ibarra & Andrews 標題，書上未寫其方向故不入邊。
+  Social Comparison Theory:
+    abbr: SC
+    zh: 社會比較理論
+    field: 社會心理
+    desc: Festinger（1954）提出：人有維持穩定、準確自我評價與保護自尊的需求，缺乏客觀標準時便以他人的意見與能力評估自己，偏好與相似者比較。後續擴充為向上／向下比較、同化／對比結果，以及社會比較傾向的個別差異。
+    edges:
+    - [Objective Standard Availability, Social Comparison, '-']
+    - [Self-Evaluation Uncertainty, Social Comparison, +]
+    - [Social Comparison Orientation, Social Comparison, +]
+    - [Perceived Similarity, Social Comparison, +]
+    - [Role Stress, Upward Comparison, +]
+    - [Upward Comparison, Job Satisfaction, +]
+    - [Upward Comparison, Job Performance, +]
+    - [Downward Comparison, Job Performance, '-']
+    refs:
+    - {title: 'Festinger, L. (1954). A theory of social comparison. Human Relations, 7, 117–140.', url: ''}
+    - {title: 'Buunk, A. P., & Gibbons, F. X. (2007). Social comparison: The end of a theory and the emergence of a field.
+        Organizational Behavior and Human Decision Processes, 102, 3–21.', url: ''}
+    - {title: 'Suls, J., & Wheeler, L. (Eds.). (2000). Handbook of social comparison. Plenum/Kluwer.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 32 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 32 章。我們清單沒有這個理論；既有的 Comparison with Own Judgment 是演算法建議情境的變數，不是同一構念。書上明寫：客觀資訊不可得才比較、不確定／高壓／競爭情境下比較、相似者為比較對象、Brown
+      et al.（2007）角色模糊＋任務自主＋核心自我評價→向上比較→工作滿意與情感承諾（為控制邊數，Autonomy、Core Self-Evaluations→Upward Comparison 與 Upward Comparison→Affective
+      Commitment 三條正向邊未列，可依此補）。Role Stress 沿用我們清單（書上是 role ambiguity，屬其子構面）。向上／向下比較對績效的方向書上說兩者皆可能正可能負，這裡依管理者啟示節（向上比較→改善、向下比較→鬆懈）取號，應標為有爭議。Measuring
+      一節只有社會比較傾向量表與「成為向上比較對象之敏感度」量表。
+  Social Facilitation Theory:
+    abbr: SF
+    zh: 社會助長理論
+    field: 社會心理
+    desc: Triplett（1898）觀察、Zajonc（1965）理論化：他人在場（觀眾或共事者）提高喚起水準並強化優勢反應，簡單或熟練的任務表現變好、困難任務變差。後續以評價焦慮、分心－衝突與窒息機制解釋，並延伸到電子監控與虛擬觀眾。
+    edges:
+    - [Mere Presence of Others, Arousal, +]
+    - [Arousal, Dominant Response, +]
+    - [Task Complexity, Mere Presence of Others -> Job Performance, m]
+    - [Evaluation Apprehension, Effort, +]
+    - [Distraction, Attentional Conflict, +]
+    - [Attentional Conflict, Cognitive Load, +]
+    - [Performance Pressure, Self-Focused Attention, +]
+    - [Self-Focused Attention, Job Performance, '-']
+    refs:
+    - {title: 'Zajonc, R. B. (1965). Social facilitation. Science, 149, 269–274.', url: ''}
+    - {title: 'Guerin, B. (1993). Social facilitation. Cambridge University Press.', url: ''}
+    - {title: 'Aiello, J. R., & Douthitt, E. A. (2001). Social facilitation from Triplett to electronic performance monitoring.
+        Group Dynamics, 5, 163–180.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 34 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 34 章。我們清單沒有這個理論。書上明寫：他人在場→喚起（驅力）→優勢反應；任務簡單時表現升、困難時降（故以 Task Complexity 當調節）；評價焦慮下人只是更努力（mere
+      effort）；他人在場造成分心→注意衝突→認知超載（表現降）或喚起升（表現升），兩條路徑並存，Cognitive Load→Job Performance 負向與 Mere Presence→Distraction 正向未列以控制邊數；高壓→自我意識→逐步監控技能→窒息；工作記憶高者反而更受壓力傷害（可補
+      Working Memory Capacity 調節 Performance Pressure→Job Performance）；電子監控與虛擬人也有助長效果（Monitoring→Arousal 正向未列）。Arousal→Job
+      Performance 依修正驅力理論是倒 U，不畫成單一邊。Job Performance 是沿用我們的名稱，書上是 task performance。Measuring 節只有思考控制問卷與 Spielberger 狀態焦慮量表，與理論核心構念對不太上，故
+      State Anxiety 列入但無邊。批評節指出 Bond & Titus（1983）發現評價焦慮影響很小、單純在場效果很弱。
+  Social Network Theory:
+    abbr: SN
+    zh: 社會網絡理論
+    field: 社會學／組織
+    desc: Granovetter（1973）、Burt（1992）等發展：人因彼此連結而想法與行為相似，分析行動者之間的連帶結構即可解釋其行為。核心概念為關係、鑲嵌、結構型態與網絡的社會效用；弱連帶跨接網絡、結構洞與經紀位置帶來資訊與控制優勢。
+    edges:
+    - [Network Centrality, Structural Social Capital, +]
+    - [Tie Strength, Bridging Social Capital, '-']
+    - [Structural Holes, Information Access, +]
+    - [Brokerage, Control, +]
+    - [Embeddedness, Trust, +]
+    - [Embeddedness, Knowledge Transfer, +]
+    - [Small-World Structure, Innovation Performance, +]
+    - [Normative Pressure, Adoption, +]
+    refs:
+    - {title: 'Granovetter, M. (1973). The strength of weak ties. American Journal of Sociology, 78, 1360–1380.', url: ''}
+    - {title: 'Kilduff, M., & Brass, D. J. (2010). Organizational social network research: Core ideas and key debates. Academy
+        of Management Annals, 4, 317–357.', url: ''}
+    - {title: 'Burt, R. (2005). Brokerage and social closure. Oxford University Press.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 36 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 36 章。我們清單只有 T Social Capital Theory 與 T Network Effects，前者是本理論的近親但不等同（社會資本是結果，網絡結構是前因），後者是經濟學概念，故判定為缺。書上明寫：中心位置最有利、人經由網絡位置獲得社會資本、連帶強度由時間／情感強度／互信／互惠決定、局部橋全是弱連帶、鑲嵌連帶比臂距連帶更利於信任／資訊傳遞／解題、結構洞帶來資訊與資源的優勢進而擴大控制機會、小世界網絡提升協作與創造力但過頭會反轉（Uzzi
+      & Spiro, 2005，故 Small-World→Innovation Performance 是倒 U，暫標正）。Normative Pressure→Adoption 來自 Measuring 節 Frank et al.（2004）social
+      pressure to use computers 與創新擴散，沿用我們的名稱。Tie Strength→Bridging Social Capital 取負號是把「弱連帶跨接」改寫成連續變數。
+  Structuration Theory:
+    abbr: S
+    zh: 結構化理論
+    field: 社會學
+    desc: Giddens（1984）提出：社會結構（規則與資源）既是行動的媒介也是其結果（結構二重性），透過反覆實踐而存在。表意、支配、正當化三種結構經詮釋基模、設施、規範三種模態對應溝通、權力、制裁三種互動；人為本體安全感執行常規。
+    edges:
+    - [Social Structure, Routines, +]
+    - [Routines, Social Structure, +]
+    - [Routines, Ontological Security, +]
+    - [Routines, Self-Esteem, +]
+    - [Routines, Institutionalization, +]
+    - [Critical Situations, Routines, '-']
+    refs:
+    - {title: 'Giddens, A. (1984). The constitution of society: Outline of the theory of structuration. Polity Press.', url: ''}
+    - {title: 'Giddens, A. (1979). Central problems in social theory: Action, structure, and contradiction in social analysis.
+        Macmillan.', url: ''}
+    - {title: 'Poole, M. S. (1996). The structuration of group decisions. In R. Y. Hirokawa & M. S. Poole (Eds.), Communication
+        and group decision making (2nd ed., pp. 114–146). Sage.', url: ''}
+    - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 39 章', url: ''}
+    enrich_notes: 來源：Miles 2012 第 39 章。我們清單沒有這個理論，也沒有 DeSanctis & Poole（1994）的調適性結構化理論（AST）。這是詮釋性社會理論，核心主張是結構與行動的遞迴二重性，不是可檢定的單向因果，所以邊少且皆為書上敘述的改寫：結構促成並約束行為、執行常規強化結構（雙向，各畫一邊）、人為取得本體安全感與自我認同／自尊而執行常規、常規深植後成為傳統再成為制度、關鍵情境打斷常規並改變傳統與制度。Power
+      指 Giddens 的一般性權力互動，我們清單只有 Stakeholder Power、Out-group Power 等特定權力，故列缺。Informal Sanctions 沿用我們名稱對應 sanction 互動；Social
+      Norm 對應 norms 模態；Communication 沿用既有。Measuring 節給的是 AST 的 faithfulness of appropriation 量表（Chin et al., 1997）、強結構化理論問題（Greenhalgh
+      & Stones, 2010）與規則資源理解問題，與主幹構念無直接對應。批評節：Archer 認為理論保留而非超越結構／行動二分，Anderson 批評以語言類比社會結構不當。
