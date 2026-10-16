@@ -1,0 +1,795 @@
+# 補充的常見理論（2026-10-16）
+# 這些理論在 vault 裡沒有獨立的理論 note（有 note 的用 note: 指回去），結構是依教科書／原始論文整理的標準版本，
+# 頁面上一律畫虛線並標「補充理論」。每條邊：[來源, 目標, 符號]；符號 + / - ；調節寫成 [調節變數, "來源 -> 目標", m]。
+# 變數名稱盡量沿用 vault 既有變數（Perceived Severity、Skepticism、Crisis Responsibility…），新變數會以虛線灰框顯示。
+
+same:
+  - [Customer Retention, Customer Retenion]
+  - [Trust, Trusting Beliefs, Interpersonal Trust]
+  - [Perceived Credibility, Credibility, Source Credibility]
+  - [Trust in AI, Trust in Algorithm, Trust in Automation, Trust in Machine]
+  - [Purchase Intention, Buying Intention]
+  - [Reliance on Automation, Algorithm Use, Advice Utilization, Algorithm Reliance]
+
+similar:
+  - [Trust, Trust in AI, Green Trust, Social Presence]
+  - [Behavioral Intention, Purchase Intention, Protection Motivation, Willingness to Speak Out, Utilization Intention]
+  - [Behavior, Media Use, Avoidance Behavior, Switching Behavior]
+  - [Crisis Responsibility, Ascription of responsibility, Responsibility Attribution]
+  - [AI Avoidance, Algorithm Aversion, Avoidance Motivation, User Resistance, Reactance]
+  - [Algorithm Transparency, Perceived Transparency, Explanation Quality]
+  - [Perceived Risk, Green Perceived Risk, Perceived Threat]
+  - [Perceived Credibility, Message Objectivity, Perceived Quality]
+  - [Emotions, Fear, Affect, Eeriness]
+  - [Social Norm, Social Influence, Normative Pressure, Perceived Majority Support]
+  - [Knowledge, AI Literacy, Persuasion Knowledge, Domain Expertise]
+
+theories:
+
+  # ───────── AI／演算法 ─────────
+  "Algorithm Aversion":
+    abbr: AlgAv
+    zh: 演算法厭惡
+    field: AI
+    desc: Dietvorst, Simmons & Massey（2015）：看過演算法出錯後，人會比看過人出錯更快失去對它的信任，即使演算法整體表現較好。
+    edges:
+      - [Algorithm Error Observed, Trust in Algorithm, "-"]
+      - [Human Error Observed, Trust in Algorithm, "+"]
+      - [Trust in Algorithm, Algorithm Use, "+"]
+      - [Ability to Modify Algorithm, Algorithm Use, "+"]
+      - [Algorithm Use, Decision Accuracy, "+"]
+  "Algorithm Appreciation":
+    abbr: AlgApp
+    zh: 演算法欣賞
+    field: AI
+    desc: Logg, Minson & Moore（2019）：一般人在客觀判斷上反而更採納演算法建議；專家採納較少。
+    edges:
+      - [Algorithmic Advice, Advice Utilization, "+"]
+      - [Domain Expertise, Advice Utilization, "-"]
+      - [Task Objectivity, Advice Utilization, "+"]
+  "AI Avoidance Model":
+    abbr: AIAvoid
+    zh: AI 迴避（演算法迴避）前因模型
+    field: AI
+    desc: 整理自演算法厭惡的系統性回顧（Jussupow et al. 2020；Mahmud et al. 2022）：演算法特性、任務特性與個人特性共同決定迴避。
+    edges:
+      - [Perceived Uniqueness Neglect, Algorithm Aversion, "+"]
+      - [Algorithm Transparency, Algorithm Aversion, "-"]
+      - [Task Subjectivity, Algorithm Aversion, "+"]
+      - [Domain Expertise, Algorithm Aversion, "+"]
+      - [Perceived Anthropomorphism, Algorithm Aversion, "-"]
+      - [Algorithm Error Observed, Algorithm Aversion, "+"]
+      - [Algorithm Aversion, AI Avoidance, "+"]
+      - [AI Anxiety, AI Avoidance, "+"]
+  "Uniqueness Neglect in Medical AI":
+    abbr: UNegl
+    zh: 獨特性忽視
+    field: AI
+    desc: Longoni, Bonezzi & Morewedge（2019）：人們擔心 AI 醫療忽略自己的獨特狀況，因而抗拒；個人化可以緩解。
+    edges:
+      - [AI Provider, Perceived Uniqueness Neglect, "+"]
+      - [Personalization, Perceived Uniqueness Neglect, "-"]
+      - [Perceived Uniqueness Neglect, Utilization Intention, "-"]
+  "Trust in Automation":
+    abbr: TiA
+    zh: 自動化信任模型
+    field: AI
+    desc: Lee & See（2004）：信任來自系統的表現、過程與目的三類資訊，並決定依賴程度；過度依賴即自動化偏誤。
+    edges:
+      - [Automation Reliability, Trust in Automation, "+"]
+      - [System Transparency, Trust in Automation, "+"]
+      - [Purpose Alignment, Trust in Automation, "+"]
+      - [Trust in Automation, Reliance on Automation, "+"]
+      - [Reliance on Automation, Automation Bias, "+"]
+  "Automation Bias and Complacency":
+    abbr: AutoBias
+    zh: 自動化偏誤與自滿
+    field: AI
+    desc: Parasuraman & Manzey（2010）：高可靠度與高工作負荷讓人減少監控，順從自動化的建議而出錯。
+    edges:
+      - [Automation Reliability, Complacency, "+"]
+      - [Workload, Automation Bias, "+"]
+      - [Complacency, Automation Bias, "+"]
+      - [Accountability, Automation Bias, "-"]
+      - [Automation Bias, Decision Error, "+"]
+  "CASA - Computers are social Actors":
+    note: "CASA - Computers are social Actors"
+    abbr: CASA
+    zh: 電腦是社會行動者
+    field: AI
+    edges:
+      - [Social Cues, Perceived Anthropomorphism, "+"]
+      - [Perceived Anthropomorphism, Social Response, "+"]
+      - [Social Response, Trust in AI, "+"]
+      - [Social Response, User Satisfaction, "+"]
+  "MAIN Model":
+    abbr: MAIN
+    zh: MAIN 模型（模態、行動者、互動性、導航性）
+    field: AI
+    desc: Sundar（2008）：數位媒介的四類可供性觸發可信度捷思，進而影響可信度判斷。
+    edges:
+      - [Modality Cues, Credibility Heuristics, "+"]
+      - [Agency Cues, Credibility Heuristics, "+"]
+      - [Interactivity Cues, Credibility Heuristics, "+"]
+      - [Navigability Cues, Credibility Heuristics, "+"]
+      - [Credibility Heuristics, Perceived Credibility, "+"]
+  "Machine Heuristic":
+    abbr: MachH
+    zh: 機器捷思
+    field: AI
+    desc: Sundar & Kim（2019）：把來源視為機器會啟動「機器客觀、不帶偏見」的捷思，提升客觀性感知與揭露意願。
+    edges:
+      - [Agency Cues, Machine Heuristic, "+"]
+      - [Machine Heuristic, Message Objectivity, "+"]
+      - [Message Objectivity, Trust in AI, "+"]
+      - [Machine Heuristic, Privacy Concern, "-"]
+  "AI Device Use Acceptance":
+    abbr: AIDUA
+    zh: AI 裝置使用接受模型
+    field: AI
+    desc: Gursoy et al.（2019）：社會影響、享樂動機與擬人化先影響績效／努力期望，再經情緒決定接受或拒絕。
+    edges:
+      - [Social Norm, Performance Expectancy, "+"]
+      - [Hedonic Motivation, Performance Expectancy, "+"]
+      - [Perceived Anthropomorphism, Effort Expectancy, "+"]
+      - [Performance Expectancy, Emotions, "+"]
+      - [Effort Expectancy, Emotions, "-"]
+      - [Emotions, Behavioral Intention, "+"]
+  "Uncanny Valley":
+    abbr: Uncanny
+    zh: 恐怖谷（非線性，此處簡化為高擬人段）
+    field: AI
+    desc: Mori（1970）：擬人程度接近真人卻不完全時，好感驟降；此處只畫高擬人區段的方向。
+    edges:
+      - [Perceived Anthropomorphism, Eeriness, "+"]
+      - [Eeriness, Trust in AI, "-"]
+      - [Eeriness, Behavioral Intention, "-"]
+  "Explainable AI Trust Model":
+    abbr: XAI
+    zh: 可解釋 AI 與信任
+    field: AI
+    desc: 整理自 XAI 使用者研究（Shin 2021 等）：解釋品質提升透明感與信任，但也增加認知負荷。
+    edges:
+      - [Explanation Quality, Perceived Transparency, "+"]
+      - [Perceived Transparency, Trust in AI, "+"]
+      - [Explanation Quality, Cognitive Load, "+"]
+      - [Trust in AI, Reliance on Automation, "+"]
+  "FAccT Perceptions Model":
+    abbr: FAccT
+    zh: 公平、可問責、透明的感知模型
+    field: AI
+    desc: Shin（2020）：使用者對演算法公平、可問責、透明的感知共同形成信任，再影響使用意圖。
+    edges:
+      - [Perceived Fairness, Trust in AI, "+"]
+      - [Perceived Accountability, Trust in AI, "+"]
+      - [Perceived Transparency, Trust in AI, "+"]
+      - [Trust in AI, Behavioral Intention, "+"]
+  "AI Anxiety Model":
+    abbr: AIAnx
+    zh: AI 焦慮
+    field: AI
+    desc: Wang & Wang（2022）等：失業威脅、學習壓力推高 AI 焦慮，AI 素養降低焦慮；焦慮導向迴避。
+    edges:
+      - [Job Replacement Threat, AI Anxiety, "+"]
+      - [Learning Pressure, AI Anxiety, "+"]
+      - [AI Literacy, AI Anxiety, "-"]
+      - [AI Anxiety, AI Avoidance, "+"]
+      - [AI Anxiety, Behavioral Intention, "-"]
+  "TTAT Technology Threat Avoidance Theory":
+    note: "TTAT Technology Threat Avoidance Theory"
+    abbr: TTAT
+    zh: 科技威脅迴避理論
+    field: 資安／AI
+    edges:
+      - [Perceived Susceptibility, Perceived Threat, "+"]
+      - [Perceived Severity, Perceived Threat, "+"]
+      - [Perceived Threat, Avoidance Motivation, "+"]
+      - [Safeguard Effectiveness, Avoidance Motivation, "+"]
+      - [Safeguard Cost, Avoidance Motivation, "-"]
+      - [Self-Efficacy, Avoidance Motivation, "+"]
+      - [Avoidance Motivation, Avoidance Behavior, "+"]
+  "Word-of-Machine Effect":
+    abbr: WoM-AI
+    zh: 機器之言效應
+    field: AI
+    desc: Longoni & Cian（2022）：功利目標下偏好 AI 推薦，享樂目標下偏好人類推薦。
+    edges:
+      - [Utilitarian Goal, Preference for AI Recommender, "+"]
+      - [Hedonic Goal, Preference for AI Recommender, "-"]
+      - [Preference for AI Recommender, Purchase Intention, "+"]
+  "Parasocial Interaction with Conversational Agents":
+    abbr: PSI-CA
+    zh: 與對話代理的擬社會互動
+    field: AI
+    desc: 擬人化與互動性提高擬社會互動感，進而提升持續使用。
+    edges:
+      - [Perceived Anthropomorphism, Parasocial Interaction, "+"]
+      - [Interactivity Cues, Parasocial Interaction, "+"]
+      - [Parasocial Interaction, Continuance Intention, "+"]
+      - [Parasocial Interaction, Trust in AI, "+"]
+  "AI Authorship Disclosure Effects":
+    abbr: AI-Byline
+    zh: AI 署名揭露效果
+    field: AI／新聞
+    desc: 機器寫作新聞研究（Graefe et al. 2018；Waddell 2018 等）：揭露 AI 作者會降低可信度評價，但提高客觀性感知；期望落差與既有 AI 態度是關鍵。
+    edges:
+      - [AI Authorship Disclosure, Perceived Credibility, "-"]
+      - [AI Authorship Disclosure, Message Objectivity, "+"]
+      - [Prior AI Attitude, Perceived Credibility, "+"]
+      - [Expectancy Violation, Perceived Credibility, "-"]
+      - [Perceived Credibility, Behavioral Intention, "+"]
+
+  # ───────── 健康／風險傳播 ─────────
+  "Protection Motivation Theory":
+    abbr: PMT
+    zh: 保護動機理論
+    field: 健康傳播／資安
+    desc: Rogers（1975, 1983）：威脅評估（嚴重性、易感性）與因應評估（反應效能、自我效能、反應成本）決定保護動機。
+    edges:
+      - [Perceived Severity, Protection Motivation, "+"]
+      - [Perceived Susceptibility, Protection Motivation, "+"]
+      - [Response Efficacy, Protection Motivation, "+"]
+      - [Self-Efficacy, Protection Motivation, "+"]
+      - [Response Cost, Protection Motivation, "-"]
+      - [Protection Motivation, Behavior, "+"]
+  "Health Belief Model":
+    abbr: HBM
+    zh: 健康信念模式
+    field: 健康傳播
+    desc: Rosenstock（1974）；Janz & Becker（1984）：易感性、嚴重性、利益、障礙、行動線索與自我效能共同預測健康行為。
+    edges:
+      - [Perceived Susceptibility, Behavior, "+"]
+      - [Perceived Severity, Behavior, "+"]
+      - [Perceived Health Benefits, Behavior, "+"]
+      - [Perceived Barriers, Behavior, "-"]
+      - [Cues to Action, Behavior, "+"]
+      - [Self-Efficacy, Behavior, "+"]
+  "Extended Parallel Process Model":
+    abbr: EPPM
+    zh: 延伸平行歷程模式
+    field: 健康傳播
+    desc: Witte（1992）：威脅引發恐懼，效能決定走危險控制（接受建議）還是恐懼控制（否認、迴避）。
+    edges:
+      - [Perceived Severity, Perceived Threat, "+"]
+      - [Perceived Susceptibility, Perceived Threat, "+"]
+      - [Response Efficacy, Perceived Efficacy, "+"]
+      - [Self-Efficacy, Perceived Efficacy, "+"]
+      - [Perceived Threat, Fear, "+"]
+      - [Perceived Efficacy, Danger Control, "+"]
+      - [Fear, Fear Control, "+"]
+      - [Perceived Efficacy, Fear Control, "-"]
+
+  # ───────── 說服／傳播 ─────────
+  "ELM":
+    note: ELM
+    abbr: ELM
+    zh: 推敲可能性模式
+    field: 說服
+    edges:
+      - [Argument Quality, Attitude, "+"]
+      - [Peripheral Cues, Attitude, "+"]
+      - [Involvement, Elaboration, "+"]
+      - [Ability, Elaboration, "+"]
+      - [Elaboration, "Argument Quality -> Attitude", m]
+  "Heuristic-Systematic Model":
+    abbr: HSM
+    zh: 捷思－系統式處理模式
+    field: 說服
+    desc: Chaiken（1980）：動機與能力決定系統式處理的程度；捷思線索在低投入時主導態度。
+    edges:
+      - [Motivation, Systematic Processing, "+"]
+      - [Ability, Systematic Processing, "+"]
+      - [Heuristic Cues, Attitude, "+"]
+      - [Systematic Processing, Attitude Strength, "+"]
+  "Source Credibility Theory":
+    abbr: SCred
+    zh: 來源可信度理論
+    field: 說服
+    desc: Hovland & Weiss（1951）；Ohanian（1990）：專業性、可信賴性、吸引力構成來源可信度，進而影響態度與意圖。
+    edges:
+      - [Source Expertise, Perceived Credibility, "+"]
+      - [Source Trustworthiness, Perceived Credibility, "+"]
+      - [Source Attractiveness, Perceived Credibility, "+"]
+      - [Perceived Credibility, Attitude, "+"]
+      - [Attitude, Behavioral Intention, "+"]
+  "Persuasion Knowledge Model":
+    abbr: PKM
+    zh: 說服知識模式
+    field: 行銷傳播
+    desc: Friestad & Wright（1994）：辨識出說服意圖會啟動說服知識，引發懷疑並降低品牌態度。
+    edges:
+      - [Sponsorship Disclosure, Persuasion Knowledge, "+"]
+      - [Persuasion Knowledge, Skepticism, "+"]
+      - [Skepticism, Brand Attitude, "-"]
+      - [Skepticism, Purchase Intention, "-"]
+  "Psychological Reactance Theory":
+    abbr: PRT
+    zh: 心理抗拒理論
+    field: 說服
+    desc: Brehm（1966）：威脅自由的訊息引發抗拒，反而降低態度與順從。
+    edges:
+      - [Threat to Freedom, Reactance, "+"]
+      - [Reactance, Attitude, "-"]
+      - [Reactance, Behavioral Intention, "-"]
+      - [Autonomy, Reactance, "-"]
+  "Expectancy Violations Theory":
+    abbr: EVioT
+    zh: 期望違反理論
+    field: 人際傳播
+    desc: Burgoon（1978）：違反期望引發喚起與評估；違反的正負取決於傳播者的酬賞價值。
+    edges:
+      - [Expectancy Violation, Arousal, "+"]
+      - [Communicator Reward Valence, Violation Valence, "+"]
+      - [Violation Valence, Attitude, "+"]
+  "Spiral of Silence":
+    abbr: SoS
+    zh: 沉默螺旋
+    field: 政治傳播
+    desc: Noelle-Neumann（1974）：感知自己屬於少數會因害怕孤立而不願表態。
+    edges:
+      - [Perceived Majority Support, Willingness to Speak Out, "+"]
+      - [Fear of Isolation, Willingness to Speak Out, "-"]
+      - [Perceived Majority Support, Fear of Isolation, "-"]
+  "Third-Person Effect":
+    abbr: TPE
+    zh: 第三人效果
+    field: 媒介效果
+    desc: Davison（1983）：人們認為媒體對他人的影響大於對自己，並據此支持管制。
+    edges:
+      - [Social Distance, Perceived Media Influence on Others, "+"]
+      - [Perceived Media Influence on Others, Support for Censorship, "+"]
+      - [Perceived Media Influence on Self, Support for Censorship, "-"]
+  "Bandwagon Heuristic":
+    abbr: Bandwagon
+    zh: 從眾捷思
+    field: 媒介效果
+    desc: Sundar 等：按讚數、觀看數等集體線索觸發從眾捷思，提高可信度與採用。
+    edges:
+      - [Bandwagon Cues, Bandwagon Effect, "+"]
+      - [Bandwagon Effect, Perceived Credibility, "+"]
+      - [Bandwagon Effect, Behavioral Intention, "+"]
+  "Affective Polarization Model":
+    abbr: AffPol
+    zh: 情感極化
+    field: 政治傳播
+    desc: Iyengar et al.（2012, 2019）：黨派認同與同溫層媒體推高對外團體的敵意。
+    edges:
+      - [Social Identity, Affective Polarization, "+"]
+      - [Partisan Media Exposure, Affective Polarization, "+"]
+      - [Cross-cutting Exposure, Affective Polarization, "-"]
+      - [Affective Polarization, Out-group, "-"]
+  "T Uses and Gratifications":
+    note: "T Uses and Gratifications"
+    abbr: U&G
+    zh: 使用與滿足
+    field: 媒介
+    edges:
+      - [Gratifications Sought, Media Use, "+"]
+      - [Media Use, Gratifications Obtained, "+"]
+      - [Gratifications Obtained, Continuance Intention, "+"]
+      - [Gratifications Obtained, Gratifications Sought, "+"]
+  "T MRT Media Richness Theory":
+    note: "T MRT Media Richness Theory"
+    abbr: MRT
+    zh: 媒介豐富度理論
+    field: 組織傳播
+    edges:
+      - [Media Richness, Communication Effectiveness, "+"]
+      - [Task Equivocality, "Media Richness -> Communication Effectiveness", m]
+  "T SPT Social Presence Theory":
+    note: "T SPT Social Presence Theory"
+    abbr: SPT
+    zh: 社會臨場感理論
+    field: 傳播／電商
+    edges:
+      - [Media Richness, Social Presence, "+"]
+      - [Social Presence, Trust, "+"]
+      - [Social Presence, User Satisfaction, "+"]
+      - [Social Presence, Behavioral Intention, "+"]
+  "SIDE Model":
+    abbr: SIDE
+    zh: 去個人化社會認同模式
+    field: 社會心理／CMC
+    desc: Reicher, Spears & Postmes（1995）：匿名讓社會認同而非個人認同凸顯，強化內團體偏私與外團體貶抑。
+    edges:
+      - [Anonymity, Social Identity, "+"]
+      - [Social Identity, In-group, "+"]
+      - [Social Identity, Out-group, "-"]
+      - [Social Identity, Social Norm, "+"]
+
+  # ───────── 公關／危機／組織 ─────────
+  "T SCCT Situational Crisis Communication":
+    note: "T SCCT Situational Crisis Communication"
+    abbr: SCCT
+    zh: 情境危機溝通理論
+    field: 公關
+    edges:
+      - [Crisis History, Crisis Responsibility, "+"]
+      - [Prior Relationship Reputation, Crisis Responsibility, "-"]
+      - [Crisis Responsibility, Org Reputation, "-"]
+      - [Crisis Responsibility, Emotions, "+"]
+      - [Emotions, Org Reputation, "-"]
+      - [Org Reputation, Behavioral Intention, "+"]
+  "Attribution Theory":
+    note: "Attribution Theory"
+    abbr: AttrT
+    zh: 歸因理論
+    field: 社會心理
+    edges:
+      - [Locus, Responsibility Attribution, "+"]
+      - [Stability, Responsibility Attribution, "+"]
+      - [Controllability, Responsibility Attribution, "+"]
+      - [Responsibility Attribution, Emotions, "+"]
+      - [Emotions, Behavior, "+"]
+  "T Institutional Theory":
+    note: "T Institutional Theory"
+    abbr: InstT
+    zh: 制度理論（同構壓力）
+    field: 組織
+    edges:
+      - [Coercive Pressure, Adoption, "+"]
+      - [Mimetic Pressure, Adoption, "+"]
+      - [Normative Pressure, Adoption, "+"]
+  "T IDT Innovation Diffusion Theory":
+    note: "T IDT Innovation Diffusion Theory"
+    abbr: IDT
+    zh: 創新擴散理論
+    field: 組織／行銷
+    edges:
+      - [Relative Advantage, Adoption, "+"]
+      - [Compatibility, Adoption, "+"]
+      - [Complexity, Adoption, "-"]
+      - [Trialability, Adoption, "+"]
+      - [Observability, Adoption, "+"]
+  "Technostress Model":
+    abbr: TStress
+    zh: 科技壓力模型
+    field: 組織／IS
+    desc: Tarafdar et al.（2007）；Ragu-Nathan et al.（2008）：超載、入侵、複雜等壓力源降低滿意與持續使用，技術支援可抑制。
+    edges:
+      - [Techno-overload, Technostress, "+"]
+      - [Techno-invasion, Technostress, "+"]
+      - [Techno-complexity, Technostress, "+"]
+      - [Technical Support, Technostress, "-"]
+      - [Technostress, User Satisfaction, "-"]
+      - [Technostress, Continuance Intention, "-"]
+  "Status Quo Bias Theory":
+    abbr: SQB
+    zh: 現狀偏誤理論（使用者抗拒）
+    field: IS
+    desc: Kim & Kankanhalli（2009）：轉換成本提高抗拒、轉換利益降低抗拒；自我效能與組織支持間接作用。
+    edges:
+      - [Switching cost, User Resistance, "+"]
+      - [Switching Benefits, User Resistance, "-"]
+      - [Self-Efficacy, Switching cost, "-"]
+      - [Organizational Support, Switching cost, "-"]
+      - [Social Norm, User Resistance, "-"]
+
+  # ───────── 行銷／顧客 ─────────
+  "Push-Pull-Mooring":
+    abbr: PPM
+    zh: 推拉繫住模型（轉換行為）
+    field: 行銷／IS
+    desc: Bansal, Taylor & St. James（2005）：不滿意是推力、替代品吸引力是拉力、轉換成本與習慣是繫住力。
+    edges:
+      - [Dissatisfaction, Switching Intention, "+"]
+      - [Alternative Attractiveness, Switching Intention, "+"]
+      - [Switching cost, Switching Intention, "-"]
+      - [Habit, Switching Intention, "-"]
+      - [Switching Intention, Switching Behavior, "+"]
+  "Commitment-Trust Theory":
+    abbr: KMV
+    zh: 承諾－信任理論
+    field: 關係行銷
+    desc: Morgan & Hunt（1994）：共享價值與溝通建立信任，投機行為破壞信任；信任與承諾是關係的關鍵中介。
+    edges:
+      - [Shared Values, Trust, "+"]
+      - [Communication, Trust, "+"]
+      - [Opportunistic Behavior, Trust, "-"]
+      - [Trust, Relationship Commitment, "+"]
+      - [Relationship Commitment, Customer Retention, "+"]
+      - [Trust, Customer Retention, "+"]
+  "American Customer Satisfaction Index Model":
+    abbr: ACSI
+    zh: 美國顧客滿意度指數模型（期望－失驗）
+    field: 行銷
+    desc: Fornell et al.（1996）：期望、知覺品質、知覺價值決定滿意，滿意提高忠誠、降低抱怨。
+    edges:
+      - [Expectation, Perceived Quality, "+"]
+      - [Expectation, Perceived Value, "+"]
+      - [Perceived Quality, Perceived Value, "+"]
+      - [Perceived Quality, User Satisfaction, "+"]
+      - [Perceived Value, User Satisfaction, "+"]
+      - [User Satisfaction, Customer Retention, "+"]
+      - [User Satisfaction, Customer Complaints, "-"]
+  "T SERVQUAL":
+    note: "T SERVQUAL"
+    abbr: SERVQUAL
+    zh: 服務品質模型
+    field: 行銷
+    edges:
+      - [Reliability, Service Quality, "+"]
+      - [Assurance, Service Quality, "+"]
+      - [Tangibles, Service Quality, "+"]
+      - [Empathy, Service Quality, "+"]
+      - [Responsiveness, Service Quality, "+"]
+      - [Service Quality, User Satisfaction, "+"]
+  "Greenwashing Perception Model":
+    abbr: GreenW
+    zh: 漂綠感知模型
+    field: 永續行銷
+    desc: Chen & Chang（2013）：漂綠提高綠色消費者困惑與綠色知覺風險、降低綠色信任；懷疑是重要前因。
+    edges:
+      - [Greenwashing, Green Consumer Confusion, "+"]
+      - [Greenwashing, Green Perceived Risk, "+"]
+      - [Greenwashing, Green Trust, "-"]
+      - [Green Consumer Confusion, Green Trust, "-"]
+      - [Green Perceived Risk, Green Trust, "-"]
+      - [Skepticism, Green Trust, "-"]
+      - [Green Trust, Purchase Intention, "+"]
+  "Product Lifetime Labelling Effects":
+    abbr: PLL
+    zh: 產品壽命標示效果
+    field: 永續行銷
+    desc: 歐盟 Ecodesign 相關研究（Jacobs & Hörisch 2022 等）：壽命標示提升耐用度與品質感知，進而提高購買意圖。
+    edges:
+      - [Product Lifetime Labelling, Perceived Durability, "+"]
+      - [Perceived Durability, Perceived Quality, "+"]
+      - [Perceived Durability, Purchase Intention, "+"]
+      - [Skepticism, "Product Lifetime Labelling -> Perceived Durability", m]
+  "Signaling theory":
+    note: "Signaling theory"
+    abbr: SigT
+    zh: 信號理論
+    field: 經濟／行銷
+    edges:
+      - [Information Asymmetry, Signal Reliance, "+"]
+      - [Signal Cost, Signal Credibility, "+"]
+      - [Signal Credibility, Perceived Quality, "+"]
+      - [Signal Reliance, "Signal Credibility -> Perceived Quality", m]
+      - [Perceived Quality, Purchase Intention, "+"]
+  "Theory of Interpersonal Behavior":
+    abbr: TIB
+    zh: 人際行為理論（Triandis）
+    field: 社會心理／IS
+    desc: Triandis（1977）：習慣與意圖共同預測行為，情感、社會因素影響意圖，促成條件調節。
+    edges:
+      - [Habit, Behavior, "+"]
+      - [Behavioral Intention, Behavior, "+"]
+      - [Facilitating Conditions, Behavior, "+"]
+      - [Affect, Behavioral Intention, "+"]
+      - [Social Norm, Behavioral Intention, "+"]
+      - [Perceived Consequences, Behavioral Intention, "+"]
+
+  # ───────── 社會心理／動機 ─────────
+  "T SCT Social Cognition Theory":
+    note: "T SCT Social Cognition Theory"
+    abbr: SCT
+    zh: 社會認知理論
+    field: 社會心理
+    edges:
+      - [Self-Efficacy, Behavior, "+"]
+      - [Outcome Expectations, Behavior, "+"]
+      - [Self-Efficacy, Outcome Expectations, "+"]
+      - [Social Environment, Self-Efficacy, "+"]
+      - [Behavior, Social Environment, "+"]
+  "Value-Belief-Norm Theory":
+    abbr: VBN
+    zh: 價值－信念－規範理論
+    field: 環境心理
+    desc: Stern et al.（1999）：價值→生態世界觀→結果意識→責任歸屬→個人規範→行為的因果鏈。
+    edges:
+      - [Values, Ecological Worldview, "+"]
+      - [Ecological Worldview, Awareness of Consequence, "+"]
+      - [Awareness of Consequence, Ascription of responsibility, "+"]
+      - [Ascription of responsibility, Personal Norm, "+"]
+      - [Personal Norm, Behavior, "+"]
+  "Identifiable Victim Effect":
+    abbr: IVE
+    zh: 可辨識受害者效應
+    field: 捐款／行為經濟
+    desc: Small, Loewenstein & Slovic（2007）：單一可辨識的受害者比統計數字更能引發同情與捐款；深思會削弱效應。
+    edges:
+      - [Identified Victim, Emotions, "+"]
+      - [Emotions, Donation, "+"]
+      - [Statistical Information, Emotions, "-"]
+      - [Deliberative Thinking, "Identified Victim -> Emotions", m]
+  "Warm-Glow Giving":
+    abbr: WarmGlow
+    zh: 溫暖光輝（不純粹利他）
+    field: 捐款／行為經濟
+    desc: Andreoni（1989, 1990）：捐款的效用一部分來自給予本身的愉悅，而非只來自受助者的福祉。
+    edges:
+      - [Altruistic Motivation, Donation, "+"]
+      - [Warm Glow, Donation, "+"]
+      - [Donation, Warm Glow, "+"]
+      - [Social Norm, Donation, "+"]
+  "T SET Social Exchange Theory":
+    note: "T SET Social Exchange Theory"
+    abbr: SExT
+    zh: 社會交換理論
+    field: 社會學／組織
+    edges:
+      - [Perceived Reward, Relationship Commitment, "+"]
+      - [Perceived Cost, Relationship Commitment, "-"]
+      - [Trust, Relationship Commitment, "+"]
+      - [Reciprocity, Trust, "+"]
+      - [Relationship Commitment, Continuance Intention, "+"]
+  "T Social Capital Theory":
+    note: "T Social Capital Theory"
+    abbr: SocCap
+    zh: 社會資本理論
+    field: 社會學／CMC
+    edges:
+      - [Social Network Use, Bridging Social Capital, "+"]
+      - [Social Network Use, Bonding Social Capital, "+"]
+      - [Bonding Social Capital, Social Support, "+"]
+      - [Bridging Social Capital, Information Access, "+"]
+      - [Social Support, Well-being, "+"]
+  "T Flow Theory":
+    note: "T Flow Theory"
+    abbr: Flow
+    zh: 心流理論
+    field: 心理／HCI
+    edges:
+      - [Skill, Flow, "+"]
+      - [Challenge, Flow, "+"]
+      - [Flow, Continuance Intention, "+"]
+      - [Flow, User Satisfaction, "+"]
+  "Cognitive Load Theory, CLT":
+    note: "Cognitive Load Theory, CLT"
+    abbr: CLT
+    zh: 認知負荷理論
+    field: 教育心理／HCI
+    edges:
+      - [Intrinsic Load, Cognitive Load, "+"]
+      - [Extraneous Load, Cognitive Load, "+"]
+      - [Cognitive Load, Learning Performance, "-"]
+      - [Germane Load, Learning Performance, "+"]
+  "T PT Prospect Theory":
+    note: "T PT Prospect Theory"
+    abbr: PT
+    zh: 展望理論（框架效應）
+    field: 行為經濟
+    edges:
+      - [Loss Framing, Risk Seeking, "+"]
+      - [Gain Framing, Risk Seeking, "-"]
+      - [Loss Aversion, Perceived Risk, "+"]
+      - [Perceived Risk, Behavioral Intention, "-"]
+  "T CDT Cognitive Dissonance Theory":
+    note: "T CDT Cognitive Dissonance Theory"
+    abbr: CDT
+    zh: 認知失調理論
+    field: 社會心理
+    edges:
+      - [Inconsistent Cognition, Dissonance, "+"]
+      - [Dissonance, Attitude Change, "+"]
+      - [Dissonance, Selective Exposure, "+"]
+      - [Choice Freedom, Dissonance, "+"]
+
+  # ───────── 科技接受／信任／隱私（延伸） ─────────
+  "Technology Readiness Index":
+    abbr: TRI
+    zh: 科技準備度
+    field: 行銷／IS
+    desc: Parasuraman（2000）：樂觀與創新性是驅力、不適與不安全感是抑制力，共同構成接受新科技的傾向。
+    edges:
+      - [Optimism, Technology Readiness, "+"]
+      - [Innovativeness, Technology Readiness, "+"]
+      - [Discomfort, Technology Readiness, "-"]
+      - [Insecurity, Technology Readiness, "-"]
+      - [Technology Readiness, Behavioral Intention, "+"]
+  "Initial Trust Model":
+    abbr: ITM
+    zh: 初始信任模型
+    field: 電商／IS
+    desc: McKnight, Choudhury & Kacmar（2002）：信任傾向、制度信任與網站品質／聲譽形成信任信念，再轉為信任意圖與行為。
+    edges:
+      - [Disposition to Trust, Trusting Beliefs, "+"]
+      - [Institution-based Trust, Trusting Beliefs, "+"]
+      - [Perceived Reputation, Trusting Beliefs, "+"]
+      - [Perceived Site Quality, Trusting Beliefs, "+"]
+      - [Trusting Beliefs, Behavioral Intention, "+"]
+      - [Trusting Beliefs, Perceived Risk, "-"]
+  "APCO Macro Model":
+    abbr: APCO
+    zh: 前因－隱私顧慮－結果模型
+    field: 隱私／IS
+    desc: Smith, Dinev & Xu（2011）：隱私經驗、意識、人格與人口特徵形成隱私顧慮，顧慮影響信任、風險與揭露行為。
+    edges:
+      - [Privacy Experiences, Privacy Concern, "+"]
+      - [Privacy Awareness, Privacy Concern, "+"]
+      - [Privacy Concern, Trust, "-"]
+      - [Privacy Concern, Perceived Risk, "+"]
+      - [Privacy Concern, Behavioral Intention, "-"]
+      - [Regulation, Privacy Concern, "-"]
+  "Cognitive Absorption":
+    abbr: CogAbs
+    zh: 認知吸收
+    field: IS
+    desc: Agarwal & Karahanna（2000）：玩興與個人創新性提高認知吸收，吸收再提升知覺有用性與易用性。
+    edges:
+      - [Playfulness, Cognitive Absorption, "+"]
+      - [Personal Innovativeness, Cognitive Absorption, "+"]
+      - [Cognitive Absorption, PU Perceived Usefulness, "+"]
+      - [Cognitive Absorption, Perceived Ease of Use, "+"]
+      - [PU Perceived Usefulness, Behavioral Intention, "+"]
+  "Hedonic-Motivation System Adoption Model":
+    abbr: HMSAM
+    zh: 享樂動機系統採用模型
+    field: IS／遊戲
+    desc: Lowry et al.（2013）：易用性引發好奇、愉悅與控制感，進而帶來沉浸與使用意圖。
+    edges:
+      - [Perceived Ease of Use, Curiosity, "+"]
+      - [Perceived Ease of Use, Joy, "+"]
+      - [Perceived Ease of Use, Control, "+"]
+      - [Curiosity, Behavioral Intention, "+"]
+      - [Joy, Behavioral Intention, "+"]
+      - [Control, Immersion, "+"]
+      - [Immersion, Behavioral Intention, "+"]
+  "Habit in IS Continuance":
+    abbr: Habit-ISC
+    zh: 習慣與持續使用
+    field: IS
+    desc: Limayem, Hirt & Cheung（2007）：先前使用頻率與滿意形成習慣；習慣直接驅動使用，也削弱意圖對行為的預測力。
+    edges:
+      - [Prior Behavior Frequency, Habit, "+"]
+      - [User Satisfaction, Habit, "+"]
+      - [Habit, Behavior, "+"]
+      - [Continuance Intention, Behavior, "+"]
+      - [Habit, "Continuance Intention -> Behavior", m]
+  "Deterrence Theory":
+    abbr: GDT
+    zh: 嚇阻理論（資安）
+    field: 資安
+    desc: Straub（1990）；D'Arcy et al.（2009）：制裁的確定性、嚴厲性與迅速性降低違規意圖。
+    edges:
+      - [Sanction Certainty, Security Policy Violation, "-"]
+      - [Sanction Severity, Security Policy Violation, "-"]
+      - [Sanction Celerity, Security Policy Violation, "-"]
+      - [Security Awareness, Sanction Certainty, "+"]
+
+  # ───────── 說服／敘事（延伸） ─────────
+  "Narrative Transportation Theory":
+    abbr: NTT
+    zh: 敘事傳輸理論
+    field: 說服
+    desc: Green & Brock（2000）：被故事帶走（傳輸）會降低反駁、提高情感投入，使態度朝故事方向改變。
+    edges:
+      - [Narrative Quality, Transportation, "+"]
+      - [Transportation, Counterarguing, "-"]
+      - [Transportation, Emotions, "+"]
+      - [Counterarguing, Attitude, "-"]
+      - [Transportation, Attitude, "+"]
+  "Inoculation Theory":
+    abbr: Inoc
+    zh: 預防接種理論
+    field: 說服／假訊息
+    desc: McGuire（1964）；van der Linden（2017）：先給威脅預警與弱化版反駁，使人產生抗體、抵抗後續的說服或假訊息。
+    edges:
+      - [Forewarning, Threat Perception, "+"]
+      - [Refutational Preemption, Counterarguing, "+"]
+      - [Threat Perception, Counterarguing, "+"]
+      - [Counterarguing, Attitude Resistance, "+"]
+      - [Attitude Resistance, Attitude Change, "-"]
+  "Theory of Consumption Values":
+    abbr: TCV
+    zh: 消費價值理論
+    field: 行銷
+    desc: Sheth, Newman & Gross（1991）：功能、社會、情感、知識與情境五種價值共同決定選擇。
+    edges:
+      - [Functional Value, Purchase Intention, "+"]
+      - [Social Value, Purchase Intention, "+"]
+      - [Emotional Value, Purchase Intention, "+"]
+      - [Epistemic Value, Purchase Intention, "+"]
+      - [Conditional Value, Purchase Intention, "+"]
+  "Expectancy Theory (Vroom)":
+    abbr: VIE
+    zh: 期望理論（期望－工具性－效價）
+    field: 組織行為
+    desc: Vroom（1964）：努力能帶來績效（期望）、績效能換到報酬（工具性）、報酬有吸引力（效價），三者相乘決定動機。
+    edges:
+      - [Expectancy, Motivation, "+"]
+      - [Instrumentality, Motivation, "+"]
+      - [Valence, Motivation, "+"]
+      - [Motivation, Behavior, "+"]
