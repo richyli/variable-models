@@ -1,0 +1,201 @@
+# 變數／模型／理論工具的設定檔
+# 由 tools/variable_model_tool.py 讀取；改完重跑  python tools/variable_model_tool.py  即可更新 index.html
+#
+# 資料來源：Variable.base 的篩選條件（tags 含 variable）＋同資料夾內的理論 note（檔名 T 開頭或 tags 含 Theory）
+# 邊的來源有兩種：
+#   note  —— 直接寫在 note 裡的  A --> [[B]] 、 [[A]] ++ [[B]] 、 [[A]] -- [[B]]
+#   seed  —— 下方 seed_models 補的教科書標準結構（note 裡只貼了圖、沒寫邊時才需要）；頁面上以虛線顯示
+
+vault: Zettel
+roots:
+  - "-work/Notes"
+
+# 1. note 裡的理論標籤 → 理論 note 檔名（不含 .md）
+#    規則：變數 note 裡的  #T_XXX  或  #u_xxx  指向哪一個理論 note
+theory_tags:
+  T_TAM: TAM
+  T_TPB: "T TPB  Planned Behaviroal"
+  T_TRA: "T TRA Theory of Reasoned Action"
+  T_TTF: "T TTF Task-Technology Fit"
+  T_SDT: "SDT Self-Determination theory"
+  # 變數 note 裡的 T_SET 全部與 [[T SEF Self-Efficacy Theory]] 同行出現，指的是自我效能理論，不是社會交換理論
+  T_SET: "T SEF Self-Efficacy Theory"
+  T_SEF: "T SEF Self-Efficacy Theory"
+  T_NAM: "T Norm Activation Model"
+  T_EVT: "T EVT Expectancy-Value"
+  T_ECT: "T ECT Expectation Confirmation Theory"
+  T_SIT: "T Social Identity Theory"
+  T_SIMCA: "T SIMCA Social identity model of collective action"
+  T_ISCM: "IS Continuance Model"
+  T_ACT: "T Absorptive Capacity Theory"
+  T_TOE: "T TOE Technology–Organization–Environment"
+  T_DMIS: "T DMIS Delone and McLean IS Success Model"
+  u_utaut: "T UTAUT"
+  # 沒有對應 note 的標籤：給一個名稱即可，工具會建立沒有 note 的理論
+  PCM: "Privacy Calculus Model"
+
+# 2. 同一個理論有多個 note 或多種寫法時，合併到左邊那個
+theory_aliases:
+  "T TPB  Planned Behaviroal": ["T TPB Theory of Planned Behavior", "TPB", "Theory of Planned Behavior"]
+  TAM: ["T TAM Technology Acceptance Model", "Technology Acceptance Model"]
+  "T TTF Task-Technology Fit": ["Task-Technology Fit"]
+  "T DMIS Delone and McLean IS Success Model": ["T Delone and McLean IS success model", "D&M IS Success Model"]
+  "T UTAUT": ["UTAUT"]
+  "IS Continuance Model": ["T MISC Multi-Motive Information Systems Continuance Model"]
+  "SDT Self-Determination theory": ["SDT"]
+  "T Social Identity Theory": ["Social Identity Theory"]
+
+# 3. 理論的顯示名稱（縮寫／全名／中文）；沒列的會從檔名推
+theory_labels:
+  TAM: {abbr: TAM, name: Technology Acceptance Model, zh: 科技接受模型}
+  "T TPB  Planned Behaviroal": {abbr: TPB, name: Theory of Planned Behavior, zh: 計畫行為理論}
+  "T TRA Theory of Reasoned Action": {abbr: TRA, name: Theory of Reasoned Action, zh: 理性行為理論}
+  "T UTAUT": {abbr: UTAUT, name: Unified Theory of Acceptance and Use of Technology, zh: 整合型科技接受模型}
+  "T TTF Task-Technology Fit": {abbr: TTF, name: Task-Technology Fit, zh: 任務科技適配}
+  "T ECT Expectation Confirmation Theory": {abbr: ECT, name: Expectation Confirmation Theory, zh: 期望確認理論}
+  "IS Continuance Model": {abbr: ISCM, name: IS Continuance Model, zh: 資訊系統持續使用模型}
+  "SDT Self-Determination theory": {abbr: SDT, name: Self-Determination Theory, zh: 自我決定理論}
+  "T SEF Self-Efficacy Theory": {abbr: SEF, name: Self-Efficacy Theory, zh: 自我效能理論}
+  "T Norm Activation Model": {abbr: NAM, name: Norm Activation Model, zh: 規範活化模型}
+  "T EVT Expectancy-Value": {abbr: EVT, name: Expectancy-Value Theory, zh: 期望價值理論}
+  "T Social Identity Theory": {abbr: SIT, name: Social Identity Theory, zh: 社會認同理論}
+  "T SIMCA Social identity model of collective action": {abbr: SIMCA, name: Social Identity Model of Collective Action, zh: 集體行動的社會認同模型}
+  "T Absorptive Capacity Theory": {abbr: ACT, name: Absorptive Capacity Theory, zh: 吸收能力理論}
+  "T TOE Technology–Organization–Environment": {abbr: TOE, name: Technology–Organization–Environment Framework, zh: 科技－組織－環境架構}
+  "T DMIS Delone and McLean IS Success Model": {abbr: "D&M", name: "DeLone & McLean IS Success Model", zh: 資訊系統成功模型}
+  "Privacy Calculus Model": {abbr: PCM, name: Privacy Calculus Model, zh: "隱私計算模型（依 PCM 標籤推測）"}
+  "T SCCT Situational Crisis Communication": {abbr: SCCT, name: Situational Crisis Communication Theory, zh: 情境危機溝通理論}
+  "T KBV Knowledge-Based View": {abbr: KBV, name: Knowledge-Based View, zh: 知識基礎觀點}
+  "T SERVQUAL": {abbr: SERVQUAL, name: Service Quality Model, zh: 服務品質模型}
+
+# 4. 名稱不同但視為同一個變數：每一組第一個是正式名稱（通常就是 note 檔名）
+same:
+  - [Behavioral Intention, Behavioural Intention, Intention, BI, Use Intention, Intention to Use, Usage Intention]
+  - [Behavior, Behaviour, Use, USE, Usage, Actual Behavior, Actual Behaviour, Technology Use, Action, Use Behavior, Collective Action]
+  - [PU Perceived Usefulness, Perceived Usefulness, PU, PCV Usefulness, PCVed Usefulness, Perceived Benefits, Perceived Benefit, Perceived Performance]
+  - [Perceived Ease of Use, PEOU, Ease of Use]
+  - [User Satisfaction, Satisfaction, Satisfication]
+  - [Confirmation of Expectations, Confirmation of Expectation, Confirmation, Expectation Confirmation]
+  - [Subjective Norm, Subjective Norms]
+  - [Social Norm, Social norm, Social Norms, Social Influence, Social influence]
+  - [Self-Efficacy, Self Efficacy, Self-efficacy]
+  - [Personal Norm, Personal Norms]
+  - [Donation, Actual Donation, Donation Behavior, Donation Behaviour]
+  - [Vicarious Exp, Vicarious Experience]
+  - [Past Performance, Mastery Experience, Performance Accomplishments, Enactive Mastery]
+  - [Emotions, Emotional Arousal, Physiological States]
+  - [TTF, Task-Technology Fit, Task Technology Fit]
+  - [Social Identity, Social Identification]
+  - [Personal Identify, Personal Identity]
+  - [Awareness of Consequence, Awareness of Consequences]
+  - [Ascription of responsibility, Ascription of Responsibility]
+  - [Individual Impact, Individual Performance, Performance Impact]
+  - [Organizational Impact, Organizational Performance]
+  - [Technology, Technology Context]
+  - [Environment, Environment Context, Environmental Context]
+  - [Organization, Organization Context, Organizational Context]
+  - [Knowledge, Prior Knowledge]
+  - [Perceived Behavioral Control, Perceived Behavioural Control, Perceived Behavirol Control, PBC]
+
+# 5. 名稱不同、概念相近但不合併：在「使用類似變數的模型」區顯示
+similar:
+  - [Behavioral Intention, Continuance Intention, Motivation]
+  - [PU Perceived Usefulness, Performance Expectancy, Benefit, Expectancy, Value]
+  - [Perceived Ease of Use, Effort Expectancy]
+  - [Subjective Norm, Social Norm, Personal Norm]
+  - [Perceived Behavioral Control, Self-Efficacy, Facilitating Conditions, Competence, Collective Efficacy]
+  - [Attitude, Donation Attitude]
+  - [Behavior, Donation, Adoption, Continuance]
+  - [Expectation, Expectancy]
+  - [Social Identity, Personal Identify, In-group, Out-group]
+  - [Perceived Risk, Privacy Concern, Perceived Severity, Perceived Susceptibility]
+  - [Knowledge, Absorptive Capacity]
+  - [Technology, Technology Characteristics]
+  - [Crisis Responsibility, Ascription of responsibility]
+  - [Org Reputation, Prior Relationship Reputation]
+
+# 6. 教科書標準結構補充（虛線）。格式：[來源, 目標, 符號]  符號 + / - / m（調節，寫成 [調節變數, "來源 -> 目標", m]）
+seed_models:
+  TAM:
+    - [Perceived Usefulness, Attitude, "+"]
+    - [Perceived Ease of Use, Attitude, "+"]
+    - [Perceived Ease of Use, Perceived Usefulness, "+"]
+    - [Attitude, Behavioral Intention, "+"]
+    - [Perceived Usefulness, Behavioral Intention, "+"]
+    - [Behavioral Intention, Behavior, "+"]
+  "T TPB  Planned Behaviroal":
+    - [Attitude, Behavioral Intention, "+"]
+    - [Subjective Norm, Behavioral Intention, "+"]
+    - [Perceived Behavioral Control, Behavioral Intention, "+"]
+    - [Perceived Behavioral Control, Behavior, "+"]
+    - [Behavioral Intention, Behavior, "+"]
+  "T TRA Theory of Reasoned Action":
+    - [Attitude, Behavioral Intention, "+"]
+    - [Subjective Norm, Behavioral Intention, "+"]
+    - [Behavioral Intention, Behavior, "+"]
+  "T UTAUT":
+    - [Performance Expectancy, Behavioral Intention, "+"]
+    - [Effort Expectancy, Behavioral Intention, "+"]
+    - [Social Influence, Behavioral Intention, "+"]
+    - [Facilitating Conditions, Behavior, "+"]
+    - [Behavioral Intention, Behavior, "+"]
+  "IS Continuance Model":
+    - [Confirmation of Expectations, Perceived Usefulness, "+"]
+    - [Confirmation of Expectations, User Satisfaction, "+"]
+    - [Perceived Usefulness, User Satisfaction, "+"]
+    - [Perceived Usefulness, Continuance Intention, "+"]
+    - [User Satisfaction, Continuance Intention, "+"]
+  "T Norm Activation Model":
+    - [Awareness of Consequence, Ascription of responsibility, "+"]
+    - [Ascription of responsibility, Personal Norm, "+"]
+    - [Personal Norm, Behavioral Intention, "+"]
+    - [Behavioral Intention, Behavior, "+"]
+  "SDT Self-Determination theory":
+    - [Autonomy, Motivation, "+"]
+    - [Competence, Motivation, "+"]
+    - [Relatedness, Motivation, "+"]
+  "T SEF Self-Efficacy Theory":
+    - [Past Performance, Self-Efficacy, "+"]
+    - [Vicarious Exp, Self-Efficacy, "+"]
+    - [Social Persuasion, Self-Efficacy, "+"]
+    - [Emotions, Self-Efficacy, "-"]
+    - [Self-Efficacy, Behavior, "+"]
+  "T EVT Expectancy-Value":
+    - [Expectancy, Motivation, "+"]
+    - [Value, Motivation, "+"]
+  "T TTF Task-Technology Fit":
+    - [Task Characteristics, TTF, "+"]
+    - [Technology Characteristics, TTF, "+"]
+    - [TTF, Behavior, "+"]
+    - [TTF, Benefit, "+"]
+  "T TOE Technology–Organization–Environment":
+    - [Technology, Adoption, "+"]
+    - [Organization, Adoption, "+"]
+    - [Environment, Adoption, "+"]
+  "T SIMCA Social identity model of collective action":
+    - [Social Identity, Perceived Injustice, "+"]
+    - [Social Identity, Collective Efficacy, "+"]
+    - [Social Identity, Behavior, "+"]
+    - [Perceived Injustice, Behavior, "+"]
+    - [Collective Efficacy, Behavior, "+"]
+  "T Social Identity Theory":
+    - [Social Categorization, Social Identity, "+"]
+    - [Social Groups Distinction, Social Identity, "+"]
+    - [Social Identity, In-group, "+"]
+  "T Absorptive Capacity Theory":
+    - [Knowledge, Absorptive Capacity, "+"]
+  "Privacy Calculus Model":
+    - [Privacy Concern, Perceived Risk, "+"]
+    - [Perceived Risk, Behavioral Intention, "-"]
+    - [Perceived Benefits, Behavioral Intention, "+"]
+  "T DMIS Delone and McLean IS Success Model":
+    - [Information Quality, Behavior, "+"]
+    - [Information Quality, User Satisfaction, "+"]
+    - [System Quality, Behavior, "+"]
+    - [System Quality, User Satisfaction, "+"]
+    - [Service Quality, Behavior, "+"]
+    - [Service Quality, User Satisfaction, "+"]
+    - [Behavior, User Satisfaction, "+"]
+    - [Behavior, Individual Impact, "+"]
+    - [User Satisfaction, Individual Impact, "+"]
+    - [Individual Impact, Organizational Impact, "+"]
