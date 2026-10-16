@@ -1,0 +1,162 @@
+# 變數的語意群（2026-10-16）：同義或近義的變數視為一群，給「上下游變數」圖的「變數群」模式用。
+# 與 variable_aliases.yml 的 clusters（主題大群）不同：這裡只收「可以互相替代、放進同一個理論位置」的變數。
+# 一個變數只能在一群；沒列到的變數自成一群。改完重跑 python tools/variable_model_tool.py。
+groups:
+- name: 迴避與抗拒
+  members: [User Resistance, AI Avoidance, Algorithm Aversion, Avoidance Motivation, Avoidance Behavior, Exit, Turnover Intention, Switching Intention, Switching Behavior, Reactance, Attitude Resistance,
+    Trait Reactance, Neglect, Counterproductive Work Behavior, Emotion-Focused Coping]
+- name: 行為意圖
+  members: [Behavioral Intention, Purchase Intention, Continuance Intention, Utilization Intention, Protection Motivation, Willingness to Speak Out, Preference for AI Recommender, Motivation to Comply,
+    Willingness to Pay, eWOM Adoption, Political Participation, Task Choice]
+- name: 實際行為與使用
+  members: [Behavior, Purchase, Adoption, Media Use, Reliance on Automation, Algorithm Use, Customer Engagement, Organizational Citizenship Behavior, Security Policy Violation, Comprehensiveness of Usage,
+    Breadth of Product Use, Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer, Voluntariness of Use, Persistence, Effort, Task Strategies]
+- name: 態度
+  members: [Attitude, Brand Attitude, Attitude toward the Ad, Prior AI Attitude, Donation Attitude, Attitude Change, Attitude Strength, Brand Preference, Attitude toward the Advertiser, Ad Cognitions, Brand
+      Feelings, Conviction, Behavioral Beliefs, Outcome Evaluations, Normative Beliefs, Control Beliefs]
+- name: 信任
+  members: [Trust, Trust in AI, Green Trust, Disposition to Trust, Institution-based Trust, Source Trustworthiness]
+- name: 可信度
+  members: [Perceived Credibility, Ad Credibility, Signal Credibility, eWOM Credibility, Credibility Heuristics, Source Expertise, Message Objectivity, Perceived Authenticity, Belief in Machine Objectivity,
+    Information Usefulness]
+- name: 透明與可解釋
+  members: [Algorithm Transparency, Perceived Transparency, System Transparency, Explanation Quality, Perceived Explainability, Causability]
+- name: 公平與正義
+  members: [Perceived Fairness, Perceived Price Fairness, Distributive Justice, Procedural Justice, Interactional Justice, Fairness, Perceived Inequity, Perceived Injustice, Input-Outcome Ratio Discrepancy,
+    Inequity Distress, Transaction Similarity]
+- name: 問責
+  members: [Accountability, Perceived Accountability]
+- name: 滿意與不滿
+  members: [User Satisfaction, Job Satisfaction, Dissatisfaction, Job Dissatisfaction, Customer Complaints]
+- name: 期望與確認
+  members: [Expectation, Expectancy, Outcome Expectations, Expectancy Violation, Confirmation of Expectations, Unmet Promises]
+- name: 有用性與效益
+  members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Perceived Health Benefits, Benefit, Switching Benefits, Functional Value, Perceived Reward, Gratifications Obtained, Utility
+      Value, Attainment Value, Intrinsic Value, Relationship Benefits]
+- name: 易用性與負擔
+  members: [Perceived Ease of Use, Complexity, Techno-complexity, Perceived Barriers, Cognitive Load, Extraneous Load, Intrinsic Load, Germane Load, Element Interactivity, Working Memory Capacity, Product
+      Complexity, Information Amount Required]
+- name: 知覺價值
+  members: [Perceived Value, Social Value, Emotional Value, Epistemic Value, Conditional Value, Value, Green Perceived Value, Functional Consequences, Psychosocial Consequences]
+- name: 品質
+  members: [Perceived Quality, Service Quality, Information Quality, System Quality, Review Quality, Argument Quality, Narrative Quality, Perceived Site Quality, Internal Service Quality, Reliability, Assurance,
+    Tangibles, Empathy, Responsiveness]
+- name: 成本與犧牲
+  members: [Perceived Cost, Perceived Sacrifice, Response Cost, Safeguard Cost, Price, Price Difference from Reference, Transaction Cost, Average Cost, Agency Cost, Cost of Multihoming, Fixed Cost Share,
+    Non-monetary Cost, Voice Cost, Relationship Termination Costs, Time Delay]
+- name: 轉換成本與鎖定
+  members: [Switching cost, Financial Switching Cost, Procedural Switching Cost, Relational Switching Cost, Platform Lock-in, Switching Experience]
+- name: 風險與威脅知覺
+  members: [Perceived Risk, Green Perceived Risk, Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Loss Aversion, Risk Aversion of Agent, Job Replacement Threat,
+    Threat to Freedom, Risk Tolerance, Outcome Uncertainty, Techno-insecurity, Techno-uncertainty, Information Sensitivity]
+- name: 恐懼與焦慮
+  members: [Fear, AI Anxiety, Fear of Isolation, Technostress, Eeriness, Discomfort, Violation Feelings, Dissonance, Fear Control, Danger Control, Anger, Role Stress]
+- name: 隱私顧慮
+  members: [Privacy Concern, Privacy Awareness, Privacy Experiences]
+- name: 社會規範與壓力
+  members: [Social Norm, Subjective Norm, Personal Norm, Normative Pressure, Perceived Majority Support, Social Persuasion, aligned norms, Coercive Pressure, Mimetic Pressure, Stakeholder Pressure, Stakeholder
+      Salience, Socialization, Competitive Pressure, Trading Partner Pressure, Compliance with External Demands, Opinion Leader Influence, Media Portrayal of Opinion Climate, Felt Obligation, Moral Commitment,
+    Informal Sanctions, Issue Moral Loading]
+- name: 自我效能與控制感
+  members: [Self-Efficacy, Perceived Behavioral Control, Perceived Efficacy, Response Efficacy, Safeguard Effectiveness, Collective Efficacy, Competence, Control, Facilitating Conditions, Technology Readiness,
+    Choice Freedom, Self-Confidence, Autonomy Support, Perceived AI Competence, Vicarious Exp]
+- name: 能力與知識
+  members: [Ability, Skill, AI Literacy, Domain Expertise, Knowledge, Persuasion Knowledge, Security Awareness, Absorptive Capacity, Agent Knowledge, Topic Knowledge, Experience, Literacy Facilitation,
+    Involvement Facilitation]
+- name: 動機與目標
+  members: [Motivation, Hedonic Motivation, Altruistic Motivation, Utilitarian Goal, Hedonic Goal, Gratifications Sought, Involvement, Instrumentality, Goal Commitment, Need for Cognition, Self-Enhancement
+      Motivation, Cognition Importance, Freedom Importance, Controlling Rewards, Maladaptive Response Rewards]
+- name: 情緒與情感
+  members: [Emotions, Affect, Arousal, Joy, Warm Glow, Valence, Violation Valence, Communicator Reward Valence, Optimism, Affinity, Emotional Attachment]
+- name: 沉浸與心流
+  members: [Flow, Immersion, Cognitive Absorption, Transportation, Curiosity, Playfulness, Work Engagement, Challenge, Mental Imagery]
+- name: 承諾與忠誠
+  members: [Consumer Loyalty, Customer Retention, Brand Commitment, Affective Commitment, Continuance Commitment, Normative Commitment, Relationship Commitment, Employee Retention]
+- name: 習慣
+  members: [Habit, Prior Behavior Frequency]
+- name: 品牌知識與權益
+  members: [Brand Equity, Brand Image, Brand Associations, Brand Awareness, Brand Cognitions, Brand Identification, Brand Resonance, Association Strength Favorability and Uniqueness]
+- name: 聲譽
+  members: [Org Reputation, Perceived Reputation, Prior Relationship Reputation, Brand Reputation]
+- name: 責任歸因
+  members: [Crisis Responsibility, Responsibility Attribution, Ascription of responsibility, Awareness of Consequence, Perceived Consequences, Controllability, Locus, Stability, Seller Profit Motive Attribution,
+    Seller Cost Justification]
+- name: 擬人化與社會臨場感
+  members: [Perceived Anthropomorphism, Social Presence, Social Cues, Social Response, Parasocial Interaction, Agency Cues, Machine Heuristic]
+- name: 認同與群體
+  members: [Social Identity, Personal Identify, In-group, Out-group, Social Categorization, Social Groups Distinction, Anonymity, Identification, Shared Group Identity, Superordinate Identity, In-group
+      Favoritism, Out-group Derogation, Out-group Discrimination, Out-group Power, Depersonalization, Group Boundary Permeability, Self-Esteem, Self-Concept, Perceived Similarity, Perceived Self-Uniqueness,
+    Individualism]
+- name: 社會支持與資本
+  members: [Bonding Social Capital, Bridging Social Capital, Social Support, Supervisor Support, Organizational Support, Perceived Organizational Support, Technical Support, Social Network Use, Leader-Member
+      Exchange Quality, Reciprocity, Shared Values, Communication, Structural Social Capital, Relational Social Capital, Cognitive Social Capital, Social Integration Mechanisms, Cooperation, Functional
+      Conflict, Acquiescence, Top Management Support, Transformational Leadership, Social Environment, Information Access]
+- name: 訊息處理深度
+  members: [Elaboration, Systematic Processing, Deliberative Thinking, Counterarguing, Selective Exposure, Heuristic Cues, Peripheral Cues, Bandwagon Effect, Bandwagon Cues, Forewarning, Refutational Preemption,
+    Inconsistent Cognition, Distraction, Mindless Processing, Insufficient Justification, Extrinsic Cues, Intrinsic Cues, Comparison with Own Judgment, Third-Person Perception, Perceived Exposure of Others,
+    Perceived Influence, Message Undesirability, Time Since Exposure, Advertising Exposure]
+- name: 資訊不對稱與投機
+  members: [Information Asymmetry, Adverse Selection, Moral Hazard, Opportunistic Behavior, Behavioral Uncertainty, Screening, Signal Cost, Signal Reliance, Monitoring, Agency Problem, Goal Conflict, Bounded
+      Rationality, Causal Ambiguity, Social Complexity, Signal Fit]
+- name: 不確定性
+  members: [Environmental Uncertainty, Task Uncertainty, Task Equivocality, Structure-Environment Fit, Organic Structure Need]
+- name: 績效與成果
+  members: [Firm Performance, Industry Profitability, Competitive Advantage, Innovation Performance, Operational Efficiency, Market Efficiency, Organizational Impact, Individual Impact, Job Performance,
+    Learning Performance, Decision Accuracy, Communication Effectiveness, Past Performance, Incumbent Market Share, Employee Productivity]
+- name: 資源與動態能力
+  members: [Resource Value, Resource Rarity, Resource Inimitability, Resource Non-substitutability, Dynamic Capabilities, Sensing Capability, Seizing Capability, Transforming Capability, Resource Reconfiguration,
+    Organizational Ambidexterity, Exploration, Exploitation, Resource Criticality, Resource Concentration, External Dependence, Interorganizational Ties, Resource Heterogeneity, Resource Immobility, R&D
+      Investment, Potential Absorptive Capacity, Realized Absorptive Capacity, Shared Inputs, Specialization, Organizational Readiness, Organization Size, Organization, Formalization, Centralization, Structural
+      Differentiation]
+- name: 網路效應與安裝基礎
+  members: [Installed Base, User-side Installed Base, Provider-side Participation, Complementary Goods, Winner-take-all Tendency, Subsidy to Price-sensitive Side, Network Effect Strength, User Need Heterogeneity]
+- name: 市場力量
+  members: [Rivalry Intensity, Threat of New Entrants, Threat of Substitutes, Supplier Bargaining Power, Buyer Bargaining Power, Entry Barriers, Alternative Attractiveness, Buyer Concentration, Product
+      Differentiation, Supplier Discretion over Resource, Resource Holder Power, Stakeholder Power, Stakeholder Legitimacy, Stakeholder Urgency]
+- name: 創新特性
+  members: [Compatibility, Trialability, Observability, Innovativeness, Personal Innovativeness, Disruptive Innovation, Low-end Foothold, Performance Oversupply, Incumbent Response, Incumbent Focus on Profitable
+      Customers, Sustaining Innovation, Entrant Upmarket Migration, New-market Foothold]
+- name: 任務與科技特性
+  members: [Task Characteristics, Technology Characteristics, TTF, Task Complexity, Task Objectivity, Task Subjectivity, Media Richness, Modality Cues, Interactivity Cues, Navigability Cues, Technology,
+    Product Attributes, Multiple Cues, Feedback Immediacy, Language Variety, Personal Focus, Transportability, Motion, External Variables, Instructional Design Quality]
+- name: 自動化可靠度與偏誤
+  members: [Automation Reliability, Automation Bias, Complacency, Decision Error, Algorithm Error Observed, Human Error Observed, Algorithmic Advice, Ability to Modify Algorithm, Perceived Uniqueness Neglect,
+    Personalization, Purpose Alignment, AI Provider, Error Tolerance, Decision Target Is Other, Human Involvement, Human-AI Hybrid Recommendation, AI in Support Role, AI Configuration Concern, Sociotechnical
+      Blindness]
+- name: 工作要求與壓力源
+  members: [Job Demands, Workload, Burnout, Techno-overload, Techno-invasion, Learning Pressure]
+- name: 工作資源與誘因
+  members: [Job Resources, Rewards and Job Conditions, Hygiene Factors, Motivator Factors, Feedback, Job Enrichment]
+- name: 目標設定
+  members: [Goal Specificity, Goal Difficulty]
+- name: 捐款與受助者
+  members: [Donation, Identified Victim, Statistical Information, Social information only + Single Victim, Number of Victims, Sufficiency Threshold]
+- name: 口碑與發聲
+  members: [Word of Mouth, Voice, Review Volume, Review Consistency, Service Recovery]
+- name: 廣告與揭露
+  members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness, Peripheral Cues]
+- name: 綠色與永續
+  members: [Greenwashing, Green Consumer Confusion, Skepticism, Ecological Worldview, CSR Engagement, Product Lifetime Labelling, Perceived Durability]
+- name: 制裁與治理
+  members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation, Outcome-based Contract, Hierarchical Governance, Asset Specificity, Transaction Frequency, Outcome Measurability]
+- name: 心理契約
+  members: [Psychological Contract Breach]
+- name: 基本心理需求
+  members: [Autonomy, Relatedness, Well-being]
+- name: 極化與媒體暴露
+  members: [Affective Polarization, Partisan Media Exposure, Cross-cutting Exposure, Social Distance, Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Partisan
+      Sorting, Elite Polarization, Identity Politicization]
+- name: 框架與損益
+  members: [Gain Framing, Loss Framing, Risk Seeking, Reference Point, Certainty Effect, Small Probability Overweighting]
+- name: 危機情境
+  members: [Crisis, Crisis History, Accommodative Response Strategy]
+- name: 規模與產出
+  members: [Output Volume, Product Scope, Economies of Scale, Dynamic Pricing]
+- name: 心理契約與承諾違反
+  members: [Opportunistic Behavior]
+- name: 價值取向
+  members: [Personal Values, Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values]
+- name: 制度與合法性
+  members: [Isomorphism, Legitimacy, Professionalization, Organizational Survival, Government Provision]
+- name: 人口與個人特質
+  members: [Age, Gender, Demographic Differences, Individual Characteristics, Personality Traits, Roles]
