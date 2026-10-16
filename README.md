@@ -18,7 +18,9 @@
 
 ## 上下游圖的兩種模式
 
-「上下游變數」卡右上角可切換：**精準比對**只看這個變數本身的邊；**變數群**把同義、近義的變數併成一群（例如「迴避與抗拒」收 User Resistance、AI Avoidance、Algorithm Aversion、Avoidance Motivation、Exit、Turnover Intention），中心與上下游都以群顯示，標籤合併。群的定義在 `semantic_groups.yml`（一個變數只能在一群，沒列的自成一群），與下面的主題群組是兩層不同的東西。
+「上下游變數」卡右上角可切換：**單一變數**只看這個變數本身的邊；**變數群**把同義、近義的變數併成一群（例如「迴避與抗拒」收 User Resistance、AI Avoidance、Algorithm Aversion、Avoidance Motivation、Exit、Turnover Intention），中心與上下游都以群顯示，標籤合併。群的定義在 `semantic_groups.yml`（一個變數只能在一群，沒列的自成一群），與下面的主題群組是兩層不同的東西。任一側超過 10 個變數時，那一側改成兩欄清單（依理論數排序，符號在每項最前面），用一支箭頭連到中心。
+
+每個理論的結構都附 2 到 4 個參考來源（模型卡右下「來源」、理論單頁「參考來源」），邊的結構依這些來源整理；`supplement_theories.yml` 裡每個理論的 `enrich_notes` 記錄查證時的取捨。
 
 ## 變數群組（主題）
 
