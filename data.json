@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16 19:39",
+ "generated": "2026-10-16 19:40",
  "vault": "Zettel",
  "variables": [
   {
@@ -749,8 +749,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "USE",
     "Use",
+    "USE",
     "Use Behavior"
    ],
    "notes": [
@@ -1494,8 +1494,8 @@
    "id": "Social Norm",
    "label": "Social Norm",
    "aliases": [
-    "Social Influence",
-    "Social influence"
+    "Social influence",
+    "Social Influence"
    ],
    "notes": [
     {
