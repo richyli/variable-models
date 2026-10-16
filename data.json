@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16 19:15",
+ "generated": "2026-10-16 19:39",
  "vault": "Zettel",
  "variables": [
   {
@@ -749,8 +749,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "Use",
     "USE",
+    "Use",
     "Use Behavior"
    ],
    "notes": [
@@ -1494,8 +1494,8 @@
    "id": "Social Norm",
    "label": "Social Norm",
    "aliases": [
-    "Social influence",
-    "Social Influence"
+    "Social Influence",
+    "Social influence"
    ],
    "notes": [
     {
@@ -7725,7 +7725,7 @@
    "name": "Privacy Calculus Model",
    "zh": "隱私計算模型（依 PCM 標籤推測）",
    "level": "個人層級",
-   "desc": "作者筆記裡沒有獨立條目；依變數筆記上的 PCM 標籤推測為隱私計算模型（風險與效益的權衡）。",
+   "desc": "依變數上的 PCM 標籤推測為隱私計算模型（風險與效益的權衡）。",
    "images": 1,
    "notes": [
     {
