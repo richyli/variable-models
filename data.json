@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 08:19",
+ "generated": "2026-10-17 08:37",
  "vault": "Zettel",
  "variables": [
   {
@@ -1382,8 +1382,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "Use",
     "USE",
+    "Use",
     "Use Behavior"
    ],
    "notes": [
@@ -25582,6 +25582,14 @@
    ],
    "supplement": false,
    "field": "說服",
+   "core": [
+    "Motivation",
+    "Ability",
+    "Elaboration",
+    "Argument Quality",
+    "Peripheral Cues",
+    "Attitude"
+   ],
    "refs": [
     {
      "title": "Elaboration likelihood model - Wikipedia",
@@ -25620,6 +25628,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Confirmation of Expectations",
+    "PU Perceived Usefulness",
+    "User Satisfaction",
+    "Continuance Intention"
+   ],
    "refs": [
     {
      "title": "Understanding information systems continuance: An expectation-confirmation model (MISQ 2001; summary page)",
@@ -25660,6 +25674,11 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Perceived Risk",
+    "PU Perceived Usefulness",
+    "Behavioral Intention"
+   ],
    "refs": [
     {
      "title": "Dinev & Hart (2006) An Extended Privacy Calculus Model for E-Commerce Transactions, ISR 17(1)",
@@ -25707,6 +25726,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Autonomy",
+    "Competence",
+    "Relatedness",
+    "Motivation"
+   ],
    "refs": [
     {
      "title": "Self-determination theory (Wikipedia)",
@@ -25753,6 +25778,7 @@
    ],
    "supplement": false,
    "field": "經濟／行銷",
+   "core": [],
    "refs": [
     {
      "title": "Signalling (economics) - Wikipedia",
@@ -25801,6 +25827,14 @@
    ],
    "supplement": false,
    "field": "組織經濟",
+   "core": [
+    "Goal Conflict",
+    "Information Asymmetry",
+    "Agency Problem",
+    "Agency Cost",
+    "Monitoring",
+    "Outcome-based Contract"
+   ],
    "refs": [
     {
      "title": "Agency theory (IS Theories wiki)",
@@ -25851,6 +25885,7 @@
    ],
    "supplement": false,
    "field": "組織",
+   "core": [],
    "refs": [
     {
      "title": "Contingency theory - Wikipedia",
@@ -25898,6 +25933,15 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Information Quality",
+    "System Quality",
+    "Service Quality",
+    "Behavior",
+    "User Satisfaction",
+    "Individual Impact",
+    "Organizational Impact"
+   ],
    "refs": [
     {
      "title": "Delone and McLean IS success model - IS Theories wiki",
@@ -25939,6 +25983,7 @@
    ],
    "supplement": false,
    "field": "策略／創新",
+   "core": [],
    "refs": [
     {
      "title": "Disruptive innovation (Wikipedia)",
@@ -25985,6 +26030,7 @@
    ],
    "supplement": false,
    "field": "策略",
+   "core": [],
    "refs": [
     {
      "title": "Wikipedia: Dynamic capabilities",
@@ -26030,6 +26076,7 @@
    ],
    "supplement": false,
    "field": "組織經濟",
+   "core": [],
    "refs": [
     {
      "title": "Economies of scope (Wikipedia)",
@@ -26068,6 +26115,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Expectation",
+    "Confirmation of Expectations",
+    "User Satisfaction",
+    "Continuance Intention"
+   ],
    "refs": [
     {
      "title": "Expectation confirmation theory (IS Theories wiki)",
@@ -26113,6 +26166,7 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [],
    "refs": [
     {
      "title": "Expectancy-value theory - Wikipedia",
@@ -26156,6 +26210,7 @@
    ],
    "supplement": false,
    "field": "心理／HCI",
+   "core": [],
    "refs": [
     {
      "title": "Flow (psychology) - Wikipedia",
@@ -26199,6 +26254,7 @@
    ],
    "supplement": false,
    "field": "組織經濟",
+   "core": [],
    "refs": [
     {
      "title": "Wikipedia: Information asymmetry",
@@ -26247,6 +26303,14 @@
    ],
    "supplement": false,
    "field": "組織／行銷",
+   "core": [
+    "Relative Advantage",
+    "Compatibility",
+    "Complexity",
+    "Trialability",
+    "Observability",
+    "Adoption"
+   ],
    "refs": [
     {
      "title": "Diffusion of innovations (Wikipedia)",
@@ -26292,6 +26356,7 @@
    ],
    "supplement": false,
    "field": "組織",
+   "core": [],
    "refs": [
     {
      "title": "DiMaggio & Powell (1983) The Iron Cage Revisited (PDF)",
@@ -26341,6 +26406,7 @@
    ],
    "supplement": false,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Organisational justice - OSHwiki (EU-OSHA)",
@@ -26383,6 +26449,7 @@
    ],
    "supplement": false,
    "field": "行銷／消費者",
+   "core": [],
    "refs": [
     {
      "title": "Means-end theory and laddering technique (Hochschule Nordhausen teaching page)",
@@ -26436,6 +26503,7 @@
    ],
    "supplement": false,
    "field": "組織傳播",
+   "core": [],
    "refs": [
     {
      "title": "IS Theories wiki: Media richness theory",
@@ -26482,6 +26550,7 @@
    ],
    "supplement": false,
    "field": "策略／平台",
+   "core": [],
    "refs": [
     {
      "title": "Network effect - Wikipedia",
@@ -26518,6 +26587,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Awareness of Consequence",
+    "Ascription of responsibility",
+    "Personal Norm",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Norm Activation Model Variable Relationship: AC, AR and PN (meta-analysis)",
@@ -26563,6 +26638,14 @@
    ],
    "supplement": false,
    "field": "策略",
+   "core": [
+    "Resource Value",
+    "Resource Rarity",
+    "Resource Inimitability",
+    "Resource Non-substitutability",
+    "Competitive Advantage",
+    "Competitive Advantage"
+   ],
    "refs": [
     {
      "title": "Resource-based view (Wikipedia)",
@@ -26607,6 +26690,7 @@
    ],
    "supplement": false,
    "field": "組織",
+   "core": [],
    "refs": [
     {
      "title": "Resource dependency theory (IS Theories wiki)",
@@ -26650,6 +26734,7 @@
    ],
    "supplement": false,
    "field": "行銷／顧客",
+   "core": [],
    "refs": [
     {
      "title": "Consumer Switching Costs: A Typology, Antecedents, and Consequences (JAMS 2003)",
@@ -26694,6 +26779,12 @@
    ],
    "supplement": false,
    "field": "社會心理",
+   "core": [
+    "Self-Efficacy",
+    "Outcome Expectations",
+    "Behavior",
+    "Social Environment"
+   ],
    "refs": [
     {
      "title": "IS Theories wiki: Social cognitive theory",
@@ -26742,6 +26833,14 @@
    ],
    "supplement": false,
    "field": "行銷",
+   "core": [
+    "Reliability",
+    "Assurance",
+    "Tangibles",
+    "Empathy",
+    "Responsiveness",
+    "Service Quality"
+   ],
    "refs": [
     {
      "title": "SERVQUAL - Wikipedia",
@@ -26777,6 +26876,7 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [],
    "refs": [
     {
      "title": "Toward an integrative Social Identity Model of Collective Action (Psychological Bulletin 2008, VU portal PDF)",
@@ -26826,6 +26926,7 @@
    ],
    "supplement": false,
    "field": "社會學／CMC",
+   "core": [],
    "refs": [
     {
      "title": "Social capital theory (IS Theories wiki)",
@@ -26880,6 +26981,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Social Categorization",
+    "Social Identity",
+    "In-group",
+    "Out-group"
+   ],
    "refs": [
     {
      "title": "Social identity theory - Wikipedia",
@@ -26921,6 +27028,7 @@
    ],
    "supplement": false,
    "field": "傳播／電商",
+   "core": [],
    "refs": [
     {
      "title": "Social Presence Theory (IS Theories wiki)",
@@ -26966,6 +27074,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Technology",
+    "Organization",
+    "Environment",
+    "Adoption"
+   ],
    "refs": [
     {
      "title": "Technology-organization-environment framework - IS Theory (is.theorizeit.org)",
@@ -27009,6 +27123,13 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Attitude",
+    "Subjective Norm",
+    "Perceived Behavioral Control",
+    "Behavioral Intention",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Theory of planned behavior - Wikipedia",
@@ -27049,6 +27170,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Attitude",
+    "Subjective Norm",
+    "Behavioral Intention",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Theory of reasoned action (IS Theories wiki)",
@@ -27093,6 +27220,13 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Task Characteristics",
+    "Technology Characteristics",
+    "TTF",
+    "Behavior",
+    "Individual Impact"
+   ],
    "refs": [
     {
      "title": "Task-technology fit (IS Theories wiki)",
@@ -27135,6 +27269,14 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Performance Expectancy",
+    "Perceived Ease of Use",
+    "Social Norm",
+    "Facilitating Conditions",
+    "Behavioral Intention",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Unified theory of acceptance and use of technology (Wikipedia)",
@@ -27175,6 +27317,12 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "PU Perceived Usefulness",
+    "Perceived Ease of Use",
+    "Behavioral Intention",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Technology acceptance model (IS Theories wiki)",
@@ -27212,6 +27360,7 @@
    ],
    "supplement": false,
    "field": "教育心理／HCI",
+   "core": [],
    "refs": [
     {
      "title": "IS Theories wiki: Cognitive load theory",
@@ -27256,6 +27405,7 @@
    ],
    "supplement": true,
    "field": "經濟學／策略",
+   "core": [],
    "refs": [
     {
      "title": "Von Neumann, J., & Morgenstern, O. (1944). Theory of games and economic behavior. Princeton University Press.",
@@ -27308,6 +27458,7 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [],
    "refs": [
     {
      "title": "Absorptive capacity theory (IS Theories wiki)",
@@ -27353,6 +27504,7 @@
    ],
    "supplement": false,
    "field": "社會心理",
+   "core": [],
    "refs": [
     {
      "title": "Cognitive Dissonance Theory (EBSCO Research Starters)",
@@ -27398,6 +27550,7 @@
    ],
    "supplement": false,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Leader-member exchange theory - Wikipedia",
@@ -27436,6 +27589,7 @@
    ],
    "supplement": false,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Perceived organizational support (Wikipedia)",
@@ -27478,6 +27632,7 @@
    ],
    "supplement": false,
    "field": "行為經濟",
+   "core": [],
    "refs": [
     {
      "title": "Prospect theory - Wikipedia",
@@ -27521,6 +27676,14 @@
    ],
    "supplement": false,
    "field": "",
+   "core": [
+    "Past Performance",
+    "Vicarious Exp",
+    "Social Persuasion",
+    "Emotions",
+    "Self-Efficacy",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Bandura (1977) Self-Efficacy: Toward a Unifying Theory of Behavioral Change (SuSanA library record)",
@@ -27567,6 +27730,7 @@
    ],
    "supplement": false,
    "field": "社會學／組織",
+   "core": [],
    "refs": [
     {
      "title": "Social exchange theory (IS Theories wiki)",
@@ -27616,6 +27780,7 @@
    ],
    "supplement": false,
    "field": "策略／CSR",
+   "core": [],
    "refs": [
     {
      "title": "Stakeholder theory (Wikipedia)",
@@ -27660,6 +27825,7 @@
    ],
    "supplement": false,
    "field": "媒介",
+   "core": [],
    "refs": [
     {
      "title": "Uses and gratifications theory - Wikipedia",
@@ -27699,6 +27865,7 @@
    ],
    "supplement": false,
    "field": "資安／AI",
+   "core": [],
    "refs": [
     {
      "title": "Technology Threat Avoidance Theory (TTAT) - IS Theory (is.theorizeit.org)",
@@ -27731,6 +27898,11 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [
+    "Algorithm Error Observed",
+    "Trust in AI",
+    "Reliance on Automation"
+   ],
    "refs": [
     {
      "title": "Dietvorst, Simmons & Massey (2018) Overcoming Algorithm Aversion, Management Science 64(3)",
@@ -27766,6 +27938,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Algorithm appreciation: People prefer algorithmic to human judgment (OBHDP 2019, eScholarship 全文)",
@@ -27808,6 +27981,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Why are we averse towards Algorithms? A comprehensive literature Review on Algorithm aversion (ECIS 2020)",
@@ -27844,6 +28018,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Longoni, Bonezzi & Morewedge (2019) Resistance to Medical Artificial Intelligence, JCR 46(4)",
@@ -27883,6 +28058,11 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [
+    "Automation Reliability",
+    "Trust in AI",
+    "Reliance on Automation"
+   ],
    "refs": [
     {
      "title": "Trust in Automation: Designing for Appropriate Reliance (Lee & See, 2004; Aalto course copy)",
@@ -27920,6 +28100,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Parasuraman & Manzey (2010) Complacency and Bias in Human Use of Automation: An Attentional Integration (TRID record)",
@@ -27955,6 +28136,7 @@
    ],
    "supplement": false,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Computers are social actors (Wikipedia)",
@@ -27994,6 +28176,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "The MAIN Model: A Heuristic Approach to Understanding Technology Effects on Credibility (IssueLab)",
@@ -28027,6 +28210,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Machine Heuristic: When We Trust Computers More Than Humans with Our Personal Information (CHI 2019, Springer Professional record)",
@@ -28063,6 +28247,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Consumers acceptance of artificially intelligent (AI) device use in service delivery (Griffith repository record)",
@@ -28101,6 +28286,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Uncanny Valley Theory (IS Theories wiki)",
@@ -28139,6 +28325,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Shin (2021) The effects of explainability and causability on perception, trust, and acceptance, IJHCS 146",
@@ -28176,6 +28363,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "User perceptions of algorithmic decisions in the personalized AI system (Shin, 2020, JOBEM)",
@@ -28215,6 +28403,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "AI Anxiety Scale (AIAS) summary page",
@@ -28250,6 +28439,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "When Consumers Trust AI Recommendations—Or Resist Them (AMA)",
@@ -28285,6 +28475,7 @@
    ],
    "supplement": true,
    "field": "AI",
+   "core": [],
    "refs": [
     {
      "title": "Understanding anthropomorphic voice-AI chatbot continuance from a human-AI interaction perspective (Behaviour & Information Technology 2025)",
@@ -28320,6 +28511,7 @@
    ],
    "supplement": true,
    "field": "AI／新聞",
+   "core": [],
    "refs": [
     {
      "title": "Readers' perception of computer-generated news: Credibility, expertise, and readability (Graefe et al., LMU repository)",
@@ -28357,6 +28549,14 @@
    ],
    "supplement": true,
    "field": "健康傳播／資安",
+   "core": [
+    "Perceived Severity",
+    "Perceived Susceptibility",
+    "Response Efficacy",
+    "Self-Efficacy",
+    "Response Cost",
+    "Protection Motivation"
+   ],
    "refs": [
     {
      "title": "Newcastle University Open Education: Protection Motivation Theory",
@@ -28394,6 +28594,15 @@
    ],
    "supplement": true,
    "field": "健康傳播",
+   "core": [
+    "Perceived Susceptibility",
+    "Perceived Severity",
+    "Perceived Health Benefits",
+    "Perceived Barriers",
+    "Cues to Action",
+    "Self-Efficacy",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Health Belief Model (StatPearls, NCBI Bookshelf NBK606120)",
@@ -28430,6 +28639,13 @@
    ],
    "supplement": true,
    "field": "健康傳播",
+   "core": [
+    "Perceived Threat",
+    "Perceived Efficacy",
+    "Fear",
+    "Danger Control",
+    "Fear Control"
+   ],
    "refs": [
     {
      "title": "Wikipedia: Extended parallel process model",
@@ -28467,6 +28683,7 @@
    ],
    "supplement": true,
    "field": "說服",
+   "core": [],
    "refs": [
     {
      "title": "Heuristic-systematic model of information processing - Wikipedia",
@@ -28509,6 +28726,7 @@
    ],
    "supplement": true,
    "field": "說服",
+   "core": [],
    "refs": [
     {
      "title": "Wikipedia: Source credibility",
@@ -28547,6 +28765,7 @@
    ],
    "supplement": true,
    "field": "行銷傳播",
+   "core": [],
    "refs": [
     {
      "title": "The Persuasion Knowledge Model: How People Cope with Persuasion Attempts (JCR 1994, IDEAS record)",
@@ -28580,6 +28799,7 @@
    ],
    "supplement": true,
    "field": "說服",
+   "core": [],
    "refs": [
     {
      "title": "Psychological reactance and persuasive health communication: A test and extension of the intertwined model (Rains & Turner 2007, Arizona record)",
@@ -28618,6 +28838,7 @@
    ],
    "supplement": true,
    "field": "人際傳播",
+   "core": [],
    "refs": [
     {
      "title": "Expectancy violations theory - Wikipedia",
@@ -28652,6 +28873,7 @@
    ],
    "supplement": true,
    "field": "政治傳播",
+   "core": [],
    "refs": [
     {
      "title": "Spiral of silence (Wikipedia)",
@@ -28688,6 +28910,7 @@
    ],
    "supplement": true,
    "field": "媒介效果",
+   "core": [],
    "refs": [
     {
      "title": "Third-person effect (Wikipedia)",
@@ -28724,6 +28947,7 @@
    ],
    "supplement": true,
    "field": "媒介效果",
+   "core": [],
    "refs": [
     {
      "title": "Following the herd: The influence of the bandwagon heuristic on e-commerce shoppers (arXiv 2505.14861)",
@@ -28765,6 +28989,7 @@
    ],
    "supplement": true,
    "field": "政治傳播",
+   "core": [],
    "refs": [
     {
      "title": "Iyengar et al. (2019) The Origins and Consequences of Affective Polarization in the United States, Annual Review of Political Science",
@@ -28802,6 +29027,7 @@
    ],
    "supplement": true,
    "field": "社會心理／CMC",
+   "core": [],
    "refs": [
     {
      "title": "Social identity model of deindividuation effects (Wikipedia)",
@@ -28840,6 +29066,12 @@
    ],
    "supplement": false,
    "field": "公關",
+   "core": [
+    "Crisis Responsibility",
+    "Crisis History",
+    "Prior Relationship Reputation",
+    "Org Reputation"
+   ],
    "refs": [
     {
      "title": "Situational crisis communication theory - Wikipedia",
@@ -28885,6 +29117,7 @@
    ],
    "supplement": false,
    "field": "社會心理",
+   "core": [],
    "refs": [
     {
      "title": "An attributional theory of achievement motivation and emotion (Weiner, 1985; course copy)",
@@ -28932,6 +29165,7 @@
    ],
    "supplement": true,
    "field": "組織／IS",
+   "core": [],
    "refs": [
     {
      "title": "Ragu-Nathan, Tarafdar, Ragu-Nathan & Tu (2008) The Consequences of Technostress for End Users in Organizations (ISR, IDEAS record)",
@@ -28967,6 +29201,7 @@
    ],
    "supplement": true,
    "field": "IS",
+   "core": [],
    "refs": [
     {
      "title": "Kim & Kankanhalli (2009) Investigating User Resistance to Information Systems Implementation: A Status Quo Bias Perspective (MIS Quarterly, AISeL)",
@@ -29003,6 +29238,13 @@
    ],
    "supplement": true,
    "field": "行銷／IS",
+   "core": [
+    "Dissatisfaction",
+    "Alternative Attractiveness",
+    "Switching cost",
+    "Habit",
+    "Switching Intention"
+   ],
    "refs": [
     {
      "title": "The push-pull-mooring model of consumer service switching: a meta-analytical review (JSTP 2025)",
@@ -29043,6 +29285,13 @@
    ],
    "supplement": false,
    "field": "行銷／關係行銷",
+   "core": [
+    "Trust",
+    "Relationship Commitment",
+    "Shared Values",
+    "Communication",
+    "Opportunistic Behavior"
+   ],
    "refs": [
     {
      "title": "Morgan & Hunt (1994) The Commitment-Trust Theory of Relationship Marketing (constructDB abstract)",
@@ -29078,6 +29327,14 @@
    ],
    "supplement": true,
    "field": "行銷",
+   "core": [
+    "Expectation",
+    "Perceived Quality",
+    "Perceived Value",
+    "User Satisfaction",
+    "Consumer Loyalty",
+    "Customer Complaints"
+   ],
    "refs": [
     {
      "title": "Fornell et al. 1996, The American Customer Satisfaction Index: Nature, Purpose, and Findings (Cornell eCommons record)",
@@ -29113,6 +29370,7 @@
    ],
    "supplement": true,
    "field": "永續行銷",
+   "core": [],
    "refs": [
     {
      "title": "Greenwash and Green Trust: The Mediation Effects of Green Consumer Confusion and Green Perceived Risk (IDEAS record, JBE 114(3))",
@@ -29151,6 +29409,7 @@
    ],
    "supplement": true,
    "field": "永續行銷",
+   "core": [],
    "refs": [
     {
      "title": "Jacobs & Hörisch (2022) The importance of product lifetime labelling for purchase decisions (Business Strategy and the Environment)",
@@ -29185,6 +29444,7 @@
    ],
    "supplement": true,
    "field": "社會心理／IS",
+   "core": [],
    "refs": [
     {
      "title": "Theory of Interpersonal Behavior (IS Theories wiki)",
@@ -29221,6 +29481,14 @@
    ],
    "supplement": true,
    "field": "環境心理",
+   "core": [
+    "Personal Values",
+    "Ecological Worldview",
+    "Awareness of Consequence",
+    "Ascription of responsibility",
+    "Personal Norm",
+    "Behavior"
+   ],
    "refs": [
     {
      "title": "Stern et al. 1999 cited in: value orientations and environmental beliefs (MPRA 23900)",
@@ -29257,6 +29525,7 @@
    ],
    "supplement": true,
    "field": "捐款／行為經濟",
+   "core": [],
    "refs": [
     {
      "title": "Identifiable victim effect - Wikipedia",
@@ -29287,6 +29556,7 @@
    ],
    "supplement": true,
    "field": "捐款／行為經濟",
+   "core": [],
    "refs": [
     {
      "title": "Warm-glow giving (Wikipedia)",
@@ -29324,6 +29594,7 @@
    ],
    "supplement": true,
    "field": "行銷／IS",
+   "core": [],
    "refs": [
     {
      "title": "Technology readiness: a meta-analysis of conceptualizations of the construct and its impact on technology usage (Blut & Wang, JAMS)",
@@ -29359,6 +29630,7 @@
    ],
    "supplement": true,
    "field": "電商／IS",
+   "core": [],
    "refs": [
     {
      "title": "Developing and Validating Trust Measures for E-Commerce: An Integrative Typology (constructDB record)",
@@ -29397,6 +29669,7 @@
    ],
    "supplement": true,
    "field": "隱私／IS",
+   "core": [],
    "refs": [
     {
      "title": "Smith, Dinev & Xu (2011) Information Privacy Research: An Interdisciplinary Review, MIS Quarterly 35(4)",
@@ -29432,6 +29705,7 @@
    ],
    "supplement": true,
    "field": "IS",
+   "core": [],
    "refs": [
     {
      "title": "Agarwal & Karahanna (2000) Time Flies When You're Having Fun, MIS Quarterly 24(4)",
@@ -29467,6 +29741,7 @@
    ],
    "supplement": true,
    "field": "IS／遊戲",
+   "core": [],
    "refs": [
     {
      "title": "IS Theories wiki: Hedonic-motivation system adoption model (HMSAM)",
@@ -29503,6 +29778,7 @@
    ],
    "supplement": true,
    "field": "IS",
+   "core": [],
    "refs": [
     {
      "title": "How Habit Limits the Predictive Power of Intention: The Case of IS Continuance (MIS Quarterly 31(4), AIS eLibrary)",
@@ -29543,6 +29819,7 @@
    ],
    "supplement": true,
    "field": "資安",
+   "core": [],
    "refs": [
     {
      "title": "User Awareness of Security Countermeasures and Its Impact on IS Misuse: A Deterrence Approach (constructDB record)",
@@ -29582,6 +29859,7 @@
    ],
    "supplement": true,
    "field": "說服",
+   "core": [],
    "refs": [
     {
      "title": "Transportation theory (psychology) - Wikipedia",
@@ -29615,6 +29893,7 @@
    ],
    "supplement": true,
    "field": "說服／假訊息",
+   "core": [],
    "refs": [
     {
      "title": "Inoculation theory - Wikipedia",
@@ -29651,6 +29930,7 @@
    ],
    "supplement": true,
    "field": "行銷",
+   "core": [],
    "refs": [
     {
      "title": "Lohwasser 2022 DBA thesis applying the Theory of Consumption Values (University of Gloucestershire)",
@@ -29690,6 +29970,12 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [
+    "Expectancy",
+    "Instrumentality",
+    "Valence",
+    "Motivation"
+   ],
    "refs": [
     {
      "title": "Wikipedia: Expectancy theory",
@@ -29734,6 +30020,7 @@
    ],
    "supplement": false,
    "field": "策略",
+   "core": [],
    "refs": [
     {
      "title": "Porter's five forces analysis (Wikipedia)",
@@ -29779,6 +30066,14 @@
    ],
    "supplement": false,
    "field": "組織經濟",
+   "core": [
+    "Asset Specificity",
+    "Behavioral Uncertainty",
+    "Environmental Uncertainty",
+    "Transaction Frequency",
+    "Transaction Cost",
+    "Hierarchical Governance"
+   ],
    "refs": [
     {
      "title": "Transaction cost - Wikipedia",
@@ -29825,6 +30120,7 @@
    ],
    "supplement": false,
    "field": "策略／平台",
+   "core": [],
    "refs": [
     {
      "title": "Two-sided market (Wikipedia)",
@@ -29868,6 +30164,7 @@
    ],
    "supplement": false,
    "field": "策略／組織",
+   "core": [],
    "refs": [
     {
      "title": "Ambidextrous organization - Wikipedia",
@@ -29910,6 +30207,11 @@
    ],
    "supplement": false,
    "field": "行銷／品牌",
+   "core": [
+    "Brand Awareness",
+    "Brand Image",
+    "Brand Equity"
+   ],
    "refs": [
     {
      "title": "Brand Resonance Model (Keller) summary (Umbrex)",
@@ -29947,6 +30249,7 @@
    ],
    "supplement": true,
    "field": "行銷／廣告",
+   "core": [],
    "refs": [
     {
      "title": "Attitude-toward-the-ad models (Wikipedia)",
@@ -29984,6 +30287,7 @@
    ],
    "supplement": true,
    "field": "行銷／廣告",
+   "core": [],
    "refs": [
     {
      "title": "Monash Marketing Dictionary: Hierarchy of Effects Models",
@@ -30021,6 +30325,7 @@
    ],
    "supplement": true,
    "field": "行銷／服務",
+   "core": [],
    "refs": [
     {
      "title": "Service–profit chain (Wikipedia)",
@@ -30058,6 +30363,7 @@
    ],
    "supplement": true,
    "field": "行銷／消費者",
+   "core": [],
    "refs": [
     {
      "title": "Consumer Perceptions of Price, Quality, and Value: A Means-End Model (Zeithaml, 1988; citation page)",
@@ -30098,6 +30404,7 @@
    ],
    "supplement": true,
    "field": "行銷／定價",
+   "core": [],
    "refs": [
     {
      "title": "Xia, Monroe & Cox (2004) The Price is Unfair! A Conceptual Framework of Price Fairness Perceptions, Journal of Marketing 68(4)",
@@ -30138,6 +30445,7 @@
    ],
    "supplement": true,
    "field": "行銷／數位",
+   "core": [],
    "refs": [
     {
      "title": "The impact of electronic word-of-mouth communication: A literature analysis and integrative model (DSS 2012)",
@@ -30178,6 +30486,7 @@
    ],
    "supplement": true,
    "field": "行銷／顧客",
+   "core": [],
    "refs": [
     {
      "title": "van Doorn et al. (2010) Customer Engagement Behavior: Theoretical Foundations and Research Directions (Journal of Service Research)",
@@ -30216,6 +30525,7 @@
    ],
    "supplement": false,
    "field": "組織經濟／顧客",
+   "core": [],
    "refs": [
     {
      "title": "Exit, Voice, and Loyalty Model - Wikipedia",
@@ -30258,6 +30568,12 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [
+    "Affective Commitment",
+    "Continuance Commitment",
+    "Normative Commitment",
+    "Turnover Intention"
+   ],
    "refs": [
     {
      "title": "Organizational commitment - Wikipedia",
@@ -30298,6 +30614,7 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Psychological Contract Breach and Outcomes: A Systematic Review of Reviews (PMC9737235)",
@@ -30342,6 +30659,13 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [
+    "Goal Specificity",
+    "Goal Difficulty",
+    "Goal Commitment",
+    "Feedback",
+    "Job Performance"
+   ],
    "refs": [
     {
      "title": "Locke and Latham 2002, Building a Practically Useful Theory of Goal Setting and Task Motivation (American Psychologist, PDF)",
@@ -30382,6 +30706,7 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Herzberg's Two-Factor Theory of Motivation-Hygiene (Simply Psychology)",
@@ -30420,6 +30745,7 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Equity theory - Wikipedia",
@@ -30452,6 +30778,13 @@
    ],
    "supplement": true,
    "field": "組織行為",
+   "core": [
+    "Job Demands",
+    "Job Resources",
+    "Burnout",
+    "Work Engagement",
+    "Job Performance"
+   ],
    "refs": [
     {
      "title": "JD-R model summary (FourWeekMBA)",
@@ -30484,6 +30817,7 @@
    ],
    "supplement": true,
    "field": "社會學／科技與社會研究（STS）",
+   "core": [],
    "refs": [
     {
      "title": "Callon (1986). Some elements of a sociology of translation: Domestication of the scallops and the fishermen of St. Brieuc Bay. In Law (Ed.), Power, action, and belief (pp. 196–223). Routledge.",
@@ -30528,6 +30862,7 @@
    ],
    "supplement": true,
    "field": "傳播／公共政策",
+   "core": [],
    "refs": [
     {
      "title": "McCombs & Shaw (1972). The agenda-setting function of mass media. Public Opinion Quarterly, 36, 176–187.",
@@ -30575,6 +30910,7 @@
    ],
    "supplement": true,
    "field": "發展心理／組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Bowlby (1969). Attachment and loss: Vol. 1. Attachment. Basic Books.",
@@ -30617,6 +30953,7 @@
    ],
    "supplement": true,
    "field": "社會心理／態度一致性",
+   "core": [],
    "refs": [
     {
      "title": "Heider (1958). The psychology of interpersonal relations. Wiley.",
@@ -30656,6 +30993,7 @@
    ],
    "supplement": true,
    "field": "動機／自我調節",
+   "core": [],
    "refs": [
     {
      "title": "Carver & Scheier (1982). Control theory: A useful conceptual framework for personality—social, clinical, and health psychology. Psychological Bulletin, 92, 111–135.",
@@ -30699,6 +31037,7 @@
    ],
    "supplement": true,
    "field": "財務",
+   "core": [],
    "refs": [
     {
      "title": "Fama, E. F. (1970). Efficient capital markets: A review of theory and empirical work. Journal of Finance, 25, 383–417.",
@@ -30737,6 +31076,7 @@
    ],
    "supplement": true,
    "field": "倫理／組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Kant, I. (1993). Groundwork of the metaphysics of morals (3rd ed., J. W. Ellington, Trans.). Hackett. (Original work published 1785)",
@@ -30779,6 +31119,7 @@
    ],
    "supplement": true,
    "field": "社會心理／組織變革",
+   "core": [],
    "refs": [
     {
      "title": "Lewin, K. (1951). Field theory in social science (D. Cartwright, Ed.). Harper & Brothers.",
@@ -30822,6 +31163,7 @@
    ],
    "supplement": true,
    "field": "決策／組織行為",
+   "core": [],
    "refs": [
     {
      "title": "Beach, L. R. (1990). Image theory: Decision making in personal and organizational contexts. Wiley.",
@@ -30867,6 +31209,7 @@
    ],
    "supplement": true,
    "field": "策略管理",
+   "core": [],
    "refs": [
     {
      "title": "Grant, R. M. (1996). Toward a knowledge-based theory of the firm. Strategic Management Journal, 17(Winter Special Issue), 109–122.",
@@ -30910,6 +31253,7 @@
    ],
    "supplement": true,
    "field": "認知／決策／團隊",
+   "core": [],
    "refs": [
     {
      "title": "Johnson-Laird, P. N. (1983). Mental models. Harvard University Press.",
@@ -30951,6 +31295,7 @@
    ],
    "supplement": true,
    "field": "組織",
+   "core": [],
    "refs": [
     {
      "title": "Hannan, M. T., & Freeman, J. (1977). The population ecology of organizations. American Journal of Sociology, 82, 929–964.",
@@ -30992,6 +31337,7 @@
    ],
    "supplement": true,
    "field": "組織／社會學",
+   "core": [],
    "refs": [
     {
      "title": "Biddle, B. J. (1979). Role theory: Expectations, identities, and behaviors. Academic Press.",
@@ -31034,6 +31380,7 @@
    ],
    "supplement": true,
    "field": "組織",
+   "core": [],
    "refs": [
     {
      "title": "Weick, K. E. (1995). Sensemaking in organizations. Sage.",
@@ -31076,6 +31423,7 @@
    ],
    "supplement": true,
    "field": "社會心理",
+   "core": [],
    "refs": [
     {
      "title": "Festinger, L. (1954). A theory of social comparison. Human Relations, 7, 117–140.",
@@ -31120,6 +31468,7 @@
    ],
    "supplement": true,
    "field": "社會心理",
+   "core": [],
    "refs": [
     {
      "title": "Zajonc, R. B. (1965). Social facilitation. Science, 149, 269–274.",
@@ -31167,6 +31516,7 @@
    ],
    "supplement": true,
    "field": "社會學／組織",
+   "core": [],
    "refs": [
     {
      "title": "Granovetter, M. (1973). The strength of weak ties. American Journal of Sociology, 78, 1360–1380.",
@@ -31209,6 +31559,7 @@
    ],
    "supplement": true,
    "field": "社會學",
+   "core": [],
    "refs": [
     {
      "title": "Giddens, A. (1984). The constitution of society: Outline of the theory of structuration. Polity Press.",
