@@ -245,7 +245,7 @@ groups:
   members: [Org Reputation, Perceived Reputation, Prior Relationship Reputation, Brand Reputation]
   subgroups:
   - name: 組織聲譽
-    members: [Org Reputation, Perceived Reputation]
+    members: [Org Reputation, Perceived Reputation, Brand Reputation]
   - name: 先前關係聲譽
     members: [Prior Relationship Reputation]
 - name: 責任歸因
@@ -460,7 +460,7 @@ groups:
   - name: 抱怨與補救
     members: [Voice, Service Recovery]
 - name: 廣告與揭露
-  members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness, Peripheral Cues]
+  members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness]
   subgroups:
   - name: 揭露
     members: [AI Authorship Disclosure, Sponsorship Disclosure]
@@ -522,15 +522,12 @@ groups:
   - name: 危機回應策略
     members: [Accommodative Response Strategy]
 - name: 規模與產出
-  members: [Output Volume, Product Scope, Economies of Scale, Dynamic Pricing]
+  members: [Output Volume, Product Scope, Dynamic Pricing]
   subgroups:
   - name: 規模
     members: [Output Volume, Product Scope]
   - name: 定價
     members: [Dynamic Pricing]
-- name: 心理契約與承諾違反
-  members: [Opportunistic Behavior]
-  subgroups: []
 - name: 價值取向
   members: [Personal Values, Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values]
   subgroups:
