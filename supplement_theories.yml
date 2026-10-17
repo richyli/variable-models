@@ -3646,3 +3646,1504 @@ theories:
       指 Giddens 的一般性權力互動，我們清單只有 Stakeholder Power、Out-group Power 等特定權力，故列缺。Informal Sanctions 沿用我們名稱對應 sanction 互動；Social
       Norm 對應 norms 模態；Communication 沿用既有。Measuring 節給的是 AST 的 faithfulness of appropriation 量表（Chin et al., 1997）、強結構化理論問題（Greenhalgh
       & Stones, 2010）與規則資源理解問題，與主幹構念無直接對應。批評節：Archer 認為理論保留而非超越結構／行動二分，Anderson 批評以語言類比社會結構不當。
+  Dual-Process Theory:
+    note: Dual-Process Theory
+    abbr: DPT
+    name: Dual-Process Theory
+    zh: 雙歷程理論
+    field: 認知心理
+    desc: Wason 與 Evans（1974）提出、Kahneman（2011）普及：思考分為快速、自動、低耗能的系統一與緩慢、受控、依賴工作記憶的系統二；認知負荷高、動機或能力不足時系統一主導，較易出現捷思偏誤。
+    edges:
+    - [Cognitive Load, Systematic Processing, '-']
+    - [Cognitive Load, Heuristic Processing, +]
+    - [Time Pressure, Systematic Processing, '-']
+    - [Motivation, Systematic Processing, +]
+    - [Ability, Systematic Processing, +]
+    - [Need for Cognition, Systematic Processing, +]
+    - [Systematic Processing, Heuristic Processing, '-']
+    - [Heuristic Processing, Decision Error, +]
+    - [Systematic Processing, Decision Accuracy, +]
+    - [Domain Expertise, Heuristic Processing -> Decision Error, m]
+    refs:
+    - {title: Dual process theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Dual_process_theory'}
+    - {title: 'Evans (2008) Dual-processing accounts of reasoning, judgment, and social cognition, Annual Review of Psychology
+        59', url: 'https://researchportal.plymouth.ac.uk/en/publications/dual-processing-accounts-of-reasoning-judgment-and-social-cogniti/'}
+    enrich_notes: Wikipedia 明寫：工作記憶負荷削弱系統二（De Neys 2006）、ELM 的動機與能力決定中央／周邊路徑、專家領域的系統一較準。Time Pressure 與 Need for Cognition
+      兩條是常見實證版本，Wikipedia 未直接討論。Evans 提醒系統一不等於偏誤、系統二不等於正確，故 Domain Expertise 設為調節。
+  Schema Theory:
+    note: Schema Theory
+    abbr: Schema
+    name: Schema Theory
+    zh: 基模理論
+    field: 認知心理
+    desc: Bartlett（1932）與 Piaget 提出：基模是由過去經驗組成的知識結構，引導注意、編碼與重建式回憶；與基模一致的訊息較易理解與記住，不一致者被忽略、扭曲或迫使基模調適（accommodation）。
+    edges:
+    - [Prior Knowledge Base, Schema Activation, +]
+    - [Priming, Schema Activation, +]
+    - [Schema Activation, Comprehension, +]
+    - [Schema Activation, Recall, +]
+    - [Schema Congruence, Recall, +]
+    - [Schema Congruence, Memory Distortion, +]
+    - [Schema Congruence, Schema Change, '-']
+    - [Schema Activation, Stereotyping, +]
+    refs:
+    - {title: Schema (psychology) - Wikipedia, url: 'https://en.wikipedia.org/wiki/Schema_(psychology)'}
+    - {title: Schema Theory In Psychology - Simply Psychology, url: 'https://www.simplypsychology.org/what-is-a-schema.html'}
+    enrich_notes: 方向依兩來源明寫：先前經驗與啟動（priming）提高基模可及性；Bransford & Johnson（1972）標題提升理解與回憶；Brewer & Treyens（1981）回憶出不存在的書＝基模一致訊息的記憶扭曲；不一致訊息無法忽略時才調適（Schema
+      Change 為負向）；刻板印象是基模的一種。
+  Working Memory Theory:
+    note: Working Memory Theory
+    abbr: WMT
+    name: Working Memory Theory
+    zh: 工作記憶理論
+    field: 認知心理
+    desc: Baddeley 與 Hitch（1974）提出、Baddeley（2000）增補情節緩衝區：工作記憶由中央執行器、語音迴路、視覺空間畫板與情節緩衝區組成，各子系統容量有限；同一子系統的雙重作業互相干擾，複誦與組塊可延長保留並支撐理解與學習。
+    edges:
+    - [Working Memory Capacity, Comprehension, +]
+    - [Working Memory Capacity, Learning Performance, +]
+    - [Cognitive Load, Comprehension, '-']
+    - [Modality Overlap, Dual-Task Interference, +]
+    - [Dual-Task Interference, Learning Performance, '-']
+    - [Rehearsal, Retention, +]
+    - [Chunking, Working Memory Capacity, +]
+    - [Working Memory Capacity, Retention, +]
+    - [Prior Knowledge Base, Retention, +]
+    refs:
+    - {title: Baddeley's model of working memory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Baddeley%27s_model_of_working_memory'}
+    - {title: Working Memory Model (Baddeley and Hitch) - Simply Psychology, url: 'https://www.simplypsychology.org/working-memory.html'}
+    enrich_notes: Wikipedia 明寫雙重作業干擾（同知覺域干擾較大）、複誦防止語音痕跡衰退、情節緩衝區連接長期記憶（故 Prior Knowledge Base -> Retention）。Simply Psychology
+      補充六位數字負荷損害散文理解、語音迴路與字彙學習有關。容量上限（7±2）有爭議，未入邊。
+  Dual Coding Theory, DCT:
+    note: Dual Coding Theory, DCT
+    abbr: DCod
+    name: Dual Coding Theory
+    zh: 雙碼理論
+    field: 認知心理
+    desc: Paivio（1971、1986）提出：認知由語文系統（logogens）與非語文意象系統（imagens）組成，兩者可透過參照連結互相啟動；訊息同時以語文與影像編碼時，記憶路徑加倍，故圖優效應與具體詞較易記住。
+    edges:
+    - [Verbal Presentation, Verbal Encoding, +]
+    - [Pictorial Presentation, Mental Imagery, +]
+    - [Concreteness, Mental Imagery, +]
+    - [Mental Imagery, Verbal Encoding, +]
+    - [Verbal Encoding, Mental Imagery, +]
+    - [Verbal Encoding, Recall, +]
+    - [Mental Imagery, Recall, +]
+    - [Pictorial Presentation, Recall, +]
+    refs:
+    - {title: Dual-coding theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Dual-coding_theory'}
+    - {title: Dual Coding Theory (Allan Paivio) - InstructionalDesign.org, url: 'https://www.instructionaldesign.org/theories/dual-coding/'}
+    - {title: 'Clark & Paivio (1991) Dual Coding Theory and Education, Educational Psychology Review 3(3)', url: 'https://clark.faculty.uwinnipeg.ca/Clark/Publications/1991-Clark&Paivio-DCT&Educ.pdf'}
+    enrich_notes: 雙向邊（Mental Imagery <-> Verbal Encoding）對應 InstructionalDesign.org 所述的參照處理（referential processing）。圖優效應與具體性效應為
+      Wikipedia 明寫。Clark & Paivio 1991 的 abbr 避開既有 DCT（Dynamic Capabilities Theory），改用 DCod。
+  CTML, Cognitive Theory of Multimedia Learning:
+    note: CTML, Cognitive Theory of Multimedia Learning
+    abbr: CTML
+    name: Cognitive Theory of Multimedia Learning
+    zh: 多媒體學習認知理論
+    field: 教育心理
+    desc: Mayer（1998、2001、2009）提出：學習者以視覺／圖像與聽覺／語文兩個容量有限的通道主動選取、組織並整合訊息；設計原則分三類——減少外在處理（連貫、訊號、冗餘、空間與時間鄰近）、管理必要處理（分段、預訓練、形式）、促進生成處理（個人化、聲音、具身）。
+    edges:
+    - [Multimedia Presentation, Learning Performance, +]
+    - [Extraneous Material, Extraneous Load, +]
+    - [Redundant On-screen Text, Extraneous Load, +]
+    - [Signaling, Extraneous Load, '-']
+    - [Spatial Contiguity, Extraneous Load, '-']
+    - [Extraneous Load, Learning Performance, '-']
+    - [Segmenting, Learning Performance, +]
+    - [Pre-training, Learning Performance, +]
+    - [Spoken Narration, Learning Performance, +]
+    - [Conversational Style, Germane Load, +]
+    - [Germane Load, Transfer of Learning, +]
+    refs:
+    - {title: Cognitive Theory of Multimedia Learning - Harvard CHDS tutorial (Mayer 2009 principles), url: 'https://repository.chds.hsph.harvard.edu/repository/3755/'}
+    - {title: Cognitive Theory of Multimedia Learning - UBC Video Learning Hub, url: 'https://blogs.ubc.ca/videolearninghub/?p=564'}
+    enrich_notes: 三類處理對應認知負荷理論的外在／內在／增生負荷，故沿用既有 Extraneous Load 與 Germane Load。多媒體原則（words + pictures 優於 words alone）為 UBC
+      頁明寫；各原則分組依 Harvard 頁。保留／遷移兩種結果：主體用 Learning Performance，生成處理指向 Transfer of Learning。專家反轉效應未在所讀來源出現，未列調節。
+  Construal level theory CLT:
+    note: Construal level theory CLT
+    abbr: ConLT
+    name: Construal Level Theory
+    zh: 解釋層次理論
+    field: 社會心理
+    desc: Trope 與 Liberman（1998、2010）提出：時間、空間、社會與假設性四種心理距離越遠，心智表徵越抽象（高層次解釋）；高層次解釋使人重視可欲性而非可行性、較願冒險、較能自我調節，訊息抽象度與距離相符時說服力較高。
+    edges:
+    - [Temporal Distance, Psychological Distance, +]
+    - [Spatial Distance, Psychological Distance, +]
+    - [Social Distance, Psychological Distance, +]
+    - [Hypothetical Distance, Psychological Distance, +]
+    - [Psychological Distance, Construal Level, +]
+    - [Construal Level, Psychological Distance, +]
+    - [Construal Level, Desirability Weighting, +]
+    - [Construal Level, Feasibility Weighting, '-']
+    - [Construal Level, Self-Regulation, +]
+    - [Construal Level, Risk Seeking, +]
+    - [Construal Level, Stereotyping, +]
+    - [Construal Level, Message Abstractness -> Attitude, m]
+    refs:
+    - {title: Construal level theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Construal_level_theory'}
+    - {title: 'Trope & Liberman (2010) Construal-Level Theory of Psychological Distance, Psychological Review 117(2) (PMC)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3152826/'}
+    enrich_notes: 距離與解釋層次互為因果是 Trope & Liberman 2010 明寫的雙向關係。可欲性／可行性權重、自我控制（Fujita & Roberts 2010）、冒險（距離遠較願冒險）、刻板化（社會距離）皆為
+      Wikipedia 條目所列實證。abbr 避開既有 CLT（Cognitive Load Theory）。
+  Regulatory Focus Theory:
+    abbr: RFT
+    name: Regulatory Focus Theory
+    zh: 調節焦點理論
+    field: 社會心理
+    desc: Higgins（1997）提出：自我調節分為追求理想與獲益的促進焦點，以及守住義務與避免損失的預防焦點；前者偏好熱切策略、後者偏好警戒策略。Higgins（2000）進一步主張策略與焦點相符（調節適配）時會「感覺對了」，提高投入、價值感與說服效果。
+    edges:
+    - [Ideal Self-Guide, Promotion Focus, +]
+    - [Ought Self-Guide, Prevention Focus, +]
+    - [Gain Framing, Promotion Focus, +]
+    - [Loss Framing, Prevention Focus, +]
+    - [Promotion Focus, Eagerness Strategy, +]
+    - [Prevention Focus, Vigilance Strategy, +]
+    - [Promotion Focus, Risk Seeking, +]
+    - [Regulatory Fit, Value, +]
+    - [Regulatory Fit, Motivation, +]
+    - [Regulatory Fit, Attitude, +]
+    - [Promotion Focus, Gain Framing -> Attitude, m]
+    - [Prevention Focus, Loss Framing -> Attitude, m]
+    refs:
+    - {title: Regulatory focus theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Regulatory_focus_theory'}
+    - {title: Regulatory Focus Theory - The Decision Lab, url: 'https://thedecisionlab.com/reference-guide/management/regulatory-focus-theory'}
+    - {title: 'Higgins, Shah & Friedman (1997) regulatory focus strength paper (Columbia PDF)', url: 'https://www.columbia.edu/cu/psychology/higgins/papers/higgins+%201997%20rfocus%20strength.pdf'}
+    enrich_notes: 理想／應該自我引導與熱切／警戒策略取自搜尋到的 Self-Guide Strength Measure 與 Higgins 1997 摘要；調節適配提升投入、價值轉移與說服（grape juice 廣告）為
+      Wikipedia 與 Decision Lab 明寫。Promotion -> Risk Seeking 是常見實證版本（促進焦點的風險偏誤），Decision Lab 僅間接提及。情緒結果（cheerfulness/dejection
+      vs quiescence/agitation）來源未詳述，未入邊。
+  Self-Perception Theory:
+    abbr: SelfPT
+    name: Self-Perception Theory
+    zh: 自我知覺理論
+    field: 社會心理
+    desc: Bem（1967、1972）提出：人像旁觀者一樣，從自己的行為與情境推論自己的態度；當內在線索微弱或模糊、且缺乏外在誘因可解釋行為時，推論最強。可解釋得寸進尺效應與過度辯護效應，並與認知失調理論分工（Fazio et al.
+      1977）。
+    edges:
+    - [Behavior, Attitude, +]
+    - [Attitude Strength, Behavior -> Attitude, m]
+    - [Insufficient Justification, Behavior -> Attitude, m]
+    - [Initial Compliance, Self-Concept, +]
+    - [Self-Concept, Behavioral Intention, +]
+    - [Controlling Rewards, Intrinsic Motivation, '-']
+    - [Behavior, Emotions, +]
+    refs:
+    - {title: Self-perception theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Self-perception_theory'}
+    - {title: Daryl Bem - Wikipedia (1967 Psychological Review; 1972 Advances in Experimental Social Psychology), url: 'https://en.wikipedia.org/wiki/Daryl_Bem'}
+    enrich_notes: 核心邊 Behavior -> Attitude 為理論主張；Attitude Strength 調節（既有態度弱才適用，Chaiken & Baldwin 1981）、外在誘因不足時推論較強（Bem 的 1
+      元／20 元觀察者研究）皆 Wikipedia 明寫。得寸進尺拆成 Initial Compliance -> Self-Concept -> Behavioral Intention。過度辯護效應（Controlling Rewards
+      -> Intrinsic Motivation）Wikipedia 僅列為相關主題，屬常見延伸。Behavior -> Emotions 來自 Laird 1974 臉部表情研究。
+  Appraisal Theory of Emotion:
+    abbr: AppT
+    name: Appraisal Theory of Emotion
+    zh: 情緒評估理論
+    field: 情緒心理
+    desc: Arnold（1960）、Lazarus（1991）與 Scherer（1984、2009）提出：情緒是對事件評估的結果——初級評估判斷目標相關與一致性，次級評估判斷責任歸屬與因應潛能；Scherer 再拆成相關、意涵、因應潛能、規範意義四組檢核，不同評估組合產生不同情緒與行動傾向。
+    edges:
+    - [Goal Relevance, Arousal, +]
+    - [Novelty, Arousal, +]
+    - [Goal Congruence, Valence, +]
+    - [Responsibility Attribution, Anger, +]
+    - [Coping Potential, Anxiety, '-']
+    - [Norm Compatibility, Negative Emotional Arousal, '-']
+    - [Reappraisal, Negative Emotional Arousal, '-']
+    - [Anxiety, Avoidance Behavior, +]
+    - [Valence, Approach Behavior, +]
+    refs:
+    - {title: Appraisal theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Appraisal_theory'}
+    - {title: 'Scherer (2009) The dynamic architecture of emotion: Evidence for the component process model, Cognition and
+        Emotion 23(7)', url: 'https://archive-ouverte.unige.ch/unige:97810'}
+    enrich_notes: Wikipedia 明寫：目標相關度越高情緒越強；目標不一致且他人可歸責產生憤怒、無人可歸責偏向焦慮；再評估可改變情緒（Verduyn et al. 2011）。Scherer 四組檢核（relevance／implication／coping
+      potential／normative significance）取自 2009 論文摘要與搜尋結果；Novelty 屬 relevance 檢核。情緒 -> 行動傾向兩條依理論的「情緒帶有行動準備」主張。
+  Broaden-and-Build Theory:
+    abbr: BBT
+    name: Broaden-and-Build Theory
+    zh: 擴展與建構理論
+    field: 情緒心理
+    desc: Fredrickson（1998、2001）提出：正向情緒（喜悅、興趣、滿足、驕傲、愛）會擴展當下的思考與行動範圍，進而累積身體、智識、社會與心理等長期資源；資源提升幸福感與韌性，形成向上螺旋，並能「抵銷」負向情緒殘留的生理影響。
+    edges:
+    - [Positive Emotions, Attentional Breadth, +]
+    - [Positive Emotions, Creativity, +]
+    - [Positive Emotions, Approach Behavior, +]
+    - [Attentional Breadth, Personal Resources, +]
+    - [Positive Emotions, Social Capital, +]
+    - [Personal Resources, Well-being, +]
+    - [Personal Resources, Resilience, +]
+    - [Positive Emotions, Negative Emotional Arousal, '-']
+    - [Well-being, Positive Emotions, +]
+    - [Resilience, Positive Emotions, +]
+    refs:
+    - {title: Broaden-and-build - Wikipedia, url: 'https://en.wikipedia.org/wiki/Broaden-and-build'}
+    - {title: 'Fredrickson (2001) The Role of Positive Emotions in Positive Psychology: The Broaden-and-Build Theory, American
+        Psychologist 56(3) (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3122271/'}
+    enrich_notes: 擴展（行動清單實驗）、建構（九週慈心禪研究）、抵銷（2000 年心血管恢復研究）、向上螺旋皆兩來源明寫。回饋邊（Well-being -> Positive Emotions、Resilience -> Positive
+      Emotions）即向上螺旋，形成循環。Gable & Harmon-Jones（2010）指出部分正向情緒反而窄化注意，Roth et al.（2024）發現擴展中介不成立，屬反面證據，未改方向但應在使用時注意。
+  Affect Infusion Model:
+    abbr: AIM
+    name: Affect Infusion Model
+    zh: 情感滲入模型
+    field: 社會心理
+    desc: Forgas（1995）提出：心情是否滲入判斷取決於處理策略——直接存取與動機式處理幾乎不受影響，捷思式處理把心情當作訊息（Schwarz & Clore 1983），實質式處理因心情啟動一致聯想而受影響最深；任務越複雜、不熟悉且個人相關，越走實質式處理。
+    edges:
+    - [Affect, Attitude, +]
+    - [Systematic Processing, Affect -> Attitude, m]
+    - [Heuristic Processing, Affect -> Attitude, m]
+    - [Motivated Processing, Affect -> Attitude, m]
+    - [Direct Access Processing, Affect -> Attitude, m]
+    - [Task Complexity, Systematic Processing, +]
+    - [Involvement, Systematic Processing, +]
+    - [Information Processing Ability, Systematic Processing, +]
+    - [Accuracy Motivation, Systematic Processing, +]
+    - [Experience, Direct Access Processing, +]
+    - [Affect, Systematic Processing, '-']
+    refs:
+    - {title: Affect infusion model - Wikipedia, url: 'https://en.wikipedia.org/wiki/Affect_infusion_model'}
+    - {title: 'Faul & LaBar (2022) Mood-congruent memory revisited, Psychological Review 130(6) (PMC) - section on the AIM',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10076454/'}
+    enrich_notes: 核心邊 Affect -> Attitude 代表心情一致判斷（mood-congruent judgment）；四種策略全部設為調節：實質式與捷思式放大、動機式與直接存取抑制（Faul & LaBar 2022
+      明寫 direct access／motivated 下不太可能有偏誤）。策略決定因素（熟悉度、重要性、複雜度、認知能力、正確動機）取自 Wikipedia。Affect -> Systematic Processing 為負：Wikipedia
+      寫正向心情偏捷思、負向心情偏實質。Systematic Processing 沿用既有變數對應 substantive processing。
+  Transactional Model of Stress and Coping:
+    abbr: TMSC
+    name: Transactional Model of Stress and Coping
+    zh: 壓力與因應的交互作用模型
+    field: 健康心理
+    desc: Lazarus 與 Folkman（1984）提出：壓力不是事件本身，而是個人與環境交互的結果——初級評估判斷事件是否構成傷害、威脅或挑戰，次級評估判斷自身因應資源是否足夠；需求超過資源即感受壓力，接著以問題焦點或情緒焦點因應，結果再回饋為重新評估。
+    edges:
+    - [Stressor, Perceived Threat, +]
+    - [Perceived Threat, Perceived Stress, +]
+    - [Challenge Appraisal, Perceived Stress, '-']
+    - [Stress Coping Ability, Perceived Stress, '-']
+    - [Social Support, Stress Coping Ability, +]
+    - [Self-Efficacy, Stress Coping Ability, +]
+    - [Perceived Stress, Problem-Focused Coping, +]
+    - [Perceived Stress, Emotion-Focused Coping, +]
+    - [Stress Coping Ability, Problem-Focused Coping, +]
+    - [Problem-Focused Coping, Well-being, +]
+    - [Emotion-Focused Coping, Negative Emotional Arousal, '-']
+    - [Perceived Stress, Well-being, '-']
+    - [Problem-Focused Coping, Perceived Threat, '-']
+    refs:
+    - {title: Transactional Model of Stress and Coping - AURA Lab (SIUE) theory page, url: 'https://aura-lab.siue.edu/theories/transactional-model-of-stress-and-coping/'}
+    - {title: 'Richard Lazarus - Wikipedia (cognitive-mediational theory; Stress, Appraisal, and Coping 1984)', url: 'https://en.wikipedia.org/wiki/Richard_Lazarus'}
+    enrich_notes: Stressor -> 初級評估 -> 次級評估 -> 壓力 -> 因應 -> 結果 -> 重新評估的迴路為 AURA Lab 頁明寫；Problem-Focused Coping -> Perceived
+      Threat 的負向邊即重新評估回饋。社會支持作為因應資源（強化次級評估）為該頁所述；Self-Efficacy -> Stress Coping Ability 是常見實證版本。Stress Coping Ability 沿用既有變數代表次級評估的因應資源。Springer
+      百科條目需登入，未能開啟。
+  Strength Model of Self-Control:
+    abbr: SMSC
+    name: Strength Model of Self-Control
+    zh: 自我控制強度模型（自我耗損）
+    field: 社會心理
+    desc: Baumeister 等（1998）提出、Baumeister、Vohs 與 Tice（2007）總結：自我控制像肌肉一樣消耗有限資源，先前的自我控制造成自我耗損，使後續無關作業的自我控制、堅持與利社會行為下降；動機與正向情緒可暫時抵銷。2016
+      與 2021 年的多實驗室預註冊重複皆未發現效果。
+    edges:
+    - [Prior Self-Control Exertion, Ego Depletion, +]
+    - [Ego Depletion, Self-Regulation, '-']
+    - [Ego Depletion, Persistence, '-']
+    - [Ego Depletion, Impulsive Choice, +]
+    - [Ego Depletion, Helping Behavior, '-']
+    - [Positive Emotions, Ego Depletion, '-']
+    - [Motivation, Ego Depletion -> Self-Regulation, m]
+    - [Belief in Unlimited Willpower, Ego Depletion -> Self-Regulation, m]
+    refs:
+    - {title: Ego depletion - Wikipedia, url: 'https://en.wikipedia.org/wiki/Ego_depletion'}
+    - {title: 'Baumeister, Vohs & Tice (2007) The Strength Model of Self-Control, Current Directions in Psychological Science
+        16(6)', url: 'https://www.psychologicalscience.org/journals/current-directions/j.1467-8721.2007.00534.x/'}
+    enrich_notes: 主效果與五個結果（自我調節、堅持、衝動消費、利社會行為）皆 Wikipedia 明寫；動機／框架可暫時阻斷耗損為 2007 摘要明寫；正向情緒恢復（Tice et al. 2007）與意志力信念（Vohs et
+      al. 2012）取自 Wikipedia。葡萄糖機制爭議大，未入邊。重要：Hagger et al. 2016 與 Vohs et al. 2021 多實驗室重複皆為零效果（d≈0.06），使用此模型時應在限制中交代。
+  Need for Cognitive Closure:
+    note: Need for Cognitive Closure
+    abbr: NFCC
+    name: Need for Cognitive Closure
+    zh: 認知閉合需求
+    field: 社會心理
+    desc: Kruglanski 與 Webster（1994、1996）提出：認知閉合需求是對明確答案的渴望與對模糊的厭惡，既是穩定特質也可由情境（時間壓力、噪音、疲勞）喚起；透過急迫傾向（抓住）與持久傾向（凍結）縮短資訊搜尋，導致初始效應、刻板化、抗拒說服與創造力下降。
+    edges:
+    - [Time Pressure, Need for Cognitive Closure, +]
+    - [Cognitive Load, Need for Cognitive Closure, +]
+    - [Need for Cognitive Closure, Information Search Extent, '-']
+    - [Need for Cognitive Closure, Heuristic Processing, +]
+    - [Need for Cognitive Closure, Systematic Processing, '-']
+    - [Need for Cognitive Closure, Primacy Effect, +]
+    - [Need for Cognitive Closure, Stereotyping, +]
+    - [Need for Cognitive Closure, Attitude Resistance, +]
+    - [Need for Cognitive Closure, Creativity, '-']
+    refs:
+    - {title: Closure (psychology) - Wikipedia, url: 'https://en.wikipedia.org/wiki/Closure_(psychology)'}
+    - {title: 'Kruglanski & Webster (1996) Motivated closing of the mind: Seizing and freezing, Psychological Review 103(2)
+        - abstract page (UMD)', url: 'https://terpconnect.umd.edu/~hannahk/NFC-KW96.html'}
+    enrich_notes: 結果邊（資訊搜尋縮減、依賴捷思、初始效應與同化、刻板化、抗說服、創造力低）為 Wikipedia 明寫；1996 摘要確認急迫／持久兩傾向與特質＋狀態雙重性質。情境前因（時間壓力、噪音、疲勞）在所讀兩頁未列細節，屬原論文的常見描述，此處以
+      Time Pressure 與 Cognitive Load 代表。
+  Information Processing Theory, IPT:
+    note: Information Processing Theory, IPT
+    abbr: IPT
+    name: Information Processing Theory
+    zh: 訊息處理理論
+    field: 認知心理
+    desc: Atkinson 與 Shiffrin（1968）與 Miller（1956）為核心：訊息依序經過感官登錄、短期（工作）記憶與長期記憶三個儲存庫，注意決定進入短期記憶、複誦與編碼決定轉入長期記憶、組塊擴大有限容量，執行控制調度整個流程。
+    edges:
+    - [Attention, Encoding, +]
+    - [Cognitive Load, Attention, '-']
+    - [Executive Control, Attention, +]
+    - [Chunking, Working Memory Capacity, +]
+    - [Working Memory Capacity, Encoding, +]
+    - [Rehearsal, Retention, +]
+    - [Encoding, Retention, +]
+    - [Retention, Recall, +]
+    - [Retrieval Cues, Recall, +]
+    refs:
+    - {title: Information processing theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Information_processing_theory'}
+    - {title: 'The Atkinson-Shiffrin Model - Psychology: An Introduction (psywww.com, Chapter 06 Memory)', url: 'https://psywww.com/intropsych/ch06-memory/atkinson-shiffrin-model.html'}
+    enrich_notes: 注意 -> 編碼、複誦 -> 保留、組塊 -> 容量、執行控制調度注意四條為 Wikipedia 明寫（該頁註明屬隱含而非正式因果陳述）。psywww 頁補充感官登錄時長與 Sperling 部分報告實驗。Craik
+      & Lockhart 處理深度在所讀來源未出現，未入邊。Cognitive Load -> Attention 為常見實證版本。
+  T IMT Impression Management Theory:
+    note: T IMT Impression Management Theory
+    abbr: IMT
+    name: Impression Management Theory
+    zh: 印象管理理論
+    field: 社會心理
+    desc: Goffman（1959）奠基、Leary 與 Kowalski（1990）提出兩成分模型：印象動機取決於印象與目標的相關性、結果的價值、以及現有與期望形象的落差；印象建構由自我概念、期望身分、角色限制、對象價值觀與現有社會形象決定，進而影響觀眾的喜好。
+    edges:
+    - [Goal Relevance of Impressions, Impression Motivation, +]
+    - [Value of Desired Outcomes, Impression Motivation, +]
+    - [Image Discrepancy, Impression Motivation, +]
+    - [Mere Presence of Others, Impression Motivation, +]
+    - [Self-Efficacy, Impression Motivation, +]
+    - [Impression Motivation, Self-Presentation Behavior, +]
+    - [Self-Concept, Self-Presentation Behavior, +]
+    - [Role Expectations, Self-Presentation Behavior, +]
+    - [Target Values, Self-Presentation Behavior, +]
+    - [Self-Presentation Behavior, Interpersonal Attraction, +]
+    - [Perceived Authenticity, Self-Presentation Behavior -> Interpersonal Attraction, m]
+    refs:
+    - {title: Impression management - Wikipedia, url: 'https://en.wikipedia.org/wiki/Impression_management'}
+    - {title: 'Leary & Kowalski (1990) Impression management: A literature review and two-component model, Psychological Bulletin
+        107(1) - Duke Scholars record', url: 'https://scholars.duke.edu/display/pub676864'}
+    enrich_notes: 印象動機三因素與印象建構五因素取自 Leary & Kowalski 1990 摘要；被觀察（Mere Presence of Others）與自我效能提升動機、以及討好若被歸因為印象管理則評價轉負（故 Perceived
+      Authenticity 為調節）取自 Wikipedia。Jones & Pittman（1982）五種策略與人資評等結果在所讀來源未出現，未入邊。
+  CFT, Cognitive Fit Theory:
+    note: CFT, Cognitive Fit Theory
+    abbr: CFT
+    name: Cognitive Fit Theory
+    zh: 認知適配理論
+    field: 資訊系統
+    desc: Vessey（1991）提出：問題表徵（如圖形或表格）與任務（空間型或符號型）各自強調的訊息共同形成心智表徵；兩者處理歷程一致即為認知適配，使用者不必再轉換表徵就能取得所需訊息，決策因此更準確、更快。
+    edges:
+    - [Problem Representation, Mental Representation, +]
+    - [Task Characteristics, Mental Representation, +]
+    - [Problem Representation, Cognitive Fit, +]
+    - [Task Characteristics, Problem Representation -> Cognitive Fit, m]
+    - [Cognitive Fit, Mental Representation, +]
+    - [Mental Representation, Decision Accuracy, +]
+    - [Cognitive Fit, Decision Accuracy, +]
+    - [Cognitive Fit, Decision Time, '-']
+    refs:
+    - {title: Cognitive fit theory - IS Theories wiki (theorizeit.org), url: 'https://is.theorizeit.org/wiki/Cognitive_fit_theory'}
+    - {title: 'Vessey & Galletta (1991) Cognitive Fit: An Empirical Study of Information Acquisition, Information Systems
+        Research 2(1)', url: 'https://ideas.repec.org/a/inm/orisre/v2y1991i1p63-84.html'}
+    enrich_notes: theorizeit 頁明寫：表徵與任務相符 -> 一致的心智表徵 -> 不需轉換 -> 有效且有效率的解題。Vessey & Galletta 1991 發現符號型任務配合相符表徵時表現大幅提升、問題表徵對心智表徵的影響大於任務理解，故
+      Problem Representation -> Mental Representation。任務型態（空間／符號）決定何種表徵適配，設為調節。Decision Time 為新變數，對應效率。
+  Psychological Ownership Theory:
+    abbr: POT
+    name: Psychological Ownership Theory
+    zh: 心理所有權理論
+    field: 組織行為
+    desc: Pierce、Kostova 與 Dirks（2001、2003）提出：心理所有權是把對象視為「我的」並納入延伸自我的狀態，根源於效能感、自我認同與歸屬之所三種動機，經由控制、深入了解、投入自我三條路徑形成；可帶來責任感與公民行為，也可能造成不願分享與抗拒改變。
+    edges:
+    - [Control, Psychological Ownership, +]
+    - [Intimate Knowledge of Target, Psychological Ownership, +]
+    - [Self-Investment, Psychological Ownership, +]
+    - [Autonomy, Control, +]
+    - [Psychological Ownership, Felt Obligation, +]
+    - [Psychological Ownership, Organizational Citizenship Behavior, +]
+    - [Psychological Ownership, Knowledge Sharing, '-']
+    - [Psychological Ownership, User Resistance, +]
+    refs:
+    - {title: 'Pierce, Dirks & Kostova - Towards a Theory of Psychological Ownership in Organizations (UMN Conservancy working
+        paper)', url: 'https://conservancy.umn.edu/server/api/core/bitstreams/338282fe-f840-443c-85bf-a4ad03125a2b/content'}
+    - {title: 'Pierce, Kostova & Dirks (2003) The State of Psychological Ownership: Integrating and Extending a Century of
+        Research, Review of General Psychology 7(1)', url: 'https://experts.umn.edu/en/publications/the-state-of-psychological-ownership-integrating-and-extending-a-/'}
+    enrich_notes: 三條路徑（P5–P7）與自主、參與決策提高控制為工作論文明寫。結果面在工作論文只屬推測（願意犧牲、承擔責任 vs 不願分享資訊與決策權），2003 年回顧確認有正負兩類結果但摘要頁未列細項；OCB 與抗拒改變（Dirks,
+      Cummings & Pierce 1996）為常見實證版本。Felt Obligation 沿用既有變數代表責任感。
+  Optimal Distinctiveness Theory:
+    abbr: ODT
+    name: Optimal Distinctiveness Theory
+    zh: 最適獨特性理論
+    field: 社會心理
+    desc: Brewer（1991）提出：人同時有融入群體的同化需求與有別於他人的區辨需求，兩者互相消長；群體越包容越能滿足歸屬但越不獨特，人會對同時提供歸屬感與獨特感的群體產生最強的認同與忠誠，過度去個人化或過度孤立都會促使人調整認同層級。
+    edges:
+    - [Group Inclusiveness, Perceived Belonging, +]
+    - [Group Inclusiveness, Perceived Group Distinctiveness, '-']
+    - [Perceived Belonging, Identification, +]
+    - [Perceived Group Distinctiveness, Identification, +]
+    - [Need for Assimilation, Perceived Belonging -> Identification, m]
+    - [Need for Differentiation, Perceived Group Distinctiveness -> Identification, m]
+    - [Depersonalization, Need for Differentiation, +]
+    - [Perceived Self-Uniqueness, Need for Assimilation, +]
+    - [Identification, Self-Esteem, +]
+    refs:
+    - {title: Optimal distinctiveness theory - Wikipedia, url: 'https://en.wikipedia.org/wiki/Optimal_distinctiveness_theory'}
+    - {title: 4.5 Optimal Distinctiveness Theory - Social Theory (bookdown), url: 'https://bookdown.org/mike/social-theory/optimal-distinctiveness-theory.html'}
+    - {title: 'Brewer (1991) The Social Self: On Being the Same and Different at the Same Time, PSPB 17(5) - record', url: 'https://citedrive.com/en/discovery/the-social-self-on-being-the-same-and-different-at-the-same-time/'}
+    enrich_notes: A1（認同在能化解兩需求衝突的包容層級最強）、A3（獨特性依參照框架而定）、A4（最適點依兩需求相對強度）為 Wikipedia 與 bookdown 明寫；「一方過強另一方反彈」的平衡機制轉成 Depersonalization
+      -> Need for Differentiation 與 Perceived Self-Uniqueness -> Need for Assimilation 兩條。原理論的倒 U 型關係以兩條反向邊加兩個調節近似。Identification
+      -> Self-Esteem 取自 Brewer 認為自尊可直接來自社會認同。
+  Learned Helplessness Theory:
+    abbr: LHT
+    name: Learned Helplessness Theory
+    zh: 習得無助理論
+    field: 情緒心理
+    desc: Seligman 與 Maier（1967）提出、Abramson 等（1978）以歸因重構：反覆遭遇無法控制的負向事件使人預期未來也無法控制，導致被動、學習變差與憂鬱；內在、穩定、全面的歸因風格放大此效應。Maier 與
+      Seligman（2016）改寫為：被動是預設反應，控制感才是學來的。
+    edges:
+    - [Uncontrollable Aversive Events, Perceived Uncontrollability, +]
+    - [Perceived Uncontrollability, Expectation of Uncontrollability, +]
+    - [Pessimistic Attributional Style, Perceived Uncontrollability -> Expectation of Uncontrollability, m]
+    - [Expectation of Uncontrollability, Persistence, '-']
+    - [Expectation of Uncontrollability, Motivation, '-']
+    - [Expectation of Uncontrollability, Learning Performance, '-']
+    - [Expectation of Uncontrollability, Depression, +]
+    - [Expectation of Uncontrollability, Self-Esteem, '-']
+    - [Prior Experience of Control, Expectation of Uncontrollability, '-']
+    refs:
+    - {title: Learned helplessness - Wikipedia, url: 'https://en.wikipedia.org/wiki/Learned_helplessness'}
+    - {title: 'Maier & Seligman (2016) Learned Helplessness at Fifty: Insights from Neuroscience, Psychological Review 123(4)
+        (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4920136/'}
+    enrich_notes: 原始鏈（偵測不可控 -> 預期不可控 -> 被動）為兩來源明寫；歸因風格（內在、穩定、全面）調節取自 Abramson et al. 1978。Prior Experience of Control 的負向邊對應
+      Wikipedia 的「免疫」效果與 2016 年「控制感是學來的」主張。Self-Esteem 下降對應內在歸因的結果（1978 重構），Wikipedia 以自尊建立作為介入提及。2016 年版本主張原理論「方向反了」，使用時應說明採用哪一版。
+  Anchoring and Adjustment Heuristic:
+    abbr: Anchor
+    name: Anchoring and Adjustment Heuristic
+    zh: 錨定與調整捷思
+    field: 認知捷思／判斷與決策
+    desc: Tversky 與 Kahneman（1974）提出：人估計數值時從起始值（錨點）出發再調整，但調整通常不足，估計值因此偏向錨點；選擇可及性模型（Strack & Mussweiler, 1997）補充錨點會讓一致的資訊更容易被提取。
+    edges:
+    - [Anchor Value, Numerical Estimate, +]
+    - [Anchor Value, Anchor-Consistent Information Accessibility, +]
+    - [Anchor-Consistent Information Accessibility, Numerical Estimate, +]
+    - [Anchor Value, Willingness to Pay, +]
+    - [Anchor Value, Final Agreement Price, +]
+    - [Cognitive Load, Anchor Value -> Numerical Estimate, m]
+    - [Time Pressure, Anchor Value -> Numerical Estimate, m]
+    - [Domain Expertise, Anchor Value -> Numerical Estimate, m]
+    - [Positive Mood, Anchor Value -> Numerical Estimate, m]
+    - [Forewarning, Anchor Value -> Numerical Estimate, m]
+    refs:
+    - {title: Anchoring effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Anchoring_effect'}
+    - {title: Anchoring Bias & Adjustment Heuristic (Simply Psychology), url: 'https://www.simplypsychology.org/what-is-the-anchoring-bias.html'}
+    enrich_notes: 主效果（錨點愈高估計愈高）與選擇可及性中介為來源明寫；Final Agreement Price 對應談判首次出價研究（Galinsky & Mussweiler）。調節方向：認知負荷、時間壓力使調整更不足（加強）；專業經驗略減弱但專家仍受影響；心情方向文獻不一致（早期說悲傷減弱、近期說悲傷加強），只標
+      m；預警與金錢誘因幾乎無法消除效果。
+  Availability Heuristic:
+    abbr: Avail
+    name: Availability Heuristic
+    zh: 可得性捷思
+    field: 認知捷思／判斷與決策
+    desc: Tversky 與 Kahneman（1973）提出：人以「實例多容易想起來」來判斷事件的頻率或機率，因此生動、近期、媒體大量報導的事件會被高估；Schwarz 等人（1991）進一步區分提取的容易度與提取的內容兩種訊息來源。
+    edges:
+    - [Media Agenda Salience, Ease of Recall, +]
+    - [Instance Vividness, Ease of Recall, +]
+    - [Experience, Ease of Recall, +]
+    - [Time Since Exposure, Ease of Recall, '-']
+    - [Ease of Recall, Perceived Frequency, +]
+    - [Perceived Frequency, Perceived Risk, +]
+    - [Perceived Risk, Avoidance Behavior, +]
+    - [Involvement, Ease of Recall -> Perceived Frequency, m]
+    - [Topic Knowledge, Ease of Recall -> Perceived Frequency, m]
+    refs:
+    - {title: Availability heuristic (Wikipedia), url: 'https://en.wikipedia.org/wiki/Availability_heuristic'}
+    - {title: 'The Availability Heuristic Revisited: Ease of Recall and Content of Recall (Cambridge, Heuristics and Biases
+        chapter abstract)', url: 'https://www.cambridge.org/core/books/abs/heuristics-and-biases/availability-heuristic-revisited-ease-of-recall-and-content-of-recall-as-distinct-sources-of-information/326E492EBDC9BBA38F159B297B550443'}
+    enrich_notes: 前因（媒體報導量、生動性、親身經驗、時間間隔）與主效果為來源明寫；Media Agenda Salience 沿用既有變數代表媒體報導量。Schwarz 的條件：處理動機低、且不質疑容易度的資訊價值時才依賴容易度，故以
+      Involvement 與 Topic Knowledge 作減弱調節。Perceived Risk -> Avoidance Behavior 是常見實證延伸（風險知覺後果），非原始論文。
+  Representativeness Heuristic:
+    abbr: Repr
+    name: Representativeness Heuristic
+    zh: 代表性捷思
+    field: 認知捷思／判斷與決策
+    desc: Kahneman 與 Tversky（1972）提出：人以「個案與類別原型有多相似」來判斷它屬於該類別的機率，因而忽略基本率與樣本大小，產生基本率忽略、連言謬誤與刻板印象判斷。
+    edges:
+    - [Similarity to Prototype, Perceived Probability, +]
+    - [Statistical Information, Perceived Probability, +]
+    - [Similarity to Prototype, Statistical Information -> Perceived Probability, m]
+    - [Similarity to Prototype, Social Categorization, +]
+    - [Similarity to Prototype, Decision Error, +]
+    - [Statistical Literacy, Similarity to Prototype -> Perceived Probability, m]
+    - [Cognitive Load, Similarity to Prototype -> Perceived Probability, m]
+    - [Base Rate Causal Relevance, Statistical Information -> Perceived Probability, m]
+    refs:
+    - {title: Representativeness heuristic (Wikipedia), url: 'https://en.wikipedia.org/wiki/Representativeness_heuristic'}
+    - {title: Representativeness Heuristic (The Decision Lab), url: 'https://thedecisionlab.com/biases/representativeness-heuristic'}
+    enrich_notes: Statistical Information 沿用既有變數代表基本率資訊；其對機率判斷的效果在理論上應為正，但實證上被相似度壓過（基本率忽略），故以 Similarity to Prototype 作減弱調節。統計訓練、基本率具因果關聯時會提高基本率使用，為來源明寫；認知負荷加強捷思依賴屬常見實證版本。
+  Endowment Effect:
+    abbr: Endow
+    name: Endowment Effect
+    zh: 稟賦效應
+    field: 行為經濟學
+    desc: Thaler（1980）命名、Kahneman、Knetsch 與 Thaler（1990）以馬克杯實驗驗證：人一旦擁有某物就給它更高價值，願意接受的賣價遠高於願意支付的買價，交易量低於 Coase 定理預測；以損失趨避與參考點依賴解釋。
+    edges:
+    - [Ownership, Reference Point, +]
+    - [Ownership, Psychological Ownership, +]
+    - [Ownership, Willingness to Accept, +]
+    - [Psychological Ownership, Willingness to Accept, +]
+    - [Loss Aversion, Willingness to Accept, +]
+    - [Willingness to Accept, Trading Volume, '-']
+    - [Ownership, Status Quo Continuation, +]
+    - [Ownership Duration, Ownership -> Willingness to Accept, m]
+    - [Emotional Attachment, Ownership -> Willingness to Accept, m]
+    - [Experience, Ownership -> Willingness to Accept, m]
+    - [Substitutability, Ownership -> Willingness to Accept, m]
+    refs:
+    - {title: Endowment effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Endowment_effect'}
+    - {title: Endowment Effect (The Decision Lab), url: 'https://thedecisionlab.com/biases/endowment-effect'}
+    enrich_notes: WTA>WTP 與交易量不足為原始論文明寫；心理擁有感路徑是後續解釋。Experience 代表市場經驗：List（2003）等交易員研究顯示減弱，但 Wikipedia 引用的狩獵採集社會研究顯示有市場接觸者效果反而較強，方向有爭議，只標
+      m。可替代品、極短暫擁有、瑣碎物品時效果變弱。
+  Mental Accounting:
+    abbr: MentAcc
+    name: Mental Accounting
+    zh: 心理帳戶
+    field: 行為經濟學
+    desc: Thaler（1985, 1999）提出：人把金錢依來源與用途分到不同的心理帳戶各自記帳，違反金錢可替代性；購買的總效用等於取得效用加上交易效用（相對參考價的划算感），付款與消費脫鉤會降低付錢的痛感。
+    edges:
+    - [Price, Acquisition Utility, '-']
+    - [Acquisition Utility, Purchase Intention, +]
+    - [Price Difference from Reference, Transaction Utility, '-']
+    - [Transaction Utility, Purchase Intention, +]
+    - [Budget Category Depletion, Purchase Intention, '-']
+    - [Payment Decoupling, Pain of Paying, '-']
+    - [Pain of Paying, Discretionary Spending, '-']
+    - [Windfall Income, Discretionary Spending, +]
+    - [Prior Investment, Persistence, +]
+    refs:
+    - {title: Mental accounting (Wikipedia), url: 'https://en.wikipedia.org/wiki/Mental_accounting'}
+    - {title: Thaler (1985) Mental Accounting and Consumer Choice (Fermat's Library), url: 'https://fermatslibrary.com/s/mental-accounting-and-consumer-choice'}
+    enrich_notes: 取得效用、交易效用、家庭預算為 1985 年摘要明寫；Price Difference from Reference 沿用既有變數（實付價高於參考價時交易效用為負）。付款脫鉤與信用卡、預算類別用罄停止消費為
+      Wikipedia 明寫；意外之財花得較隨意（house money）與沉沒成本帳戶來自搜尋結果的二手整理，屬常見實證版本。
+  Intertemporal Choice Theory:
+    note: Intertemporal Choice Theory
+    abbr: HypDisc
+    name: Intertemporal Choice / Hyperbolic Discounting
+    zh: 跨期選擇與雙曲折現
+    field: 行為經濟學／時間偏好
+    desc: Ainslie 以雙曲線描述延遲報酬的貶值，Laibson（1997）以準雙曲 β-δ 模型形式化：人對眼前報酬有現時偏誤，近期折現陡、遠期折現平，因此偏好會隨時間反轉，造成拖延、儲蓄不足；有自覺者會使用承諾機制自我約束。
+    edges:
+    - [Reward Delay, Present Value of Reward, '-']
+    - [Present Bias, Reward Delay -> Present Value of Reward, m]
+    - [Reward Magnitude, Reward Delay -> Present Value of Reward, m]
+    - [Present Value of Reward, Behavioral Intention, +]
+    - [Present Bias, Preference Reversal, +]
+    - [Present Bias, Procrastination, +]
+    - [Present Bias, Savings Behavior, '-']
+    - [Self-Control, Procrastination, '-']
+    - [Present Bias Awareness, Commitment Device Use, +]
+    - [Commitment Device Use, Savings Behavior, +]
+    refs:
+    - {title: Hyperbolic discounting (Wikipedia), url: 'https://en.wikipedia.org/wiki/Hyperbolic_discounting'}
+    - {title: 'What is hyperbolic discounting and present bias? (eco3min)', url: 'https://eco3min.fr/en/hyperbolic-discounting-present-bias/'}
+    enrich_notes: 延遲降低現值、現時偏誤造成偏好反轉與儲蓄不足、老練者（sophisticated）使用承諾機制為來源明寫。Reward Magnitude 調節（金額愈大折現率愈低的 magnitude effect）為跨期選擇文獻常見發現，兩個開過的來源未直接討論。Self-Control
+      為常見實證延伸。
+  Choice Overload:
+    abbr: ChOver
+    name: Choice Overload
+    zh: 選擇超載
+    field: 消費者行為／判斷與決策
+    desc: Iyengar 與 Lepper（2000）提出、Chernev 等（2015）統合分析確認：選項過多會提高決策困難，降低滿意度與信心、增加後悔、延遲與轉換；效果只在選項集合複雜、偏好不確定、任務困難、以省力為目標時顯著。
+    edges:
+    - [Assortment Size, Decision Difficulty, +]
+    - [Assortment Size, Choice Freedom, +]
+    - [Decision Difficulty, Choice Deferral, +]
+    - [Decision Difficulty, Decision Satisfaction, '-']
+    - [Decision Difficulty, Regret, +]
+    - [Decision Difficulty, Switching Intention, +]
+    - [Decision Difficulty, Decision Confidence, '-']
+    - [Choice Set Complexity, Assortment Size -> Decision Difficulty, m]
+    - [Preference Uncertainty, Assortment Size -> Decision Difficulty, m]
+    - [Effort Minimization Goal, Assortment Size -> Decision Difficulty, m]
+    - [Domain Expertise, Assortment Size -> Decision Difficulty, m]
+    - [Time Pressure, Assortment Size -> Decision Difficulty, m]
+    refs:
+    - {title: 'Chernev, Böckenholt & Goodman (2015) Choice overload: A conceptual review and meta-analysis (Kellogg)', url: 'https://www.kellogg.northwestern.edu/academics-research/research/detail/2015/when-product-assortment-leads-to-choice-overload-a-conceptual/'}
+    - {title: Overchoice (Wikipedia), url: 'https://en.wikipedia.org/wiki/Overchoice'}
+    enrich_notes: 四個調節變數與四種結果指標（滿意／信心、後悔、延遲、轉換）為 2015 年統合分析明寫；Scheibehenne 等（2010）統合分析整體效果近零，故效果依賴調節。Assortment Size -> Choice
+      Freedom 對應 Iyengar & Lepper 的「多選項更享受過程」。專業熟悉度與時間壓力為 Wikipedia 列出的前提條件。
+  Default Effect and Nudge Theory:
+    abbr: Default
+    name: Default Effect and Nudge Theory
+    zh: 預設效應與推力理論
+    field: 行為經濟學／選擇架構
+    desc: Johnson 與 Goldstein（2003）以器官捐贈實證、Thaler 與 Sunstein 推力理論推廣：被設為預設的選項更容易被選中，機制是省力與惰性、把預設當成隱含推薦、以預設為參考點的損失趨避；效果大小高度依賴情境與框架。
+    edges:
+    - [Default Status of Option, Option Choice Share, +]
+    - [Default Status of Option, Reference Point, +]
+    - [Default Status of Option, Implied Endorsement, +]
+    - [Implied Endorsement, Option Choice Share, +]
+    - [Gain Framing, Option Choice Share, +]
+    - [Option Choice Share, Behavior, +]
+    - [Loss Aversion, Default Status of Option -> Option Choice Share, m]
+    - [Switching cost, Default Status of Option -> Option Choice Share, m]
+    - [Decision Difficulty, Default Status of Option -> Option Choice Share, m]
+    - [Preference Strength, Default Status of Option -> Option Choice Share, m]
+    - [Trust, Default Status of Option -> Implied Endorsement, m]
+    refs:
+    - {title: Default effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Default_effect'}
+    - {title: 'Replication of Johnson & Goldstein (2003) default effects (Meta-Psychology, Linnaeus University)', url: 'https://open.lnu.se/index.php/metapsychology/article/view/3108'}
+    enrich_notes: 三個機制（省力、隱含推薦、參考點損失趨避）為 Wikipedia 明寫，故以 Switching cost、Trust、Loss Aversion 作調節。Gain Framing 來自複製研究：正向框架提高同意率且預設效果依框架而定。Option
+      Choice Share -> Behavior 標示「選擇」不等於「結果」（Defaults are not a panacea），實務上連結可能很弱。Preference Strength 減弱為常見實證版本。既有的 Status
+      Quo Bias Theory 處理同一現象的使用者抗拒面，本理論聚焦選擇架構。
+  Sunk Cost Fallacy:
+    abbr: SunkCost
+    name: Sunk Cost Fallacy
+    zh: 沉沒成本謬誤
+    field: 行為經濟學／判斷與決策
+    desc: Arkes 與 Blumer（1985）提出：人在投入金錢、時間或心力之後更傾向繼續原本的行動，並高估計畫成功的機率，主要動機是不想顯得浪費；與 Staw 的承諾升高研究相接，個人責任會放大效果。
+    edges:
+    - [Prior Investment, Persistence, +]
+    - [Prior Investment, Waste Aversion, +]
+    - [Waste Aversion, Persistence, +]
+    - [Prior Investment, Expectancy, +]
+    - [Expectancy, Persistence, +]
+    - [Prior Investment, Escalation of Commitment, +]
+    - [Escalation of Commitment, Decision Error, +]
+    - [Personal Responsibility for Decision, Prior Investment -> Escalation of Commitment, m]
+    - [Accountability, Prior Investment -> Escalation of Commitment, m]
+    - [Cognitive Load, Prior Investment -> Persistence, m]
+    - [Anxiety, Prior Investment -> Persistence, m]
+    refs:
+    - {title: Sunk cost (Wikipedia), url: 'https://en.wikipedia.org/wiki/Sunk_cost'}
+    - {title: Arkes & Blumer (1985) The Psychology of Sunk Cost (abstract summary), url: 'https://andrewclark.super.site/all-media/the-psychology-of-sunk-cost'}
+    enrich_notes: Expectancy 沿用既有變數代表成功機率的主觀估計（Arkes & Blumer 發現有沉沒成本者高估成功率）。個人責任的調節有爭議：Staw & Fox 發現自己主導的計畫投入更多，Arkes & Blumer
+      本身未發現一致差異，Simonson & Nye 發現問責減弱效果，故分別標 m。焦慮與認知負荷加強效果出自 Wikipedia 引用的 Dijkstra & Hong。
+  Processing Fluency Theory:
+    abbr: Fluency
+    name: Processing Fluency Theory
+    zh: 處理流暢性理論
+    field: 社會認知／說服與訊息處理
+    desc: Reber、Schwarz 與 Winkielman（2004）、Alter 與 Oppenheimer（2009）整合：刺激處理得愈容易（重複、清晰、易唸、典型），人愈覺得它熟悉、喜歡、為真、有把握；流暢感是後設認知線索，察覺來源即打折。
+    edges:
+    - [Mere Exposure, Processing Fluency, +]
+    - [Perceptual Clarity, Processing Fluency, +]
+    - [Pronounceability, Processing Fluency, +]
+    - [Prototypicality, Processing Fluency, +]
+    - [Processing Fluency, Perceived Truth, +]
+    - [Processing Fluency, Liking, +]
+    - [Processing Fluency, Perceived Familiarity, +]
+    - [Processing Fluency, Decision Confidence, +]
+    - [Processing Fluency, Systematic Processing, '-']
+    - [Fluency Source Awareness, Processing Fluency -> Perceived Truth, m]
+    - [Fluency Source Awareness, Processing Fluency -> Liking, m]
+    refs:
+    - {title: Processing fluency (Wikipedia), url: 'https://en.wikipedia.org/wiki/Processing_fluency'}
+    - {title: Processing fluency theory (In-Mind glossary), url: 'https://in-mind.org/glossary/processing-fluency-theory'}
+    enrich_notes: 重複、字體清晰、押韻、易唸為前因與真實感、喜好、熟悉感、信心為後果均為 Wikipedia 明寫；高流暢導致較淺處理亦明寫。Prototypicality 為 Reber 等人美感流暢理論的前因，Wikipedia
+      未列。來源察覺（misattribution／discounting）調節為流暢性文獻的標準邊界條件，兩個來源只提到誤歸因。
+  Mere Exposure Effect:
+    abbr: MereExp
+    name: Mere Exposure Effect
+    zh: 單純曝光效應
+    field: 社會認知／廣告與消費者行為
+    desc: Zajonc（1968）提出：單純重複接觸一個刺激就足以提高對它的好感；Bornstein（1989）統合 208 個實驗（r = .26）指出效果在短暫呈現、刺激新穎、未察覺曝光、曝光與評價之間有延遲時較強，過度曝光則出現倒
+      U 型下滑。
+    edges:
+    - [Exposure Frequency, Liking, +]
+    - [Exposure Frequency, Processing Fluency, +]
+    - [Processing Fluency, Liking, +]
+    - [Exposure Frequency, Perceived Familiarity, +]
+    - [Exposure Frequency, Satiation, +]
+    - [Satiation, Liking, '-']
+    - [Liking, Brand Attitude, +]
+    - [Stimulus Complexity, Exposure Frequency -> Liking, m]
+    - [Exposure Duration, Exposure Frequency -> Liking, m]
+    - [Time Since Exposure, Exposure Frequency -> Liking, m]
+    - [Exposure Awareness, Exposure Frequency -> Liking, m]
+    - [Initial Stimulus Valence, Exposure Frequency -> Liking, m]
+    refs:
+    - {title: Mere-exposure effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Mere-exposure_effect'}
+    - {title: 'Mere exposure effect: replication status (atticusli.com)', url: 'https://atticusli.com/replication-crisis/mere-exposure-effect/'}
+    enrich_notes: 倒 U 型以 Exposure Frequency -> Satiation -> Liking 兩段表示（Montoya 等 2017）。調節方向：刺激複雜者較強、呈現短暫者較強、延遲（Time Since
+      Exposure 沿用既有變數）較強、察覺曝光較弱、初始負向刺激不會變喜歡甚至產生抗拒，皆為來源明寫。流暢性中介來自 Wikipedia 處理流暢性條目。Liking -> Brand Attitude 為廣告應用的常見延伸，Wikipedia
+      指廣告結果不一致、對新品牌最有效。
+  Halo Effect:
+    note: Halo Effect
+    abbr: Halo
+    name: Halo Effect
+    zh: 月暈效應
+    field: 社會認知
+    desc: Thorndike（1920）命名、Nisbett 與 Wilson（1977）實驗確認：對人、品牌或產品的整體印象會外溢到彼此無關的個別屬性評價上，外貌吸引力、溫暖、品牌聲譽是常見觸發因素，負向版本為尖角效應。
+    edges:
+    - [Source Attractiveness, Overall Impression, +]
+    - [Perceived Warmth, Overall Impression, +]
+    - [Brand Reputation, Overall Impression, +]
+    - [Overall Impression, Attribute Evaluation, +]
+    - [Overall Impression, Perceived Quality, +]
+    - [Overall Impression, Perceived Credibility, +]
+    - [Attribute Evaluation, Purchase Intention, +]
+    - [Positive Mood, Overall Impression -> Attribute Evaluation, m]
+    - [Diagnostic Information Availability, Overall Impression -> Attribute Evaluation, m]
+    - [Domain Expertise, Overall Impression -> Attribute Evaluation, m]
+    - [Structured Rating Procedure, Overall Impression -> Attribute Evaluation, m]
+    refs:
+    - {title: Halo effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Halo_effect'}
+    - {title: Halo Effect (Simply Psychology), url: 'https://www.simplypsychology.org/halo-effect.html'}
+    enrich_notes: Source Attractiveness 沿用既有變數代表外貌吸引力（Dion 等 1972）。整體印象 -> 屬性評價為核心邊；品牌聲譽外溢（iPod 到其他產品）、健康月暈、績效考核為來源明寫的應用。正向心情加強出自
+      Forgas（2011）；結構化量表、多位評分者、盲評可減弱為 Simply Psychology 明寫；資訊量與專業度減弱為常見實證版本。
+  Negativity Bias:
+    note: Negativity Bias
+    abbr: NegBias
+    name: Negativity Bias
+    zh: 負向偏誤
+    field: 社會認知／傳播效果
+    desc: Rozin 與 Royzman（2001）與 Baumeister 等（2001）整理：同等強度下負向事件比正向事件更能吸引注意、更被記住、更影響印象與決策；負向資訊被視為更具診斷性，具有負向強度、陡峭梯度、負向支配與負向分化四特徵。
+    edges:
+    - [Negative Information Exposure, Attention Allocation, +]
+    - [Negative Information Exposure, Arousal, +]
+    - [Negative Information Exposure, Recall, +]
+    - [Negative Information Exposure, Perceived Diagnosticity, +]
+    - [Perceived Diagnosticity, Attitude Change, +]
+    - [Negative Information Exposure, Overall Impression, '-']
+    - [Negative Information Exposure, Trust, '-']
+    - [Negative Information Exposure, Selective Exposure, +]
+    - [Age, Negative Information Exposure -> Attention Allocation, m]
+    - [Negative Emotional Arousal, Negative Information Exposure -> Overall Impression, m]
+    refs:
+    - {title: Negativity bias (Wikipedia), url: 'https://en.wikipedia.org/wiki/Negativity_bias'}
+    - {title: Negativity Bias (The Decision Lab), url: 'https://thedecisionlab.com/biases/negativity-bias'}
+    enrich_notes: Negative Information Exposure 的邊讀作「資訊愈負向，效果愈大」（相對於同強度正向資訊）。注意、記憶、印象、診斷性為來源明寫；生理喚起與新聞的關聯來自 Decision Lab 引用的
+      17 國研究（Soroka 等）。Selective Exposure（偏好點選負面新聞）是常見實證版本，兩個來源只提到「壞消息賣得好」。年齡調節對應老年人的正向效應（Wikipedia 指仍有許多老人保有負向偏誤）。
+  Primacy Effects:
+    note: Primacy Effects
+    abbr: PrimRec
+    name: Primacy and Recency Effects
+    zh: 初始效應與時近效應
+    field: 認知心理學／印象形成
+    desc: Ebbinghaus 發現、Murdock（1962）確立序列位置曲線：最先與最後出現的項目記得最好，前者靠複誦進入長期記憶，後者靠仍在短期記憶；Asch（1946）顯示在印象形成中最先出現的特質會主導整體印象。
+    edges:
+    - [Serial Position Earliness, Rehearsal Amount, +]
+    - [Rehearsal Amount, Recall, +]
+    - [Serial Position Earliness, Recall, +]
+    - [Serial Position Recency, Short-Term Memory Availability, +]
+    - [Short-Term Memory Availability, Recall, +]
+    - [Serial Position Recency, Recall, +]
+    - [Presentation Rate, Serial Position Earliness -> Rehearsal Amount, m]
+    - [List Length, Serial Position Earliness -> Recall, m]
+    - [Time Delay, Serial Position Recency -> Recall, m]
+    - [Serial Position Earliness, Information Weight in Judgment, +]
+    - [Information Weight in Judgment, Overall Impression, +]
+    refs:
+    - {title: Serial-position effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Serial-position_effect'}
+    - {title: 'Serial Position Effect: Glanzer & Cunitz (1966) (Simply Psychology)', url: 'https://www.simplypsychology.org/primacy-recency.html'}
+    enrich_notes: Presentation Rate 定義為呈現速度：愈快初始效應愈弱（慢速呈現提高早期項目回憶）；清單愈長初始效應愈弱；Time Delay 沿用既有變數代表回憶前的干擾延遲，30 秒即可消除時近效應但不影響初始效應（Glanzer
+      & Cunitz 1966），兩者皆為來源明寫。Asch 印象形成的初始效應以 Information Weight in Judgment 中介表示。說服訊息的順序效果（先說／後說）兩個來源未涵蓋，未列入。
+  Social Proof Theory:
+    note: Social Proof Theory
+    abbr: SocProof
+    name: Social Proof
+    zh: 社會認同／社會證據
+    field: 社會影響／說服
+    desc: Cialdini（1984）命名的資訊性社會影響：人在不確定如何行動時會參考他人的行為來判斷什麼是正確的，他人愈多、愈與自己相似影響愈大；評論數、按讚數等線索在線上放大此效果，也可能形成資訊瀑布讓群體過早收斂。
+    edges:
+    - [Review Volume, Descriptive Norm, +]
+    - [Bandwagon Cues, Descriptive Norm, +]
+    - [Number of Endorsers, Descriptive Norm, +]
+    - [Descriptive Norm, Behavioral Intention, +]
+    - [Descriptive Norm, Behavior, +]
+    - [Descriptive Norm, Perceived Credibility, +]
+    - [Descriptive Norm, Information Cascade, +]
+    - [Information Cascade, Decision Accuracy, '-']
+    - [Situational Uncertainty, Descriptive Norm -> Behavioral Intention, m]
+    - [Perceived Similarity, Descriptive Norm -> Behavioral Intention, m]
+    - [Involvement, Descriptive Norm -> Behavioral Intention, m]
+    refs:
+    - {title: Social proof (Wikipedia), url: 'https://en.wikipedia.org/wiki/Social_proof'}
+    - {title: 'The 7 Principles of Persuasion: Social Proof (Influence at Work, Cialdini)', url: 'https://www.influenceatwork.com/7-principles-of-persuasion/'}
+    enrich_notes: Descriptive Norm（他人實際怎麼做的知覺）為社會證據的核心構念，與既有 Social Norm／Subjective Norm 區分。不確定性與相似性兩大條件、捐款者名單長度（Number of
+      Endorsers）、資訊瀑布為來源明寫；旅館毛巾研究顯示「相似他人怎麼做」最有效。Involvement 對應目擊任務「任務重要時從眾率 51% 對 35%」。既有的 Bandwagon Heuristic 處理線索層次，本理論處理規範知覺層次。
+  Focus Theory of Normative Conduct:
+    note: Focus Theory of Normative Conduct
+    abbr: FTNC
+    name: Focus Theory of Normative Conduct
+    zh: 規範行為聚焦理論
+    field: 社會影響／規範
+    desc: Cialdini、Reno 與 Kallgren（1990）以五個亂丟垃圾田野實驗提出：規範只在當下被注意到（規範聚焦）時才影響行為，並區分描述性規範（多數人怎麼做）與指令性規範（多數人贊成什麼）；負向描述性規範會把不當行為正常化。
+    edges:
+    - [Norm Salience Cue, Normative Focus, +]
+    - [Descriptive Norm, Behavior, +]
+    - [Injunctive Norm, Behavior, +]
+    - [Normative Focus, Descriptive Norm -> Behavior, m]
+    - [Normative Focus, Injunctive Norm -> Behavior, m]
+    - [Prior Behavior Frequency, Descriptive Norm -> Behavior, m]
+    - [Injunctive Norm, Descriptive Norm -> Behavior, m]
+    - [Injunctive Norm, Personal Norm, +]
+    - [Personal Norm, Behavior, +]
+    refs:
+    - {title: 'Social Norms chapter, Open Social Psychology (FORRT)', url: 'https://forrt.org/open-social-psychology/chapter22.html'}
+    - {title: 'Cialdini, Reno & Kallgren (1990) abstract (CBSM)', url: 'https://cbsm.com/articles/31496-a-focus-theory-of-normative-conduct-recycling-the-concept-of-norms-to-reduce-littering-in-public-pla'}
+    enrich_notes: Behavior 指與規範一致的行為（如不亂丟）。規範聚焦為必要條件故以調節表示；Norm Salience Cue 涵蓋環境狀態（乾淨／髒亂）與他人示範行為。Prior Behavior Frequency
+      調節對應 Schultz 等（2007）回彈效應：低於平均者得知平均值後反而增加用電，而指令性規範訊息可消除回彈，故 Injunctive Norm 也作調節。Personal Norm 路徑對應 FORRT 引用的統合分析：內化規範預測力更強。Reno
+      等（1993）跨情境穩健性未在開過的來源中確認。
+  Rational Choice Theory RCT:
+    note: Rational Choice Theory RCT
+    abbr: RCT
+    name: Rational Choice Theory
+    zh: 理性選擇理論
+    field: 經濟學／社會學／犯罪學
+    desc: 承自 Adam Smith，由 Becker（1976）、Coleman（1990）推廣到社會行為：個人有完整且可遞移的偏好，在資源與資訊限制下比較各選項的預期效益、成本與發生機率，選擇預期效用最高者；Simon 的有限理性是主要修正。
+    edges:
+    - [Benefit, Expected Utility, +]
+    - [Perceived Cost, Expected Utility, '-']
+    - [Outcome Probability, Expected Utility, +]
+    - [Perceived Reward, Benefit, +]
+    - [Sanction Severity, Perceived Cost, +]
+    - [Expected Utility, Behavioral Intention, +]
+    - [Behavioral Intention, Behavior, +]
+    - [Resource Constraint, Expected Utility -> Behavioral Intention, m]
+    - [Bounded Rationality, Expected Utility -> Behavioral Intention, m]
+    - [Information Access, Bounded Rationality, '-']
+    refs:
+    - {title: Rational choice theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Rational_choice_theory'}
+    - {title: Rational Choice Theory (Simply Psychology), url: 'https://www.simplypsychology.org/rational-choice-theory.html'}
+    enrich_notes: RCT 是公理化框架而非實證模型，邊是依其假設翻成可檢驗形式：效益、成本、機率構成預期效用，預算限制與有限理性削弱效用對行為的預測。Sanction Severity 對應犯罪學應用（Cornish & Clarke
+      的選擇結構），既有 Deterrence Theory 有更完整版本。
+  Cultivation Theory:
+    note: Cultivation Theory
+    abbr: Cultiv
+    name: Cultivation Theory
+    zh: 涵化理論
+    field: 傳播效果
+    desc: Gerbner 與 Gross（1976）提出：長期大量收看電視會讓重度觀眾對社會現實的認知向電視世界靠攏，高估暴力犯罪、更不信任他人（險惡世界症候群）；1980 年加入主流化（不同背景觀眾趨同）與共鳴（內容與親身經驗吻合時加倍）。
+    edges:
+    - [Media Use, Perceived Frequency, +]
+    - [Media Use, Mean World Belief, +]
+    - [Media Use, Fear, +]
+    - [Media Use, Trust, '-']
+    - [Violent Content Exposure, Mean World Belief, +]
+    - [Mean World Belief, Perceived Risk, +]
+    - [Demographic Differences, Mean World Belief, +]
+    - [Victimization Experience, Media Use -> Mean World Belief, m]
+    - [Media Use, Demographic Differences -> Mean World Belief, m]
+    - [Perceived Realism, Media Use -> Mean World Belief, m]
+    - [Transportation, Media Use -> Mean World Belief, m]
+    refs:
+    - {title: Cultivation theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Cultivation_theory'}
+    - {title: Cultivation Theory in Media (Simply Psychology), url: 'https://www.simplypsychology.org/cultivation-theory.html'}
+    enrich_notes: Media Use 沿用既有變數代表收視量（重度對輕度觀眾）。Media Use -> Perceived Frequency 是第一序效果（高估犯罪、警察比例），Mean World Belief、Fear、Trust
+      是第二序效果。主流化以「收視量削弱人口變項對信念的影響」的調節表示；共鳴以受害經驗加強表示。Perceived Realism 與 Transportation 為後續研究的促進條件，兩個來源只簡短提及。效果量小（2021 統合分析
+      r 約 .10）且因果方向有爭議（恐懼者可能看更多電視），畫圖時應標示。既有 Violent Content Exposure 對應類型效果（地方新聞、警匪劇）。
+  Framing Theory:
+    note: Framing Theory
+    abbr: Framing
+    name: Framing Theory (Communication)
+    zh: 框架理論（傳播學）
+    field: 傳播效果／政治傳播
+    desc: Entman（1993）定義：框架是選擇現實的某些面向並使之凸顯，以推動特定的問題定義、因果詮釋、道德評價與解方；Scheufele（1999）分框架建構與框架設定，Chong 與 Druckman（2007）指出效果取決於框架強度與競爭。
+    edges:
+    - [Routines, Frames, +]
+    - [Frames, Media Attribute Salience, +]
+    - [Media Attribute Salience, Issue Accessibility, +]
+    - [Frames, Consideration Applicability, +]
+    - [Consideration Applicability, Attitude, +]
+    - [Issue Accessibility, Attitude, +]
+    - [Frames, Responsibility Attribution, +]
+    - [Attitude, Policy Support, +]
+    - [Frame Strength, Frames -> Consideration Applicability, m]
+    - [Conflicting Frames, Frames -> Consideration Applicability, m]
+    - [Perceived Credibility, Frames -> Consideration Applicability, m]
+    - [Topic Knowledge, Frames -> Consideration Applicability, m]
+    - [Personal Values, Frames -> Consideration Applicability, m]
+    refs:
+    - {title: Framing (social sciences) (Wikipedia), url: 'https://en.wikipedia.org/wiki/Framing_(social_sciences)'}
+    - {title: Notes on Chong & Druckman (2007) Framing Public Opinion in Competitive Democracies (adambrown.info), url: 'https://adambrown.info/p/notes/chong_and_druckman_framing_public_opinion_in_competitive_democracies'}
+    enrich_notes: Frames 與 Media Attribute Salience 沿用既有變數；Routines -> Frames 是框架建構（新聞常規影響記者採用的框架）。效果機制採 Chong & Druckman
+      的可用性、可及性、適用性三段，Wikipedia 指近期研究支持適用性勝過可及性，故 Issue Accessibility -> Attitude 較弱。Frames -> Responsibility Attribution 對應
+      Iyengar 的情節式框架使觀眾歸咎個人。強框架才有效、競爭框架互相抵銷並在高政治知識者中出現對比效果為筆記明寫；來源可信度與價值觀調節為框架文獻的常見版本，Chong & Druckman 原文 PDF 抓取失敗未直接讀到。
+  SOR Model:
+    note: SOR Model
+    abbr: SOR
+    name: Stimulus-Organism-Response Model
+    zh: 刺激－有機體－反應模型
+    field: 環境心理學／消費者行為
+    desc: Mehrabian 與 Russell（1974）在環境心理學提出、Jacoby（2002）修訂：外在環境或行銷刺激先改變個體的內在認知與情感狀態（愉悅、喚起、信任、知覺價值、心流），再由這些狀態驅動趨近或迴避反應；電商與氛圍研究常用。
+    edges:
+    - [Atmospheric Cues, Joy, +]
+    - [Atmospheric Cues, Arousal, +]
+    - [Perceived Site Quality, Trust, +]
+    - [Perceived Site Quality, Perceived Value, +]
+    - [Social Cues, Trust, +]
+    - [Joy, Approach Behavior, +]
+    - [Arousal, Approach Behavior, +]
+    - [Joy, Arousal -> Approach Behavior, m]
+    - [Joy, Avoidance Behavior, '-']
+    - [Joy, Impulse Buying, +]
+    - [Trust, Purchase Intention, +]
+    - [Perceived Value, Purchase Intention, +]
+    - [Flow, Purchase Intention, +]
+    - [Task Complexity, Social Cues -> Trust, m]
+    refs:
+    - {title: 'A Systematic Review of the S-O-R Model Application in Consumer Purchase Behaviors (IMAGE journal, UNIRAZAK)',
+      url: 'https://ojs.unirazak.edu.my/index.php/image/article/view/253'}
+    - {title: 'Exploring consumers response to text-based chatbots in e-commerce: S-O-R with task complexity and disclosure
+        (arXiv 2401.12247)', url: 'https://arxiv.org/abs/2401.12247'}
+    enrich_notes: SOR 是後設框架，邊取系統性回顧列出的典型路徑：刺激（氛圍線索、網站品質、社會線索／聊天機器人友善度）、有機體（Joy 沿用既有變數代表 pleasure、Arousal、Trust、Perceived Value、Flow）、反應（趨近／迴避、購買意圖、衝動購買）。Joy
+      調節 Arousal -> Approach 對應 Mehrabian-Russell 原始主張：喚起只在愉悅環境中提高趨近。Task Complexity 調節出自 arXiv 聊天機器人研究（任務複雜削弱友善度到信任）。Dominance
+      構面因後續研究多半省略未列入。
+  Innovation Resistance Theory IRT:
+    note: Innovation Resistance Theory IRT
+    abbr: IRT
+    name: Innovation Resistance Theory
+    zh: 創新抗拒理論
+    field: 創新採用／消費者行為
+    desc: Ram 與 Sheth（1989）提出：消費者抗拒創新是因為創新改變了令人滿意的現狀或與既有信念衝突，抗拒來源分為功能性障礙（使用、價值、風險）與心理性障礙（傳統、形象）；行銷者應診斷障礙來源並針對性化解，而非被動接受抗拒。
+    edges:
+    - [Usage Barrier, User Resistance, +]
+    - [Value Barrier, User Resistance, +]
+    - [Risk Barrier, User Resistance, +]
+    - [Tradition Barrier, User Resistance, +]
+    - [Image Barrier, User Resistance, +]
+    - [User Resistance, Adoption, '-']
+    - [Complexity, Usage Barrier, +]
+    - [Relative Advantage, Value Barrier, '-']
+    - [Perceived Risk, Risk Barrier, +]
+    - [Habit, Tradition Barrier, +]
+    - [Innovativeness, Value Barrier -> User Resistance, m]
+    - [Self-Efficacy, Usage Barrier -> User Resistance, m]
+    refs:
+    - {title: 'Ram & Sheth (1989) Consumer Resistance to Innovations: The Marketing Problem and its Solutions (Emerald abstract)',
+      url: 'https://www.emerald.com/insight/content/doi/10.1108/EUM0000000002542/full/html'}
+    - {title: Alshallaqi et al. (2022) applying Ram & Sheth's IRT to productivity apps (Frontiers in Psychology), url: 'https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.961589/full'}
+    enrich_notes: User Resistance 沿用既有變數代表消費者對創新的抗拒。五大障礙 -> 抗拒為原始摘要與 Frontiers 實證（價值 .37、形象 .31、傳統 .29、風險 .17）明寫；Complexity、Relative
+      Advantage、Perceived Risk、Habit 到各障礙的前因是把障礙與 IDT／風險文獻接起來的常見做法。Frontiers 研究以「消費者特性」（態度、動機、社會影響、情緒）調節，此處以 Innovativeness
+      與 Self-Efficacy 兩個既有變數代表。
+  Cognitive Miser:
+    note: Cognitive Miser
+    abbr: CogMiser
+    name: Cognitive Miser
+    zh: 認知吝嗇者
+    field: 社會認知
+    desc: Fiske 與 Taylor（1984）提出：人的資訊處理容量有限，能走捷徑就走捷徑，以捷思與刻板印象省力，代價是系統性偏誤；1991 年修正為「有動機的策略家」，動機、利害與問責足夠時才投入費力思考，且與智力無關。
+    edges:
+    - [Cognitive Load, Heuristic Reliance, +]
+    - [Time Pressure, Heuristic Reliance, +]
+    - [Task Complexity, Heuristic Reliance, +]
+    - [Working Memory Capacity, Heuristic Reliance, '-']
+    - [Heuristic Reliance, Systematic Processing, '-']
+    - [Heuristic Reliance, Social Categorization, +]
+    - [Heuristic Reliance, Decision Error, +]
+    - [Involvement, Systematic Processing, +]
+    - [Accountability, Systematic Processing, +]
+    - [Need for Cognition, Systematic Processing, +]
+    - [Decision Stakes, Systematic Processing, +]
+    - [Expectancy Violation, Systematic Processing, +]
+    - [Domain Expertise, Heuristic Reliance -> Decision Error, m]
+    refs:
+    - {title: Cognitive miser (Wikipedia), url: 'https://en.wikipedia.org/wiki/Cognitive_miser'}
+    enrich_notes: 只有一個來源成功開啟（Wikipedia），其餘候選頁（APA 字典、Britannica、ScienceDirect、館藏目錄）回 403 或空白；搜尋結果摘要另確認 Fiske & Taylor 1984
+      命名與 Stanovich 2009 章節。容量限制、選擇複雜時更依賴捷思、專家用捷思有益新手有害、期望違反與無直覺答案時才啟動深思為 Wikipedia 明寫；動機、問責、利害、認知需求提高系統性處理是有動機策略家與 ELM／HSM
+      的常見版本。
+  Graphical perception theory:
+    note: Graphical perception theory
+    abbr: GraphPerc
+    name: Graphical Perception Theory
+    zh: 圖形知覺理論
+    field: 資訊視覺化
+    desc: Cleveland 與 McGill（1984）主張讀圖是一連串基本知覺作業，各視覺編碼通道的判讀準確度有固定排序：共同尺度上的位置最準，其次是非對齊位置、長度、角度，面積、體積與色彩飽和度最差；圖表應優先採用高排序的通道。
+    edges:
+    - [Encoding Channel Rank, Perceptual Judgment Accuracy, +]
+    - [Common Scale Alignment, Perceptual Judgment Accuracy, +]
+    - [Length Encoding, Estimation Error, +]
+    - [Angle Encoding, Estimation Error, +]
+    - [Area Encoding, Estimation Error, +]
+    - [Color Saturation Encoding, Estimation Error, +]
+    - [Perceptual Judgment Accuracy, Graph Comprehension, +]
+    - [Estimation Error, Decision Accuracy, '-']
+    refs:
+    - {title: Graphical perception + layers (Cornell INFO 3312 slides), url: 'https://info3312.infosci.cornell.edu/slides/04-graphical-perception.html'}
+    - {title: 'The Risks of Ranking: Revisiting Graphical Perception (arXiv)', url: 'https://arxiv.org/pdf/2212.10533'}
+    enrich_notes: 排序（高→低）：共同尺度位置 > 非對齊位置 > 長度／方向／角度 > 面積 > 體積／曲率 > 明暗／色彩飽和度。Heer & Bostock（2010）以群眾外包重做，排序大致成立並補上圓形面積優於矩形面積。
+  Gestalt Principles:
+    note: Gestalt Principles
+    abbr: Gestalt
+    name: Gestalt Principles of Grouping
+    zh: 完形組織原則
+    field: 視知覺
+    desc: Wertheimer、Koffka 與 Köhler（1912 起）提出知覺傾向把元素組織成簡潔整體（Prägnanz）；接近、相似、閉合、連續、共同命運、共同區域與連結等線索都會提高元素被知覺為同群的程度，與資料結構不一致時造成假性分群。
+    edges:
+    - [Element Proximity, Perceived Grouping, +]
+    - [Element Similarity, Perceived Grouping, +]
+    - [Closure Completion, Perceived Grouping, +]
+    - [Good Continuation, Perceived Grouping, +]
+    - [Common Fate Motion, Perceived Grouping, +]
+    - [Common Region Enclosure, Perceived Grouping, +]
+    - [Element Connectedness, Perceived Grouping, +]
+    - [Figure-Ground Contrast, Perceived Grouping, +]
+    - [Perceived Grouping, Graph Comprehension, +]
+    - [Spurious Grouping, Graph Comprehension, '-']
+    refs:
+    - {title: Principles of grouping (Wikipedia), url: 'https://en.wikipedia.org/wiki/Principles_of_grouping'}
+    - {title: Gestalt psychology (Wikipedia), url: 'https://en.wikipedia.org/wiki/Gestalt_psychology'}
+    enrich_notes: 共同區域與連結兩條為 Palmer 與 Rock 後來補充（Wikipedia 完形心理學頁未列，分群原則頁有提到 Rock 與 Palmer）。
+  Pre-Attentive Processing:
+    note: Pre-Attentive Processing
+    abbr: PreAtt
+    name: Pre-attentive Processing
+    zh: 前注意處理
+    field: 視知覺
+    desc: 源自 Treisman 的注意理論，Healey 與 Enns（2012）整理為視覺化原則：色彩、方向、大小、動態等單一特徵能在約 200 毫秒內平行偵測，與干擾物差異大即「跳出」，偵測時間不隨元素數增加；多特徵結合的目標則要逐一注意。
+    edges:
+    - [Feature Singleton, Pop-Out, +]
+    - [Target-Distractor Difference, Pop-Out, +]
+    - [Distractor Heterogeneity, Pop-Out, '-']
+    - [Conjunction Target, Pop-Out, '-']
+    - [Pop-Out, Search Time, '-']
+    - [Pop-Out, Hit Rate, +]
+    - [Display Size, Search Time, +]
+    - [Pop-Out, Display Size -> Search Time, m]
+    - [Conjunction Target, Search Time, +]
+    refs:
+    - {title: Healey & Enns (2012) Attention and Visual Memory in Visualization and Computer Graphics, url: 'https://healey.csc.ncsu.edu/publications/15783-attention-and-visual-memory-in-visualization-and-computer-graphics'}
+    - {title: Pre-attentive processing (Wikipedia), url: 'https://en.wikipedia.org/wiki/Pre-attentive_processing'}
+    - {title: Healey & Enns 2012 PDF, url: 'https://www.csc2.ncsu.edu/faculty/healey/download/tvcg.12a.pdf'}
+    enrich_notes: Healey 與 Enns 列出的前注意特徵：色相、亮度、方向、長度、大小、曲率、閃爍、動態、立體深度等；後續文獻質疑前注意／注意的二分，但作為搜尋效率的操作概念仍有用。
+  Feature Integration Theory, FIT:
+    note: Feature Integration Theory, FIT
+    abbr: FIT
+    name: Feature Integration Theory
+    zh: 特徵整合理論
+    field: 視知覺
+    desc: Treisman 與 Gelade（1980）主張視覺處理分兩階段：先平行、自動地登錄色彩、形狀、方向等個別特徵，再由聚焦注意把同位置的特徵綁定成物體；單一特徵目標可平行搜尋，多特徵結合目標需逐一注意，注意不足會產生錯覺性結合。
+    edges:
+    - [Conjunction Search Requirement, Serial Attention Deployment, +]
+    - [Serial Attention Deployment, Search Time, +]
+    - [Display Size, Search Time, +]
+    - [Conjunction Search Requirement, Display Size -> Search Time, m]
+    - [Focused Attention, Feature Binding Accuracy, +]
+    - [Divided Attention, Feature Binding Accuracy, '-']
+    - [Feature Binding Accuracy, Illusory Conjunctions, '-']
+    - [Prior Knowledge Base, Illusory Conjunctions, '-']
+    - [Illusory Conjunctions, Perceptual Judgment Accuracy, '-']
+    refs:
+    - {title: Feature integration theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Feature_integration_theory'}
+    - {title: Treisman & Gelade 1980 PDF (Princeton course archive), url: 'https://www.cs.princeton.edu/courses/archive/spring08/cos598B/Readings/TreismanGelade1980.pdf'}
+    enrich_notes: 特徵搜尋的反應時間幾乎不隨顯示元素數上升（斜率近 0），結合搜尋則線性上升；Treisman 與 Schmidt（1982）在注意分散時觀察到約 18% 的錯覺性結合。
+  Guided Search Theory:
+    note: Guided Search Theory
+    abbr: GS
+    name: Guided Search Theory
+    zh: 引導搜尋理論
+    field: 視知覺
+    desc: Wolfe（1989 起，2021 年 GS6）主張視覺搜尋由一張「優先地圖」引導：由下而上顯著性、由上而下目標特徵、選擇歷史、報酬價值與場景結構五種前注意訊息加總，決定注意依序造訪哪些項目；引導越強，需檢視的有效集合越小，搜尋越快。
+    edges:
+    - [Bottom-Up Salience, Priority Map Activation, +]
+    - [Top-Down Feature Guidance, Priority Map Activation, +]
+    - [Selection History, Priority Map Activation, +]
+    - [Reward Value Association, Priority Map Activation, +]
+    - [Scene Guidance, Priority Map Activation, +]
+    - [Target-Distractor Difference, Top-Down Feature Guidance, +]
+    - [Distractor Heterogeneity, Top-Down Feature Guidance, '-']
+    - [Priority Map Activation, Effective Set Size, '-']
+    - [Effective Set Size, Search Time, +]
+    - [Error Tolerance, Quitting Threshold, '-']
+    - [Quitting Threshold, Search Time, +]
+    - [Quitting Threshold, Miss Rate, '-']
+    refs:
+    - {title: Wolfe (2021) Guided Search 6.0 (PMC), url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8965574'}
+    - {title: Guided Search 6.0 talk abstract (Bristol), url: 'https://www.bristol.ac.uk/neuroscience/events/2022/bath-2feb.html'}
+    enrich_notes: 搜尋效率以反應時間對顯示元素數的斜率表示；GS6 以擴散歷程處理已選項目並以放棄訊號決定何時停止，能重現目標不在場斜率約為在場 3 倍等經典結果。
+  Visual Saliency:
+    note: Visual Saliency
+    abbr: Saliency
+    name: Visual Saliency Model
+    zh: 視覺顯著性模型
+    field: 視知覺
+    desc: Itti、Koch 與 Niebur（1998）提出純由下而上的注意模型：對亮度、色彩對立與方向三類特徵做多尺度中心－周邊差分並正規化，合成一張顯著性地圖，再以勝者全拿與返回抑制機制依顯著度高低逐點轉移注意；局部對比越強的位置越早被注視。
+    edges:
+    - [Intensity Contrast, Visual Saliency, +]
+    - [Color Contrast, Visual Saliency, +]
+    - [Orientation Contrast, Visual Saliency, +]
+    - [Feature Map Uniqueness, Visual Saliency, +]
+    - [Visual Saliency, Attentional Capture, +]
+    - [Attentional Capture, Fixation Priority, +]
+    - [Visual Saliency, Detection Time, '-']
+    - [Inhibition of Return, Repeat Fixation, '-']
+    - [Top-Down Task Goal, Visual Saliency -> Attentional Capture, m]
+    refs:
+    - {title: 'Itti, Koch & Niebur 1998 (USC iLab publication page)', url: 'https://ilab.usc.edu/publications/Itti_etal98pami.html'}
+    - {title: Salience (neuroscience) (Wikipedia), url: 'https://en.wikipedia.org/wiki/Salience_(neuroscience)'}
+    enrich_notes: 原始模型不含由上而下成分；Wikipedia 顯著性頁指出注意另受記憶與預期等由上而下機制引導，後續模型才加入。
+  Perceptual Load Theory:
+    note: Perceptual Load Theory
+    abbr: PLT
+    name: Perceptual Load Theory
+    zh: 知覺負荷理論
+    field: 視知覺
+    desc: Lavie（1995）主張知覺容量有限且會被用盡：相關刺激優先處理，剩餘容量自動流向干擾物。知覺負荷高時容量被目標耗盡，干擾物早期即被濾除；負荷低時干擾物被處理而造成干擾。Lavie 等（2004）補充工作記憶負荷反而增加干擾。
+    edges:
+    - [Perceptual Load, Spare Attentional Capacity, '-']
+    - [Spare Attentional Capacity, Distractor Processing, +]
+    - [Distractor Processing, Distractor Interference, +]
+    - [Perceptual Load, Distractor Interference, '-']
+    - [Working Memory Load, Distractor Interference, +]
+    - [Distractor Interference, Reaction Time, +]
+    - [Distractor Interference, Decision Accuracy, '-']
+    - [Perceptual Load, Unexpected Object Noticing, '-']
+    - [Distractor Salience, Perceptual Load -> Distractor Interference, m]
+    refs:
+    - {title: Perceptual load theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Perceptual_load_theory'}
+    - {title: Lavie et al. (2004) Load theory of selective attention and cognitive control (Goldsmiths repository), url: 'https://research.gold.ac.uk/id/eprint/424'}
+    enrich_notes: 批評：干擾物顯著性與注意範圍（zoom）可能才是真正機制；Benoni 與 Tsal（2013）指出知覺負荷從未被精確定義，有循環論證之虞。
+  Signal Detection Theory:
+    note: Signal Detection Theory
+    abbr: SDT
+    name: Signal Detection Theory
+    zh: 訊號偵測理論
+    field: 視知覺
+    desc: Green 與 Swets（1966）把偵測判斷拆成敏感度與反應偏誤兩個獨立成分：訊號強度與雜訊決定可區辨度 d'，而事前機率與漏報／誤報的代價決定判準 c；判準越寬鬆，命中率與誤報率同時上升，判準變化不改變敏感度。
+    edges:
+    - [Signal Strength, Sensitivity, +]
+    - [Noise Level, Sensitivity, '-']
+    - [Sensitivity, Hit Rate, +]
+    - [Sensitivity, False Alarm Rate, '-']
+    - [Response Criterion, Hit Rate, '-']
+    - [Response Criterion, False Alarm Rate, '-']
+    - [Signal Prior Probability, Response Criterion, '-']
+    - [Miss Cost, Response Criterion, '-']
+    - [False Alarm Cost, Response Criterion, +]
+    refs:
+    - {title: Detection theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Detection_theory'}
+    - {title: 'Signal Detection Theory tutorial (WISE, Claremont Graduate University)', url: 'https://wise.cgu.edu/wise-tutorials/tutorial-signal-detection-theory/signal-detection-summary-and-follow-up-questions/'}
+    enrich_notes: d' = z(H) − z(F)；c = −[z(H) + z(F)] / 2；Response Criterion 取值越高代表越保守。四種結果：命中、漏報、誤報、正確拒絕。Wikipedia 另提到經驗、預期與疲勞會移動判準，但方向不定，未畫成邊。
+  Fitts's Law:
+    note: Fitts's Law
+    abbr: Fitts
+    name: Fitts's Law
+    zh: 費茨定律
+    field: 人機互動
+    desc: Fitts（1954）以資訊理論類比指向動作：移動時間隨目標距離增加、隨目標寬度減少，兩者合成的難度指數與時間成線性關係；MacKenzie（1992）提出的 Shannon 形式成為人機互動界預測點選效率與介面配置的標準模型。
+    edges:
+    - [Target Distance, Index of Difficulty, +]
+    - [Target Width, Index of Difficulty, '-']
+    - [Index of Difficulty, Movement Time, +]
+    - [Target Distance, Movement Time, +]
+    - [Target Width, Movement Time, '-']
+    - [Movement Time, Endpoint Error, '-']
+    refs:
+    - {title: Fitts's law (Wikipedia), url: 'https://en.wikipedia.org/wiki/Fitts%27s_law'}
+    - {title: MacKenzie (1992) Fitts' law as a research and design tool in HCI (York University), url: 'https://www.yorku.ca/mack/hci1992.html'}
+    enrich_notes: 原式 MT = a + b·log2(2D/W)；Shannon 形式 ID = log2(D/W + 1)，MT = a + b·ID；吞吐量 TP = ID/MT；有效寬度 We = 4.133·SDx
+      處理速度－準確度取捨（ISO 9241-9）。
+  Hick-Hyman Law:
+    note: Hick-Hyman Law
+    abbr: Hick
+    name: Hick-Hyman Law
+    zh: 希克－海曼定律
+    field: 人機互動
+    desc: Hick（1952）與 Hyman（1953）發現選擇反應時間與選項所含的資訊量成線性關係：等機率選項每增加一倍，反應時間約增加固定量；選項機率不均會降低資訊量，刺激－反應相容性高亦縮短時間。介面選單與導覽層級設計常據此推估。
+    edges:
+    - [Number of Alternatives, Stimulus Information Entropy, +]
+    - [Choice Probability Inequality, Stimulus Information Entropy, '-']
+    - [Stimulus Information Entropy, Choice Reaction Time, +]
+    - [Number of Alternatives, Choice Reaction Time, +]
+    - [Stimulus-Response Compatibility, Choice Reaction Time, '-']
+    refs:
+    - {title: Hick's law (Wikipedia), url: 'https://en.wikipedia.org/wiki/Hick%27s_law'}
+    - {title: Hick-Hyman Law theory page (Virtual Labs IIT Guwahati), url: 'https://cpe-iitg.vlabs.ac.in/exp/hick-hymans-law/theory.html'}
+    enrich_notes: RT = a + b·log2(n + 1)（等機率 n 個選項，+1 代表「是否要反應」的不確定）；一般式 RT = a + b·H，H = Σ p_i·log2(1/p_i + 1)。
+  Stevens's Power Law:
+    note: Stevens's Power Law
+    abbr: Stevens
+    name: Stevens's Power Law
+    zh: 史蒂文斯冪定律
+    field: 視知覺
+    desc: Stevens（1957）以量值估計法主張知覺量是刺激物理量的冪函數，指數隨感覺向度而異：視覺長度約 1（線性）、面積約 0.7（低估大值）、亮度約 0.33–0.5、電擊 3.5；圖表以面積或亮度編碼數值時會系統性壓縮差異。
+    edges:
+    - [Stimulus Intensity, Perceived Magnitude, +]
+    - [Modality Exponent, Stimulus Intensity -> Perceived Magnitude, m]
+    - [Area Encoding, Estimation Error, +]
+    - [Color Saturation Encoding, Estimation Error, +]
+    - [Length Encoding, Estimation Error, '-']
+    - [Estimation Error, Perceptual Judgment Accuracy, '-']
+    refs:
+    - {title: Stevens's power law (Wikipedia), url: 'https://en.wikipedia.org/wiki/Stevens%27s_power_law'}
+    - {title: Stevens' Power Law (RIT Vision and Psychophysics course page), url: 'https://www.cis.rit.edu/people/faculty/montag/vandplite/pages/chap_6/ch6p10.html'}
+    enrich_notes: ψ(I) = k·I^a。指數表（Stevens 1957）：視覺長度 1、視覺面積 0.7、亮度 0.33（5° 暗背景）～0.5（點光源）、響度 0.67、電擊 3.5。指數 < 1 為壓縮型，大值被低估。
+  Weber-Fechner Law:
+    note: Weber-Fechner Law
+    abbr: Weber
+    name: Weber-Fechner Law
+    zh: 韋伯－費希納定律
+    field: 視知覺
+    desc: Weber 的實驗與 Fechner（1860）的推導指出：剛可察覺差異與基準刺激強度成固定比例（韋伯分數），因此知覺量約為刺激強度的對數函數。圖表上相同的絕對差距，在數值較大處較難被看出；此定律在極低與極高強度處失效。
+    edges:
+    - [Stimulus Intensity, Just Noticeable Difference, +]
+    - [Weber Fraction, Just Noticeable Difference, +]
+    - [Stimulus Intensity, Perceived Magnitude, +]
+    - [Just Noticeable Difference, Difference Detection Rate, '-']
+    - [Baseline Value Magnitude, Difference Detection Rate, '-']
+    - [Difference Detection Rate, Perceptual Judgment Accuracy, +]
+    refs:
+    - {title: Weber–Fechner law (Wikipedia), url: 'https://en.wikipedia.org/wiki/Weber%E2%80%93Fechner_law'}
+    - {title: 'What is the Weber-Fechner Law? (The Behavioral Scientist)', url: 'https://www.thebehavioralscientist.com/?p=5977'}
+    enrich_notes: Weber：ΔI / I = k；Fechner：p = k·ln(S / S0)。1960 年代後多以 Stevens 冪定律取代對數律作為通則；韋伯分數例：重量約 2%、亮度約 8%（二手來源，僅示意）。
+  Data-Ink ratio:
+    note: Data-Ink ratio
+    abbr: DataInk
+    name: Data-Ink Ratio / Graphical Minimalism
+    zh: 資料墨水比（圖表極簡主義）
+    field: 資訊視覺化
+    desc: Tufte（1983）主張圖表的墨水應盡量用於呈現資料：資料墨水佔總墨水的比例越高越好，網格、框線、立體效果等非資料墨水與多餘裝飾（chartjunk）應在合理範圍內刪除；資料墨水是「移除後訊息會改變」的部分，裝飾會增加雜訊並干擾判讀。
+    edges:
+    - [Data Ink, Data-Ink Ratio, +]
+    - [Non-Data Ink, Data-Ink Ratio, '-']
+    - [Chartjunk, Visual Clutter, +]
+    - [Redundant Data Ink, Visual Clutter, +]
+    - [Direct Labeling, Visual Clutter, '-']
+    - [Visual Clutter, Cognitive Load, +]
+    - [Visual Clutter, Graph Comprehension, '-']
+    - [Data-Ink Ratio, Graph Comprehension, +]
+    - [Lie Factor, Estimation Error, +]
+    refs:
+    - {title: Chart junk and data ink origins (EU Data Visualisation Guide), url: 'https://data.europa.eu/apps/data-visualisation-guide/chart-junk-and-data-ink-origins'}
+    - {title: Clutter in charts (Nielsen Norman Group), url: 'https://www.nngroup.com/articles/clutter-charts/'}
+    enrich_notes: Tufte 五原則：首重呈現資料、最大化資料墨水比、刪非資料墨水、刪多餘資料墨水、反覆修訂。反證：Bateman 等（2010）發現裝飾圖表記憶效果較好（本次未開到原文，僅依既有知識標註，見 _summary）。EU
+      指南亦提到反對極簡風的「反運動」。
+  Narrative Visualization:
+    note: Narrative Visualization
+    abbr: NarrVis
+    name: Narrative Visualization
+    zh: 敘事視覺化
+    field: 資訊視覺化
+    desc: Segel 與 Heer（2010）分析新聞與研究案例，提出敘事視覺化設計空間：七種類型與視覺敘事（結構、強調、轉場）及敘事結構（排序、互動、訊息）兩組策略，核心張力是作者主導的敘事流與讀者主導的互動探索，可用「馬丁尼杯」等混合結構平衡。
+    edges:
+    - [Narrative Ordering Strength, Author Control, +]
+    - [Messaging Density, Author Control, +]
+    - [Reader Interactivity, Author Control, '-']
+    - [Reader Interactivity, Story Discovery, +]
+    - [Story Discovery, User Engagement, +]
+    - [Narrative Ordering Strength, Message Comprehension, +]
+    - [Messaging Density, Message Comprehension, +]
+    - [Visual Highlighting, Attentional Capture, +]
+    - [Transition Guidance, Cognitive Load, '-']
+    - [Hybrid Narrative Structure, Reader Interactivity -> Message Comprehension, m]
+    refs:
+    - {title: 'Narrative Visualization: Telling Stories with Data (UW Interactive Data Lab)', url: 'https://idl.uw.edu/papers/narrative'}
+    - {title: Heer and Segel honored with IEEE VIS Test of Time Award (UW CSE News), url: 'https://news.cs.washington.edu/?p=30270'}
+    - {title: Segel & Heer 2010 PDF, url: 'https://homes.cs.washington.edu/~jheer/files/narrative.pdf'}
+    enrich_notes: 七類型：雜誌式、註解圖表、分割海報、流程圖、漫畫格、投影片秀、影片／動畫。三種混合結構：馬丁尼杯（先作者後讀者）、互動投影片（逐頁交替）、下鑽故事（讀者主導）。原文屬設計空間分析，結果變數的方向依後續實證常見版本（見
+      _summary）。
+  Visual Information-Seeking Mantra Shneiderman:
+    note: Visual Information-Seeking Mantra Shneiderman
+    abbr: VISM
+    name: Visual Information-Seeking Mantra
+    zh: 視覺資訊搜尋箴言
+    field: 資訊視覺化
+    desc: Shneiderman（1996）提出「先總覽，再縮放與過濾，最後按需顯示細節」作為視覺化介面的設計起點，並以七種資料型態對七種任務（總覽、縮放、過濾、按需細節、關聯、歷史、擷取）建立分類；搭配 100 毫秒內回應的動態查詢。
+    edges:
+    - [Overview Provision, Mental Model Formation, +]
+    - [Zoom Capability, Information Access, +]
+    - [Filter Capability, Visual Clutter, '-']
+    - [Filter Capability, Cognitive Load, '-']
+    - [Details-on-Demand, Information Access, +]
+    - [Details-on-Demand, Visual Clutter, '-']
+    - [Dynamic Query Responsiveness, Exploration Breadth, +]
+    - [Mental Model Formation, Insight Generation, +]
+    - [Exploration Breadth, Insight Generation, +]
+    refs:
+    - {title: The Eyes Have It (UMD DRUM record), url: 'https://drum.lib.umd.edu/items/155a868e-fb83-4115-9899-9187ea8c0498/full'}
+    - {title: The Eyes Have It PDF (Utrecht University course copy), url: 'https://webspace.science.uu.nl/~telea001/uploads/VACourse/Shneiderman96.pdf'}
+    enrich_notes: 原文把箴言定位為「起點」而非完整理論；結果端（心智模式、洞見）為常見的實證化寫法。
+  Information Foraging Theory:
+    note: Information Foraging Theory
+    abbr: IFT
+    name: Information Foraging Theory
+    zh: 資訊覓食理論
+    field: 人機互動
+    desc: Pirolli 與 Card（1999）借最佳覓食理論解釋資訊搜尋：人會調整行為以最大化每單位努力的資訊獲得率。資訊氣味（連結標籤等近端線索）引導路徑選擇；片區產出遞減到低於環境平均時就離開；跨片區成本越低停留越短；食譜依價值／耗時比取捨。
+    edges:
+    - [Information Scent, Link Following, +]
+    - [Information Scent, Path Selection Accuracy, +]
+    - [Information Scent Accuracy, Backtracking, '-']
+    - [Patch Yield Rate, Patch Residence Time, +]
+    - [Between-Patch Cost, Patch Residence Time, +]
+    - [Environment Average Gain Rate, Patch Leaving, +]
+    - [Information Handling Time, Item Profitability, '-']
+    - [Item Profitability, Information Diet Inclusion, +]
+    - [Path Selection Accuracy, Information Gain Rate, +]
+    - [Patch Residence Time, Patch Yield Rate -> Information Gain Rate, m]
+    refs:
+    - {title: Information foraging (Wikipedia), url: 'https://en.wikipedia.org/wiki/Information_foraging'}
+    - {title: Information Foraging Theory (UX Tigers), url: 'https://www.uxtigers.com/post/information-foraging'}
+    enrich_notes: 離開片區的判準為 Charnov 邊際價值定理：片區瞬時獲得率降到環境平均時離開。計算實作為 ACT-IF 產生式模型。
+  graph comprehension theory:
+    note: graph comprehension theory
+    abbr: GraphComp
+    name: Graph Comprehension Theory
+    zh: 圖表理解理論
+    field: 資訊視覺化
+    desc: Pinker（1990）主張讀圖是把視覺陣列編碼成視覺描述，再經圖表基模轉譯為概念訊息，編碼與基模相符的訊息才能直接讀出；Shah 與 Hoeffner（2002）補充圖表視覺特徵、讀圖知識與內容先備期望三類因素共同決定理解。
+    edges:
+    - [Graph Format Familiarity, Graph Schema Availability, +]
+    - [Graphical Literacy, Graph Schema Availability, +]
+    - [Graph Schema Availability, Graph Comprehension, +]
+    - [Axis Variable Assignment Match, Visual Description Directness, +]
+    - [Encoding Channel Rank, Visual Description Directness, +]
+    - [Visual Description Directness, Graph Comprehension, +]
+    - [Visual Description Directness, Cognitive Load, '-']
+    - [Cognitive Load, Graph Comprehension, '-']
+    - [Topic Knowledge, Graph Comprehension, +]
+    - [Data Expectation Bias, Graph Comprehension, '-']
+    - [Working Memory Capacity, Graph Comprehension, +]
+    refs:
+    - {title: A Theory of Graph Comprehension (Steven Pinker publications), url: 'https://stevenpinker.com/publications/theory-graph-comprehension'}
+    - {title: 'Shah & Hoeffner (2002) Review of Graph Comprehension Research (Deep Blue, University of Michigan)', url: 'https://deepblue.lib.umich.edu/items/e347a2b5-1625-442e-9fe3-d09575ad97df'}
+    enrich_notes: Shah 與 Carpenter（1995）發現折線圖讀者主要描述 x–y 關係，第三變數（以線區分）的趨勢難以讀出，故變數在軸上的配置會改變能直接讀出的訊息。Pinker 全文（MIT 轉址 PDF）與 Shah
+      & Hoeffner 全文本次未能開啟，依摘要與二手整理。
+  Picture Superiority Effect:
+    note: Picture Superiority Effect
+    abbr: PSE
+    name: Picture Superiority Effect
+    zh: 圖優效應
+    field: 視知覺
+    desc: Paivio 與 Csapo（1973）等發現圖片比對應文字更容易被回憶與再認；雙碼理論解釋為圖片同時產生意象碼與語文碼、多一條檢索路徑，Nelson 則歸因於圖片知覺上更獨特且直接觸及語意。效應限於具體概念，圖片相似時消失。
+    edges:
+    - [Pictorial Presentation, Dual Coding, +]
+    - [Pictorial Presentation, Mental Imagery, +]
+    - [Pictorial Presentation, Perceptual Distinctiveness, +]
+    - [Dual Coding, Recall, +]
+    - [Mental Imagery, Recall, +]
+    - [Perceptual Distinctiveness, Recognition Memory, +]
+    - [Dual Coding, Recognition Memory, +]
+    - [Concept Concreteness, Pictorial Presentation -> Recall, m]
+    - [Inter-Item Similarity, Pictorial Presentation -> Recognition Memory, m]
+    - [Response Deadline Length, Pictorial Presentation -> Recall, m]
+    refs:
+    - {title: Picture superiority effect (Wikipedia), url: 'https://en.wikipedia.org/wiki/Picture_superiority_effect'}
+    - {title: Dual-coding theory (Wikipedia), url: 'https://en.wikipedia.org/wiki/Dual-coding_theory'}
+    enrich_notes: 反應期限極短時效應可逆轉（文字較快）；層次處理論者指出語意處理指示下圖文回憶相近；流行文章「圖片記得多六倍」之類倍數不可信。
+  inattentional blindness:
+    note: inattentional blindness
+    abbr: IB
+    name: Inattentional Blindness
+    zh: 不注意視盲
+    field: 視知覺
+    desc: Mack 與 Rock（1998）命名並主張「沒有注意就沒有意識知覺」；Simons 與 Chabris（1999）發現約半數專注數傳球的人沒看見走過的大猩猩。注意被主任務佔用越多、物體越不顯著、與注意集合越不相似、越不被預期，越容易漏看。
+    edges:
+    - [Primary Task Attentional Engagement, Unexpected Object Noticing, '-']
+    - [Workload, Unexpected Object Noticing, '-']
+    - [Stimulus Conspicuity, Unexpected Object Noticing, +]
+    - [Similarity to Attended Set, Unexpected Object Noticing, +]
+    - [Object Expectancy, Unexpected Object Noticing, +]
+    - [Attentional Capacity, Unexpected Object Noticing, +]
+    - [Age, Attentional Capacity, '-']
+    - [Experience, Unexpected Object Noticing, +]
+    - [Unexpected Object Noticing, Anomaly Detection, +]
+    refs:
+    - {title: Inattentional blindness (Wikipedia), url: 'https://en.wikipedia.org/wiki/Inattentional_blindness'}
+    - {title: Gorillas in our midst (Simons & Chabris 1999) record, url: 'https://www.citedrive.com/en/discovery/gorillas-in-our-midst-sustained-inattentional-blindness-for-dynamic-events/'}
+    enrich_notes: Most 等（2001）：與注意集合相似者較易被注意到。Drew、Võ 與 Wolfe（2013）放射科醫師讀 CT 時 83% 未見嵌入的大猩猩（單一研究）。Experience 邊：Wikipedia 稱任務經驗有助注意到意外事件，但也指出專家因知道該看什麼反而可能漏看，方向有爭議。
+  Proximity Compatibility Principle:
+    abbr: PCP
+    name: Proximity Compatibility Principle
+    zh: 鄰近相容原則
+    field: 人因工程
+    desc: Wickens 與 Carswell（1995）主張服務同一任務或心智運算的資訊應在知覺空間上靠近呈現：任務需整合多來源時，空間靠近、共用色彩、連線或合成單一物件的高顯示鄰近有利；任務只需聚焦單一來源時，整合式顯示反而造成干擾。
+    edges:
+    - [Task Integration Requirement, Task Proximity, +]
+    - [Spatial Closeness, Display Proximity, +]
+    - [Shared Color Coding, Display Proximity, +]
+    - [Element Connectedness, Display Proximity, +]
+    - [Object Integration, Display Proximity, +]
+    - [Display Proximity, Visual Scanning Cost, '-']
+    - [Visual Scanning Cost, Integration Task Performance, '-']
+    - [Display Proximity, Integration Task Performance, +]
+    - [Display Proximity, Focused Attention Task Performance, '-']
+    - [Task Proximity, Display Proximity -> Integration Task Performance, m]
+    refs:
+    - {title: 'The Proximity Compatibility Principle: Its Psychological Foundation and Relevance to Display Design (TRID record)',
+      url: 'https://trid.trb.org/View/452882'}
+    - {title: Wickens & Carswell 1995 abstract (Synapse Social paper page), url: 'https://synapsesocial.com/papers/W2053229400'}
+    enrich_notes: Human Factors 37(3), 473–494。交叉互動的描述來自 Wickens（1990）技術報告與後續整理，本次只開到摘要；三維航空顯示器與醫療診斷研究對原則僅部分支持。vault 無對應 note，id
+      用理論名。
+  Multiple Resource Theory:
+    abbr: MRT
+    name: Multiple Resource Theory
+    zh: 多重資源理論
+    field: 人因工程
+    desc: Wickens（1980、2008）主張注意資源沿處理階段（知覺／認知 vs. 反應）、模態（視覺 vs. 聽覺）、處理碼（空間 vs. 語文）與視覺通道（中央 vs. 周邊）四向度分池；兩任務需求越高、資源重疊越多，分時效率越差。
+    edges:
+    - [Resource Demand, Dual-Task Interference, +]
+    - [Resource Overlap, Dual-Task Interference, +]
+    - [Modality Sharing, Resource Overlap, +]
+    - [Processing Code Sharing, Resource Overlap, +]
+    - [Processing Stage Sharing, Resource Overlap, +]
+    - [Visual Channel Sharing, Resource Overlap, +]
+    - [Experience, Resource Demand, '-']
+    - [Resource Demand, Workload, +]
+    - [Dual-Task Interference, Time-Sharing Efficiency, '-']
+    - [Time-Sharing Efficiency, Dual-Task Performance, +]
+    - [Resource Allocation Policy, Resource Demand -> Dual-Task Interference, m]
+    refs:
+    - {title: 'Education Theory Made Practical: Multiple Resource Theory (ICE Blog)', url: 'https://icenet.blog/2020/03/10/education-theory-made-practical-volume-4-part-6/'}
+    - {title: 'Wickens (2008) Multiple Resources and Mental Workload, Human Factors 50(3) PDF', url: 'https://interruptions.net/literature/Wickens-HF08.pdf'}
+    enrich_notes: 三個干擾決定因子：資源需求、資源重疊（衝突）、分配策略。Wickens 2008 PDF 本次只讀到檔案中繼資料（標題、作者、關鍵詞），四向度內容依 ICE Blog 與搜尋摘要整理；早期版本為三向度，視覺通道為後加。vault
+      無對應 note，id 用理論名。
+  Cognitive Offloading:
+    note: Cognitive Offloading
+    abbr: CogOff
+    name: Cognitive Offloading
+    zh: 認知卸載
+    field: 認知心理學
+    desc: Risko 與 Gilbert（2016）將認知卸載定義為以身體動作（寫備忘、拍照、使用工具）改變任務的資訊處理需求以降低認知負擔；人在認為卸載比靠自身能力更有效率時會卸載，但此判斷不一定準確；卸載可擴大表現，卻削弱對已卸載資訊的記憶。
+    edges:
+    - [Internal Task Demand, Cognitive Offloading, +]
+    - [Perceived Internal Ability, Cognitive Offloading, '-']
+    - [Perceived Offloading Efficiency, Cognitive Offloading, +]
+    - [Offloading Tool Availability, Cognitive Offloading, +]
+    - [Working Memory Capacity, Cognitive Offloading, '-']
+    - [Cognitive Offloading, Cognitive Load, '-']
+    - [Cognitive Offloading, Task Performance, +]
+    - [Cognitive Offloading, Memory for Offloaded Information, '-']
+    - [Metacognitive Accuracy, Perceived Internal Ability -> Cognitive Offloading, m]
+    refs:
+    - {title: 'Using the Outside World to Save on Brainpower (Neuroscience News, on Risko & Gilbert 2016)', url: 'https://neurosciencenews.com/metacognition-technology-4857'}
+    - {title: 'Risko & Gilbert (2016) Cognitive Offloading, UCL Discovery record', url: 'https://discovery.ucl.ac.uk/1508770/'}
+    enrich_notes: Trends in Cognitive Sciences 20(9), 676–688。長期後果尚無足夠研究。UCL Discovery 頁本次回 403，書目資訊取自搜尋結果。
+  Distributed Cognition:
+    abbr: DCog
+    name: Distributed Cognition
+    zh: 分散式認知
+    field: 資訊視覺化
+    desc: Hutchins（1995）主張認知分散於人群、內外部結構與時間三面向；Liu、Nersessian 與 Stasko（2008）引入資訊視覺化：工具不只放大記憶，而是把分析任務轉換成較容易的任務，洞見來自內外部表徵耦合。
+    edges:
+    - [External Representation Quality, Task Transformation, +]
+    - [Task Transformation, Cognitive Load, '-']
+    - [External Representation Quality, Internal-External Coupling, +]
+    - [Interaction Affordance, Internal-External Coupling, +]
+    - [Internal-External Coupling, Insight Generation, +]
+    - [Artifact Mediation, Cognitive Offloading, +]
+    - [Social Distribution of Cognition, Shared Mental Model, +]
+    - [Shared Mental Model, Team Performance, +]
+    - [Representation Propagation Across Time, Task Transformation, +]
+    refs:
+    - {title: Distributed cognition (Wikipedia), url: 'https://en.wikipedia.org/wiki/Distributed_cognition'}
+    - {title: 'Liu, Nersessian & Stasko (2008) InfoVis paper PDF', url: 'https://mail.zcliu.cs.umd.edu/papers/infovis08-dcog.pdf'}
+    - {title: Stasko CS 7450 course notes on cognitive theories of visualization, url: 'https://sites.cc.gatech.edu/home/stasko/7450/12/Notes/cognitive.pdf'}
+    enrich_notes: IEEE TVCG 14(6), 1173–1180。Liu 等 PDF 本次只能讀到 PDF 結構，內容依搜尋摘要與 Stasko 課程筆記；原文自稱是「框架」（一組假設）而非可檢驗理論，邊為實證化改寫。vault
+      無對應 note，id 用理論名。
+  Hypothetical Outcome Plots:
+    note: Hypothetical Outcome Plots
+    abbr: HOPs
+    name: Uncertainty Visualization Effects (Hypothetical Outcome Plots)
+    zh: 不確定性視覺化效果（假設結果圖）
+    field: 資訊視覺化
+    desc: Hullman、Resnick 與 Adar（2015）提出假設結果圖：以動畫逐幀呈現從分布抽出的個別結果，讓讀者用計數等頻率式推理讀出機率，不需統計背景。比較兩、三個變數大小時，HOPs 遠比誤差棒與小提琴圖準確；單變數時三者相近。
+    edges:
+    - [Animated Outcome Draws, Frequency-Based Reasoning, +]
+    - [Frequency-Based Reasoning, Probability Estimation Accuracy, +]
+    - [Animated Outcome Draws, Comparison Accuracy, +]
+    - [Static Error Bars, Comparison Accuracy, '-']
+    - [Distribution Variance, Probability Estimation Accuracy, '-']
+    - [Distribution Variance, Animated Outcome Draws -> Probability Estimation Accuracy, m]
+    - [Number of Compared Variables, Animated Outcome Draws -> Comparison Accuracy, m]
+    - [Frame Count, Sampling Error, '-']
+    - [Sampling Error, Probability Estimation Accuracy, '-']
+    - [Probability Estimation Accuracy, Decision Accuracy, +]
+    refs:
+    - {title: 'Hullman, Resnick & Adar (2015) PLOS ONE (PMC full text)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4646698'}
+    - {title: HOPs project page (UW Interactive Data Lab), url: 'https://idl.uw.edu/papers/hops'}
+    enrich_notes: N = 288（MTurk，每組 96），幀率固定 400 ms。兩變數 Pr(B 大於 A) 任務中誤差棒與小提琴圖的平均誤差 ≥ 36 個百分點。限制：僅一種幀率、常態且獨立的分布、無法用於印刷。
