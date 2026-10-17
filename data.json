@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 07:52",
+ "generated": "2026-10-17 08:01",
  "vault": "Zettel",
  "variables": [
   {
@@ -684,7 +684,7 @@
    "unlinked": false,
    "cluster": "隱私顧慮",
    "sgroup": "隱私顧慮",
-   "ssub": "Privacy Concern",
+   "ssub": "隱私顧慮",
    "simStruct": [
     {
      "id": "Parasocial Interaction",
@@ -1295,7 +1295,7 @@
    "unlinked": false,
    "cluster": "基本心理需求",
    "sgroup": "基本心理需求",
-   "ssub": "Autonomy",
+   "ssub": "需求滿足",
    "simStruct": [
     {
      "id": "Relatedness",
@@ -1382,8 +1382,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "Use",
     "USE",
+    "Use",
     "Use Behavior"
    ],
    "notes": [
@@ -1565,7 +1565,7 @@
    "unlinked": false,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "Crisis History",
+   "ssub": "危機屬性",
    "simStruct": [
     {
      "id": "Prior Relationship Reputation",
@@ -1632,7 +1632,7 @@
    "unlinked": false,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "Crisis",
+   "ssub": "危機屬性",
    "simStruct": []
   },
   {
@@ -1697,7 +1697,7 @@
    "unlinked": false,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "不確定性",
+   "ssub": "環境不確定性",
    "simStruct": [
     {
      "id": "Security Policy Violation",
@@ -1989,7 +1989,7 @@
    "unlinked": false,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "Org Reputation",
+   "ssub": "組織聲譽",
    "simStruct": [
     {
      "id": "Crisis Responsibility",
@@ -2394,7 +2394,7 @@
    "unlinked": false,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "Prior Relationship Reputation",
+   "ssub": "先前關係聲譽",
    "simStruct": [
     {
      "id": "Crisis History",
@@ -2433,7 +2433,7 @@
    "unlinked": false,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Product Lifetime Labelling",
+   "ssub": "永續資訊與產品",
    "simStruct": [
     {
      "id": "Stakeholder Pressure",
@@ -2480,7 +2480,7 @@
    "unlinked": false,
    "cluster": "基本心理需求",
    "sgroup": "基本心理需求",
-   "ssub": "Relatedness",
+   "ssub": "需求滿足",
    "simStruct": [
     {
      "id": "Controlling Rewards",
@@ -2590,7 +2590,7 @@
    "unlinked": false,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Skepticism",
+   "ssub": "漂綠與懷疑",
    "simStruct": [
     {
      "id": "Green Perceived Risk",
@@ -2769,7 +2769,7 @@
    "unlinked": false,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Social information only + Single Victim",
+   "ssub": "受助者呈現",
    "simStruct": []
   },
   {
@@ -2980,7 +2980,7 @@
    "unlinked": true,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Donation",
+   "ssub": "捐款行為",
    "simStruct": [
     {
      "id": "Protection Motivation",
@@ -3396,7 +3396,7 @@
    "unlinked": true,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "Environmental Uncertainty",
+   "ssub": "環境不確定性",
    "simStruct": [
     {
      "id": "External Dependence",
@@ -3664,7 +3664,7 @@
    "unlinked": true,
    "cluster": "習慣",
    "sgroup": "習慣",
-   "ssub": "Prior Behavior Frequency",
+   "ssub": "習慣",
    "simStruct": [
     {
      "id": "Epistemic Value",
@@ -3762,7 +3762,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Gender",
+   "ssub": "人口變項",
    "simStruct": [
     {
      "id": "Secure Attachment",
@@ -3805,7 +3805,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Age",
+   "ssub": "人口變項",
    "simStruct": [
     {
      "id": "Experience",
@@ -3948,7 +3948,7 @@
    "unlinked": true,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Ecological Worldview",
+   "ssub": "環境價值與責任",
    "simStruct": [
     {
      "id": "Prior Relationship Reputation",
@@ -4077,7 +4077,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Feedback",
+   "ssub": "工作資源",
    "simStruct": []
   },
   {
@@ -4098,7 +4098,7 @@
    "unlinked": true,
    "cluster": "基本心理需求",
    "sgroup": "基本心理需求",
-   "ssub": "Well-being",
+   "ssub": "幸福感",
    "simStruct": [
     {
      "id": "Intrinsic Motivation",
@@ -4133,7 +4133,7 @@
    "unlinked": true,
    "cluster": "基本心理需求",
    "sgroup": "基本心理需求",
-   "ssub": "基本心理需求",
+   "ssub": "需求滿足",
    "simStruct": [
     {
      "id": "Investor Overreaction",
@@ -4662,7 +4662,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Individual Characteristics",
+   "ssub": "個人特質",
    "simStruct": []
   },
   {
@@ -4727,7 +4727,7 @@
    "unlinked": true,
    "cluster": "習慣",
    "sgroup": "習慣",
-   "ssub": "Habit",
+   "ssub": "習慣",
    "simStruct": [
     {
      "id": "Domain Expertise",
@@ -5025,7 +5025,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Regulation",
+   "ssub": "制裁",
    "simStruct": [
     {
      "id": "Information Disclosure",
@@ -5235,7 +5235,7 @@
    "unlinked": true,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "Perceived Reputation",
+   "ssub": "組織聲譽",
    "simStruct": [
     {
      "id": "Embeddedness",
@@ -6356,7 +6356,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "Algorithm Transparency",
+   "ssub": "透明度",
    "simStruct": []
   },
   {
@@ -6708,7 +6708,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "System Transparency",
+   "ssub": "透明度",
    "simStruct": []
   },
   {
@@ -6808,7 +6808,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Workload",
+   "ssub": "工作負荷",
    "simStruct": [
     {
      "id": "Ability to Modify Algorithm",
@@ -6957,7 +6957,7 @@
    "unlinked": true,
    "cluster": "問責",
    "sgroup": "問責",
-   "ssub": "Accountability",
+   "ssub": "問責",
    "simStruct": []
   },
   {
@@ -7735,7 +7735,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "Causability",
+   "ssub": "可解釋性",
    "simStruct": []
   },
   {
@@ -7756,7 +7756,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "Explanation Quality",
+   "ssub": "可解釋性",
    "simStruct": [
     {
      "id": "Perceived Transparency",
@@ -7795,7 +7795,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "Perceived Transparency",
+   "ssub": "透明度",
    "simStruct": [
     {
      "id": "Perceived Explainability",
@@ -7888,7 +7888,7 @@
    "unlinked": true,
    "cluster": "問責",
    "sgroup": "問責",
-   "ssub": "Perceived Accountability",
+   "ssub": "問責",
    "simStruct": [
     {
      "id": "Perceived Explainability",
@@ -8027,7 +8027,7 @@
    "unlinked": true,
    "cluster": "透明與可解釋",
    "sgroup": "透明與可解釋",
-   "ssub": "Perceived Explainability",
+   "ssub": "可解釋性",
    "simStruct": [
     {
      "id": "Perceived Accountability",
@@ -8124,7 +8124,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Learning Pressure",
+   "ssub": "工作負荷",
    "simStruct": []
   },
   {
@@ -8835,7 +8835,7 @@
    "unlinked": true,
    "cluster": "廣告與揭露",
    "sgroup": "廣告與揭露",
-   "ssub": "AI Authorship Disclosure",
+   "ssub": "揭露",
    "simStruct": [
     {
      "id": "Interactivity Cues",
@@ -9561,7 +9561,7 @@
    "unlinked": true,
    "cluster": "廣告與揭露",
    "sgroup": "廣告與揭露",
-   "ssub": "Source Attractiveness",
+   "ssub": "廣告與來源吸引力",
    "simStruct": [
     {
      "id": "Review Volume",
@@ -9650,7 +9650,7 @@
    "unlinked": true,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Sufficiency Threshold",
+   "ssub": "受助者呈現",
    "simStruct": []
   },
   {
@@ -9812,7 +9812,7 @@
    "unlinked": true,
    "cluster": "廣告與揭露",
    "sgroup": "廣告與揭露",
-   "ssub": "Sponsorship Disclosure",
+   "ssub": "揭露",
    "simStruct": []
   },
   {
@@ -10760,7 +10760,7 @@
    "unlinked": true,
    "cluster": "口碑與發聲",
    "sgroup": "口碑與發聲",
-   "ssub": "Review Volume",
+   "ssub": "口碑",
    "simStruct": [
     {
      "id": "Source Attractiveness",
@@ -11181,7 +11181,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "Personal Values",
+   "ssub": "個人價值",
    "simStruct": [
     {
      "id": "Gratifications Obtained",
@@ -11420,7 +11420,7 @@
    "unlinked": true,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "Task Equivocality",
+   "ssub": "任務不確定性",
    "simStruct": [
     {
      "id": "Working Memory Capacity",
@@ -11464,7 +11464,7 @@
    "unlinked": true,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "Task Uncertainty",
+   "ssub": "任務不確定性",
    "simStruct": [
     {
      "id": "Organization Size",
@@ -11794,7 +11794,7 @@
    "unlinked": true,
    "cluster": "口碑與發聲",
    "sgroup": "口碑與發聲",
-   "ssub": "Word of Mouth",
+   "ssub": "口碑",
    "simStruct": [
     {
      "id": "Customer Complaints",
@@ -11829,7 +11829,7 @@
    "unlinked": true,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "Accommodative Response Strategy",
+   "ssub": "危機回應策略",
    "simStruct": []
   },
   {
@@ -12228,7 +12228,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "Professionalization",
+   "ssub": "同構與制度化",
    "simStruct": []
   },
   {
@@ -12250,7 +12250,7 @@
    "unlinked": false,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "Isomorphism",
+   "ssub": "同構與制度化",
    "simStruct": [
     {
      "id": "Stakeholder Pressure",
@@ -12294,7 +12294,7 @@
    "unlinked": false,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "Legitimacy",
+   "ssub": "合法性",
    "simStruct": [
     {
      "id": "Resource Concentration",
@@ -12331,7 +12331,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "Organizational Survival",
+   "ssub": "合法性",
    "simStruct": [
     {
      "id": "Organizational Ambidexterity",
@@ -12436,7 +12436,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "制度與合法性",
+   "ssub": "合法性",
    "simStruct": []
   },
   {
@@ -12724,7 +12724,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Techno-overload",
+   "ssub": "科技壓力源",
    "simStruct": []
   },
   {
@@ -12785,7 +12785,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Techno-invasion",
+   "ssub": "科技壓力源",
    "simStruct": []
   },
   {
@@ -13557,7 +13557,7 @@
    "unlinked": true,
    "cluster": "口碑與發聲",
    "sgroup": "口碑與發聲",
-   "ssub": "Service Recovery",
+   "ssub": "抱怨與補救",
    "simStruct": [
     {
      "id": "Perceived Inequity",
@@ -13762,7 +13762,7 @@
    "unlinked": true,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Greenwashing",
+   "ssub": "漂綠與懷疑",
    "simStruct": [
     {
      "id": "Institution-based Trust",
@@ -13805,7 +13805,7 @@
    "unlinked": true,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Green Consumer Confusion",
+   "ssub": "漂綠與懷疑",
    "simStruct": [
     {
      "id": "Green Perceived Risk",
@@ -13980,7 +13980,7 @@
    "unlinked": true,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "Perceived Durability",
+   "ssub": "永續資訊與產品",
    "simStruct": [
     {
      "id": "Green Perceived Risk",
@@ -14365,7 +14365,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Roles",
+   "ssub": "個人特質",
    "simStruct": []
   },
   {
@@ -14419,7 +14419,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "工作資源與誘因",
+   "ssub": "誘因與報酬",
    "simStruct": []
   },
   {
@@ -14519,7 +14519,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "Biospheric Values",
+   "ssub": "利他與環境價值",
    "simStruct": []
   },
   {
@@ -14537,7 +14537,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "Altruistic Values",
+   "ssub": "利他與環境價值",
    "simStruct": []
   },
   {
@@ -14555,7 +14555,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "Egoistic Values",
+   "ssub": "利己與工具價值",
    "simStruct": []
   },
   {
@@ -14577,7 +14577,7 @@
    "unlinked": false,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Identified Victim",
+   "ssub": "受助者呈現",
    "simStruct": [
     {
      "id": "Locus",
@@ -14620,7 +14620,7 @@
    "unlinked": true,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Statistical Information",
+   "ssub": "受助者呈現",
    "simStruct": []
   },
   {
@@ -14681,7 +14681,7 @@
    "unlinked": true,
    "cluster": "捐款與受助者",
    "sgroup": "捐款與受助者",
-   "ssub": "Number of Victims",
+   "ssub": "受助者呈現",
    "simStruct": []
   },
   {
@@ -14744,7 +14744,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "Government Provision",
+   "ssub": "同構與制度化",
    "simStruct": []
   },
   {
@@ -15006,7 +15006,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "工作資源與誘因",
+   "ssub": "工作資源",
    "simStruct": []
   },
   {
@@ -15900,7 +15900,7 @@
    "unlinked": true,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Reference Point",
+   "ssub": "框架",
    "simStruct": [
     {
      "id": "Loss Aversion",
@@ -15923,7 +15923,7 @@
    "unlinked": true,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Loss Framing",
+   "ssub": "框架",
    "simStruct": [
     {
      "id": "Perceived Susceptibility",
@@ -15954,7 +15954,7 @@
    "unlinked": true,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Gain Framing",
+   "ssub": "框架",
    "simStruct": []
   },
   {
@@ -15976,7 +15976,7 @@
    "unlinked": false,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Risk Seeking",
+   "ssub": "機率權重與風險偏好",
    "simStruct": [
     {
      "id": "Emotion-Focused Coping",
@@ -16038,7 +16038,7 @@
    "unlinked": true,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Certainty Effect",
+   "ssub": "機率權重與風險偏好",
    "simStruct": []
   },
   {
@@ -16056,7 +16056,7 @@
    "unlinked": true,
    "cluster": "框架與損益",
    "sgroup": "框架與損益",
-   "ssub": "Small Probability Overweighting",
+   "ssub": "機率權重與風險偏好",
    "simStruct": []
   },
   {
@@ -16437,7 +16437,7 @@
    "unlinked": true,
    "cluster": "隱私顧慮",
    "sgroup": "隱私顧慮",
-   "ssub": "Privacy Experiences",
+   "ssub": "隱私意識與經驗",
    "simStruct": []
   },
   {
@@ -16455,7 +16455,7 @@
    "unlinked": true,
    "cluster": "隱私顧慮",
    "sgroup": "隱私顧慮",
-   "ssub": "Privacy Awareness",
+   "ssub": "隱私意識與經驗",
    "simStruct": []
   },
   {
@@ -16473,7 +16473,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Personality Traits",
+   "ssub": "個人特質",
    "simStruct": []
   },
   {
@@ -16491,7 +16491,7 @@
    "unlinked": true,
    "cluster": "人口與個人特質",
    "sgroup": "人口與個人特質",
-   "ssub": "Demographic Differences",
+   "ssub": "人口變項",
    "simStruct": []
   },
   {
@@ -16702,7 +16702,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Sanction Certainty",
+   "ssub": "制裁",
    "simStruct": [
     {
      "id": "Sanction Severity",
@@ -16745,7 +16745,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Sanction Severity",
+   "ssub": "制裁",
    "simStruct": [
     {
      "id": "Sanction Certainty",
@@ -16831,7 +16831,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Sanction Celerity",
+   "ssub": "制裁",
    "simStruct": []
   },
   {
@@ -18174,7 +18174,7 @@
    "unlinked": true,
    "cluster": "規模與產出",
    "sgroup": "規模與產出",
-   "ssub": "Output Volume",
+   "ssub": "規模",
    "simStruct": [
     {
      "id": "Transaction Frequency",
@@ -18349,7 +18349,7 @@
    "unlinked": false,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Asset Specificity",
+   "ssub": "交易屬性",
    "simStruct": [
     {
      "id": "Goal Conflict",
@@ -18392,7 +18392,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Transaction Frequency",
+   "ssub": "交易屬性",
    "simStruct": [
     {
      "id": "Output Volume",
@@ -18435,7 +18435,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Hierarchical Governance",
+   "ssub": "治理與契約",
    "simStruct": [
     {
      "id": "Formalization",
@@ -18644,7 +18644,7 @@
    "unlinked": false,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Outcome-based Contract",
+   "ssub": "治理與契約",
    "simStruct": [
     {
      "id": "Moral Hazard",
@@ -18753,7 +18753,7 @@
    "unlinked": false,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "Outcome Measurability",
+   "ssub": "治理與契約",
    "simStruct": []
   },
   {
@@ -18789,7 +18789,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "制裁與治理",
+   "ssub": "治理與契約",
    "simStruct": []
   },
   {
@@ -18807,7 +18807,7 @@
    "unlinked": true,
    "cluster": "制裁與治理",
    "sgroup": "制裁與治理",
-   "ssub": "制裁與治理",
+   "ssub": "治理與契約",
    "simStruct": []
   },
   {
@@ -19027,7 +19027,7 @@
    "unlinked": true,
    "cluster": "綠色與永續",
    "sgroup": "綠色與永續",
-   "ssub": "CSR Engagement",
+   "ssub": "環境價值與責任",
    "simStruct": [
     {
      "id": "Stakeholder Integration",
@@ -19277,7 +19277,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Installed Base",
+   "ssub": "安裝基礎與參與",
    "simStruct": [
     {
      "id": "Cost of Multihoming",
@@ -19300,7 +19300,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Complementary Goods",
+   "ssub": "網路效應強度",
    "simStruct": [
     {
      "id": "User-side Installed Base",
@@ -19376,7 +19376,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Winner-take-all Tendency",
+   "ssub": "平台策略與結果",
    "simStruct": [
     {
      "id": "Platform Lock-in",
@@ -19411,7 +19411,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "User-side Installed Base",
+   "ssub": "安裝基礎與參與",
    "simStruct": [
     {
      "id": "Provider-side Participation",
@@ -19450,7 +19450,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Provider-side Participation",
+   "ssub": "安裝基礎與參與",
    "simStruct": [
     {
      "id": "Rivalry Intensity",
@@ -19493,7 +19493,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Subsidy to Price-sensitive Side",
+   "ssub": "平台策略與結果",
    "simStruct": []
   },
   {
@@ -19546,7 +19546,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "Network Effect Strength",
+   "ssub": "網路效應強度",
    "simStruct": []
   },
   {
@@ -19564,7 +19564,7 @@
    "unlinked": true,
    "cluster": "網路效應與安裝基礎",
    "sgroup": "網路效應與安裝基礎",
-   "ssub": "User Need Heterogeneity",
+   "ssub": "網路效應強度",
    "simStruct": []
   },
   {
@@ -20035,7 +20035,7 @@
    "unlinked": true,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "Organic Structure Need",
+   "ssub": "結構適配",
    "simStruct": [
     {
      "id": "Interorganizational Ties",
@@ -20182,7 +20182,7 @@
    "unlinked": true,
    "cluster": "不確定性",
    "sgroup": "不確定性",
-   "ssub": "Structure-Environment Fit",
+   "ssub": "結構適配",
    "simStruct": []
   },
   {
@@ -20297,7 +20297,7 @@
    "unlinked": true,
    "cluster": "規模與產出",
    "sgroup": "規模與產出",
-   "ssub": "Product Scope",
+   "ssub": "規模",
    "simStruct": []
   },
   {
@@ -20534,7 +20534,7 @@
    "unlinked": true,
    "cluster": "廣告與揭露",
    "sgroup": "廣告與揭露",
-   "ssub": "Ad Likeability",
+   "ssub": "廣告與來源吸引力",
    "simStruct": []
   },
   {
@@ -20880,7 +20880,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "Instrumental Values",
+   "ssub": "利己與工具價值",
    "simStruct": [
     {
      "id": "Psychosocial Consequences",
@@ -21016,7 +21016,7 @@
    "unlinked": false,
    "cluster": "規模與產出",
    "sgroup": "規模與產出",
-   "ssub": "Dynamic Pricing",
+   "ssub": "定價",
    "simStruct": []
   },
   {
@@ -21327,7 +21327,7 @@
    "unlinked": true,
    "cluster": "口碑與發聲",
    "sgroup": "口碑與發聲",
-   "ssub": "Review Consistency",
+   "ssub": "口碑",
    "simStruct": []
   },
   {
@@ -21523,7 +21523,7 @@
    "unlinked": true,
    "cluster": "口碑與發聲",
    "sgroup": "口碑與發聲",
-   "ssub": "Voice",
+   "ssub": "抱怨與補救",
    "simStruct": [
     {
      "id": "Exit",
@@ -21749,7 +21749,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Rewards and Job Conditions",
+   "ssub": "誘因與報酬",
    "simStruct": []
   },
   {
@@ -22112,7 +22112,7 @@
    "unlinked": true,
    "cluster": "心理契約",
    "sgroup": "心理契約",
-   "ssub": "Psychological Contract Breach",
+   "ssub": "心理契約",
    "simStruct": [
     {
      "id": "Violation Feelings",
@@ -22415,7 +22415,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Hygiene Factors",
+   "ssub": "誘因與報酬",
    "simStruct": []
   },
   {
@@ -22476,7 +22476,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Motivator Factors",
+   "ssub": "誘因與報酬",
    "simStruct": [
     {
      "id": "System Quality",
@@ -22519,7 +22519,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Job Enrichment",
+   "ssub": "工作資源",
    "simStruct": []
   },
   {
@@ -22641,7 +22641,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Job Demands",
+   "ssub": "工作負荷",
    "simStruct": [
     {
      "id": "Task Complexity",
@@ -22680,7 +22680,7 @@
    "unlinked": true,
    "cluster": "工作要求與壓力源",
    "sgroup": "工作要求與壓力源",
-   "ssub": "Burnout",
+   "ssub": "耗竭",
    "simStruct": [
     {
      "id": "Work Engagement",
@@ -22723,7 +22723,7 @@
    "unlinked": true,
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
-   "ssub": "Job Resources",
+   "ssub": "工作資源",
    "simStruct": []
   },
   {
@@ -23068,7 +23068,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "制度與合法性",
+   "ssub": "同構與制度化",
    "simStruct": []
   },
   {
@@ -25457,7 +25457,7 @@
    "unlinked": true,
    "cluster": "基本心理需求",
    "sgroup": "基本心理需求",
-   "ssub": "基本心理需求",
+   "ssub": "需求滿足",
    "simStruct": []
   },
   {
@@ -25475,7 +25475,7 @@
    "unlinked": true,
    "cluster": "制度與合法性",
    "sgroup": "制度與合法性",
-   "ssub": "制度與合法性",
+   "ssub": "同構與制度化",
    "simStruct": []
   },
   {
@@ -50088,45 +50088,21 @@
    ]
   },
   {
-   "name": "Algorithm Transparency",
+   "name": "透明度",
    "group": "透明與可解釋",
    "members": [
-    "Algorithm Transparency"
-   ]
-  },
-  {
-   "name": "Perceived Transparency",
-   "group": "透明與可解釋",
-   "members": [
-    "Perceived Transparency"
-   ]
-  },
-  {
-   "name": "System Transparency",
-   "group": "透明與可解釋",
-   "members": [
+    "Algorithm Transparency",
+    "Perceived Transparency",
     "System Transparency"
    ]
   },
   {
-   "name": "Explanation Quality",
+   "name": "可解釋性",
    "group": "透明與可解釋",
    "members": [
-    "Explanation Quality"
-   ]
-  },
-  {
-   "name": "Perceived Explainability",
-   "group": "透明與可解釋",
-   "members": [
+    "Causability",
+    "Explanation Quality",
     "Perceived Explainability"
-   ]
-  },
-  {
-   "name": "Causability",
-   "group": "透明與可解釋",
-   "members": [
-    "Causability"
    ]
   },
   {
@@ -50153,16 +50129,10 @@
    ]
   },
   {
-   "name": "Accountability",
+   "name": "問責",
    "group": "問責",
    "members": [
-    "Accountability"
-   ]
-  },
-  {
-   "name": "Perceived Accountability",
-   "group": "問責",
-   "members": [
+    "Accountability",
     "Perceived Accountability"
    ]
   },
@@ -50401,23 +50371,17 @@
    ]
   },
   {
-   "name": "Privacy Concern",
+   "name": "隱私顧慮",
    "group": "隱私顧慮",
    "members": [
     "Privacy Concern"
    ]
   },
   {
-   "name": "Privacy Awareness",
+   "name": "隱私意識與經驗",
    "group": "隱私顧慮",
    "members": [
-    "Privacy Awareness"
-   ]
-  },
-  {
-   "name": "Privacy Experiences",
-   "group": "隱私顧慮",
-   "members": [
+    "Privacy Awareness",
     "Privacy Experiences"
    ]
   },
@@ -50569,16 +50533,10 @@
    ]
   },
   {
-   "name": "Habit",
+   "name": "習慣",
    "group": "習慣",
    "members": [
-    "Habit"
-   ]
-  },
-  {
-   "name": "Prior Behavior Frequency",
-   "group": "習慣",
-   "members": [
+    "Habit",
     "Prior Behavior Frequency"
    ]
   },
@@ -50603,21 +50561,15 @@
    ]
   },
   {
-   "name": "Org Reputation",
+   "name": "組織聲譽",
    "group": "聲譽",
    "members": [
-    "Org Reputation"
-   ]
-  },
-  {
-   "name": "Perceived Reputation",
-   "group": "聲譽",
-   "members": [
+    "Org Reputation",
     "Perceived Reputation"
    ]
   },
   {
-   "name": "Prior Relationship Reputation",
+   "name": "先前關係聲譽",
    "group": "聲譽",
    "members": [
     "Prior Relationship Reputation"
@@ -50868,45 +50820,27 @@
    ]
   },
   {
-   "name": "不確定性",
+   "name": "環境不確定性",
    "group": "不確定性",
    "members": [
-    "Environment"
-   ]
-  },
-  {
-   "name": "Environmental Uncertainty",
-   "group": "不確定性",
-   "members": [
+    "Environment",
     "Environmental Uncertainty"
    ]
   },
   {
-   "name": "Task Uncertainty",
+   "name": "任務不確定性",
    "group": "不確定性",
    "members": [
+    "Task Equivocality",
     "Task Uncertainty"
    ]
   },
   {
-   "name": "Task Equivocality",
+   "name": "結構適配",
    "group": "不確定性",
    "members": [
-    "Task Equivocality"
-   ]
-  },
-  {
-   "name": "Structure-Environment Fit",
-   "group": "不確定性",
-   "members": [
+    "Organic Structure Need",
     "Structure-Environment Fit"
-   ]
-  },
-  {
-   "name": "Organic Structure Need",
-   "group": "不確定性",
-   "members": [
-    "Organic Structure Need"
    ]
   },
   {
@@ -51028,59 +50962,29 @@
    ]
   },
   {
-   "name": "Installed Base",
+   "name": "安裝基礎與參與",
    "group": "網路效應與安裝基礎",
    "members": [
-    "Installed Base"
-   ]
-  },
-  {
-   "name": "User-side Installed Base",
-   "group": "網路效應與安裝基礎",
-   "members": [
+    "Installed Base",
+    "Provider-side Participation",
     "User-side Installed Base"
    ]
   },
   {
-   "name": "Provider-side Participation",
+   "name": "網路效應強度",
    "group": "網路效應與安裝基礎",
    "members": [
-    "Provider-side Participation"
-   ]
-  },
-  {
-   "name": "Complementary Goods",
-   "group": "網路效應與安裝基礎",
-   "members": [
-    "Complementary Goods"
-   ]
-  },
-  {
-   "name": "Winner-take-all Tendency",
-   "group": "網路效應與安裝基礎",
-   "members": [
-    "Winner-take-all Tendency"
-   ]
-  },
-  {
-   "name": "Subsidy to Price-sensitive Side",
-   "group": "網路效應與安裝基礎",
-   "members": [
-    "Subsidy to Price-sensitive Side"
-   ]
-  },
-  {
-   "name": "Network Effect Strength",
-   "group": "網路效應與安裝基礎",
-   "members": [
-    "Network Effect Strength"
-   ]
-  },
-  {
-   "name": "User Need Heterogeneity",
-   "group": "網路效應與安裝基礎",
-   "members": [
+    "Complementary Goods",
+    "Network Effect Strength",
     "User Need Heterogeneity"
+   ]
+  },
+  {
+   "name": "平台策略與結果",
+   "group": "網路效應與安裝基礎",
+   "members": [
+    "Subsidy to Price-sensitive Side",
+    "Winner-take-all Tendency"
    ]
   },
   {
@@ -51262,95 +51166,47 @@
    ]
   },
   {
-   "name": "Job Demands",
+   "name": "工作負荷",
    "group": "工作要求與壓力源",
    "members": [
-    "Job Demands"
-   ]
-  },
-  {
-   "name": "Workload",
-   "group": "工作要求與壓力源",
-   "members": [
+    "Job Demands",
+    "Learning Pressure",
     "Workload"
    ]
   },
   {
-   "name": "Burnout",
+   "name": "科技壓力源",
+   "group": "工作要求與壓力源",
+   "members": [
+    "Techno-invasion",
+    "Techno-overload"
+   ]
+  },
+  {
+   "name": "耗竭",
    "group": "工作要求與壓力源",
    "members": [
     "Burnout"
    ]
   },
   {
-   "name": "Techno-overload",
-   "group": "工作要求與壓力源",
-   "members": [
-    "Techno-overload"
-   ]
-  },
-  {
-   "name": "Techno-invasion",
-   "group": "工作要求與壓力源",
-   "members": [
-    "Techno-invasion"
-   ]
-  },
-  {
-   "name": "Learning Pressure",
-   "group": "工作要求與壓力源",
-   "members": [
-    "Learning Pressure"
-   ]
-  },
-  {
-   "name": "工作資源與誘因",
+   "name": "工作資源",
    "group": "工作資源與誘因",
    "members": [
-    "Perceived Job Security",
-    "Reinforcement"
+    "Feedback",
+    "Job Enrichment",
+    "Job Resources",
+    "Perceived Job Security"
    ]
   },
   {
-   "name": "Job Resources",
+   "name": "誘因與報酬",
    "group": "工作資源與誘因",
    "members": [
-    "Job Resources"
-   ]
-  },
-  {
-   "name": "Rewards and Job Conditions",
-   "group": "工作資源與誘因",
-   "members": [
+    "Hygiene Factors",
+    "Motivator Factors",
+    "Reinforcement",
     "Rewards and Job Conditions"
-   ]
-  },
-  {
-   "name": "Hygiene Factors",
-   "group": "工作資源與誘因",
-   "members": [
-    "Hygiene Factors"
-   ]
-  },
-  {
-   "name": "Motivator Factors",
-   "group": "工作資源與誘因",
-   "members": [
-    "Motivator Factors"
-   ]
-  },
-  {
-   "name": "Feedback",
-   "group": "工作資源與誘因",
-   "members": [
-    "Feedback"
-   ]
-  },
-  {
-   "name": "Job Enrichment",
-   "group": "工作資源與誘因",
-   "members": [
-    "Job Enrichment"
    ]
   },
   {
@@ -51375,268 +51231,130 @@
    ]
   },
   {
-   "name": "Donation",
+   "name": "捐款行為",
    "group": "捐款與受助者",
    "members": [
     "Donation"
    ]
   },
   {
-   "name": "Identified Victim",
+   "name": "受助者呈現",
    "group": "捐款與受助者",
    "members": [
-    "Identified Victim"
-   ]
-  },
-  {
-   "name": "Statistical Information",
-   "group": "捐款與受助者",
-   "members": [
-    "Statistical Information"
-   ]
-  },
-  {
-   "name": "Social information only + Single Victim",
-   "group": "捐款與受助者",
-   "members": [
-    "Social information only + Single Victim"
-   ]
-  },
-  {
-   "name": "Number of Victims",
-   "group": "捐款與受助者",
-   "members": [
-    "Number of Victims"
-   ]
-  },
-  {
-   "name": "Sufficiency Threshold",
-   "group": "捐款與受助者",
-   "members": [
+    "Identified Victim",
+    "Number of Victims",
+    "Social information only + Single Victim",
+    "Statistical Information",
     "Sufficiency Threshold"
    ]
   },
   {
-   "name": "Word of Mouth",
+   "name": "口碑",
    "group": "口碑與發聲",
    "members": [
+    "Review Consistency",
+    "Review Volume",
     "Word of Mouth"
    ]
   },
   {
-   "name": "Voice",
+   "name": "抱怨與補救",
    "group": "口碑與發聲",
    "members": [
+    "Service Recovery",
     "Voice"
    ]
   },
   {
-   "name": "Review Volume",
-   "group": "口碑與發聲",
-   "members": [
-    "Review Volume"
-   ]
-  },
-  {
-   "name": "Review Consistency",
-   "group": "口碑與發聲",
-   "members": [
-    "Review Consistency"
-   ]
-  },
-  {
-   "name": "Service Recovery",
-   "group": "口碑與發聲",
-   "members": [
-    "Service Recovery"
-   ]
-  },
-  {
-   "name": "Ad Likeability",
+   "name": "揭露",
    "group": "廣告與揭露",
    "members": [
-    "Ad Likeability"
-   ]
-  },
-  {
-   "name": "Sponsorship Disclosure",
-   "group": "廣告與揭露",
-   "members": [
+    "AI Authorship Disclosure",
     "Sponsorship Disclosure"
    ]
   },
   {
-   "name": "AI Authorship Disclosure",
+   "name": "廣告與來源吸引力",
    "group": "廣告與揭露",
    "members": [
-    "AI Authorship Disclosure"
-   ]
-  },
-  {
-   "name": "Source Attractiveness",
-   "group": "廣告與揭露",
-   "members": [
+    "Ad Likeability",
     "Source Attractiveness"
    ]
   },
   {
-   "name": "Greenwashing",
+   "name": "漂綠與懷疑",
    "group": "綠色與永續",
    "members": [
-    "Greenwashing"
-   ]
-  },
-  {
-   "name": "Green Consumer Confusion",
-   "group": "綠色與永續",
-   "members": [
-    "Green Consumer Confusion"
-   ]
-  },
-  {
-   "name": "Skepticism",
-   "group": "綠色與永續",
-   "members": [
+    "Green Consumer Confusion",
+    "Greenwashing",
     "Skepticism"
    ]
   },
   {
-   "name": "Ecological Worldview",
+   "name": "永續資訊與產品",
    "group": "綠色與永續",
    "members": [
-    "Ecological Worldview"
-   ]
-  },
-  {
-   "name": "CSR Engagement",
-   "group": "綠色與永續",
-   "members": [
-    "CSR Engagement"
-   ]
-  },
-  {
-   "name": "Product Lifetime Labelling",
-   "group": "綠色與永續",
-   "members": [
+    "Perceived Durability",
     "Product Lifetime Labelling"
    ]
   },
   {
-   "name": "Perceived Durability",
+   "name": "環境價值與責任",
    "group": "綠色與永續",
    "members": [
-    "Perceived Durability"
+    "CSR Engagement",
+    "Ecological Worldview"
    ]
   },
   {
-   "name": "制裁與治理",
+   "name": "制裁",
    "group": "制裁與治理",
    "members": [
-    "Board Independence",
-    "Managerial Equity Ownership"
-   ]
-  },
-  {
-   "name": "Sanction Certainty",
-   "group": "制裁與治理",
-   "members": [
-    "Sanction Certainty"
-   ]
-  },
-  {
-   "name": "Sanction Severity",
-   "group": "制裁與治理",
-   "members": [
+    "Regulation",
+    "Sanction Celerity",
+    "Sanction Certainty",
     "Sanction Severity"
    ]
   },
   {
-   "name": "Sanction Celerity",
+   "name": "治理與契約",
    "group": "制裁與治理",
    "members": [
-    "Sanction Celerity"
-   ]
-  },
-  {
-   "name": "Regulation",
-   "group": "制裁與治理",
-   "members": [
-    "Regulation"
-   ]
-  },
-  {
-   "name": "Outcome-based Contract",
-   "group": "制裁與治理",
-   "members": [
+    "Board Independence",
+    "Hierarchical Governance",
+    "Managerial Equity Ownership",
+    "Outcome Measurability",
     "Outcome-based Contract"
    ]
   },
   {
-   "name": "Hierarchical Governance",
+   "name": "交易屬性",
    "group": "制裁與治理",
    "members": [
-    "Hierarchical Governance"
-   ]
-  },
-  {
-   "name": "Asset Specificity",
-   "group": "制裁與治理",
-   "members": [
-    "Asset Specificity"
-   ]
-  },
-  {
-   "name": "Transaction Frequency",
-   "group": "制裁與治理",
-   "members": [
+    "Asset Specificity",
     "Transaction Frequency"
-   ]
-  },
-  {
-   "name": "Outcome Measurability",
-   "group": "制裁與治理",
-   "members": [
-    "Outcome Measurability"
    ]
   },
   {
    "name": "心理契約",
    "group": "心理契約",
    "members": [
+    "Psychological Contract Breach",
     "Psychological Contract Fulfillment"
    ]
   },
   {
-   "name": "Psychological Contract Breach",
-   "group": "心理契約",
-   "members": [
-    "Psychological Contract Breach"
-   ]
-  },
-  {
-   "name": "基本心理需求",
+   "name": "需求滿足",
    "group": "基本心理需求",
    "members": [
+    "Autonomy",
     "Need Satisfaction",
-    "Ontological Security"
-   ]
-  },
-  {
-   "name": "Autonomy",
-   "group": "基本心理需求",
-   "members": [
-    "Autonomy"
-   ]
-  },
-  {
-   "name": "Relatedness",
-   "group": "基本心理需求",
-   "members": [
+    "Ontological Security",
     "Relatedness"
    ]
   },
   {
-   "name": "Well-being",
+   "name": "幸福感",
    "group": "基本心理需求",
    "members": [
     "Well-being"
@@ -51671,207 +51389,111 @@
    ]
   },
   {
-   "name": "Gain Framing",
+   "name": "框架",
    "group": "框架與損益",
    "members": [
-    "Gain Framing"
-   ]
-  },
-  {
-   "name": "Loss Framing",
-   "group": "框架與損益",
-   "members": [
-    "Loss Framing"
-   ]
-  },
-  {
-   "name": "Risk Seeking",
-   "group": "框架與損益",
-   "members": [
-    "Risk Seeking"
-   ]
-  },
-  {
-   "name": "Reference Point",
-   "group": "框架與損益",
-   "members": [
+    "Gain Framing",
+    "Loss Framing",
     "Reference Point"
    ]
   },
   {
-   "name": "Certainty Effect",
+   "name": "機率權重與風險偏好",
    "group": "框架與損益",
    "members": [
-    "Certainty Effect"
-   ]
-  },
-  {
-   "name": "Small Probability Overweighting",
-   "group": "框架與損益",
-   "members": [
+    "Certainty Effect",
+    "Risk Seeking",
     "Small Probability Overweighting"
    ]
   },
   {
-   "name": "Crisis",
+   "name": "危機屬性",
    "group": "危機情境",
    "members": [
-    "Crisis"
-   ]
-  },
-  {
-   "name": "Crisis History",
-   "group": "危機情境",
-   "members": [
+    "Crisis",
     "Crisis History"
    ]
   },
   {
-   "name": "Accommodative Response Strategy",
+   "name": "危機回應策略",
    "group": "危機情境",
    "members": [
     "Accommodative Response Strategy"
    ]
   },
   {
-   "name": "Output Volume",
+   "name": "規模",
    "group": "規模與產出",
    "members": [
-    "Output Volume"
-   ]
-  },
-  {
-   "name": "Product Scope",
-   "group": "規模與產出",
-   "members": [
+    "Output Volume",
     "Product Scope"
    ]
   },
   {
-   "name": "Dynamic Pricing",
+   "name": "定價",
    "group": "規模與產出",
    "members": [
     "Dynamic Pricing"
    ]
   },
   {
-   "name": "Personal Values",
+   "name": "利他與環境價值",
+   "group": "價值取向",
+   "members": [
+    "Altruistic Values",
+    "Biospheric Values"
+   ]
+  },
+  {
+   "name": "利己與工具價值",
+   "group": "價值取向",
+   "members": [
+    "Egoistic Values",
+    "Instrumental Values"
+   ]
+  },
+  {
+   "name": "個人價值",
    "group": "價值取向",
    "members": [
     "Personal Values"
    ]
   },
   {
-   "name": "Altruistic Values",
-   "group": "價值取向",
-   "members": [
-    "Altruistic Values"
-   ]
-  },
-  {
-   "name": "Biospheric Values",
-   "group": "價值取向",
-   "members": [
-    "Biospheric Values"
-   ]
-  },
-  {
-   "name": "Egoistic Values",
-   "group": "價值取向",
-   "members": [
-    "Egoistic Values"
-   ]
-  },
-  {
-   "name": "Instrumental Values",
-   "group": "價值取向",
-   "members": [
-    "Instrumental Values"
-   ]
-  },
-  {
-   "name": "制度與合法性",
+   "name": "合法性",
    "group": "制度與合法性",
    "members": [
-    "Corporate Political Activity",
-    "Institutionalization",
-    "Organizational Status"
-   ]
-  },
-  {
-   "name": "Isomorphism",
-   "group": "制度與合法性",
-   "members": [
-    "Isomorphism"
-   ]
-  },
-  {
-   "name": "Legitimacy",
-   "group": "制度與合法性",
-   "members": [
-    "Legitimacy"
-   ]
-  },
-  {
-   "name": "Professionalization",
-   "group": "制度與合法性",
-   "members": [
-    "Professionalization"
-   ]
-  },
-  {
-   "name": "Organizational Survival",
-   "group": "制度與合法性",
-   "members": [
+    "Legitimacy",
+    "Organizational Status",
     "Organizational Survival"
    ]
   },
   {
-   "name": "Government Provision",
+   "name": "同構與制度化",
    "group": "制度與合法性",
    "members": [
-    "Government Provision"
+    "Corporate Political Activity",
+    "Government Provision",
+    "Institutionalization",
+    "Isomorphism",
+    "Professionalization"
    ]
   },
   {
-   "name": "Age",
+   "name": "人口變項",
    "group": "人口與個人特質",
    "members": [
-    "Age"
-   ]
-  },
-  {
-   "name": "Gender",
-   "group": "人口與個人特質",
-   "members": [
+    "Age",
+    "Demographic Differences",
     "Gender"
    ]
   },
   {
-   "name": "Demographic Differences",
+   "name": "個人特質",
    "group": "人口與個人特質",
    "members": [
-    "Demographic Differences"
-   ]
-  },
-  {
-   "name": "Individual Characteristics",
-   "group": "人口與個人特質",
-   "members": [
-    "Individual Characteristics"
-   ]
-  },
-  {
-   "name": "Personality Traits",
-   "group": "人口與個人特質",
-   "members": [
-    "Personality Traits"
-   ]
-  },
-  {
-   "name": "Roles",
-   "group": "人口與個人特質",
-   "members": [
+    "Individual Characteristics",
+    "Personality Traits",
     "Roles"
    ]
   },

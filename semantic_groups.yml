@@ -80,7 +80,11 @@ groups:
     members: [Attitude Change, Attitude Strength]
 - name: 透明與可解釋
   members: [Algorithm Transparency, Perceived Transparency, System Transparency, Explanation Quality, Perceived Explainability, Causability]
-  subgroups: []
+  subgroups:
+  - name: 透明度
+    members: [Algorithm Transparency, Perceived Transparency, System Transparency]
+  - name: 可解釋性
+    members: [Explanation Quality, Perceived Explainability, Causability]
 - name: 公平與正義
   members: [Perceived Fairness, Perceived Price Fairness, Distributive Justice, Procedural Justice, Interactional Justice, Fairness, Perceived Inequity, Perceived Injustice, Input-Outcome Ratio Discrepancy,
     Inequity Distress, Transaction Similarity]
@@ -91,7 +95,9 @@ groups:
     members: [Procedural Justice, Interactional Justice, Fairness, Perceived Fairness, Perceived Injustice]
 - name: 問責
   members: [Accountability, Perceived Accountability]
-  subgroups: []
+  subgroups:
+  - name: 問責
+    members: [Accountability, Perceived Accountability]
 - name: 滿意與不滿
   members: [User Satisfaction, Job Satisfaction, Dissatisfaction, Job Dissatisfaction, Customer Complaints]
   subgroups:
@@ -172,7 +178,11 @@ groups:
     members: [Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Job Replacement Threat, Threat to Freedom, Techno-insecurity, Techno-uncertainty]
 - name: 隱私顧慮
   members: [Privacy Concern, Privacy Awareness, Privacy Experiences]
-  subgroups: []
+  subgroups:
+  - name: 隱私顧慮
+    members: [Privacy Concern]
+  - name: 隱私意識與經驗
+    members: [Privacy Awareness, Privacy Experiences]
 - name: 自我效能與控制感
   members: [Self-Efficacy, Perceived Behavioral Control, Perceived Efficacy, Response Efficacy, Safeguard Effectiveness, Collective Efficacy, Competence, Control, Facilitating Conditions, Technology Readiness,
     Choice Freedom, Self-Confidence, Autonomy Support, Perceived AI Competence, Vicarious Exp, Stress Coping Ability, General Self-Efficacy]
@@ -221,7 +231,9 @@ groups:
     members: [Affective Commitment, Continuance Commitment, Normative Commitment, Relationship Commitment, Brand Commitment]
 - name: 習慣
   members: [Habit, Prior Behavior Frequency]
-  subgroups: []
+  subgroups:
+  - name: 習慣
+    members: [Habit, Prior Behavior Frequency]
 - name: 品牌知識與權益
   members: [Brand Equity, Brand Image, Brand Associations, Brand Awareness, Brand Cognitions, Brand Identification, Brand Resonance, Association Strength Favorability and Uniqueness]
   subgroups:
@@ -231,7 +243,11 @@ groups:
     members: [Brand Equity, Brand Resonance, Brand Identification]
 - name: 聲譽
   members: [Org Reputation, Perceived Reputation, Prior Relationship Reputation, Brand Reputation]
-  subgroups: []
+  subgroups:
+  - name: 組織聲譽
+    members: [Org Reputation, Perceived Reputation]
+  - name: 先前關係聲譽
+    members: [Prior Relationship Reputation]
 - name: 責任歸因
   members: [Crisis Responsibility, Responsibility Attribution, Ascription of responsibility, Awareness of Consequence, Perceived Consequences, Controllability, Locus, Stability, Seller Profit Motive Attribution,
     Seller Cost Justification, Consensus, Distinctiveness, Consistency]
@@ -307,8 +323,12 @@ groups:
 - name: 不確定性
   members: [Environmental Uncertainty, Task Uncertainty, Task Equivocality, Structure-Environment Fit, Organic Structure Need, Environment]
   subgroups:
-  - name: 不確定性
-    members: [Environment]
+  - name: 環境不確定性
+    members: [Environmental Uncertainty, Environment]
+  - name: 任務不確定性
+    members: [Task Uncertainty, Task Equivocality]
+  - name: 結構適配
+    members: [Organic Structure Need, Structure-Environment Fit]
 - name: 績效與成果
   members: [Firm Performance, Industry Profitability, Competitive Advantage, Innovation Performance, Operational Efficiency, Market Efficiency, Organizational Impact, Individual Impact, Job Performance,
     Learning Performance, Decision Accuracy, Communication Effectiveness, Past Performance, Incumbent Market Share, Employee Productivity, Abnormal Return, Security Price Change, Investor Overreaction,
@@ -344,7 +364,13 @@ groups:
     members: [Resource Criticality, Resource Concentration, External Dependence, Interorganizational Ties, Resource Acquisition, External Knowledge Availability, Bilateral Dependency]
 - name: 網路效應與安裝基礎
   members: [Installed Base, User-side Installed Base, Provider-side Participation, Complementary Goods, Winner-take-all Tendency, Subsidy to Price-sensitive Side, Network Effect Strength, User Need Heterogeneity]
-  subgroups: []
+  subgroups:
+  - name: 安裝基礎與參與
+    members: [Installed Base, User-side Installed Base, Provider-side Participation]
+  - name: 網路效應強度
+    members: [Network Effect Strength, Complementary Goods, User Need Heterogeneity]
+  - name: 平台策略與結果
+    members: [Subsidy to Price-sensitive Side, Winner-take-all Tendency]
 - name: 市場力量
   members: [Rivalry Intensity, Threat of New Entrants, Threat of Substitutes, Supplier Bargaining Power, Buyer Bargaining Power, Entry Barriers, Alternative Attractiveness, Buyer Concentration, Product
       Differentiation, Supplier Discretion over Resource, Resource Holder Power, Stakeholder Power, Stakeholder Legitimacy, Stakeholder Urgency, Rival Interdependence, Stakeholder Integration]
@@ -399,11 +425,19 @@ groups:
   subgroups:
   - name: 角色壓力
     members: [Role Conflict, Role Ambiguity, Role Expectations, Role Stress]
+  - name: 工作負荷
+    members: [Job Demands, Workload, Learning Pressure]
+  - name: 科技壓力源
+    members: [Techno-invasion, Techno-overload]
+  - name: 耗竭
+    members: [Burnout]
 - name: 工作資源與誘因
   members: [Job Resources, Rewards and Job Conditions, Hygiene Factors, Motivator Factors, Feedback, Job Enrichment, Reinforcement, Perceived Job Security]
   subgroups:
-  - name: 工作資源與誘因
-    members: [Reinforcement, Perceived Job Security]
+  - name: 工作資源
+    members: [Job Resources, Job Enrichment, Feedback, Perceived Job Security]
+  - name: 誘因與報酬
+    members: [Rewards and Job Conditions, Hygiene Factors, Motivator Factors, Reinforcement]
 - name: 目標設定
   members: [Goal Specificity, Goal Difficulty, Goal Importance, Performance Standard, Perceived Performance Discrepancy, Discrepancy Magnitude, Progress toward Goal, Goal Attainment, Self-Regulation]
   subgroups:
@@ -413,32 +447,56 @@ groups:
     members: [Performance Standard, Perceived Performance Discrepancy, Discrepancy Magnitude, Progress toward Goal, Goal Attainment, Self-Regulation]
 - name: 捐款與受助者
   members: [Donation, Identified Victim, Statistical Information, Social information only + Single Victim, Number of Victims, Sufficiency Threshold]
-  subgroups: []
+  subgroups:
+  - name: 捐款行為
+    members: [Donation]
+  - name: 受助者呈現
+    members: [Identified Victim, Number of Victims, Statistical Information, Social information only + Single Victim, Sufficiency Threshold]
 - name: 口碑與發聲
   members: [Word of Mouth, Voice, Review Volume, Review Consistency, Service Recovery]
-  subgroups: []
+  subgroups:
+  - name: 口碑
+    members: [Word of Mouth, Review Volume, Review Consistency]
+  - name: 抱怨與補救
+    members: [Voice, Service Recovery]
 - name: 廣告與揭露
   members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness, Peripheral Cues]
-  subgroups: []
+  subgroups:
+  - name: 揭露
+    members: [AI Authorship Disclosure, Sponsorship Disclosure]
+  - name: 廣告與來源吸引力
+    members: [Ad Likeability, Source Attractiveness]
 - name: 綠色與永續
   members: [Greenwashing, Green Consumer Confusion, Skepticism, Ecological Worldview, CSR Engagement, Product Lifetime Labelling, Perceived Durability]
-  subgroups: []
+  subgroups:
+  - name: 漂綠與懷疑
+    members: [Greenwashing, Green Consumer Confusion, Skepticism]
+  - name: 永續資訊與產品
+    members: [Product Lifetime Labelling, Perceived Durability]
+  - name: 環境價值與責任
+    members: [Ecological Worldview, CSR Engagement]
 - name: 制裁與治理
   members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation, Outcome-based Contract, Hierarchical Governance, Asset Specificity, Transaction Frequency, Outcome Measurability, Board
       Independence, Managerial Equity Ownership]
   subgroups:
-  - name: 制裁與治理
-    members: [Board Independence, Managerial Equity Ownership]
+  - name: 制裁
+    members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation]
+  - name: 治理與契約
+    members: [Hierarchical Governance, Outcome-based Contract, Outcome Measurability, Board Independence, Managerial Equity Ownership]
+  - name: 交易屬性
+    members: [Asset Specificity, Transaction Frequency]
 - name: 心理契約
   members: [Psychological Contract Breach, Psychological Contract Fulfillment]
   subgroups:
   - name: 心理契約
-    members: [Psychological Contract Fulfillment]
+    members: [Psychological Contract Breach, Psychological Contract Fulfillment]
 - name: 基本心理需求
   members: [Autonomy, Relatedness, Well-being, Need Satisfaction, Ontological Security]
   subgroups:
-  - name: 基本心理需求
-    members: [Need Satisfaction, Ontological Security]
+  - name: 需求滿足
+    members: [Autonomy, Relatedness, Need Satisfaction, Ontological Security]
+  - name: 幸福感
+    members: [Well-being]
 - name: 極化與媒體暴露
   members: [Affective Polarization, Partisan Media Exposure, Cross-cutting Exposure, Social Distance, Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Partisan
       Sorting, Elite Polarization, Identity Politicization]
@@ -451,27 +509,51 @@ groups:
     members: [Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Social Distance]
 - name: 框架與損益
   members: [Gain Framing, Loss Framing, Risk Seeking, Reference Point, Certainty Effect, Small Probability Overweighting]
-  subgroups: []
+  subgroups:
+  - name: 框架
+    members: [Gain Framing, Loss Framing, Reference Point]
+  - name: 機率權重與風險偏好
+    members: [Certainty Effect, Small Probability Overweighting, Risk Seeking]
 - name: 危機情境
   members: [Crisis, Crisis History, Accommodative Response Strategy]
-  subgroups: []
+  subgroups:
+  - name: 危機屬性
+    members: [Crisis, Crisis History]
+  - name: 危機回應策略
+    members: [Accommodative Response Strategy]
 - name: 規模與產出
   members: [Output Volume, Product Scope, Economies of Scale, Dynamic Pricing]
-  subgroups: []
+  subgroups:
+  - name: 規模
+    members: [Output Volume, Product Scope]
+  - name: 定價
+    members: [Dynamic Pricing]
 - name: 心理契約與承諾違反
   members: [Opportunistic Behavior]
   subgroups: []
 - name: 價值取向
   members: [Personal Values, Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values]
-  subgroups: []
+  subgroups:
+  - name: 利他與環境價值
+    members: [Altruistic Values, Biospheric Values]
+  - name: 利己與工具價值
+    members: [Egoistic Values, Instrumental Values]
+  - name: 個人價值
+    members: [Personal Values]
 - name: 制度與合法性
   members: [Isomorphism, Legitimacy, Professionalization, Organizational Survival, Government Provision, Corporate Political Activity, Organizational Status, Institutionalization]
   subgroups:
-  - name: 制度與合法性
-    members: [Corporate Political Activity, Organizational Status, Institutionalization]
+  - name: 合法性
+    members: [Legitimacy, Organizational Status, Organizational Survival]
+  - name: 同構與制度化
+    members: [Isomorphism, Professionalization, Institutionalization, Corporate Political Activity, Government Provision]
 - name: 人口與個人特質
   members: [Age, Gender, Demographic Differences, Individual Characteristics, Personality Traits, Roles]
-  subgroups: []
+  subgroups:
+  - name: 人口變項
+    members: [Age, Gender, Demographic Differences]
+  - name: 個人特質
+    members: [Personality Traits, Individual Characteristics, Roles]
 - name: 規範
   members: [Social Norm, Subjective Norm, Personal Norm, Normative Pressure, Perceived Majority Support, Social Persuasion, aligned norms, Coercive Pressure, Mimetic Pressure, Stakeholder Pressure, Stakeholder
       Salience, Socialization, Competitive Pressure, Trading Partner Pressure, Compliance with External Demands, Opinion Leader Influence, Media Portrayal of Opinion Climate, Felt Obligation, Moral Commitment,
