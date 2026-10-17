@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 08:11",
+ "generated": "2026-10-17 08:12",
  "vault": "Zettel",
  "variables": [
   {
@@ -1382,8 +1382,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "Use",
     "USE",
+    "Use",
     "Use Behavior"
    ],
    "notes": [
@@ -2776,8 +2776,8 @@
    "id": "Social Norm",
    "label": "Social Norm",
    "aliases": [
-    "Social influence",
-    "Social Influence"
+    "Social Influence",
+    "Social influence"
    ],
    "notes": [
     {
@@ -2988,7 +2988,7 @@
    "unlinked": true,
    "cluster": "實際行為與使用",
    "sgroup": "實際行為與使用",
-   "ssub": "Donation",
+   "ssub": "利他與助人行為",
    "simStruct": [
     {
      "id": "Well-being",
@@ -11994,7 +11994,7 @@
    "unlinked": true,
    "cluster": "實際行為與使用",
    "sgroup": "實際行為與使用",
-   "ssub": "Helping Behavior",
+   "ssub": "利他與助人行為",
    "simStruct": [
     {
      "id": "Self-Esteem",
@@ -50091,16 +50091,10 @@
    ]
   },
   {
-   "name": "Donation",
+   "name": "利他與助人行為",
    "group": "實際行為與使用",
    "members": [
-    "Donation"
-   ]
-  },
-  {
-   "name": "Helping Behavior",
-   "group": "實際行為與使用",
-   "members": [
+    "Donation",
     "Helping Behavior"
    ]
   },

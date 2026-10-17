@@ -62,6 +62,8 @@ groups:
     members: [Customer Engagement, Organizational Citizenship Behavior, Effort, Persistence, Task Strategies]
   - name: 違規與反生產行為
     members: [Security Policy Violation, Counterproductive Work Behavior, Free Riding]
+  - name: 利他與助人行為
+    members: [Donation, Helping Behavior]
 - name: 態度
   members: [Attitude, Brand Attitude, Attitude toward the Ad, Prior AI Attitude, Donation Attitude, Attitude Change, Attitude Strength, Brand Preference, Attitude toward the Advertiser, Ad Cognitions, Brand
       Feelings, Conviction, Behavioral Beliefs, Outcome Evaluations, Control Beliefs]
