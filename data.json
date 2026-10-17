@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17 08:03",
+ "generated": "2026-10-17 08:11",
  "vault": "Zettel",
  "variables": [
   {
@@ -258,7 +258,7 @@
     },
     {
      "id": "Turnover Intention",
-     "j": 0.27
+     "j": 0.29
     },
     {
      "id": "Trust in AI",
@@ -403,7 +403,7 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     }
    ]
@@ -536,11 +536,11 @@
      "j": 0.33
     },
     {
-     "id": "Personal Norm",
+     "id": "Warm Glow",
      "j": 0.29
     },
     {
-     "id": "Domain Expertise",
+     "id": "Personal Norm",
      "j": 0.29
     }
    ]
@@ -850,7 +850,7 @@
    "unlinked": false,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "轉換成本",
+   "ssub": "轉換成本與鎖定",
    "simStruct": []
   },
   {
@@ -895,7 +895,7 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     }
    ]
@@ -1261,11 +1261,11 @@
      "j": 0.29
     },
     {
-     "id": "Perceived Credibility",
-     "j": 0.26
+     "id": "Emotions",
+     "j": 0.27
     },
     {
-     "id": "Emotions",
+     "id": "Perceived Credibility",
      "j": 0.26
     },
     {
@@ -1293,8 +1293,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": false,
-   "cluster": "基本心理需求",
-   "sgroup": "基本心理需求",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
    "ssub": "需求滿足",
    "simStruct": [
     {
@@ -1382,8 +1382,8 @@
     "Collective Action",
     "Technology Use",
     "Usage",
-    "USE",
     "Use",
+    "USE",
     "Use Behavior"
    ],
    "notes": [
@@ -1565,7 +1565,7 @@
    "unlinked": false,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "危機屬性",
+   "ssub": "危機屬性與回應",
    "simStruct": [
     {
      "id": "Prior Relationship Reputation",
@@ -1632,7 +1632,7 @@
    "unlinked": false,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "危機屬性",
+   "ssub": "危機屬性與回應",
    "simStruct": []
   },
   {
@@ -1671,7 +1671,7 @@
    "simStruct": [
     {
      "id": "Attitude",
-     "j": 0.26
+     "j": 0.27
     }
    ]
   },
@@ -1822,16 +1822,16 @@
      "j": 0.5
     },
     {
+     "id": "Warm Glow",
+     "j": 0.4
+    },
+    {
      "id": "Personal Norm",
      "j": 0.4
     },
     {
      "id": "Domain Expertise",
      "j": 0.4
-    },
-    {
-     "id": "Ability to Modify Algorithm",
-     "j": 0.33
     }
    ]
   },
@@ -1989,7 +1989,7 @@
    "unlinked": false,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "組織聲譽",
+   "ssub": "組織與關係聲譽",
    "simStruct": [
     {
      "id": "Crisis Responsibility",
@@ -2068,15 +2068,15 @@
      "j": 0.25
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.25
-    },
-    {
      "id": "Response Efficacy",
      "j": 0.25
     },
     {
      "id": "Optimism",
+     "j": 0.25
+    },
+    {
+     "id": "Hedonic Goal",
      "j": 0.25
     }
    ]
@@ -2394,7 +2394,7 @@
    "unlinked": false,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "先前關係聲譽",
+   "ssub": "組織與關係聲譽",
    "simStruct": [
     {
      "id": "Crisis History",
@@ -2478,8 +2478,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": false,
-   "cluster": "基本心理需求",
-   "sgroup": "基本心理需求",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
    "ssub": "需求滿足",
    "simStruct": [
     {
@@ -2552,11 +2552,11 @@
      "j": 0.3
     },
     {
-     "id": "Expectancy",
-     "j": 0.27
+     "id": "Social Norm",
+     "j": 0.28
     },
     {
-     "id": "Social Norm",
+     "id": "Expectancy",
      "j": 0.27
     },
     {
@@ -2748,7 +2748,7 @@
     },
     {
      "id": "Social Norm",
-     "j": 0.31
+     "j": 0.33
     }
    ]
   },
@@ -2767,8 +2767,8 @@
    "paperUrls": {},
    "desc": "1. Identified Single Victim Effect – 在 Study 1 中，結果顯示：當單一受害者提供完整識別資訊（年齡、姓名與照片）時，其假設捐款意願顯著高於僅提供部分或無識別資訊的情境。 – 數據來源：247名受試者在2 × 4設計下，對單一受害者條件中，含照片組的捐款金額（對數轉換後）顯著高於其他組別；而在群體情境中，識別資訊並未顯著影響捐助意願。 結論：識別受害者效應主要適用於單一個體，當受害者被充分個體化（尤其有照片）時，能夠顯著提升救助意願。 (關鍵概念：Identified V…",
    "unlinked": false,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
+   "cluster": "受助者呈現",
+   "sgroup": "受助者呈現",
    "ssub": "受助者呈現",
    "simStruct": []
   },
@@ -2816,15 +2816,23 @@
    "simStruct": [
     {
      "id": "Social Environment",
-     "j": 0.36
+     "j": 0.38
     },
     {
      "id": "Social Identity",
-     "j": 0.31
+     "j": 0.33
     },
     {
      "id": "Self-Efficacy",
-     "j": 0.27
+     "j": 0.28
+    },
+    {
+     "id": "Subjective Norm",
+     "j": 0.25
+    },
+    {
+     "id": "Domain Expertise",
+     "j": 0.25
     }
    ]
   },
@@ -2978,10 +2986,14 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
-   "ssub": "捐款行為",
+   "cluster": "實際行為與使用",
+   "sgroup": "實際行為與使用",
+   "ssub": "Donation",
    "simStruct": [
+    {
+     "id": "Well-being",
+     "j": 0.27
+    },
     {
      "id": "Protection Motivation",
      "j": 0.27
@@ -3461,7 +3473,7 @@
     },
     {
      "id": "Turnover Intention",
-     "j": 0.26
+     "j": 0.28
     }
    ]
   },
@@ -3765,10 +3777,6 @@
    "ssub": "人口變項",
    "simStruct": [
     {
-     "id": "Secure Attachment",
-     "j": 0.33
-    },
-    {
      "id": "Product Lifetime Labelling",
      "j": 0.33
     },
@@ -3915,20 +3923,28 @@
    "ssub": "自我效能",
    "simStruct": [
     {
+     "id": "Restraining Forces",
+     "j": 0.4
+    },
+    {
+     "id": "Perceived Barriers",
+     "j": 0.4
+    },
+    {
      "id": "Responsibility Attribution",
      "j": 0.38
+    },
+    {
+     "id": "Perceived Injustice",
+     "j": 0.33
     },
     {
      "id": "Identified Victim",
      "j": 0.33
     },
     {
-     "id": "Warm Glow",
-     "j": 0.29
-    },
-    {
-     "id": "Locus",
-     "j": 0.25
+     "id": "Danger Control",
+     "j": 0.33
     }
    ]
   },
@@ -4045,15 +4061,15 @@
      "j": 0.33
     },
     {
+     "id": "Secure Attachment",
+     "j": 0.33
+    },
+    {
      "id": "Psychological Tension",
      "j": 0.33
     },
     {
      "id": "Instrumentality",
-     "j": 0.33
-    },
-    {
-     "id": "Autonomy Support",
      "j": 0.33
     }
    ]
@@ -4096,25 +4112,33 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "基本心理需求",
-   "sgroup": "基本心理需求",
-   "ssub": "幸福感",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
+   "ssub": "幸福與安適",
    "simStruct": [
     {
-     "id": "Intrinsic Motivation",
+     "id": "Protection Motivation",
      "j": 0.33
+    },
+    {
+     "id": "Organizational Citizenship Behavior",
+     "j": 0.33
+    },
+    {
+     "id": "Immersion",
+     "j": 0.29
+    },
+    {
+     "id": "Fear Control",
+     "j": 0.29
+    },
+    {
+     "id": "Reactance",
+     "j": 0.27
     },
     {
      "id": "Job Performance",
      "j": 0.27
-    },
-    {
-     "id": "Preference for AI Recommender",
-     "j": 0.25
-    },
-    {
-     "id": "Need Satisfaction",
-     "j": 0.25
     }
    ]
   },
@@ -4131,8 +4155,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "基本心理需求",
-   "sgroup": "基本心理需求",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
    "ssub": "需求滿足",
    "simStruct": [
     {
@@ -4202,10 +4226,6 @@
     {
      "id": "Self-Efficacy",
      "j": 0.3
-    },
-    {
-     "id": "Turnover Intention",
-     "j": 0.28
     },
     {
      "id": "Well-being",
@@ -4289,10 +4309,6 @@
    "sgroup": "動機與目標",
    "ssub": "動機",
    "simStruct": [
-    {
-     "id": "Well-being",
-     "j": 0.33
-    },
     {
      "id": "Perceived AI Competence",
      "j": 0.33
@@ -4474,7 +4490,7 @@
    "simStruct": [
     {
      "id": "Social Norm",
-     "j": 0.36
+     "j": 0.38
     },
     {
      "id": "Gratifications Obtained",
@@ -4730,6 +4746,10 @@
    "ssub": "習慣",
    "simStruct": [
     {
+     "id": "Warm Glow",
+     "j": 0.43
+    },
+    {
      "id": "Domain Expertise",
      "j": 0.43
     },
@@ -4747,10 +4767,6 @@
     },
     {
      "id": "Facilitating Conditions",
-     "j": 0.29
-    },
-    {
-     "id": "Algorithm Error Observed",
      "j": 0.29
     }
    ]
@@ -5059,20 +5075,20 @@
      "j": 0.5
     },
     {
+     "id": "Perceived Efficacy",
+     "j": 0.33
+    },
+    {
      "id": "Valence",
+     "j": 0.29
+    },
+    {
+     "id": "Responsibility Attribution",
      "j": 0.29
     },
     {
      "id": "Perceived Threat",
      "j": 0.29
-    },
-    {
-     "id": "Workload",
-     "j": 0.25
-    },
-    {
-     "id": "Trialability",
-     "j": 0.25
     }
    ]
   },
@@ -5235,7 +5251,7 @@
    "unlinked": true,
    "cluster": "聲譽",
    "sgroup": "聲譽",
-   "ssub": "組織聲譽",
+   "ssub": "組織與關係聲譽",
    "simStruct": [
     {
      "id": "Embeddedness",
@@ -5250,16 +5266,16 @@
      "j": 0.5
     },
     {
+     "id": "Perceived Fairness",
+     "j": 0.4
+    },
+    {
      "id": "Communication",
      "j": 0.4
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.33
-    },
-    {
-     "id": "Workload",
-     "j": 0.25
+     "id": "Distributive Justice",
+     "j": 0.29
     }
    ]
   },
@@ -5340,7 +5356,7 @@
     },
     {
      "id": "Turnover Intention",
-     "j": 0.25
+     "j": 0.27
     }
    ]
   },
@@ -5376,16 +5392,12 @@
      "j": 0.44
     },
     {
-     "id": "Perceived Fairness",
+     "id": "Turnover Intention",
      "j": 0.33
     },
     {
      "id": "Job Satisfaction",
      "j": 0.32
-    },
-    {
-     "id": "Turnover Intention",
-     "j": 0.31
     },
     {
      "id": "Perceived Organizational Support",
@@ -5394,6 +5406,10 @@
     {
      "id": "Organizational Citizenship Behavior",
      "j": 0.31
+    },
+    {
+     "id": "Motivation",
+     "j": 0.3
     }
    ]
   },
@@ -5427,27 +5443,27 @@
    "simStruct": [
     {
      "id": "Organizational Citizenship Behavior",
+     "j": 0.36
+    },
+    {
+     "id": "Customer Complaints",
      "j": 0.33
     },
     {
      "id": "Affective Commitment",
-     "j": 0.31
-    },
-    {
-     "id": "Customer Complaints",
-     "j": 0.3
+     "j": 0.33
     },
     {
      "id": "Leader-Member Exchange Quality",
-     "j": 0.29
-    },
-    {
-     "id": "Job Performance",
-     "j": 0.28
+     "j": 0.31
     },
     {
      "id": "Continuance Intention",
-     "j": 0.27
+     "j": 0.29
+    },
+    {
+     "id": "Job Satisfaction",
+     "j": 0.28
     }
    ]
   },
@@ -5825,7 +5841,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": []
   },
   {
@@ -5896,9 +5912,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "風險與威脅知覺",
-   "sgroup": "風險與威脅知覺",
-   "ssub": "風險知覺",
+   "cluster": "隱私顧慮",
+   "sgroup": "隱私顧慮",
+   "ssub": "隱私顧慮",
    "simStruct": []
   },
   {
@@ -5975,11 +5991,11 @@
      "j": 0.67
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.6
+     "id": "Perceived Reputation",
+     "j": 0.5
     },
     {
-     "id": "Perceived Reputation",
+     "id": "Distributive Justice",
      "j": 0.5
     },
     {
@@ -5987,7 +6003,7 @@
      "j": 0.43
     },
     {
-     "id": "Domain Expertise",
+     "id": "Perceived Fairness",
      "j": 0.4
     }
    ]
@@ -6015,14 +6031,6 @@
      "j": 0.67
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.4
-    },
-    {
-     "id": "Distributive Justice",
-     "j": 0.4
-    },
-    {
      "id": "Automation Reliability",
      "j": 0.4
     },
@@ -6032,6 +6040,14 @@
     },
     {
      "id": "Source Attractiveness",
+     "j": 0.33
+    },
+    {
+     "id": "Safeguard Effectiveness",
+     "j": 0.33
+    },
+    {
+     "id": "Safeguard Cost",
      "j": 0.33
     }
    ]
@@ -6118,7 +6134,7 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     }
    ]
@@ -6205,8 +6221,8 @@
      "j": 0.4
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.29
+     "id": "Warm Glow",
+     "j": 0.33
     }
    ]
   },
@@ -6310,7 +6326,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "厭惡",
+   "ssub": "迴避與厭惡",
    "simStruct": [
     {
      "id": "Trust in AI",
@@ -6387,14 +6403,6 @@
      "j": 0.33
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.25
-    },
-    {
-     "id": "Distributive Justice",
-     "j": 0.25
-    },
-    {
      "id": "Ability to Modify Algorithm",
      "j": 0.25
     }
@@ -6457,7 +6465,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "迴避",
+   "ssub": "迴避與厭惡",
    "simStruct": [
     {
      "id": "Avoidance Behavior",
@@ -6472,15 +6480,15 @@
      "j": 0.33
     },
     {
-     "id": "Public Agenda Salience",
-     "j": 0.33
-    },
-    {
      "id": "Discomfort",
      "j": 0.33
     },
     {
      "id": "Willingness to Speak Out",
+     "j": 0.25
+    },
+    {
+     "id": "Switching Behavior",
      "j": 0.25
     }
    ]
@@ -6771,12 +6779,12 @@
      "j": 0.67
     },
     {
-     "id": "Felt Obligation",
+     "id": "Perceived Fairness",
      "j": 0.5
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.4
+     "id": "Felt Obligation",
+     "j": 0.5
     },
     {
      "id": "Goal Difficulty",
@@ -6831,7 +6839,7 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     }
    ]
@@ -6869,6 +6877,10 @@
     {
      "id": "Error Tolerance",
      "j": 0.33
+    },
+    {
+     "id": "Warm Glow",
+     "j": 0.25
     }
    ]
   },
@@ -7366,16 +7378,16 @@
      "j": 0.5
     },
     {
-     "id": "eWOM Credibility",
-     "j": 0.33
-    },
-    {
      "id": "Persuasion Knowledge",
      "j": 0.33
     },
     {
      "id": "Bandwagon Effect",
      "j": 0.29
+    },
+    {
+     "id": "Refutational Preemption",
+     "j": 0.25
     }
    ]
   },
@@ -7503,10 +7515,6 @@
    "ssub": "揭露與分享",
    "simStruct": [
     {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
-    {
      "id": "Social Exchange Relationship",
      "j": 0.33
     },
@@ -7525,6 +7533,10 @@
     {
      "id": "Behavioral Uncertainty",
      "j": 0.33
+    },
+    {
+     "id": "Perceived Risk",
+     "j": 0.29
     }
    ]
   },
@@ -7570,7 +7582,7 @@
      "j": 0.25
     },
     {
-     "id": "Empathy",
+     "id": "Job Demands",
      "j": 0.25
     }
    ]
@@ -7605,6 +7617,10 @@
     {
      "id": "Switching Behavior",
      "j": 0.4
+    },
+    {
+     "id": "Well-being",
+     "j": 0.25
     },
     {
      "id": "Organizational Citizenship Behavior",
@@ -7987,27 +8003,27 @@
    "ssub": "程序與互動公平",
    "simStruct": [
     {
-     "id": "Algorithm Error Observed",
-     "j": 0.6
-    },
-    {
-     "id": "Violation Feelings",
+     "id": "Self-Confidence",
      "j": 0.5
     },
     {
-     "id": "Perceived Inequity",
-     "j": 0.43
+     "id": "Embeddedness",
+     "j": 0.5
     },
     {
      "id": "Distributive Justice",
      "j": 0.43
     },
     {
-     "id": "Self-Confidence",
+     "id": "Realized Absorptive Capacity",
      "j": 0.4
     },
     {
-     "id": "Human Error Observed",
+     "id": "Perceived Reputation",
+     "j": 0.4
+    },
+    {
+     "id": "Algorithm Error Observed",
      "j": 0.4
     }
    ]
@@ -8220,6 +8236,10 @@
      "j": 0.33
     },
     {
+     "id": "Responsibility Attribution",
+     "j": 0.33
+    },
+    {
      "id": "Deliberative Thinking",
      "j": 0.33
     },
@@ -8229,10 +8249,6 @@
     },
     {
      "id": "Perceived Injustice",
-     "j": 0.29
-    },
-    {
-     "id": "Fear",
      "j": 0.29
     }
    ]
@@ -8257,7 +8273,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "迴避",
+   "ssub": "迴避與厭惡",
    "simStruct": [
     {
      "id": "Emotion-Focused Coping",
@@ -8387,7 +8403,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "迴避",
+   "ssub": "迴避與厭惡",
    "simStruct": [
     {
      "id": "Danger Control",
@@ -8480,7 +8496,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "迴避",
+   "ssub": "迴避與厭惡",
    "simStruct": [
     {
      "id": "AI Avoidance",
@@ -8495,15 +8511,15 @@
      "j": 0.33
     },
     {
-     "id": "Public Agenda Salience",
-     "j": 0.33
-    },
-    {
      "id": "Discomfort",
      "j": 0.33
     },
     {
      "id": "Willingness to Speak Out",
+     "j": 0.25
+    },
+    {
+     "id": "Switching Behavior",
      "j": 0.25
     }
    ]
@@ -8534,10 +8550,6 @@
      "j": 1.0
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.33
-    },
-    {
      "id": "Perceived AI Competence",
      "j": 0.33
     },
@@ -8547,6 +8559,10 @@
     },
     {
      "id": "Information Usefulness",
+     "j": 0.33
+    },
+    {
+     "id": "Green Perceived Value",
      "j": 0.33
     }
    ]
@@ -8620,10 +8636,6 @@
      "j": 1.0
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.33
-    },
-    {
      "id": "Perceived AI Competence",
      "j": 0.33
     },
@@ -8633,6 +8645,10 @@
     },
     {
      "id": "Information Usefulness",
+     "j": 0.33
+    },
+    {
+     "id": "Green Perceived Value",
      "j": 0.33
     }
    ]
@@ -8985,16 +9001,16 @@
      "j": 0.38
     },
     {
+     "id": "Well-being",
+     "j": 0.33
+    },
+    {
      "id": "Perceived Barriers",
      "j": 0.33
     },
     {
      "id": "Emotion-Focused Coping",
      "j": 0.33
-    },
-    {
-     "id": "Immersion",
-     "j": 0.29
     }
    ]
   },
@@ -9091,10 +9107,6 @@
      "j": 1.0
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.33
-    },
-    {
      "id": "Perceived AI Competence",
      "j": 0.33
     },
@@ -9104,6 +9116,10 @@
     },
     {
      "id": "Information Usefulness",
+     "j": 0.33
+    },
+    {
+     "id": "Green Perceived Value",
      "j": 0.33
     }
    ]
@@ -9170,6 +9186,10 @@
      "j": 0.4
     },
     {
+     "id": "Perceived Efficacy",
+     "j": 0.4
+    },
+    {
      "id": "Outcome Expectations",
      "j": 0.4
     },
@@ -9179,10 +9199,6 @@
     },
     {
      "id": "Workload",
-     "j": 0.33
-    },
-    {
-     "id": "Trialability",
      "j": 0.33
     }
    ]
@@ -9221,11 +9237,11 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     },
     {
-     "id": "Restraining Forces",
+     "id": "Sanction Severity",
      "j": 0.33
     }
    ]
@@ -9264,11 +9280,11 @@
      "j": 0.33
     },
     {
-     "id": "Outcome Expectations",
+     "id": "Perceived Efficacy",
      "j": 0.33
     },
     {
-     "id": "Goal Difficulty",
+     "id": "Outcome Expectations",
      "j": 0.33
     }
    ]
@@ -9303,16 +9319,16 @@
      "j": 0.33
     },
     {
+     "id": "Well-being",
+     "j": 0.29
+    },
+    {
      "id": "Protection Motivation",
      "j": 0.29
     },
     {
      "id": "Autonomy",
      "j": 0.29
-    },
-    {
-     "id": "Switching Benefits",
-     "j": 0.25
     }
    ]
   },
@@ -9348,6 +9364,10 @@
      "j": 0.28
     },
     {
+     "id": "Well-being",
+     "j": 0.27
+    },
+    {
      "id": "Technology Readiness",
      "j": 0.27
     },
@@ -9358,10 +9378,6 @@
     {
      "id": "Performance Expectancy",
      "j": 0.27
-    },
-    {
-     "id": "Perceived Ease of Use",
-     "j": 0.25
     }
    ]
   },
@@ -9520,16 +9536,16 @@
    "ssub": "捷思與線索",
    "simStruct": [
     {
-     "id": "eWOM Adoption",
-     "j": 0.67
-    },
-    {
      "id": "Attitude toward the Ad",
      "j": 0.5
     },
     {
      "id": "eWOM Credibility",
      "j": 0.33
+    },
+    {
+     "id": "eWOM Adoption",
+     "j": 0.25
     },
     {
      "id": "Social Exchange Relationship",
@@ -9648,8 +9664,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
+   "cluster": "受助者呈現",
+   "sgroup": "受助者呈現",
    "ssub": "受助者呈現",
    "simStruct": []
   },
@@ -9774,7 +9790,7 @@
      "j": 0.27
     },
     {
-     "id": "eWOM Adoption",
+     "id": "Systematic Processing",
      "j": 0.25
     }
    ]
@@ -9972,10 +9988,6 @@
      "j": 0.45
     },
     {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
-    {
      "id": "Brand Preference",
      "j": 0.33
     },
@@ -9985,6 +9997,10 @@
     },
     {
      "id": "Perceived Credibility",
+     "j": 0.29
+    },
+    {
+     "id": "Brand Image",
      "j": 0.29
     }
    ]
@@ -10162,15 +10178,15 @@
      "j": 0.33
     },
     {
+     "id": "Perceived Fairness",
+     "j": 0.29
+    },
+    {
      "id": "Communication Effectiveness",
      "j": 0.29
     },
     {
      "id": "CSR Engagement",
-     "j": 0.29
-    },
-    {
-     "id": "Affinity",
      "j": 0.29
     }
    ]
@@ -10197,6 +10213,10 @@
      "j": 1.0
     },
     {
+     "id": "Job Resources",
+     "j": 0.5
+    },
+    {
      "id": "Restraining Forces",
      "j": 0.33
     },
@@ -10209,12 +10229,8 @@
      "j": 0.33
     },
     {
-     "id": "Empathy",
+     "id": "Job Demands",
      "j": 0.33
-    },
-    {
-     "id": "Triad Imbalance",
-     "j": 0.25
     }
    ]
   },
@@ -10823,15 +10839,15 @@
      "j": 0.38
     },
     {
-     "id": "eWOM Credibility",
-     "j": 0.38
-    },
-    {
      "id": "Credibility Heuristics",
      "j": 0.38
     },
     {
      "id": "Skepticism",
+     "j": 0.33
+    },
+    {
+     "id": "Green Perceived Value",
      "j": 0.33
     }
    ]
@@ -11181,7 +11197,7 @@
    "unlinked": true,
    "cluster": "價值取向",
    "sgroup": "價值取向",
-   "ssub": "個人價值",
+   "ssub": "利他與環境價值",
    "simStruct": [
     {
      "id": "Gratifications Obtained",
@@ -11802,7 +11818,7 @@
     },
     {
      "id": "Turnover Intention",
-     "j": 0.25
+     "j": 0.27
     },
     {
      "id": "Gratifications Obtained",
@@ -11829,7 +11845,7 @@
    "unlinked": true,
    "cluster": "危機情境",
    "sgroup": "危機情境",
-   "ssub": "危機回應策略",
+   "ssub": "危機屬性與回應",
    "simStruct": []
   },
   {
@@ -11859,6 +11875,14 @@
      "j": 0.38
     },
     {
+     "id": "Restraining Forces",
+     "j": 0.33
+    },
+    {
+     "id": "Perceived Threat",
+     "j": 0.33
+    },
+    {
      "id": "Deliberative Thinking",
      "j": 0.33
     },
@@ -11867,8 +11891,8 @@
      "j": 0.33
     },
     {
-     "id": "Warm Glow",
-     "j": 0.25
+     "id": "Perceived Injustice",
+     "j": 0.29
     }
    ]
   },
@@ -11968,9 +11992,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "倫理與道德行為",
-   "sgroup": "倫理與道德行為",
-   "ssub": "道德行為",
+   "cluster": "實際行為與使用",
+   "sgroup": "實際行為與使用",
+   "ssub": "Helping Behavior",
    "simStruct": [
     {
      "id": "Self-Esteem",
@@ -12473,11 +12497,11 @@
      "j": 0.33
     },
     {
-     "id": "Sanction Severity",
+     "id": "Secure Attachment",
      "j": 0.33
     },
     {
-     "id": "Restraining Forces",
+     "id": "Sanction Severity",
      "j": 0.33
     }
    ]
@@ -12567,7 +12591,7 @@
     },
     {
      "id": "Perceived Fairness",
-     "j": 0.29
+     "j": 0.33
     },
     {
      "id": "Perceived Behavioral Control",
@@ -13025,6 +13049,10 @@
     {
      "id": "Relationship Commitment",
      "j": 0.25
+    },
+    {
+     "id": "Distributive Justice",
+     "j": 0.25
     }
    ]
   },
@@ -13217,7 +13245,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "替代吸引力",
+   "ssub": "五力與替代吸引力",
    "simStruct": [
     {
      "id": "Dissatisfaction",
@@ -13475,10 +13503,6 @@
      "j": 0.4
     },
     {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
-    {
      "id": "Transaction Frequency",
      "j": 0.33
     },
@@ -13492,6 +13516,10 @@
     },
     {
      "id": "Instrumentality",
+     "j": 0.33
+    },
+    {
+     "id": "Information Usefulness",
      "j": 0.33
     }
    ]
@@ -13520,12 +13548,12 @@
      "j": 0.33
     },
     {
-     "id": "Exit",
+     "id": "Turnover Intention",
      "j": 0.33
     },
     {
-     "id": "Turnover Intention",
-     "j": 0.3
+     "id": "Exit",
+     "j": 0.33
     },
     {
      "id": "Perceived Cost",
@@ -13564,12 +13592,12 @@
      "j": 0.29
     },
     {
-     "id": "Distributive Justice",
+     "id": "Ability to Modify Algorithm",
      "j": 0.29
     },
     {
-     "id": "Ability to Modify Algorithm",
-     "j": 0.29
+     "id": "Distributive Justice",
+     "j": 0.25
     }
    ]
   },
@@ -13654,6 +13682,10 @@
      "j": 0.33
     },
     {
+     "id": "Job Demands",
+     "j": 0.33
+    },
+    {
      "id": "Employee Productivity",
      "j": 0.33
     },
@@ -13667,10 +13699,6 @@
     },
     {
      "id": "Triad Imbalance",
-     "j": 0.25
-    },
-    {
-     "id": "Signal Reliance",
      "j": 0.25
     }
    ]
@@ -14220,7 +14248,7 @@
      "j": 0.29
     },
     {
-     "id": "eWOM Adoption",
+     "id": "Threat of New Entrants",
      "j": 0.25
     }
    ]
@@ -14575,8 +14603,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": false,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
+   "cluster": "受助者呈現",
+   "sgroup": "受助者呈現",
    "ssub": "受助者呈現",
    "simStruct": [
     {
@@ -14592,15 +14620,15 @@
      "j": 0.25
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.25
-    },
-    {
      "id": "Restraining Forces",
      "j": 0.25
     },
     {
      "id": "Response Efficacy",
+     "j": 0.25
+    },
+    {
+     "id": "Prior Relationship Reputation",
      "j": 0.25
     }
    ]
@@ -14618,8 +14646,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
+   "cluster": "受助者呈現",
+   "sgroup": "受助者呈現",
    "ssub": "受助者呈現",
    "simStruct": []
   },
@@ -14645,6 +14673,10 @@
      "j": 1.0
     },
     {
+     "id": "Job Resources",
+     "j": 0.5
+    },
+    {
      "id": "Restraining Forces",
      "j": 0.33
     },
@@ -14657,12 +14689,8 @@
      "j": 0.33
     },
     {
-     "id": "Empathy",
+     "id": "Job Demands",
      "j": 0.33
-    },
-    {
-     "id": "Triad Imbalance",
-     "j": 0.25
     }
    ]
   },
@@ -14679,8 +14707,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "捐款與受助者",
-   "sgroup": "捐款與受助者",
+   "cluster": "受助者呈現",
+   "sgroup": "受助者呈現",
    "ssub": "受助者呈現",
    "simStruct": []
   },
@@ -14720,12 +14748,28 @@
    "ssub": "愉悅",
    "simStruct": [
     {
-     "id": "Perceived Efficacy",
+     "id": "Moral Commitment",
+     "j": 0.5
+    },
+    {
+     "id": "Habit",
+     "j": 0.43
+    },
+    {
+     "id": "Facilitating Conditions",
+     "j": 0.4
+    },
+    {
+     "id": "Domain Expertise",
+     "j": 0.33
+    },
+    {
+     "id": "Perceived Behavioral Control",
      "j": 0.29
     },
     {
-     "id": "Responsibility Attribution",
-     "j": 0.25
+     "id": "Ability to Modify Algorithm",
+     "j": 0.29
     }
    ]
   },
@@ -14819,6 +14863,10 @@
     },
     {
      "id": "Turnover Intention",
+     "j": 0.36
+    },
+    {
+     "id": "Well-being",
      "j": 0.33
     },
     {
@@ -14832,10 +14880,6 @@
     {
      "id": "Affective Commitment",
      "j": 0.31
-    },
-    {
-     "id": "Willingness to Speak Out",
-     "j": 0.29
     }
    ]
   },
@@ -14865,10 +14909,6 @@
      "j": 0.4
     },
     {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
-    {
      "id": "Social Support",
      "j": 0.33
     },
@@ -14878,6 +14918,10 @@
     },
     {
      "id": "Organizational Citizenship Behavior",
+     "j": 0.33
+    },
+    {
+     "id": "Instrumentality",
      "j": 0.33
     }
    ]
@@ -14937,11 +14981,11 @@
      "j": 0.36
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.36
+     "id": "Social Capital",
+     "j": 0.33
     },
     {
-     "id": "Social Capital",
+     "id": "Job Satisfaction",
      "j": 0.33
     }
    ]
@@ -15130,6 +15174,10 @@
      "j": 0.33
     },
     {
+     "id": "Secure Attachment",
+     "j": 0.33
+    },
+    {
      "id": "Psychological Contract Fulfillment",
      "j": 0.33
     },
@@ -15143,10 +15191,6 @@
     },
     {
      "id": "Bridging Social Capital",
-     "j": 0.33
-    },
-    {
-     "id": "Bonding Social Capital",
      "j": 0.33
     }
    ]
@@ -15987,6 +16031,10 @@
      "j": 0.29
     },
     {
+     "id": "Public Agenda Salience",
+     "j": 0.25
+    },
+    {
      "id": "Fear",
      "j": 0.25
     },
@@ -16100,6 +16148,10 @@
      "j": 0.33
     },
     {
+     "id": "Perceived Efficacy",
+     "j": 0.3
+    },
+    {
      "id": "Valence",
      "j": 0.27
     },
@@ -16113,10 +16165,6 @@
     },
     {
      "id": "Perceived Credibility",
-     "j": 0.25
-    },
-    {
-     "id": "Perceived Barriers",
      "j": 0.25
     }
    ]
@@ -16202,19 +16250,19 @@
      "j": 0.33
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.33
-    },
-    {
      "id": "Response Efficacy",
      "j": 0.33
     },
     {
-     "id": "Public Agenda Salience",
+     "id": "Optimism",
      "j": 0.33
     },
     {
-     "id": "Optimism",
+     "id": "Hedonic Goal",
+     "j": 0.33
+    },
+    {
+     "id": "Avoidance Behavior",
      "j": 0.33
     }
    ]
@@ -16383,14 +16431,6 @@
      "j": 0.5
     },
     {
-     "id": "eWOM Credibility",
-     "j": 0.33
-    },
-    {
-     "id": "eWOM Adoption",
-     "j": 0.25
-    },
-    {
      "id": "Trialability",
      "j": 0.25
     },
@@ -16400,6 +16440,14 @@
     },
     {
      "id": "Social Exchange Relationship",
+     "j": 0.25
+    },
+    {
+     "id": "Review Volume",
+     "j": 0.25
+    },
+    {
+     "id": "Prior AI Attitude",
      "j": 0.25
     }
    ]
@@ -16630,15 +16678,15 @@
      "j": 0.5
     },
     {
+     "id": "Well-being",
+     "j": 0.29
+    },
+    {
      "id": "Protection Motivation",
      "j": 0.29
     },
     {
      "id": "Status Quo Continuation",
-     "j": 0.25
-    },
-    {
-     "id": "Public Agenda Salience",
      "j": 0.25
     },
     {
@@ -16788,7 +16836,7 @@
    "unlinked": true,
    "cluster": "實際行為與使用",
    "sgroup": "實際行為與使用",
-   "ssub": "違規",
+   "ssub": "違規與反生產行為",
    "simStruct": [
     {
      "id": "Environment",
@@ -16874,6 +16922,10 @@
      "j": 0.67
     },
     {
+     "id": "Warm Glow",
+     "j": 0.5
+    },
+    {
      "id": "Domain Expertise",
      "j": 0.5
     },
@@ -16887,10 +16939,6 @@
     },
     {
      "id": "Workload",
-     "j": 0.33
-    },
-    {
-     "id": "Trialability",
      "j": 0.33
     }
    ]
@@ -17318,10 +17366,6 @@
    "ssub": "目標與追求",
    "simStruct": [
     {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
-    {
      "id": "Social Exchange Relationship",
      "j": 0.33
     },
@@ -17339,6 +17383,10 @@
     },
     {
      "id": "Controlling Rewards",
+     "j": 0.33
+    },
+    {
+     "id": "Behavioral Uncertainty",
      "j": 0.33
     }
    ]
@@ -17921,7 +17969,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": [
     {
      "id": "Provider-side Participation",
@@ -18011,7 +18059,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": [
     {
      "id": "Industry Profitability",
@@ -18054,7 +18102,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": []
   },
   {
@@ -18072,7 +18120,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": []
   },
   {
@@ -18090,7 +18138,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": [
     {
      "id": "Continuance Commitment",
@@ -18134,7 +18182,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": [
     {
      "id": "Stakeholder Salience",
@@ -18217,7 +18265,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": []
   },
   {
@@ -18235,7 +18283,7 @@
    "unlinked": true,
    "cluster": "市場力量",
    "sgroup": "市場力量",
-   "ssub": "五力",
+   "ssub": "五力與替代吸引力",
    "simStruct": []
   },
   {
@@ -19034,11 +19082,11 @@
      "j": 0.5
     },
     {
-     "id": "Violation Valence",
-     "j": 0.29
+     "id": "Perceived Fairness",
+     "j": 0.33
     },
     {
-     "id": "Perceived Fairness",
+     "id": "Violation Valence",
      "j": 0.29
     }
    ]
@@ -19344,7 +19392,7 @@
    "unlinked": true,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "鎖定",
+   "ssub": "轉換成本與鎖定",
    "simStruct": [
     {
      "id": "Winner-take-all Tendency",
@@ -19384,6 +19432,10 @@
     },
     {
      "id": "User-side Installed Base",
+     "j": 0.25
+    },
+    {
+     "id": "Price Difference from Reference",
      "j": 0.25
     },
     {
@@ -20958,6 +21010,10 @@
      "j": 0.33
     },
     {
+     "id": "Price Difference from Reference",
+     "j": 0.33
+    },
+    {
      "id": "Perceived Cost",
      "j": 0.33
     },
@@ -20971,10 +21027,6 @@
     },
     {
      "id": "Winner-take-all Tendency",
-     "j": 0.25
-    },
-    {
-     "id": "Functional Consequences",
      "j": 0.25
     }
    ]
@@ -21014,9 +21066,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": false,
-   "cluster": "規模與產出",
-   "sgroup": "規模與產出",
-   "ssub": "定價",
+   "cluster": "成本與犧牲",
+   "sgroup": "成本與犧牲",
+   "ssub": "價格",
    "simStruct": []
   },
   {
@@ -21037,7 +21089,15 @@
    "ssub": "價格",
    "simStruct": [
     {
-     "id": "Average Cost",
+     "id": "Perceived Sacrifice",
+     "j": 0.33
+    },
+    {
+     "id": "Voice",
+     "j": 0.29
+    },
+    {
+     "id": "Winner-take-all Tendency",
      "j": 0.25
     }
    ]
@@ -21155,7 +21215,7 @@
    "unlinked": true,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "轉換成本",
+   "ssub": "轉換成本與鎖定",
    "simStruct": []
   },
   {
@@ -21173,7 +21233,7 @@
    "unlinked": true,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "轉換成本",
+   "ssub": "轉換成本與鎖定",
    "simStruct": []
   },
   {
@@ -21191,7 +21251,7 @@
    "unlinked": true,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "轉換成本",
+   "ssub": "轉換成本與鎖定",
    "simStruct": []
   },
   {
@@ -21245,7 +21305,7 @@
    "unlinked": true,
    "cluster": "轉換成本與鎖定",
    "sgroup": "轉換成本與鎖定",
-   "ssub": "轉換成本",
+   "ssub": "轉換成本與鎖定",
    "simStruct": []
   },
   {
@@ -21287,28 +21347,8 @@
    "ssub": "來源可信度",
    "simStruct": [
     {
-     "id": "eWOM Adoption",
-     "j": 0.4
-    },
-    {
-     "id": "Bandwagon Effect",
-     "j": 0.38
-    },
-    {
      "id": "Peripheral Cues",
      "j": 0.33
-    },
-    {
-     "id": "Institution-based Trust",
-     "j": 0.33
-    },
-    {
-     "id": "Bandwagon Cues",
-     "j": 0.33
-    },
-    {
-     "id": "Violation Valence",
-     "j": 0.25
     }
    ]
   },
@@ -21343,14 +21383,10 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "信任與可信度",
-   "sgroup": "信任與可信度",
-   "ssub": "資訊有用性",
+   "cluster": "有用性與效益",
+   "sgroup": "有用性與效益",
+   "ssub": "知覺有用性",
    "simStruct": [
-    {
-     "id": "eWOM Adoption",
-     "j": 0.33
-    },
     {
      "id": "Utilitarian Goal",
      "j": 0.33
@@ -21369,6 +21405,10 @@
     },
     {
      "id": "Perceived AI Competence",
+     "j": 0.33
+    },
+    {
+     "id": "Instrumentality",
      "j": 0.33
     }
    ]
@@ -21391,28 +21431,28 @@
    "ssub": "購買與付費意圖",
    "simStruct": [
     {
+     "id": "Heuristic Cues",
+     "j": 0.33
+    },
+    {
+     "id": "Brand Preference",
+     "j": 0.33
+    },
+    {
+     "id": "Brand Cognitions",
+     "j": 0.33
+    },
+    {
+     "id": "Ad Credibility",
+     "j": 0.33
+    },
+    {
+     "id": "Triad Imbalance",
+     "j": 0.25
+    },
+    {
      "id": "Peripheral Cues",
-     "j": 0.67
-    },
-    {
-     "id": "eWOM Credibility",
-     "j": 0.4
-    },
-    {
-     "id": "Social Exchange Relationship",
-     "j": 0.33
-    },
-    {
-     "id": "Instrumentality",
-     "j": 0.33
-    },
-    {
-     "id": "Information Usefulness",
-     "j": 0.33
-    },
-    {
-     "id": "Information Disclosure",
-     "j": 0.33
+     "j": 0.25
     }
    ]
   },
@@ -21495,11 +21535,11 @@
      "j": 0.29
     },
     {
-     "id": "Word of Mouth",
-     "j": 0.25
+     "id": "Turnover Intention",
+     "j": 0.27
     },
     {
-     "id": "Turnover Intention",
+     "id": "Word of Mouth",
      "j": 0.25
     }
    ]
@@ -21528,6 +21568,10 @@
     {
      "id": "Exit",
      "j": 0.33
+    },
+    {
+     "id": "Price Difference from Reference",
+     "j": 0.29
     }
    ]
   },
@@ -21546,7 +21590,7 @@
    "unlinked": true,
    "cluster": "迴避與抗拒",
    "sgroup": "迴避與抗拒",
-   "ssub": "迴避",
+   "ssub": "迴避與厭惡",
    "simStruct": []
   },
   {
@@ -21661,10 +21705,6 @@
     },
     {
      "id": "Leader-Image Compatibility",
-     "j": 0.25
-    },
-    {
-     "id": "Job Demands",
      "j": 0.25
     },
     {
@@ -21826,16 +21866,16 @@
      "j": 0.42
     },
     {
+     "id": "Distributive Justice",
+     "j": 0.38
+    },
+    {
      "id": "Violation Feelings",
      "j": 0.36
     },
     {
      "id": "Relationship Commitment",
      "j": 0.35
-    },
-    {
-     "id": "Procedural Justice",
-     "j": 0.33
     }
    ]
   },
@@ -21937,12 +21977,12 @@
      "j": 0.36
     },
     {
-     "id": "Leader-Member Exchange Quality",
+     "id": "Perceived Fairness",
      "j": 0.33
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.3
+     "id": "Leader-Member Exchange Quality",
+     "j": 0.33
     },
     {
      "id": "Interactional Justice",
@@ -21993,27 +22033,27 @@
    "simStruct": [
     {
      "id": "Perceived Inequity",
-     "j": 0.67
+     "j": 0.57
+    },
+    {
+     "id": "Algorithm Error Observed",
+     "j": 0.5
+    },
+    {
+     "id": "Violation Feelings",
+     "j": 0.44
     },
     {
      "id": "Perceived Fairness",
      "j": 0.43
     },
     {
-     "id": "Human Error Observed",
-     "j": 0.4
+     "id": "Leader-Member Exchange Quality",
+     "j": 0.38
     },
     {
-     "id": "Violation Feelings",
-     "j": 0.33
-    },
-    {
-     "id": "Social Response",
-     "j": 0.33
-    },
-    {
-     "id": "Psychological Contract Breach",
-     "j": 0.33
+     "id": "Ability to Modify Algorithm",
+     "j": 0.38
     }
    ]
   },
@@ -22030,9 +22070,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "迴避與抗拒",
-   "sgroup": "迴避與抗拒",
-   "ssub": "抗拒",
+   "cluster": "實際行為與使用",
+   "sgroup": "實際行為與使用",
+   "ssub": "違規與反生產行為",
    "simStruct": []
   },
   {
@@ -22123,20 +22163,20 @@
      "j": 0.33
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.33
-    },
-    {
-     "id": "Distributive Justice",
-     "j": 0.33
-    },
-    {
      "id": "Perceived Quality",
      "j": 0.31
     },
     {
+     "id": "Distributive Justice",
+     "j": 0.3
+    },
+    {
      "id": "Human Error Observed",
      "j": 0.29
+    },
+    {
+     "id": "Upward Comparison",
+     "j": 0.25
     }
    ]
   },
@@ -22158,8 +22198,8 @@
    "ssub": "負面情緒反應",
    "simStruct": [
     {
-     "id": "Perceived Fairness",
-     "j": 0.5
+     "id": "Distributive Justice",
+     "j": 0.44
     },
     {
      "id": "Algorithm Error Observed",
@@ -22174,12 +22214,12 @@
      "j": 0.4
     },
     {
-     "id": "Felt Obligation",
+     "id": "Perceived Fairness",
      "j": 0.38
     },
     {
-     "id": "Procedural Justice",
-     "j": 0.36
+     "id": "Felt Obligation",
+     "j": 0.38
     }
    ]
   },
@@ -22319,15 +22359,15 @@
      "j": 0.33
     },
     {
-     "id": "Job Demands",
-     "j": 0.33
-    },
-    {
      "id": "Socialization",
      "j": 0.25
     },
     {
      "id": "Role Conflict",
+     "j": 0.25
+    },
+    {
+     "id": "Organization Size",
      "j": 0.25
     }
    ]
@@ -22559,11 +22599,7 @@
    "simStruct": [
     {
      "id": "Distributive Justice",
-     "j": 0.67
-    },
-    {
-     "id": "Perceived Fairness",
-     "j": 0.43
+     "j": 0.57
     },
     {
      "id": "Leader-Member Exchange Quality",
@@ -22579,6 +22615,10 @@
     },
     {
      "id": "Upward Comparison",
+     "j": 0.33
+    },
+    {
+     "id": "Psychological Contract Breach",
      "j": 0.33
     }
    ]
@@ -22605,15 +22645,11 @@
      "j": 0.33
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.33
+     "id": "Valence",
+     "j": 0.29
     },
     {
      "id": "Distributive Justice",
-     "j": 0.33
-    },
-    {
-     "id": "Valence",
      "j": 0.29
     },
     {
@@ -22622,6 +22658,10 @@
     },
     {
      "id": "Switching Benefits",
+     "j": 0.25
+    },
+    {
+     "id": "Safeguard Effectiveness",
      "j": 0.25
     }
    ]
@@ -22644,23 +22684,27 @@
    "ssub": "工作負荷",
    "simStruct": [
     {
-     "id": "Task Complexity",
-     "j": 0.33
-    },
-    {
      "id": "Skill",
      "j": 0.33
     },
     {
-     "id": "Role Ambiguity",
+     "id": "Restraining Forces",
      "j": 0.33
     },
     {
-     "id": "Socialization",
-     "j": 0.25
+     "id": "Empathy",
+     "j": 0.33
     },
     {
-     "id": "Role Conflict",
+     "id": "Deliberative Thinking",
+     "j": 0.33
+    },
+    {
+     "id": "Communicator Reward Valence",
+     "j": 0.33
+    },
+    {
+     "id": "Triad Imbalance",
      "j": 0.25
     }
    ]
@@ -22678,9 +22722,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "工作要求與壓力源",
-   "sgroup": "工作要求與壓力源",
-   "ssub": "耗竭",
+   "cluster": "情緒",
+   "sgroup": "情緒",
+   "ssub": "焦慮與壓力",
    "simStruct": [
     {
      "id": "Work Engagement",
@@ -22724,7 +22768,24 @@
    "cluster": "工作資源與誘因",
    "sgroup": "工作資源與誘因",
    "ssub": "工作資源",
-   "simStruct": []
+   "simStruct": [
+    {
+     "id": "Deliberative Thinking",
+     "j": 0.5
+    },
+    {
+     "id": "Communicator Reward Valence",
+     "j": 0.5
+    },
+    {
+     "id": "Responsibility Attribution",
+     "j": 0.25
+    },
+    {
+     "id": "Perceived Threat",
+     "j": 0.25
+    }
+   ]
   },
   {
    "id": "Work Engagement",
@@ -22890,26 +22951,22 @@
    "simStruct": [
     {
      "id": "Status Quo Continuation",
-     "j": 0.33
-    },
-    {
-     "id": "Discomfort",
-     "j": 0.33
-    },
-    {
-     "id": "Avoidance Behavior",
-     "j": 0.33
-    },
-    {
-     "id": "AI Avoidance",
-     "j": 0.33
-    },
-    {
-     "id": "Willingness to Speak Out",
      "j": 0.25
     },
     {
-     "id": "Selective Exposure",
+     "id": "Risk Seeking",
+     "j": 0.25
+    },
+    {
+     "id": "Discomfort",
+     "j": 0.25
+    },
+    {
+     "id": "Avoidance Behavior",
+     "j": 0.25
+    },
+    {
+     "id": "AI Avoidance",
      "j": 0.25
     }
    ]
@@ -22963,8 +23020,8 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "議題設定與框架",
-   "sgroup": "議題設定與框架",
+   "cluster": "框架與損益",
+   "sgroup": "框架與損益",
    "ssub": "框架",
    "simStruct": []
   },
@@ -23003,10 +23060,6 @@
    "sgroup": "議題設定與框架",
    "ssub": "導向需求",
    "simStruct": [
-    {
-     "id": "Public Agenda Salience",
-     "j": 0.25
-    },
     {
      "id": "Perceived AI Competence",
      "j": 0.25
@@ -23154,10 +23207,6 @@
      "j": 0.25
     },
     {
-     "id": "Secure Attachment",
-     "j": 0.25
-    },
-    {
      "id": "Review Volume",
      "j": 0.25
     },
@@ -23171,6 +23220,10 @@
     },
     {
      "id": "Perceived Explainability",
+     "j": 0.25
+    },
+    {
+     "id": "Perceived Accountability",
      "j": 0.25
     }
    ]
@@ -23193,27 +23246,27 @@
    "ssub": "依附風格",
    "simStruct": [
     {
-     "id": "Utilitarian Goal",
+     "id": "Workload",
      "j": 0.33
     },
     {
-     "id": "Response Efficacy",
+     "id": "Trialability",
      "j": 0.33
     },
     {
-     "id": "Optimism",
+     "id": "System Quality",
      "j": 0.33
     },
     {
-     "id": "Hedonic Goal",
+     "id": "Social Support",
      "j": 0.33
     },
     {
-     "id": "Gender",
+     "id": "Self-Confidence",
      "j": 0.33
     },
     {
-     "id": "Discomfort",
+     "id": "Sanction Severity",
      "j": 0.33
     }
    ]
@@ -23231,9 +23284,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "自我效能與控制感",
-   "sgroup": "自我效能與控制感",
-   "ssub": "自我效能",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
+   "ssub": "幸福與安適",
    "simStruct": []
   },
   {
@@ -23302,15 +23355,15 @@
      "j": 0.25
     },
     {
+     "id": "Job Demands",
+     "j": 0.25
+    },
+    {
      "id": "Interpersonal Attraction",
      "j": 0.25
     },
     {
      "id": "Heuristic Cues",
-     "j": 0.25
-    },
-    {
-     "id": "Empathy",
      "j": 0.25
     }
    ]
@@ -23744,6 +23797,10 @@
      "j": 0.67
     },
     {
+     "id": "Perceived Efficacy",
+     "j": 0.4
+    },
+    {
      "id": "Workload",
      "j": 0.33
     },
@@ -23757,10 +23814,6 @@
     },
     {
      "id": "System Quality",
-     "j": 0.33
-    },
-    {
-     "id": "Self-Confidence",
      "j": 0.33
     }
    ]
@@ -23983,9 +24036,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "賽局與合作",
-   "sgroup": "賽局與合作",
-   "ssub": "賽局與合作",
+   "cluster": "實際行為與使用",
+   "sgroup": "實際行為與使用",
+   "ssub": "違規與反生產行為",
    "simStruct": []
   },
   {
@@ -24131,10 +24184,6 @@
      "j": 0.33
     },
     {
-     "id": "Public Agenda Salience",
-     "j": 0.33
-    },
-    {
      "id": "Discomfort",
      "j": 0.33
     },
@@ -24145,6 +24194,10 @@
     {
      "id": "AI Avoidance",
      "j": 0.33
+    },
+    {
+     "id": "Willingness to Speak Out",
+     "j": 0.25
     }
    ]
   },
@@ -25346,12 +25399,12 @@
      "j": 0.67
     },
     {
-     "id": "Communication",
+     "id": "Perceived Fairness",
      "j": 0.5
     },
     {
-     "id": "Perceived Fairness",
-     "j": 0.4
+     "id": "Communication",
+     "j": 0.5
     },
     {
      "id": "Workload",
@@ -25455,9 +25508,9 @@
    "paperUrls": {},
    "desc": "",
    "unlinked": true,
-   "cluster": "基本心理需求",
-   "sgroup": "基本心理需求",
-   "ssub": "需求滿足",
+   "cluster": "需求與幸福感",
+   "sgroup": "需求與幸福感",
+   "ssub": "幸福與安適",
    "simStruct": []
   },
   {
@@ -47504,6 +47557,7 @@
     "Anger",
     "Anxiety",
     "Arousal",
+    "Burnout",
     "Communicator Reward Valence",
     "Danger Control",
     "Discomfort",
@@ -47535,7 +47589,6 @@
     "Disposition to Trust",
     "eWOM Credibility",
     "Green Trust",
-    "Information Usefulness",
     "Institution-based Trust",
     "Message Objectivity",
     "Perceived Authenticity",
@@ -47555,7 +47608,6 @@
     "Attitude Resistance",
     "Avoidance Behavior",
     "Avoidance Motivation",
-    "Counterproductive Work Behavior",
     "Emotion-Focused Coping",
     "Exit",
     "Neglect",
@@ -47594,8 +47646,12 @@
     "Behavior Change",
     "Breadth of Product Use",
     "Comprehensiveness of Usage",
+    "Counterproductive Work Behavior",
     "Customer Engagement",
+    "Donation",
     "Effort",
+    "Free Riding",
+    "Helping Behavior",
     "Information Disclosure",
     "Knowledge Sharing",
     "Knowledge Transfer",
@@ -47694,6 +47750,7 @@
     "Benefit",
     "Functional Value",
     "Gratifications Obtained",
+    "Information Usefulness",
     "Intrinsic Value",
     "Perceived Health Benefits",
     "Performance Expectancy",
@@ -47760,6 +47817,7 @@
     "Agency Cost",
     "Average Cost",
     "Cost of Multihoming",
+    "Dynamic Pricing",
     "Fixed Cost Share",
     "Knowledge Acquisition Cost",
     "Non-monetary Cost",
@@ -47790,7 +47848,6 @@
    "name": "風險與威脅知覺",
    "members": [
     "Green Perceived Risk",
-    "Information Sensitivity",
     "Insecurity",
     "Job Replacement Threat",
     "Loss Aversion",
@@ -47810,6 +47867,7 @@
   {
    "name": "隱私顧慮",
    "members": [
+    "Information Sensitivity",
     "Privacy Awareness",
     "Privacy Concern",
     "Privacy Experiences"
@@ -47832,7 +47890,6 @@
     "Safeguard Effectiveness",
     "Self-Confidence",
     "Self-Efficacy",
-    "Stress Coping Ability",
     "Technology Readiness",
     "Vicarious Exp"
    ]
@@ -48296,7 +48353,6 @@
   {
    "name": "工作要求與壓力源",
    "members": [
-    "Burnout",
     "Job Demands",
     "Learning Pressure",
     "Role Ambiguity",
@@ -48336,9 +48392,8 @@
    ]
   },
   {
-   "name": "捐款與受助者",
+   "name": "受助者呈現",
    "members": [
-    "Donation",
     "Identified Victim",
     "Number of Victims",
     "Social information only + Single Victim",
@@ -48401,12 +48456,13 @@
    ]
   },
   {
-   "name": "基本心理需求",
+   "name": "需求與幸福感",
    "members": [
     "Autonomy",
     "Need Satisfaction",
     "Ontological Security",
     "Relatedness",
+    "Stress Coping Ability",
     "Well-being"
    ]
   },
@@ -48429,6 +48485,7 @@
    "name": "框架與損益",
    "members": [
     "Certainty Effect",
+    "Framing",
     "Gain Framing",
     "Loss Framing",
     "Reference Point",
@@ -48447,7 +48504,6 @@
   {
    "name": "規模與產出",
    "members": [
-    "Dynamic Pricing",
     "Output Volume",
     "Product Scope"
    ]
@@ -48520,7 +48576,6 @@
     "Ethical Climate",
     "Ethical Decision",
     "Ethical Framework",
-    "Helping Behavior",
     "Perceived Ethical Framework of Others",
     "Punitive Response",
     "Unethical Behavior"
@@ -48529,7 +48584,6 @@
   {
    "name": "議題設定與框架",
    "members": [
-    "Framing",
     "Issue Accessibility",
     "Issue Uncertainty",
     "Media Agenda Salience",
@@ -48635,7 +48689,6 @@
    "members": [
     "Commitment Credibility",
     "Expected Future Interaction",
-    "Free Riding",
     "Group Size",
     "Group-based Pay"
    ]
@@ -48674,6 +48727,7 @@
     "Anger",
     "Anxiety",
     "Arousal",
+    "Burnout",
     "Communicator Reward Valence",
     "Danger Control",
     "Discomfort",
@@ -48705,7 +48759,6 @@
     "Disposition to Trust",
     "eWOM Credibility",
     "Green Trust",
-    "Information Usefulness",
     "Institution-based Trust",
     "Message Objectivity",
     "Perceived Authenticity",
@@ -48725,7 +48778,6 @@
     "Attitude Resistance",
     "Avoidance Behavior",
     "Avoidance Motivation",
-    "Counterproductive Work Behavior",
     "Emotion-Focused Coping",
     "Exit",
     "Neglect",
@@ -48764,8 +48816,12 @@
     "Behavior Change",
     "Breadth of Product Use",
     "Comprehensiveness of Usage",
+    "Counterproductive Work Behavior",
     "Customer Engagement",
+    "Donation",
     "Effort",
+    "Free Riding",
+    "Helping Behavior",
     "Information Disclosure",
     "Knowledge Sharing",
     "Knowledge Transfer",
@@ -48864,6 +48920,7 @@
     "Benefit",
     "Functional Value",
     "Gratifications Obtained",
+    "Information Usefulness",
     "Intrinsic Value",
     "Perceived Health Benefits",
     "Performance Expectancy",
@@ -48930,6 +48987,7 @@
     "Agency Cost",
     "Average Cost",
     "Cost of Multihoming",
+    "Dynamic Pricing",
     "Fixed Cost Share",
     "Knowledge Acquisition Cost",
     "Non-monetary Cost",
@@ -48960,7 +49018,6 @@
    "name": "風險與威脅知覺",
    "members": [
     "Green Perceived Risk",
-    "Information Sensitivity",
     "Insecurity",
     "Job Replacement Threat",
     "Loss Aversion",
@@ -48980,6 +49037,7 @@
   {
    "name": "隱私顧慮",
    "members": [
+    "Information Sensitivity",
     "Privacy Awareness",
     "Privacy Concern",
     "Privacy Experiences"
@@ -49002,7 +49060,6 @@
     "Safeguard Effectiveness",
     "Self-Confidence",
     "Self-Efficacy",
-    "Stress Coping Ability",
     "Technology Readiness",
     "Vicarious Exp"
    ]
@@ -49466,7 +49523,6 @@
   {
    "name": "工作要求與壓力源",
    "members": [
-    "Burnout",
     "Job Demands",
     "Learning Pressure",
     "Role Ambiguity",
@@ -49506,9 +49562,8 @@
    ]
   },
   {
-   "name": "捐款與受助者",
+   "name": "受助者呈現",
    "members": [
-    "Donation",
     "Identified Victim",
     "Number of Victims",
     "Social information only + Single Victim",
@@ -49571,12 +49626,13 @@
    ]
   },
   {
-   "name": "基本心理需求",
+   "name": "需求與幸福感",
    "members": [
     "Autonomy",
     "Need Satisfaction",
     "Ontological Security",
     "Relatedness",
+    "Stress Coping Ability",
     "Well-being"
    ]
   },
@@ -49599,6 +49655,7 @@
    "name": "框架與損益",
    "members": [
     "Certainty Effect",
+    "Framing",
     "Gain Framing",
     "Loss Framing",
     "Reference Point",
@@ -49617,7 +49674,6 @@
   {
    "name": "規模與產出",
    "members": [
-    "Dynamic Pricing",
     "Output Volume",
     "Product Scope"
    ]
@@ -49690,7 +49746,6 @@
     "Ethical Climate",
     "Ethical Decision",
     "Ethical Framework",
-    "Helping Behavior",
     "Perceived Ethical Framework of Others",
     "Punitive Response",
     "Unethical Behavior"
@@ -49699,7 +49754,6 @@
   {
    "name": "議題設定與框架",
    "members": [
-    "Framing",
     "Issue Accessibility",
     "Issue Uncertainty",
     "Media Agenda Salience",
@@ -49805,7 +49859,6 @@
    "members": [
     "Commitment Credibility",
     "Expected Future Interaction",
-    "Free Riding",
     "Group Size",
     "Group-based Pay"
    ]
@@ -49869,6 +49922,7 @@
    "members": [
     "AI Anxiety",
     "Anxiety",
+    "Burnout",
     "Discomfort",
     "Eeriness",
     "Psychological Tension",
@@ -49925,17 +49979,11 @@
    ]
   },
   {
-   "name": "資訊有用性",
-   "group": "信任與可信度",
-   "members": [
-    "Information Usefulness"
-   ]
-  },
-  {
-   "name": "迴避",
+   "name": "迴避與厭惡",
    "group": "迴避與抗拒",
    "members": [
     "AI Avoidance",
+    "Algorithm Aversion",
     "Avoidance Behavior",
     "Avoidance Motivation",
     "Emotion-Focused Coping",
@@ -49947,17 +49995,9 @@
    "group": "迴避與抗拒",
    "members": [
     "Attitude Resistance",
-    "Counterproductive Work Behavior",
     "Reactance",
     "Trait Reactance",
     "User Resistance"
-   ]
-  },
-  {
-   "name": "厭惡",
-   "group": "迴避與抗拒",
-   "members": [
-    "Algorithm Aversion"
    ]
   },
   {
@@ -50042,10 +50082,26 @@
    ]
   },
   {
-   "name": "違規",
+   "name": "違規與反生產行為",
    "group": "實際行為與使用",
    "members": [
+    "Counterproductive Work Behavior",
+    "Free Riding",
     "Security Policy Violation"
+   ]
+  },
+  {
+   "name": "Donation",
+   "group": "實際行為與使用",
+   "members": [
+    "Donation"
+   ]
+  },
+  {
+   "name": "Helping Behavior",
+   "group": "實際行為與使用",
+   "members": [
+    "Helping Behavior"
    ]
   },
   {
@@ -50176,6 +50232,7 @@
    "group": "有用性與效益",
    "members": [
     "Benefit",
+    "Information Usefulness",
     "Perceived Health Benefits",
     "Performance Expectancy",
     "PU Perceived Usefulness",
@@ -50308,6 +50365,7 @@
    "name": "價格",
    "group": "成本與犧牲",
    "members": [
+    "Dynamic Pricing",
     "Price",
     "Price Difference from Reference"
    ]
@@ -50325,10 +50383,11 @@
    ]
   },
   {
-   "name": "轉換成本",
+   "name": "轉換成本與鎖定",
    "group": "轉換成本與鎖定",
    "members": [
     "Financial Switching Cost",
+    "Platform Lock-in",
     "Procedural Switching Cost",
     "Relational Switching Cost",
     "Switching cost",
@@ -50336,18 +50395,10 @@
    ]
   },
   {
-   "name": "鎖定",
-   "group": "轉換成本與鎖定",
-   "members": [
-    "Platform Lock-in"
-   ]
-  },
-  {
    "name": "風險知覺",
    "group": "風險與威脅知覺",
    "members": [
     "Green Perceived Risk",
-    "Information Sensitivity",
     "Loss Aversion",
     "Outcome Uncertainty",
     "Perceived Risk",
@@ -50374,6 +50425,7 @@
    "name": "隱私顧慮",
    "group": "隱私顧慮",
    "members": [
+    "Information Sensitivity",
     "Privacy Concern"
    ]
   },
@@ -50397,7 +50449,6 @@
     "Safeguard Effectiveness",
     "Self-Confidence",
     "Self-Efficacy",
-    "Stress Coping Ability",
     "Vicarious Exp"
    ]
   },
@@ -50561,17 +50612,11 @@
    ]
   },
   {
-   "name": "組織聲譽",
+   "name": "組織與關係聲譽",
    "group": "聲譽",
    "members": [
     "Org Reputation",
-    "Perceived Reputation"
-   ]
-  },
-  {
-   "name": "先前關係聲譽",
-   "group": "聲譽",
-   "members": [
+    "Perceived Reputation",
     "Prior Relationship Reputation"
    ]
   },
@@ -50988,9 +51033,10 @@
    ]
   },
   {
-   "name": "五力",
+   "name": "五力與替代吸引力",
    "group": "市場力量",
    "members": [
+    "Alternative Attractiveness",
     "Buyer Bargaining Power",
     "Buyer Concentration",
     "Entry Barriers",
@@ -51012,13 +51058,6 @@
     "Stakeholder Power",
     "Stakeholder Urgency",
     "Supplier Discretion over Resource"
-   ]
-  },
-  {
-   "name": "替代吸引力",
-   "group": "市場力量",
-   "members": [
-    "Alternative Attractiveness"
    ]
   },
   {
@@ -51183,13 +51222,6 @@
    ]
   },
   {
-   "name": "耗竭",
-   "group": "工作要求與壓力源",
-   "members": [
-    "Burnout"
-   ]
-  },
-  {
    "name": "工作資源",
    "group": "工作資源與誘因",
    "members": [
@@ -51231,15 +51263,8 @@
    ]
   },
   {
-   "name": "捐款行為",
-   "group": "捐款與受助者",
-   "members": [
-    "Donation"
-   ]
-  },
-  {
    "name": "受助者呈現",
-   "group": "捐款與受助者",
+   "group": "受助者呈現",
    "members": [
     "Identified Victim",
     "Number of Victims",
@@ -51345,18 +51370,19 @@
   },
   {
    "name": "需求滿足",
-   "group": "基本心理需求",
+   "group": "需求與幸福感",
    "members": [
     "Autonomy",
     "Need Satisfaction",
-    "Ontological Security",
     "Relatedness"
    ]
   },
   {
-   "name": "幸福感",
-   "group": "基本心理需求",
+   "name": "幸福與安適",
+   "group": "需求與幸福感",
    "members": [
+    "Ontological Security",
+    "Stress Coping Ability",
     "Well-being"
    ]
   },
@@ -51392,6 +51418,7 @@
    "name": "框架",
    "group": "框架與損益",
    "members": [
+    "Framing",
     "Gain Framing",
     "Loss Framing",
     "Reference Point"
@@ -51407,18 +51434,12 @@
    ]
   },
   {
-   "name": "危機屬性",
+   "name": "危機屬性與回應",
    "group": "危機情境",
    "members": [
+    "Accommodative Response Strategy",
     "Crisis",
     "Crisis History"
-   ]
-  },
-  {
-   "name": "危機回應策略",
-   "group": "危機情境",
-   "members": [
-    "Accommodative Response Strategy"
    ]
   },
   {
@@ -51430,18 +51451,12 @@
    ]
   },
   {
-   "name": "定價",
-   "group": "規模與產出",
-   "members": [
-    "Dynamic Pricing"
-   ]
-  },
-  {
    "name": "利他與環境價值",
    "group": "價值取向",
    "members": [
     "Altruistic Values",
-    "Biospheric Values"
+    "Biospheric Values",
+    "Personal Values"
    ]
   },
   {
@@ -51450,13 +51465,6 @@
    "members": [
     "Egoistic Values",
     "Instrumental Values"
-   ]
-  },
-  {
-   "name": "個人價值",
-   "group": "價值取向",
-   "members": [
-    "Personal Values"
    ]
   },
   {
@@ -51558,7 +51566,6 @@
    "group": "倫理與道德行為",
    "members": [
     "Ethical Behavior",
-    "Helping Behavior",
     "Punitive Response",
     "Unethical Behavior"
    ]
@@ -51573,13 +51580,6 @@
     "Policy Agenda",
     "Public Agenda Salience",
     "Public Attribute Perception"
-   ]
-  },
-  {
-   "name": "框架",
-   "group": "議題設定與框架",
-   "members": [
-    "Framing"
    ]
   },
   {
@@ -51731,7 +51731,6 @@
    "members": [
     "Commitment Credibility",
     "Expected Future Interaction",
-    "Free Riding",
     "Group Size",
     "Group-based Pay"
    ]

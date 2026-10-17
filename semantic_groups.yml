@@ -4,7 +4,7 @@
 groups:
 - name: 情緒
   members: [Emotions, Affect, Arousal, Joy, Warm Glow, Valence, Violation Valence, Communicator Reward Valence, Optimism, Affinity, Emotional Attachment, Fear, AI Anxiety, Fear of Isolation, Technostress,
-    Eeriness, Discomfort, Violation Feelings, Dissonance, Fear Control, Danger Control, Anger, Perceived Reward, Anxiety, Psychological Tension, Negative Emotional Arousal]
+    Eeriness, Discomfort, Violation Feelings, Dissonance, Fear Control, Danger Control, Anger, Perceived Reward, Anxiety, Psychological Tension, Negative Emotional Arousal, Burnout]
   subgroups:
   - name: 愉悅
     members: [Joy, Optimism, Warm Glow, Affinity, Emotional Attachment, Perceived Reward]
@@ -13,12 +13,12 @@ groups:
   - name: 恐懼
     members: [Fear, Fear Control, Danger Control, Fear of Isolation]
   - name: 焦慮與壓力
-    members: [AI Anxiety, Technostress, Discomfort, Eeriness, Anxiety, Psychological Tension]
+    members: [AI Anxiety, Technostress, Discomfort, Eeriness, Anxiety, Psychological Tension, Burnout]
   - name: 負面情緒反應
     members: [Anger, Dissonance, Violation Feelings, Negative Emotional Arousal]
 - name: 信任與可信度
   members: [Trust, Trust in AI, Green Trust, Disposition to Trust, Institution-based Trust, Source Trustworthiness, Perceived Credibility, Ad Credibility, Signal Credibility, eWOM Credibility, Credibility
-      Heuristics, Source Expertise, Message Objectivity, Perceived Authenticity, Belief in Machine Objectivity, Information Usefulness]
+      Heuristics, Source Expertise, Message Objectivity, Perceived Authenticity, Belief in Machine Objectivity]
   subgroups:
   - name: 信任
     members: [Trust, Trust in AI, Green Trust, Source Trustworthiness]
@@ -28,18 +28,14 @@ groups:
     members: [Perceived Credibility, Source Expertise, Ad Credibility, eWOM Credibility, Signal Credibility, Perceived Authenticity]
   - name: 客觀性與可信度捷思
     members: [Message Objectivity, Belief in Machine Objectivity, Credibility Heuristics]
-  - name: 資訊有用性
-    members: [Information Usefulness]
 - name: 迴避與抗拒
   members: [User Resistance, AI Avoidance, Algorithm Aversion, Avoidance Motivation, Avoidance Behavior, Exit, Turnover Intention, Switching Intention, Switching Behavior, Reactance, Attitude Resistance,
-    Trait Reactance, Neglect, Counterproductive Work Behavior, Emotion-Focused Coping]
+    Trait Reactance, Neglect, Emotion-Focused Coping]
   subgroups:
-  - name: 迴避
-    members: [AI Avoidance, Avoidance Behavior, Avoidance Motivation, Emotion-Focused Coping, Neglect]
+  - name: 迴避與厭惡
+    members: [AI Avoidance, Avoidance Behavior, Avoidance Motivation, Emotion-Focused Coping, Neglect, Algorithm Aversion]
   - name: 抗拒
-    members: [User Resistance, Reactance, Trait Reactance, Attitude Resistance, Counterproductive Work Behavior]
-  - name: 厭惡
-    members: [Algorithm Aversion]
+    members: [User Resistance, Reactance, Trait Reactance, Attitude Resistance]
   - name: 離開與轉換
     members: [Exit, Turnover Intention, Switching Intention, Switching Behavior]
 - name: 行為意圖
@@ -55,7 +51,7 @@ groups:
 - name: 實際行為與使用
   members: [Behavior, Purchase, Adoption, Media Use, Reliance on Automation, Algorithm Use, Customer Engagement, Organizational Citizenship Behavior, Security Policy Violation, Comprehensiveness of Usage,
     Breadth of Product Use, Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer, Voluntariness of Use, Persistence, Effort, Task Strategies, Approach Behavior, Behavior Change,
-    Option Adoption, Status Quo Continuation]
+    Option Adoption, Status Quo Continuation, Counterproductive Work Behavior, Free Riding, Donation, Helping Behavior]
   subgroups:
   - name: 使用與採用
     members: [Behavior, Adoption, Media Use, Purchase, Reliance on Automation, Algorithm Use, Comprehensiveness of Usage, Breadth of Product Use, Voluntariness of Use, Approach Behavior, Behavior Change,
@@ -64,8 +60,8 @@ groups:
     members: [Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer]
   - name: 投入與公民行為
     members: [Customer Engagement, Organizational Citizenship Behavior, Effort, Persistence, Task Strategies]
-  - name: 違規
-    members: [Security Policy Violation]
+  - name: 違規與反生產行為
+    members: [Security Policy Violation, Counterproductive Work Behavior, Free Riding]
 - name: 態度
   members: [Attitude, Brand Attitude, Attitude toward the Ad, Prior AI Attitude, Donation Attitude, Attitude Change, Attitude Strength, Brand Preference, Attitude toward the Advertiser, Ad Cognitions, Brand
       Feelings, Conviction, Behavioral Beliefs, Outcome Evaluations, Control Beliefs]
@@ -114,10 +110,10 @@ groups:
     members: [Confirmation of Expectations, Expectancy Violation, Unmet Promises]
 - name: 有用性與效益
   members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Perceived Health Benefits, Benefit, Switching Benefits, Functional Value, Gratifications Obtained, Utility Value, Attainment
-      Value, Intrinsic Value, Relationship Benefits]
+      Value, Intrinsic Value, Relationship Benefits, Information Usefulness]
   subgroups:
   - name: 知覺有用性
-    members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Benefit, Perceived Health Benefits, Switching Benefits]
+    members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Benefit, Perceived Health Benefits, Switching Benefits, Information Usefulness]
   - name: 功能與工具價值
     members: [Functional Value, Utility Value, Attainment Value, Intrinsic Value]
   - name: 報酬與滿足
@@ -153,43 +149,40 @@ groups:
     members: [Argument Quality, Narrative Quality, Review Quality]
 - name: 成本與犧牲
   members: [Perceived Cost, Perceived Sacrifice, Response Cost, Safeguard Cost, Price, Price Difference from Reference, Transaction Cost, Average Cost, Agency Cost, Cost of Multihoming, Fixed Cost Share,
-    Non-monetary Cost, Voice Cost, Relationship Termination Costs, Time Delay, Knowledge Acquisition Cost]
+    Non-monetary Cost, Voice Cost, Relationship Termination Costs, Time Delay, Knowledge Acquisition Cost, Dynamic Pricing]
   subgroups:
   - name: 知覺成本
     members: [Perceived Cost, Perceived Sacrifice, Non-monetary Cost, Response Cost, Safeguard Cost, Time Delay, Voice Cost, Relationship Termination Costs]
   - name: 價格
-    members: [Price, Price Difference from Reference]
+    members: [Price, Price Difference from Reference, Dynamic Pricing]
   - name: 經濟成本
     members: [Transaction Cost, Agency Cost, Average Cost, Fixed Cost Share, Cost of Multihoming, Knowledge Acquisition Cost]
 - name: 轉換成本與鎖定
   members: [Switching cost, Financial Switching Cost, Procedural Switching Cost, Relational Switching Cost, Platform Lock-in, Switching Experience]
   subgroups:
-  - name: 轉換成本
-    members: [Switching cost, Financial Switching Cost, Procedural Switching Cost, Relational Switching Cost, Switching Experience]
-  - name: 鎖定
-    members: [Platform Lock-in]
+  - name: 轉換成本與鎖定
+    members: [Switching cost, Financial Switching Cost, Procedural Switching Cost, Relational Switching Cost, Switching Experience, Platform Lock-in]
 - name: 風險與威脅知覺
   members: [Perceived Risk, Green Perceived Risk, Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Loss Aversion, Risk Aversion of Agent, Job Replacement Threat,
-    Threat to Freedom, Risk Tolerance, Outcome Uncertainty, Techno-insecurity, Techno-uncertainty, Information Sensitivity]
+    Threat to Freedom, Risk Tolerance, Outcome Uncertainty, Techno-insecurity, Techno-uncertainty]
   subgroups:
   - name: 風險知覺
-    members: [Perceived Risk, Green Perceived Risk, Risk Tolerance, Risk Aversion of Agent, Loss Aversion, Outcome Uncertainty, Information Sensitivity]
+    members: [Perceived Risk, Green Perceived Risk, Risk Tolerance, Risk Aversion of Agent, Loss Aversion, Outcome Uncertainty]
   - name: 威脅知覺
     members: [Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Job Replacement Threat, Threat to Freedom, Techno-insecurity, Techno-uncertainty]
 - name: 隱私顧慮
-  members: [Privacy Concern, Privacy Awareness, Privacy Experiences]
+  members: [Privacy Concern, Privacy Awareness, Privacy Experiences, Information Sensitivity]
   subgroups:
   - name: 隱私顧慮
-    members: [Privacy Concern]
+    members: [Privacy Concern, Information Sensitivity]
   - name: 隱私意識與經驗
     members: [Privacy Awareness, Privacy Experiences]
 - name: 自我效能與控制感
   members: [Self-Efficacy, Perceived Behavioral Control, Perceived Efficacy, Response Efficacy, Safeguard Effectiveness, Collective Efficacy, Competence, Control, Facilitating Conditions, Technology Readiness,
-    Choice Freedom, Self-Confidence, Autonomy Support, Perceived AI Competence, Vicarious Exp, Stress Coping Ability, General Self-Efficacy]
+    Choice Freedom, Self-Confidence, Autonomy Support, Perceived AI Competence, Vicarious Exp, General Self-Efficacy]
   subgroups:
   - name: 自我效能
-    members: [Self-Efficacy, Perceived Efficacy, Response Efficacy, Collective Efficacy, Self-Confidence, Safeguard Effectiveness, Vicarious Exp, Perceived AI Competence, Stress Coping Ability, General
-        Self-Efficacy]
+    members: [Self-Efficacy, Perceived Efficacy, Response Efficacy, Collective Efficacy, Self-Confidence, Safeguard Effectiveness, Vicarious Exp, Perceived AI Competence, General Self-Efficacy]
   - name: 控制感與條件
     members: [Perceived Behavioral Control, Control, Facilitating Conditions, Choice Freedom, Autonomy Support, Technology Readiness, Competence]
 - name: 能力與知識
@@ -244,10 +237,8 @@ groups:
 - name: 聲譽
   members: [Org Reputation, Perceived Reputation, Prior Relationship Reputation, Brand Reputation]
   subgroups:
-  - name: 組織聲譽
-    members: [Org Reputation, Perceived Reputation, Brand Reputation]
-  - name: 先前關係聲譽
-    members: [Prior Relationship Reputation]
+  - name: 組織與關係聲譽
+    members: [Org Reputation, Perceived Reputation, Brand Reputation, Prior Relationship Reputation]
 - name: 責任歸因
   members: [Crisis Responsibility, Responsibility Attribution, Ascription of responsibility, Awareness of Consequence, Perceived Consequences, Controllability, Locus, Stability, Seller Profit Motive Attribution,
     Seller Cost Justification, Consensus, Distinctiveness, Consistency]
@@ -375,12 +366,11 @@ groups:
   members: [Rivalry Intensity, Threat of New Entrants, Threat of Substitutes, Supplier Bargaining Power, Buyer Bargaining Power, Entry Barriers, Alternative Attractiveness, Buyer Concentration, Product
       Differentiation, Supplier Discretion over Resource, Resource Holder Power, Stakeholder Power, Stakeholder Legitimacy, Stakeholder Urgency, Rival Interdependence, Stakeholder Integration]
   subgroups:
-  - name: 五力
-    members: [Rivalry Intensity, Threat of New Entrants, Threat of Substitutes, Supplier Bargaining Power, Buyer Bargaining Power, Entry Barriers, Buyer Concentration, Product Differentiation, Rival Interdependence]
+  - name: 五力與替代吸引力
+    members: [Rivalry Intensity, Threat of New Entrants, Threat of Substitutes, Supplier Bargaining Power, Buyer Bargaining Power, Entry Barriers, Buyer Concentration, Product Differentiation, Rival Interdependence,
+      Alternative Attractiveness]
   - name: 利害關係人屬性
     members: [Stakeholder Power, Stakeholder Legitimacy, Stakeholder Urgency, Resource Holder Power, Supplier Discretion over Resource, Stakeholder Integration]
-  - name: 替代吸引力
-    members: [Alternative Attractiveness]
 - name: 創新特性
   members: [Compatibility, Trialability, Observability, Innovativeness, Personal Innovativeness, Disruptive Innovation, Low-end Foothold, Performance Oversupply, Incumbent Response, Incumbent Focus on Profitable
       Customers, Sustaining Innovation, Entrant Upmarket Migration, New-market Foothold, Critical Mass, Cumulative Adoption, Innovation Awareness, Change Agent Contact, Cosmopolitan Orientation, Pace of
@@ -421,7 +411,7 @@ groups:
   - name: AI 疑慮
     members: [AI Configuration Concern, Sociotechnical Blindness]
 - name: 工作要求與壓力源
-  members: [Job Demands, Workload, Burnout, Techno-overload, Techno-invasion, Learning Pressure, Role Conflict, Role Ambiguity, Role Expectations, Role Stress]
+  members: [Job Demands, Workload, Techno-overload, Techno-invasion, Learning Pressure, Role Conflict, Role Ambiguity, Role Expectations, Role Stress]
   subgroups:
   - name: 角色壓力
     members: [Role Conflict, Role Ambiguity, Role Expectations, Role Stress]
@@ -429,8 +419,6 @@ groups:
     members: [Job Demands, Workload, Learning Pressure]
   - name: 科技壓力源
     members: [Techno-invasion, Techno-overload]
-  - name: 耗竭
-    members: [Burnout]
 - name: 工作資源與誘因
   members: [Job Resources, Rewards and Job Conditions, Hygiene Factors, Motivator Factors, Feedback, Job Enrichment, Reinforcement, Perceived Job Security]
   subgroups:
@@ -445,11 +433,9 @@ groups:
     members: [Goal Specificity, Goal Difficulty, Goal Importance]
   - name: 目標追蹤與自我調節
     members: [Performance Standard, Perceived Performance Discrepancy, Discrepancy Magnitude, Progress toward Goal, Goal Attainment, Self-Regulation]
-- name: 捐款與受助者
-  members: [Donation, Identified Victim, Statistical Information, Social information only + Single Victim, Number of Victims, Sufficiency Threshold]
+- name: 受助者呈現
+  members: [Identified Victim, Statistical Information, Social information only + Single Victim, Number of Victims, Sufficiency Threshold]
   subgroups:
-  - name: 捐款行為
-    members: [Donation]
   - name: 受助者呈現
     members: [Identified Victim, Number of Victims, Statistical Information, Social information only + Single Victim, Sufficiency Threshold]
 - name: 口碑與發聲
@@ -490,13 +476,13 @@ groups:
   subgroups:
   - name: 心理契約
     members: [Psychological Contract Breach, Psychological Contract Fulfillment]
-- name: 基本心理需求
-  members: [Autonomy, Relatedness, Well-being, Need Satisfaction, Ontological Security]
+- name: 需求與幸福感
+  members: [Autonomy, Relatedness, Well-being, Need Satisfaction, Ontological Security, Stress Coping Ability]
   subgroups:
   - name: 需求滿足
-    members: [Autonomy, Relatedness, Need Satisfaction, Ontological Security]
-  - name: 幸福感
-    members: [Well-being]
+    members: [Autonomy, Relatedness, Need Satisfaction]
+  - name: 幸福與安適
+    members: [Well-being, Ontological Security, Stress Coping Ability]
 - name: 極化與媒體暴露
   members: [Affective Polarization, Partisan Media Exposure, Cross-cutting Exposure, Social Distance, Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Partisan
       Sorting, Elite Polarization, Identity Politicization]
@@ -508,35 +494,29 @@ groups:
   - name: 第三人效果
     members: [Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Social Distance]
 - name: 框架與損益
-  members: [Gain Framing, Loss Framing, Risk Seeking, Reference Point, Certainty Effect, Small Probability Overweighting]
+  members: [Gain Framing, Loss Framing, Risk Seeking, Reference Point, Certainty Effect, Small Probability Overweighting, Framing]
   subgroups:
   - name: 框架
-    members: [Gain Framing, Loss Framing, Reference Point]
+    members: [Gain Framing, Loss Framing, Reference Point, Framing]
   - name: 機率權重與風險偏好
     members: [Certainty Effect, Small Probability Overweighting, Risk Seeking]
 - name: 危機情境
   members: [Crisis, Crisis History, Accommodative Response Strategy]
   subgroups:
-  - name: 危機屬性
-    members: [Crisis, Crisis History]
-  - name: 危機回應策略
-    members: [Accommodative Response Strategy]
+  - name: 危機屬性與回應
+    members: [Crisis, Crisis History, Accommodative Response Strategy]
 - name: 規模與產出
-  members: [Output Volume, Product Scope, Dynamic Pricing]
+  members: [Output Volume, Product Scope]
   subgroups:
   - name: 規模
     members: [Output Volume, Product Scope]
-  - name: 定價
-    members: [Dynamic Pricing]
 - name: 價值取向
-  members: [Personal Values, Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values]
+  members: [Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values, Personal Values]
   subgroups:
   - name: 利他與環境價值
-    members: [Altruistic Values, Biospheric Values]
+    members: [Altruistic Values, Biospheric Values, Personal Values]
   - name: 利己與工具價值
     members: [Egoistic Values, Instrumental Values]
-  - name: 個人價值
-    members: [Personal Values]
 - name: 制度與合法性
   members: [Isomorphism, Legitimacy, Professionalization, Organizational Survival, Government Provision, Corporate Political Activity, Organizational Status, Institutionalization]
   subgroups:
@@ -565,19 +545,17 @@ groups:
   - name: 社會說服與影響
     members: [Social Persuasion, Opinion Leader Influence, Informal Sanctions, Socialization]
 - name: 倫理與道德行為
-  members: [Ethical Framework, Perceived Ethical Framework of Others, Ethical Decision, Ethical Climate, Ethical Behavior, Unethical Behavior, Helping Behavior, Punitive Response]
+  members: [Ethical Framework, Perceived Ethical Framework of Others, Ethical Decision, Ethical Climate, Ethical Behavior, Unethical Behavior, Punitive Response]
   subgroups:
   - name: 倫理判斷
     members: [Ethical Framework, Perceived Ethical Framework of Others, Ethical Decision, Ethical Climate]
   - name: 道德行為
-    members: [Ethical Behavior, Unethical Behavior, Helping Behavior, Punitive Response]
+    members: [Ethical Behavior, Unethical Behavior, Punitive Response]
 - name: 議題設定與框架
-  members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility, Framing, Need for Orientation, Issue Uncertainty]
+  members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility, Need for Orientation, Issue Uncertainty]
   subgroups:
   - name: 議題顯著性
     members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility]
-  - name: 框架
-    members: [Framing]
   - name: 導向需求
     members: [Need for Orientation, Issue Uncertainty]
 - name: 依附風格
@@ -638,10 +616,10 @@ groups:
   - name: 場域力量
     members: [Driving Forces, Restraining Forces, Field Position]
 - name: 賽局與合作
-  members: [Expected Future Interaction, Commitment Credibility, Free Riding, Group Size, Group-based Pay]
+  members: [Expected Future Interaction, Commitment Credibility, Group Size, Group-based Pay]
   subgroups:
   - name: 賽局與合作
-    members: [Expected Future Interaction, Commitment Credibility, Free Riding, Group Size, Group-based Pay]
+    members: [Expected Future Interaction, Commitment Credibility, Group Size, Group-based Pay]
 - name: 意象相容
   members: [Image Compatibility, Leader-Image Compatibility, Number of Violations, Rejection Threshold]
   subgroups:
