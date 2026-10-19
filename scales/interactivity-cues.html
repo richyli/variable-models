@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactivity Cues 量表</title>
+<meta name="description" content="常用研究構念的量表題項：出處、原始題目、作答量尺、信度與改編注意事項。">
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--ink:#1d2330;--muted:#6b7380;--line:#e3e6ec;--line2:#cfd4dd;--accent:#2457c5;--chip:#eef2fb;--chip-ink:#2457c5;--sel:#fff1c2;--sel-line:#d9a400;--shadow:0 1px 2px rgba(20,30,50,.06),0 4px 14px rgba(20,30,50,.05)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12151b;--panel:#1a1e27;--ink:#e6e9ef;--muted:#99a1b0;--line:#2a303c;--line2:#3a4150;--accent:#7ea2ff;--chip:#243151;--chip-ink:#a9c0ff;--sel:#4a3a05;--sel-line:#e3b23c;--shadow:0 1px 2px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#12151b;--panel:#1a1e27;--ink:#e6e9ef;--muted:#99a1b0;--line:#2a303c;--line2:#3a4150;--accent:#7ea2ff;--chip:#243151;--chip-ink:#a9c0ff;--sel:#4a3a05;--sel-line:#e3b23c;--shadow:0 1px 2px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 Inter,"Segoe UI","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.top{display:flex;align-items:center;gap:14px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+.top h1{font-size:16px;margin:0;white-space:nowrap}.top .meta{color:var(--muted);font-size:12px;margin-left:auto;white-space:nowrap}
+.top input{flex:1;max-width:520px;padding:7px 12px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);font-size:14px}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);min-height:calc(100vh - 53px)}
+.side{border-right:1px solid var(--line);background:var(--panel);position:sticky;top:53px;max-height:calc(100vh - 53px);overflow:auto;padding:6px 0}
+.side a{display:flex;gap:6px;padding:5px 12px;color:var(--ink);font-size:13px}.side a:hover{background:var(--chip);text-decoration:none}.side a .n{margin-left:auto;color:var(--muted);font-size:11px}
+.main{padding:12px 16px 60px;min-width:0}
+.var{margin:0 0 22px}.var h2{font-size:18px;margin:14px 0 2px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.var h2 .zh{color:var(--muted);font-size:13px;font-weight:500}.var h2 .back{font-size:12px;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow);min-width:0}
+.card h3{font-size:14px;margin:0 0 4px}.card .src{font-size:12px;color:var(--muted);margin:0 0 6px}
+.card ol{margin:6px 0 6px 20px;padding:0}.card ol li{margin:2px 0}
+.card .kv{font-size:12px;color:var(--muted);margin:3px 0}.card .kv b{color:var(--ink);font-weight:600}
+.card .def{font-size:13px;margin:0 0 4px}
+.hint{color:var(--muted);font-size:12px}
+.chip{display:inline-block;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--chip-ink);font-size:12px}
+.hidden{display:none}
+.intro h2{font-size:18px;margin:0 0 4px}.intro p{margin:0;color:var(--muted)}.intro{margin:0 0 14px}
+.grp{margin:0 0 14px}.grp h3{font-size:14px;margin:0 0 6px}.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips .chip{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border:1px solid var(--line2);background:var(--panel);color:var(--ink);font-size:13px;border-radius:999px}.chips .chip:hover{border-color:var(--accent);text-decoration:none}.chips .chip .n{color:var(--muted);font-size:11px}.chip.plain{background:var(--chip);color:var(--chip-ink);border:0;padding:1px 8px;font-size:12px}
+.chip.plain.warn{background:#fff3cd;color:#7a5a00;font-weight:500;vertical-align:middle;margin-left:6px}
+.side .sh{padding:8px 12px 4px;font-size:11px;color:var(--muted);font-weight:600}.side a.cur{background:var(--sel);box-shadow:inset 3px 0 0 var(--sel-line)}
+@media (max-width:860px){.layout{grid-template-columns:1fr}.side{display:none}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top"><h1><a href="../index.html">變數與理論模型</a> › <a href="../questionnaires.html">量表目錄</a> › Interactivity Cues</h1><input id="q" type="search" placeholder="搜尋這頁的題目字句…"><span class="meta">1 份量表・2026-10-19</span></header>
+<div class="layout"><nav class="side" id="side"><div class="sh">任務與科技特性</div><a href="task-complexity.html" class="">Task Complexity<span class="n">1</span></a><a href="technology.html" class="">Technology<span class="n">1</span></a><a href="interactivity-cues.html" class="cur">Interactivity Cues<span class="n">1</span></a><a href="task-characteristics.html" class="">Task Characteristics<span class="n">1</span></a><a href="technology-characteristics.html" class="">Technology Characteristics<span class="n">1</span></a><a href="ttf.html" class="">TTF<span class="n">1</span></a><div class="sh"><a href="../questionnaires.html">← 全部目錄</a></div></nav><main class="main" id="main"><section class="var"><h2>Interactivity Cues<span class="zh"></span><span class="chip">1 份量表</span><a class="back" href="../index.html#v=Interactivity Cues">↗ 在理論模型裡看這個變數</a></h2><p class="hint">變數群：任務與科技特性　›　可供性線索　用到它的理論：<span class="chip plain">MAIN</span><span class="chip plain">PSI-CA</span><span class="chip plain">SPT</span></p><div class="grid"><section class="card"><h3>McMillan &amp; Hwang (2002) <span class="chip plain warn" title="題項依文獻摘要或常見引用改寫，使用前請對照原始論文附錄">題項未對照原文</span></h3><p class="src">McMillan &amp; Hwang (2002), Journal of Advertising 31(3), 29–42, Measures of Perceived Interactivity（MPI, 18 題：direction of communication / user control / time）；Liu (2003) 12 題（active control / two-way communication / synchronicity）</p><ol><li>[Two-way] The site enables two-way communication.</li><li>[Two-way] The site facilitates concurrent communication.</li><li>[Control] I felt that I had a lot of control over my visiting experiences at this site.</li><li>[Time] The site loads fast / responds quickly to my input.</li><li>[Global] The site is interactive.</li></ol><div class="kv"><b>量尺</b>：7-point Likert, strongly disagree – strongly agree</div><div class="kv"><b>信度</b>：MPI 三構面 α 約 .80–.90（未核對）；學習者–AI 互動版整體 α .95（不同工具，搜尋摘要）</div><div class="kv"><b>原始情境</b>：</div><div class="kv"><b>注意</b>：[記憶重建] 搜尋只確認 18 題三構面與 Liu 的替代量表。MAIN 模型把互動性當 affordance cue 操弄（有／無回覆功能），知覺端常用 Sundar 的 3 題 perceived interactivity。</div></section></div></section><section class="grp"><h3>同一變數群的其他量表</h3><div class="chips"><a class="chip" href="scales/task-characteristics.html" title="">Task Characteristics<span class="n">1</span></a><a class="chip" href="scales/task-complexity.html" title="">Task Complexity<span class="n">1</span></a><a class="chip" href="scales/technology.html" title="">Technology<span class="n">1</span></a><a class="chip" href="scales/technology-characteristics.html" title="">Technology Characteristics<span class="n">1</span></a><a class="chip" href="scales/ttf.html" title="">TTF<span class="n">1</span></a></div></section></main></div>
+<script>
+const q = document.getElementById('q');
+q.addEventListener('input', () => { const f = q.value.trim().toLowerCase();
+  document.querySelectorAll('.var').forEach(v => { let any = false; v.querySelectorAll('.card').forEach(c => { const hit = !f || c.textContent.toLowerCase().includes(f); c.classList.toggle('hidden', !hit); if (hit) any = true; }); v.classList.toggle('hidden', !any); });
+  document.querySelectorAll('section.grp[data-name]').forEach(g => { let any = false; g.querySelectorAll('.chip').forEach(c => { const hit = !f || c.textContent.toLowerCase().includes(f) || (c.title || '').toLowerCase().includes(f); c.classList.toggle('hidden', !hit); if (hit) any = true; }); g.classList.toggle('hidden', !any); }); });
+</script>
+</body></html>

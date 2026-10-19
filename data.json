@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19 22:59",
+ "generated": "2026-10-19 23:07",
  "vault": "Zettel",
  "variables": [
   {
@@ -33,7 +33,7 @@
    "sgroup": "實際行為與使用",
    "ssub": "使用與採用",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Behavioral Intention",
@@ -184,7 +184,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Confirmation of Expectations",
@@ -225,7 +225,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Continuance Intention",
@@ -283,7 +283,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Expectation",
@@ -323,7 +323,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Individual Impact",
@@ -376,7 +376,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Information Quality",
@@ -424,7 +424,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Motivation",
@@ -510,7 +510,7 @@
    "sgroup": "績效與成果",
    "ssub": "組織績效",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Behavioral Control",
@@ -568,7 +568,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Ease of Use",
@@ -625,7 +625,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Risk",
@@ -678,7 +678,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Privacy Concern",
@@ -733,7 +733,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "PU Perceived Usefulness",
@@ -857,7 +857,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Switching cost",
@@ -886,7 +886,7 @@
    "sgroup": "轉換成本與鎖定",
    "ssub": "轉換成本與鎖定",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "System Quality",
@@ -934,7 +934,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Task Characteristics",
@@ -979,7 +979,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Technology Characteristics",
@@ -1004,7 +1004,7 @@
    "sgroup": "任務與科技特性",
    "ssub": "科技特性",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "TTF",
@@ -1055,7 +1055,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "User Satisfaction",
@@ -1177,7 +1177,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "save for later",
@@ -1251,7 +1251,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Ascription of responsibility",
@@ -1299,7 +1299,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Attitude",
@@ -1419,7 +1419,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Awareness of Consequence",
@@ -1464,7 +1464,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Behavior",
@@ -1663,7 +1663,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Crisis History",
@@ -1703,7 +1703,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Crisis Responsibility",
@@ -1734,7 +1734,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Crisis",
@@ -1809,7 +1809,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Environment",
@@ -1860,7 +1860,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Expectancy",
@@ -1918,7 +1918,7 @@
      "j": 0.27
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Facilitating Conditions",
@@ -1973,7 +1973,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "In-group",
@@ -2001,7 +2001,7 @@
    "sgroup": "認同與群體",
    "ssub": "內外團體",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Knowledge",
@@ -2054,7 +2054,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Message Objectivity",
@@ -2144,7 +2144,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Out-group",
@@ -2171,7 +2171,7 @@
    "sgroup": "認同與群體",
    "ssub": "內外團體",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Past Performance",
@@ -2226,7 +2226,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Anthropomorphism",
@@ -2274,7 +2274,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Severity",
@@ -2329,7 +2329,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Susceptibility",
@@ -2384,7 +2384,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Performance Expectancy",
@@ -2439,7 +2439,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Personal Identify",
@@ -2521,7 +2521,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Prior Relationship Reputation",
@@ -2563,7 +2563,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Product Lifetime Labelling",
@@ -2659,7 +2659,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Self-Efficacy",
@@ -2766,7 +2766,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social Categorization",
@@ -2816,7 +2816,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social Groups Distinction",
@@ -2913,7 +2913,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social information only + Single Victim",
@@ -2940,8 +2940,8 @@
    "id": "Social Norm",
    "label": "Social Norm",
    "aliases": [
-    "Social influence",
-    "Social Influence"
+    "Social Influence",
+    "Social influence"
    ],
    "notes": [
     {
@@ -3022,7 +3022,7 @@
    "sgroup": "規範",
    "ssub": "社會說服與影響",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Technology",
@@ -3061,7 +3061,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Value",
@@ -3137,7 +3137,7 @@
    "sgroup": "自我效能與控制感",
    "ssub": "自我效能",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Donation",
@@ -3232,7 +3232,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Trust",
@@ -3420,7 +3420,7 @@
      "j": 0.26
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Purchase Intention",
@@ -3530,7 +3530,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Competitive Advantage",
@@ -3585,7 +3585,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Environmental Uncertainty",
@@ -3708,7 +3708,7 @@
    "sgroup": "實際行為與使用",
    "ssub": "使用與採用",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Donation Attitude",
@@ -3918,7 +3918,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Intention Stability",
@@ -4042,7 +4042,7 @@
      "j": 0.43
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Experience",
@@ -4076,7 +4076,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Voluntariness of Use",
@@ -4141,7 +4141,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Ecological Worldview",
@@ -4178,7 +4178,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Autonomy Support",
@@ -4290,7 +4290,7 @@
    "sgroup": "工作資源與誘因",
    "ssub": "工作資源",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Well-being",
@@ -4339,7 +4339,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Need Satisfaction",
@@ -4524,7 +4524,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Intrinsic Motivation",
@@ -4570,7 +4570,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Outcome Expectations",
@@ -4616,7 +4616,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Goal Commitment",
@@ -4662,7 +4662,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Persistence",
@@ -4761,7 +4761,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Intrinsic Value",
@@ -4864,7 +4864,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Task Choice",
@@ -4932,7 +4932,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Individual Characteristics",
@@ -5044,7 +5044,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Relative Advantage",
@@ -5094,7 +5094,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Compatibility",
@@ -5140,7 +5140,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Complexity",
@@ -5186,7 +5186,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Top Management Support",
@@ -5251,7 +5251,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Organizational Readiness",
@@ -5508,7 +5508,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Group Boundary Permeability",
@@ -5577,7 +5577,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Identification",
@@ -5615,7 +5615,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Cooperation",
@@ -5661,7 +5661,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Affective Commitment",
@@ -5715,7 +5715,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Turnover Intention",
@@ -5770,7 +5770,7 @@
      "j": 0.28
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Identity Salience",
@@ -5964,7 +5964,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Knowledge Transfer",
@@ -6011,7 +6011,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Firm Performance",
@@ -6097,7 +6097,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "External Knowledge Availability",
@@ -6215,7 +6215,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Information Sensitivity",
@@ -6280,7 +6280,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Algorithm Error Observed",
@@ -6327,7 +6327,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Human Error Observed",
@@ -6572,7 +6572,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Comparison with Own Judgment",
@@ -6760,7 +6760,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Human Involvement",
@@ -6999,7 +6999,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Self-Uniqueness",
@@ -7228,7 +7228,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Automation Bias",
@@ -7341,7 +7341,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Accountability",
@@ -7387,7 +7387,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Decision Error",
@@ -7420,7 +7420,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social Cues",
@@ -7466,7 +7466,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social Response",
@@ -7583,7 +7583,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Modality Cues",
@@ -7692,7 +7692,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Interactivity Cues",
@@ -7738,7 +7738,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Navigability Cues",
@@ -7803,7 +7803,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Bandwagon Cues",
@@ -7849,7 +7849,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Quality",
@@ -7901,7 +7901,7 @@
      "j": 0.27
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Involvement",
@@ -8102,7 +8102,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Eeriness",
@@ -8522,7 +8522,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Explainability",
@@ -8604,7 +8604,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Job Replacement Threat",
@@ -8757,7 +8757,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Avoidance Motivation",
@@ -9038,7 +9038,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Utilitarian Goal",
@@ -9468,7 +9468,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Prior AI Attitude",
@@ -9561,7 +9561,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Maladaptive Response Rewards",
@@ -9630,7 +9630,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Response Efficacy",
@@ -9675,7 +9675,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Response Cost",
@@ -9694,7 +9694,7 @@
    "sgroup": "成本與犧牲",
    "ssub": "知覺成本",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Health Benefits",
@@ -9713,7 +9713,7 @@
    "sgroup": "有用性與效益",
    "ssub": "知覺有用性",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Barriers",
@@ -9757,7 +9757,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Cues to Action",
@@ -9801,7 +9801,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Danger Control",
@@ -9845,7 +9845,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Fear Control",
@@ -9889,7 +9889,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Reactance",
@@ -9989,7 +9989,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Ability",
@@ -10036,7 +10036,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Distraction",
@@ -10105,7 +10105,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Argument Quality",
@@ -10125,7 +10125,7 @@
    "sgroup": "品質",
    "ssub": "訊息品質",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Peripheral Cues",
@@ -10169,7 +10169,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Source Attractiveness",
@@ -10215,7 +10215,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Attitude Strength",
@@ -10251,7 +10251,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Sufficiency Threshold",
@@ -10400,7 +10400,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Time Since Exposure",
@@ -10446,7 +10446,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Sponsorship Disclosure",
@@ -10559,7 +10559,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Ad Credibility",
@@ -10700,7 +10700,7 @@
      "j": 0.26
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Threat to Freedom",
@@ -10831,7 +10831,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Violation Valence",
@@ -10966,7 +10966,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Communication Effectiveness",
@@ -11012,7 +11012,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Media Portrayal of Opinion Climate",
@@ -11236,7 +11236,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Media Influence on Others",
@@ -11515,7 +11515,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Bandwagon Effect",
@@ -11696,7 +11696,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Partisan Media Exposure",
@@ -11935,7 +11935,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Media Use",
@@ -11970,7 +11970,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Gratifications Obtained",
@@ -12590,7 +12590,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Accommodative Response Strategy",
@@ -12660,7 +12660,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Stability",
@@ -12727,7 +12727,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Punitive Response",
@@ -12792,7 +12792,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Consensus",
@@ -13184,7 +13184,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Resource Concentration",
@@ -13311,7 +13311,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Observability",
@@ -13356,7 +13356,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Communication",
@@ -13406,7 +13406,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Opinion Leader Influence",
@@ -13459,7 +13459,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Cosmopolitan Orientation",
@@ -13773,7 +13773,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Switching Benefits",
@@ -13965,7 +13965,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Switching Intention",
@@ -14007,7 +14007,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Relationship Commitment",
@@ -14054,7 +14054,7 @@
      "j": 0.26
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Alternative Attractiveness",
@@ -14102,7 +14102,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Switching Behavior",
@@ -14148,7 +14148,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Relationship Termination Costs",
@@ -14231,7 +14231,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Opportunistic Behavior",
@@ -14274,7 +14274,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Acquiescence",
@@ -14357,7 +14357,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Customer Complaints",
@@ -14403,7 +14403,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Service Recovery",
@@ -14463,7 +14463,7 @@
    "sgroup": "品質",
    "ssub": "SERVQUAL 構面",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Assurance",
@@ -14482,7 +14482,7 @@
    "sgroup": "品質",
    "ssub": "SERVQUAL 構面",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Tangibles",
@@ -14501,7 +14501,7 @@
    "sgroup": "品質",
    "ssub": "SERVQUAL 構面",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Empathy",
@@ -14546,7 +14546,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Responsiveness",
@@ -14565,7 +14565,7 @@
    "sgroup": "品質",
    "ssub": "SERVQUAL 構面",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Consumer Loyalty",
@@ -14620,7 +14620,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Greenwashing",
@@ -14934,7 +14934,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Brand Image",
@@ -14987,7 +14987,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Information Asymmetry",
@@ -15038,7 +15038,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Signal Reliance",
@@ -15135,7 +15135,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Signal Cost",
@@ -15265,7 +15265,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Roles",
@@ -15330,7 +15330,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Observational Learning",
@@ -15415,7 +15415,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Self-Regulation",
@@ -15461,7 +15461,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "General Self-Efficacy",
@@ -15809,7 +15809,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Organizational Citizenship Behavior",
@@ -15859,7 +15859,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Social Exchange Relationship",
@@ -15969,7 +15969,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Knowledge Sharing",
@@ -16016,7 +16016,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Job Security",
@@ -16229,7 +16229,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Structural Social Capital",
@@ -16480,7 +16480,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Exclusion of Outsiders",
@@ -16671,7 +16671,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Control",
@@ -16710,7 +16710,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Joy",
@@ -16756,7 +16756,7 @@
      "j": 0.3
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Element Interactivity",
@@ -16978,7 +16978,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Reference Point",
@@ -17016,7 +17016,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Loss Framing",
@@ -17107,7 +17107,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Risk Seeking",
@@ -17149,7 +17149,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Loss Aversion",
@@ -17195,7 +17195,7 @@
      "j": 0.27
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Certainty Effect",
@@ -17498,7 +17498,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Optimism",
@@ -18310,7 +18310,7 @@
      "j": 0.4
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Transportability",
@@ -18717,7 +18717,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Instrumentality",
@@ -18761,7 +18761,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Resource Heterogeneity",
@@ -18824,7 +18824,7 @@
      "j": 0.67
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Resource Immobility",
@@ -18888,7 +18888,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Causal Ambiguity",
@@ -18945,7 +18945,7 @@
    "sgroup": "資源與動態能力",
    "ssub": "VRIN 資源",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Resource Non-substitutability",
@@ -18964,7 +18964,7 @@
    "sgroup": "資源與動態能力",
    "ssub": "VRIN 資源",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Sustainable Competitive Advantage",
@@ -19386,7 +19386,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Industry Profitability",
@@ -19730,7 +19730,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Transaction Cost",
@@ -19779,7 +19779,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Asset Specificity",
@@ -19827,7 +19827,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Transaction Frequency",
@@ -19871,7 +19871,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Hierarchical Governance",
@@ -19907,7 +19907,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Bilateral Dependency",
@@ -19966,7 +19966,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Agency Problem",
@@ -20014,7 +20014,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Moral Hazard",
@@ -20081,7 +20081,7 @@
    "sgroup": "成本與犧牲",
    "ssub": "經濟成本",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Outcome-based Contract",
@@ -20130,7 +20130,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Risk Aversion of Agent",
@@ -21886,7 +21886,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Brand Associations",
@@ -21972,7 +21972,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Brand Feelings",
@@ -23216,7 +23216,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Socialization",
@@ -23250,7 +23250,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Normative Commitment",
@@ -23294,7 +23294,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Supervisor Support",
@@ -23468,7 +23468,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Transformational Leadership",
@@ -23913,7 +23913,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Goal Importance",
@@ -24261,7 +24261,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Burnout",
@@ -24305,7 +24305,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Job Resources",
@@ -24333,7 +24333,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Work Engagement",
@@ -24377,7 +24377,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Translation Effectiveness",
@@ -24760,7 +24760,7 @@
      "j": 0.29
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Corporate Political Activity",
@@ -25621,7 +25621,7 @@
    "sgroup": "實際行為與使用",
    "ssub": "使用與採用",
    "simStruct": [],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Field Position",
@@ -26689,7 +26689,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Extracted Cues",
@@ -27556,7 +27556,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Time Pressure",
@@ -27604,7 +27604,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Schema Activation",
@@ -27761,7 +27761,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Schema Congruence",
@@ -27868,7 +27868,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Modality Overlap",
@@ -32193,7 +32193,7 @@
      "j": 0.25
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Perceived Warmth",
@@ -33565,7 +33565,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Common Scale Alignment",
@@ -33650,7 +33650,7 @@
      "j": 0.5
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Angle Encoding",
@@ -33756,7 +33756,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Element Proximity",
@@ -34190,7 +34190,7 @@
      "j": 0.33
     }
    ],
-   "nScales": 0
+   "nScales": 1
   },
   {
    "id": "Hit Rate",
