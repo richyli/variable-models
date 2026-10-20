@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>從抽象到變數</title>
+<meta name="description" content="八站互動教材：抽象化、構念、操作化、變數、中介變數、調節變數、研究問題、研究理由。每一站先猜再揭曉，最後接到變數與理論模型工具裡的真實模型。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="從抽象到變數：研究概念八站">
+<meta property="og:description" content="抽象化、構念、操作化、變數、中介、調節、研究問題、研究理由——每站一個可以動手玩的小工具。">
+<meta property="og:url" content="https://richyli.github.io/variable-models/learn.html">
+<meta property="og:image" content="https://richyli.github.io/variable-models/learn.og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#f6f7f9;--panel:#ffffff;--ink:#1d2330;--muted:#6b7380;--line:#e3e6ec;--line2:#cfd4dd;
+  --accent:#2457c5;--accent-ink:#ffffff;--sel:#fff1c2;--sel-line:#d9a400;--sim:#ffe4cf;--sim-line:#e2742a;
+  --pos:#1f8a4c;--neg:#c23a3a;--pos-bg:#e6f4ea;--neg-bg:#fbe9e9;--mod:#7a4fb8;--mod-bg:#efe8fa;--chip:#eef2fb;--chip-ink:#2457c5;
+  --warn-bg:#fff7e0;--warn-line:#e0b23a;
+  --shadow:0 1px 2px rgba(20,30,50,.06),0 4px 14px rgba(20,30,50,.05);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12151b;--panel:#1a1e27;--ink:#e6e9ef;--muted:#99a1b0;--line:#2a303c;--line2:#3a4150;
+  --accent:#7ea2ff;--accent-ink:#0e1424;--sel:#4a3a05;--sel-line:#e3b23c;--sim:#4a2a12;--sim-line:#f08a4b;
+  --pos:#5ccf8a;--neg:#f07b7b;--pos-bg:#173223;--neg-bg:#3a1e1e;--mod:#b89cf0;--mod-bg:#2b2340;--chip:#243151;--chip-ink:#a9c0ff;
+  --warn-bg:#3a3010;--warn-line:#b08a2a;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}}
+:root[data-theme="dark"]{
+  --bg:#12151b;--panel:#1a1e27;--ink:#e6e9ef;--muted:#99a1b0;--line:#2a303c;--line2:#3a4150;
+  --accent:#7ea2ff;--accent-ink:#0e1424;--sel:#4a3a05;--sel-line:#e3b23c;--sim:#4a2a12;--sim-line:#f08a4b;
+  --pos:#5ccf8a;--neg:#f07b7b;--pos-bg:#173223;--neg-bg:#3a1e1e;--mod:#b89cf0;--mod-bg:#2b2340;--chip:#243151;--chip-ink:#a9c0ff;
+  --warn-bg:#3a3010;--warn-line:#b08a2a;
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,"Segoe UI","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{margin:0;line-height:1.3}
+.top{display:flex;align-items:center;gap:12px;padding:8px 16px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5;flex-wrap:wrap}
+.top h1{font-size:16px;white-space:nowrap}
+.top .crumb{color:var(--muted);font-size:13px;white-space:nowrap}
+.top .tg{border:1px solid var(--line2);background:transparent;border-radius:6px;padding:3px 8px;cursor:pointer;color:var(--muted);font-size:12px;margin-left:auto}
+.steps{display:flex;gap:4px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:thin}
+.steps button{flex:1 0 auto;border:1px solid var(--line2);background:var(--bg);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:13px;white-space:nowrap;display:flex;gap:6px;align-items:center;min-height:32px}
+.steps button .n{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--line);font-size:11px;font-weight:600}
+.steps button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.steps button.on .n{background:rgba(255,255,255,.25)}
+.steps button.done .n{background:var(--pos);color:#fff}
+main{max-width:1280px;margin:0 auto;padding:14px 16px 40px}
+.stage{display:none}.stage.on{display:block}
+.head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.head h2{font-size:22px}
+.head .en{color:var(--muted);font-size:14px}
+.head .q{flex-basis:100%;color:var(--muted);font-size:13px;margin-top:-4px}
+.grid{display:grid;grid-template-columns:minmax(300px,2fr) minmax(0,3fr);gap:14px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px}
+.card h3{font-size:14px;color:var(--muted);font-weight:600;letter-spacing:.02em;margin-bottom:8px}
+.def{font-size:16px;margin:0 0 8px}
+.def b{color:var(--accent)}
+.pt{margin:0;padding-left:18px}.pt li{margin:3px 0}
+.guess{background:var(--sel);border:1px solid var(--sel-line);border-radius:10px;padding:10px 12px;margin:10px 0}
+.guess .lbl{font-size:12px;font-weight:600;color:var(--sel-line);letter-spacing:.05em}
+.guess p{margin:4px 0 8px}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opt{border:1px solid var(--line2);background:var(--panel);border-radius:8px;padding:6px 12px;cursor:pointer;min-height:36px}
+.opt:hover{border-color:var(--accent)}
+.opt.pick{outline:2px solid var(--accent);outline-offset:-1px}
+.opt.right{background:var(--pos-bg);border-color:var(--pos)}
+.opt.wrong{background:var(--neg-bg);border:1px dashed var(--neg)}
+.fb{margin-top:8px;padding:8px 10px;border-radius:8px;font-size:14px;display:none}
+.fb.show{display:block}
+.fb.ok{background:var(--pos-bg);border-left:3px solid var(--pos)}
+.fb.no{background:var(--neg-bg);border-left:3px solid var(--neg)}
+.fb.info{background:var(--chip);border-left:3px solid var(--accent)}
+.ctl{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;margin:6px 0}
+.ctl label{font-size:13px;white-space:nowrap}
+.ctl output{font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right;font-size:13px}
+input[type=range]{width:100%;min-height:28px;accent-color:var(--accent)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{display:inline-block;background:var(--chip);color:var(--chip-ink);border-radius:999px;padding:2px 10px;font-size:12px}
+.chipbtn{border:1px solid var(--line2);background:var(--bg);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:13px;min-height:32px}
+.chipbtn.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chipbtn:disabled{opacity:.35;cursor:not-allowed}
+.sel{border:1px solid var(--line2);border-radius:8px;padding:6px 10px;background:var(--bg);min-height:36px}
+.txt{width:100%;border:1px solid var(--line2);border-radius:8px;padding:8px 10px;background:var(--bg);min-height:36px}
+textarea.txt{min-height:60px;resize:vertical}
+.num{font-variant-numeric:tabular-nums}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.modc{color:var(--mod)}
+.wrong-note{font-size:13px;color:var(--muted)}
+details{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+summary{cursor:pointer;color:var(--muted);font-size:13px}
+details p{margin:6px 0;font-size:14px}
+.nav{display:flex;justify-content:space-between;margin-top:14px;gap:8px}
+.nav button{border:1px solid var(--line2);background:var(--panel);border-radius:8px;padding:8px 14px;cursor:pointer;min-height:40px}
+.nav button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+svg text{font-family:Inter,"Segoe UI","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+.ladder{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:stretch}
+.rungs{display:flex;flex-direction:column-reverse;gap:6px}
+.rung{border:1px solid var(--line2);border-radius:8px;padding:8px 10px;cursor:pointer;display:flex;gap:10px;align-items:center;background:var(--bg);min-height:44px}
+.rung .lv{width:22px;height:22px;border-radius:50%;background:var(--line);display:grid;place-items:center;font-size:11px;flex:none}
+.rung.on{background:var(--sel);border-color:var(--sel-line)}
+.rung.on .lv{background:var(--sel-line);color:#fff}
+.bars{display:grid;gap:10px;align-content:start}
+.bar{font-size:13px}
+.bar .tr{height:12px;background:var(--line);border-radius:6px;overflow:hidden;margin-top:3px}
+.bar .fl{height:100%;background:var(--accent);transition:width .25s}
+.bar.lose .fl{background:var(--sim-line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.icard{border:1px solid var(--line2);border-radius:10px;padding:8px 10px 8px 32px;cursor:pointer;background:var(--bg);font-size:14px;min-height:56px;position:relative}
+.icard::before{content:"";position:absolute;left:10px;top:11px;width:14px;height:14px;border:2px solid var(--line2);border-radius:3px;background:var(--panel)}
+.icard.pick{outline:2px solid var(--accent);outline-offset:-1px;background:var(--panel)}
+.icard.pick::before{background:var(--accent);border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--panel)}
+.icard .tag{display:none;position:absolute;right:8px;top:6px;font-size:11px;padding:1px 6px;border-radius:999px}
+.icard.rev .tag{display:inline-block}
+.tag.ok{background:var(--pos-bg);color:var(--pos)}.tag.cont{background:var(--neg-bg);color:var(--neg)}.tag.out{background:var(--mod-bg);color:var(--mod)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:12px}
+.sorter{display:grid;gap:6px}
+.sorter .sline{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.sorter .st{font-size:14px}
+.sorter .pair{display:flex;gap:4px;flex:none}
+.sorter .pair button{min-width:56px}
+.sorter .fb{margin-top:2px}
+.meter{display:flex;gap:4px;margin:8px 0}
+.meter span{flex:1;height:18px;border-radius:5px;background:var(--line);font-size:11px;color:var(--muted);text-align:center;line-height:18px}
+.meter span.on{background:var(--pos);color:#fff}
+.chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px}
+.chain .box{border:1px solid var(--line2);border-radius:8px;padding:6px 10px;background:var(--bg)}
+.chain .box.hi{background:var(--sel);border-color:var(--sel-line)}
+.chain .ar{color:var(--muted)}
+.draft{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;white-space:pre-wrap;min-height:60px}
+.foot{color:var(--muted);font-size:13px;margin-top:24px;border-top:1px solid var(--line);padding-top:12px}
+.foot ul{padding-left:18px;margin:6px 0}
+.foot details{border:0;margin:0;padding:0}
+.linkrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.linkrow a{border:1px solid var(--line2);border-radius:8px;padding:6px 10px;font-size:13px;background:var(--panel)}
+@media (max-width:860px){
+  .grid{grid-template-columns:1fr}
+  .top h1{font-size:15px}
+  .steps{flex:1 1 100%;order:3}
+  .steps button span.t{display:none}
+  .steps button{flex:1 1 auto;justify-content:center;padding:4px 6px}
+  .top .tg{margin-left:auto}
+  .ladder{grid-template-columns:1fr}
+  .ladder .bars{grid-template-columns:1fr 1fr}
+  .ladder .bars .fb{grid-column:1/-1}
+  .ctl{grid-template-columns:1fr}
+  .ctl output{text-align:left}
+  .ctl label{margin-top:4px}
+  .sorter .sline{flex-wrap:wrap}
+  .mob-dir::after{content:"下面"}
+  .mob-dir span{display:none}
+}
+@media (min-width:861px){.mob-dir::after{content:""}}
+@media (pointer:coarse){.opt,.chipbtn,.rung,.icard{min-height:44px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1><a href="index.html" style="color:inherit">變數與理論模型</a></h1>
+  <span class="crumb">› 概念入門：從抽象到變數</span>
+  <nav class="steps" id="steps" aria-label="八站"></nav>
+  <button class="tg" id="theme" title="切換深淺色">◐</button>
+</header>
+<main id="main">
+
+<!-- ===== 1 抽象化 ===== -->
+<section class="stage" id="s1" data-title="抽象化">
+  <div class="head"><h2>1. 抽象化</h2><span class="en">abstraction</span><span class="q">回答的問題：研究到底在講「哪一層」的事？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">把一件具體的事往上提，<b>刻意丟掉細節</b>，換來能涵蓋更多案例的名稱。每往上一階，涵蓋的案例變多、可直接觀察的細節變少。</p>
+      <ul class="pt">
+        <li>抽象是一個過程，不是一個東西；它一定帶著<b>觀點（point of view）</b>——同一件事，問題不同，梯子就不同。</li>
+        <li>只有最底層能直接觀察；往上的每一層都要靠後面幾站（構念、操作化）才量得到。</li>
+        <li>研究通常停在中間那一層：夠抽象可以跨案例，夠具體可以定義。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>「抽象階梯」裡，哪一層是你<b>不需要任何測量工具就能直接看到</b>的？點一下那一層。</p></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>抽象階梯把層級畫成一條直線，實際上同一件事可以往好幾個方向抽象（分類、歸群、組合各得到不同的上位名稱），階梯只是其中一條路。質性研究的抽象化（例如紮根理論的編碼）是從資料往上長，不是先選好梯子再往下量。</p></details>
+    </div>
+    <div class="card">
+      <h3>抽象階梯 — 先選研究問題，再上下移動</h3>
+      <div class="row" style="margin-bottom:8px"><span style="font-size:13px;color:var(--muted)">研究問題：</span><button class="chipbtn on" data-pov="a">人為什麼分享新聞？</button><button class="chipbtn" data-pov="b">人怎麼使用社群媒體？</button></div>
+      <div class="ladder">
+        <div class="rungs" id="rungs"></div>
+        <div class="bars">
+          <div class="bar">涵蓋的案例<div class="tr"><div class="fl" id="b_cover"></div></div></div>
+          <div class="bar lose">可直接觀察的細節<div class="tr"><div class="fl" id="b_detail"></div></div></div>
+          <div class="fb" id="g1"></div>
+          <div class="fb info show" id="rungnote"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2 構念 ===== -->
+<section class="stage" id="s2" data-title="構念">
+  <div class="head"><h2>2. 構念</h2><span class="en">construct</span><span class="q">回答的問題：我們要談的那個抽象性質，到底附著在誰身上、是哪一種性質？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">構念是研究者<b>為了解釋現象而定義出來的抽象性質</b>，看不到、摸不到，只能透過指標間接推論。一個好的構念定義至少要說清楚兩件事：<b>實體</b>（這個性質附著在誰身上）與<b>性質類型</b>（它是想法、感受、知覺、行動、結果，還是內在特性）。</p>
+      <ul class="pt">
+        <li>定義只寫共同特徵會<b>太寬</b>（別的構念也符合）；只舉例會<b>太窄</b>（遇到沒列的情況無法判斷）。</li>
+        <li>不用前因或後果來定義構念；不用「它不是什麼」來定義。</li>
+        <li>要指明它跨時間、跨情境有多穩定（特質還是狀態），這決定之後要不要收多波資料。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>「定義體檢」的三個定義，哪一個「剛好」？另外兩個分別出了什麼問題？每一列選一個答案。</p></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>「實體 × 性質」的表格來自管理學量表發展的傳統（MacKenzie 等人，2011），預設構念是反映式的（構念造成指標）。像社經地位這種由收入、教育、職業「組成」的形成式構念，定義方式不同。有些構念是家族相似結構，只有一串充分屬性、沒有必要屬性，硬要寫出必要且充分的定義會寫不出來。</p></details>
+    </div>
+    <div class="card">
+      <h3>構念定義產生器 — 實體 × 性質</h3>
+      <div class="row">
+        <label style="font-size:13px">實體 <select class="sel" id="ent"><option>個人</option><option>團隊</option><option>組織</option></select></label>
+        <label style="font-size:13px">性質 <select class="sel" id="prop"><option>想法</option><option>感受</option><option>知覺</option><option>行動</option><option>結果</option><option>內在特性</option></select></label>
+      </div>
+      <div class="fb info show" id="cdef" style="margin-top:8px"></div>
+      <h3 style="margin-top:14px">定義體檢</h3>
+      <div id="defs"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3 操作化 ===== -->
+<section class="stage" id="s3" data-title="操作化">
+  <div class="head"><h2>3. 操作化</h2><span class="en">operationalization</span><span class="q">回答的問題：我要怎麼知道每個案例在這個構念上的值？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">操作化是把構念定義翻譯成<b>可觀察的指標</b>與蒐集程序。判準只有一條：指標要<b>對得上定義</b>——涵蓋定義裡的每一面（不足就是 deficient），而且不混進別的構念（混進就是 contaminated）。</p>
+      <ul class="pt">
+        <li>先查文獻有沒有現成量表再自己造；改了現成量表要說改動怎麼回扣定義。</li>
+        <li>一個構念的指標<b>不要超過三個</b>；用替身（proxy）就明講它是替身。</li>
+        <li>好的操作化要能指名<b>它排除了什麼</b>；武斷的門檻要講明為什麼武斷。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>構念：<b>新聞媒體信任</b>（trust in news media）＝「個人相信新聞媒體會如實、公正報導的程度」。「指標配對」的八張卡片，哪幾張可以當它的指標？點選後按「檢查」。</p></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>「指標不超過三個」是給一學期學生論文的規則，正式量表發展常用 4–7 題以求信度。以可觀察標籤代理構念時，代理與構念的落差可能和群體特徵相關（例如用醫療支出代理健康需求），這種偏誤不是多加幾題就能補的。質性研究以理論推導編碼維度也是操作化，但不走「題項」這條路。</p></details>
+    </div>
+    <div class="card">
+      <h3>指標配對 — 選出符合定義的題項</h3>
+      <div class="cards" id="ind"></div>
+      <div class="row" style="margin-top:10px"><button class="opt" id="chk3">檢查</button><button class="opt" id="rst3">重來</button></div>
+      <div class="fb" id="fb3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4 變數 ===== -->
+<section class="stage" id="s4" data-title="變數">
+  <div class="head"><h2>4. 變數</h2><span class="en">variable</span><span class="q">回答的問題：這個構念「會變」嗎？變成什麼樣的值？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">變數是<b>會取不同值</b>的構念。把一個因子變成變數的動作只有一個：加上<b>值字</b>——程度、類型、強度、有無、次數。沒有值字的只是主題，不是變數。</p>
+      <ul class="pt">
+        <li>值有兩型：<b>連續</b>（落在光譜上，假設寫成「X 越…，Y 越…」）與<b>類別</b>（假設寫成「當 X 是某類，Y 是某值」）。</li>
+        <li>測量尺度決定之後能用的統計：名目（nominal）、順序（ordinal）、等距（interval）、比率（ratio）。</li>
+        <li>要解釋的現象是依變數（dependent variable）；拿來解釋它的是自變數（independent variable）。學生論文自變數不超過兩個、依變數一個。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>「值字轉換器」的四個因子，先猜哪一個<b>不加值字就已經是變數</b>？（提示：沒有。）先點一個因子，再替它挑一個值字，看看它變成什麼。</p></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>「自變數不超過兩個」是質性案例比較的硬規則，量化調查常同時放多個預測變數與控制變數。李克特量表到底算順序還是等距，統計學者至今沒有共識；多數社會科學論文把多題加總後當等距處理，但單題仍應當順序尺度。</p></details>
+    </div>
+    <div class="card">
+      <h3>值字轉換器</h3>
+      <div class="row" id="factors"></div>
+      <div class="row" style="margin-top:6px" id="valuewords"></div>
+      <div class="fb info" id="fb4a"></div>
+      <h3 style="margin-top:14px">尺度判斷</h3>
+      <div class="sorter" id="scaleq"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5 中介 ===== -->
+<section class="stage" id="s5" data-title="中介變數">
+  <div class="head"><h2>5. 中介變數</h2><span class="en">mediator</span><span class="q">回答的問題：X <b>為什麼</b>會影響 Y？效果是透過什麼傳過去的？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">中介變數 M 站在 X 與 Y <b>中間的路上</b>：X 改變 M，M 再改變 Y。間接效果＝a × b；沒經過 M 的那段叫直接效果 c′；總效果＝c′ ＋ a × b。</p>
+      <ul class="pt">
+        <li>入門例：自我物化（X）→ 身體羞恥（M）→ 失序飲食（Y）。身體羞恥是效果「經過」的地方。</li>
+        <li>科技接受模式（TAM）裡：知覺易用性 → 知覺有用性 → 使用意圖，有用性是中介。</li>
+        <li>現代做法用 bootstrap 估 a × b 的信賴區間，取代 Baron 與 Kenny（1986）的四步驟。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>如果 M <b>完全</b>傳遞了 X 對 Y 的效果，直接效果 c′ 應該是多少？</p>
+        <div class="opts" data-q="g5" data-ans="0"><button class="opt" data-v="0">0</button><button class="opt" data-v="ab">等於 a × b</button><button class="opt" data-v="1">1</button></div>
+        <div class="fb" id="g5"></div></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>a × b 顯著只代表三個變數的共變型態符合中介，不證明因果順序——同一條鏈用問卷只看得到相關，要用實驗操弄 X（例如泳裝與毛衣實驗）才補得上方向。中介分析預設控制 X 之後 M 與 Y 之間沒有其他共同原因（序列可忽略性），這個假設資料本身驗不了，只能靠理論論證。</p></details>
+    </div>
+    <div class="card">
+      <h3>路徑模型 — 拉動三個係數</h3>
+      <div class="row" style="margin-bottom:6px"><span style="font-size:13px;color:var(--muted)">範例：</span><button class="chipbtn" data-med="fred">自我物化 → 身體羞恥 → 失序飲食</button><button class="chipbtn" data-med="tam">易用性 → 有用性 → 使用意圖</button><button class="chipbtn" data-med="full">完全中介</button><button class="chipbtn" data-med="none">沒有中介</button></div>
+      <svg id="medsvg" viewBox="0 0 560 230" width="100%" style="max-height:240px" role="img" aria-label="X 經 M 到 Y 的路徑圖"></svg>
+      <div class="ctl">
+        <label for="ma">a：X → M</label><input type="range" id="ma" min="-1" max="1" step="0.1" value="0.5"><output id="oa">0.5</output>
+        <label for="mb">b：M → Y</label><input type="range" id="mb" min="-1" max="1" step="0.1" value="0.6"><output id="ob">0.6</output>
+        <label for="mc">c′：X → Y 直接</label><input type="range" id="mc" min="-1" max="1" step="0.1" value="0.1"><output id="oc">0.1</output>
+      </div>
+      <div class="fb info show" id="medout"></div>
+      <div class="linkrow"><a href="index.html#v=Perceived%20Ease%20of%20Use&to=Behavioral%20Intention">↗ 在工具裡看易用性到使用意圖的路徑</a><a href="index.html#t=TAM">↗ TAM 概念圖</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6 調節 ===== -->
+<section class="stage" id="s6" data-title="調節變數">
+  <div class="head"><h2>6. 調節變數</h2><span class="en">moderator</span><span class="q">回答的問題：X 對 Y 的效果<b>在什麼條件下、對誰</b>比較強、比較弱，甚至反過來？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">調節變數 W <b>不在 X 到 Y 的路上</b>，它改變那條路的斜率。迴歸式裡就是交互項的係數 b₃：Y ＝ b₀ ＋ b₁X ＋ b₂W ＋ b₃(X × W)。</p>
+      <ul class="pt">
+        <li>入門例：浪漫詞彙促發（X）對自我物化（Y）的效果，被<b>戀愛關係狀態（W）</b>調節——單身者升高、有伴侶者反而下降。混在一起算平均，兩個方向互相抵消，看起來像沒效果。</li>
+        <li>整合型科技接受模式（UTAUT）把年齡、性別、經驗、自願性當調節變數。</li>
+        <li>偵測調節效果的樣本要比主效果多約四倍（Cohen, 1988）；調查實驗裡調節假設顯著的比例約 9%，主效果約 28%（Rauf 等人，2025，依本站手冊的整理）。</li>
+      </ul>
+      <div class="guess"><div class="lbl">先猜</div><p>如果 b₃ ＝ 0，交互作用圖裡「W 低」與「W 高」兩條線會長什麼樣？</p>
+        <div class="opts" data-q="g6" data-ans="par"><button class="opt" data-v="cross">交叉</button><button class="opt" data-v="par">平行</button><button class="opt" data-v="same">重疊成一條</button></div>
+        <div class="fb" id="g6"></div></div>
+      <h3 style="margin-top:12px">分類練習 — 這句話說的是中介還是調節？</h3>
+      <div class="sorter" id="mmq"></div>
+      <details><summary>這一站在什麼情況下會錯</summary><p>「四倍樣本」是粗略經驗值，實際需要的樣本量取決於交互效果大小與 X、W 的分配。事後把樣本切成子群再找調節，會大幅提高偽陽性；調節假設應該事先登錄。把一個連續的調節變數硬切成「高／低」兩組會損失統計檢力，圖上的兩條線只是為了看懂。</p></details>
+    </div>
+    <div class="card">
+      <h3>交互作用圖 — 拉動斜率與交互項</h3>
+      <div class="row" style="margin-bottom:6px"><span style="font-size:13px;color:var(--muted)">範例：</span><button class="chipbtn" data-mod="flip">關係狀態翻轉方向</button><button class="chipbtn" data-mod="age">年齡放大效果</button><button class="chipbtn" data-mod="zero">沒有調節</button><a href="index.html#t=T%20UTAUT" style="font-size:13px;margin-left:auto">↗ UTAUT 概念圖（點線＝調節）</a></div>
+      <svg id="modsvg" viewBox="0 0 560 250" width="100%" style="max-height:260px" role="img" aria-label="X 對 Y 在 W 高低兩組的迴歸線"></svg>
+      <div class="ctl">
+        <label for="w1">b₁：X 的效果</label><input type="range" id="w1" min="-1" max="1" step="0.1" value="0.5"><output id="ow1">0.5</output>
+        <label for="w3">b₃：X × W 交互項</label><input type="range" id="w3" min="-1" max="1" step="0.1" value="0"><output id="ow3">0.0</output>
+      </div>
+      <div class="fb info show" id="modout"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7 研究問題 ===== -->
+<section class="stage" id="s7" data-title="研究問題">
+  <div class="head"><h2>7. 研究問題</h2><span class="en">research question</span><span class="q">回答的問題：我到底想弄清楚什麼？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">一篇論文回答<b>一個</b>研究問題，用<b>一句陳述句</b>就講得完。檢驗自己想清楚了沒有，用三段句：「我正研究 X，因為我想找出 Y，以便幫助讀者理解 Z。」</p>
+      <ul class="pt">
+        <li>只有 X 是<b>生手</b>（把所有材料倒進報告）；有 Y 是<b>成熟研究者</b>（帶著問題找材料，也找能推翻自己的材料）；有 Z 的人已經預見讀者會問「那又怎樣」。</li>
+        <li>問題分三類：概念性（我們該怎麼想）、實用性（我們該怎麼做）、應用性（做之前得先弄懂什麼）。新手常硬湊一個不真實的實用用途，別這樣。</li>
+        <li><b>論點（thesis）</b>是懂行的人可能不同意的主張；<b>假設（hypothesis）</b>是論點的特例——它<b>點名變數</b>，並且說變數之間怎麼連動。有變數才需要畫模型。</li>
+      </ul>
+      <details><summary>這一站在什麼情況下會錯</summary><p>三段句假設研究是問題先行；資料先行的探索式研究（先拿到一批資料再問能回答什麼）在起步時寫不出 Y，硬寫會變成事後包裝。質性研究的問題會隨田野調整，一開始的 Y 本來就該是暫時的。</p></details>
+    </div>
+    <div class="card">
+      <h3>三段句產生器</h3>
+      <div class="row" style="margin-bottom:6px"><span style="font-size:13px;color:var(--muted)">填入範例：</span><button class="chipbtn" data-ex="ai">AI 標示與新聞可信度</button><button class="chipbtn" data-ex="glass">智慧眼鏡與新聞獲取</button><button class="chipbtn" data-ex="clear">清空</button></div>
+      <div class="ctl" style="grid-template-columns:auto 1fr">
+        <label for="rqx">我正研究</label><input class="txt" id="rqx" placeholder="X：主題（例：新聞上的 AI 生成標示）">
+        <label for="rqy">因為我想找出</label><input class="txt" id="rqy" placeholder="Y：問題（例：標示會不會降低讀者對新聞的可信度評價）">
+        <label for="rqz">以便理解</label><input class="txt" id="rqz" placeholder="Z：更大的意義（例：透明揭露與信任之間是不是必然有張力）">
+      </div>
+      <div class="meter" id="rqmeter"><span>X 主題</span><span>Y 問題</span><span>Z 意義</span></div>
+      <div class="fb info show" id="rqlevel"></div>
+      <h3 style="margin-top:12px">這是論點還是假設？</h3>
+      <div class="row" id="hypo"><label class="chipbtn"><input type="checkbox" value="vars"> 點名了至少兩個變數</label><label class="chipbtn"><input type="checkbox" value="values"> 每個變數都有值字</label><label class="chipbtn"><input type="checkbox" value="dir"> 說了方向（越…越…／當…則…）</label></div>
+      <div class="fb info show" id="hypoout"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8 研究理由 ===== -->
+<section class="stage" id="s8" data-title="研究理由">
+  <div class="head"><h2>8. 研究理由</h2><span class="en">research rationale</span><span class="q">回答的問題：為什麼值得做？憑什麼這樣想？</span></div>
+  <div class="grid">
+    <div class="card">
+      <p class="def">研究理由有兩層。對外是「<b>那又怎樣（so what）</b>」：把答案一層一層推向更大的主題，直到讀者覺得值得一探。對內是論證：<b>主張</b>靠<b>理由</b>支撐，理由靠<b>證據</b>支撐，而理由與主張之間還要有一條讀者接受的<b>依據（warrant）</b>——「當…時就…」的一般法則。</p>
+      <ul class="pt">
+        <li>理由是想出來的、抽象的；證據是蒐集來的、要記出處。理由需要證據，證據只需要可靠來源。</li>
+        <li>讀者拒絕一個主張，常常不是理由錯或證據不夠，而是覺得理由<b>不相干</b>——那是依據沒寫出來。專家把依據視為理所當然，新手必須寫出來。</li>
+        <li>把反方也列進來：畫掉能證明你錯的假說，但保留它們，引言會用到。</li>
+      </ul>
+      <details><summary>這一站在什麼情況下會錯</summary><p>「那又怎樣」追問三層以上常會飄到誰都不能反對的大話（「有助於理解人類行為」），那不是理由而是口號；停在領域內其他研究者會在意的那一層就好。入門課接受「權威來源支持的理由」，到碩博論文與投稿，審查人期待一手證據，兩者的門檻不同。</p></details>
+    </div>
+    <div class="card">
+      <h3>那又怎樣 — 往上推三層</h3>
+      <div class="chain" id="sowhat"></div>
+      <div class="ctl" style="grid-template-columns:auto 1fr;margin-top:8px">
+        <label for="sw1">① 誰的判斷會變</label><input class="txt" id="sw1" placeholder="知道了 Y 之後，誰的什麼判斷會不一樣？">
+        <label for="sw2">② 哪個爭論會移</label><input class="txt" id="sw2" placeholder="這個判斷變了，領域裡哪個爭論會往哪邊移？">
+        <label for="sw3">③ 還講得出具體的誰嗎</label><input class="txt" id="sw3" placeholder="講不出具體的誰與什麼，就停在上一層。">
+      </div>
+      <h3 style="margin-top:12px">論證骨架 — 主張、理由、證據、依據</h3>
+      <div class="ctl" style="grid-template-columns:auto 1fr">
+        <label for="cl">主張</label><input class="txt" id="cl" placeholder="例：新聞上的 AI 生成標示會降低讀者的可信度評價">
+        <label for="rs">理由</label><input class="txt" id="rs" placeholder="例：讀者把 AI 參與解讀成少了人的把關">
+        <label for="ev">證據</label><input class="txt" id="ev" placeholder="例：先前實驗中標示組可信度低 0.3 分（出處）">
+        <label for="wr">依據</label><input class="txt" id="wr" placeholder="當…時就…：當讀者認為把關變少時，就會下修可信度">
+      </div>
+      <div class="row" style="margin:8px 0"><button class="opt" id="mkdraft">組成研究理由草稿</button><button class="opt" id="cpdraft">複製</button></div>
+      <div class="draft" id="draft">（填好上面欄位後按「組成」）</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9 全鏈 ===== -->
+<section class="stage" id="s9" data-title="整條鏈">
+  <div class="head"><h2>整條鏈</h2><span class="en">from phenomenon to model</span><span class="q">八站接起來是什麼樣子</span></div>
+  <div class="card">
+    <svg viewBox="0 0 1120 150" width="100%" role="img" aria-label="從現象到研究理由的八站流程" id="chainsvg"></svg>
+    <p style="margin:8px 0 0;font-size:14px;color:var(--muted)">往右是從具體到抽象再到可檢驗；往左回頭檢查：理由撐不撐得住問題、問題點名的變數有沒有被操作化、操作化對不對得上構念定義、構念是不是你真正想談的那一層。</p>
+  </div>
+  <div class="grid" style="margin-top:14px">
+    <div class="card">
+      <h3>把這套用在真實模型上</h3>
+      <p style="margin:0 0 8px;font-size:14px">這個站的主工具收了兩百多個理論模型與一千多個變數。選一個模型，試著回答：哪個是中介、哪個是調節、每個變數的構念定義與量表在哪裡。</p>
+      <div class="linkrow"><a href="index.html#t=TAM">TAM 科技接受模式</a><a href="index.html#t=T%20UTAUT">UTAUT（有四個調節變數）</a><a href="index.html#t=ELM">ELM 推敲可能性模式</a><a href="index.html#t=T%20TPB%20%20Planned%20Behaviroal">TPB 計畫行為理論</a><a href="questionnaires.html">量表目錄（操作化的現成題項）</a></div>
+    </div>
+    <div class="card">
+      <h3>整份教材在什麼情況下會錯</h3>
+      <ul class="pt" style="font-size:14px">
+        <li>整條鏈是<b>假設驅動的量化研究</b>的走法。質性研究、概念性論文、設計研究不照這個順序，也不一定需要變數。</li>
+        <li>每站的小工具都把概念簡化成一個可以拉的數字；真實研究裡 a、b、b₃ 是估出來的、帶著不確定性，不是設定出來的。</li>
+        <li>頁面上的研究數字（四倍樣本、9% 與 28%）來自本站研究手冊對原文的整理，使用前請回查原始文獻。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="nav"><button id="prev">← 上一站</button><button id="next" class="primary">下一站 →</button></div>
+
+<footer class="foot">
+  <details><summary>依據（引用的書與論文）</summary>
+  <ul>
+    <li>抽象階梯：Hayakawa（1939）《Language in Action》；抽象是帶觀點、刻意損失資訊的過程：Viola、Chen 與 Isenberg（2020）。</li>
+    <li>構念定義的實體與性質、太寬與太窄：MacKenzie、Podsakoff 與 Podsakoff（2011）；構念清晰度：Suddaby（2010）。</li>
+    <li>定義—操作化—確認三步、不足與污染：Lambert 與 Newman（2023）；把排除寫進判準：Anderson 與 Tushman（1990）；指標上限與替身：Baglione（2018）。</li>
+    <li>值字、論點與假設的區分、自變數上限：Baglione（2018）；測量尺度：Stevens（1946）。</li>
+    <li>中介：Baron 與 Kenny（1986）、Imai、Keele 與 Tingley（2010）、Hayes（2009）；入門例：Fredrickson 等人（2011）。</li>
+    <li>調節：Cohen（1988）、Rauf 等人（2025）；方向翻轉例：Sanchez 與 Broccoli（2008）；UTAUT：Venkatesh 等人（2003）。</li>
+    <li>三段句、那又怎樣、主張—理由—證據—依據：Booth、Colomb 與 Williams《The Craft of Research》。</li>
+  </ul>
+  </details>
+  <div>這一頁是 <a href="index.html">變數與理論模型</a> 的概念入門；各站的「什麼情況下會錯」寫的是具體條件，不是免責。</div>
+</footer>
+</main>
+
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const f1=x=>(Math.round(x*100)/100).toFixed(2).replace(/\.?0+$/,'')||'0';
+let store={};try{store=JSON.parse(localStorage.getItem('vm_learn')||'{}')}catch(e){store={}}
+function save(){try{localStorage.setItem('vm_learn',JSON.stringify(store))}catch(e){}}
+
+/* ---------- 主題 ---------- */
+$('theme').onclick=()=>{const r=document.documentElement;const cur=r.getAttribute('data-theme');const dark=cur?cur==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.setAttribute('data-theme',dark?'light':'dark');};
+
+/* ---------- 站台導覽 ---------- */
+const stages=[...document.querySelectorAll('.stage')];
+const done=new Set(store.done||[]);
+let cur=0;
+function buildSteps(){
+  $('steps').innerHTML=stages.map((s,i)=>`<button data-i="${i}" class="${i===cur?'on':''} ${done.has(i)?'done':''}"><span class="n">${i<8?i+1:'∑'}</span><span class="t">${E(s.dataset.title)}</span></button>`).join('');
+  $('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>go(+b.dataset.i));
+}
+function go(i,push=true){
+  cur=Math.max(0,Math.min(stages.length-1,i));
+  stages.forEach((s,k)=>s.classList.toggle('on',k===cur));
+  buildSteps();
+  $('prev').disabled=cur===0;$('next').textContent=cur===stages.length-1?'回到第一站':'下一站 →';
+  if(push)history.replaceState({},'','#'+stages[cur].id);
+  window.scrollTo({top:0});
+  if(cur===7)renderSoWhat();
+}
+$('prev').onclick=()=>go(cur-1);
+$('next').onclick=()=>{done.add(cur);store.done=[...done];save();go(cur===stages.length-1?0:cur+1)};
+function markDone(){done.add(cur);store.done=[...done];save();buildSteps()}
+
+/* 通用：先猜按鈕群 */
+document.querySelectorAll('.opts[data-q]').forEach(g=>{
+  g.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    const ok=b.dataset.v===g.dataset.ans;
+    g.querySelectorAll('.opt').forEach(x=>{x.classList.remove('right','wrong');if(x.dataset.v===g.dataset.ans)x.classList.add('right')});
+    if(!ok)b.classList.add('wrong');
+    const fb=$(g.dataset.q);fb.className='fb show '+(ok?'ok':'no');
+    fb.innerHTML=GUESS[g.dataset.q](ok,b.dataset.v);
+    markDone();
+  });
+});
+const GUESS={
+  g5:(ok,v)=>ok?'對。完全中介時 X 對 Y 的效果全部經過 M，直接效果 c′ 為 0，總效果就只剩 a × b。右邊按「完全中介」看看。':'不對。c′ 是「沒經過 M」的那段；完全中介的意思就是沒有這一段，所以 c′ ＝ 0。a × b 是間接效果，不是直接效果。',
+  g6:(ok,v)=>ok?'對。b₃ ＝ 0 時，W 高低兩組只差截距（b₂W），斜率一樣，所以兩條線平行——X 的效果不因 W 而變，沒有調節。':'不對。b₃ 是兩組斜率的差；它是 0 時斜率一樣，兩條線平行。交叉或扇形才是有調節。'
+};
+
+/* ---------- 1 抽象階梯 ---------- */
+const RUNGS={
+  a:['小美昨晚在 IG 看完一支 30 秒的 AI 生成新聞短片後，按了分享給三個朋友','分享一支新聞短片','新聞分享行為（news sharing）','公民參與與資訊傳播行為','人類社會行為'],
+  b:['小美昨晚在 IG 看完一支 30 秒的 AI 生成新聞短片後，按了分享給三個朋友','在 IG 看短影音','社群媒體使用（social media use）','媒體消費行為','人類行為']
+};
+const RUNGNOTE=['最底層：一件可以直接觀察、有時間地點人物的事。研究不會停在這裡，因為它只涵蓋一個案例。','去掉了人名、時間、平台細節，開始能涵蓋別人做的同類事。','研究常用的那一層：夠抽象可以跨案例比較，夠具體可以寫出定義——這就是下一站的「構念」。','再往上，涵蓋更多，但定義開始變鬆，不同學者會塞進不同的東西。','最上層：幾乎什麼都涵蓋，也幾乎什麼都說不了。'];
+let pov='a',rung=2;
+function renderLadder(){
+  const r=RUNGS[pov];
+  $('rungs').innerHTML=r.map((t,i)=>`<div class="rung ${i===rung?'on':''}" data-i="${i}" role="button" tabindex="0"><span class="lv">${i}</span><span>${E(t)}</span></div>`).join('');
+  $('rungs').querySelectorAll('.rung').forEach(el=>{
+    const h=()=>{const i=+el.dataset.i;
+      const ok=i===0;const fb=$('g1');fb.className='fb show '+(ok?'ok':'no');fb.textContent=ok?'對。只有第 0 層是直接看得到的事件；往上每一層都已經是命名與歸類，要量它就得走到第 3 站操作化。':'第 '+i+' 層已經是一個名稱，不是一件看得到的事——你看不到「'+r[i]+'」本身，只看得到被你歸進去的個別事件。只有第 0 層能直接觀察。';markDone();
+      rung=i;renderLadder();};
+    el.onclick=h;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();h()}};
+  });
+  $('b_cover').style.width=(8+rung*23)+'%';$('b_detail').style.width=(100-rung*24)+'%';
+  $('rungnote').textContent=RUNGNOTE[rung];
+}
+document.querySelectorAll('[data-pov]').forEach(b=>b.onclick=()=>{pov=b.dataset.pov;document.querySelectorAll('[data-pov]').forEach(x=>x.classList.toggle('on',x===b));renderLadder();});
+renderLadder();
+
+/* ---------- 2 構念 ---------- */
+const CDEF={
+  '個人|想法':['行為意圖','一個人打算做某件事的程度','意圖、信念、主觀規範都是「想法」類'],
+  '個人|感受':['工作滿意','一個人對自己工作的正面感受程度','態度、情緒屬於「感受」類'],
+  '個人|知覺':['知覺有用性（perceived usefulness）','一個人相信使用某系統會提升其工作績效的程度（Davis, 1989）','知覺類構念量的是當事人怎麼看，不是客觀表現'],
+  '個人|行動':['新聞分享行為','一個人在一段期間內轉發新聞的頻率','行動類可以用行為紀錄，不一定要自陳'],
+  '個人|結果':['學習成效','一個人在課程後測驗上的表現','結果類通常有外部紀錄'],
+  '個人|內在特性':['認知能力','一個人處理資訊的穩定能力','內在特性跨時間穩定，屬特質'],
+  '團隊|想法':['團隊共享心智模型','團隊成員對任務與彼此角色理解的一致程度','實體是團隊，所以要處理個人分數如何聚合'],
+  '團隊|感受':['團隊心理安全','團隊成員相信在團隊裡冒人際風險是安全的程度（Edmondson, 1999）','要證明成員間有共識才能聚合成團隊層級'],
+  '團隊|知覺':['團隊公平知覺','團隊成員對分配與程序公平的共同知覺','同上，聚合前先算組內一致性'],
+  '團隊|行動':['團隊協調行為','團隊成員互相調整行動的頻率','可以用觀察編碼'],
+  '團隊|結果':['團隊績效','團隊在任務上的產出品質','結果常由外部評分者給'],
+  '團隊|內在特性':['團隊組成多樣性','團隊在背景屬性上的分散程度','由成員屬性算出來的形成式構念'],
+  '組織|想法':['組織策略意圖','組織高層對未來方向的集體承諾','實體是組織，資料來源常是關鍵資訊提供者'],
+  '組織|感受':['組織氣候','組織成員對工作環境的共享感受','氣候文獻曾為「個人還是組織構念」爭論多年'],
+  '組織|知覺':['媒體聲譽','外界對一個組織的整體評價','實體是組織，知覺者卻是外部大眾'],
+  '組織|行動':['組織創新採用','組織導入新技術的速度或數量','可用檔案資料'],
+  '組織|結果':['公司績效','組織的財務或市場結果','結果類；要說清楚是哪一種績效'],
+  '組織|內在特性':['IT 能力','組織運用資訊科技的能力與職能','能力類構念常是多維的']
+};
+function renderCdef(){const k=$('ent').value+'|'+$('prop').value;const d=CDEF[k];$('cdef').innerHTML=`<b>${E(d[0])}</b>：${E(d[1])}<br><span style="color:var(--muted);font-size:13px">模板：「${E($('ent').value)}」對／在 … 的「${E($('prop').value)}」。${E(d[2])}。</span>`}
+$('ent').onchange=$('prop').onchange=renderCdef;renderCdef();
+const DEFS=[
+  {t:'組織承諾＝對組織的正面感受',ans:'wide',why:'太寬：組織忠誠、組織投入也是對組織的正面感受，這個定義分不出它們。只寫共同特徵的定義會把鄰近構念全收進來。'},
+  {t:'職場偏差＝偷竊、性騷擾、上班喝酒',ans:'narrow',why:'太窄（只舉例）：遇到「未經許可早退」「裝病請假」沒人判斷得出算不算。定義要給判準，不是給清單。'},
+  {t:'知覺有用性＝一個人相信使用某系統會提升其工作績效的程度',ans:'ok',why:'剛好：實體（一個人）、性質（相信＝知覺）、對象（某系統）、值字（程度）都在，而且不是用前因或後果定義。'}
+];
+$('defs').innerHTML=DEFS.map((d,i)=>`<div style="margin:8px 0"><div style="font-size:14px;margin-bottom:4px">${E(d.t)}</div><div class="opts" data-d="${i}"><button class="opt" data-v="wide">太寬</button><button class="opt" data-v="narrow">太窄</button><button class="opt" data-v="ok">剛好</button></div><div class="fb" id="fbd${i}"></div></div>`).join('');
+document.querySelectorAll('.opts[data-d]').forEach(g=>{const d=DEFS[+g.dataset.d];g.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const ok=b.dataset.v===d.ans;g.querySelectorAll('.opt').forEach(x=>{x.classList.remove('right','wrong');if(x.dataset.v===d.ans)x.classList.add('right')});if(!ok)b.classList.add('wrong');const fb=$('fbd'+g.dataset.d);fb.className='fb show '+(ok?'ok':'no');fb.textContent=d.why;markDone();})});
+
+/* ---------- 3 操作化 ---------- */
+const IND=[
+  {t:'我認為新聞媒體報導的事實是正確的',k:'ok',why:'對到定義的「如實」。'},
+  {t:'我認為新聞媒體在報導時對各方公平',k:'ok',why:'對到定義的「公正」。'},
+  {t:'我相信新聞媒體會把重要的事告訴大眾',k:'ok',why:'對到「相信會如實報導」。'},
+  {t:'我每天看新聞超過一小時',k:'out',why:'這是使用量，是信任可能的「後果」，不是信任本身。'},
+  {t:'我信任我的朋友',k:'cont',why:'實體錯了：這量的是一般信任傾向，不是對新聞媒體的信任。'},
+  {t:'新聞媒體的報導讓我感到焦慮',k:'cont',why:'這是情緒反應，另一個構念。'},
+  {t:'我相信政府發布的資訊',k:'cont',why:'實體錯了：對政府的信任，不是對新聞媒體。'},
+  {t:'我覺得記者的薪水太低',k:'out',why:'與定義無關；頂多是信任的前因之一。'}
+];
+let pick3=new Set();
+$('ind').innerHTML=IND.map((d,i)=>`<div class="icard" data-i="${i}" role="button" tabindex="0" aria-pressed="false">${E(d.t)}<span class="tag ${d.k}">${d.k==='ok'?'符合':d.k==='cont'?'污染':'不是指標'}</span></div>`).join('');
+$('ind').querySelectorAll('.icard').forEach(el=>{const h=()=>{const i=+el.dataset.i;if(pick3.has(i))pick3.delete(i);else pick3.add(i);el.classList.toggle('pick',pick3.has(i));el.setAttribute('aria-pressed',pick3.has(i))};el.onclick=h;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();h()}}});
+$('chk3').onclick=()=>{
+  $('ind').querySelectorAll('.icard').forEach(el=>el.classList.add('rev'));
+  const okIdx=IND.map((d,i)=>d.k==='ok'?i:-1).filter(i=>i>=0);
+  const miss=okIdx.filter(i=>!pick3.has(i));const bad=[...pick3].filter(i=>IND[i].k!=='ok');
+  let msg='';
+  if(!miss.length&&!bad.length)msg='<b>內容效度好。</b>三題剛好涵蓋定義的「如實」與「公正」兩面，沒有混進別的構念。接下來還要在獨立樣本上確認它們真的聚在一起（第三步：確認）。';
+  else{
+    if(miss.length)msg+=`<b>不足（deficient）</b>：少了 ${miss.map(i=>'「'+E(IND[i].t)+'」').join('、')}。定義有「如實」與「公正」兩面，少一面就只量到一半。<br>`;
+    if(bad.length)msg+=`<b>污染（contaminated）</b>：${bad.map(i=>'「'+E(IND[i].t)+'」—'+E(IND[i].why)).join('；')}。`;
+  }
+  msg+='<br><span style="color:var(--muted);font-size:13px">卡片顏色：綠＝符合定義；紅＝污染（測到別的構念或別的實體）；紫＝前因或後果，不是構念本身。</span><br><span style="color:var(--muted);font-size:13px">順手寫一行排除清單：「本研究的新聞媒體信任不含對記者個人的信任、不含對政府資訊的信任、不以新聞使用量代理。」</span>';
+  const fb=$('fb3');fb.className='fb show '+((!miss.length&&!bad.length)?'ok':'no');fb.innerHTML=msg;markDone();
+};
+$('rst3').onclick=()=>{pick3.clear();$('ind').querySelectorAll('.icard').forEach(el=>{el.classList.remove('pick','rev');el.setAttribute('aria-pressed','false')});$('fb3').className='fb'};
+
+/* ---------- 4 變數 ---------- */
+const FACT=['媒體','信任','AI 標示','年齡'];
+const VW={
+  '媒體':{'程度':['媒體使用程度','等距或比率（每天分鐘數）'],'類型':['媒體類型（電視／報紙／社群）','名目'],'有無':['有無接觸該媒體','名目（二分）'],'次數':['每週媒體接觸次數','比率']},
+  '信任':{'程度':['新聞媒體信任程度','順序（量表單題）或等距（多題加總）'],'類型':['信任的對象類型（機構／記者／平台）','名目'],'有無':['有無信任（信／不信）','名目（二分）；通常太粗'],'次數':['表達信任的次數','比率；少見，要先想清楚為什麼用次數']},
+  'AI 標示':{'程度':['AI 標示的顯著程度','順序（小字／中／醒目）'],'類型':['AI 標示的類型（文字／圖示／浮水印）','名目'],'有無':['有無 AI 標示','名目（二分）——實驗最常用的操弄'],'次數':['一篇報導內 AI 標示出現次數','比率']},
+  '年齡':{'程度':['年齡（歲）','比率'],'類型':['世代類型（Z／Y／X）','名目或順序'],'有無':['是否成年','名目（二分）'],'次數':['—','年齡不會用次數；換個值字']}
+};
+let fsel=null;
+$('factors').innerHTML=`<span style="font-size:13px;color:var(--muted)">因子：</span>`+FACT.map(f=>`<button class="chipbtn" data-f="${E(f)}">${E(f)}</button>`).join('');
+$('valuewords').innerHTML=`<span style="font-size:13px;color:var(--muted)" id="vwlbl">值字（先選一個因子）：</span>`+['程度','類型','有無','次數'].map(v=>`<button class="chipbtn" data-vw="${v}" disabled>${v}</button>`).join('');
+$('factors').querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{fsel=b.dataset.f;$('factors').querySelectorAll('[data-f]').forEach(x=>x.classList.toggle('on',x===b));$('valuewords').querySelectorAll('[data-vw]').forEach(x=>{x.disabled=false;x.classList.remove('on')});$('vwlbl').textContent='值字：';const fb=$('fb4a');fb.className='fb info show';fb.innerHTML=`「${E(fsel)}」現在只是一個主題。挑一個值字，它才會變成會取值的變數。`});
+$('valuewords').querySelectorAll('[data-vw]').forEach(b=>b.onclick=()=>{if(!fsel)return;$('valuewords').querySelectorAll('[data-vw]').forEach(x=>x.classList.toggle('on',x===b));const r=VW[fsel][b.dataset.vw];const fb=$('fb4a');fb.className='fb info show';fb.innerHTML=`變數：<b>${E(r[0])}</b><br>測量尺度：${E(r[1])}<br><span style="color:var(--muted);font-size:13px">假設句型：${b.dataset.vw==='程度'||b.dataset.vw==='次數'?'「'+E(r[0])+'越高，Y 越…」':'「當'+E(r[0])+'為某一類時，Y 較…」'}</span>`;markDone()});
+const SCQ=[{t:'受訪者性別',a:'名目'},{t:'對新聞的信任（1 非常不信任 … 5 非常信任，單題）',a:'順序'},{t:'閱讀一則新聞花的秒數',a:'比率'},{t:'攝氏溫度',a:'等距'}];
+const SC=['名目','順序','等距','比率'];
+$('scaleq').innerHTML=SCQ.map((q,i)=>`<div class="srow"><div class="sline"><div class="st">${E(q.t)}</div><div class="pair opts" data-s="${i}">${SC.map(s=>`<button class="opt" data-v="${s}" style="padding:4px 8px;font-size:13px">${s}</button>`).join('')}</div></div><div class="fb" id="fb4b${i}"></div></div>`).join('');
+document.querySelectorAll('.opts[data-s]').forEach(g=>{const q=SCQ[+g.dataset.s];g.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const ok=b.dataset.v===q.a;g.querySelectorAll('.opt').forEach(x=>{x.classList.remove('right','wrong');if(x.dataset.v===q.a)x.classList.add('right')});if(!ok)b.classList.add('wrong');const fb=$('fb4b'+g.dataset.s);fb.className='fb show '+(ok?'ok':'no');fb.textContent={'名目':'名目：只有類別、沒有大小順序。能算的是次數與比例。','順序':'順序：有大小，但間距不保證相等。單題李克特量表嚴格說屬這一級；多題加總後多數論文當等距用。','等距':'等距：間距相等但沒有絕對零點（0°C 不是「沒有溫度」），所以不能說 20°C 是 10°C 的兩倍熱。','比率':'比率：有絕對零點，可以說 60 秒是 30 秒的兩倍。'}[q.a]+(ok?'':' 你選的是「'+b.dataset.v+'」。');markDone()})});
+
+/* ---------- 5 中介 ---------- */
+const MED={fred:[0.5,0.6,0.1,'自我物化','身體羞恥','失序飲食'],tam:[0.6,0.5,0.2,'知覺易用性','知覺有用性','使用意圖'],full:[0.6,0.6,0,'X','M','Y'],none:[0,0.6,0.5,'X','M','Y']};
+let medLbl=['X','M','Y'];
+function arrowW(v){return 1+Math.abs(v)*6}
+function col(v){return v>0?'var(--pos)':v<0?'var(--neg)':'var(--line2)'}
+function drawMed(){
+  const a=+$('ma').value,b=+$('mb').value,c=+$('mc').value;$('oa').value=f1(a);$('ob').value=f1(b);$('oc').value=f1(c);
+  const ind=a*b,tot=c+ind,vaf=Math.abs(tot)>1e-9?ind/tot:NaN;
+  const [X,M,Y]=medLbl;
+  const box=(x,y,t,fill)=>`<rect x="${x-62}" y="${y-22}" width="124" height="44" rx="8" fill="${fill}" stroke="var(--line2)"/><text x="${x}" y="${y+6}" text-anchor="middle" font-size="16" fill="var(--ink)">${E(t)}</text>`;
+  $('medsvg').innerHTML=`<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker></defs>
+  <line x1="130" y1="150" x2="430" y2="150" stroke="${col(c)}" stroke-width="${arrowW(c)}" marker-end="url(#ah)" ${c===0?'stroke-dasharray="4 4"':''}/>
+  <line x1="120" y1="128" x2="235" y2="62" stroke="${col(a)}" stroke-width="${arrowW(a)}" marker-end="url(#ah)" ${a===0?'stroke-dasharray="4 4"':''}/>
+  <line x1="325" y1="62" x2="440" y2="128" stroke="${col(b)}" stroke-width="${arrowW(b)}" marker-end="url(#ah)" ${b===0?'stroke-dasharray="4 4"':''}/>
+  ${box(70,150,X,'var(--sel)')}${box(280,40,M,'var(--sim)')}${box(490,150,Y,'var(--chip)')}
+  <text x="150" y="85" font-size="15" fill="var(--muted)">a ＝ ${f1(a)}</text><text x="370" y="85" font-size="15" fill="var(--muted)">b ＝ ${f1(b)}</text><text x="280" y="140" text-anchor="middle" font-size="15" fill="var(--muted)">c′ ＝ ${f1(c)}</text>
+  <text x="280" y="208" text-anchor="middle" font-size="14" fill="var(--muted)">線越粗效果越大；綠＝正、紅＝負、虛線＝0</text>`;
+  let verdict;
+  if(Math.abs(ind)<0.05)verdict='<b>沒有中介</b>：a 或 b 接近 0，效果沒有經過 M。X 對 Y 的影響（如果有）全是直接效果。';
+  else if(Math.abs(c)<0.05)verdict='<b>完全中介</b>：直接效果 c′ ≈ 0，X 對 Y 的效果全部經過 M。';
+  else if(Math.sign(c)!==Math.sign(ind))verdict='<b>抑制（suppression）</b>：直接與間接效果方向相反，互相抵消，總效果可能接近 0，看起來像 X 對 Y 沒效果。';
+  else verdict='<b>部分中介</b>：一部分經過 M，一部分直接到 Y。';
+  $('medout').innerHTML=`間接效果 a × b ＝ <span class="num">${f1(ind)}</span>　直接效果 c′ ＝ <span class="num">${f1(c)}</span>　總效果 ＝ <span class="num">${f1(tot)}</span>　中介佔比 VAF ＝ <span class="num">${isNaN(vaf)?'—':Math.round(vaf*100)+'%'}</span><br>${verdict}`;
+}
+['ma','mb','mc'].forEach(id=>$(id).oninput=drawMed);
+document.querySelectorAll('[data-med]').forEach(b=>b.onclick=()=>{const p=MED[b.dataset.med];$('ma').value=p[0];$('mb').value=p[1];$('mc').value=p[2];medLbl=[p[3],p[4],p[5]];document.querySelectorAll('[data-med]').forEach(x=>x.classList.toggle('on',x===b));drawMed();markDone()});
+drawMed();
+
+/* ---------- 6 調節 ---------- */
+const MOD={flip:[0,-1.0,'促發','自我物化','單身','有伴侶'],age:[0.3,0.5,'易用性','使用意圖','年長','年輕'],zero:[0.5,0,'X','Y','W 低','W 高']};
+const sg=v=>(v<0?'− ':'＋ ')+f1(Math.abs(v));
+let modLbl=['X','Y','W 低','W 高'];
+function drawMod(){
+  const b1=+$('w1').value,b3=+$('w3').value;$('ow1').value=f1(b1);$('ow3').value=f1(b3);
+  const W=[-0.5,0.5],b2=0.15,b0=0;
+  const sx=x=>80+(x+1)*200,sy=y=>125-y*80;
+  const yEnd=w=>b0+b1*1+b2*w+b3*1*w;
+  const e0=sy(yEnd(W[0])),e1=sy(yEnd(W[1]));let off0=0,off1=0;if(Math.abs(e0-e1)<18){const d=(18-Math.abs(e0-e1))/2;if(e0<=e1){off0=-d;off1=d}else{off0=d;off1=-d}}
+  const line=(w,color,lab,off)=>{const y0=b0+b1*(-1)+b2*w+b3*(-1)*w,y1=yEnd(w);return `<line x1="${sx(-1)}" y1="${sy(y0)}" x2="${sx(1)}" y2="${sy(y1)}" stroke="${color}" stroke-width="3"/><text x="${sx(1)+8}" y="${sy(y1)+5+off}" font-size="16" fill="${color}">${E(lab)}</text>`};
+  $('modsvg').innerHTML=`<line x1="80" y1="125" x2="480" y2="125" stroke="var(--line2)"/><line x1="80" y1="20" x2="80" y2="230" stroke="var(--line2)"/>
+  <text x="280" y="246" text-anchor="middle" font-size="15" fill="var(--muted)">${E(modLbl[0])}（X）低 → 高</text><text x="24" y="125" font-size="15" fill="var(--muted)" transform="rotate(-90 24 125)" text-anchor="middle">${E(modLbl[1])}（Y）</text>
+  ${line(W[0],'var(--accent)',modLbl[2],off0)}${line(W[1],'var(--mod)',modLbl[3],off1)}`;
+  const s0=b1+b3*W[0],s1=b1+b3*W[1];
+  let v;
+  if(Math.abs(b3)<0.05)v='<b>沒有調節</b>：兩條線平行，X 的效果在 W 高低兩組一樣。';
+  else if(Math.sign(s0)!==Math.sign(s1)&&Math.abs(s0)>0.02&&Math.abs(s1)>0.02)v='<b>方向翻轉的調節</b>：在一組 X 讓 Y 升高、在另一組讓 Y 降低。兩組混在一起算，平均效果會抵消成接近 0。';
+  else v='<b>強弱改變的調節</b>：X 的效果方向相同，但在一組明顯比另一組強。';
+  $('modout').innerHTML=`Y ＝ b₀ <span class="num">${sg(b1)}</span>·X ＋ b₂·W <span class="num">${sg(b3)}</span>·(X × W)　→${E(modLbl[2])}組斜率 <span class="num">${f1(s0)}</span>，${E(modLbl[3])}組斜率 <span class="num">${f1(s1)}</span><br>${v}`;
+}
+['w1','w3'].forEach(id=>$(id).oninput=drawMod);
+document.querySelectorAll('[data-mod]').forEach(b=>b.onclick=()=>{const p=MOD[b.dataset.mod];$('w1').value=p[0];$('w3').value=p[1];modLbl=[p[2],p[3],p[4],p[5]];document.querySelectorAll('[data-mod]').forEach(x=>x.classList.toggle('on',x===b));drawMod();markDone()});
+drawMod();
+const MMQ=[
+  {t:'AI 標示降低可信度，是因為讀者覺得內容少了人的把關。',a:'med',why:'「是因為…」說的是效果經過的路（把關感），這是中介。'},
+  {t:'AI 標示降低可信度，但只在本來就不信任 AI 的讀者身上。',a:'mod',why:'「只在…身上」說的是效果對誰成立，這是調節。'},
+  {t:'易用性透過有用性影響使用意圖。',a:'med',why:'「透過」＝中介（TAM）。'},
+  {t:'年齡改變了易用性對使用意圖的影響力。',a:'mod',why:'「改變了…的影響力」＝調節（UTAUT）。'},
+  {t:'訓練提升績效，靠的是先提高自我效能。',a:'med',why:'先提高 M 再到 Y，是中介。'},
+  {t:'訓練對新手有效，對老手沒效。',a:'mod',why:'效果依經驗而異，是調節。'}
+];
+$('mmq').innerHTML=MMQ.map((q,i)=>`<div class="srow"><div class="sline"><div class="st">${E(q.t)}</div><div class="pair opts" data-m="${i}"><button class="opt" data-v="med" style="padding:4px 8px;font-size:13px">中介</button><button class="opt" data-v="mod" style="padding:4px 8px;font-size:13px">調節</button></div></div><div class="fb" id="fb6${i}"></div></div>`).join('');
+document.querySelectorAll('.opts[data-m]').forEach(g=>{const q=MMQ[+g.dataset.m];g.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const ok=b.dataset.v===q.a;g.querySelectorAll('.opt').forEach(x=>{x.classList.remove('right','wrong');if(x.dataset.v===q.a)x.classList.add('right')});if(!ok)b.classList.add('wrong');const fb=$('fb6'+g.dataset.m);fb.className='fb show '+(ok?'ok':'no');fb.textContent=(ok?'對。':'不對。')+q.why+' 口訣：「透過／因為」找中介，「只在／對誰／何時」找調節。';markDone()})});
+
+/* ---------- 7 研究問題 ---------- */
+const RQEX={ai:['新聞上的 AI 生成標示','標示會不會降低讀者對新聞的可信度評價，以及對誰特別明顯','透明揭露與信任之間是不是必然有張力'],glass:['智慧眼鏡上的新聞提示','人們在走路時會接受多短、多頻繁的新聞提示','注意力被切成碎片之後，新聞還能不能被理解'],clear:['','','']};
+function rqUpdate(){const v=['rqx','rqy','rqz'].map(id=>$(id).value.trim());store.rq=v;save();const n=v.filter(Boolean).length;[...$('rqmeter').children].forEach((s,i)=>s.classList.toggle('on',i<n));
+  const lv=['還沒有主題。','<b>生手</b>：只有主題。這樣會把所有材料倒進報告。再問自己：我想找出什麼？','<b>成熟研究者</b>：有問題了。帶著問題找材料，記得也找能推翻自己的。再問：讀者知道答案後，會對什麼理解得更好？','<b>最成功的研究者</b>：三段都有。試著唸出來：「我正研究'+E(v[0])+'，因為我想找出'+E(v[1])+'，以便理解'+E(v[2])+'。」下一站把 Z 再往上推。'][n];
+  $('rqlevel').innerHTML=lv;}
+['rqx','rqy','rqz'].forEach(id=>$(id).oninput=rqUpdate);
+document.querySelectorAll('[data-ex]').forEach(b=>b.onclick=()=>{const e=RQEX[b.dataset.ex];$('rqx').value=e[0];$('rqy').value=e[1];$('rqz').value=e[2];rqUpdate();markDone()});
+if(store.rq){['rqx','rqy','rqz'].forEach((id,i)=>$(id).value=store.rq[i]||'')}
+rqUpdate();
+function hypoUpdate(){const c=[...$('hypo').querySelectorAll('input')].filter(x=>x.checked).map(x=>x.value);let m;
+  if(c.length===3)m='<b>假設（hypothesis）</b>：點名變數、有值字、有方向，可以畫模型（自變數在左、依變數在右、箭頭向右），然後進入操作化。';
+  else if(c.includes('vars'))m='<b>有變數但還不是假設</b>：'+(c.includes('values')?'':'先替每個變數加值字（第 4 站）；')+(c.includes('dir')?'':'再說清楚方向——「X 越…，Y 越…」或「當 X 是某類，Y 較…」。');
+  else m='<b>論點（thesis）</b>：這是一個懂行的人可能不同意的主張，但沒有點名變數。拆成三到四個子論點去論證就好，不必硬畫模型。';
+  $('hypoout').innerHTML=m;}
+$('hypo').querySelectorAll('input').forEach(x=>{x.onchange=()=>{x.parentElement.classList.toggle('on',x.checked);hypoUpdate();markDone()}});
+hypoUpdate();
+
+/* ---------- 8 研究理由 ---------- */
+function renderSoWhat(){const rq=(store.rq||[]);const y=rq[1]||'（第 7 站的 Y）';const sw=['sw1','sw2','sw3'].map(id=>$(id).value.trim());
+  let h=`<span class="box hi">${E(y)}</span>`;sw.forEach((s,i)=>{h+=`<span class="ar">→ 那又怎樣？→</span><span class="box ${s?'':''}" style="${s?'':'color:var(--muted)'}">${E(s||('第 '+(i+1)+' 層'))}</span>`});$('sowhat').innerHTML=h;}
+['sw1','sw2','sw3','cl','rs','ev','wr'].forEach(id=>{if(store[id])$(id).value=store[id];$(id).oninput=()=>{store[id]=$(id).value;save();renderSoWhat()}});
+$('mkdraft').onclick=()=>{const rq=store.rq||['','',''];const g=id=>$(id).value.trim();
+  const sw=['sw1','sw2','sw3'].map(g).filter(Boolean);
+  const t=[`本研究探討${rq[0]||'＿＿'}，想回答的是：${rq[1]||'＿＿'}。`,
+    sw.length?`弄清楚這一點之後，${sw.join('；進一步，')}。`:'',
+    rq[2]?`這個問題值得回答，是因為它關係到${rq[2]}。`:'',
+    g('cl')?`本研究主張${g('cl')}。`:'',g('rs')?`理由是${g('rs')}`+(g('ev')?`，證據為${g('ev')}`:'')+'。':'',
+    g('wr')?`這個理由之所以能支撐主張，是因為${g('wr')}。`:''].filter(Boolean).join('');
+  $('draft').textContent=t||'（還沒有可以組的內容）';markDone()};
+$('cpdraft').onclick=()=>{const t=$('draft').textContent;if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>{$('cpdraft').textContent='已複製';setTimeout(()=>$('cpdraft').textContent='複製',1200)})};
+
+/* ---------- 9 全鏈 ---------- */
+(function(){const N=[['現象','看得到的一件事'],['抽象化','提到哪一層'],['構念','實體 × 性質'],['操作化','指標對定義'],['變數','加值字、定尺度'],['模型','X、M、W、Y'],['研究問題','三段句'],['研究理由','那又怎樣、依據']];
+  const w=125,g=14;let h='<defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--line2)"/></marker></defs>';
+  N.forEach((n,i)=>{const x=10+i*(w+g);const fill=i===5?'var(--sim)':(i>=1&&i<=4)?'var(--sel)':'var(--chip)';h+=`<rect x="${x}" y="30" width="${w}" height="70" rx="10" fill="${fill}" stroke="var(--line2)"/><text x="${x+w/2}" y="60" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink)">${E(n[0])}</text><text x="${x+w/2}" y="82" text-anchor="middle" font-size="12" fill="var(--muted)">${E(n[1])}</text>`;if(i<N.length-1)h+=`<line x1="${x+w}" y1="65" x2="${x+w+g}" y2="65" stroke="var(--line2)" stroke-width="2" marker-end="url(#ah2)"/>`});
+  h+=`<text x="10" y="128" font-size="12" fill="var(--muted)">黃：從一件事到可以量的東西　橘：變數之間怎麼連　藍：為什麼問、為什麼值得</text>`;
+  $('chainsvg').innerHTML=h;})();
+
+/* 初始站 */
+const h=location.hash.replace('#','');const idx=stages.findIndex(s=>s.id===h);go(idx>=0?idx:0,false);
+})();
+</script>
+</body>
+</html>
