@@ -500,11 +500,24 @@ theories:
     - [Self-Efficacy, Behavior, +]
     - [Self-Efficacy, Perceived Barriers, '-']
     - [Knowledge, Perceived Susceptibility, +]
+    - [Perceived Susceptibility, Seat Belt Use, +]
+    - [Perceived Health Benefits, Seat Belt Use, +]
+    - [Perceived Barriers, Seat Belt Use, '-']
+    - [Self-Efficacy, Seat Belt Use, +]
+    - [Perceived Barriers, Helmet Use, '-']
+    - [Perceived Health Benefits, Helmet Use, +]
+    - [Seat Belt Use, Injury Severity, '-']
+    - [Helmet Use, Injury Severity, '-']
     refs:
     - {title: 'Health Belief Model (StatPearls, NCBI Bookshelf NBK606120)', url: 'https://www.ncbi.nlm.nih.gov/books/NBK606120/'}
     - {title: Health Belief Model (StatPearls point-of-care), url: 'https://www.statpearls.com/point-of-care/161679'}
-    enrich_notes: 原六條中易感性與嚴重性改為經由 Perceived Threat（既有變數）中介，這是 Rosenstock–Strecher–Becker 圖的標準畫法；其餘直接邊保留。行動線索在標準圖中同時推升威脅感與直接觸發行為，兩條都畫。Knowledge
-      → Perceived Susceptibility 代表修正因素透過信念作用。NCBI 頁面有瀏覽器驗證未能讀入，StatPearls 回 403，構念清單依搜尋摘要；2026 年系統性回顧指出各構念預測力中等且隨行為不同。
+    - {title: 朱拉隆功大學碩士論文：HBM 構念與青年安全帶使用（易感性、障礙、自我效能）, url: 'https://cuir.car.chula.ac.th/handle/123456789/57880'}
+    - {title: Investigating the role of health belief model on seat belt use for front seat passengers on urban and rural
+        roads — NTNU Open, url: 'https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3066457'}
+    - {title: 伊朗 Khomein 機車騎士安全帽使用與知覺障礙研究（SUMS）, url: 'https://journals.sums.ac.ir/article_44262_bbe0d5d0cd0f6b2fcccd40302924e27c.pdf'}
+    enrich_notes: |-
+      原六條中易感性與嚴重性改為經由 Perceived Threat（既有變數）中介，這是 Rosenstock–Strecher–Becker 圖的標準畫法；其餘直接邊保留。行動線索在標準圖中同時推升威脅感與直接觸發行為，兩條都畫。Knowledge → Perceived Susceptibility 代表修正因素透過信念作用。NCBI 頁面有瀏覽器驗證未能讀入，StatPearls 回 403，構念清單依搜尋摘要；2026 年系統性回顧指出各構念預測力中等且隨行為不同。
+      只補交通安全的應用邊，HBM 主體構念沿用既有變數。安全帶四條來自泰國與伊朗兩筆橫斷研究；安全帽只找到知覺障礙（悶熱、聽力、價格）的證據，Perceived Health Benefits→Helmet Use 是 HBM 通行版本的延伸。最後兩條是 Haddon 事故中階段的保護效果。
   Extended Parallel Process Model:
     abbr: EPPM
     zh: 延伸平行歷程模式
@@ -1682,13 +1695,27 @@ theories:
     - [Informal Sanctions, Security Policy Violation, '-']
     - [Moral Commitment, Security Policy Violation, '-']
     - [Moral Commitment, Sanction Severity -> Security Policy Violation, m]
+    - [Enforcement Intensity, Perceived Risk of Detection, +]
+    - [Enforcement Publicity, Perceived Risk of Detection, +]
+    - [Perceived Risk of Detection, Drink Driving, '-']
+    - [Sanction Certainty, Drink Driving, '-']
+    - [Sanction Severity, Drink Driving, '-']
+    - [Sanction Celerity, Drink Driving, '-']
+    - [Drink Driving, Crash Risk, +]
+    - [Perceived Risk of Detection, Traffic Violation, '-']
     refs:
     - {title: 'User Awareness of Security Countermeasures and Its Impact on IS Misuse: A Deterrence Approach (constructDB
         record)', url: 'https://verdi.cs.ucl.ac.uk/constructDB/publications/darcy-user-2009.html'}
     - {title: 'IDEAS/RePEc record, Information Systems Research 20(1), 79–98', url: 'https://ideas.repec.org/a/inm/orisre/v20y2009i1p79-98.html'}
     - {title: 'Security Research Theories and Models (Crossler 2023, WSU)', url: 'https://wpcdn.web.wsu.edu/wp-vcea/uploads/sites/3267/2023/02/SecurityResearchTheoriesModels-Crossler-Feb6-2023.pdf'}
-    enrich_notes: 保留原四條。依 D'Arcy 等人（2009）補：安全意識同時提高嚴厲性知覺、電腦監控提高確定性知覺、道德承諾為負向前因並調節制裁效果（原文發現嚴厲性的嚇阻效果大於確定性）。Informal Sanctions（羞恥、同儕非難）是
-      Herath 與 Rao（2009）、Siponen 與 Vance（2010）後的常見擴充版本，原始 GDT 只談正式制裁。
+    - {title: 'Homel (1988) Policing and Punishing the Drinking Driver: a study of general and specific deterrence — NCJRS
+        摘要', url: 'https://www.ncjrs.gov/App/Publications/abstract.aspx?ID=113452'}
+    - {title: 'Homel (1993) Drivers who drink and rational choice: random breath testing and the process of deterrence — OJP',
+      url: 'https://ojp.gov/ncjrs/virtual-library/abstracts/drivers-who-drink-and-rational-choice-random-breath-testing-and'}
+    - {title: 'AIC Trends & Issues 472: Effective drink driving prevention and enforcement strategies', url: 'https://www.aic.gov.au/sites/default/files/2020-05/tandi472.pdf'}
+    enrich_notes: |-
+      保留原四條。依 D'Arcy 等人（2009）補：安全意識同時提高嚴厲性知覺、電腦監控提高確定性知覺、道德承諾為負向前因並調節制裁效果（原文發現嚴厲性的嚇阻效果大於確定性）。Informal Sanctions（羞恥、同儕非難）是 Herath 與 Rao（2009）、Siponen 與 Vance（2010）後的常見擴充版本，原始 GDT 只談正式制裁。
+      既有 Deterrence Theory 只有資安脈絡的制裁三要素，此處補交通執法版本：Homel 的核心是隨機酒測（執法強度與能見度、媒體宣傳）先拉高「被抓的知覺風險」，再抑制酒駕；確定性效果強於嚴厲性與迅速性是 Homel 與 AIC 回顧的一致結論。Sanction Certainty／Severity／Celerity 沿用既有變數。
   Narrative Transportation Theory:
     abbr: NTT
     zh: 敘事傳輸理論
@@ -2921,13 +2948,40 @@ theories:
     - [Self-Identity, Behavioral Intention, +]
     - [Prior Behavior Frequency, Behavioral Intention, +]
     - [Intention Stability, Behavioral Intention -> Behavior, m]
+    - [Prior Behavior Frequency, Behavior, +]
+    - [Personal Norm, Behavioral Intention, +]
+    - [Anticipated Regret, Behavioral Intention, '-']
+    - [Anticipated Regret, Behavior, '-']
+    - [Descriptive Norm, Behavioral Intention, +]
+    - [Perceived Risk, Behavioral Intention, '-']
+    - [Age, Behavioral Beliefs, +]
+    - [Gender, Normative Beliefs, +]
+    - [Personality Traits, Behavioral Beliefs, +]
+    - [Personal Values, Behavioral Beliefs, +]
+    - [Knowledge, Control Beliefs, +]
+    - [Self-Identity, Normative Beliefs, +]
+    - [Media Use, Behavioral Beliefs, +]
+    - [Experience, Control Beliefs, +]
+    - [Experience, Behavioral Beliefs, +]
+    - [Knowledge, Behavioral Beliefs, +]
+    - [Personal Values, Normative Beliefs, +]
     desc: Ajzen（1985、1991）在理性行動論上加入知覺行為控制，提出計畫行為理論：行為信念、規範信念與控制信念分別形成態度、主觀規範與知覺行為控制，三者決定行為意圖，意圖與知覺行為控制共同預測行為；控制感愈準確，意圖愈能轉化為行為。
     refs:
     - {title: Theory of planned behavior - Wikipedia, url: 'https://en.wikipedia.org/wiki/Theory_of_planned_behavior'}
     - {title: 'What is The Theory Of Planned Behavior In Behavior Change? (The Behavioral Scientist)', url: 'https://www.thebehavioralscientist.com/glossary/theory-of-planned-behavior'}
     - {title: 'Miles, J. A. (2012). Management and Organization Theory: A Jossey-Bass Reader. Jossey-Bass. 第 23 章', url: ''}
-    enrich_notes: 原檔九條邊中四條符號空白與五條正號重複，去重為五條。補 Ajzen 模型的信念層（Behavioral Beliefs、Normative Beliefs、Control Beliefs 新造）與知覺行為控制調節意圖→行為（Wikipedia：意圖只在控制感高時轉化為行為，且
-      PBC 須反映實際控制才有預測力）。
+    - {title: 'Elliott & Thomson (2010) The social cognitive determinants of offending drivers'' speeding behaviour, Accident
+        Analysis & Prevention — Strathprints', url: 'https://strathprints.strath.ac.uk/26365/'}
+    - {title: 'Conner, Lawton, Parker et al. (2007) Application of the TPB to the prediction of objectively assessed breaking
+        of posted speed limits — Cardiff ORCA', url: 'https://orca.cardiff.ac.uk/id/eprint/32791/'}
+    - {title: 'Hai, Minh & Huynh (2024) TPB 於駕駛行為的統合分析（42 篇），Int. J. Transportation Science and Technology', url: 'https://doaj.org/article/eacb88cd975740ba8676cf2e6bafbd24'}
+    - {title: 'Fishbein & Ajzen (2010), Predicting and Changing Behavior: The Reasoned Action Approach, Psychology Press（Routledge
+        書目）', url: 'https://www.routledge.com/Predicting-and-Changing-Behavior-The-Reasoned-Action-Approach/Fishbein-Ajzen/p/book/9781138995215'}
+    - {title: Reasoned action approach (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Reasoned_action_approach'}
+    enrich_notes: |-
+      原檔九條邊中四條符號空白與五條正號重複，去重為五條。補 Ajzen 模型的信念層（Behavioral Beliefs、Normative Beliefs、Control Beliefs 新造）與知覺行為控制調節意圖→行為（Wikipedia：意圖只在控制感高時轉化為行為，且 PBC 須反映實際控制才有預測力）。
+      只補 TPB 原型缺的擴充邊，以超速與酒駕研究為實證來源。符號以「焦點行為」為準：Personal Norm（道德規範）是對焦點行為的道德義務感，故正向；超速研究量到的是「不該超速」的義務感，對超速意圖為負，是同一條邊的鏡像。Anticipated Regret 是對做出風險行為的預期後悔，故對意圖與行為皆負。
+      只補背景因素→信念的邊；Fishbein & Ajzen（2010）明言背景因素可影響三類信念中的任一類、方向是經驗問題，此處正號僅表示「有影響」，實際方向依議題而定。Media Use（媒體與資訊來源暴露）、Experience（過去經驗）、Knowledge、Personal Values 皆為書中列出的背景因素類別。信念→態度／規範／控制→意圖→行為沿用既有 TPB 條目，不重複。
     book_check: Miles 2012 第 23 章對照：補 3 條邊；書中變數我們原本沒有的：Self-Identity、Descriptive Norm、Intention Stability、Anticipated Regret、Implementation
       Intentions。前五條邊為書上明寫（p207–208）；PBC→Behavior 直接效果書上說證據混雜，Ajzen & Madden（1986）在低控制感時才有直接效果。PBC×Intention 交互作用為 Ajzen（1991）預期但多數研究不支持（p208），故不入邊。Self-Identity
       增加 6–9% 意圖解釋量（Sutton 1998；Rise et al. 2010）、過去行為為控制變數，邊是我依該段推的。意圖→行為的調節變數書上列了一串（時間穩定性、需求滿足、實行意圖、意圖穩定性、預期後悔、描述性規範、人格、年齡），只挑意圖穩定性入邊，其餘列入缺的變數。書中
@@ -5147,3 +5201,1321 @@ theories:
     - {title: 'Hullman, Resnick & Adar (2015) PLOS ONE (PMC full text)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4646698'}
     - {title: HOPs project page (UW Interactive Data Lab), url: 'https://idl.uw.edu/papers/hops'}
     enrich_notes: N = 288（MTurk，每組 96），幀率固定 400 ms。兩變數 Pr(B 大於 A) 任務中誤差棒與小提琴圖的平均誤差 ≥ 36 個百分點。限制：僅一種幀率、常態且獨立的分布、無法用於印刷。
+  Psychometric Paradigm of Risk Perception:
+    abbr: PsyPar
+    name: Psychometric Paradigm of Risk Perception
+    zh: 風險知覺的心理計量典範
+    field: 風險傳播
+    desc: Fischhoff、Slovic 等人（1978）提出、Slovic（1987）統整。以心理物理量表請民眾評定多項危害的風險特性，因素分析得到兩個正交向度：恐懼風險（災難性、致命、不可控、非自願）與未知風險（新、延遲、科學未知）。危害在兩向度上的位置決定民眾的風險知覺與管制需求，高恐懼高未知的危害小事故也有高訊號潛能。
+    edges:
+    - [Catastrophic Potential, Dread Risk, +]
+    - [Controllability, Dread Risk, '-']
+    - [Voluntariness of Exposure, Dread Risk, '-']
+    - [Delay of Effect, Unknown Risk, +]
+    - [Perceived Familiarity, Unknown Risk, '-']
+    - [Dread Risk, Perceived Risk, +]
+    - [Unknown Risk, Perceived Risk, +]
+    - [Perceived Risk, Policy Support, +]
+    refs:
+    - {title: 'Slovic (1987) Perception of risk, Science 236:280–285', url: 'https://scholarsbank.uoregon.edu/xmlui/bitstream/1794/22406/1/slovic_287.pdf'}
+    - {title: 'Fischhoff, Slovic, Lichtenstein, Read & Combs (1978) How safe is safe enough? Policy Sciences 9:127–152', url: 'https://link.springer.com/doi/10.1007/BF00143739'}
+    - {title: 'SAGE Encyclopedia of Science and Technology Communication: Psychometric Paradigm', url: 'https://sk.sagepub.com/ency/edvol/embed/scienceandtechnology/chpt/psychometric-paradigm'}
+    - {title: Slovic (1987) DOI 10.1126/science.3563507, url: 'https://doi.org/10.1126/science.3563507'}
+    enrich_notes: 兩個因素與各量表的負荷（不可控、致命、災難性→恐懼風險；延遲、新穎、科學未知→未知風險）取自 Slovic 1987 與 Fischhoff 等 1978。Perceived Risk → Policy Support
+      對應原典的「希望嚴格管制」（desire for strict regulation），Slovic 指出恐懼風險是最強的預測項。Gregory & Mendelsohn（1993）重新分析指出只有風險評定與預期死亡率相關，恐懼向度並不，故把恐懼視為風險知覺的前因而非同義。
+  Social Amplification of Risk Framework:
+    abbr: SARF
+    name: Social Amplification of Risk Framework
+    zh: 社會風險放大框架
+    field: 風險傳播
+    desc: Kasperson、Renn、Slovic 等人（1988）提出。風險事件釋出的訊號經過個人與社會的放大站（科學家、新聞媒體、社群團體、人際網絡、機構）而被放大或衰減，改變公眾的風險知覺與行為反應；反應再產生漣漪般的次級衝擊，如經濟損失、產業或地方汙名化、管制變動與對機構的不信任，規模可能遠超事件的直接物理後果。
+    edges:
+    - [Risk Event, Media Coverage Volume, +]
+    - [Signal Value of Event, Media Coverage Volume, +]
+    - [Media Coverage Volume, Perceived Risk, +]
+    - [Word of Mouth, Perceived Risk, +]
+    - [Trust, Perceived Risk, '-']
+    - [Perceived Risk, Avoidance Behavior, +]
+    - [Avoidance Behavior, Secondary Impacts, +]
+    - [Perceived Risk, Stigmatization, +]
+    - [Stigmatization, Secondary Impacts, +]
+    - [Secondary Impacts, Trust, '-']
+    - [Perceived Risk, Policy Support, +]
+    refs:
+    - {title: 'Kasperson et al. (1988) The social amplification of risk: A conceptual framework, Risk Analysis 8:177–187',
+      url: 'https://courses.worldcampus.psu.edu/welcome/hls558/001/common/corefiles/Lesson04/j.1539-6924.1988.tb01168.x.pdf'}
+    - {title: 'Renn, Burns, Kasperson, Kasperson & Slovic (1992) The social amplification of risk: Theoretical foundations
+        and empirical applications, Journal of Social Issues 48(4):137–160', url: 'https://elib.uni-stuttgart.de/handle/11682/7420'}
+    - {title: 'SAGE Encyclopedia of Science and Technology Communication: Social Amplification of Risk Framework', url: 'https://sk.sagepub.com/ency/edvol/embed/scienceandtechnology/chpt/social-amplification-risk-framework'}
+    - {title: Kasperson et al. (1988) DOI 10.1111/j.1539-6924.1988.tb01168.x, url: 'https://doi.org/10.1111/j.1539-6924.1988.tb01168.x'}
+    enrich_notes: 放大站→風險知覺→行為反應→次級衝擊的主鏈來自 1988 原典；Signal Value（事件對未來風險的預示意涵）亦為原典概念。Word of Mouth 代表原典的人際網絡放大站。Secondary Impacts
+      → Trust 是 Renn 等 1992 所述的漣漪效應（對機構的信任流失），Trust → Perceived Risk 的負向邊則是後續實證的常見版本，原典只把機構信任列為放大的社會因素之一。128 件危害事件的實證（Renn
+      等 1992）顯示媒體報導量與社會經濟衝擊相關。
+  Risk Information Seeking and Processing Model:
+    abbr: RISP
+    name: Risk Information Seeking and Processing Model
+    zh: 風險資訊尋求與處理模式
+    field: 風險傳播
+    desc: Griffin、Dunwoody 與 Neuwirth（1999）結合捷思－系統式模式與計畫行為理論提出。風險判斷引發憂慮等情緒，情緒與他人期待自己掌握資訊的資訊性主觀規範共同拉大資訊不足感（現有知識與所需知識的落差）；落差越大、資訊蒐集能力越強、越信任管道，就越會尋求並系統式處理風險資訊，進而影響預防行為。
+    edges:
+    - [Perceived Risk, Worry, +]
+    - [Worry, Information Insufficiency, +]
+    - [Informational Subjective Norms, Information Insufficiency, +]
+    - [Topic Knowledge, Information Insufficiency, '-']
+    - [Information Insufficiency, Information Search Extent, +]
+    - [Information Insufficiency, Systematic Processing, +]
+    - [Information Insufficiency, Heuristic Processing, '-']
+    - [Informational Subjective Norms, Information Search Extent, +]
+    - [Informational Subjective Norms, Systematic Processing, +]
+    - [Perceived Information Gathering Capacity, Information Search Extent, +]
+    - [Perceived Information Gathering Capacity, Systematic Processing, +]
+    - [Relevant Channel Beliefs, Information Search Extent, +]
+    refs:
+    - {title: 'Griffin, Dunwoody & Neuwirth (1999) Proposed model of the relationship of risk information seeking and processing
+        to the development of preventive behaviors, Environmental Research 80:S230–S245', url: 'https://epublications.marquette.edu/comm_fac/238'}
+    - {title: 'Griffin, Neuwirth, Dunwoody & Giese (2004) Information sufficiency and risk communication, Media Psychology
+        6:23–61', url: 'https://epublications.marquette.edu/comm_fac/226'}
+    - {title: 'Yang, Aloe & Feeley (2014) Risk information seeking and processing model: A meta-analysis, Journal of Communication
+        64:20–41', url: 'https://doi.org/10.1111/jcom.12071'}
+    - {title: Griffin et al. (1999) DOI 10.1006/enrs.1998.3940, url: 'https://doi.org/10.1006/enrs.1998.3940'}
+    enrich_notes: 七項前因（個人特性、危害特性知覺、情緒反應、資訊性主觀規範、資訊充足性、資訊蒐集能力、管道信念）取自 1999 原典；Worry 代表原典的情緒反應（原典用 worry 與 anger）。Information
+      Insufficiency → Heuristic Processing 的負向邊在 Yang 等 2014 統合分析中最弱、模式對捷思式處理解釋力低；該統合分析指出現有知識（Topic Knowledge）與資訊性主觀規範是最穩定的兩個預測項，故把
+      Topic Knowledge → Information Insufficiency 列入。Griffin 等 2004 證實憂慮與他人期待是資訊落差的主要預測項。
+  Planned Risk Information Seeking Model:
+    abbr: PRISM
+    name: Planned Risk Information Seeking Model
+    zh: 計畫性風險資訊尋求模式
+    field: 風險傳播
+    desc: Kahlor（2010）將 RISP 嵌入計畫行為理論的架構，把風險資訊尋求視為一種計畫行為。尋求意圖由對尋求的態度、尋求相關的主觀規範、知覺行為控制、知覺知識不足與情緒性風險反應共同預測；風險知覺經由情緒影響知識不足感，主觀規範同時提高不足感與態度。模式不限特定健康脈絡，跨研究對尋求意圖的解釋量約
+      34–64%。
+    edges:
+    - [Perceived Risk, Worry, +]
+    - [Worry, Information Insufficiency, +]
+    - [Worry, Risk Information Seeking Intention, +]
+    - [Topic Knowledge, Information Insufficiency, '-']
+    - [Informational Subjective Norms, Information Insufficiency, +]
+    - [Informational Subjective Norms, Attitude, +]
+    - [Informational Subjective Norms, Risk Information Seeking Intention, +]
+    - [Attitude, Risk Information Seeking Intention, +]
+    - [Perceived Behavioral Control, Risk Information Seeking Intention, +]
+    - [Information Insufficiency, Risk Information Seeking Intention, +]
+    - [Risk Information Seeking Intention, Information Search Extent, +]
+    refs:
+    - {title: 'Kahlor (2010) PRISM: A planned risk information seeking model, Health Communication 25(4):345–356', url: 'https://doi.org/10.1080/10410231003775172'}
+    - {title: 'Hovick, Kahlor & Liang (2014) Personal cancer knowledge and information seeking through PRISM, Journal of Health
+        Communication 19:511–527', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8582150'}
+    - {title: 'Deline & Kahlor (2019) Planned risk information avoidance: A proposed theoretical model, Communication Theory',
+      url: 'https://www.beg.utexas.edu/files/texnet-cisr/pubs/deline%20%26%20Kahlor%202019.pdf'}
+    enrich_notes: TPB 三前因（Attitude 指對尋求的態度、Informational Subjective Norms、Perceived Behavioral Control 指對尋求的控制感）→ 尋求意圖，以及
+      RISP 的風險知覺、情緒、知識不足路徑，皆取自 Kahlor 2010。Hovick 等 2014 在癌症脈絡發現主觀規範、態度、知識不足與情緒反應是最強預測項，Worry → 意圖的直接邊來自該實證版本。Risk Information
+      Seeking Intention → Information Search Extent 為 TPB 的意圖→行為假定，原典以意圖為終點。
+  Crisis and Emergency Risk Communication:
+    abbr: CERC
+    name: Crisis and Emergency Risk Communication
+    zh: 危機與緊急風險溝通模式
+    field: 風險傳播
+    desc: Reynolds 與 Seeger（2005）整合健康風險溝通與危機溝通，依危機五階段（危機前、初始、維持、解決、評估）配置溝通任務，CDC 據以編成手冊。核心主張：危機伴隨高度不確定與焦慮，及時、正確、一致且表達同理的訊息能降低不確定、維持可信度與信任，並以具體行動指引提升自我效能，促成保護行動。
+    edges:
+    - [Crisis, Situational Uncertainty, +]
+    - [Situational Uncertainty, Anxiety, +]
+    - [Situational Uncertainty, Information Search Extent, +]
+    - [Message Timeliness, Situational Uncertainty, '-']
+    - [Message Timeliness, Perceived Credibility, +]
+    - [Consistency, Perceived Credibility, +]
+    - [Empathy, Trust, +]
+    - [Perceived Credibility, Trust, +]
+    - [Actionable Guidance, Self-Efficacy, +]
+    - [Self-Efficacy, Protective Action, +]
+    - [Trust, Protective Action, +]
+    refs:
+    - {title: 'Reynolds & Seeger (2005) Crisis and emergency risk communication as an integrative model, Journal of Health
+        Communication 10(1):43–55', url: 'https://doi.org/10.1080/10810730590904571'}
+    - {title: CDC (2014) Crisis and Emergency Risk Communication manual, url: 'https://stacks.cdc.gov/view/cdc/22159/cdc_22159_DS1.pdf'}
+    - {title: 'Seeger et al. (2020) Crisis and emergency risk communication: Past, present, and future (book chapter)', url: 'https://experts.nau.edu/en/publications/crisis-and-emergency-risk-communication-past-present-and-future/'}
+    enrich_notes: CERC 原典是階段模式而非路徑模型；此處的邊整理自 CDC 手冊的六項原則（be first、be right、be credible、express empathy、promote action、show
+      respect）與 Reynolds & Seeger 2005 對不確定性、可信度、自我效能的論述：Message Timeliness 對應 be first，Consistency 對應 be right／一致訊息，Empathy
+      對應 express empathy，Actionable Guidance 對應 promote action。Trust → Protective Action 與 Self-Efficacy → Protective Action
+      是 CERC 文獻常見的實證版本，非原典的統計路徑。
+  Trust, Confidence and Cooperation Model:
+    abbr: TCC
+    name: Trust, Confidence and Cooperation Model
+    zh: 信任、信心與合作模式
+    field: 風險傳播
+    desc: Earle 與 Siegrist（2003、2008）以顯著價值相似性理論為基礎提出。社會信任來自對方與自己價值相似（對動機的信任），信心來自過去表現（對能力的信心），兩者共同決定公眾是否與風險管理者合作，且信任影響信心。信任越高，知覺風險越低、效益越高，在個人缺乏知識、議題道德負載重時最明顯。
+    edges:
+    - [Shared Values, Trust, +]
+    - [Past Performance, Confidence, +]
+    - [Trust, Confidence, +]
+    - [Trust, Cooperation, +]
+    - [Confidence, Cooperation, +]
+    - [Trust, Perceived Risk, '-']
+    - [Trust, Benefit, +]
+    - [Topic Knowledge, Trust -> Perceived Risk, m]
+    - [Issue Moral Loading, Trust -> Perceived Risk, m]
+    refs:
+    - {title: 'Siegrist, Cvetkovich & Roth (2000) Salient value similarity, social trust, and risk/benefit perception, Risk
+        Analysis 20(3):353–362', url: 'https://doi.org/10.1111/0272-4332.203034'}
+    - {title: 'Siegrist & Cvetkovich (2000) Perception of hazards: The role of social trust and knowledge, Risk Analysis 20(5):713–720',
+      url: 'https://ideas.repec.org/a/wly/riskan/v20y2000i5p713-720.html'}
+    - {title: 'Earle & Siegrist (2008) Trust, Confidence and Cooperation model: A framework for understanding the relation
+        between trust and risk perception, Int. J. Global Environmental Issues 8:17–29', url: 'https://www.research-collection.ethz.ch/handle/20.500.11850/9710'}
+    - {title: 'Twyman, Harvey & Harries (2008) Trust in motives, trust in competence, Judgment and Decision Making 3:111–120',
+      url: 'https://dlab.sauder.ubc.ca/sjdm/journal/bb10/bb10.html'}
+    enrich_notes: Shared Values → Trust、Trust → Perceived Risk（負）與 Trust → Benefit（正）來自 Siegrist 等 2000 的顯著價值相似性實證；Past Performance
+      → Confidence、Trust → Confidence、兩者 → Cooperation 為 Earle & Siegrist 2008 的 TCC 架構，Twyman 等 2008 證實價值相似與過去表現各自獨立影響。Topic
+      Knowledge 的調節（知識低時信任效果強）來自 Siegrist & Cvetkovich 2000，但 Pauer 等 2024 的預註冊直接重製（N=1,070）得到相反結果，此邊應視為爭議中。Issue Moral Loading
+      的調節來自 Earle & Siegrist 2008 的脈絡論述。
+  Mental Models Approach to Risk Communication:
+    abbr: MMA
+    name: Mental Models Approach to Risk Communication
+    zh: 風險溝通的心智模式取徑
+    field: 風險傳播
+    desc: Morgan、Fischhoff、Bostrom 與 Atman（2002）提出的風險溝通設計方法。先以影響圖整理專家對危害的知識，再以開放式訪談引出民眾的心智模式，用問卷量測各種正確與錯誤信念的普及率，據此撰寫針對知識缺口與迷思的訊息並測試。訊息若補上民眾心智模式的缺漏、修正錯誤連結，就能提高理解與決策品質。
+    edges:
+    - [Message Targeting to Knowledge Gaps, Message Comprehension, +]
+    - [Prior Knowledge Base, Message Comprehension, +]
+    - [Message Comprehension, Mental Model Accuracy, +]
+    - [Message Targeting to Knowledge Gaps, Mental Model Completeness, +]
+    - [Message Targeting to Knowledge Gaps, Misconception Prevalence, '-']
+    - [Misconception Prevalence, Mental Model Accuracy, '-']
+    - [Mental Model Accuracy, Decision Accuracy, +]
+    - [Mental Model Completeness, Decision Accuracy, +]
+    - [Mental Model Accuracy, Protective Action, +]
+    refs:
+    - {title: 'Morgan, Fischhoff, Bostrom & Atman (2002) Risk Communication: A Mental Models Approach, Cambridge University
+        Press', url: 'https://www.cambridge.org/core/books/risk-communication/creating-an-expert-model-of-the-risk/01B1E6EEC1468CA8B1726035A8CDAEC8'}
+    - {title: 'Bostrom, Fischhoff & Morgan (1992) Characterizing mental models of hazardous processes: A methodology and an
+        application to radon, Journal of Social Issues 48(4):85–100', url: 'https://doi.org/10.1111/j.1540-4560.1992.tb01946.x'}
+    - {title: 'Atman, Bostrom, Fischhoff & Morgan (1994) Designing risk communications: Completing and correcting mental models
+        of hazardous processes, Part I, Risk Analysis 14:779–788', url: 'https://ideas.repec.org/a/wly/riskan/v14y1994i5p779-788.html'}
+    - {title: 'Encyclopedia of Public Relations: Mental Models Approach to Risk Communication', url: 'https://sk.sagepub.com/ency/edvol/embed/encyclopedia-of-public-relations-2e/chpt/mental-models-approach-risk-communication'}
+    enrich_notes: 此理論與已收錄的 Mental Models Theory（MM，Johnson-Laird 推理理論）不同，為風險溝通的方法論框架。原典是五步驟流程而非統計模型；邊依 Atman 等 1994 與 Bostrom
+      等 1994 的氡氣手冊實驗整理：依專家模型補缺、正誤的手冊使受試者的心智模式更完整、迷思更少、決策與檢測判斷更準。Mental Model Accuracy → Protective Action 是氡氣檢測脈絡的實證版本。
+  Affect Heuristic:
+    abbr: AffH
+    name: Affect Heuristic
+    zh: 情感捷思
+    field: 風險傳播
+    desc: Finucane、Alhakami、Slovic 與 Johnson（2000）提出，Slovic 等（2004）整合為分析／感受雙系統。人判斷危害時參照對該事物的整體好惡：正向情感使知覺風險降低、效益升高，負向情感相反，因此現實中應獨立的風險與效益在人心中呈負相關。
+    edges:
+    - [Valence, Affect, +]
+    - [Instance Vividness, Affect, +]
+    - [Affect, Perceived Risk, '-']
+    - [Affect, Benefit, +]
+    - [Benefit, Perceived Risk, '-']
+    - [Time Pressure, Affect -> Perceived Risk, m]
+    - [Deliberative Thinking, Affect -> Perceived Risk, m]
+    refs:
+    - {title: 'Finucane, Alhakami, Slovic & Johnson (2000) The affect heuristic in judgments of risks and benefits, Journal
+        of Behavioral Decision Making 13:1–17', url: 'https://doi.org/10.1002/(SICI)1099-0771(200001/03)13:1%3C1::AID-BDM333%3E3.0.CO;2-S'}
+    - {title: 'Slovic, Finucane, Peters & MacGregor (2004) Risk as analysis and risk as feelings, Risk Analysis 24(2):311–322',
+      url: 'https://doi.org/10.1111/j.0272-4332.2004.00433.x'}
+    - {title: 'Slovic, Peters, Finucane & MacGregor (2005) Affect, risk, and decision making, Health Psychology 24:S35–S40',
+      url: 'https://scholarsbank.uoregon.edu/xmlui/handle/1794/22607'}
+    - {title: 'Wikipedia: Affect heuristic', url: 'https://en.wikipedia.org/wiki/Affect_heuristic'}
+    enrich_notes: Affect → Perceived Risk（負）、Affect → Benefit（正）與操弄資訊效價（Valence）改變情感的因果證據來自 Finucane 等 2000 實驗一；Time Pressure
+      強化逆向關係來自實驗二。Benefit → Perceived Risk 的負向邊是 Alhakami & Slovic（1994）起多次觀察到的相關，方向在模型中視為經由情感中介。Deliberative Thinking 作為削弱情感效果的調節項、Instance
+      Vividness（意象）作為情感來源，取自 Slovic 等 2004 的分析／經驗雙系統論述，屬整合版本而非 2000 原典。
+  Cultural Theory of Risk:
+    abbr: CTR
+    name: Cultural Theory of Risk
+    zh: 風險文化理論
+    field: 風險傳播
+    desc: Douglas 與 Wildavsky（1982）提出，以「群」（受團體約束程度）與「格」（受外部規則約束程度）兩軸區分階層、平等、個人主義與宿命論四種生活方式。人選擇在意哪些風險是為了維護所屬的社會組織形式：平等主義者放大科技與環境風險，個人主義者與階層主義者傾向低估，前者信市場、後者信專家與機構。
+    edges:
+    - [Group Strength, Egalitarianism, +]
+    - [Group Strength, Hierarchism, +]
+    - [Grid Strength, Hierarchism, +]
+    - [Grid Strength, Individualism, '-']
+    - [Group Strength, Individualism, '-']
+    - [Egalitarianism, Perceived Risk, +]
+    - [Individualism, Perceived Risk, '-']
+    - [Hierarchism, Perceived Risk, '-']
+    - [Hierarchism, Trust, +]
+    - [Perceived Risk, Policy Support, +]
+    refs:
+    - {title: 'Douglas & Wildavsky (1982) Risk and Culture, University of California Press (reading notes)', url: 'https://web.pdx.edu/~rueterj/references/references-notes/douglas-wildavsky-1982.html'}
+    - {title: 'Kahan, Jenkins-Smith & Braman (2011) Cultural cognition of scientific consensus, Journal of Risk Research 14(2):147–174',
+      url: 'https://papers.ssrn.com/abstract=1549444'}
+    - {title: 'Johnson, Swedlow & Mayorga (2020) Cultural theory and cultural cognition theory survey measures, Journal of
+        Risk Research 23(11):1467–1490', url: 'https://ideas.repec.org/a/taf/jriskr/v23y2020i11p1467-1490.html'}
+    - {title: 'Zinn (2007) Risk, social inclusion and the life course, SCARR working paper (review of cultural theory)', url: 'https://www.kent.ac.uk/scarr/publications/Zinn%20Wk%20Paper%2017.07.pdf'}
+    enrich_notes: 格／群兩軸到四種世界觀的對應來自 Douglas & Wildavsky 1982 與 Douglas 的格群分析（高群低格＝平等主義、高群高格＝階層主義、低群低格＝個人主義）。世界觀 → Perceived
+      Risk 的方向以科技與環境風險為例（Dake 1991、Kahan 等 2011：階層—個人主義者評估氣候與核廢料風險較低，平等—社群主義者較高）；對社會偏差類風險方向相反，工具中以科技環境風險為準。Hierarchism → Trust
+      指對專家與機構的信任。宿命論者因對風險態度被動、實證邊不穩定，未列入。
+  Risk as Feelings:
+    abbr: RaF
+    name: Risk as Feelings
+    zh: 風險即感受假說
+    field: 風險傳播
+    desc: Loewenstein、Weber、Hsee 與 Welch（2001）提出。傳統理論把風險決策視為對機率與效用的認知評估；此假說主張決策當下的預期性情緒（恐懼、焦慮）另有一條獨立路徑，受結果生動性、時間臨近性與個人經驗影響，對機率大小相對不敏感。情緒與認知評估分歧時常是情緒主導行為，例如明知飛航安全仍因恐懼避搭。
+    edges:
+    - [Instance Vividness, Fear, +]
+    - [Temporal Distance, Fear, '-']
+    - [Experience, Fear, +]
+    - [Perceived Probability, Fear, +]
+    - [Perceived Probability, Anticipated Emotions, +]
+    - [Anticipated Emotions, Avoidance Behavior, +]
+    - [Fear, Avoidance Behavior, +]
+    - [Fear, Perceived Risk, +]
+    - [Fear, Perceived Probability -> Avoidance Behavior, m]
+    refs:
+    - {title: 'Loewenstein, Weber, Hsee & Welch (2001) Risk as feelings, Psychological Bulletin 127(2):267–286', url: 'https://pages.ucsd.edu/~mckenzie/Loewensteinetal2001PsychBulletin.pdf'}
+    - {title: 'Columbia Business School: Risk as Feelings (paper page)', url: 'https://business.columbia.edu/faculty/research/risk-feelings'}
+    - {title: 'BehavioralEconomics.com Mini-Encyclopedia: Risk as Feelings', url: 'https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/risk-as-feelings/'}
+    enrich_notes: Fear 代表原典的預期性情緒（anticipatory emotions），Anticipated Emotions 代表預計的未來情緒（anticipated emotions，屬結果論路徑）。Instance
+      Vividness、Temporal Distance（臨近性）、Experience 作為情緒的前因，以及情緒對機率不敏感（Perceived Probability → Fear 僅微弱正向），皆為原典圖 2 的內容。Fear
+      調節認知評估到行為的路徑，對應原典「情緒與認知分歧時情緒主導行為」的主張；Fear → Perceived Risk 為原典所述情緒回頭影響認知評估的回饋。
+  Protective Action Decision Model:
+    abbr: PADM
+    name: Protective Action Decision Model
+    zh: 保護行動決策模式
+    field: 風險傳播
+    desc: Lindell 與 Perry（2012）修訂版。環境線索、社會線索與警示訊息先經注意與理解，形成三類核心知覺：威脅知覺、保護行動知覺（效能、成本）與利害關係人知覺（專業、可信、保護責任）；這些知覺驅動資訊尋求與保護行動決策，再與情境助力和阻力共同決定實際行為。模式廣泛用於颶風、地震、傳染病等災害脈絡。
+    edges:
+    - [Warning Message Receipt, Attention, +]
+    - [Attention, Message Comprehension, +]
+    - [Message Comprehension, Threat Perception, +]
+    - [Environmental Cues, Threat Perception, +]
+    - [Social Cues, Threat Perception, +]
+    - [Threat Perception, Protective Action, +]
+    - [Threat Perception, Information Search Extent, +]
+    - [Response Efficacy, Protective Action, +]
+    - [Response Cost, Protective Action, '-']
+    - [Trust, Protective Action, +]
+    - [Situational Facilitators, Protective Action, +]
+    - [Situational Impediments, Threat Perception -> Protective Action, m]
+    refs:
+    - {title: 'Lindell & Perry (2012) The Protective Action Decision Model: Theoretical modifications and additional evidence,
+        Risk Analysis 32(4):616–632', url: 'https://doi.org/10.1111/j.1539-6924.2011.01647.x'}
+    - {title: 'NWS Warning Decision Training: Protective Action Decision Model summary', url: 'https://training.weather.gov/wdtd/courses/woc/human-factors/crisis-comms-sm/risk-assess/story_content/external_files/Protective%20Action%20Decision%20Model.pdf'}
+    - {title: 'Wei, Lindell, Prater et al. (2018) Perceptions drive protective actions during influenza outbreaks, Natural
+        Hazards Center Research Counts', url: 'https://hazards.colorado.edu/news/research-counts/perceptions-drive-protective-actions-during-influenza-outbreaks'}
+    - {title: Lindell & Perry (2012) RePEc record, url: 'https://ideas.repec.org/a/wly/riskan/v32y2012i4p616-632.html'}
+    enrich_notes: 線索→注意／理解→三類核心知覺→保護行動決策→行為的主鏈來自 Lindell & Perry 2012 圖 1。Response Efficacy 與 Response Cost 代表保護行動知覺的危害相關屬性與資源相關屬性；Trust
+      代表利害關係人知覺中的可信度。Social Cues 在此指觀察他人行為（非擬人化線索），沿用既有變數名。Situational Impediments 作為調節項對應原典「決策與行為之間的情境阻力」；Wei 等 2018 與 COVID-19
+      研究證實威脅、行動與利害關係人知覺皆正向預測行為意圖。
+  Unrealistic Optimism:
+    abbr: UnrOpt
+    name: Unrealistic Optimism
+    zh: 不切實際的樂觀（樂觀偏誤）
+    field: 風險傳播
+    desc: Weinstein（1980）發現多數人認為自己遭遇負面事件的機率低於同儕、遇到正面事件的機率高於同儕，此比較性樂觀在事件被視為可控、罕見、有刻板受害者形象時更強，個人親身經驗則會削弱它。樂觀偏誤壓低個人的知覺易感性，進而削弱預防與保護動機，是健康與風險傳播設計訊息時的主要障礙之一。
+    edges:
+    - [Controllability, Comparative Optimism, +]
+    - [Perceived Frequency, Comparative Optimism, '-']
+    - [Stereotyping, Comparative Optimism, +]
+    - [Experience, Comparative Optimism, '-']
+    - [Self-Enhancement Motivation, Comparative Optimism, +]
+    - [Comparative Optimism, Perceived Susceptibility, '-']
+    - [Perceived Susceptibility, Protection Motivation, +]
+    - [Comparative Optimism, Protective Action, '-']
+    refs:
+    - {title: 'Weinstein (1980) Unrealistic optimism about future life events, Journal of Personality and Social Psychology
+        39(5):806–820', url: 'https://doi.org/10.1037/0022-3514.39.5.806'}
+    - {title: 'Weinstein (1989) Effects of personal experience on self-protective behavior, Psychological Bulletin 105(1):31–50',
+      url: 'https://doi.org/10.1037/0033-2909.105.1.31'}
+    - {title: 'Shepperd, Klein, Waters & Weinstein (2013) Taking stock of unrealistic optimism, Perspectives on Psychological
+        Science 8(4):395–411', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4451212'}
+    enrich_notes: 可控性、事件罕見性（Perceived Frequency 負向）、刻板受害者形象（Stereotyping）與個人經驗四項前因來自 Weinstein 1980 研究二；Self-Enhancement Motivation
+      是 Shepperd 等 2013 歸納的動機性解釋。Experience → Comparative Optimism（負）與 Comparative Optimism → Protective Action（負）綜合 Weinstein
+      1989 對災害、車禍、犯罪經驗與自我保護行為的回顧。Perceived Susceptibility → Protection Motivation 是接到 PMT／HBM 的常見實證版本，非 1980 原典的量測。
+  Hazard Plus Outrage Model:
+    abbr: Outrage
+    name: Hazard Plus Outrage Model
+    zh: 危害加憤慨模式（憤慨因子）
+    field: 風險傳播
+    desc: Sandman（1987、1993）提出「風險＝危害＋憤慨」。專家以機率乘以嚴重度衡量風險，公眾則主要依憤慨因子判斷：風險是否非自願、不可控、不公平、陌生、令人恐懼、具災難潛能，來源是否可信、是否回應關切。危害高而憤慨低時公眾反應不足，危害低而憤慨高時反應過度，風險溝通因此分為喚起警覺與管理憤慨兩種工作。
+    edges:
+    - [Hazard Magnitude, Perceived Risk, +]
+    - [Outrage, Perceived Risk, +]
+    - [Voluntariness of Exposure, Outrage, '-']
+    - [Controllability, Outrage, '-']
+    - [Perceived Fairness, Outrage, '-']
+    - [Perceived Familiarity, Outrage, '-']
+    - [Dread Risk, Outrage, +]
+    - [Catastrophic Potential, Outrage, +]
+    - [Trust, Outrage, '-']
+    - [Responsiveness, Outrage, '-']
+    refs:
+    - {title: 'Sandman, P. M. (1993) Responding to Community Outrage: Strategies for Effective Risk Communication, AIHA (author
+        site with articles)', url: 'https://www.psandman.com/index.html'}
+    - {title: 'Covello & Sandman (2001) Risk communication: Evolution and revolution', url: 'https://www.psandman.com/articles/covello.htm'}
+    - {title: 'Wikipedia: Outrage factor', url: 'https://en.wikipedia.org/wiki/Outrage_factor'}
+    - {title: 'Sandman (1987) Risk communication: Facing public outrage, EPA Journal', url: 'https://psandman.com/articles/facing.htm'}
+    enrich_notes: 憤慨因子清單（自願性、可控性、公平性、熟悉度、恐懼、災難潛能、信任、回應性等）取自 Sandman 1987 EPA Journal 文章與 1993 專書；Sandman 本人列有二十餘項，此處取最常被引用的八項。Hazard
+      Magnitude → Perceived Risk 在公眾端的效果微弱（Sandman 指危害與憤慨的相關接近零），邊保留以呈現「風險＝危害＋憤慨」的加法結構。Dread Risk、Catastrophic Potential、Voluntariness
+      of Exposure 沿用心理計量典範的變數名，兩理論共享同一批危害屬性。
+  Precaution Adoption Process Model:
+    abbr: PAPM
+    name: Precaution Adoption Process Model
+    zh: 預防措施採用歷程模式
+    field: 風險傳播
+    desc: Weinstein 與 Sandman（1992）的階段理論，把從不知情到完成預防行動分為七階段：未察覺、察覺但未投入、投入考慮、決定不行動、決定行動、行動、維持。各階段障礙不同：由察覺到投入需相信自己有風險，決定行動取決於易感性、嚴重度、效能與他人行為，由決定到行動受操作障礙影響；訊息與階段相符最能推進。
+    edges:
+    - [Hazard Awareness, Perceived Susceptibility, +]
+    - [Perceived Susceptibility, Decision to Act, +]
+    - [Perceived Severity, Decision to Act, +]
+    - [Response Efficacy, Decision to Act, +]
+    - [Social Norm, Decision to Act, +]
+    - [Decision to Act, Protective Action, +]
+    - [Perceived Barriers, Protective Action, '-']
+    - [Perceived Cost, Protective Action, '-']
+    - [Stage-Matched Message, Decision to Act, +]
+    - [Stage-Matched Message, Protective Action, +]
+    refs:
+    - {title: 'Weinstein & Sandman (1992) A model of the precaution adoption process: Evidence from home radon testing, Health
+        Psychology 11(3):170–180', url: 'https://www.psandman.com/articles/PAPM.pdf'}
+    - {title: 'Weinstein, Lyon, Sandman & Cuite (1998) Experimental evidence for stages of health behavior change: The precaution
+        adoption process model applied to home radon testing, Health Psychology 17:445–453', url: 'https://www.researchwithrutgers.org/en/publications/experimental-evidence-for-stages-of-health-behavior-change-the-pr/'}
+    - {title: 'Sandman: The Precaution Adoption Process Model (summary page)', url: 'https://www.psandman.com/articles/stages.htm'}
+    enrich_notes: 階段定義與各階段障礙來自 Weinstein & Sandman 1992；Hazard Awareness → Perceived Susceptibility 對應第 1–3 階段（察覺到投入需相信個人有風險）。Stage-Matched
+      Message 的兩條邊來自 Weinstein 等 1998 的氡氣檢測實驗：風險資訊推進「決定行動」、操作資訊推進「實際檢測」，資訊與階段不符則無效。Perceived Barriers 與 Perceived Cost 代表第
+      5→6 階段的具體操作障礙。階段本身在工具中以 Decision to Act 與 Protective Action 兩個節點簡化。
+  Transtheoretical Model:
+    abbr: TTM
+    name: Transtheoretical Model
+    zh: 跨理論模式（改變階段）
+    field: 風險傳播
+    desc: Prochaska 與 DiClemente（1983）提出、Prochaska 與 Velicer（1997）整理。行為改變依序經歷無意圖、意圖、準備、行動、維持、終止六階段，由十項改變歷程推進（前期靠意識覺醒等經驗性歷程，後期靠刺激控制等行為性歷程）。決策平衡（利大於弊）與自我效能隨階段升高、誘惑下降。
+    edges:
+    - [Perceived Pros of Change, Stage of Change, +]
+    - [Perceived Cons of Change, Stage of Change, '-']
+    - [Self-Efficacy, Stage of Change, +]
+    - [Temptation, Stage of Change, '-']
+    - [Experiential Processes of Change, Stage of Change, +]
+    - [Behavioral Processes of Change, Stage of Change, +]
+    - [Stage-Matched Message, Stage of Change, +]
+    - [Stage of Change, Self-Efficacy, +]
+    - [Stage of Change, Behavior Change, +]
+    refs:
+    - {title: 'Prochaska & Velicer (1997) The transtheoretical model of health behavior change, American Journal of Health
+        Promotion 12(1):38–48', url: 'https://digitalcommons.uri.edu/psy_facpubs/500'}
+    - {title: 'University of Rhode Island Cancer Prevention Research Center: Transtheoretical Model overview', url: 'https://web.uri.edu/cprc/transtheoretical-model/overview/'}
+    - {title: 'UMBC HABITS Lab: About the TTM', url: 'https://habitslab.umbc.edu/the-model/'}
+    - {title: Prochaska & Velicer (1997) DOI 10.4278/0890-1171-12.1.38, url: 'https://doi.org/10.4278/0890-1171-12.1.38'}
+    enrich_notes: 決策平衡（利／弊）、自我效能／誘惑、十項改變歷程與六階段的關係取自 Prochaska & Velicer 1997；「利在前期上升、弊在後期下降」「自我效能隨階段升高」在工具中以雙向邊（Self-Efficacy
+      ↔ Stage of Change）簡化。經驗性歷程主要作用於前期、行為性歷程作用於後期，此時序差異無法用符號表達，兩者皆記為正向。Stage-Matched Message → Stage of Change 來自同文對階段相符介入的回顧。
+  Situational Theory of Problem Solving:
+    abbr: STOPS
+    name: Situational Theory of Problem Solving
+    zh: 問題解決情境理論
+    field: 風險傳播
+    desc: Kim 與 Grunig（2011）將公眾情境理論一般化。問題認知、涉入認知提高、限制認知降低個人在問題解決上的情境動機，情境動機再驅動六種溝通行動：資訊尋求與注意（獲取）、轉傳與分享（傳遞）、防堵與允許（選擇）；先前經驗形成的參照準則直接影響資訊的選擇與傳遞。常用於辨識風險議題上的活躍公眾。
+    edges:
+    - [Problem Recognition, Situational Motivation in Problem Solving, +]
+    - [Involvement, Situational Motivation in Problem Solving, +]
+    - [Constraint Recognition, Situational Motivation in Problem Solving, '-']
+    - [Situational Motivation in Problem Solving, Information Search Extent, +]
+    - [Situational Motivation in Problem Solving, Information Forwarding, +]
+    - [Situational Motivation in Problem Solving, Information Forefending, +]
+    - [Referent Criterion, Information Search Extent, +]
+    - [Referent Criterion, Information Forwarding, +]
+    - [Referent Criterion, Information Forefending, +]
+    refs:
+    - {title: 'Kim & Grunig (2011) Problem solving and communicative action: A situational theory of problem solving, Journal
+        of Communication 61(1):120–149', url: 'https://doi.org/10.1111/j.1460-2466.2010.01529.x'}
+    - {title: 'Encyclopedia of Public Relations: Situational Theory of Problem Solving', url: 'https://sk.sagepub.com/ency/edvol/embed/encyclopedia-of-public-relations-2e/chpt/situational-theory-problem-solving'}
+    - {title: 'Wikipedia: Situational theory of problem solving', url: 'https://en.wikipedia.org/wiki/Situational_theory_of_problem_solving'}
+    - {title: 'Kim (2006) Communicant activeness, cognitive entrepreneurship, and a situational theory of problem solving
+        (dissertation, University of Maryland)', url: 'https://drum.lib.umd.edu/items/c100cb8f-8b20-4b06-9ca3-0d425fc93b20'}
+    enrich_notes: 三項知覺前因 → 情境動機 → 溝通行動的中介結構與參照準則的直接效果來自 Kim & Grunig 2011 圖 1。Involvement 沿用既有變數名代表涉入認知。六種溝通行動在工具中以三個節點代表（Information
+      Search Extent＝尋求與注意、Information Forwarding＝轉傳與分享、Information Forefending＝防堵與允許），原典將六者合成「問題解決的溝通行動」（CAPS）二階構念。
+  Terror Management Theory:
+    abbr: TMT
+    name: Terror Management Theory
+    zh: 恐懼管理理論
+    field: 風險傳播
+    desc: Greenberg、Pyszczynski 與 Solomon（1986）依 Becker 的死亡否認論提出。人意識到必死而生的焦慮靠文化世界觀與自尊兩道緩衝管理。死亡顯著性被喚起後，死亡念頭可及性升高，人會更強烈捍衛世界觀、偏袒內團體、貶抑外團體並追求自尊；自尊高者緩衝強、防衛弱。。
+    edges:
+    - [Mortality Salience, Death-Thought Accessibility, +]
+    - [Death-Thought Accessibility, Worldview Defense, +]
+    - [Mortality Salience, Worldview Defense, +]
+    - [Mortality Salience, In-group Favoritism, +]
+    - [Mortality Salience, Out-group Derogation, +]
+    - [Mortality Salience, Self-Enhancement Motivation, +]
+    - [Worldview Defense, Anxiety, '-']
+    - [Self-Esteem, Anxiety, '-']
+    - [Self-Esteem, Mortality Salience -> Worldview Defense, m]
+    - [Time Delay, Mortality Salience -> Worldview Defense, m]
+    refs:
+    - {title: 'Greenberg, Pyszczynski & Solomon (1986) The causes and consequences of a need for self-esteem: A terror management
+        theory, in Public Self and Private Self, pp. 189–212', url: 'https://doi.org/10.1007/978-1-4613-9564-5_10'}
+    - {title: 'Burke, Martens & Faucher (2010) Two decades of terror management theory: A meta-analysis of mortality salience
+        research, Personality and Social Psychology Review 14(2):155–195', url: 'https://journals.sagepub.com/doi/10.1177/1088868309352321'}
+    - {title: 'Harmon-Jones et al. (1997) Terror management theory and self-esteem: Evidence that increased self-esteem reduces
+        mortality salience effects, JPSP 72:24–36', url: 'https://experts.arizona.edu/en/publications/terror-management-theory-and-self-esteem-evidence-that-increased--2/'}
+    - {title: 'Schindler et al. (2023) Do salient social norms moderate mortality salience effects? A (challenging) meta-analysis',
+      url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10115940/'}
+    enrich_notes: 死亡顯著性假說（MS → 世界觀防衛、自尊追求）與雙緩衝（世界觀、自尊 → 焦慮降低）來自 1986 原典與後續理論陳述；In-group Favoritism、Out-group Derogation 為世界觀防衛的常見操作化。Self-Esteem
+      的調節來自 Harmon-Jones 等 1997；Time Delay 的調節（遠端防衛需在延遲後出現）來自雙歷程模型的實驗程序。Burke 等 2010 統合 277 個實驗得 r=.35，但 Schindler 等 2023
+      校正出版偏誤後部分估計不顯著、另有多組直接重製失敗，效果大小應視為爭議中。
+  Haddon Matrix:
+    abbr: HaddonM
+    name: Haddon Matrix
+    zh: 哈登矩陣
+    field: 交通安全
+    desc: Haddon（1970／1980）提出，將傷害事件拆成事故前、事故中、事故後三個階段，交叉人（宿主）、車輛（媒介）、環境三類因素，形成 3×3 的傷害流行病學矩陣。核心主張是傷害來自超過人體耐受度的能量交換，每一格都是可介入的預防點：事故前因素決定事故發生機率，事故中因素決定傷害嚴重度，事故後因素決定存活與後果。
+    edges:
+    - [Alcohol Impairment, Crash Risk, +]
+    - [Sleepiness, Crash Risk, +]
+    - [Vehicle Maintenance, Crash Risk, '-']
+    - [Road Design Safety, Crash Risk, '-']
+    - [Speed Limit, Crash Risk, '-']
+    - [Seat Belt Use, Injury Severity, '-']
+    - [Vehicle Crashworthiness, Injury Severity, '-']
+    - [Roadside Hazard, Injury Severity, +]
+    - [Crash Risk, Injury Severity, +]
+    - [Emergency Medical Response, Fatality Risk, '-']
+    - [Injury Severity, Fatality Risk, +]
+    refs:
+    - {title: 'Haddon (1980) Advances in the epidemiology of injuries as a basis for public policy, Public Health Reports
+        95(5) — CDC 重印', url: 'https://stacks.cdc.gov/view/cdc/65681/cdc_65681_DS1.pdf'}
+    - {title: CDC MMWR Supplement (2011) 說明 Haddon Matrix 的 phase-factor 結構, url: 'https://www.cdc.gov/mmwr/preview/mmwrhtml/su6004a13.htm'}
+    - {title: 'Runyan (1998/2015) Using the Haddon matrix: introducing the third dimension, Injury Prevention 21(2)', url: 'https://injuryprevention.bmj.com/content/21/2/131'}
+    - {title: 'Wikipedia: Haddon Matrix', url: 'https://en.wikipedia.org/wiki/Haddon_Matrix'}
+    enrich_notes: 矩陣原典是分類框架而非因果模型，邊是依 Haddon 1980 與 CDC 的教科書範例（事故前：酒精、疲勞、煞車、道路、速限；事故中：安全帶、車體耐撞、路側硬物；事故後：緊急醫療）轉成「格內因素→事故機率／傷害嚴重度／死亡」的通行實證版本。Crash
+      Risk→Injury Severity 這條代表階段遞移（有事故才有傷害），非矩陣原文。
+  Risk Homeostasis Theory:
+    abbr: RHT
+    name: Risk Homeostasis Theory
+    zh: 風險恆定理論
+    field: 交通安全
+    desc: Wilde（1982）提出：每個人心中有一個「目標風險」水準，由冒險與謹慎行為各自的預期效益與成本決定；駕駛人持續比較知覺風險與目標風險，差距一出現就調整行為。安全措施若只降低知覺風險而不動目標風險，行為會補償回去，整體事故率長期不變；唯有改變目標風險（例如改變冒險的效益與成本）才能降低事故。
+    edges:
+    - [Perceived Reward, Target Risk, +]
+    - [Perceived Cost, Target Risk, '-']
+    - [Safety Measure Introduction, Perceived Risk, '-']
+    - [Perceived Risk, Risky Driving, '-']
+    - [Target Risk, Risky Driving, +]
+    - [Risky Driving, Crash Risk, +]
+    - [Crash Risk, Perceived Risk, +]
+    - [Safety Measure Introduction, Crash Risk, '-']
+    - [Target Risk, Safety Measure Introduction -> Crash Risk, m]
+    refs:
+    - {title: 'Wilde (1982) The theory of risk homeostasis: implications for safety and health, Risk Analysis 2(4) — RePEc
+        摘要', url: 'https://ideas.repec.org/a/wly/riskan/v2y1982i4p209-225.html'}
+    - {title: 'SWOV: Does risk homoeostasis theory have implications for road safety? (Wilde 2002 BMJ 辯論)', url: 'https://swov.nl/en/publicatie/does-risk-homoeostasis-theory-have-implications-road-safety'}
+    - {title: 'Hoyes, Dorn, Desmond & Taylor (1996) Risk homeostasis theory: a study of intrinsic compensation, Safety Science',
+      url: 'https://bura.brunel.ac.uk/bitstream/2438/1808/1/Risk_homeostasis_theory_A_study_of_intrinsic_compensation_Hoyes_et_al.pdf'}
+    - {title: 'ILO Encyclopaedia: Accident models — risk homeostasis', url: 'https://iloencyclopaedia.org/part-viii-12633/accident-prevention/item/896-accident-models-risk-homeostasis'}
+    enrich_notes: Perceived Reward／Perceived Cost 對應 Wilde 的四個效用（冒險的利益與成本、謹慎的利益與成本），此處合併為冒險行為的知覺報酬與知覺成本。Crash Risk→Perceived
+      Risk 是恆定迴圈的回饋邊。調節邊表示安全措施對事故的淨效果取決於目標風險是否同時改變，是理論核心預測而非實證估計；Hoyes 等人的模擬研究只找到部分補償。
+  Peltzman Effect:
+    abbr: Peltzman
+    name: Peltzman Effect
+    zh: 佩爾茲曼效應（風險補償）
+    field: 交通安全
+    desc: Peltzman（1975）分析美國汽車安全法規，主張強制安全配備降低了每次事故對駕駛人的預期成本，駕駛人因此開得更快、更不小心，抵銷工程上預估的減死效果，並把風險轉嫁給行人等車外使用者。後續實證普遍發現補償存在但通常不到直接效果的一半；風險補償（risk
+      compensation）成為安全措施行為反應的通稱。
+    edges:
+    - [Regulation, Vehicle Crashworthiness, +]
+    - [Vehicle Crashworthiness, Injury Severity, '-']
+    - [Vehicle Crashworthiness, Perceived Cost, '-']
+    - [Perceived Cost, Risky Driving, '-']
+    - [Vehicle Crashworthiness, Perceived Risk, '-']
+    - [Perceived Risk, Risky Driving, '-']
+    - [Risky Driving, Speed Choice, +]
+    - [Risky Driving, Crash Risk, +]
+    - [Risky Driving, Non-Occupant Fatalities, +]
+    refs:
+    - {title: 'Peltzman (1975) The effects of automobile safety regulation, Journal of Political Economy 83(4) — RePEc', url: 'https://ideas.repec.org/a/ucp/jpolec/v83y1975i4p677-725.html'}
+    - {title: TRID 摘要：Effects of automobile safety regulation, url: 'https://trid.trb.org/View/33962'}
+    - {title: 'Wikipedia: Risk compensation（含 Peltzman effect 與後續實證整理）', url: 'https://en.wikipedia.org/wiki/Risk_compensation'}
+    - {title: 義大利點數駕照制度研究：安全帶違規與事故下降但車外死亡上升, url: 'https://econpapers.repec.org/RePEc:usi:wpaper:631'}
+    enrich_notes: Peltzman 原典用經濟學語言（事故的預期成本下降→駕駛強度上升）；Perceived Risk 那條是後來風險補償文獻的心理學版本，兩條並列。Non-Occupant Fatalities 來自原典對行人死亡上升的發現，義大利研究再現同一模式。Regulation
+      沿用既有變數。
+  Zero-Risk Theory:
+    abbr: ZRT
+    name: Zero-Risk Theory
+    zh: 零風險理論
+    field: 交通安全
+    desc: Näätänen 與 Summala（1974／1976）主張駕駛人多數時候主觀上感覺不到風險：行為由加速動機（趕時間、享樂、速度本身）推動，只有當安全邊際縮到某個門檻以下、主觀風險監視器被觸發時才會煞車或退讓。經驗讓門檻逐漸上移、安全邊際逐漸縮短，道路與車輛的改善容易被轉換成更高速度，因此速限是安全工作的必要條件。
+    edges:
+    - [Time Pressure, Speed Choice, +]
+    - [Hedonic Motivation, Speed Choice, +]
+    - [Speed Choice, Safety Margin, '-']
+    - [Safety Margin, Perceived Risk, '-']
+    - [Perceived Risk, Speed Choice, '-']
+    - [Driving Experience, Perceived Risk, '-']
+    - [Road Design Safety, Speed Choice, +]
+    - [Speed Limit, Speed Choice, '-']
+    - [Safety Margin, Crash Risk, '-']
+    - [Perceived Risk, Avoidance Behavior, +]
+    refs:
+    - {title: 'Summala (1988) Risk control is not risk adjustment: the zero-risk theory of driver behaviour and its implications,
+        Ergonomics — TRID', url: 'https://trid.trb.org/View/294630'}
+    - {title: Näätänen & Summala 零風險模型摘要（TRID）, url: 'https://trid.trb.org/View/296811'}
+    - {title: 'SWOV: Zero risk theory and overtaking decisions', url: 'https://swov.nl/nl/publicatie/zero-risk-theory-and-overtaking-decisions'}
+    - {title: 'SWOV D-91-02: Reference frame analysis of driver risk models', url: 'https://swov.nl/system/files/publication-downloads/d-91-02.pdf'}
+    enrich_notes: Time Pressure 與 Hedonic Motivation 對應原典的「加速動機」（excitatory motives）；Perceived Risk 在此代表「主觀風險監視器」的輸出，平時接近零，一被觸發就以減速或退讓（Avoidance
+      Behavior）消除風險感。Driving Experience→Perceived Risk 負向對應「恐懼門檻隨經驗上移」。Road Design Safety→Speed Choice 正向是 Summala 1988 的核心政策推論（改善被轉換成速度）。
+  Task-Capability Interface Model:
+    abbr: TCI
+    name: Task-Capability Interface Model
+    zh: 任務－能力介面模型
+    field: 交通安全
+    desc: Fuller（2005）提出：駕駛人要維持的不是統計上的碰撞風險，而是一個可接受的「任務難度」。難度由任務需求（道路、交通、車輛、自己選的速度）與駕駛能力（訓練經驗形成的勝任度，再被疲勞、分心、酒精等人因削弱）的落差決定；需求超過能力就失控。速度選擇是駕駛人把難度控制在範圍內的主要手段，知覺風險幾乎與難度評分同步。
+    edges:
+    - [Driving Experience, Driver Capability, +]
+    - [Sleepiness, Driver Capability, '-']
+    - [Distraction, Driver Capability, '-']
+    - [Alcohol Impairment, Driver Capability, '-']
+    - [Speed Choice, Task Demand, +]
+    - [Road Design Safety, Task Demand, '-']
+    - [Task Demand, Task Difficulty, +]
+    - [Driver Capability, Task Difficulty, '-']
+    - [Task Difficulty, Perceived Risk, +]
+    - [Perceived Risk, Speed Choice, '-']
+    - [Task Difficulty, Loss of Control, +]
+    - [Loss of Control, Crash Risk, +]
+    refs:
+    - {title: 'Fuller (2005) Towards a general theory of driver behaviour, Accident Analysis & Prevention 37 — SWOV 摘要', url: 'https://swov.nl/nl/publicatie/towards-general-theory-driver-behaviour'}
+    - {title: 'Fuller: Control and affect — motivational aspects of driver decision-making（SWOV）', url: 'https://swov.nl/en/publicatie/control-and-affect-motivational-aspects-driver-decision-making'}
+    - {title: Kinnear (CIHT) 以 TCI 模型說明駕駛行為與風險感, url: 'https://www.ciht.org.uk/media/7846/neale_kinnear.pdf'}
+    enrich_notes: Task Difficulty 是「需求－能力」落差的代理變數；原典寫成當需求超過能力時失控。Perceived Risk→Speed Choice 負向是回饋迴圈（難度上升→感覺風險→減速）。Road Design
+      Safety 代表環境需求（道路複雜度、能見度），此處以負向表示越安全的道路需求越低。只取得摘要與二手引述。
+  Threat-Avoidance Model:
+    abbr: TAvM
+    name: Threat-Avoidance Model
+    zh: 威脅迴避模型
+    field: 交通安全
+    desc: Fuller（1984）以學習理論整合風險恆定與零風險兩派：駕駛是一連串迴避嫌惡事件的行為。遇到預告威脅的辨別刺激時，駕駛人可以做預期性迴避（減速、拉開距離）或不迴避，選哪一邊取決於兩種反應各自的獎懲後果；迴避成功移除威脅是負增強，久而久之形成習慣；但不迴避也常得到省時等獎賞而沒事，所以冒險也會被增強。
+    edges:
+    - [Threat Cue Salience, Perceived Threat, +]
+    - [Hazard Perception, Perceived Threat, +]
+    - [Driving Experience, Hazard Perception, +]
+    - [Perceived Threat, Avoidance Behavior, +]
+    - [Perceived Reward, Avoidance Behavior, '-']
+    - [Sanction Certainty, Avoidance Behavior, +]
+    - [Avoidance Behavior, Reinforcement, +]
+    - [Reinforcement, Habit, +]
+    - [Habit, Avoidance Behavior, +]
+    - [Avoidance Behavior, Crash Risk, '-']
+    refs:
+    - {title: 'Fuller (1984) A conceptualization of driving behaviour as threat avoidance, Ergonomics 27(11) — TRID', url: 'https://trid.trb.org/View/216402'}
+    - {title: 'SWOV: Predicting what a driver will do — implications of the threat-avoidance model', url: 'https://swov.nl/en/publicatie/predicting-what-driver-will-do-implications-threat-avoidance-model-driver-behaviour'}
+    - {title: Van der Molen & Bötticher (1987) 對三個動機模型的評述 — TRID, url: 'https://trid.trb.org/View/284991'}
+    enrich_notes: Perceived Reward 代表「不迴避」的報酬（省時、刺激）；Sanction Certainty 代表不迴避的懲罰後果，對應原典的 punishment contingency。Reinforcement→Habit→Avoidance
+      是負增強學習迴圈。只取得摘要與二手評述，未見 1984 原文的正式圖。
+  Driver Behaviour Questionnaire Framework:
+    abbr: DBQ
+    name: Driver Behaviour Questionnaire Framework
+    zh: 駕駛行為問卷架構（失誤、疏忽、違規）
+    field: 交通安全
+    desc: Reason 等人（1990）用主成分分析把異常駕駛行為分成三類：違規（刻意偏離安全規範）、失誤（判斷或觀察錯誤）、疏忽（注意力與記憶失靈），三者有不同的心理根源與人口分布：違規隨年齡下降、男性較多且與里程正相關；疏忽女性與年長者較多。後續統合分析顯示違規與事故的關聯（r
+      約 .13）略高於失誤（r 約 .09），違規也與實測車速相關。
+    edges:
+    - [Age, Traffic Violation, '-']
+    - [Gender, Traffic Violation, +]
+    - [Driving Exposure, Traffic Violation, +]
+    - [Age, Driving Lapses, +]
+    - [Traffic Violation, Speed Choice, +]
+    - [Traffic Violation, Crash Involvement, +]
+    - [Driving Errors, Crash Involvement, +]
+    - [Driving Lapses, Crash Involvement, +]
+    refs:
+    - {title: 'de Winter & Dodou (2010) The Driver Behaviour Questionnaire as a predictor of accidents: a meta-analysis —
+        SWOV', url: 'https://swov.nl/nl/publicatie/driver-behaviour-questionnaire-predictor-accidents-meta-analysis'}
+    - {title: 'de Winter, Dodou & Stanton (2015) 更新統合分析（Ergonomics）— White Rose 全文', url: 'https://eprints.whiterose.ac.uk/81393/1/WRRO_81393.pdf'}
+    - {title: 'Parker, Reason, Manstead & Stradling (1995) Driving errors, driving violations and accident involvement — SWOV',
+      url: 'https://swov.nl/en/publicatie/normal-behavior-and-traffic-safety-violations-errors-lapses-and-crashes'}
+    - {title: 'Drivers'' violations, errors, lapses and crash involvement: international comparisons — SWOV', url: 'https://swov.nl/nl/publicatie/drivers-violations-errors-lapses-and-crash-involvement-international-comparisons'}
+    enrich_notes: Gender 正向以「男性」為高值編碼（Reason 1990：男性違規較多）。Age→Driving Lapses 正向來自原典（年長者疏忽較多）。Violation→Crash 與 Error→Crash
+      的係數取自 de Winter 等人的統合分析；Lapses→Crash 是原典與單篇研究的弱關聯，統合分析未單獨估計。
+  Prototype Willingness Model:
+    abbr: PWM
+    name: Prototype Willingness Model
+    zh: 原型－意願模型
+    field: 交通安全
+    desc: Gibbons 與 Gerrard（1995；Gerrard 等 2008）提出青少年健康風險行為的雙歷程模型：理性路徑經由行為意圖，社會反應路徑經由行為意願。意願是對風險機會的開放程度，不經深思，由「做這種事的典型人物」的原型好感度與自我相似度決定；態度、主觀規範與過去行為同時餵給兩條路徑。年紀越輕、情境越社會化（如同儕在車上），意願路徑越強。
+    edges:
+    - [Attitude, Behavioral Intention, +]
+    - [Subjective Norm, Behavioral Intention, +]
+    - [Attitude, Behavioral Willingness, +]
+    - [Subjective Norm, Behavioral Willingness, +]
+    - [Prototype Favorability, Behavioral Willingness, +]
+    - [Perceived Similarity, Behavioral Willingness, +]
+    - [Prior Behavior Frequency, Behavioral Intention, +]
+    - [Prior Behavior Frequency, Behavioral Willingness, +]
+    - [Behavioral Intention, Behavior, +]
+    - [Behavioral Willingness, Behavior, +]
+    - [Age, Behavioral Willingness -> Behavior, m]
+    - [Peer Passenger Presence, Behavioral Willingness -> Behavior, m]
+    refs:
+    - {title: 'Gerrard, Gibbons, Houlihan, Stock & Pomery (2008) A dual-process approach to health risk decision making: the
+        prototype willingness model, Developmental Review 28 — 被引紀錄', url: 'https://www.cambridge.org/core/journals/risk-decision-and-policy/article/abs/drinking-and-driving-a-prospective-assessment-of-the-relation-between-risk-cognitions-and-risk-behavior/420757D175A9C01693AFA02BC088F176'}
+    - {title: PWM 模型結構說明與應用（PMC 開放全文）, url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4884465'}
+    - {title: Branley & Covey (2018) PWM 預測風險網路行為，Computers in Human Behavior — Durham 典藏, url: 'https://durham-repository.worktribe.com/OutputFile/1344556'}
+    - {title: 'Wikiversity: Prototype willingness model 概述', url: 'https://en.wikiversity.org/wiki/Motivation_and_emotion/Book/2019/Prototype_willingness_model'}
+    enrich_notes: Perceived Similarity 沿用既有變數，代表「自我與原型的相似度」。Age 調節為年紀越輕意願路徑越強（Gerrard 2008）。Peer Passenger Presence 調節是把原典的「社會情境」具體成交通場景的同儕乘客，屬應用延伸。
+  Sensation Seeking and Risky Driving:
+    abbr: SSRD
+    name: Sensation Seeking and Risky Driving
+    zh: 感官刺激尋求與風險駕駛
+    field: 交通安全
+    desc: Zuckerman 的感官刺激尋求（追求新奇強烈經驗並願意為此冒險的人格特質）是風險駕駛最穩定的人格預測因子。Jonah（1997）回顧 40 篇研究，絕大多數為正相關，相關約 .30–.40，以「追求驚險與冒險」分量表最強；此特質在青春期後期達到高峰、男性高於女性，並會調節酒精與風險知覺對駕駛的影響。
+    edges:
+    - [Age, Sensation Seeking, '-']
+    - [Gender, Sensation Seeking, +]
+    - [Sensation Seeking, Risky Driving, +]
+    - [Sensation Seeking, Speed Choice, +]
+    - [Sensation Seeking, Drink Driving, +]
+    - [Sensation Seeking, Seat Belt Use, '-']
+    - [Sensation Seeking, Perceived Risk, '-']
+    - [Perceived Risk, Risky Driving, '-']
+    - [Risky Driving, Crash Involvement, +]
+    - [Sensation Seeking, Alcohol Impairment -> Risky Driving, m]
+    refs:
+    - {title: 'Jonah (1997) Sensation seeking and risky driving: a review and synthesis of the literature, Accident Analysis
+        & Prevention 29(5) — SWOV', url: 'https://swov.nl/en/publicatie/sensation-seeking-and-risky-driving-review-and-synthesis-literature'}
+    - {title: Jonah 1997 摘要（IAOR）, url: 'https://iaorifors.com/paper/22757'}
+    - {title: Zuckerman 感官刺激尋求與風險駕駛研究（Frontiers in Psychology 2017）, url: 'https://www.frontiersin.org/articles/10.3389/fpsyg.2017.02126/full'}
+    - {title: Jonah et al. 在 US DOT 1997 研討會的 Sensation seeking and risky driving 章節, url: 'https://rosap.ntl.bts.gov/view/dot/1683/dot_1683_DS1.pdf'}
+    enrich_notes: Gender 以男性為高值。Sensation Seeking→Perceived Risk 負向是 Jonah 提出的兩個中介假設之一（高分者因自信而低估路上風險）。調節邊來自 Jonah 對酒精影響受 SS
+      調節的整理。各條皆為跨研究通行版本，非單一原典圖。
+  Young Driver Age-Experience Model:
+    abbr: GDL
+    name: Young Driver Age-Experience Model
+    zh: 年輕駕駛的年齡－經驗模型（分級駕照論據）
+    field: 交通安全
+    desc: 分級駕照（Graduated Driver Licensing）的理論基礎：新手事故風險同時來自年齡（成熟度、感官刺激尋求）與經驗不足（危險感知尚未建立），而且在領照後前六個月下降最快（Mayhew 等 2003）。夜間駕駛與載同齡乘客會讓風險倍增（Chen
+      等 2000）。GDL 透過延長監督練習期、限制夜駕與乘客，讓學習在較寬容的環境發生；Cochrane 回顧 34 篇研究一致顯示事故下降。
+    edges:
+    - [Age, Crash Risk, '-']
+    - [Driving Experience, Crash Risk, '-']
+    - [Driving Experience, Hazard Perception, +]
+    - [Hazard Perception, Crash Risk, '-']
+    - [Night Driving, Crash Risk, +]
+    - [Peer Passenger Presence, Crash Risk, +]
+    - [Driving Exposure, Crash Involvement, +]
+    - [Crash Risk, Crash Involvement, +]
+    - [Licensing Restrictions, Night Driving, '-']
+    - [Licensing Restrictions, Peer Passenger Presence, '-']
+    - [Licensing Restrictions, Driving Exposure, '-']
+    - [Supervised Practice Duration, Driving Experience, +]
+    refs:
+    - {title: 'Cochrane Review CD003300: Graduated driver licensing for reducing motor vehicle crashes among young drivers',
+      url: 'https://www.cochrane.org/evidence/CD003300_graduated-driver-licensing-reducing-motor-vehicle-crashes-among-young-drivers'}
+    - {title: 'Mayhew, Simpson & Pak (2003) Changes in collision rates among novice drivers during the first months of driving,
+        AAP 35 — SWOV', url: 'https://swov.nl/en/publicatie/changes-collision-rates-among-novice-drivers-during-first-months-driving'}
+    - {title: 'Chen, Baker, Braver & Li (2000) Carrying passengers as a risk factor for crashes fatal to 16- and 17-year-old
+        drivers, JAMA 283 — SWOV', url: 'https://swov.nl/en/publicatie/carrying-passengers-risk-factor-crashes-fatal-16-and-17-year-old-drivers'}
+    - {title: 'McKnight & Peck: Graduated driver licensing: what works? — TRID', url: 'https://trid.trb.org/View/727122'}
+    enrich_notes: Age→Crash Risk 負向指 16–17 歲最高、隨年齡下降（McCartt 等）。Crash Risk（每單位暴露的風險）與 Crash Involvement（實際事故數）分開，因為 GDL 同時透過降低風險與降低暴露起作用；Cochrane
+      回顧無法分辨哪個成分貢獻最大。
+  Hierarchical Model of Driving Behaviour:
+    abbr: GDE
+    name: Hierarchical Model of Driving Behaviour
+    zh: 駕駛行為階層模型（Michon／GDE 矩陣）
+    field: 交通安全
+    desc: Michon（1985）把駕駛拆成策略（行程規劃）、戰術（情境中的操縱決策）、操作（即時車輛控制）三層，正常駕駛是上層目標往下約束下層行動。Keskinen 與 Hatakka 等（2002）加上第四層「人生目標與生活技能」形成
+      GDE 矩陣，主張生活型態、價值、自我控制與自我評估能力才是年輕駕駛風險的根源，駕駛訓練應從車輛控制擴及高階的自我控制。
+    edges:
+    - [Personal Values, Life Goals and Lifestyle, +]
+    - [Life Goals and Lifestyle, Trip Goals and Context, +]
+    - [Trip Goals and Context, Traffic Situation Mastery, +]
+    - [Traffic Situation Mastery, Vehicle Control Performance, +]
+    - [Time Pressure, Speed Choice, +]
+    - [Sensation Seeking, Risky Driving, +]
+    - [Metacognitive Accuracy, Risky Driving, '-']
+    - [Driver Training Scope, Metacognitive Accuracy, +]
+    - [Vehicle Control Performance, Crash Risk, '-']
+    - [Risky Driving, Crash Risk, +]
+    - [Speed Choice, Crash Risk, +]
+    refs:
+    - {title: 'Hatakka, Keskinen, Gregersen, Glad & Hernetkoski (2002) From control of the vehicle to personal self-control,
+        Transportation Research Part F 5(3)', url: 'https://eurekamag.com/research/084/178/084178587.php'}
+    - {title: Keskinen (2015) GDE Matrix 簡報（Cerema）, url: 'https://cerema.fr/fr/system/files/documents/2017/11/5-Keskinen_Esko_GDE_Matrix_cle1cd69b.pdf'}
+    - {title: Michon 三層模型在駕駛模擬研究中的說明（Iowa DSC 2007）, url: 'https://www.nads-sc.uiowa.edu/dscna/2007/papers/Section%206A%20-%20Training/Brezillon.pdf'}
+    - {title: 'University of Twente: Behavioural models of driving（Michon top-down／bottom-up）', url: 'https://www.utwente.nl/en/et/cem/research/tem/research/finished-projects/behavioural'}
+    enrich_notes: 階層本身是上層約束下層的「影響」而非統計效果，前四條邊依此轉成正向。Metacognitive Accuracy 沿用既有變數，代表 GDE 第三欄的自我評估能力；Driver Training Scope
+      指訓練是否涵蓋高階層。Time Pressure 與 Sensation Seeking 分別是 GDE 第二、第四層的風險增加因子範例。
+  Driver Distraction Model:
+    abbr: DDist
+    name: Driver Distraction Model
+    zh: 駕駛分心模型
+    field: 交通安全
+    desc: Regan、Hallett 與 Gordon（2011）把分心定義為注意力從安全駕駛關鍵活動轉向競爭活動，是駕駛不注意的一種來源。次要任務（尤其手機）造成視線離開路面、情境覺察下降與反應時間延長，進而提高事故與近似事故機率；駕駛人會以減速、拉大距離部分補償，但補償通常不足以抵銷反應延遲，且交通需求越高分心代價越大。
+    edges:
+    - [Mobile Phone Use While Driving, Distraction, +]
+    - [Distraction, Eyes-Off-Road Time, +]
+    - [Eyes-Off-Road Time, Crash Risk, +]
+    - [Distraction, Situation Awareness, '-']
+    - [Situation Awareness, Hazard Perception, +]
+    - [Hazard Perception, Crash Risk, '-']
+    - [Distraction, Reaction Time, +]
+    - [Reaction Time, Crash Risk, +]
+    - [Distraction, Lane Keeping Performance, '-']
+    - [Lane Keeping Performance, Crash Risk, '-']
+    - [Distraction, Speed Choice, '-']
+    - [Task Demand, Distraction -> Crash Risk, m]
+    refs:
+    - {title: 'Regan & Strayer (2014) Towards an understanding of driver inattention: taxonomy and theory（含 Regan et al. 2011
+        定義）— PMC', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4001671'}
+    - {title: 'Papantoniou, Papadimitriou & Yannis: A review of the impact of driver distraction（NTUA）', url: 'https://www.nrso.ntua.gr/geyannis/wp-content/uploads/geyannis-pc345.pdf'}
+    - {title: 'SWOV／ERSO 2023 thematic report: Driver distraction', url: 'https://swov.nl/sites/default/files/bestanden/downloads/2023_AS_Distraction-TR_ERSO.pdf'}
+    - {title: 'Beanland et al. (2013) Driver inattention and driver distraction in serious casualty crashes, AAP', url: 'https://researchportalplus.anu.edu.au/en/publications/driver-inattention-and-driver-distraction-in-serious-casualty-cra/'}
+    enrich_notes: Distraction 沿用既有變數。Reaction Time 正向表示反應時間變長。Distraction→Speed Choice 負向是補償行為（NTUA 回顧），同時指出補償不足。Situation
+      Awareness 這一環在回顧中證據較弱，為通行教科書版本。只取得 Regan 2011 的二手定義。
+  Driver Sleepiness and Crash Risk:
+    abbr: DSleep
+    name: Driver Sleepiness and Crash Risk
+    zh: 駕駛嗜睡與事故風險模型
+    field: 交通安全
+    desc: Åkerstedt 等人的睡眠研究將駕駛嗜睡歸因於三個過程：睡眠不足（前一晚睡眠時數）、清醒時間累積與晝夜節律低谷（凌晨二至五點），再加上駕駛時間本身。嗜睡延長反應時間、惡化車道維持，病例對照研究估計自覺嗜睡的事故勝算比約
+      8、凌晨駕駛約 5.6、前 24 小時睡不到五小時約 2.7；年輕男性在清晨事故中比例最高，酒精會放大嗜睡效應。
+    edges:
+    - [Sleep Duration, Sleepiness, '-']
+    - [Time Awake, Sleepiness, +]
+    - [Night Driving, Sleepiness, +]
+    - [Time on Task, Sleepiness, +]
+    - [Alcohol Impairment, Sleepiness, +]
+    - [Sleepiness, Reaction Time, +]
+    - [Sleepiness, Lane Keeping Performance, '-']
+    - [Sleepiness, Crash Risk, +]
+    - [Reaction Time, Crash Risk, +]
+    - [Lane Keeping Performance, Crash Risk, '-']
+    - [Age, Night Driving -> Crash Risk, m]
+    refs:
+    - {title: 'Connor et al. (2002) Driver sleepiness and risk of serious injury to car occupants: population based case control
+        study, BMJ — PMC', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC107904'}
+    - {title: 'Åkerstedt & Kecklund (2001) Age, gender and early morning highway accidents, J Sleep Res 10 — 著作清單', url: 'https://www2.ae-info.org/ae/User/Akerstedt_Torbj%C3%B6rn/Publications'}
+    - {title: Åkerstedt (2017) VTTI 疲勞研討會主題演講：late-night driving and sleepiness, url: 'https://www.vtti.vt.edu/PDFs/fatigue-2017/monday-am/keynote/Akerstedt.pdf'}
+    - {title: 'Martiniuk et al. (2013) Sleep-deprived young drivers and the risk for crash: the DRIVE study, JAMA Pediatrics',
+      url: 'https://jamanetwork.com/journals/jamapediatrics/fullarticle/1688678'}
+    enrich_notes: Night Driving→Sleepiness 對應晝夜節律低谷；Åkerstedt & Kecklund 2001 的年齡與性別結果只見書目，調節邊依其標題與二手摘要（年輕駕駛清晨事故比例最高）列入。勝算比來自
+      Connor 2002。
+  Power Model of Speed and Safety:
+    abbr: PowerM
+    name: Power Model of Speed and Safety
+    zh: 速度冪模型與安全系統（Vision Zero）
+    field: 交通安全
+    desc: Nilsson 由瑞典 1967–72 年速限變更推導：平均車速的相對變化以冪函數影響事故，死亡事故約為四次方、重傷約三次方、所有傷亡約二次方；Elvik 等（2004）統合 98 篇研究支持此模型，2013 年再修正為取決於初始速度的指數型。安全系統／Vision
+      Zero 把機制說成：碰撞速度決定動能，動能超過人體耐受度即致重傷或死亡，因此以速限、寬容的道路與車輛設計、事後救護把能量與後果壓在門檻以下。
+    edges:
+    - [Speed Limit, Mean Traffic Speed, '-']
+    - [Enforcement Intensity, Mean Traffic Speed, '-']
+    - [Mean Traffic Speed, Crash Risk, +]
+    - [Mean Traffic Speed, Impact Speed, +]
+    - [Impact Speed, Kinetic Energy, +]
+    - [Kinetic Energy, Injury Severity, +]
+    - [Impact Speed, Fatality Risk, +]
+    - [Injury Severity, Fatality Risk, +]
+    - [Vehicle Crashworthiness, Injury Severity, '-']
+    - [Road Design Safety, Crash Risk, '-']
+    - [Road Design Safety, Injury Severity, '-']
+    - [Emergency Medical Response, Fatality Risk, '-']
+    refs:
+    - {title: 'Elvik, Christensen & Amundsen (2004) Speed and road accidents: an evaluation of the Power Model, TØI report
+        740/2004', url: 'https://www.toi.no/publications/speed-and-road-accidents-an-evaluation-of-the-power-model-article17882-29.html'}
+    - {title: 'Elvik (2013) A re-parameterisation of the Power Model of the relationship between the speed of traffic and
+        the number of accidents and accident victims, AAP', url: 'https://toi.brage.unit.no/toi-xmlui/bitstream/11250/2602719/2/Elvik_10.1016_j.aap.2012.07.012.pdf'}
+    - {title: 'Rosén, Stigson & Sander: Literature review of pedestrian fatality risk as a function of car impact speed —
+        SWOV', url: 'https://swov.nl/en/publicatie/literature-review-pedestrian-fatality-risk-function-car-impact-speed'}
+    - {title: 'PIARC Road Safety Manual: The paradigm shift to Safe System（能量管理與人體耐受度）', url: 'https://roadsafety.piarc.org/en/strategic-global-perspective/key-developments/shift-safe-system'}
+    enrich_notes: Mean Traffic Speed→Crash Risk 與→Fatality Risk 的冪次（2 與 4）是模型的量化核心，圖中只保留方向。Impact Speed→Fatality Risk 以 Rosén
+      & Sander 的行人曲線佐證（30→50 km/h 死亡風險約五倍）。Kinetic Energy 一環來自 Safe System 說明（PIARC／FHWA），未找到單一原典。Cameron & Elvik 指出都市道路不適用原始冪次，屬限制條件。
+  Safety in Numbers:
+    abbr: SiN
+    name: Safety in Numbers
+    zh: 人多則安全效應
+    field: 交通安全
+    desc: Jacobsen（2003）比較 68 個加州城市、47 個丹麥城鎮與 14 國資料，發現步行與騎自行車量越大，每位步行者或騎士被機動車撞擊的機率越低，總事故數只以約 0.4 次方成長。他主張行人與騎士不會因人多而更小心，所以機制在駕駛人：行人越常出現，駕駛越預期他們存在、越減速讓行。後續
+      NHTSA 回顧視之為尚待因果驗證的理論，但跨資料集重複出現同一反比。
+    edges:
+    - [Walking and Cycling Volume, Motorist Expectancy of Pedestrians, +]
+    - [Motorist Expectancy of Pedestrians, Speed Choice, '-']
+    - [Motorist Expectancy of Pedestrians, Pedestrian Crash Risk, '-']
+    - [Walking and Cycling Volume, Pedestrian Crash Risk, '-']
+    - [Road Design Safety, Walking and Cycling Volume, +]
+    - [Road Design Safety, Pedestrian Crash Risk, '-']
+    - [Pedestrian Crash Risk, Perceived Risk, +]
+    - [Perceived Risk, Walking and Cycling Volume, '-']
+    refs:
+    - {title: 'Jacobsen (2003) Safety in numbers: more walkers and bicyclists, safer walking and bicycling, Injury Prevention
+        9 — PMC', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC1731007'}
+    - {title: Jacobsen 2003 全文（NACTO 典藏）, url: 'https://nacto.org/wp-content/uploads/2003_Jacobsen_Safety-In-Numbers-More-Walkers-and-Bicyclists-Safer-Walking-and-Bicycling.pdf'}
+    - {title: 'NHTSA (2022) Safety in Numbers: a literature review', url: 'https://rosap.ntl.bts.gov/view/dot/62563'}
+    - {title: 'Wikipedia: Safety in numbers（含批評）', url: 'https://en.wikipedia.org/wiki/Safety_in_numbers'}
+    enrich_notes: Pedestrian Crash Risk 指每位行人／騎士的被撞機率，不是總事故數。Motorist Expectancy 那條鏈是 Jacobsen 提出的行為適應機制，原文為推論；Road Design
+      Safety 與 Perceived Risk 兩條是 NHTSA 回顧整理的替代解釋（基礎建設與自我選擇），與原機制並列。
+  Driving Anger Model:
+    abbr: DAnger
+    name: Driving Anger Model
+    zh: 駕駛憤怒與攻擊駕駛模型
+    field: 交通安全
+    desc: Deffenbacher 等人以狀態－特質理論建立：特質駕駛憤怒（容易在開車時生氣的傾向）在被阻礙、被挑釁等情境下轉成狀態憤怒，再表現為攻擊駕駛與風險駕駛。高憤怒駕駛人里程相同卻通報更多攻擊、險些相撞與違規，模擬器中速度更高、碰撞時距更短、碰撞率兩倍；以建設性方式表達憤怒的駕駛人攻擊行為較少。特質憤怒與正式事故率的直接關聯不顯著，主要透過險些相撞與失控等中介。
+    edges:
+    - [Trait Driving Anger, Anger, +]
+    - [Driver Provocation, Anger, +]
+    - [Trait Driving Anger, Driver Provocation -> Anger, m]
+    - [Anger, Aggressive Driving, +]
+    - [Anger, Risky Driving, +]
+    - [Trait Driving Anger, Speed Choice, +]
+    - [Constructive Anger Expression, Aggressive Driving, '-']
+    - [Aggressive Driving, Near Miss, +]
+    - [Risky Driving, Near Miss, +]
+    - [Near Miss, Crash Involvement, +]
+    - [Risky Driving, Crash Involvement, +]
+    refs:
+    - {title: 'Deffenbacher, Lynch, Oetting & Yingling (2001) Driving anger: correlates and a test of state-trait theory,
+        Personality and Individual Differences — SWOV', url: 'https://swov.nl/en/publicatie/driving-anger-correlates-and-test-state-trait-theory'}
+    - {title: 'Deffenbacher, Deffenbacher, Lynch & Richards (2003) Anger, aggression, and risky behavior: a comparison of
+        high and low anger drivers, Behaviour Research and Therapy — SWOV', url: 'https://swov.nl/en/publicatie/anger-aggression-and-risky-behavior-comparison-high-and-low-anger-drivers'}
+    - {title: 'Deffenbacher et al. (2003) Anger, aggression, risky behavior, and crash-related outcomes in three groups of
+        drivers — SWOV', url: 'https://swov.nl/en/publicatie/anger-aggression-risky-behavior-and-crash-related-outcomes-three-groups-drivers'}
+    - {title: 'Deffenbacher et al.: Further evidence of reliability and validity for the Driving Anger Expression Inventory
+        — SWOV', url: 'https://swov.nl/en/publicatie/further-evidence-reliability-and-validity-driving-anger-expression-inventory'}
+    enrich_notes: Anger 沿用既有變數，代表狀態憤怒。調節邊是狀態－特質理論的核心（高特質者對挑釁反應更強）。Trait→Crash 的直接邊刻意不列，因 2001 研究未達顯著，改以 Near Miss 為中介；Risky
+      Driving→Crash Involvement 來自模擬器碰撞率。
+  Social Judgment Theory:
+    abbr: SJT
+    name: Social Judgment Theory
+    zh: 社會判斷理論
+    field: 傳播與態度
+    desc: Sherif 與 Hovland（1961）提出，Sherif、Sherif 與 Nebergall（1965）補上自我涉入。人以既有立場為錨，將訊息立場落點區分為接受域、拒絕域與不表態域；落在接受域的訊息被同化而更接近自己、落在拒絕域的被對比而推遠並引發迴力鏢效果。自我涉入愈高，拒絕域愈寬、不表態域愈窄，態度愈難改變；落在接受域邊緣的中度差距最能說服。
+    edges:
+    - [Involvement, Latitude of Rejection, +]
+    - [Involvement, Latitude of Noncommitment, '-']
+    - [Involvement, Attitude Change, '-']
+    - [Message Discrepancy, Attitude Change, +]
+    - [Latitude of Acceptance, Assimilation Effect, +]
+    - [Latitude of Rejection, Contrast Effect, +]
+    - [Assimilation Effect, Attitude Change, +]
+    - [Contrast Effect, Attitude Change, '-']
+    - [Latitude of Acceptance, Message Discrepancy -> Attitude Change, m]
+    - [Perceived Credibility, Latitude of Acceptance, +]
+    refs:
+    - {title: 'Sherif, Sherif & Nebergall (1965), Attitude and Attitude Change: The Social Judgment-Involvement Approach,
+        Saunders', url: 'https://find.library.upenn.edu/catalog/998199003503681'}
+    - {title: 'Sherif (1973), Personal Involvement, Social Judgment, and Action (Mead Project 全文)', url: 'https://brocku.ca/MeadProject/Sherif/Sherif_1973b.html'}
+    - {title: 'Griffin, A First Look at Communication Theory, Social Judgment Theory 章節資源', url: 'https://www.afirstlook.com/edition-11/theory-resources/by-type/keynames/Social-Judgment-Theory'}
+    - {title: Social judgment theory (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Social_judgment_theory'}
+    enrich_notes: 接受域／拒絕域／不表態域、同化與對比、自我涉入三條主線來自 Sherif 等（1965）與 Griffin 教科書整理；Message Discrepancy → Attitude Change 為倒 U 形，此處以正號表示落在接受域內的中度差距，並以
+      Latitude of Acceptance 當調節變數標示其邊界；來源可信度擴大接受域為 Hovland 等的實證延伸，非原典核心。自我涉入沿用既有變數 Involvement。
+  Yale Attitude Change Approach:
+    abbr: Yale
+    name: Yale Attitude Change Approach
+    zh: 耶魯態度改變取徑
+    field: 傳播與態度
+    desc: Hovland、Janis 與 Kelley（1953）在耶魯大學的說服研究計畫提出，把說服拆成「誰（來源）對誰（受眾）說了什麼（訊息）」三組因素，再經注意、理解、接受三道學習步驟影響態度改變。來源專業與可信賴度、吸引力，訊息的論證品質與單雙面呈現，受眾的自尊、智力與恐懼喚起，都是早期實驗操弄的變數；McGuire
+      後來把中段整理成接收與順從兩階段。
+    edges:
+    - [Source Expertise, Perceived Credibility, +]
+    - [Source Trustworthiness, Perceived Credibility, +]
+    - [Perceived Credibility, Attitude Change, +]
+    - [Source Attractiveness, Attitude Change, +]
+    - [Argument Quality, Attitude Change, +]
+    - [Attention, Comprehension, +]
+    - [Comprehension, Attitude Change, +]
+    - [Information Processing Ability, Comprehension, +]
+    - [Self-Esteem, Persuasibility, '-']
+    - [Persuasibility, Attitude Change, +]
+    - [Message Sidedness, Attitude Resistance, +]
+    - [Attitude Resistance, Attitude Change, '-']
+    refs:
+    - {title: 'Hovland & Weiss (1951), The Influence of Source Credibility on Communication Effectiveness, Public Opinion
+        Quarterly 15(4)', url: 'https://fbaum.unc.edu/teaching/articles/HovlandWeiss-POQ-1951.pdf'}
+    - {title: Communications Studies of Persuasion（eCampusOntario 開放教科書，Yale approach 章節）, url: 'https://ecampusontario.pressbooks.pub/persuasion/chapter/comms/'}
+    - {title: 'Attitudes and Persuasion: Persuasion（Lumen Learning 教科書）', url: 'https://content.one.lumenlearning.com/introductiontopsychology/chapter/persuasion/'}
+    enrich_notes: 來源→可信度→態度改變與吸引力、論證品質三條來自 Hovland 等（1953）與 Hovland & Weiss（1951）；注意→理解→接受的學習鏈來自耶魯取徑的訊息學習假設；自尊與可說服性（Janis
+      1954）、雙面訊息增加對後續反宣傳的抗拒（Lumsdaine & Janis 1953）為同計畫的實驗結果；恐懼訴求（Janis & Feshbach 1953）因原典得到低恐懼較有效、與後續文獻方向相反，未列入邊。Message
+      Sidedness 以「雙面」為高值。
+  Sleeper Effect:
+    abbr: Sleeper
+    name: Sleeper Effect
+    zh: 睡眠者效應
+    field: 傳播與態度
+    desc: Hovland 與 Weiss（1951）首次記錄、Kumkale 與 Albarracín（2004）以後設分析確立。帶有折扣線索（如低可信來源）的訊息在接收當下說服力被壓低，但隨時間過去，來源與訊息內容在記憶中分離，訊息論證的影響回升，延後測量的態度改變反而高於即時測量。效應在論證本身有力、接收者有動機與能力處理訊息、折扣線索在訊息之後才出現時最明顯。
+    edges:
+    - [Discounting Cue, Attitude Change, '-']
+    - [Time Since Exposure, Source-Message Dissociation, +]
+    - [Source-Message Dissociation, Attitude Change, +]
+    - [Discounting Cue, Time Since Exposure -> Attitude Change, m]
+    - [Argument Quality, Attitude Change, +]
+    - [Elaboration, Discounting Cue -> Attitude Change, m]
+    - [Discounting Cue Timing, Discounting Cue -> Attitude Change, m]
+    - [Recall, Attitude Change, +]
+    refs:
+    - {title: 'Kumkale & Albarracín (2004), The Sleeper Effect in Persuasion: A Meta-Analytic Review, Psychological Bulletin
+        130(1)', url: 'https://www.asc.upenn.edu/sites/default/files/2021-07/e3eff4_67a5be5947dc44208b8668beb6ceadd6.pdf'}
+    - {title: 'Hovland & Weiss (1951), The Influence of Source Credibility on Communication Effectiveness, Public Opinion
+        Quarterly 15(4)', url: 'https://fbaum.unc.edu/teaching/articles/HovlandWeiss-POQ-1951.pdf'}
+    - {title: 'Albarracín, Kumkale & Poyner-Del Vento (2017), How people can become persuaded by weak messages presented by
+        credible communicators, Journal of Experimental Social Psychology（PMC 全文）', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8157953'}
+    enrich_notes: 折扣線索即時壓低說服、時間拉長後回升、線索在訊息後出現與高處理量放大效應，皆取自 Kumkale & Albarracín（2004）的調節分析；Source-Message Dissociation 是解釋機制（來源與內容的分離假設），原典未直接測量；Recall
+      → Attitude Change 代表訊息論證記憶留存是延後說服的前提。Discounting Cue Timing 以「線索在訊息之後」為高值。
+  Cognitive Response Theory:
+    abbr: CRT
+    name: Cognitive Response Theory
+    zh: 認知反應理論
+    field: 傳播與態度
+    desc: Greenwald（1968）提出、Petty、Ostrom 與 Brock（1981）集結。說服結果不取決於訊息本身被記住多少，而取決於接收者在接觸訊息時自行產生的想法：支持性想法增加接受、反駁性想法阻礙接受。訊息重複、分心、論證品質與接收者的動機、能力都透過改變這些自發認知反應的數量與方向來影響態度改變；思考列舉法是其標準測量工具。
+    edges:
+    - [Argument Quality, Supportive Cognitive Responses, +]
+    - [Argument Quality, Counterarguing, '-']
+    - [Supportive Cognitive Responses, Attitude Change, +]
+    - [Counterarguing, Attitude Change, '-']
+    - [Distraction, Counterarguing, '-']
+    - [Elaboration, Argument Quality -> Attitude Change, m]
+    - [Exposure Frequency, Counterarguing, +]
+    - [Need for Cognition, Elaboration, +]
+    - [Time Pressure, Counterarguing, '-']
+    refs:
+    - {title: 'Greenwald (1968), Cognitive Learning, Cognitive Response to Persuasion, and Attitude Change, in Psychological
+        Foundations of Attitudes（作者網站全文）', url: 'https://faculty.washington.edu/agg/pdf/Gwald_PFOA_Ch6_1968.OCR.pdf'}
+    - {title: 'Petty, Ostrom & Brock (eds.) (1981), Cognitive Responses in Persuasion, Erlbaum（Routledge 書目）', url: 'https://www.routledge.com/products/9780898590258'}
+    - {title: Cognitive response model (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Cognitive_response_model'}
+    enrich_notes: 支持想法／反駁想法→態度改變與論證品質的作用來自 Greenwald（1968）與 Petty 等（1981）；分心減少反駁（Petty, Wells & Brock 1976）、重複在過量後增加反駁（Cacioppo
+      & Petty 1979）是同一取徑的經典實驗；Need for Cognition → Elaboration 為後續 ELM 延伸。Elaboration 當調節變數表示：處理量愈高，論證品質對態度改變的作用愈大。
+  Congruity Theory:
+    abbr: CongT
+    name: Congruity Theory
+    zh: 調和理論
+    field: 傳播與態度
+    desc: Osgood 與 Tannenbaum（1955）提出的一致性理論，以語意差異量表把「來源」與「概念」各自的評價放在同一條正負向度上。當一個來源對某概念做出肯定（結合）或否定（分離）的主張，而兩者評價不相稱時就產生不調和壓力，態度會朝兩者更接近的方向移動；移動幅度與各自原評價的極端程度成反比，極端者動得少、溫和者動得多，是一種可量化預測的加權平均模型。
+    edges:
+    - [Source Evaluation, Concept Evaluation, +]
+    - [Assertion Valence, Source Evaluation -> Concept Evaluation, m]
+    - [Source Evaluation, Incongruity, +]
+    - [Concept Evaluation, Incongruity, '-']
+    - [Incongruity, Attitude Change, +]
+    - [Attitude Extremity, Attitude Change, '-']
+    - [Perceived Credibility, Incongruity -> Attitude Change, m]
+    refs:
+    - {title: 'Osgood & Tannenbaum (1955), The Principle of Congruity in the Prediction of Attitude Change, Psychological
+        Review 62（GESIS 書目）', url: 'https://data.gesis.org/gesiskg/resource/zis-OsgoodTannenbaum1955The'}
+    - {title: 'Eiser (1987), Consistency theories 章節（Springer）', url: 'https://link.springer.com/chapter/10.1007/978-1-4612-4794-4_5'}
+    - {title: 'Theory Workbook: Congruity Theory（University of Kentucky 教材）', url: 'https://www.uky.edu/~drlane/capstone/persuasion/congruity.htm'}
+    enrich_notes: 來源評價與概念評價的相互拉動、主張方向（結合／分離）的調節、極端者較不動，皆為原典核心（Osgood & Tannenbaum 1955）；Incongruity 的兩條邊表示「正評來源肯定負評概念」這類落差愈大壓力愈大，正負號只是示意方向，實際以兩者差距絕對值計；可信度折扣（來源可信度低時不調和壓力打折）為
+      Osgood 等後續修正，非原典必備。
+  MODE Model:
+    abbr: MODE
+    name: MODE Model
+    zh: MODE 模型（態度可及性）
+    field: 傳播與態度
+    desc: Fazio（1990）提出，以「動機與機會作為決定因素」解釋態度何時引導行為。態度可及性（態度自記憶中被自動啟動的容易度）高時，遇到對象就會自發地偏向知覺與行為，不需深思；只有同時具備動機（如怕判斷出錯）與機會（時間、認知資源）時，人才走審慎路徑，依考量後果來行動。直接經驗與反覆表達會提高可及性，因此提高態度與行為的一致性。
+    edges:
+    - [Experience, Attitude Accessibility, +]
+    - [Rehearsal Amount, Attitude Accessibility, +]
+    - [Attitude Accessibility, Attitude-Behavior Consistency, +]
+    - [Attitude, Behavior, +]
+    - [Attitude Accessibility, Attitude -> Behavior, m]
+    - [Motivation, Deliberative Thinking, +]
+    - [Time Pressure, Deliberative Thinking, '-']
+    - [Deliberative Thinking, Mindless Processing, '-']
+    - [Mindless Processing, Attitude Accessibility -> Attitude-Behavior Consistency, m]
+    - [Attitude Accessibility, Selective Exposure, +]
+    refs:
+    - {title: 'Fazio (1990), Multiple Processes by Which Attitudes Guide Behavior: The MODE Model as an Integrative Framework,
+        Advances in Experimental Social Psychology 23（作者出版清單）', url: 'https://www.asc.ohio-state.edu/psychology/fazio/publications.php'}
+    - {title: 'Fazio & Olson (2014), The MODE Model: Attitude-Behavior Processes as a Function of Motivation and Opportunity（作者網站全文）',
+      url: 'https://www.asc.ohio-state.edu/psychology/fazio/documents/FazioOlson_DualProcessVolume__Feb062013.pdf'}
+    - {title: 'Ewoldsen, Rhodes & Fazio (2014), Attitude Accessibility as a Function of Emotionality, Media Psychology（作者網站全文）',
+      url: 'https://www.asc.ohio-state.edu/psychology/fazio/documents/EwoldsenRhodesFazioMediaPsych2014.pdf'}
+    enrich_notes: 直接經驗與反覆表達提高可及性、可及性提高態度行為一致性、動機與機會決定自發或審慎路徑，取自 Fazio（1990）與 Fazio & Olson（2014）；Time Pressure 代表「機會」的反向指標；Mindless
+      Processing 當調節表示在自發路徑下可及性的作用最大；可及性引導選擇性注意與暴露為 Roskos-Ewoldsen 等人的媒體心理學延伸。
+  Attitude Strength Framework:
+    abbr: AttStr
+    name: Attitude Strength Framework
+    zh: 態度強度架構
+    field: 傳播與態度
+    desc: Petty 與 Krosnick（1995）彙整的架構。強態度有四項後果：抗拒改變、跨時穩定、影響訊息處理、引導行為；態度的重要性、確定性、知識量、思考量、可及性、極端性與（反向的）矛盾性等十餘項屬性是強度的前因。Krosnick
+      等（1993）證明這些屬性彼此相關但不是單一潛在構念，須分開測量；後續研究進一步指出確定性與矛盾性會交互作用影響穩定性。
+    edges:
+    - [Attitude Importance, Attitude Strength, +]
+    - [Attitude Certainty, Attitude Strength, +]
+    - [Knowledge, Attitude Strength, +]
+    - [Elaboration, Attitude Strength, +]
+    - [Attitude Accessibility, Attitude Strength, +]
+    - [Attitude Extremity, Attitude Strength, +]
+    - [Attitude Ambivalence, Attitude Strength, '-']
+    - [Attitude Strength, Attitude Resistance, +]
+    - [Attitude Strength, Attitude Stability, +]
+    - [Attitude Strength, Attitude-Behavior Consistency, +]
+    - [Attitude Strength, Selective Exposure, +]
+    - [Attitude Certainty, Attitude Ambivalence -> Attitude Stability, m]
+    refs:
+    - {title: 'Petty & Krosnick (eds.) (1995), Attitude Strength: Antecedents and Consequences, Erlbaum（HathiTrust 書目）', url: 'https://catalog.hathitrust.org/Record/003085358/Cite'}
+    - {title: 'Visser, Bizer & Krosnick (2006), Exploring the Latent Structure of Strength-Related Attitude Attributes, Advances
+        in Experimental Social Psychology（作者網站全文）', url: 'https://web.stanford.edu/dept/communication/faculty/krosnick/docs/2006/2006%20exploring%20the%20latent%20structure%20of%20strength%20related%20attitude%20.pdf'}
+    - {title: 'Luttrell, Petty & Briñol (2020), The Interactive Effects of Ambivalence and Certainty on Political Opinion
+        Stability, Journal of Social and Political Psychology', url: 'https://doaj.org/article/b1acb7be01cc44cc9ada5bcd376e00a9'}
+    enrich_notes: 前因七項與後果四項取自 Petty & Krosnick（1995）總論與 Visser 等（2006）的屬性清單；Attitude Strength 在此作為彙總節點，但原典強調各屬性不是單一構念，使用時應以個別屬性為準；確定性調節矛盾性對穩定性的作用取自
+      Luttrell 等（2020）；強態度促進選擇性暴露為 Knobloch-Westerwick 等的實證延伸。
+  Functional Theory of Attitudes:
+    abbr: FTA
+    name: Functional Theory of Attitudes
+    zh: 態度功能理論
+    field: 傳播與態度
+    desc: Katz（1960）提出，與 Smith、Bruner 與 White（1956）的分類平行。態度為人服務四種心理功能：工具（趨賞避罰）、自我防衛（抵禦內外威脅）、價值表達（展現核心價值與自我概念）、知識（組織與理解環境）。要改變態度，先辨認它替人服務的功能，再用符合該功能的訊息對症下藥；功能與訊息相配者說服效果最好，自我防衛性態度則最難以理性論證撼動。
+    edges:
+    - [Perceived Reward, Utilitarian Function, +]
+    - [Perceived Threat, Ego-Defensive Function, +]
+    - [Personal Values, Value-Expressive Function, +]
+    - [Self-Identity, Value-Expressive Function, +]
+    - [Situational Uncertainty, Knowledge Function, +]
+    - [Utilitarian Function, Attitude, +]
+    - [Ego-Defensive Function, Attitude, +]
+    - [Value-Expressive Function, Attitude, +]
+    - [Knowledge Function, Attitude, +]
+    - [Function-Message Match, Attitude Change, +]
+    - [Ego-Defensive Function, Attitude Resistance, +]
+    - [Attitude Resistance, Attitude Change, '-']
+    refs:
+    - {title: 'Katz (1960), The Functional Approach to the Study of Attitudes, Public Opinion Quarterly 24(2) 163-204（GESIS
+        書目）', url: 'https://data.gesis.org/gesiskg/resource/zis-Katz1960The'}
+    - {title: Functional attitude theory (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Functional_attitude_theory'}
+    - {title: 'Herek (1986), The Instrumentality of Attitudes: Toward a Neofunctional Theory, Journal of Social Issues（作者網站全文）',
+      url: 'https://lgbpsychology.org/html/Herek_1986_JSI.pdf'}
+    - {title: Functions of Attitude Theory（Simply Psychology 教材）, url: 'https://www.simplypsychology.org/functions-of-attitude-theory.html'}
+    enrich_notes: 四功能及其喚起條件（報酬、威脅、價值、不確定）取自 Katz（1960）原典摘要；功能相配訊息較有效（matching hypothesis）為 Katz 的核心實務主張，Herek（1986）與後續 Snyder
+      & DeBono 的實驗為實證版本；自我防衛功能抵抗理性說服、抗拒壓低態度改變亦出自 Katz。四個功能節點→Attitude 的正號表示「該功能需求愈強，相應態度愈被持有」。
+  Entertainment Overcoming Resistance Model:
+    abbr: EORM
+    name: Entertainment Overcoming Resistance Model
+    zh: 娛樂克服抗拒模型（娛樂教育說服）
+    field: 傳播與態度
+    desc: Moyer-Gusé（2008）在《Communication Theory》提出、Moyer-Gusé 與 Nabi（2010）實證檢驗。娛樂教育敘事之所以能說服，是因為敘事傳輸、角色認同、擬社會互動、喜愛與相似感等涉入狀態，會降低心理抗拒、反駁與「不會發生在我身上」的無敵感；觀眾沉浸於故事時沒有動機去審查訊息，說服意圖被遮蔽，態度與行為意圖因而改變。後設分析顯示敘事涉入與抗拒呈負相關。
+    edges:
+    - [Narrative Quality, Transportation, +]
+    - [Perceived Similarity, Identification, +]
+    - [Liking, Parasocial Interaction, +]
+    - [Transportation, Counterarguing, '-']
+    - [Identification, Counterarguing, '-']
+    - [Parasocial Interaction, Reactance, '-']
+    - [Transportation, Persuasion Knowledge, '-']
+    - [Persuasion Knowledge, Reactance, +]
+    - [Identification, Perceived Susceptibility, +]
+    - [Counterarguing, Attitude Change, '-']
+    - [Reactance, Attitude Change, '-']
+    - [Attitude Change, Behavioral Intention, +]
+    refs:
+    - {title: 'Moyer-Gusé (2008), Toward a Theory of Entertainment Persuasion, Communication Theory 18(3) 407-425（作者 CV 書目）',
+      url: 'https://comm.osu.edu/sites/default/files/2026-02/Moyer-Guse%20CV%202026%20Web%20Only.pdf'}
+    - {title: 'Moyer-Gusé & Nabi (2010), Explaining the Effects of Narrative in an Entertainment Television Program: Overcoming
+        Resistance to Persuasion, Human Communication Research 36（GSU 論文引述）', url: 'https://scholarworks.gsu.edu/communication_diss/57'}
+    - {title: 'Overcoming resistance through narratives: Findings from a meta-analytic review（City University of Hong Kong
+        書目）', url: 'https://scholars.cityu.edu.hk/en/publications/overcoming-resistance-through-narratives-findings-from-a-meta-ana/'}
+    - {title: 'Igartua 等, Identification with characters, elaboration, and counterarguing in entertainment-education（CommBox
+        摘要）', url: 'https://commbox.org/document/identification-with-characters-elaboration-and-counterarguing-in-entertainment-education-interventions-through-audiovisual-fiction'}
+    enrich_notes: 傳輸、認同、擬社會互動、喜愛、相似感五種涉入降低反駁、抗拒與無敵感（此處以 Perceived Susceptibility 的反向表示），為 Moyer-Gusé（2008）的命題；Transportation
+      壓低說服意圖知覺（以 Persuasion Knowledge 代表）亦是原典命題之一；Narrative Quality → Transportation 為 Green & Brock 敘事傳輸的常見前因。出版社頁面無法開啟，命題依作者
+      CV、後設分析與二手文獻重建；Igartua 等（2016）未發現反駁的中介，顯示該條邊實證上不穩。
+  Knowledge Gap Hypothesis:
+    abbr: KGH
+    name: Knowledge Gap Hypothesis
+    zh: 知溝假說
+    field: 傳播與態度
+    desc: Tichenor、Donohue 與 Olien（1970）提出。當大眾媒體對某議題的資訊流量增加，社經地位（以教育為指標）較高者獲取資訊的速度快於較低者，兩群之間的知識差距因此擴大而非縮小；機制包括傳播技能、既有知識、相關社會接觸、選擇性接觸與媒體本身偏向高教育受眾。後續修正指出，社區衝突、議題與個人切身的動機、資訊在社區內達到上限時，知溝可能縮小。
+    edges:
+    - [Media Information Flow, Knowledge, +]
+    - [Socioeconomic Status, Knowledge, +]
+    - [Socioeconomic Status, Media Information Flow -> Knowledge, m]
+    - [Media Information Flow, Knowledge Gap, +]
+    - [Socioeconomic Status, Information Processing Ability, +]
+    - [Information Processing Ability, Knowledge, +]
+    - [Socioeconomic Status, Media Use, +]
+    - [Issue Conflict Intensity, Knowledge Gap, '-']
+    - [Involvement, Socioeconomic Status -> Knowledge, m]
+    - [Media Use, Knowledge, +]
+    refs:
+    - {title: 'Tichenor, Donohue & Olien (1970), Mass Media Flow and Differential Growth in Knowledge, Public Opinion Quarterly
+        34(2) 159-170', url: 'https://docs.opendeved.net/lib/HRRPBIPX'}
+    - {title: Knowledge gap hypothesis (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Knowledge_gap_hypothesis'}
+    - {title: Knowledge Gap（SIUE AURA Lab 理論摘要）, url: 'https://aura-lab.siue.edu/theories/knowledge-gap/'}
+    - {title: The Knowledge-Gap Hypothesis（上海交通大學課程教材，含原文摘錄）, url: 'https://smdcourse.sjtu.edu.cn/__tank__/f/course/20170417/ab4ed3a27e201dd5e24ebc28f0178585/The%20Knowledge-Gap%20Hypothesis.pdf'}
+    enrich_notes: 資訊流量→知識、社經地位調節、流量擴大知溝、傳播技能與媒體使用差異四條來自 1970 原典；社區衝突縮小知溝為 Donohue、Tichenor & Olien（1975）的修正；動機（Involvement）削弱社經地位的作用為
+      Ettema & Kline（1977）的「動機差距」修正，非原典。Knowledge Gap 定義為高低社經群的知識差。
+  Two-Step Flow of Communication:
+    abbr: 2SF
+    name: Two-Step Flow of Communication
+    zh: 兩級傳播
+    field: 傳播與態度
+    desc: Lazarsfeld、Berelson 與 Gaudet（1944）在伊利郡選舉研究中發現，Katz 與 Lazarsfeld（1955）在《Personal Influence》系統化。媒體訊息先到達較常接觸媒體、在群體中被視為可信的意見領袖，再經人際討論傳給較不活躍的大眾；人際影響因為可信、可回應且帶社會壓力，比媒體直接影響更能改變投票、購物、時尚與觀影決定。Katz（1957）回顧指出意見領袖本身也多受他人而非媒體影響。
+    edges:
+    - [Media Use, Opinion Leadership, +]
+    - [Source Expertise, Opinion Leadership, +]
+    - [Opinion Leadership, Interpersonal Discussion, +]
+    - [Interpersonal Discussion, Opinion Leader Influence, +]
+    - [Perceived Similarity, Opinion Leader Influence, +]
+    - [Opinion Leader Influence, Attitude Change, +]
+    - [Opinion Leader Influence, Adoption, +]
+    - [Media Use, Attitude Change, +]
+    - [Tie Strength, Opinion Leader Influence -> Attitude Change, m]
+    - [Attitude Change, Behavior, +]
+    refs:
+    - {title: 'Katz (1957), The Two-Step Flow of Communication: An Up-To-Date Report on an Hypothesis, Public Opinion Quarterly
+        21(1) 61-78（UPenn 典藏）', url: 'https://repository.upenn.edu/asc_papers/271'}
+    - {title: Two-step flow of communication (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Two-step_flow_of_communication'}
+    - {title: Two-Step Flow（SIUE AURA Lab 理論摘要）, url: 'https://aura-lab.siue.edu/theories/two-step-flow/'}
+    - {title: Two-step flow theory（SAGE Encyclopedia of Public Relations）, url: 'https://sk.sagepub.com/ency/edvol/embed/publicrelations/chpt/twostep-flow-theory'}
+    enrich_notes: 意見領袖較常接觸媒體、在特定領域具專長、與追隨者同質、人際影響大於媒體直接影響，皆出自 Katz & Lazarsfeld（1955）與 Katz（1957）；Media Use → Attitude Change
+      的直接邊保留以對照「有限效果」的弱直接影響；Tie Strength 調節為 Granovetter 之後擴散研究的補充，非原典；Adoption 連到創新擴散的採用結果。
+  Selective Exposure Theory:
+    abbr: SelExp
+    name: Selective Exposure Theory
+    zh: 選擇性接觸理論
+    field: 傳播與態度
+    desc: 源自 Festinger（1957）的認知失調與 Klapper（1960）的有限效果論，Hart 等（2009）以 91 項研究的後設分析（d = .36）確認人偏好接觸與既有態度一致的資訊。防衛動機（維護立場、避免失調）推高偏好，正確性動機與資訊的工具價值則削弱甚至反轉；態度強度、涉入與承諾愈高偏好愈強。Knobloch-Westerwick（2015）整合為「選擇性接觸的自我與情感管理模型」，把媒體選擇與態度強化、極化連成回路。
+    edges:
+    - [Defense Motivation, Selective Exposure, +]
+    - [Accuracy Motivation, Selective Exposure, '-']
+    - [Information Usefulness, Selective Exposure, '-']
+    - [Dissonance, Defense Motivation, +]
+    - [Attitude Strength, Selective Exposure, +]
+    - [Involvement, Selective Exposure, +]
+    - [Attitude Certainty, Selective Exposure, '-']
+    - [Selective Exposure, Cross-cutting Exposure, '-']
+    - [Selective Exposure, Attitude Strength, +]
+    - [Selective Exposure, Affective Polarization, +]
+    - [Selective Exposure, Attitude Change, '-']
+    refs:
+    - {title: 'Hart 等 (2009), Feeling Validated Versus Being Correct: A Meta-Analysis of Selective Exposure to Information,
+        Psychological Bulletin 135(4)', url: 'https://pubmed.ncbi.nlm.nih.gov/19586162/'}
+    - {title: Hart 等 (2009) 全文（Annenberg 典藏）, url: 'https://www.asc.upenn.edu/sites/default/files/2021-07/e3eff4_83d489cddb27426987a06414c6a8ebfb.pdf'}
+    - {title: 'Knobloch-Westerwick (2015), Choice and Preference in Media Use: Advances in Selective-Exposure Theory and Research,
+        Routledge', url: 'https://vufind.lboro.ac.uk/Record/520382?print=1'}
+    - {title: 'Klapper (1963), Mass Communication Research: An Old Road Resurveyed, Public Opinion Quarterly（AAPOR 典藏）', url: 'https://aapor.org/wp-content/uploads/2022/11/Public-Opin-Q-1963-KLAPPER-515-27.pdf'}
+    enrich_notes: 防衛動機／正確性動機／資訊效用三條與其方向、涉入與承諾提高偏好、高信心反而降低偏好（確信者不怕反方資訊），皆取自 Hart 等（2009）的調節分析；失調引發防衛動機為 Festinger 的起點；接觸→態度強化→極化的回路取自
+      Knobloch-Westerwick（2015）的 SESAM 架構與 Stroud 等政治傳播研究；Selective Exposure → Attitude Change 負向表示有限效果論的強化而非改變。
+  Hostile Media Effect:
+    abbr: HME
+    name: Hostile Media Effect
+    zh: 敵意媒體效果
+    field: 傳播與態度
+    desc: Vallone、Ross 與 Lepper（1985）以貝魯特大屠殺新聞實驗發現，親以與親阿拉伯兩方黨派者都認為同一則中立報導偏向對方；黨派性、議題涉入與知識愈高，敵意知覺愈強。Gunther 與 Schmitt（2004）進一步指出效果只在被認為觸及廣大受眾的媒體內容出現，同一文本標為學生作業時反被視為平衡；敵意知覺會延伸為推論輿論對己不利（說服性媒體推論）、降低媒體可信度並激發矯正行動。
+    edges:
+    - [Partisan Strength, Perceived Media Bias, +]
+    - [Involvement, Perceived Media Bias, +]
+    - [Knowledge, Perceived Media Bias, +]
+    - [Social Identity, Perceived Media Bias, +]
+    - [Perceived Media Reach, Perceived Media Bias, +]
+    - [Perceived Media Reach, Partisan Strength -> Perceived Media Bias, m]
+    - [Perceived Similarity, Perceived Media Bias, '-']
+    - [Perceived Media Bias, Perceived Credibility, '-']
+    - [Perceived Media Bias, Perceived Media Influence on Others, +]
+    - [Perceived Media Bias, Perceived Majority Support, '-']
+    - [Perceived Media Bias, Political Participation, +]
+    refs:
+    - {title: 'Vallone, Ross & Lepper (1985), The Hostile Media Phenomenon, Journal of Personality and Social Psychology 49(3)（Wikipedia
+        彙整含文獻）', url: 'https://en.wikipedia.org/wiki/Hostile_media_effect'}
+    - {title: 'Gunther & Schmitt (2004), Mapping Boundaries of the Hostile Media Effect, Journal of Communication 54(1)（UW-Madison
+        新聞稿）', url: 'https://news.cals.wisc.edu/2004/05/13/hostile-media-or-fair-and-balanced-reporting'}
+    - {title: 'Christen, Kannaovakun & Gunther (2002), Hostile Media Perceptions: Partisan Assessments of Press and Public
+        during the 1997 UPS Strike, Political Communication 19', url: 'https://terpconnect.umd.edu/~nan/738readings/Christen%20et%20al%202002%20hostile%20media.pdf'}
+    - {title: Hostile media effect（SAGE Encyclopedia of Political Communication）, url: 'https://sk.sagepub.com/ency/edvol/embed/politicalcommunication/chpt/hostile-media-effect'}
+    enrich_notes: 黨派性、涉入、知識→敵意知覺來自 Vallone 等（1985）；觸及範圍為必要條件來自 Gunther & Schmitt（2004）；群體認同取徑為 Reid（2012）、Hartmann & Tanis（2013）；來源被視為同陣營則效果減弱（Arpan
+      & Raney 2003，以 Perceived Similarity 代表）；敵意知覺→推論輿論不利（說服性媒體推論，Gunther & Chia 2001，以 Perceived Media Influence on Others
+      與 Perceived Majority Support 兩條表示）、→矯正行動（Barnidge & Rojas 2014）為後果端延伸，實證結果混合。
+  Media System Dependency Theory:
+    abbr: MSD
+    name: Media System Dependency Theory
+    zh: 媒介系統依賴理論
+    field: 傳播與態度
+    desc: Ball-Rokeach 與 DeFleur（1976）提出。媒體效果取決於受眾、媒體與社會系統三方的依賴關係：媒體承擔的資訊功能愈多、愈核心，且社會愈不穩定（衝突、災難、變遷）時，人愈依賴媒體來達成理解、定向與娛樂目標，媒體的認知（消除模糊、議題設定、形成態度）、情感（恐懼、士氣）與行為（啟動或抑制行動）效果就愈強。Ball-Rokeach（1985）延伸為個人層次的媒介依賴。
+    edges:
+    - [Media Information Function Scope, Media System Dependency, +]
+    - [Social Instability, Media System Dependency, +]
+    - [Information Access, Media System Dependency, '-']
+    - [Media System Dependency, Media Use, +]
+    - [Media System Dependency, Situational Uncertainty, '-']
+    - [Media System Dependency, Public Agenda Salience, +]
+    - [Media System Dependency, Attitude Change, +]
+    - [Media System Dependency, Fear, +]
+    - [Media System Dependency, Behavior, +]
+    - [Media System Dependency, Media Use -> Attitude Change, m]
+    refs:
+    - {title: 'Ball-Rokeach & DeFleur (1976), A Dependency Model of Mass-Media Effects, Communication Research 3(1) 3-21（Britannica
+        條目）', url: 'https://britannica.com/topic/media-dependency-theory'}
+    - {title: Media system dependency theory (Wikipedia 彙整), url: 'https://en.wikipedia.org/wiki/Media_system_dependency_theory'}
+    - {title: Dependency Theory（SIUE AURA Lab 理論摘要）, url: 'https://aura-lab.siue.edu/theories/dependency-theory/'}
+    - {title: 'Dependency theory, media（SAGE Encyclopedia of Political Communication）', url: 'https://sk.sagepub.com/ency/edvol/embed/politicalcommunication/chpt/dependency-theory-media'}
+    enrich_notes: 媒體功能數量與核心性、社會不穩定提高依賴，以及認知（消除模糊、議題設定、態度形成）、情感（恐懼、焦慮、士氣）、行為（啟動／抑制）三類效果皆出自 1976 原典摘要；替代資訊來源降低依賴（Information
+      Access 負向）取自個人層次的延伸（Ball-Rokeach 1985）；依賴調節媒體使用對態度的作用是理論核心命題「依賴愈高效果愈強」的直接轉寫。
+  Media Priming Theory:
+    abbr: MPrime
+    name: Media Priming Theory
+    zh: 媒體促發理論
+    field: 傳播與態度
+    desc: Iyengar 與 Kinder（1987）在《News That Matters》以實驗證明：新聞報導愈強調某議題，該議題在記憶中愈容易被取用，民眾評價總統或政治人物時就愈倚重該議題上的表現，而不必改變底層態度；當領袖被視為對該議題負有責任時效果更強。Roskos-Ewoldsen
+      等（2007）的後設分析與 Scheufele 與 Tewksbury（2007）將其定位為議題設定的延伸、以可及性為機制的效果，且隨時間衰退。
+    edges:
+    - [Media Agenda Salience, Issue Accessibility, +]
+    - [Exposure Frequency, Issue Accessibility, +]
+    - [Stimulus Intensity, Issue Accessibility, +]
+    - [Time Since Exposure, Issue Accessibility, '-']
+    - [Issue Accessibility, Issue Weight in Evaluation, +]
+    - [Issue Weight in Evaluation, Political Leader Evaluation, +]
+    - [Responsibility Attribution, Issue Weight in Evaluation -> Political Leader Evaluation, m]
+    - [Knowledge, Media Agenda Salience -> Issue Accessibility, m]
+    - [Involvement, Media Agenda Salience -> Issue Accessibility, m]
+    - [Political Leader Evaluation, Behavior, +]
+    refs:
+    - {title: Priming (media)（Wikipedia 彙整，含 Iyengar & Kinder 1987）, url: 'https://en.wikipedia.org/wiki/Priming_(media)'}
+    - {title: Priming（SIUE AURA Lab 理論摘要）, url: 'https://aura-lab.siue.edu/theories/priming/'}
+    - {title: 'Scheufele & Tewksbury (2007), Framing, Agenda Setting, and Priming: The Evolution of Three Media Effects Models,
+        Journal of Communication 57(1)（課程典藏全文）', url: 'https://eclass.uoa.gr/modules/document/file.php/MEDIA266/Framing-AgendaSetting.pdf'}
+    - {title: 'Iyengar & Kinder, News That Matters 讀書摘要', url: 'https://adambrown.info/p/notes/iyengar_and_kinder_news_that_matters'}
+    enrich_notes: 報導份量→可及性→評價權重→領袖評價的主鏈與責任歸因的調節取自 Iyengar & Kinder（1987）；促發強度與時間衰退（強度、新近性）取自 Roskos-Ewoldsen 等（2007）後設分析所依據的記憶網絡模型；知識與涉入的調節方向在文獻中有分歧（Krosnick
+      & Kinder 1990 發現新手較易被促發，Miller & Krosnick 2000 發現高知識且信任媒體者較易），此處只標調節不標方向；Political Leader Evaluation → Behavior 表示對投票的下游影響。
+  Gain-Loss Message Framing:
+    abbr: GLF
+    name: Gain-Loss Message Framing
+    zh: 得失訊息框架
+    field: 傳播與態度
+    desc: Rothman 與 Salovey（1997）以展望理論為基礎提出：同一健康建議可框成「做了會獲得什麼」或「不做會失去什麼」。預防行為（如防曬）結果確定、風險低，得框較有效；偵測行為（如自我檢查）可能發現壞消息、帶不確定性，失框較有效。O'Keefe
+      與 Jensen（2007, 2009）的後設分析顯示整體差異極小（預防 r = .03，主要來自口腔衛生），後續研究轉向以涉入、調節焦點與自我效能等調節變數解釋何時框架有效。
+    edges:
+    - [Gain Framing, Behavioral Intention, +]
+    - [Loss Framing, Behavioral Intention, +]
+    - [Perceived Risk, Gain Framing -> Behavioral Intention, m]
+    - [Perceived Risk, Loss Framing -> Behavioral Intention, m]
+    - [Loss Framing, Risk Seeking, +]
+    - [Loss Framing, Fear, +]
+    - [Promotion Focus, Gain Framing -> Behavioral Intention, m]
+    - [Prevention Focus, Loss Framing -> Behavioral Intention, m]
+    - [Involvement, Loss Framing -> Behavioral Intention, m]
+    - [Perceived Efficacy, Gain Framing -> Behavioral Intention, m]
+    - [Behavioral Intention, Behavior, +]
+    refs:
+    - {title: 'Rothman & Salovey (1997), Shaping Perceptions to Motivate Healthy Behavior: The Role of Message Framing, Psychological
+        Bulletin 121（PMC 綜述引述）', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4241965'}
+    - {title: 'Rothman, Martino, Bedell, Detweiler & Salovey (1999), The Systematic Influence of Gain- and Loss-Framed Messages
+        on Interest in and Use of Different Types of Health Behavior, PSPB 25(11)', url: 'https://journals.sagepub.com/doi/10.1177/0146167299259003'}
+    - {title: 'O''Keefe & Jensen (2007), The Relative Persuasiveness of Gain-Framed and Loss-Framed Messages for Encouraging
+        Disease Prevention Behaviors, Journal of Health Communication 12(7)', url: 'https://pubmed.ncbi.nlm.nih.gov/17934941/'}
+    - {title: 'Latimer, Salovey & Rothman (2007), The Effectiveness of Gain-Framed Messages for Encouraging Disease Prevention
+        Behavior: Is All Hope Lost?, Journal of Health Communication 12(7)', url: 'https://www.uky.edu/~ngrant/CJT780/readings/Day%2011/LattimerSaloveyRothman2007.pdf'}
+    enrich_notes: 得框利預防、失框利偵測的核心以 Perceived Risk（行為結果的不確定性）當調節變數表示，取自 Rothman & Salovey（1997）與 Rothman 等（1999）；失框引發風險尋求與威脅感為展望理論機制；調節焦點與框架的相配（Cesario
+      等 2006 的調節適配）、高涉入下失框較有效（Maheswaran & Meyers-Levy 1990）、自我效能高時得框較有效（Latimer 等 2007 的方向）為後續調節研究，非原典；O'Keefe & Jensen 後設分析顯示主效果極小，兩條主邊的正號應視為條件性。
+  Humor in Advertising:
+    abbr: HumAd
+    name: Humor in Advertising
+    zh: 幽默廣告效果模型
+    field: 傳播與態度
+    desc: Weinberger 與 Gulas（1992）回顧、Eisend（2009）以後設分析整理的廣告效果模型。幽默訴求先要被受眾知覺為好笑，才會吸引注意、引發正向情感；正向情感經情感轉移提高廣告態度，再傳到品牌態度與購買意圖。幽默同時會分散對論證的處理、減少反駁，但對記憶與行為的影響較弱，對來源可信度甚至可能有負面作用；效果受產品類型、幽默與產品的關聯性調節。Eisend（2011）進一步比較情感轉移、分心與降低反駁三種機制。
+    edges:
+    - [Humor Appeal, Perceived Humor, +]
+    - [Perceived Humor, Attention, +]
+    - [Perceived Humor, Positive Emotions, +]
+    - [Positive Emotions, Attitude toward the Ad, +]
+    - [Perceived Humor, Attitude toward the Ad, +]
+    - [Perceived Humor, Counterarguing, '-']
+    - [Perceived Humor, Ad Credibility, '-']
+    - [Attitude toward the Ad, Brand Attitude, +]
+    - [Brand Attitude, Purchase Intention, +]
+    - [Involvement, Perceived Humor -> Attitude toward the Ad, m]
+    refs:
+    - {title: 'Eisend (2009), A Meta-Analysis of Humor in Advertising, Journal of the Academy of Marketing Science 37(2) 191-203（EMAC
+        2021 會議論文引述）', url: 'https://proceedings.emac-online.org/pdfs/A2021-94619.pdf'}
+    - {title: 'Eisend (2011), How Humor in Advertising Works: A Meta-Analytic Test of Alternative Models, Marketing Letters
+        22（Springer 章節書目）', url: 'https://link.springer.com/10.1007/978-3-531-18916-1_21'}
+    - {title: 'Kaur, Nim & Jaggi (2022), Relationship Between Humor in Advertising and Attitude Towards Ads: A Meta-Analysis,
+        Indian Journal of Marketing', url: 'https://indianjournalofentrepreneurship.com/index.php/ijom/article/view/160366'}
+    - {title: 'Perceived Humor and Purchase Intention: Mediating Role of Attitude towards the Advertisement and Brand, Lahore
+        Journal of Business', url: 'https://journals.lahoreschool.edu.pk/LJB/LJB/article/view/85'}
+    enrich_notes: 幽默提高注意、正向情感與廣告態度、廣告態度傳到品牌態度與購買意圖，取自 Eisend（2009）的公開引述與 Kaur 等（2022）；情感轉移、分心（降低反駁）兩機制取自 Eisend（2011）；幽默降低可信度為
+      Eisend（2009）常被引述的結果，但原文出版社頁面無法開啟，應視為待核實；涉入／產品類型調節取自 Weinberger & Gulas（1992）的分類。Attitude toward the Ad → Brand Attitude
+      → Purchase Intention 與既有 Aad 模型共用節點。

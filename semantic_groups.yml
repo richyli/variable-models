@@ -5,26 +5,27 @@ groups:
 - name: 情緒
   members: [Emotions, Affect, Arousal, Joy, Warm Glow, Valence, Violation Valence, Communicator Reward Valence, Optimism, Affinity, Emotional Attachment, Fear, AI Anxiety, Fear of Isolation, Technostress,
     Eeriness, Discomfort, Violation Feelings, Dissonance, Fear Control, Danger Control, Anger, Perceived Reward, Anxiety, Psychological Tension, Negative Emotional Arousal, Burnout, Goal Relevance, Goal
-      Congruence, Novelty, Norm Compatibility, Reappraisal, Challenge Appraisal, Positive Emotions, Perceived Stress, Depression, Positive Mood, Regret, Satiation, Initial Stimulus Valence]
+      Congruence, Novelty, Norm Compatibility, Reappraisal, Challenge Appraisal, Positive Emotions, Perceived Stress, Depression, Positive Mood, Regret, Satiation, Initial Stimulus Valence, Worry, Anticipated
+      Emotions, Outrage, Trait Driving Anger, Constructive Anger Expression, Anticipated Regret]
   subgroups:
   - name: 愉悅
     members: [Joy, Optimism, Warm Glow, Affinity, Emotional Attachment, Perceived Reward, Positive Emotions]
   - name: 情緒與喚起
-    members: [Emotions, Affect, Arousal, Valence, Violation Valence, Communicator Reward Valence, Positive Mood, Initial Stimulus Valence]
+    members: [Emotions, Affect, Arousal, Valence, Violation Valence, Communicator Reward Valence, Positive Mood, Initial Stimulus Valence, Anticipated Emotions]
   - name: 恐懼
     members: [Fear, Fear Control, Danger Control, Fear of Isolation]
   - name: 焦慮與壓力
-    members: [AI Anxiety, Technostress, Discomfort, Eeriness, Anxiety, Psychological Tension, Burnout, Perceived Stress, Depression]
+    members: [AI Anxiety, Technostress, Discomfort, Eeriness, Anxiety, Psychological Tension, Burnout, Perceived Stress, Depression, Worry]
   - name: 負面情緒反應
-    members: [Anger, Dissonance, Violation Feelings, Negative Emotional Arousal, Regret, Satiation]
+    members: [Anger, Dissonance, Violation Feelings, Negative Emotional Arousal, Regret, Satiation, Outrage, Trait Driving Anger, Constructive Anger Expression]
   - name: 認知評估
-    members: [Goal Relevance, Goal Congruence, Novelty, Norm Compatibility, Reappraisal, Challenge Appraisal]
+    members: [Goal Relevance, Goal Congruence, Novelty, Norm Compatibility, Reappraisal, Challenge Appraisal, Anticipated Regret]
 - name: 信任與可信度
   members: [Trust, Trust in AI, Green Trust, Disposition to Trust, Institution-based Trust, Source Trustworthiness, Perceived Credibility, Ad Credibility, Signal Credibility, eWOM Credibility, Credibility
-      Heuristics, Source Expertise, Message Objectivity, Perceived Authenticity, Belief in Machine Objectivity, Perceived Truth]
+      Heuristics, Source Expertise, Message Objectivity, Perceived Authenticity, Belief in Machine Objectivity, Perceived Truth, Confidence]
   subgroups:
   - name: 信任
-    members: [Trust, Trust in AI, Green Trust, Source Trustworthiness]
+    members: [Trust, Trust in AI, Green Trust, Source Trustworthiness, Confidence]
   - name: 信任傾向與制度信任
     members: [Disposition to Trust, Institution-based Trust]
   - name: 來源可信度
@@ -45,10 +46,10 @@ groups:
     members: [Usage Barrier, Value Barrier, Risk Barrier, Tradition Barrier, Image Barrier]
 - name: 行為意圖
   members: [Behavioral Intention, Purchase Intention, Continuance Intention, Utilization Intention, Protection Motivation, Willingness to Speak Out, Preference for AI Recommender, Motivation to Comply,
-    Willingness to Pay, eWOM Adoption, Political Participation, Task Choice, Intention Stability, Willingness to Accept]
+    Willingness to Pay, eWOM Adoption, Political Participation, Task Choice, Intention Stability, Willingness to Accept, Decision to Act, Stage of Change, Behavioral Willingness]
   subgroups:
   - name: 一般行為意圖
-    members: [Behavioral Intention, Continuance Intention, Utilization Intention, Motivation to Comply, Task Choice, Intention Stability]
+    members: [Behavioral Intention, Continuance Intention, Utilization Intention, Motivation to Comply, Task Choice, Intention Stability, Decision to Act, Stage of Change, Behavioral Willingness]
   - name: 購買與付費意圖
     members: [Purchase Intention, Willingness to Pay, eWOM Adoption, Preference for AI Recommender, Willingness to Accept]
   - name: 保護與參與意圖
@@ -57,13 +58,13 @@ groups:
   members: [Behavior, Purchase, Adoption, Media Use, Reliance on Automation, Algorithm Use, Customer Engagement, Organizational Citizenship Behavior, Security Policy Violation, Comprehensiveness of Usage,
     Breadth of Product Use, Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer, Voluntariness of Use, Persistence, Effort, Task Strategies, Approach Behavior, Behavior Change,
     Option Adoption, Status Quo Continuation, Counterproductive Work Behavior, Free Riding, Donation, Helping Behavior, Initial Compliance, Impulsive Choice, Trading Volume, Discretionary Spending, Savings
-      Behavior, Option Choice Share, Impulse Buying]
+      Behavior, Option Choice Share, Impulse Buying, Protective Action, Information Forwarding, Information Forefending]
   subgroups:
   - name: 使用與採用
     members: [Behavior, Adoption, Media Use, Purchase, Reliance on Automation, Algorithm Use, Comprehensiveness of Usage, Breadth of Product Use, Voluntariness of Use, Approach Behavior, Behavior Change,
-      Option Adoption, Status Quo Continuation, Initial Compliance, Impulsive Choice, Trading Volume, Discretionary Spending, Savings Behavior, Option Choice Share, Impulse Buying]
+      Option Adoption, Status Quo Continuation, Initial Compliance, Impulsive Choice, Trading Volume, Discretionary Spending, Savings Behavior, Option Choice Share, Impulse Buying, Protective Action]
   - name: 揭露與分享
-    members: [Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer]
+    members: [Information Disclosure, Self-Disclosure, Knowledge Sharing, Knowledge Transfer, Information Forwarding, Information Forefending]
   - name: 投入與公民行為
     members: [Customer Engagement, Organizational Citizenship Behavior, Effort, Persistence, Task Strategies]
   - name: 違規與反生產行為
@@ -72,16 +73,24 @@ groups:
     members: [Donation, Helping Behavior]
 - name: 態度
   members: [Attitude, Brand Attitude, Attitude toward the Ad, Prior AI Attitude, Donation Attitude, Attitude Change, Attitude Strength, Brand Preference, Attitude toward the Advertiser, Ad Cognitions, Brand
-      Feelings, Conviction, Behavioral Beliefs, Outcome Evaluations, Control Beliefs, Preference Strength, Liking, Overall Impression, Attribute Evaluation, Policy Support]
+      Feelings, Conviction, Behavioral Beliefs, Outcome Evaluations, Control Beliefs, Preference Strength, Liking, Overall Impression, Attribute Evaluation, Policy Support, Latitude of Acceptance, Latitude
+      of Rejection, Latitude of Noncommitment, Message Discrepancy, Assimilation Effect, Contrast Effect, Persuasibility, Source Evaluation, Concept Evaluation, Attitude Accessibility, Attitude-Behavior
+      Consistency, Attitude Certainty, Attitude Importance, Attitude Ambivalence, Attitude Extremity, Attitude Stability, Utilitarian Function, Ego-Defensive Function, Value-Expressive Function, Knowledge
+      Function, Function-Message Match, Political Leader Evaluation]
   subgroups:
   - name: 一般態度
-    members: [Attitude, Prior AI Attitude, Donation Attitude, Conviction, Liking, Overall Impression, Attribute Evaluation, Policy Support]
+    members: [Attitude, Prior AI Attitude, Donation Attitude, Conviction, Liking, Overall Impression, Attribute Evaluation, Policy Support, Source Evaluation, Concept Evaluation, Political Leader Evaluation]
   - name: 品牌與廣告態度
     members: [Brand Attitude, Attitude toward the Ad, Attitude toward the Advertiser, Ad Cognitions, Brand Feelings, Brand Preference]
   - name: 信念
     members: [Behavioral Beliefs, Control Beliefs, Outcome Evaluations]
   - name: 態度變化與強度
-    members: [Attitude Change, Attitude Strength, Preference Strength]
+    members: [Attitude Change, Attitude Strength, Preference Strength, Persuasibility, Attitude Accessibility, Attitude-Behavior Consistency, Attitude Certainty, Attitude Importance, Attitude Ambivalence,
+      Attitude Extremity, Attitude Stability]
+  - name: 態度結構與訊息距離
+    members: [Latitude of Acceptance, Latitude of Rejection, Latitude of Noncommitment, Message Discrepancy, Assimilation Effect, Contrast Effect]
+  - name: 態度功能
+    members: [Utilitarian Function, Ego-Defensive Function, Value-Expressive Function, Knowledge Function, Function-Message Match]
 - name: 透明與可解釋
   members: [Algorithm Transparency, Perceived Transparency, System Transparency, Explanation Quality, Perceived Explainability, Causability]
   subgroups:
@@ -118,10 +127,10 @@ groups:
     members: [Confirmation of Expectations, Expectancy Violation, Unmet Promises]
 - name: 有用性與效益
   members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Perceived Health Benefits, Benefit, Switching Benefits, Functional Value, Gratifications Obtained, Utility Value, Attainment
-      Value, Intrinsic Value, Relationship Benefits, Information Usefulness]
+      Value, Intrinsic Value, Relationship Benefits, Information Usefulness, Perceived Pros of Change]
   subgroups:
   - name: 知覺有用性
-    members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Benefit, Perceived Health Benefits, Switching Benefits, Information Usefulness]
+    members: [PU Perceived Usefulness, Performance Expectancy, Relative Advantage, Benefit, Perceived Health Benefits, Switching Benefits, Information Usefulness, Perceived Pros of Change]
   - name: 功能與工具價值
     members: [Functional Value, Utility Value, Attainment Value, Intrinsic Value]
   - name: 報酬與滿足
@@ -146,7 +155,7 @@ groups:
     members: [Functional Consequences, Psychosocial Consequences]
 - name: 品質
   members: [Perceived Quality, Service Quality, Information Quality, System Quality, Review Quality, Argument Quality, Narrative Quality, Perceived Site Quality, Internal Service Quality, Reliability, Assurance,
-    Tangibles, Empathy, Responsiveness, Perceived Realism, Frame Strength]
+    Tangibles, Empathy, Responsiveness, Perceived Realism, Frame Strength, Message Timeliness, Actionable Guidance, Message Targeting to Knowledge Gaps, Stage-Matched Message, Message Sidedness]
   subgroups:
   - name: 整體品質
     members: [Perceived Quality, Service Quality, Perceived Site Quality]
@@ -155,14 +164,15 @@ groups:
   - name: SERVQUAL 構面
     members: [Reliability, Assurance, Tangibles, Empathy, Responsiveness]
   - name: 訊息品質
-    members: [Argument Quality, Narrative Quality, Review Quality, Perceived Realism, Frame Strength]
+    members: [Argument Quality, Narrative Quality, Review Quality, Perceived Realism, Frame Strength, Message Timeliness, Actionable Guidance, Message Targeting to Knowledge Gaps, Stage-Matched Message,
+      Message Sidedness]
 - name: 成本與犧牲
   members: [Perceived Cost, Perceived Sacrifice, Response Cost, Safeguard Cost, Price, Price Difference from Reference, Transaction Cost, Average Cost, Agency Cost, Cost of Multihoming, Fixed Cost Share,
     Non-monetary Cost, Voice Cost, Relationship Termination Costs, Time Delay, Knowledge Acquisition Cost, Dynamic Pricing, Final Agreement Price, Budget Category Depletion, Payment Decoupling, Pain of
-      Paying, Windfall Income, Prior Investment, Waste Aversion, Resource Constraint]
+      Paying, Windfall Income, Prior Investment, Waste Aversion, Resource Constraint, Perceived Cons of Change]
   subgroups:
   - name: 知覺成本
-    members: [Perceived Cost, Perceived Sacrifice, Non-monetary Cost, Response Cost, Safeguard Cost, Time Delay, Voice Cost, Relationship Termination Costs, Resource Constraint]
+    members: [Perceived Cost, Perceived Sacrifice, Non-monetary Cost, Response Cost, Safeguard Cost, Time Delay, Voice Cost, Relationship Termination Costs, Resource Constraint, Perceived Cons of Change]
   - name: 價格
     members: [Price, Price Difference from Reference, Dynamic Pricing, Final Agreement Price]
   - name: 經濟成本
@@ -178,13 +188,16 @@ groups:
     members: [Switching cost, Financial Switching Cost, Procedural Switching Cost, Relational Switching Cost, Switching Experience, Platform Lock-in]
 - name: 風險與威脅知覺
   members: [Perceived Risk, Green Perceived Risk, Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Loss Aversion, Risk Aversion of Agent, Job Replacement Threat,
-    Threat to Freedom, Risk Tolerance, Outcome Uncertainty, Techno-insecurity, Techno-uncertainty, Mean World Belief]
+    Threat to Freedom, Risk Tolerance, Outcome Uncertainty, Techno-insecurity, Techno-uncertainty, Mean World Belief, Dread Risk, Unknown Risk, Comparative Optimism, Catastrophic Potential, Voluntariness
+      of Exposure, Delay of Effect, Hazard Magnitude, Mortality Salience, Target Risk]
   subgroups:
   - name: 風險知覺
-    members: [Perceived Risk, Green Perceived Risk, Risk Tolerance, Risk Aversion of Agent, Loss Aversion, Outcome Uncertainty]
+    members: [Perceived Risk, Green Perceived Risk, Risk Tolerance, Risk Aversion of Agent, Loss Aversion, Outcome Uncertainty, Dread Risk, Unknown Risk, Comparative Optimism, Target Risk]
   - name: 威脅知覺
     members: [Perceived Threat, Threat Perception, Perceived Severity, Perceived Susceptibility, Insecurity, Job Replacement Threat, Threat to Freedom, Techno-insecurity, Techno-uncertainty, Mean World
-        Belief]
+        Belief, Mortality Salience]
+  - name: 危害屬性
+    members: [Catastrophic Potential, Voluntariness of Exposure, Delay of Effect, Hazard Magnitude]
 - name: 隱私顧慮
   members: [Privacy Concern, Privacy Awareness, Privacy Experiences, Information Sensitivity]
   subgroups:
@@ -195,41 +208,50 @@ groups:
 - name: 自我效能與控制感
   members: [Self-Efficacy, Perceived Behavioral Control, Perceived Efficacy, Response Efficacy, Safeguard Effectiveness, Collective Efficacy, Competence, Control, Facilitating Conditions, Technology Readiness,
     Choice Freedom, Self-Confidence, Autonomy Support, Perceived AI Competence, Vicarious Exp, General Self-Efficacy, Coping Potential, Prior Self-Control Exertion, Ego Depletion, Belief in Unlimited Willpower,
-    Perceived Uncontrollability, Expectation of Uncontrollability, Prior Experience of Control]
+    Perceived Uncontrollability, Expectation of Uncontrollability, Prior Experience of Control, Perceived Information Gathering Capacity, Situational Impediments, Situational Facilitators, Temptation]
   subgroups:
   - name: 自我效能
-    members: [Self-Efficacy, Perceived Efficacy, Response Efficacy, Collective Efficacy, Self-Confidence, Safeguard Effectiveness, Vicarious Exp, Perceived AI Competence, General Self-Efficacy]
+    members: [Self-Efficacy, Perceived Efficacy, Response Efficacy, Collective Efficacy, Self-Confidence, Safeguard Effectiveness, Vicarious Exp, Perceived AI Competence, General Self-Efficacy, Perceived
+        Information Gathering Capacity]
   - name: 控制感與條件
     members: [Perceived Behavioral Control, Control, Facilitating Conditions, Choice Freedom, Autonomy Support, Technology Readiness, Competence, Coping Potential, Perceived Uncontrollability, Expectation
-        of Uncontrollability, Prior Experience of Control]
+        of Uncontrollability, Prior Experience of Control, Situational Impediments, Situational Facilitators]
   - name: 自我控制資源
-    members: [Prior Self-Control Exertion, Ego Depletion, Belief in Unlimited Willpower]
+    members: [Prior Self-Control Exertion, Ego Depletion, Belief in Unlimited Willpower, Temptation]
 - name: 能力與知識
   members: [Ability, Skill, AI Literacy, Domain Expertise, Knowledge, Persuasion Knowledge, Security Awareness, Absorptive Capacity, Agent Knowledge, Topic Knowledge, Experience, Literacy Facilitation,
     Involvement Facilitation, Tacit Knowledge, Common Knowledge, Knowledge Codifiability, Knowledge Integration, Knowledge Protection, Intellectual Capital, Prior Knowledge Base, Required Specialized Knowledge,
-    Observational Learning, Information Processing Ability, Statistical Literacy, Victimization Experience, Graphical Literacy]
+    Observational Learning, Information Processing Ability, Statistical Literacy, Victimization Experience, Graphical Literacy, Hazard Awareness, Driving Experience, Driver Capability, Traffic Situation
+      Mastery, Knowledge Gap]
   subgroups:
   - name: 能力
-    members: [Ability, Skill, Domain Expertise, Experience, Absorptive Capacity, Information Processing Ability, Victimization Experience]
+    members: [Ability, Skill, Domain Expertise, Experience, Absorptive Capacity, Information Processing Ability, Victimization Experience, Driving Experience, Driver Capability, Traffic Situation Mastery]
   - name: 知識與素養
     members: [Knowledge, Topic Knowledge, Agent Knowledge, AI Literacy, Persuasion Knowledge, Security Awareness, Literacy Facilitation, Involvement Facilitation, Tacit Knowledge, Common Knowledge, Knowledge
-        Codifiability, Knowledge Integration, Knowledge Protection, Intellectual Capital, Prior Knowledge Base, Required Specialized Knowledge, Observational Learning, Statistical Literacy, Graphical Literacy]
+        Codifiability, Knowledge Integration, Knowledge Protection, Intellectual Capital, Prior Knowledge Base, Required Specialized Knowledge, Observational Learning, Statistical Literacy, Graphical Literacy,
+      Hazard Awareness, Knowledge Gap]
 - name: 動機與目標
   members: [Motivation, Hedonic Motivation, Altruistic Motivation, Utilitarian Goal, Hedonic Goal, Gratifications Sought, Involvement, Instrumentality, Goal Commitment, Need for Cognition, Self-Enhancement
       Motivation, Cognition Importance, Freedom Importance, Controlling Rewards, Maladaptive Response Rewards, Prosocial Motivation to Lead, Intrinsic Motivation, Intrinsic Aspirations, Extrinsic Aspirations,
-    Promotion Focus, Prevention Focus, Ideal Self-Guide, Ought Self-Guide, Eagerness Strategy, Vigilance Strategy, Regulatory Fit, Accuracy Motivation, Effort Minimization Goal]
+    Promotion Focus, Prevention Focus, Ideal Self-Guide, Ought Self-Guide, Eagerness Strategy, Vigilance Strategy, Regulatory Fit, Accuracy Motivation, Effort Minimization Goal, Experiential Processes of
+      Change, Behavioral Processes of Change, Problem Recognition, Constraint Recognition, Referent Criterion, Situational Motivation in Problem Solving, Trip Goals and Context, Life Goals and Lifestyle,
+    Defense Motivation]
   subgroups:
   - name: 動機
     members: [Motivation, Hedonic Motivation, Altruistic Motivation, Self-Enhancement Motivation, Need for Cognition, Involvement, Cognition Importance, Freedom Importance, Prosocial Motivation to Lead,
-      Intrinsic Motivation, Accuracy Motivation]
+      Intrinsic Motivation, Accuracy Motivation, Defense Motivation]
   - name: 目標與追求
-    members: [Utilitarian Goal, Hedonic Goal, Goal Commitment, Gratifications Sought, Instrumentality, Effort Minimization Goal]
+    members: [Utilitarian Goal, Hedonic Goal, Goal Commitment, Gratifications Sought, Instrumentality, Effort Minimization Goal, Trip Goals and Context]
   - name: 誘因
     members: [Controlling Rewards, Maladaptive Response Rewards]
   - name: 志向
-    members: [Intrinsic Aspirations, Extrinsic Aspirations]
+    members: [Intrinsic Aspirations, Extrinsic Aspirations, Life Goals and Lifestyle]
   - name: 調節焦點
     members: [Promotion Focus, Prevention Focus, Ideal Self-Guide, Ought Self-Guide, Eagerness Strategy, Vigilance Strategy, Regulatory Fit]
+  - name: 改變歷程
+    members: [Experiential Processes of Change, Behavioral Processes of Change]
+  - name: 問題解決情境
+    members: [Problem Recognition, Constraint Recognition, Referent Criterion, Situational Motivation in Problem Solving]
 - name: 沉浸與心流
   members: [Flow, Immersion, Cognitive Absorption, Transportation, Curiosity, Playfulness, Work Engagement, Challenge, Mental Imagery, User Engagement]
   subgroups:
@@ -286,22 +308,23 @@ groups:
 - name: 認同與群體
   members: [Social Identity, Personal Identify, In-group, Out-group, Social Categorization, Social Groups Distinction, Anonymity, Identification, Shared Group Identity, Superordinate Identity, In-group
       Favoritism, Out-group Derogation, Out-group Discrimination, Out-group Power, Depersonalization, Group Boundary Permeability, Self-Esteem, Self-Concept, Perceived Similarity, Perceived Self-Uniqueness,
-    Individualism, Identity Salience, Self-Identity, Stereotyping, Need for Assimilation, Need for Differentiation, Group Inclusiveness, Perceived Group Distinctiveness, Perceived Belonging]
+    Individualism, Identity Salience, Self-Identity, Stereotyping, Need for Assimilation, Need for Differentiation, Group Inclusiveness, Perceived Group Distinctiveness, Perceived Belonging, Worldview Defense,
+    Prototype Favorability]
   subgroups:
   - name: 社會認同
     members: [Social Identity, Personal Identify, Shared Group Identity, Superordinate Identity, Identification, Self-Concept, Self-Esteem, Identity Salience, Self-Identity]
   - name: 內外團體
     members: [In-group, Out-group, In-group Favoritism, Out-group Derogation, Out-group Discrimination, Out-group Power, Social Categorization, Social Groups Distinction, Depersonalization, Group Boundary
-        Permeability, Stereotyping]
+        Permeability, Stereotyping, Worldview Defense]
   - name: 個人差異與匿名
-    members: [Perceived Similarity, Perceived Self-Uniqueness, Individualism, Anonymity]
+    members: [Perceived Similarity, Perceived Self-Uniqueness, Individualism, Anonymity, Prototype Favorability]
   - name: 包容與區辨需求
     members: [Need for Assimilation, Need for Differentiation, Group Inclusiveness, Perceived Group Distinctiveness, Perceived Belonging]
 - name: 社會支持與資本
   members: [Bonding Social Capital, Bridging Social Capital, Social Support, Supervisor Support, Organizational Support, Perceived Organizational Support, Technical Support, Social Network Use, Leader-Member
       Exchange Quality, Reciprocity, Shared Values, Communication, Structural Social Capital, Relational Social Capital, Cognitive Social Capital, Social Integration Mechanisms, Cooperation, Functional
       Conflict, Acquiescence, Top Management Support, Transformational Leadership, Social Environment, Information Access, Social Capital, Overembeddedness, Exclusion of Outsiders, Embeddedness, Network
-      Centrality, Tie Strength, Structural Holes, Brokerage, Small-World Structure, Social Exchange Relationship, Relationship Satisfaction, Mutuality]
+      Centrality, Tie Strength, Structural Holes, Brokerage, Small-World Structure, Social Exchange Relationship, Relationship Satisfaction, Mutuality, Interpersonal Discussion]
   subgroups:
   - name: 社會資本
     members: [Bonding Social Capital, Bridging Social Capital, Structural Social Capital, Relational Social Capital, Cognitive Social Capital, Social Network Use, Information Access, Social Capital, Overembeddedness,
@@ -310,7 +333,7 @@ groups:
     members: [Social Support, Supervisor Support, Organizational Support, Perceived Organizational Support, Top Management Support, Technical Support]
   - name: 關係品質與互動
     members: [Leader-Member Exchange Quality, Reciprocity, Shared Values, Communication, Cooperation, Functional Conflict, Acquiescence, Transformational Leadership, Social Integration Mechanisms, Social
-        Environment, Social Exchange Relationship, Relationship Satisfaction, Mutuality]
+        Environment, Social Exchange Relationship, Relationship Satisfaction, Mutuality, Interpersonal Discussion]
   - name: 網絡結構
     members: [Network Centrality, Tie Strength, Structural Holes, Brokerage, Small-World Structure]
 - name: 訊息處理深度
@@ -319,14 +342,15 @@ groups:
     Perceived Influence, Message Undesirability, Time Since Exposure, Advertising Exposure, Cues to Action, Heuristic Processing, Priming, Motivated Processing, Direct Access Processing, Need for Cognitive
       Closure, Information Search Extent, Primacy Effect, Processing Fluency, Perceptual Clarity, Pronounceability, Prototypicality, Fluency Source Awareness, Perceived Familiarity, Exposure Frequency,
     Exposure Duration, Exposure Awareness, Stimulus Complexity, Diagnostic Information Availability, Negative Information Exposure, Attention Allocation, Perceived Diagnosticity, Serial Position Earliness,
-    Serial Position Recency, Rehearsal Amount, Short-Term Memory Availability, Presentation Rate, List Length, Heuristic Reliance]
+    Serial Position Recency, Rehearsal Amount, Short-Term Memory Availability, Presentation Rate, List Length, Heuristic Reliance, Discounting Cue, Discounting Cue Timing, Source-Message Dissociation, Supportive
+      Cognitive Responses]
   subgroups:
   - name: 處理深度
     members: [Elaboration, Systematic Processing, Deliberative Thinking, Mindless Processing, Counterarguing, Distraction, Motivated Processing, Direct Access Processing, Need for Cognitive Closure, Information
-        Search Extent, Attention Allocation]
+        Search Extent, Attention Allocation, Supportive Cognitive Responses]
   - name: 捷思與線索
     members: [Heuristic Cues, Peripheral Cues, Bandwagon Cues, Bandwagon Effect, Intrinsic Cues, Extrinsic Cues, Cues to Action, Heuristic Processing, Priming, Primacy Effect, Diagnostic Information Availability,
-      Perceived Diagnosticity, Heuristic Reliance]
+      Perceived Diagnosticity, Heuristic Reliance, Discounting Cue, Discounting Cue Timing]
   - name: 暴露
     members: [Selective Exposure, Advertising Exposure, Time Since Exposure, Perceived Exposure of Others, Exposure Frequency, Exposure Duration, Exposure Awareness, Stimulus Complexity, Negative Information
         Exposure, Presentation Rate, List Length]
@@ -337,7 +361,7 @@ groups:
   - name: 處理流暢性
     members: [Processing Fluency, Perceptual Clarity, Pronounceability, Prototypicality, Fluency Source Awareness, Perceived Familiarity]
   - name: 記憶
-    members: [Serial Position Earliness, Serial Position Recency, Rehearsal Amount, Short-Term Memory Availability]
+    members: [Serial Position Earliness, Serial Position Recency, Rehearsal Amount, Short-Term Memory Availability, Source-Message Dissociation]
 - name: 資訊不對稱與投機
   members: [Information Asymmetry, Adverse Selection, Moral Hazard, Opportunistic Behavior, Behavioral Uncertainty, Screening, Signal Cost, Signal Reliance, Monitoring, Agency Problem, Goal Conflict, Bounded
       Rationality, Causal Ambiguity, Social Complexity, Signal Fit]
@@ -349,10 +373,10 @@ groups:
   - name: 訊號與篩選
     members: [Signal Cost, Signal Fit, Signal Reliance, Screening, Monitoring]
 - name: 不確定性
-  members: [Environmental Uncertainty, Task Uncertainty, Task Equivocality, Structure-Environment Fit, Organic Structure Need, Environment, Situational Uncertainty]
+  members: [Environmental Uncertainty, Task Uncertainty, Task Equivocality, Structure-Environment Fit, Organic Structure Need, Environment, Situational Uncertainty, Social Instability]
   subgroups:
   - name: 環境不確定性
-    members: [Environmental Uncertainty, Environment]
+    members: [Environmental Uncertainty, Environment, Social Instability]
   - name: 任務不確定性
     members: [Task Uncertainty, Task Equivocality, Situational Uncertainty]
   - name: 結構適配
@@ -423,11 +447,11 @@ groups:
   members: [Task Characteristics, Technology Characteristics, TTF, Task Complexity, Task Objectivity, Task Subjectivity, Media Richness, Modality Cues, Interactivity Cues, Navigability Cues, Technology,
     Product Attributes, Multiple Cues, Feedback Immediacy, Language Variety, Personal Focus, Transportability, Motion, External Variables, Instructional Design Quality, Media Naturalness, Media-Task Fit,
     Perceived Media Richness, Task Interdependence, Problem Representation, Mental Representation, Cognitive Fit, Structured Rating Procedure, Atmospheric Cues, Decision Stakes, Task Integration Requirement,
-    Task Proximity, Resource Demand, Internal Task Demand]
+    Task Proximity, Resource Demand, Internal Task Demand, Task Difficulty]
   subgroups:
   - name: 任務特性
     members: [Task Characteristics, Task Complexity, Task Objectivity, Task Subjectivity, Task Interdependence, Structured Rating Procedure, Decision Stakes, Task Integration Requirement, Task Proximity,
-      Resource Demand, Internal Task Demand]
+      Resource Demand, Internal Task Demand, Task Difficulty]
   - name: 科技特性
     members: [Technology Characteristics, Technology, TTF, External Variables, Product Attributes, Instructional Design Quality]
   - name: 媒介豐富度
@@ -452,16 +476,17 @@ groups:
   - name: AI 疑慮
     members: [AI Configuration Concern, Sociotechnical Blindness]
 - name: 工作要求與壓力源
-  members: [Job Demands, Workload, Techno-overload, Techno-invasion, Learning Pressure, Role Conflict, Role Ambiguity, Role Expectations, Role Stress, Time Pressure, Stressor, Uncontrollable Aversive Events]
+  members: [Job Demands, Workload, Techno-overload, Techno-invasion, Learning Pressure, Role Conflict, Role Ambiguity, Role Expectations, Role Stress, Time Pressure, Stressor, Uncontrollable Aversive Events,
+    Task Demand, Driver Provocation]
   subgroups:
   - name: 角色壓力
     members: [Role Conflict, Role Ambiguity, Role Expectations, Role Stress]
   - name: 工作負荷
-    members: [Job Demands, Workload, Learning Pressure, Time Pressure]
+    members: [Job Demands, Workload, Learning Pressure, Time Pressure, Task Demand]
   - name: 科技壓力源
     members: [Techno-invasion, Techno-overload]
   - name: 壓力源
-    members: [Stressor, Uncontrollable Aversive Events]
+    members: [Stressor, Uncontrollable Aversive Events, Driver Provocation]
 - name: 工作資源與誘因
   members: [Job Resources, Rewards and Job Conditions, Hygiene Factors, Motivator Factors, Feedback, Job Enrichment, Reinforcement, Perceived Job Security]
   subgroups:
@@ -489,12 +514,12 @@ groups:
   - name: 抱怨與補救
     members: [Voice, Service Recovery]
 - name: 廣告與揭露
-  members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness]
+  members: [Ad Likeability, Sponsorship Disclosure, AI Authorship Disclosure, Source Attractiveness, Humor Appeal, Perceived Humor]
   subgroups:
   - name: 揭露
     members: [AI Authorship Disclosure, Sponsorship Disclosure]
   - name: 廣告與來源吸引力
-    members: [Ad Likeability, Source Attractiveness]
+    members: [Ad Likeability, Source Attractiveness, Humor Appeal, Perceived Humor]
 - name: 綠色與永續
   members: [Greenwashing, Green Consumer Confusion, Skepticism, Ecological Worldview, CSR Engagement, Product Lifetime Labelling, Perceived Durability]
   subgroups:
@@ -506,10 +531,10 @@ groups:
     members: [Ecological Worldview, CSR Engagement]
 - name: 制裁與治理
   members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation, Outcome-based Contract, Hierarchical Governance, Asset Specificity, Transaction Frequency, Outcome Measurability, Board
-      Independence, Managerial Equity Ownership]
+      Independence, Managerial Equity Ownership, Perceived Risk of Detection, Enforcement Intensity, Enforcement Publicity]
   subgroups:
   - name: 制裁
-    members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation]
+    members: [Sanction Certainty, Sanction Severity, Sanction Celerity, Regulation, Perceived Risk of Detection, Enforcement Intensity, Enforcement Publicity]
   - name: 治理與契約
     members: [Hierarchical Governance, Outcome-based Contract, Outcome Measurability, Board Independence, Managerial Equity Ownership]
   - name: 交易屬性
@@ -530,14 +555,17 @@ groups:
     members: [Personal Resources, Resilience]
 - name: 極化與媒體暴露
   members: [Affective Polarization, Partisan Media Exposure, Cross-cutting Exposure, Social Distance, Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Partisan
-      Sorting, Elite Polarization, Identity Politicization, Violent Content Exposure]
+      Sorting, Elite Polarization, Identity Politicization, Violent Content Exposure, Media Information Flow, Partisan Strength, Perceived Media Bias, Perceived Media Reach, Media System Dependency, Media
+      Information Function Scope]
   subgroups:
   - name: 極化
-    members: [Affective Polarization, Elite Polarization, Partisan Sorting, Identity Politicization]
+    members: [Affective Polarization, Elite Polarization, Partisan Sorting, Identity Politicization, Partisan Strength]
   - name: 媒體暴露
-    members: [Partisan Media Exposure, Cross-cutting Exposure, Violent Content Exposure]
+    members: [Partisan Media Exposure, Cross-cutting Exposure, Violent Content Exposure, Media Information Flow]
   - name: 第三人效果
-    members: [Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Social Distance]
+    members: [Perceived Media Influence on Others, Perceived Media Influence on Self, Support for Censorship, Social Distance, Perceived Media Bias, Perceived Media Reach]
+  - name: 媒體依賴
+    members: [Media System Dependency, Media Information Function Scope]
 - name: 框架與損益
   members: [Gain Framing, Loss Framing, Risk Seeking, Reference Point, Certainty Effect, Small Probability Overweighting, Framing, Ownership, Ownership Duration]
   subgroups:
@@ -548,22 +576,26 @@ groups:
   - name: 擁有與稟賦
     members: [Ownership, Ownership Duration]
 - name: 危機情境
-  members: [Crisis, Crisis History, Accommodative Response Strategy]
+  members: [Crisis, Crisis History, Accommodative Response Strategy, Risk Event, Signal Value of Event, Environmental Cues, Warning Message Receipt, Secondary Impacts, Stigmatization]
   subgroups:
   - name: 危機屬性與回應
-    members: [Crisis, Crisis History, Accommodative Response Strategy]
+    members: [Crisis, Crisis History, Accommodative Response Strategy, Risk Event, Signal Value of Event, Environmental Cues, Warning Message Receipt]
+  - name: 次級衝擊
+    members: [Secondary Impacts, Stigmatization]
 - name: 規模與產出
   members: [Output Volume, Product Scope]
   subgroups:
   - name: 規模
     members: [Output Volume, Product Scope]
 - name: 價值取向
-  members: [Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values, Personal Values]
+  members: [Altruistic Values, Biospheric Values, Egoistic Values, Instrumental Values, Personal Values, Hierarchism, Egalitarianism, Grid Strength, Group Strength]
   subgroups:
   - name: 利他與環境價值
     members: [Altruistic Values, Biospheric Values, Personal Values]
   - name: 利己與工具價值
     members: [Egoistic Values, Instrumental Values]
+  - name: 文化世界觀
+    members: [Hierarchism, Egalitarianism, Grid Strength, Group Strength]
 - name: 制度與合法性
   members: [Isomorphism, Legitimacy, Professionalization, Organizational Survival, Government Provision, Corporate Political Activity, Organizational Status, Institutionalization]
   subgroups:
@@ -572,25 +604,26 @@ groups:
   - name: 同構與制度化
     members: [Isomorphism, Professionalization, Institutionalization, Corporate Political Activity, Government Provision]
 - name: 人口與個人特質
-  members: [Age, Gender, Demographic Differences, Individual Characteristics, Personality Traits, Roles]
+  members: [Age, Gender, Demographic Differences, Individual Characteristics, Personality Traits, Roles, Sensation Seeking, Socioeconomic Status]
   subgroups:
   - name: 人口變項
-    members: [Age, Gender, Demographic Differences]
+    members: [Age, Gender, Demographic Differences, Socioeconomic Status]
   - name: 個人特質
-    members: [Personality Traits, Individual Characteristics, Roles]
+    members: [Personality Traits, Individual Characteristics, Roles, Sensation Seeking]
 - name: 規範
   members: [Social Norm, Subjective Norm, Personal Norm, Normative Pressure, Perceived Majority Support, Social Persuasion, aligned norms, Coercive Pressure, Mimetic Pressure, Stakeholder Pressure, Stakeholder
       Salience, Socialization, Competitive Pressure, Trading Partner Pressure, Compliance with External Demands, Opinion Leader Influence, Media Portrayal of Opinion Climate, Felt Obligation, Moral Commitment,
-    Informal Sanctions, Issue Moral Loading, Descriptive Norm, Normative Beliefs, Injunctive Norm, Information Cascade, Norm Salience Cue, Normative Focus]
+    Informal Sanctions, Issue Moral Loading, Descriptive Norm, Normative Beliefs, Injunctive Norm, Information Cascade, Norm Salience Cue, Normative Focus, Informational Subjective Norms, Opinion Leadership]
   subgroups:
   - name: 外在規範（社會／主觀／描述性）
-    members: [Social Norm, Subjective Norm, aligned norms, Perceived Majority Support, Media Portrayal of Opinion Climate, Descriptive Norm, Normative Beliefs, Injunctive Norm]
+    members: [Social Norm, Subjective Norm, aligned norms, Perceived Majority Support, Media Portrayal of Opinion Climate, Descriptive Norm, Normative Beliefs, Injunctive Norm, Informational Subjective
+        Norms]
   - name: 內在規範（個人／道德）
     members: [Personal Norm, Moral Commitment, Felt Obligation, Issue Moral Loading]
   - name: 制度與外部壓力
     members: [Coercive Pressure, Mimetic Pressure, Normative Pressure, Competitive Pressure, Trading Partner Pressure, Stakeholder Pressure, Stakeholder Salience, Compliance with External Demands]
   - name: 社會說服與影響
-    members: [Social Persuasion, Opinion Leader Influence, Informal Sanctions, Socialization, Information Cascade]
+    members: [Social Persuasion, Opinion Leader Influence, Informal Sanctions, Socialization, Information Cascade, Opinion Leadership]
   - name: 規範聚焦
     members: [Norm Salience Cue, Normative Focus]
 - name: 倫理與道德行為
@@ -602,10 +635,11 @@ groups:
     members: [Ethical Behavior, Unethical Behavior, Punitive Response]
 - name: 議題設定與框架
   members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility, Need for Orientation, Issue Uncertainty, Consideration
-      Applicability]
+      Applicability, Media Coverage Volume, Issue Conflict Intensity, Issue Weight in Evaluation]
   subgroups:
   - name: 議題顯著性
-    members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility, Consideration Applicability]
+    members: [Media Agenda Salience, Public Agenda Salience, Media Attribute Salience, Public Attribute Perception, Policy Agenda, Issue Accessibility, Consideration Applicability, Media Coverage Volume,
+      Issue Conflict Intensity, Issue Weight in Evaluation]
   - name: 導向需求
     members: [Need for Orientation, Issue Uncertainty]
 - name: 依附風格
@@ -614,17 +648,18 @@ groups:
   - name: 依附風格
     members: [Secure Attachment, Attachment Anxiety, Attachment Avoidance]
 - name: 人際吸引與平衡
-  members: [Interpersonal Attraction, Attitude Agreement, Mere Exposure, Anticipated Interaction, Triad Imbalance, Unit Relationship Change, Perceived Warmth]
+  members: [Interpersonal Attraction, Attitude Agreement, Mere Exposure, Anticipated Interaction, Triad Imbalance, Unit Relationship Change, Perceived Warmth, Assertion Valence, Incongruity]
   subgroups:
   - name: 吸引與一致
     members: [Interpersonal Attraction, Attitude Agreement, Mere Exposure, Anticipated Interaction, Perceived Warmth]
   - name: 失衡
-    members: [Triad Imbalance, Unit Relationship Change]
+    members: [Triad Imbalance, Unit Relationship Change, Assertion Valence, Incongruity]
 - name: 心智模式
-  members: [Mental Model Accuracy, Mental Model Completeness, Mental Model Formation, Shared Mental Model, Single-Model Reliance, Alternative Consideration, Confirmatory Information Search]
+  members: [Mental Model Accuracy, Mental Model Completeness, Mental Model Formation, Shared Mental Model, Single-Model Reliance, Alternative Consideration, Confirmatory Information Search, Misconception
+      Prevalence]
   subgroups:
   - name: 心智模式品質
-    members: [Mental Model Accuracy, Mental Model Completeness, Mental Model Formation, Shared Mental Model]
+    members: [Mental Model Accuracy, Mental Model Completeness, Mental Model Formation, Shared Mental Model, Misconception Prevalence]
   - name: 決策歷程
     members: [Single-Model Reliance, Alternative Consideration, Confirmatory Information Search]
 - name: 組織生態
@@ -649,10 +684,10 @@ groups:
   - name: 比較傾向與條件
     members: [Social Comparison Orientation, Objective Standard Availability, Self-Evaluation Uncertainty]
 - name: 社會助長
-  members: [Mere Presence of Others, Evaluation Apprehension, Performance Pressure, Dominant Response, Attentional Conflict, Self-Focused Attention]
+  members: [Mere Presence of Others, Evaluation Apprehension, Performance Pressure, Dominant Response, Attentional Conflict, Self-Focused Attention, Peer Passenger Presence]
   subgroups:
   - name: 他人在場
-    members: [Mere Presence of Others, Evaluation Apprehension, Performance Pressure]
+    members: [Mere Presence of Others, Evaluation Apprehension, Performance Pressure, Peer Passenger Presence]
   - name: 反應
     members: [Dominant Response, Attentional Conflict, Self-Focused Attention]
 - name: 結構化
@@ -712,14 +747,14 @@ groups:
     members: [Self-Presentation Behavior, Target Values]
 - name: 認知捷思
   members: [Anchor Value, Numerical Estimate, Anchor-Consistent Information Accessibility, Ease of Recall, Instance Vividness, Perceived Frequency, Similarity to Prototype, Perceived Probability, Base Rate
-      Causal Relevance, Decision Confidence, Information Weight in Judgment]
+      Causal Relevance, Decision Confidence, Information Weight in Judgment, Death-Thought Accessibility]
   subgroups:
   - name: 錨定與調整
     members: [Anchor Value, Anchor-Consistent Information Accessibility]
   - name: 判斷結果
     members: [Numerical Estimate, Perceived Frequency, Perceived Probability, Decision Confidence, Information Weight in Judgment]
   - name: 可得性
-    members: [Ease of Recall, Instance Vividness]
+    members: [Ease of Recall, Instance Vividness, Death-Thought Accessibility]
   - name: 代表性
     members: [Similarity to Prototype, Base Rate Causal Relevance]
 - name: 時間偏好
@@ -801,7 +836,7 @@ groups:
       Scent Accuracy, Link Following, Path Selection Accuracy, Backtracking, Patch Yield Rate, Patch Residence Time, Patch Leaving, Between-Patch Cost, Environment Average Gain Rate, Information Handling
       Time, Item Profitability, Information Diet Inclusion, Information Gain Rate, Exploration Breadth, Cognitive Offloading, Perceived Internal Ability, Perceived Offloading Efficiency, Offloading Tool
       Availability, Metacognitive Accuracy, External Representation Quality, Task Transformation, Internal-External Coupling, Artifact Mediation, Social Distribution of Cognition, Representation Propagation
-      Across Time]
+      Across Time, Information Insufficiency, Relevant Channel Beliefs, Risk Information Seeking Intention]
   subgroups:
   - name: 動作與選擇參數
     members: [Target Distance, Target Width, Index of Difficulty, Number of Alternatives, Choice Probability Inequality, Stimulus Information Entropy, Stimulus-Response Compatibility]
@@ -811,3 +846,39 @@ groups:
   - name: 認知卸載與外部表徵
     members: [Cognitive Offloading, Perceived Internal Ability, Perceived Offloading Efficiency, Offloading Tool Availability, Metacognitive Accuracy, External Representation Quality, Task Transformation,
       Internal-External Coupling, Artifact Mediation, Social Distribution of Cognition, Representation Propagation Across Time]
+  - name: 風險資訊尋求
+    members: [Information Insufficiency, Relevant Channel Beliefs, Risk Information Seeking Intention]
+- name: 駕駛行為
+  members: [Risky Driving, Speed Choice, Traffic Violation, Drink Driving, Aggressive Driving, Driving Errors, Driving Lapses, Mobile Phone Use While Driving, Seat Belt Use, Helmet Use, Safety Margin, Vehicle
+      Control Performance, Lane Keeping Performance, Loss of Control]
+  subgroups:
+  - name: 風險駕駛
+    members: [Risky Driving, Speed Choice, Traffic Violation, Drink Driving, Aggressive Driving, Driving Errors, Driving Lapses, Mobile Phone Use While Driving]
+  - name: 保護行為
+    members: [Seat Belt Use, Helmet Use, Safety Margin]
+  - name: 駕駛表現
+    members: [Vehicle Control Performance, Lane Keeping Performance, Loss of Control]
+- name: 交通事故與傷害
+  members: [Crash Risk, Crash Involvement, Near Miss, Pedestrian Crash Risk, Injury Severity, Fatality Risk, Impact Speed, Kinetic Energy, Non-Occupant Fatalities]
+  subgroups:
+  - name: 事故風險
+    members: [Crash Risk, Crash Involvement, Near Miss, Pedestrian Crash Risk]
+  - name: 傷害結果
+    members: [Injury Severity, Fatality Risk, Impact Speed, Kinetic Energy, Non-Occupant Fatalities]
+- name: 駕駛認知與狀態
+  members: [Situation Awareness, Hazard Perception, Eyes-Off-Road Time, Threat Cue Salience, Sleepiness, Sleep Duration, Time Awake, Time on Task, Alcohol Impairment]
+  subgroups:
+  - name: 注意與覺察
+    members: [Situation Awareness, Hazard Perception, Eyes-Off-Road Time, Threat Cue Salience]
+  - name: 疲勞與損害
+    members: [Sleepiness, Sleep Duration, Time Awake, Time on Task, Alcohol Impairment]
+- name: 道路環境與安全措施
+  members: [Vehicle Crashworthiness, Vehicle Maintenance, Road Design Safety, Roadside Hazard, Speed Limit, Safety Measure Introduction, Emergency Medical Response, Licensing Restrictions, Supervised Practice
+      Duration, Driver Training Scope, Driving Exposure, Night Driving, Walking and Cycling Volume, Mean Traffic Speed, Motorist Expectancy of Pedestrians]
+  subgroups:
+  - name: 車輛與道路
+    members: [Vehicle Crashworthiness, Vehicle Maintenance, Road Design Safety, Roadside Hazard, Speed Limit]
+  - name: 安全措施與應變
+    members: [Safety Measure Introduction, Emergency Medical Response, Licensing Restrictions, Supervised Practice Duration, Driver Training Scope]
+  - name: 暴露量
+    members: [Driving Exposure, Night Driving, Walking and Cycling Volume, Mean Traffic Speed, Motorist Expectancy of Pedestrians]
