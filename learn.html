@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>從抽象到變數</title>
-<meta name="description" content="八站互動教材：抽象化、構念、操作化、變數、中介變數、調節變數、研究問題、研究理由。每一站先猜再揭曉，最後接到變數與理論模型工具裡的真實模型。">
+<meta name="description" content="九站互動教材：抽象化、構念、操作化、變數、中介變數、調節變數、研究問題、研究理由，最後自己拖拉變數畫模型、寫假設、看模擬資料。每一站先猜再揭曉，最後接到變數與理論模型工具裡的真實模型。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="從抽象到變數：研究概念八站">
 <meta property="og:description" content="抽象化、構念、操作化、變數、中介、調節、研究問題、研究理由——每站一個可以動手玩的小工具。">
@@ -139,6 +139,54 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 .foot details{border:0;margin:0;padding:0}
 .linkrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .linkrow a{border:1px solid var(--line2);border-radius:8px;padding:6px 10px;font-size:13px;background:var(--panel)}
+.bpal{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.bpal .lbl{font-size:13px;color:var(--muted)}
+.bpal .bsep{width:1px;height:24px;background:var(--line);margin:0 4px}
+.bchip{border:1.5px solid;border-radius:8px;padding:5px 10px;cursor:grab;font-size:13px;min-height:34px;touch-action:none;user-select:none;-webkit-user-select:none;color:var(--ink)}
+.bchip .en,.bpanel .en{color:var(--muted);font-size:11px}
+.bchip:active{cursor:grabbing}
+.bchip[data-role=iv]{background:var(--sel);border-color:var(--sel-line)}
+.bchip[data-role=dv]{background:var(--chip);border-color:var(--accent)}
+.bchip[data-role=med]{background:var(--sim);border-color:var(--sim-line)}
+.bchip[data-role=mod]{background:var(--mod-bg);border-color:var(--mod)}
+.btoast{font-size:13px;color:var(--accent);min-height:20px;margin-top:4px}
+.bwrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+#bsvg{width:100%;height:auto;display:block;background:var(--bg);border:1px dashed var(--line2);border-radius:10px;touch-action:none;user-select:none;-webkit-user-select:none}
+#bsvg .bn{cursor:move}#bsvg .bn:focus{outline:none}#bsvg .bn:focus-visible rect{stroke-width:3.5}
+#bsvg .bport{cursor:crosshair}#bsvg [data-k=edge]{cursor:pointer}
+#bsvg g[data-k=edge]:focus{outline:none}#bsvg g[data-k=edge]:focus-visible rect{stroke-width:3}
+.bghost{position:fixed;pointer-events:none;z-index:50;transform:translate(-50%,-50%);border:1.5px solid var(--line2);border-radius:10px;padding:10px 18px;font-size:14px;box-shadow:var(--shadow);opacity:.9}
+.bwarn{list-style:none;margin:6px 0 0;padding:0;font-size:13px}
+.bwarn li{padding:3px 0 3px 22px;position:relative}
+.bwarn li::before{position:absolute;left:2px}
+.bwarn li.w::before{content:"⚠";color:var(--warn-line)}
+.bwarn li.ok::before{content:"✓";color:var(--pos)}
+.bpanel{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.bpanel h3{margin-bottom:6px}
+.bfield{display:grid;gap:4px;margin:8px 0;font-size:13px}
+.bfield>span,.bfield>label{color:var(--muted)}
+.bfield .row{gap:4px}
+.bfield .chipbtn{padding:4px 9px}
+.bctl{display:flex;gap:8px 10px;align-items:center;flex-wrap:wrap}
+.bctl label{font-size:13px;margin-left:8px}
+.bctl input[type=range]{width:180px;flex:none}
+.bctl output{min-width:3em;font-size:13px}
+.bdata{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:14px;align-items:start}
+.bsum{font-size:14px;margin-bottom:4px}
+.bscroll{overflow-x:auto}
+.btbl td,.btbl th{padding:5px 6px;font-size:13px}
+.btbl tbody tr[data-h]{cursor:pointer}
+.btbl tbody tr.on{background:var(--sel)}
+.btbl tr.sumr td{color:var(--muted);font-size:12px;border-bottom:2px solid var(--line2)}
+.pw{display:inline-block;width:40px;height:8px;background:var(--line);border-radius:4px;vertical-align:middle;overflow:hidden;margin-right:4px}.pw i{display:block;height:100%;background:var(--accent)}
+.vd{font-weight:600;white-space:nowrap}.vd.ok{color:var(--pos)}.vd.rev{color:var(--neg)}.vd.na{color:var(--muted)}
+.btbl th{white-space:nowrap}.btbl td.num{white-space:nowrap}
+.bcanvas{overflow-x:auto}
+@media (max-width:1000px){.bwrap,.bdata{grid-template-columns:minmax(0,1fr)}}
+.bdata>div{min-width:0}.bpanel{min-height:520px}.bhint{font-size:13px;color:var(--muted);margin:0 0 6px}.bpal .grp{display:inline-flex;gap:6px;flex-wrap:nowrap;align-items:center}
+@media (max-width:1000px){.bpanel{min-height:0}}
+@media (max-width:700px){#bsvg{min-width:620px}#bres{min-width:640px}#bprev{min-width:520px}.bcanvas::after{content:"← 在畫布空白處左右滑動看整張圖 →";display:block;text-align:center;font-size:12px;color:var(--muted);position:sticky;left:0}}
+@media (pointer:coarse){.bchip{min-height:44px}}
 @media (max-width:860px){
   .grid{grid-template-columns:1fr}
   .top h1{font-size:15px}
@@ -165,7 +213,7 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 <header class="top">
   <h1><a href="index.html" style="color:inherit">變數與理論模型</a></h1>
   <span class="crumb">› 概念入門：從抽象到變數</span>
-  <nav class="steps" id="steps" aria-label="八站"></nav>
+  <nav class="steps" id="steps" aria-label="九站"></nav>
   <button class="tg" id="theme" title="切換深淺色">◐</button>
 </header>
 <main id="main">
@@ -401,7 +449,68 @@ th{color:var(--muted);font-weight:600;font-size:12px}
   </div>
 </section>
 
-<!-- ===== 9 全鏈 ===== -->
+<!-- ===== 9 自己畫模型 ===== -->
+<section class="stage" id="s9b" data-title="自己畫模型">
+  <div class="head"><h2>9. 自己畫模型</h2><span class="en">model builder</span><span class="q">把自變數、依變數、中介、調節拉進畫布連成模型，每條線寫一個假設，再看模擬資料撐不撐得住。</span></div>
+  <div class="card">
+    <div class="bpal">
+      <span class="lbl">拖進畫布（或點一下）：</span>
+      <button class="bchip" data-role="iv">自變數 <span class="en">IV</span></button>
+      <button class="bchip" data-role="dv">依變數 <span class="en">DV</span></button>
+      <button class="bchip" data-role="med">中介變數 <span class="en">Mediator</span></button>
+      <button class="bchip" data-role="mod">調節變數 <span class="en">Moderator</span></button>
+      <span class="bsep"></span>
+      <span class="grp"><span class="lbl">範例：</span>
+      <button class="chipbtn" data-bpre="ai">AI 標示與可信度</button>
+      <button class="chipbtn" data-bpre="tam">TAM＋年齡</button>
+      <button class="chipbtn" data-bpre="blank">清空畫布</button></span>
+    </div>
+    <p class="bhint">從變數右邊的 → 拖到另一個變數＝路徑（一個假設）；拖到線中點的標籤＝調節。也可以點 → 再點目標。線上的 ✓／✗ 是這一批模擬資料的結果。</p>
+    <div class="bwrap">
+      <div style="min-width:0">
+        <div class="bcanvas"><svg id="bsvg" viewBox="0 0 760 340" role="application" aria-label="模型畫布：變數可以拖動，從變數右邊的加號拖線連到另一個變數"></svg></div>
+        <div class="btoast" id="btoast" aria-live="polite"></div><ul class="bwarn" id="bwarn"></ul>
+      </div>
+      <div class="bpanel" id="bpanel"></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>模擬資料</h3>
+    <div class="guess" style="margin:0 0 8px"><div class="lbl">先猜</div><p>效果「小」（β = .1）的假設、n = 200，同樣的研究重做 200 次，大約幾成會得到「支持」？</p>
+      <div class="opts" data-q="g9" data-ans="3"><button class="opt" data-v="9">約九成</button><button class="opt" data-v="5">約五成</button><button class="opt" data-v="3">約三成</button></div>
+      <div class="fb" id="g9"></div></div>
+    <div class="bctl">
+      <label for="bn">樣本數 n</label><input type="range" id="bn" min="30" max="1000" step="10"><output id="obn" class="num"></output>
+      <button class="chipbtn" id="bseed" title="同樣的模型、同樣的效果，重新抽一批受訪者">換一批重來</button>
+      <button class="chipbtn" id="bpow" disabled title="用同一個模型重抽 200 次，看每條假設有幾成被支持">算檢定力（重抽 200 次）</button>
+      <button class="chipbtn" id="bcsv">下載 CSV</button>
+      <button class="chipbtn" id="bcopy">複製假設清單</button>
+    </div>
+    <div class="bdata">
+      <div>
+        <div class="bsum" id="bsum"></div>
+        <div class="bscroll"><table class="btbl" id="bres"></table></div>
+        <p class="wrong-note" id="bnote"></p>
+      </div>
+      <div>
+        <h3 id="bchartT">選中的假設</h3>
+        <svg id="bchart" viewBox="0 0 520 270" width="100%" role="img" aria-label="選中假設的模擬資料圖"></svg>
+        <p class="wrong-note" id="bchartN"></p>
+      </div>
+    </div>
+    <h3 style="margin-top:12px">資料前 8 筆</h3>
+    <div class="bscroll"><table class="btbl" id="bprev"></table></div>
+    <details><summary>這一站在什麼情況下會錯</summary>
+      <p>模擬資料是照你設的方向與效果大小產生的，所以「支持」只代表在這個效果量與樣本數下，檢定抓得到你埋進去的效果；真實研究的效果量是未知的，要靠文獻或前導研究估。</p>
+      <p>這裡假設每個變數都測得完全準確。真實量表的信度小於 1，測量誤差會讓係數變小、檢定力變低；Cronbach’s α = .7 的兩個量表，相關大約只剩真實值的七成。</p>
+      <p>順序變數在估計時當成連續數值；名目依變數用線性機率模型（linear probability model）近似，係數是機率差，不是勝算比。中介用 bootstrap 信賴區間判斷，但資料只看得到共變，因果方向要靠研究設計（例如操弄 X 的實驗）。</p>
+      <p>係數設定是「教學近似值」：所有變數先標準化，β = .1／.3／.5 對應 Cohen（1988）的小、中、大。調節效果在真實研究裡通常比主效果小很多，所以同樣標成「中」的調節，在真實資料裡往往更難找到。</p>
+    </details>
+  </div>
+</section>
+
+<!-- ===== 10 全鏈 ===== -->
 <section class="stage" id="s9" data-title="整條鏈">
   <div class="head"><h2>整條鏈</h2><span class="en">from phenomenon to model</span><span class="q">八站接起來是什麼樣子</span></div>
   <div class="card">
@@ -459,7 +568,7 @@ const stages=[...document.querySelectorAll('.stage')];
 const done=new Set(store.done||[]);
 let cur=0;
 function buildSteps(){
-  $('steps').innerHTML=stages.map((s,i)=>`<button data-i="${i}" class="${i===cur?'on':''} ${done.has(i)?'done':''}"><span class="n">${i<8?i+1:'∑'}</span><span class="t">${E(s.dataset.title)}</span></button>`).join('');
+  $('steps').innerHTML=stages.map((s,i)=>`<button data-i="${i}" class="${i===cur?'on':''} ${done.has(i)?'done':''}"><span class="n">${i<stages.length-1?i+1:'∑'}</span><span class="t">${E(s.dataset.title)}</span></button>`).join('');
   $('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>go(+b.dataset.i));
 }
 function go(i,push=true){
@@ -691,6 +800,328 @@ $('cpdraft').onclick=()=>{const t=$('draft').textContent;if(navigator.clipboard)
   N.forEach((n,i)=>{const x=10+i*(w+g);const fill=i===5?'var(--sim)':(i>=1&&i<=4)?'var(--sel)':'var(--chip)';h+=`<rect x="${x}" y="30" width="${w}" height="70" rx="10" fill="${fill}" stroke="var(--line2)"/><text x="${x+w/2}" y="60" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink)">${E(n[0])}</text><text x="${x+w/2}" y="82" text-anchor="middle" font-size="12" fill="var(--muted)">${E(n[1])}</text>`;if(i<N.length-1)h+=`<line x1="${x+w}" y1="65" x2="${x+w+g}" y2="65" stroke="var(--line2)" stroke-width="2" marker-end="url(#ah2)"/>`});
   h+=`<text x="10" y="128" font-size="12" fill="var(--muted)">黃：從一件事到可以量的東西　橘：變數之間怎麼連　藍：為什麼問、為什麼值得</text>`;
   $('chainsvg').innerHTML=h;})();
+
+/* ---------- 9 自己畫模型 ---------- */
+(function(){
+const svg=$('bsvg');
+const ROLE={iv:['自變數','IV'],dv:['依變數','DV'],med:['中介變數','M'],mod:['調節變數','W']};
+const TYPE={nom:['名目','Nominal'],ord:['順序','Ordinal'],num:['數值','Numeric']};
+const TYPENOTE={nom:'只有類別、沒有大小。例：有無 AI 標示、使用的平台。第一個類別是參照組。',ord:'有大小順序，但間距不保證相等。例：單題五點量表、教育程度。',num:'數字本身有意義、可以加減。例：年齡、觀看秒數、多題量表加總分。'};
+const SIZE={s:[.1,'小'],m:[.3,'中'],l:[.5,'大']};
+const FILL={iv:['var(--sel)','var(--sel-line)'],dv:['var(--chip)','var(--accent)'],med:['var(--sim)','var(--sim-line)'],mod:['var(--mod-bg)','var(--mod)']};
+const NW=150,NH=52,VW=760,VH=340;
+const PRESET={
+  ai:{nodes:[{id:'a',name:'AI 生成標示',role:'iv',type:'nom',k:2,cats:['無標示','有標示'],x:110,y:170},{id:'b',name:'人工把關感',role:'med',type:'ord',k:7,x:380,y:62},{id:'c',name:'新聞可信度',role:'dv',type:'ord',k:7,x:650,y:170},{id:'d',name:'對 AI 的信任',role:'mod',type:'num',k:5,x:380,y:290}],
+    edges:[{id:'e1',from:'a',to:'b',sign:-1,size:'m'},{id:'e2',from:'b',to:'c',sign:1,size:'m'},{id:'e3',from:'a',to:'c',sign:-1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:-1,size:'m'}]},
+  tam:{nodes:[{id:'a',name:'知覺易用性',role:'iv',type:'ord',k:5,x:110,y:170},{id:'b',name:'知覺有用性',role:'med',type:'ord',k:5,x:380,y:62},{id:'c',name:'使用意圖',role:'dv',type:'ord',k:5,x:650,y:170},{id:'d',name:'年齡組',role:'mod',type:'nom',k:2,cats:['年輕','年長'],x:380,y:290}],
+    edges:[{id:'e1',from:'a',to:'b',sign:1,size:'l'},{id:'e2',from:'b',to:'c',sign:1,size:'l'},{id:'e3',from:'a',to:'c',sign:1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:1,size:'m'}]},
+  blank:{nodes:[],edges:[]}
+};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const loaded=!!(store.builder&&store.builder.nodes);
+let B=loaded?store.builder:Object.assign(clone(PRESET.ai),{n:200,seed:1});
+if(!B.n)B.n=200;if(!B.seed)B.seed=1;
+let sel=null,selH=null,uc=Date.now()%1e6,D=null,R=null,pow=null,powTok=0,toastT=null;
+const uid=p=>p+(uc++).toString(36);
+const N=id=>B.nodes.find(n=>n.id===id),Ed=id=>B.edges.find(e=>e.id===id);
+const paths=()=>B.edges.filter(e=>e.to&&N(e.from)&&N(e.to));
+const mods=()=>B.edges.filter(e=>e.onEdge&&N(e.from)&&Ed(e.onEdge));
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const f2=x=>(x<0?'−':'')+Math.abs(x).toFixed(2).replace(/^0\./,'.');
+function persist(){store.builder=B;save()}
+function toast(t){$('btoast').textContent=t;clearTimeout(toastT);toastT=setTimeout(()=>$('btoast').textContent='',4000)}
+function cats(n){const c=[];for(let i=0;i<n.k;i++)c.push((n.cats&&n.cats[i]&&n.cats[i].trim())||('第'+(i+1)+'類'));return c}
+function tw(s,fs){let w=0;for(const ch of s)w+=ch.charCodeAt(0)>255?fs:fs*.58;return w}
+function fit(s,w,fs){if(tw(s,fs)<=w)return s;let o='';for(const ch of s){if(tw(o+ch+'…',fs)>w)break;o+=ch}return o+'…'}
+function modsInto(id){return mods().filter(e=>Ed(e.onEdge).to===id)}
+function isEndo(id){return paths().some(e=>e.to===id)||modsInto(id).length>0}
+
+/* 假設編號與敘述 */
+function medList(){const L=[];B.nodes.forEach(m=>{paths().filter(e=>e.to===m.id).forEach(a=>paths().filter(e=>e.from===m.id).forEach(b=>L.push({key:'med:'+a.id+':'+b.id,a,b,m})))});return L}
+function labels(){const H={};B.edges.forEach((e,i)=>H[e.id]='H'+(i+1));medList().forEach((x,i)=>H[x.key]='H'+(B.edges.length+i+1));return H}
+function yPhrase(Y,up){if(Y.type==='nom'){const c=cats(Y);return Y.name+'為「'+c[1]+'」'+(c.length>2?'或其他非參照組':'')+'的機率越'+(up?'高':'低')}return Y.name+'越'+(up?'高':'低')}
+function autoText(e){
+  if(e.to){const X=N(e.from),Y=N(e.to),up=e.sign>0;
+    if(X.type==='nom'){const c=cats(X);const g=c.length>2?'其他組':'「'+c[1]+'」';return '相較於「'+c[0]+'」，'+g+(Y.type==='nom'?'為「'+cats(Y)[1]+'」的機率較'+(up?'高':'低'):'的'+Y.name+'較'+(up?'高':'低'))}
+    return X.name+'越高，'+yPhrase(Y,up)}
+  const t=Ed(e.onEdge),W=N(e.from),X=N(t.from),Y=N(t.to),dir=t.sign>0?'正向':'負向',amp=e.sign>0?'強':'弱';
+  if(W.type==='nom'){const c=cats(W);return '相較於「'+c[0]+'」，在'+(c.length>2?'其他組':'「'+c[1]+'」')+'中，'+X.name+'對'+Y.name+'的'+dir+'效果較'+amp}
+  return W.name+'越高，'+X.name+'對'+Y.name+'的'+dir+'效果越'+amp}
+function medText(x){const s=x.a.sign*x.b.sign;return N(x.a.from).name+'透過'+x.m.name+'影響'+N(x.b.to).name+'（間接效果為'+(s>0?'正':'負')+'）'}
+function hText(e){return (e.text&&e.text.trim())||autoText(e)}
+
+/* 圖與結構 */
+function outAdj(){const A={};B.nodes.forEach(n=>A[n.id]=new Set());paths().forEach(e=>A[e.from].add(e.to));mods().forEach(e=>A[e.from].add(Ed(e.onEdge).to));return A}
+function reach(a,b){const A=outAdj(),st=[a],seen=new Set();while(st.length){const v=st.pop();if(v===b)return true;if(seen.has(v))continue;seen.add(v);A[v].forEach(w=>st.push(w))}return false}
+function topo(){const A=outAdj(),indeg={};B.nodes.forEach(n=>indeg[n.id]=0);Object.values(A).forEach(s=>s.forEach(w=>indeg[w]++));const q=B.nodes.filter(n=>!indeg[n.id]).map(n=>n.id),o=[];while(q.length){const v=q.shift();o.push(v);A[v].forEach(w=>{if(!--indeg[w])q.push(w)})}return o}
+function clip(a,b,pad=4){const dx=b.x-a.x,dy=b.y-a.y;if(!dx&&!dy)return{x:a.x,y:a.y};const t=Math.min((NW/2+pad)/(Math.abs(dx)||1e-9),(NH/2+pad)/(Math.abs(dy)||1e-9));return{x:a.x+dx*t,y:a.y+dy*t}}
+function seg(e){const a=N(e.from),b=N(e.to);return[clip(a,b),clip(b,a,8)]}
+function mid(e){const[p,q]=seg(e);return{x:(p.x+q.x)/2,y:(p.y+q.y)/2}}
+function modSeg(e){const w=N(e.from),m=mid(Ed(e.onEdge)),p=clip(w,m),dx=m.x-p.x,dy=m.y-p.y,L=Math.hypot(dx,dy)||1;return[p,{x:m.x-dx/L*13,y:m.y-dy/L*13}]}
+
+function vmark(id){const x=R&&R.find(q=>q.key===id);return !x?'':x.vd==='ok'?' ✓':' ✗'}
+function draw(){
+  const H=labels();const mk=k=>`<marker id="bm-${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--${k})"/></marker>`;
+  let s=`<defs>${mk('pos')}${mk('neg')}${mk('mod')}${mk('accent')}</defs>`;
+  if(!B.nodes.length)s+=`<text x="${VW/2}" y="${VH/2-8}" text-anchor="middle" font-size="16" fill="var(--muted)">把上面的變數拖進來，或直接點一下</text><text x="${VW/2}" y="${VH/2+16}" text-anchor="middle" font-size="13" fill="var(--muted)">也可以按「範例」先看一個完整模型</text>`;
+  const pills=[];
+  paths().forEach(e=>{const[p,q]=seg(e),c=e.sign>0?'pos':'neg',w={s:2,m:3.5,l:5}[e.size],on=sel&&sel.id===e.id;
+    s+=`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="var(--${c})" stroke-width="${w}" marker-end="url(#bm-${c})" opacity="${on||!sel?1:.75}"/><line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="transparent" stroke-width="18" data-k="edge" data-id="${e.id}"/>`;
+    const m=mid(e);pills.push([m.x,m.y,H[e.id]+' '+(e.sign>0?'＋':'−')+vmark(e.id),c,on,e.id])});
+  mods().forEach(e=>{const[p,q]=modSeg(e),on=sel&&sel.id===e.id,w={s:2,m:3,l:4}[e.size];
+    s+=`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="var(--mod)" stroke-width="${w}" stroke-dasharray="6 4" marker-end="url(#bm-mod)"/><line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="transparent" stroke-width="18" data-k="edge" data-id="${e.id}"/>`;
+    pills.push([(p.x+q.x)/2,(p.y+q.y)/2,H[e.id]+' '+(e.sign>0?'強化':'削弱')+vmark(e.id),'mod',on,e.id])});
+  if(pick&&N(pick))s+=`<text x="${VW/2}" y="18" text-anchor="middle" font-size="13" fill="var(--accent)">選終點：點變數＝路徑，點紫框標籤＝調節</text>`;
+  if(drag&&drag.mode==='link'){const a=N(drag.from);s+=`<line x1="${a.x+NW/2}" y1="${a.y}" x2="${drag.x}" y2="${drag.y}" stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#bm-accent)"/>`;
+    if(drag.hover)s+=drag.hover.k==='n'?`<rect x="${drag.hover.x-NW/2-5}" y="${drag.hover.y-NH/2-5}" width="${NW+10}" height="${NH+10}" rx="13" fill="none" stroke="var(--accent)" stroke-width="2"/>`:`<circle cx="${drag.hover.x}" cy="${drag.hover.y}" r="22" fill="none" stroke="var(--mod)" stroke-width="2.5"/>`}
+  B.nodes.forEach(n=>{const[f,l]=FILL[n.role],on=sel&&sel.id===n.id,sub=ROLE[n.role][1]+' · '+TYPE[n.type][0]+(n.type==='num'?'':' '+n.k+(n.type==='nom'?' 類':' 級'));
+    s+=`<g class="bn" tabindex="0" role="button" aria-label="${E(n.name)}，${ROLE[n.role][0]}，${TYPE[n.type][0]}。方向鍵移動，Delete 刪除" data-k="node" data-id="${n.id}" transform="translate(${n.x},${n.y})"><rect x="${-NW/2}" y="${-NH/2}" width="${NW}" height="${NH}" rx="10" fill="${f}" stroke="${l}" stroke-width="${on?3.5:1.5}"/><text y="-3" text-anchor="middle" font-size="14" font-weight="600" fill="var(--ink)" pointer-events="none">${E(fit(n.name,NW-18,14))}</text><text y="16" text-anchor="middle" font-size="11" fill="var(--muted)" pointer-events="none">${E(sub)}</text></g><g class="bport" data-k="port" data-id="${n.id}" transform="translate(${n.x+NW/2},${n.y})"><circle r="16" fill="transparent"/><circle r="10" fill="${pick===n.id?l:'var(--panel)'}" stroke="${l}" stroke-width="2"/><path d="M-5 0H4M1 -4L5 0L1 4" fill="none" stroke="${pick===n.id?'var(--panel)':l}" stroke-width="2" pointer-events="none"/><title>從這裡拖一條線到另一個變數</title></g>`});
+  const linking=(drag&&drag.mode==='link')||pick;
+  pills.forEach(([x,y,t,c,on,id])=>{const w=tw(t,12)+16;if(linking&&Ed(id)&&Ed(id).to)s+=`<rect x="${x-w/2-5}" y="${y-16}" width="${w+10}" height="32" rx="16" fill="none" stroke="var(--mod)" stroke-width="1.5" stroke-dasharray="4 3"/>`;s+=`<g data-k="edge" data-id="${id}" tabindex="0" role="button" aria-label="${E(t)}，按 Enter 編輯"><rect x="${x-w/2}" y="${y-11}" width="${w}" height="22" rx="11" fill="var(--panel)" stroke="var(--${c})" stroke-width="${on?3:1.3}"/><text x="${x}" y="${y+4.5}" text-anchor="middle" font-size="12" font-weight="600" fill="var(--${c})" pointer-events="none">${E(t)}</text></g>`});
+  svg.innerHTML=s;
+}
+function focusEl(id){const el=svg.querySelector(`[tabindex][data-id="${id}"]`);if(el)el.focus({preventScroll:true})}
+
+/* 拖曳 */
+let drag=null,pick=null;
+function pt(ev){const m=svg.getScreenCTM();if(!m)return{x:0,y:0};const p=new DOMPoint(ev.clientX,ev.clientY).matrixTransform(m.inverse());return{x:p.x,y:p.y}}
+function hitNode(p,ex){return B.nodes.find(n=>n.id!==ex&&Math.abs(p.x-n.x)<NW/2+6&&Math.abs(p.y-n.y)<NH/2+6)}
+function dseg(p,a,b){const dx=b.x-a.x,dy=b.y-a.y,L=dx*dx+dy*dy||1;const t=clamp(((p.x-a.x)*dx+(p.y-a.y)*dy)/L,0,1);return Math.hypot(p.x-a.x-t*dx,p.y-a.y-t*dy)}
+function hitEdge(p){let best=null,bd=16;paths().forEach(e=>{const m=mid(e),d=Math.min(Math.hypot(p.x-m.x,p.y-m.y)-8,dseg(p,...seg(e)));if(d<bd){bd=d;best=e}});return best}
+svg.addEventListener('pointerdown',ev=>{const t=ev.target.closest('[data-k]');const p=pt(ev);
+  if(pick){const f=pick;pick=null;const n=t&&t.dataset.k==='node'?N(t.dataset.id):hitNode(p,f);if(n&&n.id!==f){addPath(f,n.id);return}const te=t&&t.dataset.k==='edge'?Ed(t.dataset.id):null;const e=te&&te.to?te:hitEdge(p);if(e){addMod(f,e.id);return}toast('已取消連線');draw();return}
+  if(!t){if(ev.pointerType!=='mouse'){const w=svg.parentElement;drag={mode:'pan',cx:ev.clientX,cy:ev.clientY,sl:w.scrollLeft};try{svg.setPointerCapture(ev.pointerId)}catch(e){}return}if(sel){sel=null;renderSel()}return}
+  const k=t.dataset.k,id=t.dataset.id;
+  if(k==='port')drag={mode:'link',from:id,x:p.x,y:p.y};
+  else if(k==='node'){const n=N(id);drag={mode:'move',id,dx:p.x-n.x,dy:p.y-n.y,sx:p.x,sy:p.y,moved:false}}
+  else{sel={kind:'edge',id};selH=id;renderSel();return}
+  try{svg.setPointerCapture(ev.pointerId)}catch(e){}ev.preventDefault()});
+svg.addEventListener('pointermove',ev=>{if(!drag)return;if(drag.mode==='pan'){svg.parentElement.scrollLeft=drag.sl-(ev.clientX-drag.cx);window.scrollBy(0,-(ev.clientY-drag.cy));drag.cy=ev.clientY;return}const p=pt(ev);
+  if(drag.mode==='move'){if(!drag.moved&&Math.hypot(p.x-drag.sx,p.y-drag.sy)<4)return;drag.moved=true;const n=N(drag.id);n.x=Math.round(clamp(p.x-drag.dx,NW/2+2,VW-NW/2-14));n.y=Math.round(clamp(p.y-drag.dy,NH/2+2,VH-NH/2-2));draw()}
+  else{drag.x=p.x;drag.y=p.y;const n=hitNode(p,drag.from);if(n)drag.hover={k:'n',x:n.x,y:n.y};else{const e=hitEdge(p);drag.hover=e?Object.assign({k:'e'},mid(e)):null}draw()}});
+svg.addEventListener('pointerup',ev=>{if(!drag)return;const d=drag;drag=null;if(d.mode==='pan'){if(Math.abs(svg.parentElement.scrollLeft-d.sl)<3&&sel){sel=null;renderSel()}return}const p=pt(ev);
+  if(d.mode==='move'){if(!d.moved){sel={kind:'node',id:d.id};renderSel()}else{persist();draw()}return}
+  const n=hitNode(p,d.from);if(n){addPath(d.from,n.id);return}
+  const e=hitEdge(p);if(e){addMod(d.from,e.id);return}
+  const a=N(d.from);if(Math.hypot(p.x-a.x-NW/2,p.y-a.y)<14){pick=d.from;draw();toast('點另一個變數＝路徑；點線上的標籤＝調節；點空白處取消');return}
+  draw();toast('線要放在另一個變數上（路徑），或一條線中點的標籤上（調節）')});
+svg.addEventListener('pointercancel',()=>{drag=null;draw()});
+svg.addEventListener('keydown',ev=>{const t=ev.target.closest('[data-k]');if(!t)return;const id=t.dataset.id,isE=t.dataset.k==='edge';
+  if(ev.key==='Enter'||ev.key===' '){sel={kind:isE?'edge':'node',id};if(isE)selH=id;renderSel();focusEl(id);ev.preventDefault();return}
+  if(!isE&&ev.key.startsWith('Arrow')){const n=N(id),st=ev.shiftKey?40:10;if(ev.key==='ArrowLeft')n.x-=st;if(ev.key==='ArrowRight')n.x+=st;if(ev.key==='ArrowUp')n.y-=st;if(ev.key==='ArrowDown')n.y+=st;n.x=clamp(n.x,NW/2+2,VW-NW/2-14);n.y=clamp(n.y,NH/2+2,VH-NH/2-2);persist();draw();focusEl(id);ev.preventDefault();return}
+  if(ev.key==='Delete'||ev.key==='Backspace'){del(isE?'edge':'node',id);ev.preventDefault()}});
+
+/* 左上的變數片：拖或點 */
+document.querySelectorAll('.bchip').forEach(c=>{
+  c.addEventListener('pointerdown',ev=>{if(ev.button>0)return;ev.preventDefault();const role=c.dataset.role,sx=ev.clientX,sy=ev.clientY;let g=null,moved=false;
+    const mv=e=>{if(!moved&&Math.hypot(e.clientX-sx,e.clientY-sy)<5)return;moved=true;if(!g){g=document.createElement('div');g.className='bghost';g.textContent=ROLE[role][0];g.style.background=FILL[role][0];g.style.borderColor=FILL[role][1];document.body.appendChild(g)}g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'};
+    const up=e=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);if(g)g.remove();
+      if(!moved){addNode(role);return}const r=svg.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){const p=pt(e);addNode(role,p.x,p.y)}};
+    document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up)});
+  c.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();addNode(c.dataset.role)}})});
+document.querySelectorAll('[data-bpre]').forEach(b=>b.onclick=()=>{B=Object.assign(clone(PRESET[b.dataset.bpre]),{n:B.n,seed:B.seed});sel=null;selH=null;renderAll();toast(b.dataset.bpre==='blank'?'畫布已清空':'已載入範例：'+b.textContent);markDone()});
+
+/* 新增與刪除 */
+function freeSpot(role){const x0={iv:110,med:380,mod:380,dv:650}[role];for(const dx of[0,-130,130])for(let y=60;y<=290;y+=58){const x=clamp(x0+dx,NW/2+2,VW-NW/2-14);if(!B.nodes.some(n=>Math.abs(n.x-x)<NW&&Math.abs(n.y-y)<NH+8))return{x,y}}return{x:VW/2,y:VH/2}}
+function addNode(role,x,y){const cnt=B.nodes.filter(n=>n.role===role).length+1;if(x==null){const s=freeSpot(role);x=s.x;y=s.y}
+  const n={id:uid('n'),name:ROLE[role][0]+' '+cnt,role,type:role==='mod'?'nom':'ord',k:role==='mod'?2:5,x:Math.round(clamp(x,NW/2+2,VW-NW/2-14)),y:Math.round(clamp(y,NH/2+2,VH-NH/2-2))};
+  B.nodes.push(n);sel={kind:'node',id:n.id};renderAll();const i=$('bp-name');if(i){i.focus();i.select()}markDone()}
+function addPath(f,t){if(f===t)return draw();
+  if(paths().some(e=>e.from===f&&e.to===t)){toast('這條路徑已經有了');return draw()}
+  if(reach(t,f)){toast('不能連：會繞成迴圈（'+N(t).name+' 已經影響到 '+N(f).name+'）');return draw()}
+  const e={id:uid('e'),from:f,to:t,sign:1,size:'m'};B.edges.push(e);sel={kind:'edge',id:e.id};selH=e.id;renderAll();toast('已新增 '+labels()[e.id]+'：'+N(f).name+' → '+N(t).name+'。在編輯區改方向與敘述');markDone()}
+function addMod(w,eid){const t=Ed(eid);
+  if(t.from===w||t.to===w){toast('調節變數不能是這條路徑兩端的變數');return draw()}
+  if(mods().some(e=>e.from===w&&e.onEdge===eid)){toast('這個調節已經有了');return draw()}
+  if(reach(t.to,w)){toast('不能連：'+N(t.to).name+' 已經影響到 '+N(w).name+'，會繞成迴圈');return draw()}
+  const W=N(w);let msg='';if(W.role!=='mod'){W.role='mod';msg='，並把「'+W.name+'」改成調節變數'}
+  const e={id:uid('e'),from:w,onEdge:eid,sign:1,size:'m'};B.edges.push(e);sel={kind:'edge',id:e.id};selH=e.id;renderAll();toast('已新增調節 '+labels()[e.id]+msg);markDone()}
+function del(kind,id){if(kind==='node'){const gone=new Set(B.edges.filter(e=>e.from===id||e.to===id).map(e=>e.id));B.edges=B.edges.filter(e=>!gone.has(e.id)&&!gone.has(e.onEdge));B.nodes=B.nodes.filter(n=>n.id!==id)}
+  else B.edges=B.edges.filter(e=>e.id!==id&&e.onEdge!==id);
+  sel=null;if(selH&&!Ed(selH)&&!String(selH).startsWith('med:'))selH=null;renderAll()}
+
+/* 右側面板 */
+function panel(){const P=$('bpanel'),H=labels();
+  if(sel&&sel.kind==='node'&&N(sel.id)){const n=N(sel.id);const ks=n.type==='nom'?[2,3,4,5,6]:[3,4,5,6,7,8,9,10];
+    P.innerHTML=`<h3>變數</h3>
+    <div class="bfield"><label for="bp-name">名稱</label><input id="bp-name" class="txt" maxlength="24" value="${E(n.name)}"></div>
+    <div class="bfield"><span>角色</span><div class="row">${Object.keys(ROLE).map(r=>`<button class="chipbtn ${n.role===r?'on':''}" data-prole="${r}">${ROLE[r][0]}</button>`).join('')}</div></div>
+    <div class="bfield"><span>類型</span><div class="row">${Object.keys(TYPE).map(t=>`<button class="chipbtn ${n.type===t?'on':''}" data-ptype="${t}">${TYPE[t][0]} <span class="en">${TYPE[t][1]}</span></button>`).join('')}</div><span class="wrong-note">${TYPENOTE[n.type]}</span></div>
+    ${n.type!=='num'?`<div class="bfield"><label for="bp-k">${n.type==='nom'?'類別數':'級數（五點量表＝5）'}</label><select id="bp-k" class="sel">${ks.map(k=>`<option ${k===n.k?'selected':''}>${k}</option>`).join('')}</select></div>`:''}
+    ${n.type==='nom'?`<div class="bfield"><label for="bp-cats">類別名稱（逗號分開，第一個是參照組）</label><input id="bp-cats" class="txt" value="${E(cats(n).join('，'))}"></div>`:''}
+    <div class="row" style="margin-top:10px"><button class="chipbtn" id="bp-del">刪除這個變數</button><button class="chipbtn" id="bp-done">完成</button></div>
+    <p class="wrong-note">從變數右邊的 ⊕ 拖一條線：放到另一個變數＝路徑；放到線中點的標籤＝調節。</p>`;
+    $('bp-name').oninput=ev=>{n.name=ev.target.value.trim()||'未命名';persist();draw();checks();renderOut()};
+    P.querySelectorAll('[data-prole]').forEach(b=>b.onclick=()=>{n.role=b.dataset.prole;persist();renderSel();checks()});
+    P.querySelectorAll('[data-ptype]').forEach(b=>b.onclick=()=>{n.type=b.dataset.ptype;if(n.type==='nom'&&(n.k>6||n.k<2))n.k=2;if(n.type==='ord'&&n.k<3)n.k=5;renderAll()});
+    if($('bp-k'))$('bp-k').onchange=ev=>{n.k=+ev.target.value;renderAll()};
+    if($('bp-cats'))$('bp-cats').onchange=ev=>{n.cats=ev.target.value.split(/[,，、]/).map(s=>s.trim());persist();draw();panel();renderOut()};
+    $('bp-del').onclick=()=>del('node',n.id);$('bp-done').onclick=()=>{sel=null;renderSel()};
+  }else if(sel&&sel.kind==='edge'&&Ed(sel.id)){const e=Ed(sel.id),isM=!!e.onEdge;
+    let head;if(isM){const t=Ed(e.onEdge);head=`<b>${E(N(e.from).name)}</b> 調節 ${E(N(t.from).name)} → ${E(N(t.to).name)}（${H[t.id]}）`}else head=`<b>${E(N(e.from).name)}</b> → <b>${E(N(e.to).name)}</b>`;
+    P.innerHTML=`<h3>${H[e.id]}　${isM?'調節':'路徑'}</h3><p style="margin:0 0 6px">${head}</p>
+    <div class="bfield"><span>${isM?'調節的方向':'方向'}</span><div class="row"><button class="chipbtn ${e.sign>0?'on':''}" data-psign="1">${isM?'強化':'正向 ＋'}</button><button class="chipbtn ${e.sign<0?'on':''}" data-psign="-1">${isM?'削弱':'負向 −'}</button></div>${isM?'<span class="wrong-note">強化＝調節變數越高，原本那條路的效果越大；削弱＝越小，甚至翻轉。</span>':''}</div>
+    <div class="bfield"><span>預設效果大小（產生模擬資料用）</span><div class="row">${Object.keys(SIZE).map(k=>`<button class="chipbtn ${e.size===k?'on':''}" data-psize="${k}">${SIZE[k][1]} β = ${String(SIZE[k][0]).replace(/^0/,'')}</button>`).join('')}</div></div>
+    <div class="bfield"><label for="bp-text">假設敘述</label><textarea id="bp-text" class="txt" rows="3">${E(hText(e))}</textarea><div class="row"><button class="chipbtn" id="bp-auto">${e.text?'恢復自動句':'自動句會跟著方向改'}</button></div></div>
+    <div class="fb info show" id="bp-res" style="margin:6px 0"></div><div class="row" style="margin-top:8px"><button class="chipbtn" id="bp-del">刪除這條</button><button class="chipbtn" id="bp-done">完成</button></div>`;
+    P.querySelectorAll('[data-psign]').forEach(b=>b.onclick=()=>{e.sign=+b.dataset.psign;renderAll()});
+    P.querySelectorAll('[data-psize]').forEach(b=>b.onclick=()=>{e.size=b.dataset.psize;renderAll()});
+    $('bp-text').oninput=ev=>{e.text=ev.target.value;persist();renderOut()};
+    $('bp-auto').onclick=()=>{delete e.text;persist();panel();renderOut()};
+    $('bp-del').onclick=()=>del('edge',e.id);$('bp-done').onclick=()=>{sel=null;renderSel()};
+  }else{sel=null;const opt=B.nodes.map(n=>`<option value="${n.id}">${E(n.name)}</option>`).join('');
+    const opt2=B.nodes.map((n,i)=>`<option value="n:${n.id}" ${i===1?'selected':''}>${E(n.name)}</option>`).join('')+(paths().length?`<optgroup label="（調節）一條路徑">${paths().map(e=>`<option value="e:${e.id}">${H[e.id]}：${E(N(e.from).name)} → ${E(N(e.to).name)}</option>`).join('')}</optgroup>`:'');
+    P.innerHTML=`<h3>怎麼畫</h3><ol class="pt" style="font-size:14px;padding-left:20px"><li>把上面的變數拖進畫布，或點一下。</li><li>點變數，在這裡改名稱、角色、類型。</li><li>從變數右邊的 ⊕ 拖到另一個變數＝一條路徑，也就是一個假設。</li><li>拖到線中點的標籤上＝調節。</li><li>點線上的標籤，改方向、效果大小與假設敘述。</li></ol>
+    <h3 style="margin-top:12px">不用拖也能連</h3>${B.nodes.length>1?`<div class="bfield"><label for="bf-from">從</label><select id="bf-from" class="sel">${opt}</select><label for="bf-to">到</label><select id="bf-to" class="sel">${opt2}</select><button class="chipbtn" id="bf-add" style="justify-self:start;margin-top:4px">連起來</button></div>`:'<p class="wrong-note">先放兩個以上的變數。</p>'}`;
+    if($('bf-add'))$('bf-add').onclick=()=>{const f=$('bf-from').value,[k,t]=$('bf-to').value.split(':');if(k==='n'&&f===t){toast('「從」和「到」是同一個變數');return}if(k==='n')addPath(f,t);else addMod(f,t)};
+  }
+}
+
+/* 結構檢查 */
+function checks(){const W=[];const inP=id=>paths().some(e=>e.to===id),outP=id=>paths().some(e=>e.from===id),asMod=id=>mods().some(e=>e.from===id);
+  if(!B.nodes.length)W.push(['w','畫布是空的：先拖一個自變數和一個依變數進來。']);
+  B.nodes.forEach(n=>{const q='「'+n.name+'」';
+    if(n.role==='iv'&&inP(n.id))W.push(['w',q+'是自變數，卻有箭頭指向它；它其實是中介或依變數。']);
+    if(n.role==='iv'&&!outP(n.id)&&!asMod(n.id))W.push(['w',q+'是自變數，還沒有指向任何變數。']);
+    if(n.role==='dv'&&outP(n.id))W.push(['w',q+'是依變數，卻指向別的變數；它其實是中介變數。']);
+    if(n.role==='dv'&&!inP(n.id))W.push(['w',q+'是依變數，還沒有箭頭指向它。']);
+    if(n.role==='med'&&!(inP(n.id)&&outP(n.id)))W.push(['w',q+'是中介變數，要同時有箭頭進來、箭頭出去。']);
+    if(n.role!=='med'&&n.role!=='dv'&&inP(n.id)&&outP(n.id))W.push(['w',q+'有進有出，在模型裡扮演中介的角色，可以把角色改成中介變數。']);
+    if(n.role==='mod'&&!asMod(n.id))W.push(['w',q+'是調節變數，要指到一條路徑中點的標籤，不是指到變數。']);
+    if(n.role!=='mod'&&asMod(n.id))W.push(['w',q+'在調節一條路徑，角色卻是'+ROLE[n.role][0]+'。']);});
+  if(B.nodes.length&&!W.length)W.push(['ok','結構檢查通過：每個變數的角色都對得上它在圖上的位置。']);
+  $('bwarn').innerHTML=W.map(([c,t])=>`<li class="${c}">${E(t)}</li>`).join('')}
+
+/* ---------- 模擬 ---------- */
+function rng(seed){let a=seed>>>0;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function gauss(r){let u=0;while(!u)u=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*r())}
+function probit(p){const a=[-39.6968302866538,220.946098424521,-275.928510446969,138.357751867269,-30.6647980661472,2.50662827745924],b=[-54.4760987982241,161.585836858041,-155.698979859887,66.8013118877197,-13.2806815528857],c=[-7.78489400243029e-3,-.322396458041136,-2.40075827716184,-2.54973253934373,4.37466414146497,2.93816398269878],d=[7.78469570904146e-3,.32246712907004,2.445134137143,3.75440866190742];
+  const lo=p<.5,pp=lo?p:1-p;if(pp<.02425){const q=Math.sqrt(-2*Math.log(pp));const v=(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5])/((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);return lo?v:-v}
+  const q=p-.5,r=q*q;return(((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q/(((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1)}
+function Phi(x){const t=1/(1+.2316419*Math.abs(x)),d=.3989423*Math.exp(-x*x/2),p=d*t*(.3193815+t*(-.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));return x>0?1-p:p}
+function stdz(v){const n=v.length;let m=0;for(let i=0;i<n;i++)m+=v[i];m/=n;let s=0;for(let i=0;i<n;i++)s+=(v[i]-m)**2;s=Math.sqrt(s/n);for(let i=0;i<n;i++)v[i]=s>1e-12?(v[i]-m)/s:0;return v}
+function simulate(n,seed){const r=rng(seed),D={};
+  topo().forEach(id=>{const nd=N(id),par=paths().filter(e=>e.to===id),md=modsInto(id),lat=new Float64Array(n),exo=!par.length&&!md.length;
+    if(exo)for(let i=0;i<n;i++)lat[i]=gauss(r);
+    else{const sig=new Float64Array(n);par.forEach(e=>{const b=SIZE[e.size][0]*e.sign,z=D[e.from].z;for(let i=0;i<n;i++)sig[i]+=b*z[i]});
+      md.forEach(e=>{const t=Ed(e.onEdge),g=SIZE[e.size][0]*e.sign*t.sign,zx=D[t.from].z,zw=D[e.from].z;for(let i=0;i<n;i++)sig[i]+=g*zx[i]*zw[i]});
+      let m=0,v=0;for(let i=0;i<n;i++)m+=sig[i];m/=n;for(let i=0;i<n;i++)v+=(sig[i]-m)**2;v/=n;const sd=Math.sqrt(Math.max(.15,1-v));
+      for(let i=0;i<n;i++)lat[i]=sig[i]+sd*gauss(r);stdz(lat)}
+    const raw=new Array(n);let dz;
+    if(nd.type==='num'){for(let i=0;i<n;i++)raw[i]=Math.round((50+10*lat[i])*10)/10;dz=Float64Array.from(raw)}
+    else if(nd.type==='ord'){const cuts=[];for(let j=1;j<nd.k;j++)cuts.push(probit(j/nd.k));for(let i=0;i<n;i++){let c=1;for(const t of cuts)if(lat[i]>t)c++;raw[i]=c}dz=Float64Array.from(raw)}
+    else{for(let i=0;i<n;i++){if(exo)raw[i]=Math.floor(r()*nd.k);else raw[i]=r()<1/(1+Math.exp(-1.7*lat[i]))?1+Math.floor(r()*(nd.k-1)):0}dz=Float64Array.from(raw,x=>x>0?1:0)}
+    D[id]={raw,dz,z:stdz(Float64Array.from(dz))}});
+  return D}
+function invert(A){const p=A.length,M=A.map((r,i)=>{const o=new Float64Array(2*p);o.set(r);o[p+i]=1;return o});
+  for(let c=0;c<p;c++){let pv=c;for(let r=c+1;r<p;r++)if(Math.abs(M[r][c])>Math.abs(M[pv][c]))pv=r;if(Math.abs(M[pv][c])<1e-10)return null;[M[c],M[pv]]=[M[pv],M[c]];const d=M[c][c];for(let j=0;j<2*p;j++)M[c][j]/=d;
+    for(let r=0;r<p;r++)if(r!==c){const f=M[r][c];if(f)for(let j=0;j<2*p;j++)M[r][j]-=f*M[c][j]}}
+  return M.map(r=>r.slice(p))}
+function ols(y,X,idx){const p=X.length+1,n=idx?idx.length:y.length,A=Array.from({length:p},()=>new Float64Array(p)),c=new Float64Array(p),row=new Float64Array(p);row[0]=1;
+  for(let t=0;t<n;t++){const i=idx?idx[t]:t;for(let j=1;j<p;j++)row[j]=X[j-1][i];const yi=y[i];for(let a=0;a<p;a++){c[a]+=row[a]*yi;for(let b=a;b<p;b++)A[a][b]+=row[a]*row[b]}}
+  for(let a=0;a<p;a++)for(let b=0;b<a;b++)A[a][b]=A[b][a];
+  const inv=invert(A);if(!inv)return null;const be=new Float64Array(p);for(let a=0;a<p;a++)for(let b=0;b<p;b++)be[a]+=inv[a][b]*c[b];
+  let sse=0;for(let t=0;t<n;t++){const i=idx?idx[t]:t;let pr=be[0];for(let j=1;j<p;j++)pr+=be[j]*X[j-1][i];sse+=(y[i]-pr)**2}
+  const s2=sse/Math.max(1,n-p);return{b:be,se:Array.from({length:p},(_,a)=>Math.sqrt(Math.max(0,inv[a][a]*s2)))}}
+function design(id,D){const par=paths().filter(e=>e.to===id),md=modsInto(id),cols=[],map={},have=new Set(par.map(e=>e.from));
+  par.forEach(e=>{map[e.id]=cols.length+1;cols.push(D[e.from].z)});
+  md.forEach(e=>{const t=Ed(e.onEdge);if(!have.has(e.from)){have.add(e.from);cols.push(D[e.from].z)}const zx=D[t.from].z,zw=D[e.from].z;map[e.id]=cols.length+1;cols.push(Float64Array.from(zx,(v,i)=>v*zw[i]))});
+  return{cols,map,y:N(id).type==='nom'?D[id].dz:D[id].z}}
+function expSign(e){return e.onEdge?e.sign*Ed(e.onEdge).sign:e.sign}
+function verdict(est,lo,hi,s){if(lo>0||hi<0)return Math.sign(est)===s?'ok':'rev';return'na'}
+function estimate(D,boot){const fits={},ds={};B.nodes.forEach(n=>{if(isEndo(n.id)){ds[n.id]=design(n.id,D);fits[n.id]=ols(ds[n.id].y,ds[n.id].cols)}});
+  const rows=[],H=labels();
+  B.edges.forEach(e=>{if(!N(e.from)||(e.to&&!N(e.to))||(e.onEdge&&!Ed(e.onEdge)))return;const tg=e.to||Ed(e.onEdge).to,f=fits[tg];if(!f)return rows.push({key:e.id,h:H[e.id],text:hText(e),est:NaN,vd:'na'});
+    const j=ds[tg].map[e.id],est=f.b[j],se=f.se[j],lo=est-1.96*se,hi=est+1.96*se;rows.push({key:e.id,h:H[e.id],text:hText(e),est,lo,hi,p:2*(1-Phi(Math.abs(est/se))),vd:verdict(est,lo,hi,expSign(e)),lpm:N(tg).type==='nom'})});
+  const ML=medList();
+  ML.forEach(x=>{const fa=fits[x.m.id],fb=fits[x.b.to];if(!fa||!fb)return;const ja=ds[x.m.id].map[x.a.id],jb=ds[x.b.to].map[x.b.id],a=fa.b[ja],b=fb.b[jb],ab=a*b,s=x.a.sign*x.b.sign;
+    const row={key:x.key,h:H[x.key],text:medText(x),est:ab,a,b,med:true,lpm:N(x.b.to).type==='nom'||x.m.type==='nom'};
+    if(boot){row.boot=[]}else{const se=Math.sqrt(b*b*fa.se[ja]**2+a*a*fb.se[jb]**2);row.lo=ab-1.96*se;row.hi=ab+1.96*se;row.vd=verdict(ab,row.lo,row.hi,s)}
+    row.s=s;rows.push(row)});
+  if(boot&&ML.length){const n=B.n,r=rng(B.seed*7919+11),idx=new Int32Array(n),need=new Set();ML.forEach(x=>{need.add(x.m.id);need.add(x.b.to)});
+    for(let k=0;k<boot;k++){for(let i=0;i<n;i++)idx[i]=Math.floor(r()*n);const F={};need.forEach(id=>F[id]=ols(ds[id].y,ds[id].cols,idx));
+      ML.forEach(x=>{const row=rows.find(q=>q.key===x.key);if(!row||!F[x.m.id]||!F[x.b.to])return;row.boot.push(F[x.m.id].b[ds[x.m.id].map[x.a.id]]*F[x.b.to].b[ds[x.b.to].map[x.b.id]])})}
+    rows.filter(q=>q.med).forEach(q=>{const s=q.boot.sort((u,v)=>u-v);q.lo=s[Math.floor(s.length*.025)];q.hi=s[Math.min(s.length-1,Math.floor(s.length*.975))];q.vd=verdict(q.est,q.lo,q.hi,q.s);delete q.boot})}
+  return rows}
+
+let simT=null;
+function schedSim(){clearTimeout(simT);simT=setTimeout(()=>{D=B.nodes.length?simulate(B.n,B.seed):null;R=D?estimate(D,400):[];renderOut()},50)}
+function runPower(){if(!B.edges.length){toast('先畫至少一條路徑');return}const tok=++powTok,REP=200,cnt={},n=B.n;let r=0;$('bpow').disabled=true;
+  (function step(){if(tok!==powTok){$('bpow').disabled=false;$('bpow').textContent='算檢定力（重抽 200 次）';return}for(let k=0;k<10&&r<REP;k++,r++){estimate(simulate(n,B.seed*1000+r+7),0).forEach(x=>{if(x.vd==='ok')cnt[x.key]=(cnt[x.key]||0)+1})}
+    $('bpow').textContent='重抽中… '+r+'／'+REP;if(r<REP)setTimeout(step,0);else{pow={n,v:{}};(R||[]).forEach(x=>pow.v[x.key]=(cnt[x.key]||0)/REP);$('bpow').textContent='算檢定力（重抽 200 次）';$('bpow').disabled=false;renderOut()}})()}
+
+/* ---------- 輸出：假設表、圖、資料 ---------- */
+const VD={ok:'支持',rev:'方向相反',na:'未支持'};
+function pf(p){return p<.001?'< .001':p.toFixed(3).replace(/^0/,'')}
+function renderOut(){const H=labels();$('obn').value=B.n;$('bn').value=B.n;
+  if(!D||!R){$('bsum').innerHTML='畫布上還沒有變數。';$('bres').innerHTML='';$('bprev').innerHTML='';$('bchart').innerHTML='';$('bchartN').textContent='';$('bnote').textContent='';return}
+  R.forEach(x=>{x.h=H[x.key]||x.h;const e=Ed(x.key);if(e)x.text=hText(e)});
+  const ok=R.filter(x=>x.vd==='ok').length;
+  $('bsum').innerHTML=R.length?`n = <b class="num">${B.n}</b>・${R.length} 條假設，這一批資料支持 <b class="num">${ok}</b> 條。點一列看圖。`:'還沒有路徑：從變數右邊的 ⊕ 拖一條線到另一個變數。';
+  const showPow=pow&&pow.n===B.n;
+  $('bres').innerHTML=R.length?`<thead><tr><th>假設</th><th>敘述</th><th>估計值</th><th>95% CI</th><th>p</th><th>這一批</th><th>檢定力</th></tr></thead><tbody>${R.map(x=>`<tr data-h="${x.key}" class="${x.key===selH?'on':''}"><td><b>${x.h}</b></td><td>${E(x.text)}</td><td class="num">${isNaN(x.est)?'—':f2(x.est)+(x.lpm?'†':'')}</td><td class="num" style="white-space:nowrap">${x.lo==null?'—':'['+f2(x.lo)+', '+f2(x.hi)+']'}</td><td class="num">${x.med?'boot':x.p==null?'—':pf(x.p)}</td><td><span class="vd ${x.vd}">${VD[x.vd]}</span></td><td class="num" style="white-space:nowrap">${showPow&&pow.v[x.key]!=null?`<span class="pw"><i style="width:${pow.v[x.key]*100}%"></i></span>${Math.round(pow.v[x.key]*100)}%`:'—'}</td></tr>`).join('')}</tbody>`:'';
+  $('bres').querySelectorAll('tr[data-h]').forEach(tr=>tr.onclick=()=>{selH=tr.dataset.h;if(Ed(selH)){sel={kind:'edge',id:selH};draw();panel()}renderOut()});
+  $('bnote').innerHTML='估計值是標準化係數 β（調節＝交互項，中介＝a × b，信賴區間用 400 次 bootstrap）。'+(R.some(x=>x.lpm)?'† 依變數是名目：係數是「是非參照組」的機率差（線性機率模型）。':'')+(showPow?' 檢定力＝同一模型、n = '+pow.n+' 重抽 200 次，得到「支持」的比例；八成是常用的門檻。':' 按「算檢定力」看同一個研究重做 200 次的結果。');
+  const pr=$('bp-res');if(pr&&sel){const x=R.find(q=>q.key===sel.id);pr.innerHTML=x&&!isNaN(x.est)?'這一批：β = '+f2(x.est)+(x.lpm?'†':'')+'，p '+(x.p<.001?'< .001':'= '+pf(x.p))+'，<span class="vd '+x.vd+'">'+VD[x.vd]+'</span>'+(showPow&&pow.v[x.key]!=null?'；檢定力 '+Math.round(pow.v[x.key]*100)+'%':''):'這一批：還算不出來'}
+  draw();renderChart();renderPrev()}
+
+function renderPrev(){const ns=topo().map(N),show=Math.min(8,B.n);
+  const lab=(n,v)=>n.type==='nom'?cats(n)[v]:v;
+  const sum=n=>{const r=D[n.id].raw;if(n.type==='nom'){const c=cats(n),k=new Array(n.k).fill(0);r.forEach(v=>k[v]++);return c.map((s,i)=>E(s)+' '+Math.round(k[i]/r.length*100)+'%').join('・')}let m=0;r.forEach(v=>m+=v);m/=r.length;let s=0;r.forEach(v=>s+=(v-m)**2);return 'M = '+m.toFixed(n.type==='num'?1:2)+'，SD = '+Math.sqrt(s/r.length).toFixed(n.type==='num'?1:2)};
+  $('bprev').innerHTML=`<thead><tr><th>#</th>${ns.map(n=>`<th>${E(n.name)} <span class="en" style="font-weight:400">${ROLE[n.role][1]}·${TYPE[n.type][0]}</span></th>`).join('')}</tr></thead><tbody><tr class="sumr"><td>全體</td>${ns.map(n=>`<td>${sum(n)}</td>`).join('')}</tr>${Array.from({length:show},(_,i)=>`<tr><td class="num">${i+1}</td>${ns.map(n=>`<td class="num">${E(lab(n,D[n.id].raw[i]))}</td>`).join('')}</tr>`).join('')}</tbody>`}
+
+function renderChart(){const C=$('bchart');let x=R.find(q=>q.key===selH)||R[0];if(!x){C.innerHTML='';$('bchartT').textContent='選中的假設';$('bchartN').textContent='';return}selH=x.key;
+  $('bchartT').textContent=x.h+'：'+x.text;
+  if(x.med){const ml=medList().find(q=>q.key===x.key);const X=N(ml.a.from),M=ml.m,Y=N(ml.b.to);
+    const bx=(cx,cy,t,f)=>`<rect x="${cx-75}" y="${cy-22}" width="150" height="44" rx="9" fill="${f}" stroke="var(--line2)"/><text x="${cx}" y="${cy+5}" text-anchor="middle" font-size="14" fill="var(--ink)">${E(fit(t,136,14))}</text>`;
+    C.innerHTML=`<defs><marker id="bca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs><line x1="125" y1="168" x2="225" y2="88" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#bca)"/><line x1="295" y1="88" x2="395" y2="168" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#bca)"/>${bx(80,190,X.name,FILL[X.role][0])}${bx(260,66,M.name,FILL.med[0])}${bx(440,190,Y.name,FILL[Y.role][0])}
+    <text x="150" y="118" font-size="14" fill="var(--ink)" text-anchor="end">a = ${f2(x.a)}</text><text x="370" y="118" font-size="14" fill="var(--ink)">b = ${f2(x.b)}</text><text x="260" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink)">a × b = ${f2(x.est)}　95% CI [${f2(x.lo)}, ${f2(x.hi)}]</text>`;
+    $('bchartN').textContent=x.vd==='ok'?'信賴區間不含 0、方向與假設一致：資料支持效果有一部分「經過」'+M.name+'。':'信賴區間含 0 或方向相反：這一批資料看不出效果經過'+M.name+'。';return}
+  const e=Ed(x.key);let X,Y,W=null;if(e.onEdge){const t=Ed(e.onEdge);X=N(t.from);Y=N(t.to);W=N(e.from)}else{X=N(e.from);Y=N(e.to)}
+  const n=B.n,xr=D[X.id].raw,yv=Y.type==='nom'?D[Y.id].dz:D[Y.id].raw;
+  let grp=new Array(n).fill(0),gl=[''];
+  if(W){if(W.type==='nom'){const c=cats(W);grp=D[W.id].raw.map(v=>v>0?1:0);gl=[c[0],c.length>2?'其他組':c[1]]}else{const s=[...D[W.id].raw].sort((a,b)=>a-b),md=s[Math.floor(n/2)];grp=D[W.id].raw.map(v=>v>md?1:0);gl=[W.name+'低',W.name+'高']}}
+  const G=W?2:1,colr=['var(--accent)','var(--mod)'];
+  const L=58,Rm=W?96:20,T=12,Bm=44,PW=520-L-Rm,PH=270-T-Bm;
+  const yl=Y.type==='nom'?Y.name+'為「'+cats(Y)[1]+'」的比例':Y.name;
+  let pts=[],series=[];
+  const binsOf=()=>{if(X.type==='nom')return cats(X).map((c,i)=>({lab:c,f:v=>v===i}));if(X.type==='ord')return Array.from({length:X.k},(_,i)=>({lab:String(i+1),f:v=>v===i+1}));const s=[...xr].sort((a,b)=>a-b),q=[0,.2,.4,.6,.8,1].map(p=>s[Math.min(n-1,Math.floor(p*(n-1)))]);return q.slice(0,5).map((v,i)=>({lab:v.toFixed(0)+'–'+q[i+1].toFixed(0),f:u=>u>=v&&(i===4?u<=q[5]:u<q[i+1])}))};
+  const useBins=X.type==='nom'||Y.type==='nom'||(X.type==='ord'&&Y.type!=='num');
+  let xs,ys,xmin,xmax,ymin,ymax,xt;
+  if(useBins){const bins=binsOf();for(let g=0;g<G;g++){const ser=bins.map((b,bi)=>{const v=[];for(let i=0;i<n;i++)if(grp[i]===g&&b.f(xr[i]))v.push(yv[i]);if(v.length<2)return null;const m=v.reduce((a,c)=>a+c,0)/v.length,sd=Math.sqrt(v.reduce((a,c)=>a+(c-m)**2,0)/(v.length-1));return{bi,m,lo:m-1.96*sd/Math.sqrt(v.length),hi:m+1.96*sd/Math.sqrt(v.length)}}).filter(Boolean);series.push(ser)}
+    const all=series.flat();ymin=Math.min(...all.map(s=>s.lo));ymax=Math.max(...all.map(s=>s.hi));if(Y.type==='nom'){ymin=Math.max(0,ymin);ymax=Math.min(1,ymax)}
+    const pad=(ymax-ymin)*.12||.5;ymin-=pad;ymax+=pad;const nb=bins.length;xs=bi=>L+PW*(bi+.5)/nb;xt=bins.map((b,i)=>[xs(i),b.lab])}
+  else{xmin=Math.min(...xr);xmax=Math.max(...xr);ymin=Math.min(...yv);ymax=Math.max(...yv);const px=(xmax-xmin)*.05||1,py=(ymax-ymin)*.05||1;xmin-=px;xmax+=px;ymin-=py;ymax+=py;xs=v=>L+PW*(v-xmin)/(xmax-xmin);
+    const r=rng(B.seed+5),jit=X.type==='ord'?.18:0,jy=Y.type==='ord'?.18:0;const step=Math.max(1,Math.floor(n/350));for(let i=0;i<n;i+=step)pts.push([xr[i]+(r()-.5)*2*jit,yv[i]+(r()-.5)*2*jy,grp[i]]);
+    for(let g=0;g<G;g++){const ix=[];for(let i=0;i<n;i++)if(grp[i]===g)ix.push(i);if(ix.length<3){series.push(null);continue}const mx=ix.reduce((a,i)=>a+xr[i],0)/ix.length,my=ix.reduce((a,i)=>a+yv[i],0)/ix.length;let sxy=0,sxx=0;ix.forEach(i=>{sxy+=(xr[i]-mx)*(yv[i]-my);sxx+=(xr[i]-mx)**2});const b=sxx?sxy/sxx:0;series.push({b,a:my-b*mx})}
+    const ticks=5;xt=Array.from({length:ticks},(_,i)=>{const v=xmin+(xmax-xmin)*(i+.5)/ticks;return[xs(v),X.type==='ord'?'':v.toFixed(0)]});if(X.type==='ord')xt=Array.from({length:X.k},(_,i)=>[xs(i+1),String(i+1)])}
+  ys=v=>T+PH*(1-(v-ymin)/(ymax-ymin));
+  let s=`<rect x="${L}" y="${T}" width="${PW}" height="${PH}" fill="none" stroke="var(--line)"/>`;
+  for(let i=0;i<=4;i++){const v=ymin+(ymax-ymin)*i/4,y=ys(v);s+=`<line x1="${L}" x2="${L+PW}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${L-6}" y="${y+4}" font-size="11" text-anchor="end" fill="var(--muted)">${Y.type==='nom'?Math.round(v*100)+'%':v.toFixed(Math.abs(ymax-ymin)<10?1:0)}</text>`}
+  xt.forEach(([x,t])=>{s+=`<text x="${x}" y="${T+PH+16}" font-size="11" text-anchor="middle" fill="var(--muted)">${E(fit(t,PW/xt.length-4,11))}</text>`});
+  s+=`<text x="${L+PW/2}" y="${T+PH+36}" font-size="13" text-anchor="middle" fill="var(--ink)">${E(X.name)}</text><text x="14" y="${T+PH/2}" font-size="13" text-anchor="middle" fill="var(--ink)" transform="rotate(-90 14 ${T+PH/2})">${E(fit(yl,PH,13))}</text>`;
+  if(useBins){const off=G>1?6:0,ends=series.map(ser=>ser.length?ys(ser[ser.length-1].m):null),close=G>1&&ends[0]!=null&&ends[1]!=null&&Math.abs(ends[0]-ends[1])<16;series.forEach((ser,g)=>{const c=colr[g];const P=ser.map(q=>[xs(q.bi)+(G>1?(g?off:-off):0),q]);s+=`<polyline points="${P.map(([x,q])=>x+','+ys(q.m)).join(' ')}" fill="none" stroke="${c}" stroke-width="2"/>`;P.forEach(([x,q])=>{s+=`<line x1="${x}" x2="${x}" y1="${ys(q.lo)}" y2="${ys(q.hi)}" stroke="${c}" stroke-width="1.5"/><circle cx="${x}" cy="${ys(q.m)}" r="4.5" fill="${c}"/>`});if(W&&ends[g]!=null){const dd=close?(ends[g]<=ends[1-g]?-8:8):0;s+=`<text x="${L+PW+6}" y="${clamp(ends[g]+4+dd,T+10,T+PH)}" font-size="12" fill="${c}">${E(fit(gl[g],Rm-8,12))}</text>`}})}
+  else{s+=pts.map(([u,v,g])=>`<circle cx="${xs(u).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="2.2" fill="${colr[g]}" opacity=".28"/>`).join('');
+    series.forEach((ln,g)=>{if(!ln)return;const x0=xmin,x1=xmax;const y0=ln.a+ln.b*x0,y1=ln.a+ln.b*x1;s+=`<line x1="${xs(x0)}" y1="${ys(y0)}" x2="${xs(x1)}" y2="${ys(y1)}" stroke="${colr[g]}" stroke-width="3"/>`;
+      if(W){const other=series[1-g];const yo=other?ys(other.a+other.b*x1):-99;const yy=ys(y1),dd=Math.abs(yy-yo)<16?(yy<yo?-8:8):0;s+=`<text x="${L+PW+6}" y="${clamp(yy+4+dd,T+10,T+PH)}" font-size="12" fill="${colr[g]}">${E(fit(gl[g],Rm-8,12))}</text>`}})}
+  C.innerHTML=s;
+  $('bchartN').textContent=(W?'兩條線的斜率差就是調節：平行＝沒有調節，一條陡一條平或交叉＝有調節。':useBins?'點是各組平均，直線段是 95% 信賴區間。':'每個點是一位模擬受訪者，直線是簡單迴歸線。')+(Y.type==='ord'||X.type==='ord'?' 順序變數的點加了少量抖動，避免疊在一起。':'')}
+
+/* 控制列 */
+$('bn').oninput=ev=>{B.n=+ev.target.value;$('obn').value=B.n;persist();schedSim()};
+$('bseed').onclick=()=>{B.seed++;persist();schedSim();markDone()};
+$('bpow').onclick=()=>{runPower();markDone()};
+$('bcsv').onclick=()=>{if(!D)return;const ns=topo().map(N),q=s=>'"'+String(s).replace(/"/g,'""')+'"';const lines=[ns.map(n=>q(n.name)).join(',')];for(let i=0;i<B.n;i++)lines.push(ns.map(n=>q(n.type==='nom'?cats(n)[D[n.id].raw[i]]:D[n.id].raw[i])).join(','));
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv'}));a.download='模擬資料_n'+B.n+'.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
+$('bcopy').onclick=()=>{const H=labels();const t=B.edges.map(e=>H[e.id]+'：'+hText(e)).concat(medList().map(x=>H[x.key]+'：'+medText(x))).join('\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>toast('已複製 '+t.split('\n').length+' 條假設'),()=>toast('瀏覽器不讓複製'))};
+GUESS.g9=(ok)=>(store.g9=1,save(),$('bpow').disabled=false,$('bpow').title='用同一個模型重抽 200 次，看每條假設有幾成被支持',ok?'對。':'不對，答案是約三成。')+'β = .1、n = 200 時，標準誤大約 .07，估計值要超過 .14 才顯著，只有三成左右的樣本抽得到這麼大。也就是說效果明明存在，十次研究有七次會寫出「未支持」。按上面「算檢定力」看你的模型（範例裡的 H3 就是小效果），再把 n 拉到 800 重算，小效果才到八成左右。';
+
+function renderSel(){draw();panel();if(D)renderOut()}
+function renderAll(){pow=null;powTok++;persist();draw();panel();checks();schedSim()}
+draw();panel();checks();schedSim();
+if(store.g9)$('bpow').disabled=false;else $('bpow').title='先回答上面的「先猜」再按';
+if(loaded)toast('已載入上次畫的模型；按「範例」或「清空畫布」可以重來');
+})();
 
 /* 初始站 */
 const h=location.hash.replace('#','');const idx=stages.findIndex(s=>s.id===h);go(idx>=0?idx:0,false);
