@@ -472,6 +472,8 @@ th{color:var(--muted);font-weight:600;font-size:12px}
       <button class="chipbtn" data-bpre="ai">AI 標示與可信度</button>
       <button class="chipbtn" data-bpre="tam">TAM＋年齡</button>
       <button class="chipbtn" data-bpre="blank">清空畫布</button></span>
+      <span class="grp"><label for="bthq" class="lbl">從工具的模型載入：</label><input id="bthq" class="txt" list="bthl" placeholder="打縮寫或中文，例如 TAM、計畫行為" style="width:230px;min-height:34px;padding:4px 8px"><datalist id="bthl"></datalist><label class="lbl" style="white-space:nowrap"><input type="checkbox" id="bthcore" checked> 只載核心變數</label><button class="chipbtn" id="bthgo">載入</button></span>
+      <datalist id="bvars"></datalist>
     </div>
     <p class="bhint">從變數右邊的 → 拖到另一個變數＝路徑（一個假設）；拖到線中點的標籤＝調節。也可以點 → 再點目標。線上的 ✓／✗ 是這一批模擬資料的結果。</p>
     <div class="bwrap">
@@ -815,7 +817,7 @@ const TYPE={nom:['名目','Nominal'],ord:['順序','Ordinal'],num:['數值','Num
 const TYPENOTE={nom:'只有類別、沒有大小。例：有無 AI 標示、使用的平台。第一個類別是參照組。',ord:'有大小順序，但間距不保證相等。例：單題五點量表、教育程度。',num:'數字本身有意義、可以加減。例：年齡、觀看秒數、多題量表加總分。'};
 const SIZE={s:[.1,'小'],m:[.3,'中'],l:[.5,'大']};
 const FILL={iv:['var(--sel)','var(--sel-line)'],dv:['var(--chip)','var(--accent)'],med:['var(--sim)','var(--sim-line)'],mod:['var(--mod-bg)','var(--mod)']};
-const NW=150,NH=52,VW=760,VH=340;
+const NW=150,NH=52;let VW=760,VH=340;
 const PRESET={
   ai:{nodes:[{id:'a',name:'AI 生成標示',role:'iv',type:'nom',k:2,cats:['無標示','有標示'],x:110,y:170},{id:'b',name:'人工把關感',role:'med',type:'ord',k:7,x:380,y:62},{id:'c',name:'新聞可信度',role:'dv',type:'ord',k:7,x:650,y:170},{id:'d',name:'對 AI 的信任',role:'mod',type:'num',k:5,x:380,y:290}],
     edges:[{id:'e1',from:'a',to:'b',sign:-1,size:'m'},{id:'e2',from:'b',to:'c',sign:1,size:'m'},{id:'e3',from:'a',to:'c',sign:-1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:-1,size:'m'}]},
@@ -867,6 +869,7 @@ function modSeg(e){const w=N(e.from),m=mid(Ed(e.onEdge)),p=clip(w,m),dx=m.x-p.x,
 
 function vmark(id){const x=R&&R.find(q=>q.key===id);return !x?'':x.vd==='ok'?' ✓':' ✗'}
 function draw(){
+  VW=B.vw||760;VH=B.vh||340;svg.setAttribute('viewBox','0 0 '+VW+' '+VH);
   const H=labels();const mk=k=>`<marker id="bm-${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--${k})"/></marker>`;
   let s=`<defs>${mk('pos')}${mk('neg')}${mk('mod')}${mk('accent')}</defs>`;
   if(!B.nodes.length)s+=`<text x="${VW/2}" y="${VH/2-8}" text-anchor="middle" font-size="16" fill="var(--muted)">把上面的變數拖進來，或直接點一下</text><text x="${VW/2}" y="${VH/2+16}" text-anchor="middle" font-size="13" fill="var(--muted)">也可以按「範例」先看一個完整模型</text>`;
@@ -925,7 +928,7 @@ document.querySelectorAll('.bchip').forEach(c=>{
       if(!moved){addNode(role);return}const r=svg.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){const p=pt(e);addNode(role,p.x,p.y)}};
     document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up)});
   c.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();addNode(c.dataset.role)}})});
-document.querySelectorAll('[data-bpre]').forEach(b=>b.onclick=()=>{B=Object.assign(clone(PRESET[b.dataset.bpre]),{n:B.n,seed:B.seed});sel=null;selH=null;renderAll();toast(b.dataset.bpre==='blank'?'畫布已清空':'已載入範例：'+b.textContent);markDone()});
+document.querySelectorAll('[data-bpre]').forEach(b=>b.onclick=()=>{B=Object.assign(clone(PRESET[b.dataset.bpre]),{n:B.n,seed:B.seed});VW=760;VH=340;sel=null;selH=null;renderAll();toast(b.dataset.bpre==='blank'?'畫布已清空':'已載入範例：'+b.textContent);markDone()});
 
 /* 新增與刪除 */
 function freeSpot(role){const x0={iv:110,med:380,mod:380,dv:650}[role];for(const dx of[0,-130,130])for(let y=60;y<=290;y+=58){const x=clamp(x0+dx,NW/2+2,VW-NW/2-14);if(!B.nodes.some(n=>Math.abs(n.x-x)<NW&&Math.abs(n.y-y)<NH+8))return{x,y}}return{x:VW/2,y:VH/2}}
@@ -950,13 +953,13 @@ function del(kind,id){if(kind==='node'){const gone=new Set(B.edges.filter(e=>e.f
 function panel(){const P=$('bpanel'),H=labels();
   if(sel&&sel.kind==='node'&&N(sel.id)){const n=N(sel.id);const ks=n.type==='nom'?[2,3,4,5,6]:[3,4,5,6,7,8,9,10];
     P.innerHTML=`<h3>變數</h3>
-    <div class="bfield"><label for="bp-name">名稱</label><input id="bp-name" class="txt" maxlength="24" value="${E(n.name)}"></div>
+    <div class="bfield"><label for="bp-name">名稱</label><input id="bp-name" class="txt" maxlength="40" list="bvars" placeholder="自己打，或從工具的變數挑" value="${E(n.name)}"></div>
     <div class="bfield"><span>角色</span><div class="row">${Object.keys(ROLE).map(r=>`<button class="chipbtn ${n.role===r?'on':''}" data-prole="${r}">${ROLE[r][0]}</button>`).join('')}</div></div>
     <div class="bfield"><span>類型</span><div class="row">${Object.keys(TYPE).map(t=>`<button class="chipbtn ${n.type===t?'on':''}" data-ptype="${t}">${TYPE[t][0]} <span class="en">${TYPE[t][1]}</span></button>`).join('')}</div><span class="wrong-note">${TYPENOTE[n.type]}</span></div>
     ${n.type!=='num'?`<div class="bfield"><label for="bp-k">${n.type==='nom'?'類別數':'級數（五點量表＝5）'}</label><select id="bp-k" class="sel">${ks.map(k=>`<option ${k===n.k?'selected':''}>${k}</option>`).join('')}</select></div>`:''}
     ${n.type==='nom'?`<div class="bfield"><label for="bp-cats">類別名稱（逗號分開，第一個是參照組）</label><input id="bp-cats" class="txt" value="${E(cats(n).join('，'))}"></div>`:''}
     <div class="row" style="margin-top:10px"><button class="chipbtn" id="bp-del">刪除這個變數</button><button class="chipbtn" id="bp-done">完成</button></div>
-    <p class="wrong-note">從變數右邊的 ⊕ 拖一條線：放到另一個變數＝路徑；放到線中點的標籤＝調節。</p>`;
+    <p class="wrong-note">名稱欄可以直接挑工具裡的 1,000 多個變數。從變數右邊的 → 拖一條線：放到另一個變數＝路徑；放到線中點的標籤＝調節。</p>`;
     $('bp-name').oninput=ev=>{n.name=ev.target.value.trim()||'未命名';persist();draw();checks();renderOut()};
     P.querySelectorAll('[data-prole]').forEach(b=>b.onclick=()=>{n.role=b.dataset.prole;persist();renderSel();checks()});
     P.querySelectorAll('[data-ptype]').forEach(b=>b.onclick=()=>{n.type=b.dataset.ptype;if(n.type==='nom'&&(n.k>6||n.k<2))n.k=2;if(n.type==='ord'&&n.k<3)n.k=5;renderAll()});
@@ -1156,6 +1159,51 @@ $('bcsv').onclick=()=>{if(!D)return;const ns=topo().map(N),q=s=>'"'+String(s).re
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv'}));a.download='模擬資料_n'+B.n+'.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
 $('bcopy').onclick=()=>{const H=labels();const t=B.edges.map(e=>H[e.id]+'：'+hText(e)).concat(medList().map(x=>H[x.key]+'：'+medText(x))).join('\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>toast('已複製 '+t.split('\n').length+' 條假設'),()=>toast('瀏覽器不讓複製'))};
 GUESS.g9=(ok)=>(store.g9=1,save(),$('bpow').disabled=false,$('bpow').title='用同一個模型重抽 200 次，看每條假設有幾成被支持',ok?'對。':'不對，答案是約三成。')+'β = .1、n = 200 時，標準誤大約 .07，估計值要超過 .14 才顯著，只有三成左右的樣本抽得到這麼大。也就是說效果明明存在，十次研究有七次會寫出「未支持」。按上面「算檢定力」看你的模型（範例裡的 H3 就是小效果），再把 n 拉到 800 重算，小效果才到八成左右。';
+
+
+/* 從工具的模型與變數載入 */
+let LIB=null;const THL={};
+function libLoad(){if(LIB)return Promise.resolve(LIB);return fetch('data.json').then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{LIB=d;
+  const cnt={};d.edges.forEach(e=>{if(e.theory&&e.sign!=='m')cnt[e.theory]=(cnt[e.theory]||0)+1});
+  $('bthl').innerHTML=d.theories.filter(t=>cnt[t.id]>=2).map(t=>{const k=(t.abbr||t.id)+'｜'+(t.zh||t.name||'');THL[k]=t.id;return`<option value="${E(k)}">`}).join('');
+  $('bvars').innerHTML=d.variables.map(v=>`<option value="${E(v.label)}">`).join('');return d})}
+function guessType(nm){if(/gender|^sex$|性別|組別|^group$|experimental condition|標示|platform|平台|voluntariness/i.test(nm))return['nom',2];if(/^age$|年齡|income|收入|time|秒|frequency|次數/i.test(nm))return['num',5];return['ord',5]}
+function loadTheory(tid){const d=LIB,T=d.theories.find(t=>t.id===tid);if(!T)return;const VL={};d.variables.forEach(v=>VL[v.id]=v.label);
+  const es=d.edges.filter(e=>e.theory===tid);let P=es.filter(e=>e.sign!=='m'&&e.src!==e.dst),M=es.filter(e=>e.sign==='m'&&e.mod);
+  const key=(a,b)=>a+'\u0001'+b,pk={};P=P.filter(e=>{const k=key(e.src,e.dst);if(pk[k]||pk[key(e.dst,e.src)])return false;pk[k]=1;return true});
+  const mk={};M=M.filter(e=>{const k=key(e.src,e.dst)+'\u0001'+e.mod;if(mk[k])return false;mk[k]=1;return true});
+  M.forEach(e=>{if(!pk[key(e.src,e.dst)]&&!pk[key(e.dst,e.src)]){P.push({src:e.src,dst:e.dst,sign:'+'});pk[key(e.src,e.dst)]=1}});
+  let vars=[...new Set(P.flatMap(e=>[e.src,e.dst]))],trim=false;const MAX=9,core=(T.core||[]).filter(v=>vars.includes(v));
+  if($('bthcore').checked&&core.length>=2&&core.length<vars.length){vars=core;trim='core'}
+  else if(vars.length>MAX){const deg={};P.forEach(e=>{deg[e.src]=(deg[e.src]||0)+1;deg[e.dst]=(deg[e.dst]||0)+1});vars=[...new Set(core.concat(vars.filter(v=>!core.includes(v)).sort((a,b)=>deg[b]-deg[a])))].slice(0,MAX);trim='max'}
+  const VS=new Set(vars);P=P.filter(e=>VS.has(e.src)&&VS.has(e.dst));
+  /* 去掉會繞成迴圈的邊 */
+  const adj={};vars.forEach(v=>adj[v]=[]);const reachV=(a,b)=>{const st=[a],seen=new Set();while(st.length){const v=st.pop();if(v===b)return true;if(seen.has(v))continue;seen.add(v);(adj[v]||[]).forEach(w=>st.push(w))}return false};
+  P=P.filter(e=>{if(reachV(e.dst,e.src))return false;adj[e.src].push(e.dst);return true});
+  const pk2={};P.forEach(e=>pk2[key(e.src,e.dst)]=1);
+  M=M.filter(e=>pk2[key(e.src,e.dst)]);const mods=[...new Set(M.map(e=>e.mod))].filter(m=>!VS.has(m)).slice(0,3);M=M.filter(e=>(VS.has(e.mod)&&e.mod!==e.src&&e.mod!==e.dst)||mods.includes(e.mod));
+  /* 角色與分層 */
+  const inn=v=>P.some(e=>e.dst===v),out=v=>P.some(e=>e.src===v),depth={};
+  const dep=v=>{if(depth[v]!=null)return depth[v];depth[v]=0;const ps=P.filter(e=>e.dst===v).map(e=>e.src);depth[v]=ps.length?1+Math.max(...ps.map(dep)):0;return depth[v]};
+  vars.forEach(dep);const cols=Math.max(0,...vars.map(v=>depth[v]));
+  const byCol=[];for(let c=0;c<=cols;c++)byCol.push(vars.filter(v=>depth[v]===c));
+  const yIdx={};byCol.forEach((vs,c)=>{if(c){const bc={};vs.forEach(v=>{const ps=P.filter(e=>e.dst===v).map(e=>yIdx[e.src]).filter(x=>x!=null);bc[v]=ps.length?ps.reduce((a,b)=>a+b,0)/ps.length:0});vs.sort((a,b)=>bc[a]-bc[b])}vs.forEach((v,i)=>yIdx[v]=vs.length>1?i/(vs.length-1):.5)});
+  const rows=Math.max(...byCol.map(c=>c.length)),GX=cols>3?180:215,GY=78,top=50,zig=cols>=2;
+  const vw=Math.max(760,2*95+cols*GX+20),bodyH=Math.max(zig?130:1,Math.max(1,rows-1)*GY),vh=Math.max(340,top+bodyH+(mods.length?150:60));
+  const nodes=[],id={};
+  byCol.forEach((vs,c)=>vs.forEach((v,i)=>{const nm=VL[v]||v,[ty,k]=guessType(nm);id[v]='n'+nodes.length;const y=vs.length===1?top+bodyH/2+(zig?(c%2?-1:1)*Math.min(65,bodyH/2):0):top+i*bodyH/(vs.length-1);
+    nodes.push({id:id[v],name:nm.slice(0,40),role:!inn(v)?'iv':!out(v)?'dv':'med',type:ty,k,x:Math.round(cols?95+c*((vw-210)/cols):vw/2),y:Math.round(y)})}));
+  mods.forEach((m,i)=>{const nm=VL[m]||m,[ty,k]=guessType(nm);id[m]='n'+nodes.length;nodes.push({id:id[m],name:nm.slice(0,40),role:'mod',type:ty,k,x:Math.round(mods.length===1?vw/2:95+i*((vw-210)/Math.max(1,mods.length-1))),y:vh-40})});
+  const edges=[];P.forEach(e=>edges.push({id:'e'+edges.length,from:id[e.src],to:id[e.dst],sign:e.sign==='-'?-1:1,size:'m'}));
+  M.forEach(e=>{const t=edges.find(q=>q.from===id[e.src]&&q.to===id[e.dst]);if(t&&id[e.mod]&&!edges.some(q=>q.onEdge===t.id&&q.from===id[e.mod]))edges.push({id:'e'+edges.length,from:id[e.mod],onEdge:t.id,sign:1,size:'s'})});
+  B=Object.assign({nodes,edges,vw,vh},{n:B.n,seed:B.seed,tid});sel=null;selH=null;renderAll();markDone();
+  toast('已載入 '+(T.abbr||T.id)+(T.zh?' '+T.zh:'')+'：'+nodes.length+' 個變數、'+edges.length+' 條假設'+(trim==='core'?'（只載核心變數；取消勾選「只載核心變數」可載入延伸變數）':trim==='max'?'（模型較大，只取核心與連線最多的 '+MAX+' 個變數）':'')+'。方向照工具裡的模型，效果大小先設「中」，類型先猜，請自己檢查')}
+$('bthq').addEventListener('focus',()=>libLoad().catch(()=>toast('讀不到模型清單：本機直接開檔時瀏覽器擋了 data.json，線上版可以用')),{once:true});
+$('bthgo').onclick=()=>libLoad().then(()=>{const v=$('bthq').value.trim();let tid=THL[v];
+  if(!tid){const q=v.toLowerCase();const k=Object.keys(THL).find(k=>k.toLowerCase().includes(q));tid=k&&THL[k];if(k)$('bthq').value=k}
+  if(!tid){toast('找不到這個模型，從下拉清單挑一個');return}loadTheory(tid)}).catch(()=>toast('讀不到模型清單：本機直接開檔時瀏覽器擋了 data.json，線上版可以用'));
+$('bthq').addEventListener('keydown',ev=>{if(ev.key==='Enter'){ev.preventDefault();$('bthgo').click()}});
+setTimeout(()=>libLoad().catch(()=>{}),1500);
 
 function renderSel(){draw();panel();if(D)renderOut()}
 function renderAll(){pow=null;powTok++;persist();draw();panel();checks();schedSim()}
