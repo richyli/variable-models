@@ -184,6 +184,7 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 .paper{background:#fff;color:#111;border:1px solid var(--line2);border-radius:4px;padding:22px 26px;font-family:"Times New Roman",Times,"Noto Serif TC",PMingLiU,serif}
 .pfigs{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:26px 32px;margin-top:26px;border-top:1px solid #ccc;padding-top:22px}
 .paper svg text{font-family:"Times New Roman",Times,"Noto Serif TC",PMingLiU,serif}
+.ptab{max-width:880px;margin:22px auto 0}.pcap{font-size:15px;margin:0 0 6px}.ptbl{border-collapse:collapse;width:100%;font-size:14px;border-top:2px solid #111;border-bottom:2px solid #111}.ptbl th{border-bottom:1px solid #111;font-weight:400;text-align:left;padding:5px 8px;color:#111;font-size:14px}.ptbl td{border:0;padding:4px 8px;color:#111}
 .pfig{margin:0;scroll-margin-top:110px}.pfig.wide{max-width:880px;margin:0 auto}
 .pfig figcaption{font-size:15px;margin-bottom:8px;line-height:1.45}
 .pfig .pnote{font-size:13px;line-height:1.55;margin:6px 0 0;color:#111}
@@ -513,6 +514,7 @@ th{color:var(--muted);font-weight:600;font-size:12px}
         <div class="bsum" id="bsum"></div>
         <div class="bscroll"><table class="btbl" id="bres"></table></div>
         <p class="wrong-note" id="bnote"></p>
+        <div id="bind"></div>
       </div>
     </div>
     </div>
@@ -831,9 +833,9 @@ const FILL={iv:['var(--sel)','var(--sel-line)'],dv:['var(--chip)','var(--accent)
 const NW=150,NH=52;let VW=760,VH=340;
 const PRESET={
   ai:{nodes:[{id:'a',name:'AI 生成標示',role:'iv',type:'nom',k:2,cats:['無標示','有標示'],x:110,y:170},{id:'b',name:'人工把關感',role:'med',type:'ord',k:7,x:380,y:62},{id:'c',name:'新聞可信度',role:'dv',type:'ord',k:7,x:650,y:170},{id:'d',name:'對 AI 的信任',role:'mod',type:'num',k:5,x:380,y:290}],
-    edges:[{id:'e1',from:'a',to:'b',sign:-1,size:'m'},{id:'e2',from:'b',to:'c',sign:1,size:'m'},{id:'e3',from:'a',to:'c',sign:-1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:-1,size:'m'}]},
+    edges:[{id:'e1',from:'a',to:'b',sign:-1,size:'m'},{id:'e2',from:'b',to:'c',sign:1,size:'m'},{id:'e3',from:'a',to:'c',sign:-1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:-1,size:'m'}],medH:['med:e1:e2']},
   tam:{nodes:[{id:'a',name:'知覺易用性',role:'iv',type:'ord',k:5,x:110,y:170},{id:'b',name:'知覺有用性',role:'med',type:'ord',k:5,x:380,y:62},{id:'c',name:'使用意圖',role:'dv',type:'ord',k:5,x:650,y:170},{id:'d',name:'年齡組',role:'mod',type:'nom',k:2,cats:['年輕','年長'],x:380,y:290}],
-    edges:[{id:'e1',from:'a',to:'b',sign:1,size:'l'},{id:'e2',from:'b',to:'c',sign:1,size:'l'},{id:'e3',from:'a',to:'c',sign:1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:1,size:'m'}]},
+    edges:[{id:'e1',from:'a',to:'b',sign:1,size:'l'},{id:'e2',from:'b',to:'c',sign:1,size:'l'},{id:'e3',from:'a',to:'c',sign:1,size:'s'},{id:'e4',from:'d',onEdge:'e3',sign:1,size:'m'}],medH:['med:e1:e2']},
   blank:{nodes:[],edges:[]}
 };
 const clone=o=>JSON.parse(JSON.stringify(o));
@@ -857,7 +859,8 @@ function isEndo(id){return paths().some(e=>e.to===id)||modsInto(id).length>0}
 
 /* 假設編號與敘述 */
 function medList(){const L=[];B.nodes.forEach(m=>{paths().filter(e=>e.to===m.id).forEach(a=>paths().filter(e=>e.from===m.id).forEach(b=>L.push({key:'med:'+a.id+':'+b.id,a,b,m})))});return L}
-function labels(){const H={};B.edges.forEach((e,i)=>H[e.id]='H'+(i+1));medList().forEach((x,i)=>H[x.key]='H'+(B.edges.length+i+1));return H}
+function labels(){const H={},ml=medList(),mh=(B.medH||[]).filter(k=>ml.some(x=>x.key===k));B.edges.forEach((e,i)=>H[e.id]='H'+(i+1));mh.forEach((k,i)=>H[k]='H'+(B.edges.length+i+1));ml.forEach((x,i)=>{if(!H[x.key])H[x.key]='IE'+(i+1)});return H}
+const isHyp=k=>!String(k).startsWith('med:')||(B.medH||[]).includes(k);
 function yPhrase(Y,up){if(Y.type==='nom'){const c=cats(Y);return Y.name+'為「'+c[1]+'」'+(c.length>2?'或其他非參照組':'')+'的機率越'+(up?'高':'低')}return Y.name+'越'+(up?'高':'低')}
 function autoText(e){
   if(e.to){const X=N(e.from),Y=N(e.to),up=e.sign>0;
@@ -1076,14 +1079,17 @@ function runPower(){if(!B.edges.length){toast('先畫至少一條路徑');return
 const VD={ok:'支持',rev:'方向相反',na:'未支持'};
 function pf(p){return p<.001?'< .001':p.toFixed(3).replace(/^0/,'')}
 function renderOut(){const H=labels();$('obn').value=B.n;$('bn').value=B.n;
-  if(!D||!R){$('bsum').innerHTML='畫布上還沒有變數。';$('bres').innerHTML='';$('bprev').innerHTML='';$('bpaper').innerHTML='';$('bnote').textContent='';return}
+  if(!D||!R){$('bsum').innerHTML='畫布上還沒有變數。';$('bres').innerHTML='';$('bprev').innerHTML='';$('bpaper').innerHTML='';$('bnote').textContent='';$('bind').innerHTML='';return}
   R.forEach(x=>{x.h=H[x.key]||x.h;const e=Ed(x.key);if(e)x.text=hText(e)});
-  const ok=R.filter(x=>x.vd==='ok').length;
-  $('bsum').innerHTML=R.length?`n = <b class="num">${B.n}</b>・${R.length} 條假設，這一批資料支持 <b class="num">${ok}</b> 條。點一列跳到對應的圖。`:'還沒有路徑：從變數右邊的 ⊕ 拖一條線到另一個變數。';
+  const HR=R.filter(x=>isHyp(x.key)),IR=R.filter(x=>x.med),nmh=HR.filter(x=>x.med).length;
+  const ok=HR.filter(x=>x.vd==='ok').length;
+  $('bsum').innerHTML=HR.length?`n = <b class="num">${B.n}</b>・${HR.length} 條假設（畫布上 ${B.edges.length} 條線${nmh?'＋勾選的 '+nmh+' 條中介':''}），這一批資料支持 <b class="num">${ok}</b> 條。點一列跳到對應的圖。`:'還沒有路徑：從變數右邊的 ⊕ 拖一條線到另一個變數。';
   const showPow=pow&&pow.n===B.n;
-  $('bres').innerHTML=R.length?`<thead><tr><th>假設</th><th>敘述</th><th>估計值</th><th>95% CI</th><th>p</th><th>這一批</th><th>檢定力</th></tr></thead><tbody>${R.map(x=>`<tr data-h="${x.key}" class="${x.key===selH?'on':''}"><td><b>${x.h}</b></td><td>${E(x.text)}</td><td class="num">${isNaN(x.est)?'—':f2(x.est)+(x.lpm?'†':'')}</td><td class="num" style="white-space:nowrap">${x.lo==null?'—':'['+f2(x.lo)+', '+f2(x.hi)+']'}</td><td class="num">${x.med?'boot':x.p==null?'—':pf(x.p)}</td><td><span class="vd ${x.vd}">${VD[x.vd]}</span></td><td class="num" style="white-space:nowrap">${showPow&&pow.v[x.key]!=null?`<span class="pw"><i style="width:${pow.v[x.key]*100}%"></i></span>${Math.round(pow.v[x.key]*100)}%`:'—'}</td></tr>`).join('')}</tbody>`:'';
+  $('bres').innerHTML=HR.length?`<thead><tr><th>假設</th><th>敘述</th><th>估計值</th><th>95% CI</th><th>p</th><th>這一批</th><th>檢定力</th></tr></thead><tbody>${HR.map(x=>`<tr data-h="${x.key}" class="${x.key===selH?'on':''}"><td><b>${x.h}</b></td><td>${E(x.text)}</td><td class="num">${isNaN(x.est)?'—':f2(x.est)+(x.lpm?'†':'')}</td><td class="num" style="white-space:nowrap">${x.lo==null?'—':'['+f2(x.lo)+', '+f2(x.hi)+']'}</td><td class="num">${x.med?'boot':x.p==null?'—':pf(x.p)}</td><td><span class="vd ${x.vd}">${VD[x.vd]}</span></td><td class="num" style="white-space:nowrap">${showPow&&pow.v[x.key]!=null?`<span class="pw"><i style="width:${pow.v[x.key]*100}%"></i></span>${Math.round(pow.v[x.key]*100)}%`:'—'}</td></tr>`).join('')}</tbody>`:'';
   $('bres').querySelectorAll('tr[data-h]').forEach(tr=>tr.onclick=()=>{selH=tr.dataset.h;if(Ed(selH)){sel={kind:'edge',id:selH};draw();panel()}renderOut();const f=document.getElementById('fig-'+selH);if(f)f.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   $('bnote').innerHTML='估計值是標準化係數 β（調節＝交互項，中介＝a × b，信賴區間用 400 次 bootstrap）。'+(R.some(x=>x.lpm)?'† 依變數是名目：係數是「是非參照組」的機率差（線性機率模型）。':'')+(showPow?' 檢定力＝同一模型、n = '+pow.n+' 重抽 200 次，得到「支持」的比例；八成是常用的門檻。':' 按「算檢定力」看同一個研究重做 200 次的結果。');
+  $('bind').innerHTML=IR.length?`<h3 style="margin-top:12px">間接效果（自動計算，${IR.length} 條）</h3><p class="wrong-note" style="margin:0 0 4px">每條「X → M → Y」的鏈都會算 a × b，但不自動當成假設。勾「列為假設」才會編上 H 號、畫成一張圖。</p><div class="bscroll"><table class="btbl"><thead><tr><th>列為假設</th><th>編號</th><th>路徑</th><th>a × b</th><th>95% CI</th><th>這一批</th></tr></thead><tbody>${IR.map(x=>{const m=medList().find(q=>q.key===x.key);return`<tr><td><input type="checkbox" data-mh="${x.key}" ${isHyp(x.key)?'checked':''} aria-label="把 ${E(x.h)} 列為假設"></td><td><b>${x.h}</b></td><td>${E(N(m.a.from).name)} → ${E(m.m.name)} → ${E(N(m.b.to).name)}</td><td class="num">${f2(x.est)}</td><td class="num">[${f2(x.lo)}, ${f2(x.hi)}]</td><td><span class="vd ${x.vd}">${x.vd==='ok'?'顯著':x.vd==='rev'?'方向相反':'不顯著'}</span></td></tr>`}).join('')}</tbody></table></div>`:'';
+  $('bind').querySelectorAll('[data-mh]').forEach(c=>c.onchange=()=>{const k=c.dataset.mh,s=new Set(B.medH||[]);c.checked?s.add(k):s.delete(k);B.medH=[...s];persist();renderOut()});
   const pr=$('bp-res');if(pr&&sel){const x=R.find(q=>q.key===sel.id);pr.innerHTML=x&&!isNaN(x.est)?'這一批：β = '+f2(x.est)+(x.lpm?'†':'')+'，p '+(x.p<.001?'< .001':'= '+pf(x.p))+'，<span class="vd '+x.vd+'">'+VD[x.vd]+'</span>'+(showPow&&pow.v[x.key]!=null?'；檢定力 '+Math.round(pow.v[x.key]*100)+'%':''):'這一批：還算不出來'}
   draw();renderChart();renderPrev()}
 
@@ -1156,9 +1162,10 @@ function hypFig(x){const e=Ed(x.key);let X,Y,W=null;if(e.onEdge){const t=Ed(e.on
 
 function stat(x){if(isNaN(x.est))return'估計失敗';return(x.med?'<i>a</i> × <i>b</i>':'β')+' = '+f2(x.est)+(x.lpm?'†':'')+'，95% CI ['+f2(x.lo)+', '+f2(x.hi)+']'+(x.med?'（bootstrap）':'，<i>p</i> '+(x.p<.001?'< .001':'= '+pf(x.p)))+'，'+VD[x.vd]+'。'}
 function renderChart(){const P=$('bpaper');if(!R.length){P.innerHTML='<p class="wrong-note">畫出第一條路徑後，這裡會出現論文版的結果圖。</p>';return}
-  const med=R.filter(x=>x.med),ind=med.map(x=>x.h+'：'+N(medList().find(q=>q.key===x.key).a.from).name+' → '+medList().find(q=>q.key===x.key).m.name+' → '+N(medList().find(q=>q.key===x.key).b.to).name+'，<i>a</i> × <i>b</i> = '+f2(x.est)+'，95% CI ['+f2(x.lo)+', '+f2(x.hi)+']').join('；');
-  let h=`<figure class="pfig wide" id="fig-model"><figcaption><b>圖 1</b>　研究模型估計結果</figcaption>${pathFig()}<p class="pnote"><i>註</i>：<i>n</i> = ${B.n}。路徑上的數值為標準化係數 β；實線表示 <i>p</i> &lt; .05，虛線表示未達顯著。${R.some(x=>x.lpm)?'† 依變數為名目，係數為機率差（線性機率模型）。':''}${ind?'間接效果（bootstrap 400 次）：'+ind+'。':''}<br>*<i>p</i> &lt; .05. **<i>p</i> &lt; .01. ***<i>p</i> &lt; .001.</p></figure><div class="pfigs">`;
-  R.forEach((x,i)=>{const f=x.med?{svg:medFig(x),note:'實線為顯著路徑，虛線為未達顯著的直接效果。'}:hypFig(x);
+  const IR=R.filter(x=>x.med),HR=R.filter(x=>isHyp(x.key)),ind=IR.length?'間接效果見表 1。':'';
+  const tbl=IR.length?`<div class="ptab"><p class="pcap"><b>表 1</b>　間接效果（bootstrap 400 次）</p><table class="ptbl"><thead><tr><th></th><th>路徑</th><th><i>a</i> × <i>b</i></th><th>95% CI</th></tr></thead><tbody>${IR.map(x=>{const m=medList().find(q=>q.key===x.key);return`<tr><td>${E(x.h)}</td><td>${E(N(m.a.from).name)} → ${E(m.m.name)} → ${E(N(m.b.to).name)}</td><td>${f2(x.est)}${x.lo>0||x.hi<0?'*':''}</td><td>[${f2(x.lo)}, ${f2(x.hi)}]</td></tr>`}).join('')}</tbody></table><p class="pnote"><i>註</i>：H 開頭為列為假設的間接效果，IE 開頭為模型隱含、未列為假設者。*95% 信賴區間不含 0。</p></div>`:'';
+  let h=`<figure class="pfig wide" id="fig-model"><figcaption><b>圖 1</b>　研究模型估計結果</figcaption>${pathFig()}<p class="pnote"><i>註</i>：<i>n</i> = ${B.n}。路徑上的數值為標準化係數 β；實線表示 <i>p</i> &lt; .05，虛線表示未達顯著。${R.some(x=>x.lpm)?'† 依變數為名目，係數為機率差（線性機率模型）。':''}${ind?'間接效果（bootstrap 400 次）：'+ind+'。':''}<br>*<i>p</i> &lt; .05. **<i>p</i> &lt; .01. ***<i>p</i> &lt; .001.</p></figure>${tbl}<div class="pfigs">`;
+  HR.forEach((x,i)=>{const f=x.med?{svg:medFig(x),note:'實線為顯著路徑，虛線為未達顯著的直接效果。'}:hypFig(x);
     h+=`<figure class="pfig${x.key===selH?' on':''}" id="fig-${x.key}"><figcaption><b>圖 ${i+2}</b>　${E(x.h)}：${E(x.text)}</figcaption>${f.svg}<p class="pnote">${stat(x)}${f.note}</p></figure>`});
   P.innerHTML=h+'</div>'}
 
@@ -1168,7 +1175,7 @@ $('bseed').onclick=()=>{B.seed++;persist();schedSim();markDone()};
 $('bpow').onclick=()=>{runPower();markDone()};
 $('bcsv').onclick=()=>{if(!D)return;const ns=topo().map(N),q=s=>'"'+String(s).replace(/"/g,'""')+'"';const lines=[ns.map(n=>q(n.name)).join(',')];for(let i=0;i<B.n;i++)lines.push(ns.map(n=>q(n.type==='nom'?cats(n)[D[n.id].raw[i]]:D[n.id].raw[i])).join(','));
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv'}));a.download='模擬資料_n'+B.n+'.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
-$('bcopy').onclick=()=>{const H=labels();const t=B.edges.map(e=>H[e.id]+'：'+hText(e)).concat(medList().map(x=>H[x.key]+'：'+medText(x))).join('\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>toast('已複製 '+t.split('\n').length+' 條假設'),()=>toast('瀏覽器不讓複製'))};
+$('bcopy').onclick=()=>{const H=labels();const t=B.edges.map(e=>H[e.id]+'：'+hText(e)).concat(medList().filter(x=>isHyp(x.key)).map(x=>H[x.key]+'：'+medText(x))).join('\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>toast('已複製 '+t.split('\n').length+' 條假設'),()=>toast('瀏覽器不讓複製'))};
 GUESS.g9=(ok)=>(store.g9=1,save(),$('bpow').disabled=false,$('bpow').title='用同一個模型重抽 200 次，看每條假設有幾成被支持',ok?'對。':'不對，答案是約三成。')+'β = .1、n = 200 時，標準誤大約 .07，估計值要超過 .14 才顯著，只有三成左右的樣本抽得到這麼大。也就是說效果明明存在，十次研究有七次會寫出「未支持」。按上面「算檢定力」看你的模型（範例裡的 H3 就是小效果），再把 n 拉到 800 重算，小效果才到八成左右。';
 
 
