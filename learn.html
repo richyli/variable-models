@@ -171,7 +171,15 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 .bctl label{font-size:13px;margin-left:8px}
 .bctl input[type=range]{width:180px;flex:none}
 .bctl output{min-width:3em;font-size:13px}
-.bdata{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:14px;align-items:start}
+.bdata{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.paper{background:#fff;color:#111;border:1px solid var(--line2);border-radius:4px;padding:22px 26px;font-family:"Times New Roman",Times,"Noto Serif TC",PMingLiU,serif}
+.pfigs{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:26px 32px;margin-top:26px;border-top:1px solid #ccc;padding-top:22px}
+.paper svg text{font-family:"Times New Roman",Times,"Noto Serif TC",PMingLiU,serif}
+.pfig{margin:0;scroll-margin-top:110px}.pfig.wide{max-width:880px;margin:0 auto}
+.pfig figcaption{font-size:15px;margin-bottom:8px;line-height:1.45}
+.pfig .pnote{font-size:13px;line-height:1.55;margin:6px 0 0;color:#111}
+.pfig.on figcaption b{background:#fff1c2}
+@media (max-width:700px){.paper{padding:14px}.pfigs{grid-template-columns:minmax(0,1fr)}}
 .bsum{font-size:14px;margin-bottom:4px}
 .bscroll{overflow-x:auto}
 .btbl td,.btbl th{padding:5px 6px;font-size:13px}
@@ -493,13 +501,11 @@ th{color:var(--muted);font-weight:600;font-size:12px}
         <div class="bscroll"><table class="btbl" id="bres"></table></div>
         <p class="wrong-note" id="bnote"></p>
       </div>
-      <div>
-        <h3 id="bchartT">選中的假設</h3>
-        <svg id="bchart" viewBox="0 0 520 270" width="100%" role="img" aria-label="選中假設的模擬資料圖"></svg>
-        <p class="wrong-note" id="bchartN"></p>
-      </div>
     </div>
-    <h3 style="margin-top:12px">資料前 8 筆</h3>
+    </div>
+    <h3 style="margin-top:14px">論文版結果圖</h3>
+    <div class="paper" id="bpaper"></div>
+    <h3 style="margin-top:14px">資料前 8 筆</h3>
     <div class="bscroll"><table class="btbl" id="bprev"></table></div>
     <details><summary>這一站在什麼情況下會錯</summary>
       <p>模擬資料是照你設的方向與效果大小產生的，所以「支持」只代表在這個效果量與樣本數下，檢定抓得到你埋進去的效果；真實研究的效果量是未知的，要靠文獻或前導研究估。</p>
@@ -1022,7 +1028,8 @@ function ols(y,X,idx){const p=X.length+1,n=idx?idx.length:y.length,A=Array.from(
   for(let a=0;a<p;a++)for(let b=0;b<a;b++)A[a][b]=A[b][a];
   const inv=invert(A);if(!inv)return null;const be=new Float64Array(p);for(let a=0;a<p;a++)for(let b=0;b<p;b++)be[a]+=inv[a][b]*c[b];
   let sse=0;for(let t=0;t<n;t++){const i=idx?idx[t]:t;let pr=be[0];for(let j=1;j<p;j++)pr+=be[j]*X[j-1][i];sse+=(y[i]-pr)**2}
-  const s2=sse/Math.max(1,n-p);return{b:be,se:Array.from({length:p},(_,a)=>Math.sqrt(Math.max(0,inv[a][a]*s2)))}}
+  let ym=0;for(let t=0;t<n;t++)ym+=y[idx?idx[t]:t];ym/=n;let sst=0;for(let t=0;t<n;t++)sst+=(y[idx?idx[t]:t]-ym)**2;
+  const s2=sse/Math.max(1,n-p);return{r2:sst>0?1-sse/sst:0,b:be,se:Array.from({length:p},(_,a)=>Math.sqrt(Math.max(0,inv[a][a]*s2)))}}
 function design(id,D){const par=paths().filter(e=>e.to===id),md=modsInto(id),cols=[],map={},have=new Set(par.map(e=>e.from));
   par.forEach(e=>{map[e.id]=cols.length+1;cols.push(D[e.from].z)});
   md.forEach(e=>{const t=Ed(e.onEdge);if(!have.has(e.from)){have.add(e.from);cols.push(D[e.from].z)}const zx=D[t.from].z,zw=D[e.from].z;map[e.id]=cols.length+1;cols.push(Float64Array.from(zx,(v,i)=>v*zw[i]))});
@@ -1042,6 +1049,7 @@ function estimate(D,boot){const fits={},ds={};B.nodes.forEach(n=>{if(isEndo(n.id
     for(let k=0;k<boot;k++){for(let i=0;i<n;i++)idx[i]=Math.floor(r()*n);const F={};need.forEach(id=>F[id]=ols(ds[id].y,ds[id].cols,idx));
       ML.forEach(x=>{const row=rows.find(q=>q.key===x.key);if(!row||!F[x.m.id]||!F[x.b.to])return;row.boot.push(F[x.m.id].b[ds[x.m.id].map[x.a.id]]*F[x.b.to].b[ds[x.b.to].map[x.b.id]])})}
     rows.filter(q=>q.med).forEach(q=>{const s=q.boot.sort((u,v)=>u-v);q.lo=s[Math.floor(s.length*.025)];q.hi=s[Math.min(s.length-1,Math.floor(s.length*.975))];q.vd=verdict(q.est,q.lo,q.hi,q.s);delete q.boot})}
+  rows.r2={};Object.keys(fits).forEach(id=>{if(fits[id])rows.r2[id]=fits[id].r2});
   return rows}
 
 let simT=null;
@@ -1054,13 +1062,13 @@ function runPower(){if(!B.edges.length){toast('先畫至少一條路徑');return
 const VD={ok:'支持',rev:'方向相反',na:'未支持'};
 function pf(p){return p<.001?'< .001':p.toFixed(3).replace(/^0/,'')}
 function renderOut(){const H=labels();$('obn').value=B.n;$('bn').value=B.n;
-  if(!D||!R){$('bsum').innerHTML='畫布上還沒有變數。';$('bres').innerHTML='';$('bprev').innerHTML='';$('bchart').innerHTML='';$('bchartN').textContent='';$('bnote').textContent='';return}
+  if(!D||!R){$('bsum').innerHTML='畫布上還沒有變數。';$('bres').innerHTML='';$('bprev').innerHTML='';$('bpaper').innerHTML='';$('bnote').textContent='';return}
   R.forEach(x=>{x.h=H[x.key]||x.h;const e=Ed(x.key);if(e)x.text=hText(e)});
   const ok=R.filter(x=>x.vd==='ok').length;
-  $('bsum').innerHTML=R.length?`n = <b class="num">${B.n}</b>・${R.length} 條假設，這一批資料支持 <b class="num">${ok}</b> 條。點一列看圖。`:'還沒有路徑：從變數右邊的 ⊕ 拖一條線到另一個變數。';
+  $('bsum').innerHTML=R.length?`n = <b class="num">${B.n}</b>・${R.length} 條假設，這一批資料支持 <b class="num">${ok}</b> 條。點一列跳到對應的圖。`:'還沒有路徑：從變數右邊的 ⊕ 拖一條線到另一個變數。';
   const showPow=pow&&pow.n===B.n;
   $('bres').innerHTML=R.length?`<thead><tr><th>假設</th><th>敘述</th><th>估計值</th><th>95% CI</th><th>p</th><th>這一批</th><th>檢定力</th></tr></thead><tbody>${R.map(x=>`<tr data-h="${x.key}" class="${x.key===selH?'on':''}"><td><b>${x.h}</b></td><td>${E(x.text)}</td><td class="num">${isNaN(x.est)?'—':f2(x.est)+(x.lpm?'†':'')}</td><td class="num" style="white-space:nowrap">${x.lo==null?'—':'['+f2(x.lo)+', '+f2(x.hi)+']'}</td><td class="num">${x.med?'boot':x.p==null?'—':pf(x.p)}</td><td><span class="vd ${x.vd}">${VD[x.vd]}</span></td><td class="num" style="white-space:nowrap">${showPow&&pow.v[x.key]!=null?`<span class="pw"><i style="width:${pow.v[x.key]*100}%"></i></span>${Math.round(pow.v[x.key]*100)}%`:'—'}</td></tr>`).join('')}</tbody>`:'';
-  $('bres').querySelectorAll('tr[data-h]').forEach(tr=>tr.onclick=()=>{selH=tr.dataset.h;if(Ed(selH)){sel={kind:'edge',id:selH};draw();panel()}renderOut()});
+  $('bres').querySelectorAll('tr[data-h]').forEach(tr=>tr.onclick=()=>{selH=tr.dataset.h;if(Ed(selH)){sel={kind:'edge',id:selH};draw();panel()}renderOut();const f=document.getElementById('fig-'+selH);if(f)f.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})});
   $('bnote').innerHTML='估計值是標準化係數 β（調節＝交互項，中介＝a × b，信賴區間用 400 次 bootstrap）。'+(R.some(x=>x.lpm)?'† 依變數是名目：係數是「是非參照組」的機率差（線性機率模型）。':'')+(showPow?' 檢定力＝同一模型、n = '+pow.n+' 重抽 200 次，得到「支持」的比例；八成是常用的門檻。':' 按「算檢定力」看同一個研究重做 200 次的結果。');
   const pr=$('bp-res');if(pr&&sel){const x=R.find(q=>q.key===sel.id);pr.innerHTML=x&&!isNaN(x.est)?'這一批：β = '+f2(x.est)+(x.lpm?'†':'')+'，p '+(x.p<.001?'< .001':'= '+pf(x.p))+'，<span class="vd '+x.vd+'">'+VD[x.vd]+'</span>'+(showPow&&pow.v[x.key]!=null?'；檢定力 '+Math.round(pow.v[x.key]*100)+'%':''):'這一批：還算不出來'}
   draw();renderChart();renderPrev()}
@@ -1070,19 +1078,43 @@ function renderPrev(){const ns=topo().map(N),show=Math.min(8,B.n);
   const sum=n=>{const r=D[n.id].raw;if(n.type==='nom'){const c=cats(n),k=new Array(n.k).fill(0);r.forEach(v=>k[v]++);return c.map((s,i)=>E(s)+' '+Math.round(k[i]/r.length*100)+'%').join('・')}let m=0;r.forEach(v=>m+=v);m/=r.length;let s=0;r.forEach(v=>s+=(v-m)**2);return 'M = '+m.toFixed(n.type==='num'?1:2)+'，SD = '+Math.sqrt(s/r.length).toFixed(n.type==='num'?1:2)};
   $('bprev').innerHTML=`<thead><tr><th>#</th>${ns.map(n=>`<th>${E(n.name)} <span class="en" style="font-weight:400">${ROLE[n.role][1]}·${TYPE[n.type][0]}</span></th>`).join('')}</tr></thead><tbody><tr class="sumr"><td>全體</td>${ns.map(n=>`<td>${sum(n)}</td>`).join('')}</tr>${Array.from({length:show},(_,i)=>`<tr><td class="num">${i+1}</td>${ns.map(n=>`<td class="num">${E(lab(n,D[n.id].raw[i]))}</td>`).join('')}</tr>`).join('')}</tbody>`}
 
-function renderChart(){const C=$('bchart');let x=R.find(q=>q.key===selH)||R[0];if(!x){C.innerHTML='';$('bchartT').textContent='選中的假設';$('bchartN').textContent='';return}selH=x.key;
-  $('bchartT').textContent=x.h+'：'+x.text;
-  if(x.med){const ml=medList().find(q=>q.key===x.key);const X=N(ml.a.from),M=ml.m,Y=N(ml.b.to);
-    const bx=(cx,cy,t,f)=>`<rect x="${cx-75}" y="${cy-22}" width="150" height="44" rx="9" fill="${f}" stroke="var(--line2)"/><text x="${cx}" y="${cy+5}" text-anchor="middle" font-size="14" fill="var(--ink)">${E(fit(t,136,14))}</text>`;
-    C.innerHTML=`<defs><marker id="bca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker></defs><line x1="125" y1="168" x2="225" y2="88" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#bca)"/><line x1="295" y1="88" x2="395" y2="168" stroke="var(--muted)" stroke-width="2.5" marker-end="url(#bca)"/>${bx(80,190,X.name,FILL[X.role][0])}${bx(260,66,M.name,FILL.med[0])}${bx(440,190,Y.name,FILL[Y.role][0])}
-    <text x="150" y="118" font-size="14" fill="var(--ink)" text-anchor="end">a = ${f2(x.a)}</text><text x="370" y="118" font-size="14" fill="var(--ink)">b = ${f2(x.b)}</text><text x="260" y="238" text-anchor="middle" font-size="15" font-weight="600" fill="var(--ink)">a × b = ${f2(x.est)}　95% CI [${f2(x.lo)}, ${f2(x.hi)}]</text>`;
-    $('bchartN').textContent=x.vd==='ok'?'信賴區間不含 0、方向與假設一致：資料支持效果有一部分「經過」'+M.name+'。':'信賴區間含 0 或方向相反：這一批資料看不出效果經過'+M.name+'。';return}
-  const e=Ed(x.key);let X,Y,W=null;if(e.onEdge){const t=Ed(e.onEdge);X=N(t.from);Y=N(t.to);W=N(e.from)}else{X=N(e.from);Y=N(e.to)}
+/* 論文版圖：圖 1 路徑圖＋每條假設一張圖，全部展開 */
+const PF='font-family="Times New Roman,Times,Noto Serif TC,PMingLiU,serif"',INK='#111',GR='#777';
+function stars(p){return p<.001?'***':p<.01?'**':p<.05?'*':''}
+function coefLab(x){if(!x||isNaN(x.est))return x?x.h+': —':'';return x.h+': '+f2(x.est)+(x.med?'':stars(x.p))+(x.lpm?'†':'')}
+function pathFig(){const rows={};R.forEach(x=>rows[x.key]=x);const ns=B.nodes;if(!ns.length)return'';
+  const xs=ns.map(n=>n.x),ys=ns.map(n=>n.y),x0=Math.min(...xs)-NW/2-30,x1=Math.max(...xs)+NW/2+70,y0=Math.min(...ys)-NH/2-30,y1=Math.max(...ys)+NH/2+24;
+  let s=`<defs><marker id="pfa" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>`;
+  const labs=[];
+  const lab=(x,y,t,anchor)=>{const w=tw(t,13)+8,lx=anchor==='start'?x:anchor==='end'?x-w:x-w/2;labs.push(`<text x="${lx+w/2}" y="${y+3}" text-anchor="middle" font-size="13" fill="${INK}" ${PF}>${E(t)}</text>`)};
+  paths().forEach(e=>{const[p,q]=seg(e),x=rows[e.id],sig=x&&x.p<.05;
+    s+=`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="${INK}" stroke-width="1.4" ${sig?'':'stroke-dasharray="5 4"'} marker-end="url(#pfa)"/>`;
+    const m=mid(e),dx=q.x-p.x,dy=q.y-p.y,L=Math.hypot(dx,dy)||1;let nx=-dy/L,ny=dx/L;if(ny>0||(Math.abs(ny)<.1&&nx>0)){nx=-nx;ny=-ny}
+    const modAbove=mods().some(me=>me.onEdge===e.id&&N(me.from).y<m.y);if(modAbove){nx=-nx;ny=-ny}
+    lab(m.x+nx*20,m.y+ny*20+(ny>0?6:0),coefLab(x),'middle')});
+  mods().forEach(e=>{const w=N(e.from),m=mid(Ed(e.onEdge)),p=clip(w,m),x=rows[e.id],sig=x&&x.p<.05;
+    s+=`<line x1="${p.x}" y1="${p.y}" x2="${m.x}" y2="${m.y}" stroke="${INK}" stroke-width="1.4" ${sig?'':'stroke-dasharray="5 4"'} marker-end="url(#pfa)"/>`;
+    lab((p.x+m.x)/2+8,(p.y+m.y)/2+4,coefLab(x),'start')});
+  ns.forEach(n=>{const r2=R.r2&&R.r2[n.id];s+=`<rect x="${n.x-NW/2}" y="${n.y-NH/2}" width="${NW}" height="${NH}" fill="#fff" stroke="${INK}" stroke-width="1.2"/><text x="${n.x}" y="${n.y+(r2!=null?-3:5)}" text-anchor="middle" font-size="14" fill="${INK}" ${PF}>${E(fit(n.name,NW-12,14))}</text>`+(r2!=null?`<text x="${n.x}" y="${n.y+15}" text-anchor="middle" font-size="12" fill="${INK}" ${PF}><tspan font-style="italic">R</tspan>² = ${f2(r2)}</text>`:'')});
+  s+=labs.join('');
+  return`<svg viewBox="${x0} ${y0} ${x1-x0} ${y1-y0}" width="100%" style="max-width:860px;display:block;margin:0 auto" role="img" aria-label="研究模型估計結果路徑圖">${s}</svg>`}
+
+function medFig(x){const ml=medList().find(q=>q.key===x.key);if(!ml)return'';const X=N(ml.a.from),M=ml.m,Y=N(ml.b.to);const dir=R.find(q=>{const e=Ed(q.key);return e&&e.from===X.id&&e.to===Y.id}),ra=R.find(q=>q.key===ml.a.id),rb=R.find(q=>q.key===ml.b.id);
+  const bx=(cx,cy,t)=>`<rect x="${cx-75}" y="${cy-22}" width="150" height="44" fill="#fff" stroke="${INK}" stroke-width="1.2"/><text x="${cx}" y="${cy+5}" text-anchor="middle" font-size="14" fill="${INK}" ${PF}>${E(fit(t,138,14))}</text>`;
+  const st=v=>`stroke="${INK}" stroke-width="1.4" marker-end="url(#pfm)"`;
+  return`<svg viewBox="0 0 520 250" width="100%" role="img" aria-label="${E(x.h)} 中介路徑"><defs><marker id="pfm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="${INK}"/></marker></defs>
+  <line x1="120" y1="170" x2="215" y2="92" ${st()}/><line x1="305" y1="92" x2="400" y2="170" ${st()}/><line x1="155" y1="192" x2="365" y2="192" stroke="${INK}" stroke-width="1.4" ${dir&&dir.p<.05?'':'stroke-dasharray="5 4"'} marker-end="url(#pfm)"/>
+  ${bx(80,192,X.name)}${bx(260,70,M.name)}${bx(440,192,Y.name)}
+  <text x="160" y="118" font-size="13" text-anchor="end" fill="${INK}" ${PF}><tspan font-style="italic">a</tspan> = ${f2(x.a)}${ra?stars(ra.p):''}</text><text x="360" y="118" font-size="13" fill="${INK}" ${PF}><tspan font-style="italic">b</tspan> = ${f2(x.b)}${rb?stars(rb.p):''}</text>
+  <text x="260" y="184" font-size="13" text-anchor="middle" fill="${INK}" ${PF}><tspan font-style="italic">c</tspan>′ = ${dir?f2(dir.est)+stars(dir.p):'（未設直接路徑）'}</text>
+  <text x="260" y="238" font-size="13" text-anchor="middle" fill="${INK}" ${PF}><tspan font-style="italic">a</tspan> × <tspan font-style="italic">b</tspan> = ${f2(x.est)}, 95% CI [${f2(x.lo)}, ${f2(x.hi)}]</text></svg>`}
+
+function hypFig(x){const e=Ed(x.key);let X,Y,W=null;if(e.onEdge){const t=Ed(e.onEdge);X=N(t.from);Y=N(t.to);W=N(e.from)}else{X=N(e.from);Y=N(e.to)}
   const n=B.n,xr=D[X.id].raw,yv=Y.type==='nom'?D[Y.id].dz:D[Y.id].raw;
   let grp=new Array(n).fill(0),gl=[''];
   if(W){if(W.type==='nom'){const c=cats(W);grp=D[W.id].raw.map(v=>v>0?1:0);gl=[c[0],c.length>2?'其他組':c[1]]}else{const s=[...D[W.id].raw].sort((a,b)=>a-b),md=s[Math.floor(n/2)];grp=D[W.id].raw.map(v=>v>md?1:0);gl=[W.name+'低',W.name+'高']}}
-  const G=W?2:1,colr=['var(--accent)','var(--mod)'];
-  const L=58,Rm=W?96:20,T=12,Bm=44,PW=520-L-Rm,PH=270-T-Bm;
+  const G=W?2:1,dash=['','stroke-dasharray="6 4"'];
+  const L=58,Rm=20,T=W?36:12,Bm=46,PW=520-L-Rm,PH=270-T-Bm;
   const yl=Y.type==='nom'?Y.name+'為「'+cats(Y)[1]+'」的比例':Y.name;
   let pts=[],series=[];
   const binsOf=()=>{if(X.type==='nom')return cats(X).map((c,i)=>({lab:c,f:v=>v===i}));if(X.type==='ord')return Array.from({length:X.k},(_,i)=>({lab:String(i+1),f:v=>v===i+1}));const s=[...xr].sort((a,b)=>a-b),q=[0,.2,.4,.6,.8,1].map(p=>s[Math.min(n-1,Math.floor(p*(n-1)))]);return q.slice(0,5).map((v,i)=>({lab:v.toFixed(0)+'–'+q[i+1].toFixed(0),f:u=>u>=v&&(i===4?u<=q[5]:u<q[i+1])}))};
@@ -1094,18 +1126,27 @@ function renderChart(){const C=$('bchart');let x=R.find(q=>q.key===selH)||R[0];i
   else{xmin=Math.min(...xr);xmax=Math.max(...xr);ymin=Math.min(...yv);ymax=Math.max(...yv);const px=(xmax-xmin)*.05||1,py=(ymax-ymin)*.05||1;xmin-=px;xmax+=px;ymin-=py;ymax+=py;xs=v=>L+PW*(v-xmin)/(xmax-xmin);
     const r=rng(B.seed+5),jit=X.type==='ord'?.18:0,jy=Y.type==='ord'?.18:0;const step=Math.max(1,Math.floor(n/350));for(let i=0;i<n;i+=step)pts.push([xr[i]+(r()-.5)*2*jit,yv[i]+(r()-.5)*2*jy,grp[i]]);
     for(let g=0;g<G;g++){const ix=[];for(let i=0;i<n;i++)if(grp[i]===g)ix.push(i);if(ix.length<3){series.push(null);continue}const mx=ix.reduce((a,i)=>a+xr[i],0)/ix.length,my=ix.reduce((a,i)=>a+yv[i],0)/ix.length;let sxy=0,sxx=0;ix.forEach(i=>{sxy+=(xr[i]-mx)*(yv[i]-my);sxx+=(xr[i]-mx)**2});const b=sxx?sxy/sxx:0;series.push({b,a:my-b*mx})}
-    const ticks=5;xt=Array.from({length:ticks},(_,i)=>{const v=xmin+(xmax-xmin)*(i+.5)/ticks;return[xs(v),X.type==='ord'?'':v.toFixed(0)]});if(X.type==='ord')xt=Array.from({length:X.k},(_,i)=>[xs(i+1),String(i+1)])}
+    xt=X.type==='ord'?Array.from({length:X.k},(_,i)=>[xs(i+1),String(i+1)]):Array.from({length:5},(_,i)=>{const v=xmin+(xmax-xmin)*(i+.5)/5;return[xs(v),v.toFixed(0)]})}
   ys=v=>T+PH*(1-(v-ymin)/(ymax-ymin));
-  let s=`<rect x="${L}" y="${T}" width="${PW}" height="${PH}" fill="none" stroke="var(--line)"/>`;
-  for(let i=0;i<=4;i++){const v=ymin+(ymax-ymin)*i/4,y=ys(v);s+=`<line x1="${L}" x2="${L+PW}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-dasharray="2 3"/><text x="${L-6}" y="${y+4}" font-size="11" text-anchor="end" fill="var(--muted)">${Y.type==='nom'?Math.round(v*100)+'%':v.toFixed(Math.abs(ymax-ymin)<10?1:0)}</text>`}
-  xt.forEach(([x,t])=>{s+=`<text x="${x}" y="${T+PH+16}" font-size="11" text-anchor="middle" fill="var(--muted)">${E(fit(t,PW/xt.length-4,11))}</text>`});
-  s+=`<text x="${L+PW/2}" y="${T+PH+36}" font-size="13" text-anchor="middle" fill="var(--ink)">${E(X.name)}</text><text x="14" y="${T+PH/2}" font-size="13" text-anchor="middle" fill="var(--ink)" transform="rotate(-90 14 ${T+PH/2})">${E(fit(yl,PH,13))}</text>`;
-  if(useBins){const off=G>1?6:0,ends=series.map(ser=>ser.length?ys(ser[ser.length-1].m):null),close=G>1&&ends[0]!=null&&ends[1]!=null&&Math.abs(ends[0]-ends[1])<16;series.forEach((ser,g)=>{const c=colr[g];const P=ser.map(q=>[xs(q.bi)+(G>1?(g?off:-off):0),q]);s+=`<polyline points="${P.map(([x,q])=>x+','+ys(q.m)).join(' ')}" fill="none" stroke="${c}" stroke-width="2"/>`;P.forEach(([x,q])=>{s+=`<line x1="${x}" x2="${x}" y1="${ys(q.lo)}" y2="${ys(q.hi)}" stroke="${c}" stroke-width="1.5"/><circle cx="${x}" cy="${ys(q.m)}" r="4.5" fill="${c}"/>`});if(W&&ends[g]!=null){const dd=close?(ends[g]<=ends[1-g]?-8:8):0;s+=`<text x="${L+PW+6}" y="${clamp(ends[g]+4+dd,T+10,T+PH)}" font-size="12" fill="${c}">${E(fit(gl[g],Rm-8,12))}</text>`}})}
-  else{s+=pts.map(([u,v,g])=>`<circle cx="${xs(u).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="2.2" fill="${colr[g]}" opacity=".28"/>`).join('');
-    series.forEach((ln,g)=>{if(!ln)return;const x0=xmin,x1=xmax;const y0=ln.a+ln.b*x0,y1=ln.a+ln.b*x1;s+=`<line x1="${xs(x0)}" y1="${ys(y0)}" x2="${xs(x1)}" y2="${ys(y1)}" stroke="${colr[g]}" stroke-width="3"/>`;
-      if(W){const other=series[1-g];const yo=other?ys(other.a+other.b*x1):-99;const yy=ys(y1),dd=Math.abs(yy-yo)<16?(yy<yo?-8:8):0;s+=`<text x="${L+PW+6}" y="${clamp(yy+4+dd,T+10,T+PH)}" font-size="12" fill="${colr[g]}">${E(fit(gl[g],Rm-8,12))}</text>`}})}
-  C.innerHTML=s;
-  $('bchartN').textContent=(W?'兩條線的斜率差就是調節：平行＝沒有調節，一條陡一條平或交叉＝有調節。':useBins?'點是各組平均，直線段是 95% 信賴區間。':'每個點是一位模擬受訪者，直線是簡單迴歸線。')+(Y.type==='ord'||X.type==='ord'?' 順序變數的點加了少量抖動，避免疊在一起。':'')}
+  let s=`<line x1="${L}" y1="${T}" x2="${L}" y2="${T+PH}" stroke="${INK}"/><line x1="${L}" y1="${T+PH}" x2="${L+PW}" y2="${T+PH}" stroke="${INK}"/>`;
+  for(let i=0;i<=4;i++){const v=ymin+(ymax-ymin)*i/4,y=ys(v);s+=`<line x1="${L-4}" x2="${L}" y1="${y}" y2="${y}" stroke="${INK}"/><text x="${L-7}" y="${y+4}" font-size="11" text-anchor="end" fill="${INK}" ${PF}>${Y.type==='nom'?Math.round(v*100)+'%':v.toFixed(Math.abs(ymax-ymin)<10?1:0)}</text>`}
+  xt.forEach(([x,t])=>{s+=`<line x1="${x}" x2="${x}" y1="${T+PH}" y2="${T+PH+4}" stroke="${INK}"/><text x="${x}" y="${T+PH+17}" font-size="11" text-anchor="middle" fill="${INK}" ${PF}>${E(fit(t,PW/xt.length-4,11))}</text>`});
+  s+=`<text x="${L+PW/2}" y="${T+PH+38}" font-size="13" text-anchor="middle" fill="${INK}" ${PF}>${E(X.name)}</text><text x="14" y="${T+PH/2}" font-size="13" text-anchor="middle" fill="${INK}" ${PF} transform="rotate(-90 14 ${T+PH/2})">${E(fit(yl,PH,13))}</text>`;
+  const legend=(g,x)=>`<line x1="${x}" x2="${x+22}" y1="10" y2="10" stroke="${INK}" stroke-width="1.8" ${dash[g]}/><circle cx="${x+11}" cy="10" r="3.5" fill="${g?'#fff':INK}" stroke="${INK}"/><text x="${x+28}" y="14" font-size="12" fill="${INK}" ${PF}>${E(fit(gl[g],180,12))}</text>`;
+  if(useBins){const off=G>1?6:0;series.forEach((ser,g)=>{const P=ser.map(q=>[xs(q.bi)+(G>1?(g?off:-off):0),q]);s+=`<polyline points="${P.map(([x,q])=>x+','+ys(q.m)).join(' ')}" fill="none" stroke="${INK}" stroke-width="1.6" ${dash[g]}/>`;P.forEach(([x,q])=>{s+=`<line x1="${x}" x2="${x}" y1="${ys(q.lo)}" y2="${ys(q.hi)}" stroke="${INK}" stroke-width="1"/><line x1="${x-3}" x2="${x+3}" y1="${ys(q.lo)}" y2="${ys(q.lo)}" stroke="${INK}"/><line x1="${x-3}" x2="${x+3}" y1="${ys(q.hi)}" y2="${ys(q.hi)}" stroke="${INK}"/><circle cx="${x}" cy="${ys(q.m)}" r="4" fill="${g?'#fff':INK}" stroke="${INK}" stroke-width="1.3"/>`})})}
+  else{s+=pts.map(([u,v,g])=>`<circle cx="${xs(u).toFixed(1)}" cy="${ys(v).toFixed(1)}" r="1.9" fill="${g?'#fff':GR}" stroke="${GR}" stroke-width="${g?.8:0}" opacity=".55"/>`).join('');
+    series.forEach((ln,g)=>{if(!ln)return;s+=`<line x1="${xs(xmin)}" y1="${ys(ln.a+ln.b*xmin)}" x2="${xs(xmax)}" y2="${ys(ln.a+ln.b*xmax)}" stroke="${INK}" stroke-width="2" ${dash[g]}/>`})}
+  if(W){s+=legend(0,L)+legend(1,L+40+tw(fit(gl[0],180,12),12))}
+  const note=(W?'實線與虛線的斜率差即調節效果。':useBins?'點為各組平均數，誤差線為 95% 信賴區間。':'每點為一位模擬受訪者，直線為簡單迴歸線。')+(!useBins&&(Y.type==='ord'||X.type==='ord')?'順序變數的點加入少量抖動。':'');
+  return{svg:`<svg viewBox="0 0 520 270" width="100%" role="img" aria-label="${E(x.h)} 模擬資料圖">${s}</svg>`,note}}
+
+function stat(x){if(isNaN(x.est))return'估計失敗';return(x.med?'<i>a</i> × <i>b</i>':'β')+' = '+f2(x.est)+(x.lpm?'†':'')+'，95% CI ['+f2(x.lo)+', '+f2(x.hi)+']'+(x.med?'（bootstrap）':'，<i>p</i> '+(x.p<.001?'< .001':'= '+pf(x.p)))+'，'+VD[x.vd]+'。'}
+function renderChart(){const P=$('bpaper');if(!R.length){P.innerHTML='<p class="wrong-note">畫出第一條路徑後，這裡會出現論文版的結果圖。</p>';return}
+  const med=R.filter(x=>x.med),ind=med.map(x=>x.h+'：'+N(medList().find(q=>q.key===x.key).a.from).name+' → '+medList().find(q=>q.key===x.key).m.name+' → '+N(medList().find(q=>q.key===x.key).b.to).name+'，<i>a</i> × <i>b</i> = '+f2(x.est)+'，95% CI ['+f2(x.lo)+', '+f2(x.hi)+']').join('；');
+  let h=`<figure class="pfig wide" id="fig-model"><figcaption><b>圖 1</b>　研究模型估計結果</figcaption>${pathFig()}<p class="pnote"><i>註</i>：<i>n</i> = ${B.n}。路徑上的數值為標準化係數 β；實線表示 <i>p</i> &lt; .05，虛線表示未達顯著。${R.some(x=>x.lpm)?'† 依變數為名目，係數為機率差（線性機率模型）。':''}${ind?'間接效果（bootstrap 400 次）：'+ind+'。':''}<br>*<i>p</i> &lt; .05. **<i>p</i> &lt; .01. ***<i>p</i> &lt; .001.</p></figure><div class="pfigs">`;
+  R.forEach((x,i)=>{const f=x.med?{svg:medFig(x),note:'實線為顯著路徑，虛線為未達顯著的直接效果。'}:hypFig(x);
+    h+=`<figure class="pfig${x.key===selH?' on':''}" id="fig-${x.key}"><figcaption><b>圖 ${i+2}</b>　${E(x.h)}：${E(x.text)}</figcaption>${f.svg}<p class="pnote">${stat(x)}${f.note}</p></figure>`});
+  P.innerHTML=h+'</div>'}
 
 /* 控制列 */
 $('bn').oninput=ev=>{B.n=+ev.target.value;$('obn').value=B.n;persist();schedSim()};
