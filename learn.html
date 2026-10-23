@@ -158,7 +158,7 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 .cbl .cbo{cursor:pointer;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}.cbl .cbo:hover,.cbl .cbo.on{background:var(--chip)}
 .cbl .cbm{color:var(--muted);font-size:12px;margin-left:auto}.cbl .cbu{font-size:11px;background:var(--pos-bg);color:var(--pos);border-radius:999px;padding:0 6px}
 @media (max-width:700px){#bthq{width:min(300px,80vw)}}
-.bwrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+.bwrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
 #bsvg{width:100%;height:auto;display:block;background:var(--bg);border:1px dashed var(--line2);border-radius:10px;touch-action:none;user-select:none;-webkit-user-select:none}
 #bsvg .bn{cursor:move}#bsvg .bn:focus{outline:none}#bsvg .bn:focus-visible rect{stroke-width:3.5}
 #bsvg .bport{cursor:crosshair}#bsvg [data-k=edge]{cursor:pointer}
@@ -170,6 +170,15 @@ th{color:var(--muted);font-weight:600;font-size:12px}
 .bwarn li.w::before{content:"⚠";color:var(--warn-line)}
 .bwarn li.ok::before{content:"✓";color:var(--pos)}
 .bpanel .sel,.bpanel .txt{width:100%;max-width:100%;min-width:0}.bwrap>.bpanel{min-width:0}
+.xhd{display:flex;gap:8px;align-items:flex-start;justify-content:space-between;margin-bottom:4px}.xhd b{font-size:15px}.xhd .en{display:block;font-size:12px}
+.xp h4{font-size:12px;color:var(--muted);margin:12px 0 4px;font-weight:600;letter-spacing:.02em}
+.xl{list-style:none;margin:0;padding:0}.xl li{display:flex;gap:6px;align-items:center;padding:1px 0;font-size:13px;min-height:30px}
+.xadd{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--accent);background:var(--panel);color:var(--accent);cursor:pointer;font-size:16px;line-height:1;flex:none;padding:0}.xadd.here{border-color:var(--pos);color:var(--pos)}.xadd:hover{background:var(--chip)}
+.xsg{width:14px;text-align:center;color:var(--muted);flex:none;font-variant-numeric:tabular-nums}
+.xname{border:0;background:none;padding:0;color:var(--ink);cursor:pointer;text-align:left;text-decoration:underline dotted var(--line2);text-underline-offset:3px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.xname:hover{color:var(--accent)}
+.xth{font-size:11px;color:var(--muted);margin-left:auto;white-space:nowrap;max-width:38%;overflow:hidden;text-overflow:ellipsis;flex:none}
+.xmore{margin-top:4px;font-size:12px;padding:2px 10px;min-height:28px}.xmod{font-size:12px;color:var(--muted)}
+@media (pointer:coarse){.xadd{width:34px;height:34px}}
 .bpanel{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
 .bpanel h3{margin-bottom:6px}
 .bfield{display:grid;gap:4px;margin:8px 0;font-size:13px}
@@ -484,7 +493,7 @@ th{color:var(--muted);font-weight:600;font-size:12px}
       <button class="chipbtn" data-bpre="blank">清空畫布</button></span>
     </div>
     <div class="bpal blib">
-      <label for="bthq" class="lbl">從工具加入理論或變數：</label><span class="cbx"><input id="bthq" class="txt" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="bthl" placeholder="搜尋，例如 TAM、計畫行為、Trust、信任"><ul id="bthl" class="cbl" role="listbox" hidden></ul></span><span class="grp"><span class="lbl">理論：</span><button class="chipbtn on" data-bmode="add">加進目前模型</button><button class="chipbtn" data-bmode="replace">換成這個模型</button></span><label class="lbl" style="white-space:nowrap"><input type="checkbox" id="bthcore" checked> 只載核心變數</label><button class="chipbtn" id="blay">自動排版</button>
+      <label for="bthq" class="lbl">從工具找變數或理論：</label><span class="cbx"><input id="bthq" class="txt" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="bthl" placeholder="先打變數，例如 risk、信任；也可以打理論 TAM"><ul id="bthl" class="cbl" role="listbox" hidden></ul></span><span class="grp"><span class="lbl">理論：</span><button class="chipbtn on" data-bmode="add">加進目前模型</button><button class="chipbtn" data-bmode="replace">換成這個模型</button></span><label class="lbl" style="white-space:nowrap"><input type="checkbox" id="bthcore" checked> 只載核心變數</label><button class="chipbtn" id="blay">自動排版</button>
       <datalist id="bvars"></datalist>
     </div>
     <p class="bhint">從變數右邊的 → 拖到另一個變數＝路徑（一個假設）；拖到線中點的標籤＝調節。也可以點 → 再點目標。線上的 ✓／✗ 是這一批模擬資料的結果。</p>
@@ -972,7 +981,7 @@ function panel(){const P=$('bpanel'),H=labels();
     <div class="bfield"><span>類型</span><div class="row">${Object.keys(TYPE).map(t=>`<button class="chipbtn ${n.type===t?'on':''}" data-ptype="${t}">${TYPE[t][0]} <span class="en">${TYPE[t][1]}</span></button>`).join('')}</div><span class="wrong-note">${TYPENOTE[n.type]}</span></div>
     ${n.type!=='num'?`<div class="bfield"><label for="bp-k">${n.type==='nom'?'類別數':'級數（五點量表＝5）'}</label><select id="bp-k" class="sel">${ks.map(k=>`<option ${k===n.k?'selected':''}>${k}</option>`).join('')}</select></div>`:''}
     ${n.type==='nom'?`<div class="bfield"><label for="bp-cats">類別名稱（逗號分開，第一個是參照組）</label><input id="bp-cats" class="txt" value="${E(cats(n).join('，'))}"></div>`:''}
-    <div class="row" style="margin-top:10px"><button class="chipbtn" id="bp-del">刪除這個變數</button><button class="chipbtn" id="bp-done">完成</button></div>
+    <div class="row" style="margin-top:10px"><button class="chipbtn" id="bp-exp" title="在工具裡找影響它、它影響的變數">找上下游</button><button class="chipbtn" id="bp-del">刪除這個變數</button><button class="chipbtn" id="bp-done">完成</button></div>
     <p class="wrong-note">名稱欄可以直接挑工具裡的 1,000 多個變數。從變數右邊的 → 拖一條線：放到另一個變數＝路徑；放到線中點的標籤＝調節。</p>`;
     $('bp-name').oninput=ev=>{n.name=ev.target.value.trim()||'未命名';persist();draw();checks();renderOut()};
     P.querySelectorAll('[data-prole]').forEach(b=>b.onclick=()=>{n.role=b.dataset.prole;persist();renderSel();checks()});
@@ -980,6 +989,7 @@ function panel(){const P=$('bpanel'),H=labels();
     if($('bp-k'))$('bp-k').onchange=ev=>{n.k=+ev.target.value;renderAll()};
     if($('bp-cats'))$('bp-cats').onchange=ev=>{n.cats=ev.target.value.split(/[,，、]/).map(s=>s.trim());persist();draw();panel();renderOut()};
     $('bp-del').onclick=()=>del('node',n.id);$('bp-done').onclick=()=>{sel=null;renderSel()};
+    $('bp-exp').onclick=()=>libLoad().then(()=>{const v=libVar(n.name);if(!v){toast('工具裡沒有叫「'+n.name+'」的變數；在名稱欄挑工具裡的名稱再試');return}openExplorer(v.id)}).catch(()=>toast(FAIL));
   }else if(sel&&sel.kind==='edge'&&Ed(sel.id)){const e=Ed(sel.id),isM=!!e.onEdge;
     let head;if(isM){const t=Ed(e.onEdge);head=`<b>${E(N(e.from).name)}</b> 調節 ${E(N(t.from).name)} → ${E(N(t.to).name)}（${H[t.id]}）`}else head=`<b>${E(N(e.from).name)}</b> → <b>${E(N(e.to).name)}</b>`;
     P.innerHTML=`<h3>${H[e.id]}　${isM?'調節':'路徑'}</h3><p style="margin:0 0 6px">${head}</p>
@@ -992,9 +1002,10 @@ function panel(){const P=$('bpanel'),H=labels();
     $('bp-text').oninput=ev=>{e.text=ev.target.value;persist();renderOut()};
     $('bp-auto').onclick=()=>{delete e.text;persist();panel();renderOut()};
     $('bp-del').onclick=()=>del('edge',e.id);$('bp-done').onclick=()=>{sel=null;renderSel()};
+  }else if(exp&&LIB){sel=null;explorer(P);
   }else{sel=null;const opt=B.nodes.map(n=>`<option value="${n.id}">${E(n.name)}</option>`).join('');
     const opt2=B.nodes.map((n,i)=>`<option value="n:${n.id}" ${i===1?'selected':''}>${E(n.name)}</option>`).join('')+(paths().length?`<optgroup label="（調節）一條路徑">${paths().map(e=>`<option value="e:${e.id}">${H[e.id]}：${E(N(e.from).name)} → ${E(N(e.to).name)}</option>`).join('')}</optgroup>`:'');
-    P.innerHTML=`<h3>怎麼畫</h3><ol class="pt" style="font-size:14px;padding-left:20px"><li>把上面的變數拖進畫布，或點一下。</li><li>點變數，在這裡改名稱、角色、類型。</li><li>從變數右邊的 ⊕ 拖到另一個變數＝一條路徑，也就是一個假設。</li><li>拖到線中點的標籤上＝調節。</li><li>點線上的標籤，改方向、效果大小與假設敘述。</li></ol>
+    P.innerHTML=`<h3>怎麼畫</h3><ol class="pt" style="font-size:14px;padding-left:20px"><li>把上面的變數拖進畫布，或點一下。</li><li>或在「從工具找變數或理論」打一個變數（例如 risk），看它的上下游，按 ＋ 連線加進來。</li><li>點變數，在這裡改名稱、角色、類型。</li><li>從變數右邊的 ⊕ 拖到另一個變數＝一條路徑，也就是一個假設。</li><li>拖到線中點的標籤上＝調節。</li><li>點線上的標籤，改方向、效果大小與假設敘述。</li></ol>
     <h3 style="margin-top:12px">不用拖也能連</h3>${B.nodes.length>1?`<div class="bfield"><label for="bf-from">從</label><select id="bf-from" class="sel">${opt}</select><label for="bf-to">到</label><select id="bf-to" class="sel">${opt2}</select><button class="chipbtn" id="bf-add" style="justify-self:start;margin-top:4px">連起來</button></div>`:'<p class="wrong-note">先放兩個以上的變數。</p>'}`;
     if($('bf-add'))$('bf-add').onclick=()=>{const f=$('bf-from').value,[k,t]=$('bf-to').value.split(':');if(k==='n'&&f===t){toast('「從」和「到」是同一個變數');return}if(k==='n')addPath(f,t);else addMod(f,t)};
   }
@@ -1180,29 +1191,32 @@ GUESS.g9=(ok)=>(store.g9=1,save(),$('bpow').disabled=false,$('bpow').title='用�
 
 
 /* 從工具的模型與變數載入：可疊加多個理論，也可單獨加變數 */
-let LIB=null,VL={},THS=[],VARS=[],mode='add',ci=-1,cItems=[];
+let LIB=null,VL={},THS=[],VARS=[],THA={},mode='add',ci=-1,cItems=[],exp=null,expMore={};
 const FAIL='讀不到工具的模型清單：本機直接開檔時瀏覽器會擋 data.json，線上版可以用';
 function libLoad(){if(LIB)return Promise.resolve(LIB);return fetch('data.json').then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{LIB=d;
   d.variables.forEach(v=>VL[v.id]=v.label);
   const cnt={};d.edges.forEach(e=>{if(e.theory&&e.sign!=='m')cnt[e.theory]=(cnt[e.theory]||0)+1});
   THS=d.theories.filter(t=>cnt[t.id]>=2).map(t=>({id:t.id,abbr:t.abbr||'',zh:t.zh||'',name:t.name||t.id,n:cnt[t.id],s:[t.abbr,t.zh,t.name,t.id].join(' ').toLowerCase()})).sort((a,b)=>(a.abbr||a.name).localeCompare(b.abbr||b.name));
-  VARS=d.variables.map(v=>({id:v.id,label:v.label,g:v.sgroup||v.cluster||'',s:[v.label,v.id,(v.aliases||[]).join(' '),v.sgroup||'',v.ssub||''].join(' ').toLowerCase()}));
+  d.theories.forEach(t=>THA[t.id]=t.abbr||t.name||t.id);
+  VARS=d.variables.map(v=>({id:v.id,label:v.label,al:v.aliases||[],nt:(v.theories||[]).length,th:v.theories||[],g:v.sgroup||v.cluster||'',s:[v.label,v.id,(v.aliases||[]).join(' '),v.sgroup||'',v.ssub||''].join(' ').toLowerCase()}));
   $('bvars').innerHTML=d.variables.map(v=>`<option value="${E(v.label)}">`).join('');return d})}
 function guessType(nm){if(/gender|^sex$|性別|組別|^group$|experimental condition|標示|platform|平台|voluntariness/i.test(nm))return['nom',2];if(/^age$|年齡|income|收入|time|秒|frequency|次數/i.test(nm))return['num',5];return['ord',5]}
 
 /* 選單 */
 function comboShow(){const q=$('bthq').value.trim().toLowerCase(),L=$('bthl');
-  const th=THS.filter(t=>!q||t.s.includes(q)).slice(0,q?40:300),va=q?VARS.filter(v=>v.s.includes(q)).slice(0,30):[];
+  const va=q?VARS.filter(v=>v.s.includes(q)).sort((a,b)=>(a.label.toLowerCase().startsWith(q)?0:1)-(b.label.toLowerCase().startsWith(q)?0:1)||b.nt-a.nt).slice(0,30):[];
+  const th=THS.filter(t=>!q||t.s.includes(q)).slice(0,q?40:300);
   const used=new Set(B.tids||[]);cItems=[];let h='';
+  if(!q)h+='<li class="cbh">打字找變數（例如 risk、信任）。點變數會看到它的上下游，再挑要加進畫布的。下面是理論清單。</li>';
+  if(va.length){h+='<li class="cbh">變數（點了看上下游）</li>';va.forEach(v=>{cItems.push({k:'v',id:v.id});h+=`<li role="option" data-i="${cItems.length-1}" class="cbo">${byName(v.label)?'<span class="cbu">在畫布</span>':''}<b>${E(v.label)}</b><span class="cbm">${E(v.g)}${v.nt?'・'+v.nt+' 個模型':''}</span></li>`})}
   if(th.length){h+=`<li class="cbh">理論模型（${mode==='add'?'加進目前模型':'換成這個模型'}）</li>`;th.forEach(t=>{cItems.push({k:'t',id:t.id});h+=`<li role="option" data-i="${cItems.length-1}" class="cbo">${used.has(t.id)?'<span class="cbu">已加入</span>':''}<b>${E(t.abbr||t.name)}</b> ${E(t.zh)}<span class="cbm">${t.abbr?E(t.name)+'・':''}${t.n} 條路徑</span></li>`})}
-  if(va.length){h+='<li class="cbh">單一變數（加到畫布）</li>';va.forEach(v=>{cItems.push({k:'v',id:v.id});h+=`<li role="option" data-i="${cItems.length-1}" class="cbo"><b>${E(v.label)}</b><span class="cbm">${E(v.g)}</span></li>`})}
-  if(!cItems.length)h='<li class="cbh">找不到符合的理論或變數</li>';
+  if(!cItems.length)h='<li class="cbh">找不到符合的變數或理論</li>';
   L.innerHTML=h;L.hidden=false;ci=-1;$('bthq').setAttribute('aria-expanded','true');
   L.querySelectorAll('.cbo').forEach(li=>{li.onmousedown=ev=>{ev.preventDefault();pickItem(+li.dataset.i)}})}
 function comboHide(){$('bthl').hidden=true;$('bthq').setAttribute('aria-expanded','false')}
 function comboMove(d){const os=[...$('bthl').querySelectorAll('.cbo')];if(!os.length)return;ci=(ci+d+os.length)%os.length;os.forEach((o,i)=>o.classList.toggle('on',i===ci));os[ci].scrollIntoView({block:'nearest'})}
 function pickItem(i){const it=cItems[i];if(!it)return;comboHide();$('bthq').value='';
-  if(it.k==='t')addTheory(it.id,mode==='replace');else addLibVar(it.id)}
+  if(it.k==='t')addTheory(it.id,mode==='replace');else openExplorer(it.id)}
 $('bthq').addEventListener('focus',()=>libLoad().then(comboShow).catch(()=>toast(FAIL)));
 $('bthq').addEventListener('input',()=>{if(LIB)comboShow()});
 $('bthq').addEventListener('click',()=>{if(LIB&&$('bthl').hidden)comboShow()});
@@ -1227,7 +1241,7 @@ function libGraph(tid){const d=LIB,T=d.theories.find(t=>t.id===tid),es=d.edges.f
   const lab=v=>(VL[v]||v).slice(0,40);
   return{T,trim,vars:vars.concat(mods).map(lab),P:P.map(e=>({s:lab(e.src),d:lab(e.dst),sign:e.sign==='-'?-1:1})),M:M.map(e=>({s:lab(e.src),d:lab(e.dst),w:lab(e.mod)}))}}
 const byName=nm=>B.nodes.find(n=>n.name.trim().toLowerCase()===nm.trim().toLowerCase());
-function ensureNode(nm,role){let n=byName(nm);if(n)return[n,false];const[ty,k]=guessType(nm);n={id:uid('n'),name:nm,role:role||'iv',type:ty,k,x:VW/2,y:VH/2};B.nodes.push(n);return[n,true]}
+function ensureNode(nm,role){let n=byName(nm);if(n)return[n,false];const[ty,k]=guessType(nm);n={id:uid('n'),name:nm,role:role||'iv',type:ty,k,x:(B.vw||760)/2,y:(B.vh||340)/2};B.nodes.push(n);return[n,true]}
 function addTheory(tid,replace){const g=libGraph(tid);if(replace){B.nodes=[];B.edges=[];B.tids=[];B.vw=760;B.vh=340}
   const before=B.nodes.length,eb=B.edges.length;let shared=0,skipped=0;
   g.vars.forEach(nm=>{const[,isNew]=ensureNode(nm);if(!isNew)shared++});
@@ -1251,6 +1265,54 @@ function autoLayout(){const ids=B.nodes.map(n=>n.id),pn=ids.filter(id=>paths().s
   modOnly.forEach((v,i)=>{const n=N(v);n.x=Math.round(modOnly.length===1?vw/2:95+i*((vw-210)/Math.max(1,modOnly.length-1)));n.y=vh-40});
   B.vw=vw;B.vh=vh}
 setTimeout(()=>libLoad().catch(()=>{}),1500);
+
+/* 上下游探索卡 */
+function libVar(name){const q=name.trim().toLowerCase();return VARS.find(v=>v.label.toLowerCase()===q||v.id.toLowerCase()===q||v.al.some(a=>String(a).toLowerCase()===q))}
+function openExplorer(vid){exp=vid;expMore={};sel=null;draw();panel();if(matchMedia('(max-width:1000px)').matches)$('bpanel').scrollIntoView({block:'start'})}
+function neigh(vid){const up={},dn={},mo={},mb={};const push=(o,k,e)=>{const r=o[k]=o[k]||{id:k,sg:new Set(),th:new Set()};if(e.sign==='+'||e.sign==='-')r.sg.add(e.sign);if(e.theory)r.th.add(e.theory)};
+  const pm=(o,e)=>{const k=e.mod+'\u0001'+e.src+'\u0001'+e.dst;const r=o[k]=o[k]||{mod:e.mod,src:e.src,dst:e.dst,th:new Set()};if(e.theory)r.th.add(e.theory)};
+  LIB.edges.forEach(e=>{if(e.sign==='m'){if(!e.mod)return;if(e.mod===vid)pm(mo,e);else if(e.dst===vid||e.src===vid)pm(mb,e);return}if(e.dst===vid&&e.src!==vid)push(up,e.src,e);if(e.src===vid&&e.dst!==vid)push(dn,e.dst,e)});
+  const srt=o=>Object.values(o).sort((a,b)=>b.th.size-a.th.size||(VL[a.id]||a.id).localeCompare(VL[b.id]||b.id));
+  return{up:srt(up),dn:srt(dn),mo:Object.values(mo),mb:Object.values(mb)}}
+function explorer(P){const v=VARS.find(x=>x.id===exp);if(!v){exp=null;panel();return}const nb=neigh(exp),here=byName(v.label);
+  const thl=s=>{const a=[...s].map(t=>THA[t]||t);return a.length?`<span class="xth" title="${E(a.join('、'))}">${E(a.slice(0,2).join('、'))}${a.length>2?' +'+(a.length-2):''}</span>`:''};
+  const sgt=s=>s.has('+')&&s.has('-')?'±':s.has('-')?'−':'＋';
+  const item=(r,dir)=>{const lab=VL[r.id]||r.id,on=byName(lab);return`<li><button class="xadd${on?' here':''}" data-xadd="${E(r.id)}" data-dir="${dir}" data-sg="${r.sg.has('-')&&!r.sg.has('+')?'-':'+'}" title="${on?'已在畫布；按了只補連線':'加進畫布並連線'}">${on?'✓':'+'}</button><span class="xsg" title="${sgt(r.sg)==='±'?'不同理論方向不同':sgt(r.sg)==='−'?'負向':'正向'}">${sgt(r.sg)}</span><button class="xname" data-xgo="${E(r.id)}" title="看這個變數的上下游">${E(lab)}</button>${thl(r.th)}</li>`};
+  const sec=(title,arr,dir,key)=>{if(!arr.length)return'';const more=expMore[key],show=more?arr:arr.slice(0,8);return`<h4>${title}（${arr.length}）</h4><ul class="xl">${show.map(r=>item(r,dir)).join('')}</ul>${arr.length>8&&!more?`<button class="chipbtn xmore" data-xmore="${key}">還有 ${arr.length-8} 個</button>`:''}`};
+  const mitem=r=>{const L=x=>E(VL[x]||x),self=x=>x===exp?'<b>它</b>':L(x);return`<li><button class="xadd" data-xm="${E(r.mod)}\u0001${E(r.src)}\u0001${E(r.dst)}" title="把三個變數和調節一起加進畫布">+</button><span class="xmod">${self(r.mod)} 調節 ${self(r.src)} → ${self(r.dst)}</span>${thl(r.th)}</li>`};
+  const msec=(title,arr,key)=>{if(!arr.length)return'';const more=expMore[key],show=more?arr:arr.slice(0,6);return`<h4>${title}（${arr.length}）</h4><ul class="xl">${show.map(mitem).join('')}</ul>${arr.length>6&&!more?`<button class="chipbtn xmore" data-xmore="${key}">還有 ${arr.length-6} 個</button>`:''}`};
+  const ths=v.th.filter(t=>THA[t]);
+  P.innerHTML=`<div class="xp"><div class="xhd"><div><b>${E(v.label)}</b><span class="en">${E(v.g)}${v.nt?'・出現在 '+v.nt+' 個模型':''}</span></div><button class="chipbtn${here?' on':''}" id="xaddc">${here?'已在畫布':'加進畫布'}</button></div>
+  <div class="row" style="font-size:12px;gap:10px"><a href="index.html#v=${encodeURIComponent(v.id)}" target="_blank" rel="noopener">↗ 主工具的完整上下游</a><button class="chipbtn" id="xclose" style="margin-left:auto;min-height:28px;padding:2px 10px">關閉</button></div>
+  ${sec('上游：影響它的',nb.up,-1,'up')}${sec('下游：它影響的',nb.dn,1,'dn')}${msec('它調節的路徑',nb.mo,'mo')}${msec('調節它的',nb.mb,'mb')}
+  ${ths.length?`<h4>所屬理論（${ths.length}）</h4><div class="row" style="gap:4px">${ths.map(t=>`<button class="chipbtn" data-xth="${E(t)}" title="載入整個模型" style="min-height:28px;padding:2px 10px;font-size:12px">${E(THA[t])}</button>`).join('')}</div>`:''}
+  ${!nb.up.length&&!nb.dn.length&&!nb.mo.length&&!nb.mb.length?'<p class="wrong-note">工具裡沒有這個變數的連線。</p>':'<p class="wrong-note" style="margin-top:10px">＋＝加進畫布並照工具裡的方向連線；點名稱繼續往上下游走。方向與正負來自工具收錄的理論，效果大小先設「中」。</p>'}</div>`;
+  P.querySelectorAll('[data-xgo]').forEach(b=>b.onclick=()=>openExplorer(b.dataset.xgo));
+  P.querySelectorAll('[data-xadd]').forEach(b=>b.onclick=()=>addNeighbor(b.dataset.xadd,+b.dataset.dir,b.dataset.sg));
+  P.querySelectorAll('[data-xm]').forEach(b=>b.onclick=()=>{const[m,s,d]=b.dataset.xm.split('\u0001');addModLib(m,s,d)});
+  P.querySelectorAll('[data-xmore]').forEach(b=>b.onclick=()=>{expMore[b.dataset.xmore]=true;panel()});
+  P.querySelectorAll('[data-xth]').forEach(b=>b.onclick=()=>addTheory(b.dataset.xth,mode==='replace'));
+  $('xaddc').onclick=()=>{if(here){toast('「'+v.label+'」已經在畫布上');return}const[n]=ensureNode(v.label);placeAt(n,null,0,0);setRoleOf(n);renderAll();toast('已加入「'+v.label+'」；按上下游的 ＋ 接線')};
+  $('xclose').onclick=()=>{exp=null;panel()}}
+function placeAt(n,ref,dx,dy){const bx=ref?ref.x+dx*(NW+70):(B.vw||760)/2,by=ref?ref.y+dy*135:(B.vh||340)/2;let ok=false;
+  for(const o of[0,-75,75,-150,150,-225,225,-300,300]){const x=bx,y=by+(dy?0:o)+(dy?o*0:0);const yy=dy?by+o*0:y;const cand={x,y:dy?by:yy};
+    if(dy){cand.x=bx+o}if(!B.nodes.some(q=>q!==n&&Math.abs(q.x-cand.x)<NW+8&&Math.abs(q.y-cand.y)<NH+8)){n.x=cand.x;n.y=cand.y;ok=true;break}}
+  if(!ok){n.x=bx;n.y=by}
+  if(n.x<NW/2+2){const sh=NW/2+2-n.x;B.nodes.forEach(q=>q.x+=sh);B.vw=(B.vw||760)+sh}
+  if(n.x>(B.vw||760)-NW/2-14)B.vw=n.x+NW/2+14;
+  if(n.y<NH/2+2){const sh=NH/2+2-n.y;B.nodes.forEach(q=>q.y+=sh);B.vh=(B.vh||340)+sh}
+  if(n.y>(B.vh||340)-NH/2-2)B.vh=n.y+NH/2+2;n.x=Math.round(n.x);n.y=Math.round(n.y)}
+function setRoleOf(n){const i=paths().some(e=>e.to===n.id),o=paths().some(e=>e.from===n.id),m=mods().some(e=>e.from===n.id);n.role=i&&o?'med':i?'dv':o?'iv':m?'mod':n.role}
+function linkLib(from,to,sign){if(paths().some(e=>(e.from===from.id&&e.to===to.id)||(e.from===to.id&&e.to===from.id)))return paths().find(e=>e.from===from.id&&e.to===to.id)||null;if(reach(to.id,from.id)){toast('「'+from.name+' → '+to.name+'」會繞成迴圈，沒有連');return null}const e={id:uid('e'),from:from.id,to:to.id,sign,size:'m'};B.edges.push(e);return e}
+function addNeighbor(nid,dir,sg){const cl=VL[exp]||exp,nl=VL[nid]||nid;const[c,cn]=ensureNode(cl);if(cn)placeAt(c,null,0,0);const[n,nn]=ensureNode(nl);if(nn)placeAt(n,c,dir,0);
+  const e=dir<0?linkLib(n,c,sg==='-'?-1:1):linkLib(c,n,sg==='-'?-1:1);[c,n].forEach(setRoleOf);renderAll();
+  toast((nn?'已加入「'+nl+'」':'「'+nl+'」已在畫布')+(e?'，並連線 '+(dir<0?nl+' → '+cl:cl+' → '+nl):''))}
+function addModLib(m,s,d){const L=x=>VL[x]||x;const[c,cn]=ensureNode(L(exp));if(cn)placeAt(c,null,0,0);
+  const rel={[m]:[0,1],[s]:[-1,0],[d]:[1,0]};if(m===exp){rel[s]=[-1,-1];rel[d]=[1,-1]}
+  const got={};[s,d,m].forEach(x=>{const[n,nn]=ensureNode(L(x));if(nn&&x!==exp)placeAt(n,c,rel[x][0],rel[x][1]);got[x]=n});
+  const base=LIB.edges.find(e=>e.src===s&&e.dst===d&&e.sign!=='m');const t=linkLib(got[s],got[d],base&&base.sign==='-'?-1:1);
+  if(t&&!mods().some(q=>q.from===got[m].id&&q.onEdge===t.id)){if(reach(t.to,got[m].id))toast('調節線會繞成迴圈，沒有加');else B.edges.push({id:uid('e'),from:got[m].id,onEdge:t.id,sign:1,size:'s'})}
+  Object.values(got).forEach(setRoleOf);renderAll();toast('已加入 '+L(m)+' 調節 '+L(s)+' → '+L(d))}
 
 function renderSel(){draw();panel();if(D)renderOut()}
 function renderAll(){pow=null;powTok++;persist();draw();panel();checks();schedSim()}
